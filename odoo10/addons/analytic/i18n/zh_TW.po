@@ -1,22 +1,33 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * analytic
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-07-29 21:23+0800\n"
+"PO-Revision-Date: 2016-11-15 09:11+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:34+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: analytic
+#: model:ir.model.fields,field_description:analytic.field_account_analytic_line_currency_id
+msgid "Account Currency"
+msgstr "會計幣別"
+
+#. module: analytic
+#: model:ir.model.fields,field_description:analytic.field_account_analytic_account_active
+msgid "Active"
+msgstr "有效"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_amount
@@ -32,18 +43,25 @@ msgstr "金額"
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_search
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_filter
 msgid "Analytic Account"
-msgstr "輔助核算項目"
+msgstr "輔助核算項"
 
 #. module: analytic
 #: model:res.groups,name:analytic.group_analytic_accounting
 msgid "Analytic Accounting"
-msgstr "輔助核算會計"
+msgstr "輔助核算項"
 
 #. module: analytic
 #: model:ir.actions.act_window,name:analytic.action_account_analytic_account_form
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_list
 msgid "Analytic Accounts"
-msgstr "輔助核算項目"
+msgstr "輔助核算項"
+
+#. module: analytic
+#: model:ir.actions.act_window,name:analytic.account_analytic_tag_action
+#: model:ir.ui.view,arch_db:analytic.account_analytic_tag_form_view
+#: model:ir.ui.view,arch_db:analytic.account_analytic_tag_tree_view
+msgid "Analytic Accounts Tags"
+msgstr "輔助核算項分類"
 
 #. module: analytic
 #: model:ir.actions.act_window,name:analytic.account_analytic_line_action_entries
@@ -51,17 +69,37 @@ msgstr "輔助核算項目"
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_pivot
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_tree
 msgid "Analytic Entries"
-msgstr "輔助核算分錄"
+msgstr "輔助核算憑證"
 
 #. module: analytic
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_form
 msgid "Analytic Entry"
-msgstr "輔助核算記錄"
+msgstr "輔助核算憑證"
+
+#. module: analytic
+#: model:ir.model,name:analytic.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "輔助核算明細"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_line_ids
 msgid "Analytic Lines"
-msgstr "輔助核算明細"
+msgstr "審核明細"
+
+#. module: analytic
+#: model:ir.model.fields,field_description:analytic.field_account_analytic_tag_name
+msgid "Analytic Tag"
+msgstr "輔助核算分類"
+
+#. module: analytic
+#: model:ir.model,name:analytic.model_account_analytic_tag
+msgid "Analytic Tags"
+msgstr "輔助核算分類"
+
+#. module: analytic
+#: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_search
+msgid "Archived"
+msgstr "已存檔"
 
 #. module: analytic
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_search
@@ -71,12 +109,22 @@ msgstr "相關業務夥伴"
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_balance
 msgid "Balance"
-msgstr "結餘"
+msgstr "差額"
 
 #. module: analytic
 #: model:ir.actions.act_window,name:analytic.action_analytic_account_form
 msgid "Chart of Analytic Accounts"
-msgstr "輔助核算項目一覽表"
+msgstr "輔助核算項一覽表"
+
+#. module: analytic
+#: model:ir.actions.act_window,help:analytic.account_analytic_tag_action
+msgid "Click to add a new tag."
+msgstr "點擊來新建一個標籤。"
+
+#. module: analytic
+#: model:ir.actions.act_window,help:analytic.action_analytic_account_form
+msgid "Click to add an analytic account."
+msgstr "點擊來添加一個輔助核算項。"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_tag_color
@@ -90,18 +138,38 @@ msgid "Company"
 msgstr "公司"
 
 #. module: analytic
+#: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_form
+msgid "Cost/Revenue"
+msgstr "成本/收益"
+
+#. module: analytic
+#: model:ir.actions.act_window,name:analytic.account_analytic_line_action
+msgid "Costs & Revenues"
+msgstr "成本和收入"
+
+#. module: analytic
+#: model:ir.actions.act_window,help:analytic.account_analytic_line_action
+#: model:ir.actions.act_window,help:analytic.account_analytic_line_action_entries
+msgid ""
+"Costs will be created automatically when you register supplier\n"
+"                invoices, expenses or timesheets."
+msgstr ""
+"當你註冊供應商發票、費用或計工單時，\n"
+"                成本將自動創建。"
+
+#. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_create_uid
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_create_uid
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_tag_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_create_date
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_create_date
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_tag_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_credit
@@ -131,7 +199,7 @@ msgstr "借方"
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_name
 msgid "Description"
-msgstr "說明"
+msgstr "描述"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_display_name
@@ -144,40 +212,70 @@ msgstr "顯示名稱"
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_search
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_filter
 msgid "Group By..."
-msgstr "群組依據..."
+msgstr "分組按..."
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_id
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_id
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_tag_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: analytic
+#: model:ir.model.fields,help:analytic.field_account_analytic_account_active
+msgid ""
+"If the active field is set to False, it will allow you to hide the account "
+"without removing it."
+msgstr "如果有效欄位被設置為假，則允許你不刪除此科目而只是隱藏它。"
+
+#. module: analytic
+#: model:ir.actions.act_window,help:analytic.account_analytic_line_action
+#: model:ir.actions.act_window,help:analytic.account_analytic_line_action_entries
+msgid ""
+"In Odoo, sale orders and projects are implemented using\n"
+"                analytic accounts. You can track costs and revenues to "
+"analyse\n"
+"                your margins easily."
+msgstr ""
+"在Odoo中，銷售訂單和專案使用輔助核算項來實施。\n"
+"                你可以跟蹤成本和收入來\n"
+"                方便的分析你的利潤。"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account___last_update
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line___last_update
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_tag___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_write_uid
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_write_uid
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_tag_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_write_date
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_write_date
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_tag_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: analytic
+#: model:ir.actions.act_window,help:analytic.account_analytic_line_action
+msgid "No activity yet on this account."
+msgstr "在這個科目上，尚沒有活動。"
+
+#. module: analytic
+#: model:ir.actions.act_window,help:analytic.account_analytic_line_action_entries
+msgid "No activity yet."
+msgstr "尚沒有活動。"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_partner_id
 msgid "Partner"
-msgstr "伙伴"
+msgstr "業務夥伴"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_unit_amount
@@ -188,30 +286,310 @@ msgstr "數量"
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_code
 msgid "Reference"
-msgstr "參考"
+msgstr "備註"
+
+#. module: analytic
+#: model:ir.actions.act_window,help:analytic.account_analytic_line_action
+#: model:ir.actions.act_window,help:analytic.account_analytic_line_action_entries
+msgid ""
+"Revenues will be created automatically when you create customer\n"
+"                invoices. Customer invoices can be created based on sale "
+"orders\n"
+"                (fixed price invoices), on timesheets (based on the work "
+"done) or\n"
+"                on expenses (e.g. reinvoicing of travel costs)."
+msgstr ""
+"當你創建客戶發票時，收入將自動創建。\n"
+"                客戶發票可以基於銷售訂單（固定價格發票），\n"
+"                基於計工單（基於已完成的工作），或基於\n"
+"                費用（例如：旅遊費用的重新開票）。"
 
 #. module: analytic
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_filter
 msgid "Search Analytic Lines"
-msgstr "搜尋輔助核算項目明細"
+msgstr "搜索輔助核算明細"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_tag_ids
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_tag_ids
 msgid "Tags"
-msgstr "標籤"
+msgstr "分類"
+
+#. module: analytic
+#: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_filter
+msgid "Tasks Month"
+msgstr "任務月"
 
 #. module: analytic
 #: model:ir.model.fields,help:analytic.field_account_analytic_line_currency_id
 msgid "The related account currency if not equal to the company one."
-msgstr "如果不是同一公司, 相關科目的幣別"
+msgstr "相關的會計幣別，如果不是一個公司"
 
 #. module: analytic
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_tree
 msgid "Total"
-msgstr "總計"
+msgstr "合計"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_user_id
 msgid "User"
 msgstr "用戶"
+
+#. module: analytic
+#: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_form
+msgid "e.g. Project XYZ"
+msgstr "例如：項目 XYZ"
+
+#~ msgid "(Keep empty to open the current situation)"
+#~ msgstr "（留空來打開當前狀態）"
+
+#~ msgid "Account Analytic Chart"
+#~ msgstr "輔助核算項表"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid "Analytic Account Charts"
+#~ msgstr "核算項一覽表"
+
+#~ msgid "Analytic View"
+#~ msgstr "分析視圖"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "在記錄上最後資訊被發表的日期"
+
+#~ msgid "Followers"
+#~ msgstr "關注者"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid "From"
+#~ msgstr "從"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果檢查到新郵件需要你的注意。"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選，你需要注意查看新消息。"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最後資訊的日期"
+
+#~ msgid "Messages"
+#~ msgstr "消息"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和通信歷史記錄"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動數量"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的資訊數量"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Open Charts"
+#~ msgstr "打開表"
+
+#~ msgid "Select the Period for Analysis"
+#~ msgstr "選擇要分析的會計期間"
+
+#~ msgid "To"
+#~ msgstr "到"
+
+#~ msgid "Type of Account"
+#~ msgstr "科目類型"
+
+#~ msgid "Unread Messages"
+#~ msgstr "未讀消息"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息計數"
+
+#~ msgid "%s (copy)"
+#~ msgstr "%s (副本)"
+
+#~ msgid "Account Manager"
+#~ msgstr "科目管理員"
+
+#~ msgid "Account/Contract Name"
+#~ msgstr "科目/合同名稱"
+
+#~ msgid ""
+#~ "Calculated by multiplying the quantity and the price given in the "
+#~ "Product's cost price. Always expressed in the company main currency."
+#~ msgstr "計算公式是數量乘以產品成本價。幣別是公司本位幣。"
+
+#~ msgid "Child Accounts"
+#~ msgstr "子科目"
+
+#~ msgid "Closed"
+#~ msgstr "已關閉"
+
+#~ msgid "Contract Finished"
+#~ msgstr "合同結束"
+
+#~ msgid "Contract Information"
+#~ msgstr "合同內容"
+
+#~ msgid "Contract Opened"
+#~ msgstr "協議生效"
+
+#~ msgid "Contract closed"
+#~ msgstr "協議失效"
+
+#~ msgid "Contract opened"
+#~ msgstr "協議生效"
+
+#~ msgid "Contract or Project"
+#~ msgstr "協議或者專案"
+
+#~ msgid "Contract pending"
+#~ msgstr "待定協議"
+
+#~ msgid "Contract to Renew"
+#~ msgstr "要續簽的合同"
+
+#~ msgid "Contract: "
+#~ msgstr "協議"
+
+#~ msgid "Create Date"
+#~ msgstr "創建日期"
+
+#~ msgid "End Date"
+#~ msgstr "截止日期"
+
+#~ msgid "Error!"
+#~ msgstr "錯誤！"
+
+#~ msgid "Error! You cannot create recursive analytic accounts."
+#~ msgstr "錯誤！你不能迴圈創建輔助核算項"
+
+#~ msgid "Expiration Date"
+#~ msgstr "截止日期"
+
+#~ msgid "Full Name"
+#~ msgstr "全稱"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保存聊天總計（消息的數量，...）。這個總計採用html格式，可以被插入到看板視"
+#~ "圖中。"
+
+#~ msgid ""
+#~ "If you select the View Type, it means you won't allow to create journal "
+#~ "entries using that account.\n"
+#~ "The type 'Analytic account' stands for usual accounts that you only want "
+#~ "to use in accounting.\n"
+#~ "If you select Contract or Project, it offers you the possibility to "
+#~ "manage the validity and the invoicing options for this account.\n"
+#~ "The special type 'Template of Contract' allows you to define a template "
+#~ "with default data that you can reuse easily."
+#~ msgstr ""
+#~ "如果選擇視圖模式，這就意味著你將不允許通過此帳戶創建日誌條目。\n"
+#~ "輔助核算項類型表示這一常用帳戶你僅用作記帳.\n"
+#~ "如果選擇協議或專案，它將提供管理這個帳戶有效性和發票選項的可能性.\n"
+#~ "協定樣本這一特殊類型，允許你定義一個範本，你可以容易地使用預設資料。"
+
+#~ msgid ""
+#~ "If you set a company, the currency selected has to be the same as it's "
+#~ "currency. \n"
+#~ "You can remove the company belonging, and thus change the currency, only "
+#~ "on analytic account of type 'view'. This can be really useful for "
+#~ "consolidation purposes of several companies charts with different "
+#~ "currencies, for example."
+#~ msgstr ""
+#~ "如果你設置一個公司，選擇的貨幣必須與公司貨幣一致。\n"
+#~ "針對視圖類型的成本科目，你可以把公司欄位留空，並修改幣種。這樣你就可以把"
+#~ "多個公司不同貨幣的成本科目合併起來。"
+
+#~ msgid "In Progress"
+#~ msgstr "進行中"
+
+#~ msgid "New"
+#~ msgstr "新建"
+
+#~ msgid ""
+#~ "Once the end date of the contract is\n"
+#~ "                                        passed or the maximum number of "
+#~ "service\n"
+#~ "                                        units (e.g. support contract) "
+#~ "is\n"
+#~ "                                        reached, the account manager is "
+#~ "notified \n"
+#~ "                                        by email to renew the contract "
+#~ "with the\n"
+#~ "                                        customer."
+#~ msgstr ""
+#~ "一旦合同結束日期已過，或已達到最大服務次數（如支援合同）時，將通過電子郵"
+#~ "件通知客戶經理與客戶續簽合同。"
+
+#~ msgid "Prepaid Service Units"
+#~ msgstr "預付的服務時間"
+
+#~ msgid "Project Manager"
+#~ msgstr "專案主管"
+
+#~ msgid "Quick account creation disallowed."
+#~ msgstr "不允許快速創建帳戶"
+
+#~ msgid "Renewal"
+#~ msgstr "續簽"
+
+#~ msgid ""
+#~ "Sets the higher limit of time to work on the contract, based on the "
+#~ "timesheet. (for instance, number of hours in a limited support contract.)"
+#~ msgstr "設置協議的工作時間上限，基於時間表（比如，有限支援協定的小時數）"
+
+#~ msgid "Specifies the amount of quantity to count."
+#~ msgstr "指定金額的數量用來計算"
+
+#~ msgid "Start Date"
+#~ msgstr "開始日期"
+
+#~ msgid "Status"
+#~ msgstr "狀態"
+
+#~ msgid "Summary"
+#~ msgstr "概要"
+
+#~ msgid "Template"
+#~ msgstr "範本"
+
+#~ msgid "Template of Contract"
+#~ msgstr "合同範本"
+
+#~ msgid "Terms and Conditions"
+#~ msgstr "條款和條件"
+
+#~ msgid "To Renew"
+#~ msgstr "更新"
+
+#~ msgid "Warning"
+#~ msgstr "警告"
+
+#~ msgid "You cannot create analytic line on view account."
+#~ msgstr "你不能對查看帳戶採用分析的方法。"
+
+#~ msgid "Account Name"
+#~ msgstr "科目名稱"
+
+#~ msgid "Stage <b>opened</b>"
+#~ msgstr "階段開啟"
+
+#~ msgid "Date End"
+#~ msgstr "結束日期"

@@ -1,45 +1,377 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * website_mail
+# 	* website_mail
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 8.0dev-20140202-000101\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 08:44+0000\n"
-"PO-Revision-Date: 2015-09-30 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2016-07-31 16:53+0800\n"
+"PO-Revision-Date: 2016-08-01 19:52+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.8.8\n"
+
+#. module: website_mail
+#: model:mail.template,body_html:website_mail.mail_template_data_module_install_website_mail
+msgid ""
+"\n"
+"            <div style=\"margin: 10px auto;\">\n"
+"            <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:100%;"
+"\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td style=\"padding:2px;width:30%;\">\n"
+"                            <img src=\"web/static/src/img/logo.png\"/>\n"
+"                        </td>\n"
+"                        <td style=\"vertical-align: top; padding: 8px 10px;"
+"text-align: left;font-size: 14px;\">\n"
+"                            <a href=\"web/login\" style=\"float:right ;"
+"margin:15px auto;background: #a24689;border-radius: 5px;color: #ffffff;font-"
+"size: 16px;padding: 10px 20px 10px 20px;text-decoration: none;\">Auto Login</"
+"a>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"            <table style=\"width:100%;text-align:justify;margin:0 auto;"
+"border-collapse:collapse;border-top:1px solid lightgray\"\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td style=\"padding:15px 10px;font-size:20px\">\n"
+"                            <p style=\"color:#a24689;margin:0\" >Awesome!</"
+"p><br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:15px;margin-"
+"top:0pt;margin-bottom:0pt;\">\n"
+"                                <span>Your website is now online!</span></"
+"p><br>\n"
+"                            <p dir=\"ltr\" style=\"margin-top:0pt;margin-"
+"bottom:8pt;\">\n"
+"                                <span style=\"font-size:13px;font-weight:"
+"bold; \">Did you know?</span></p>\n"
+"                            <ul style=\"margin-top:0pt;margin-bottom:0pt;"
+"font-size:13px;list-style-type:disc;\">\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>From the Customize / Install "
+"Apps menu, you can install new features (forum, blog, eCommerce, jobs, ...)</"
+"span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:8pt;\">\n"
+"                                        <span>Customize the look of your "
+"website with the Customize menu.</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                            </ul> <br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\">\n"
+"                                <span style=\"font-weight:bold;\">Discover "
+"the </span>\n"
+"                                <span><a href=\"/"
+"web#view_type=kanban&model=project.project&action=project."
+"open_view_project_all\">\n"
+"                                    <span style=\"font-weight:bold; text-"
+"decoration:underline;\">Website planner</span></a></span>\n"
+"                                <span> to activate extra features</span>\n"
+"                                <span style=\"color:#a24689;margin:0;font-"
+"weight:bold\">(${user.env['web.planner']."
+"get_planner_progress('planner_website')}% done)</span>\n"
+"                            </p>\n"
+"                            <ul style=\"margin-top:0pt;margin-bottom:0pt;"
+"font-size:13px;list-style-type:disc;\">\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>Grow your traffic by "
+"optimizing your referencing with our SEO tool,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>Improve your conversion from "
+"visitor to customer with the Website Live support,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>Broaden your audience with the "
+"multi-language support,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>Go further into the "
+"customization with our advanced HTML editor,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:8pt;\">\n"
+"                                        <span>And much more...</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                            </ul>\n"
+"                            <br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;line-"
+"height:1.3;margin-top:0pt;margin-bottom:8pt;\">\n"
+"                                <span style=\"font-weight:bold;\">Need Help?"
+"</span>\n"
+"                                <span style=\"font-style:italic;\">You’re "
+"not alone</span>\n"
+"                            </p>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\">\n"
+"                                <span>We would be delighted to assist you "
+"along the way. Contact us at \n"
+"                                <a href=\"mailto:help@odoo.com\"><span style="
+"\"text-decoration:underline;\">\n"
+"                                help@odoo.com</span></a> if you have any "
+"question. You can also discover \n"
+"                                how to get the best out of Odoo with our </"
+"span>\n"
+"                                <a href=\"https://www.odoo.com/documentation/"
+"user\">\n"
+"                                <span style=\"text-decoration:underline;"
+"\">User Documentation</span></a>\n"
+"                                </span><span> or with our </span>\n"
+"                                <a href=\"https://www.odoo.com/documentation"
+"\">\n"
+"                                <span style=\"text-decoration:underline;"
+"\">API Documentation</span></a>\n"
+"                            </p>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\"><span>Enjoy your Odoo experience,</span></p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"            <div dir=\"ltr\" style=\"font-size:13px;margin-top:0pt;margin-"
+"bottom:8pt;color:grey\">\n"
+"                <span><br/>-- <br/>The Odoo Team<br/>PS: People love Odoo, "
+"check </span><a href=\"https://twitter.com/odoo/favorites\"><span style="
+"\"text-decoration:underline;\">what they say about it.</span></a></span>\n"
+"            </div>\n"
+"        </div>"
+msgstr ""
+"\n"
+"            <div style=\"margin: 10px auto;\">\n"
+"            <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:100%;"
+"\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td style=\"padding:2px;width:30%;\">\n"
+"                            <img src=\"web/static/src/img/logo.png\"/>\n"
+"                        </td>\n"
+"                        <td style=\"vertical-align: top; padding: 8px 10px;"
+"text-align: left;font-size: 14px;\">\n"
+"                            <a href=\"web/login\" style=\"float:right ;"
+"margin:15px auto;background: #a24689;border-radius: 5px;color: #ffffff;font-"
+"size: 16px;padding: 10px 20px 10px 20px;text-decoration: none;\">自動登錄</"
+"a>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"            <table style=\"width:100%;text-align:justify;margin:0 auto;"
+"border-collapse:collapse;border-top:1px solid lightgray\"\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td style=\"padding:15px 10px;font-size:20px\">\n"
+"                            <p style=\"color:#a24689;margin:0\" >太棒了!</"
+"p><br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:15px;margin-"
+"top:0pt;margin-bottom:0pt;\">\n"
+"                                <span>你的網站現在上線了!</span></p><br>\n"
+"                            <p dir=\"ltr\" style=\"margin-top:0pt;margin-"
+"bottom:8pt;\">\n"
+"                                <span style=\"font-size:13px;font-weight:"
+"bold; \">Did you know?</span></p>\n"
+"                            <ul style=\"margin-top:0pt;margin-bottom:0pt;"
+"font-size:13px;list-style-type:disc;\">\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>你可以從模組頁面安裝新的功能模"
+"塊 (論壇, 博客, 電商, 招聘, ...)</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:8pt;\">\n"
+"                                        <span>通過\"定制\"功能表改變網站的風格"
+"</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                            </ul> <br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\">\n"
+"                                <span style=\"font-weight:bold;\">Discover "
+"the </span>\n"
+"                                <span><a href=\"/"
+"web#view_type=kanban&model=project.project&action=project."
+"open_view_project_all\">\n"
+"                                    <span style=\"font-weight:bold; text-"
+"decoration:underline;\">網站規劃者</span></a></span>\n"
+"                                <span> 啟動其他的功能模組 </span>\n"
+"                                <span style=\"color:#a24689;margin:0;font-"
+"weight:bold\">(${user.env['web.planner']."
+"get_planner_progress('planner_website')}% done)</span>\n"
+"                            </p>\n"
+"                            <ul style=\"margin-top:0pt;margin-bottom:0pt;"
+"font-size:13px;list-style-type:disc;\">\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>通過SEO工具優化搜索引擎，給網站"
+"帶來更多的流量,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>通過線上客服，提升網站新用戶的"
+"轉化率,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>增加多語言支援，為網站吸引更多"
+"的訪客,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>使用高級HTML編輯器, 進一步定制"
+"你的網頁，</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:8pt;\">\n"
+"                                        <span>以及更多的個性化支持...</"
+"span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                            </ul>\n"
+"                            <br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;line-"
+"height:1.3;margin-top:0pt;margin-bottom:8pt;\">\n"
+"                                <span style=\"font-weight:bold;\">需要幫助?</"
+"span>\n"
+"                                <span style=\"font-style:italic;\">我們的服務"
+"團隊，會及時解決你使用中的問題</span>\n"
+"                            </p>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\">\n"
+"                                <span>你可以通過以下的郵件地址聯繫我們。我們"
+"很榮幸可以幫助你。 \n"
+"                                <a href=\"mailto:help@odoo.com\"><span style="
+"\"text-decoration:underline;\">\n"
+"                                help@odoo.com</span></a> 你也可以通過我們線上"
+"的使用文檔 \n"
+"                                學習如何使用Odoo </span>\n"
+"                                <a href=\"https://www.odoo.com/documentation/"
+"user\">\n"
+"                                <span style=\"text-decoration:underline;\">用"
+"戶手冊</span></a>\n"
+"                                </span><span> 以及 </span>\n"
+"                                <a href=\"https://www.odoo.com/documentation"
+"\">\n"
+"                                <span style=\"text-decoration:underline;"
+"\">API 文檔</span></a>\n"
+"                            </p>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\"><span>希望你在使用Odoo過程中, 獲得優質的使用體驗"
+"</span></p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"            <div dir=\"ltr\" style=\"font-size:13px;margin-top:0pt;margin-"
+"bottom:8pt;color:grey\">\n"
+"                <span><br/>-- <br/>Odoo 團隊<br/>你也可以在Twitter上關注我們 "
+"</span><a href=\"https://twitter.com/odoo/favorites\"><span style=\"text-"
+"decoration:underline;\">和全世界的小夥伴一齊聊聊Odoo</span></a></span>\n"
+"            </div>\n"
+"        </div>"
+
+#. module: website_mail
+#: model:ir.model.fields,field_description:website_mail.field_mail_compose_message_description
+#: model:ir.model.fields,field_description:website_mail.field_mail_message_description
+#: model:ir.model.fields,field_description:website_mail.field_survey_mail_compose_message_description
+msgid "Description"
+msgstr "描述"
 
 #. module: website_mail
 #: model:mail.channel,name:website_mail.channel_public
 msgid "Discussion Group"
-msgstr "討論群組"
+msgstr "討論組"
+
+#. module: website_mail
+#: model:ir.model,name:website_mail.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Email撰寫嚮導"
+
+#. module: website_mail
+#: model:ir.model,name:website_mail.model_survey_mail_compose_message
+msgid "Email composition wizard for Survey"
+msgstr "調查的郵件合成嚮導"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "Leave a comment"
+msgstr "留下一個評論"
 
 #. module: website_mail
 #: model:ir.model,name:website_mail.model_mail_message
 msgid "Message"
-msgstr "訊息"
+msgstr "消息"
+
+#. module: website_mail
+#: model:ir.model.fields,help:website_mail.field_mail_compose_message_description
+#: model:ir.model.fields,help:website_mail.field_mail_message_description
+#: model:ir.model.fields,help:website_mail.field_survey_mail_compose_message_description
+msgid "Message description: either the subject, or the beginning of the body"
+msgstr "消息描述：可以選擇主題或正文的開始部分作為消息的描述。"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "Oops! Something went wrong. Try to reload the page and to log in."
+msgstr "哇！出了些小錯誤。請再次載入頁面並重新登錄。"
+
+#. module: website_mail
+#: model:ir.model.fields,field_description:website_mail.field_mail_compose_message_website_published
+#: model:ir.model.fields,field_description:website_mail.field_mail_message_website_published
+#: model:ir.model.fields,field_description:website_mail.field_survey_mail_compose_message_website_published
+msgid "Published"
+msgstr "已發佈"
 
 #. module: website_mail
 #: model:ir.ui.view,arch_db:website_mail.message_thread
 msgid "Send"
-msgstr "傳送"
+msgstr "發送"
 
 #. module: website_mail
 #: model:ir.ui.view,arch_db:website_mail.follow
 msgid "Subscribe"
-msgstr "訂閱"
+msgstr "訂購"
 
 #. module: website_mail
-#: code:addons/website_mail/models/mail_message.py:57
+#: code:addons/website_mail/models/mail_message.py:61
 #, python-format
 msgid ""
 "The requested operation cannot be completed due to security restrictions. "
@@ -47,5 +379,784 @@ msgid ""
 "\n"
 "(Document type: %s, Operation: %s)"
 msgstr ""
-"因安全限制，操作無法完成。請聯絡系統管理員。\n"
-"((Document type: %s, Operation: %s))"
+"基於安全限制，要求的操作不能被完成。 請聯繫你的系統管理員。\n"
+"\n"
+"(文檔類型: %s, 操作: %s)"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.follow
+msgid "Unsubscribe"
+msgstr "退訂"
+
+#. module: website_mail
+#: model:ir.model.fields,help:website_mail.field_mail_compose_message_website_published
+#: model:ir.model.fields,help:website_mail.field_mail_message_website_published
+#: model:ir.model.fields,help:website_mail.field_survey_mail_compose_message_website_published
+msgid "Visible on the website as a comment"
+msgstr "網站評論可見"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "Write a message..."
+msgstr "撰寫一個消息..."
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "You must be"
+msgstr "你必須"
+
+#. module: website_mail
+#: model:mail.template,subject:website_mail.mail_template_data_module_install_website_mail
+msgid "Your business is reachable from anywhere, anytime !"
+msgstr "你可以在任何地點，任何時間瞭解你的生意。"
+
+#. module: website_mail
+#. openerp-web
+#: code:addons/website_mail/static/src/xml/chatter_message.xml:8
+#, python-format
+msgid "just now"
+msgstr "剛剛"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "logged in"
+msgstr "登錄"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "on"
+msgstr "在"
+
+#. module: website_mail
+#: model:ir.model,name:website_mail.model_publisher_warranty_contract
+msgid "publisher_warranty.contract"
+msgstr "publisher_warranty.contract"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "to post a comment."
+msgstr "發表一個評論"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.follow
+msgid "your email..."
+msgstr "你的電子郵件..."
+
+#~ msgid "&nbsp;"
+#~ msgstr "&nbsp;"
+
+#~ msgid "1(250)222-2232"
+#~ msgstr "1(250)222-2232"
+
+#~ msgid "123 Flower Drive"
+#~ msgstr "按步驟執行"
+
+#~ msgid "20% off!"
+#~ msgstr "20%折扣"
+
+#~ msgid "30% discount when you sign up now!"
+#~ msgstr "現在註冊，享受30%的折扣！"
+
+#~ msgid "45A9E77DGW8455"
+#~ msgstr "45A9E77DGW8455"
+
+#~ msgid "ALL DAY"
+#~ msgstr "全天"
+
+#~ msgid "Airmail"
+#~ msgstr "航空件"
+
+#~ msgid "Amount"
+#~ msgstr "總數"
+
+#~ msgid "Apps That Help You Grow Your Business"
+#~ msgstr "幫助你提升業務量的應用"
+
+#~ msgid "Apps That Help You Grow Your Business!"
+#~ msgstr "幫助你提升業務量的應用！"
+
+#~ msgid "April 3, 2014"
+#~ msgstr "2014年4月3日"
+
+#~ msgid "August"
+#~ msgstr "8月"
+
+#~ msgid "Basic Theme"
+#~ msgstr "基本主題"
+
+#~ msgid ""
+#~ "Because I've invited you, you can also use the below coupon code to "
+#~ "receive a 30% discount on you first months subscription!"
+#~ msgstr ""
+#~ "你是我們的會員，你可以在第一個月訂購時，使用以下優惠碼，換取30%的折扣。"
+
+#~ msgid ""
+#~ "Because I've invited you, you can also use the below coupon code to "
+#~ "receive a 50% discount on you first months subscription!"
+#~ msgstr ""
+#~ "你是我們的會員，你可以在第一個月訂購時，使用以下優惠碼，換取50%的折扣。"
+
+# 人名
+#~ msgid "Bob Erlicious"
+#~ msgstr "Bob Erlicious"
+
+#~ msgid "Body"
+#~ msgstr "正文"
+
+#~ msgid "Cancel selection"
+#~ msgstr "取消選擇"
+
+#~ msgid "Change Image ..."
+#~ msgstr "修改圖片..."
+
+#~ msgid "Check this out!"
+#~ msgstr "退出!"
+
+#~ msgid "Choose a Template"
+#~ msgstr "選擇一個電子郵件範本"
+
+#~ msgid "Choose a background image"
+#~ msgstr "選擇背景圖片"
+
+#~ msgid "Cleave"
+#~ msgstr "拆分"
+
+#~ msgid "Code:"
+#~ msgstr "代碼："
+
+#~ msgid "Come check out my stuff!"
+#~ msgstr "查看我的資料!"
+
+#~ msgid "Come check out new Stuff!"
+#~ msgstr "查看新資料!"
+
+#~ msgid "Come check out new stuff!"
+#~ msgstr "查看新資料!"
+
+#~ msgid "Contact"
+#~ msgstr "聯繫人"
+
+#~ msgid "Contact Us"
+#~ msgstr "聯繫我們"
+
+#~ msgid "Dear Bob,"
+#~ msgstr "尊敬的Bob"
+
+#~ msgid "Dear John"
+#~ msgstr "尊敬的John"
+
+#~ msgid "Discount Code :"
+#~ msgstr "優惠碼:"
+
+#~ msgid "Discount Code:"
+#~ msgstr "優惠碼:"
+
+#~ msgid "Email Thread"
+#~ msgstr "郵件記錄"
+
+#~ msgid "Enjoy 50% of your next purchase!"
+#~ msgstr "下次購買時享受50%的優惠!"
+
+#~ msgid "Enter"
+#~ msgstr "輸入"
+
+#~ msgid "Extra"
+#~ msgstr "額外"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Footers"
+#~ msgstr "頁腳"
+
+#~ msgid "Good News!"
+#~ msgstr "好消息!"
+
+#~ msgid "Good news!"
+#~ msgstr "好消息!"
+
+#~ msgid ""
+#~ "Great stories are for everyone even when only written for just one "
+#~ "person. If you try to write with a wide general audience in mind, your "
+#~ "story will ring false and be bland. No one will be interested. Write for "
+#~ "one person. If it’s genuine for the one, it’s genuine for the rest."
+#~ msgstr ""
+#~ "好的故事是為有同樣感觸的人所寫的。如果你試圖寫一個針對廣泛聽眾的通用故事，"
+#~ "那將聽起來很不可靠，而且還會很平淡，沒有人會感興趣。只為一個人寫，如果對一"
+#~ "個人來說很棒，那麼其他人也會覺得很棒。"
+
+#~ msgid ""
+#~ "Great stories have personality. Consider telling a great story that "
+#~ "provides personality. Writing a story with personality for potential "
+#~ "clients will assist with making a relationship connection. This shows up "
+#~ "in small quirks like word choices or phrases. Write from your point of "
+#~ "view, not from someone else's experience."
+#~ msgstr ""
+#~ "偉大的故事都是與眾不同。考慮講述一個有個性的精彩故事。針對客戶個性的故事能"
+#~ "夠使你跟潛在的客戶建立某種聯繫。這會在一些小詞語中體現出來。從你的角度寫，"
+#~ "而不是別人的經驗。"
+
+#~ msgid "Headers"
+#~ msgstr "主題"
+
+#~ msgid "Hello Bob,"
+#~ msgstr "Bob你好,"
+
+#~ msgid "Help"
+#~ msgstr "説明"
+
+#~ msgid "Hey Bob,"
+#~ msgstr "你好Bob,"
+
+#~ msgid "Hurry Up"
+#~ msgstr "快些"
+
+#~ msgid "Hurry Up!"
+#~ msgstr "快些！"
+
+#~ msgid ""
+#~ "I set up a profile where I can do tons of really awesome stuff! So I want "
+#~ "you to follow me and see it all. Once you join us, you'll be able to do "
+#~ "all sorts of new stuff too."
+#~ msgstr ""
+#~ "我設置了一個規則使我可以做大量的非常好的資料! 所以我想讓你和我一起看一下這"
+#~ "個規則。一旦你加入我們，你也可以做很多新的資料。"
+
+#~ msgid ""
+#~ "I set up a profile where I can do tons of really awesome stuff. I want "
+#~ "you to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我設置了一個規則使我可以做大量的非常好的資料! 我想讓你跟隨我，以便我們可以"
+#~ "保持聯繫!"
+
+#~ msgid ""
+#~ "I set up an Odoo profile where I can do tons of really awesome stuff. I "
+#~ "want you to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我設置了一個Odoo的規則使我可以做大量的非常好的資料! 所以我想讓你跟隨我，以"
+#~ "便我們保持聯繫!"
+
+#~ msgid ""
+#~ "I set up profile where I can do tons of really awesome stuff. I want you "
+#~ "to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我設置了一個規則使我可以做大量的非常好的資料! 所以我想讓你跟隨我，以便我們"
+#~ "保持聯繫!"
+
+#~ msgid "Info"
+#~ msgstr "信息"
+
+#~ msgid "Invoice: 00234"
+#~ msgstr "發票: 00234"
+
+#~ msgid "John Doe"
+#~ msgstr "John Doe"
+
+#~ msgid "Jul"
+#~ msgstr "七月"
+
+#~ msgid "Kind Regards,"
+#~ msgstr "<p>致敬,</p>"
+
+#~ msgid "Link"
+#~ msgstr "鏈結"
+
+#~ msgid "Mail Theme Colors"
+#~ msgstr "郵件主題的顏色"
+
+# 人名
+#~ msgid "Michael Fletcher"
+#~ msgstr "Michael Fletcher"
+
+#~ msgid "My Account"
+#~ msgstr "我的帳戶"
+
+#~ msgid "My Order"
+#~ msgstr "我的訂單"
+
+#~ msgid "Narrative"
+#~ msgstr "記錄"
+
+# 人名
+#~ msgid "Neopolitan"
+#~ msgstr "Neopolitan"
+
+#~ msgid "No background image"
+#~ msgstr "沒有背景圖片"
+
+#~ msgid ""
+#~ "Odoo is continuing to grow and we miss seeing you be a part of it! We've "
+#~ "increased store hours and have lot's of new brands available. To welcome "
+#~ "you back please accept this 20% discount on you next purchase by clicking "
+#~ "the button below."
+#~ msgstr ""
+#~ "Odoo不斷發展，我們希望你能加入我們! 我們的營業時間已經增加，也有很多新的品"
+#~ "牌加入。歡迎你的到來，請點擊下面鏈結可以在下次購買時優惠20%。"
+
+#~ msgid "Payment"
+#~ msgstr "支付"
+
+#~ msgid "Period"
+#~ msgstr "期間"
+
+#~ msgid "Place Order"
+#~ msgstr "提交打單"
+
+#~ msgid "Plan"
+#~ msgstr "計畫"
+
+#~ msgid "Redeem Discount!"
+#~ msgstr "較大折扣!"
+
+#~ msgid "Save 20% when you upgrade now!"
+#~ msgstr "如果你現在升級，將優惠20%!"
+
+#~ msgid "See you soon!"
+#~ msgstr "再見!"
+
+#~ msgid "Select"
+#~ msgstr "選擇"
+
+#~ msgid "Select a theme"
+#~ msgstr "選擇一個主題"
+
+#~ msgid "Shipping"
+#~ msgstr "物流"
+
+#~ msgid "Sign up now and receive a 20% discount!"
+#~ msgstr "立即註冊，優惠20%"
+
+#~ msgid "Silver Plan"
+#~ msgstr "銀色計畫"
+
+# Skyline是一套優秀的三維數位地球平臺軟體
+#~ msgid "Skyline"
+#~ msgstr "Skyline"
+
+#~ msgid "Step 1"
+#~ msgstr "第1步"
+
+#~ msgid "Step 1:"
+#~ msgstr "第1步:"
+
+#~ msgid "Step 2"
+#~ msgstr "第2步"
+
+#~ msgid "Step 2:"
+#~ msgstr "第2步:"
+
+#~ msgid "Step 3"
+#~ msgstr "第3步"
+
+#~ msgid "Step 3:"
+#~ msgstr "第3步:"
+
+#~ msgid "Sunday"
+#~ msgstr "星期天"
+
+#~ msgid "Support"
+#~ msgstr "支持"
+
+#~ msgid ""
+#~ "The amount of $50.00 CAD has been charged on the credit card ending with "
+#~ "0123."
+#~ msgstr "你的尾號0123的信息卡已被扣款50加幣。"
+
+#~ msgid "Theme"
+#~ msgstr "主題風格"
+
+#~ msgid "Title"
+#~ msgstr "職位"
+
+#~ msgid ""
+#~ "To track your order or make any changes please click the button below."
+#~ msgstr "請點擊以下按鈕，可跟蹤你的訂單或修改訂單。"
+
+#~ msgid "Track shipping"
+#~ msgstr "跟蹤物流"
+
+#~ msgid "Twitter"
+#~ msgstr "推特（Twitter）"
+
+#~ msgid "Upgrade"
+#~ msgstr "升級"
+
+#~ msgid "Upgrade to Premium Account!"
+#~ msgstr "升級到高級帳戶!"
+
+#~ msgid "User :"
+#~ msgstr "用戶:"
+
+#~ msgid "User: John Doe"
+#~ msgstr "用戶: John Doe"
+
+#~ msgid "V9P 2E8"
+#~ msgstr "V9P 2E8"
+
+#~ msgid "Victoria, BC"
+#~ msgstr "維多利亞商業中心"
+
+#~ msgid "Visit Now"
+#~ msgstr "訪問"
+
+#~ msgid ""
+#~ "We are continuing to grow and we miss seeing you be a part of it! We've "
+#~ "increased store hours and have lot's of new brands available. To welcome "
+#~ "you back please accept this 20% discount on you next purchase by clicking "
+#~ "the button below."
+#~ msgstr ""
+#~ "我們不斷發展，我們希望你能加入我們! 我們的營業時間已經增加，也有很多新的品"
+#~ "牌加入。歡迎你的到來，請點擊下面鏈結可以在下次購買時優惠20%。"
+
+#~ msgid ""
+#~ "We need you to update your account information. If there is ever a "
+#~ "problem with your account, this information will make it easier for you "
+#~ "to log back in."
+#~ msgstr ""
+#~ "我們需要你更新你的帳戶資訊。如果你的帳戶出現異常，這些資訊將更容易使你重新"
+#~ "登錄。"
+
+#~ msgid ""
+#~ "We would like to inform you that your order has shipped! More details "
+#~ "below."
+#~ msgstr "我們很高興地通知你，你的訂單已經發出! 更多資訊如下。"
+
+#~ msgid ""
+#~ "We would like you to know that you have successfully subscribed the news "
+#~ "letter. Following are the details about your plan."
+#~ msgstr "我們很高興通知你，新信件已經成功發送給你。下面是詳細計畫。"
+
+#~ msgid ""
+#~ "We would like you to know that your order has shipped! To track your "
+#~ "order or make any changes please click the \"my order\" button below."
+#~ msgstr ""
+#~ "我們很高興地通知你，你的訂單已經發出! 請你點擊“我的訂單”按鈕，可跟蹤或修改"
+#~ "訂單。"
+
+#~ msgid ""
+#~ "We would like you to know that your order has shipped! To view your order "
+#~ "or make any changes please click the \"my order\" button below."
+#~ msgstr ""
+#~ "我們很高興地通知你，你的訂單已經發出! 請你點擊“我的訂單”按鈕，可跟蹤或修改"
+#~ "訂單。"
+
+#~ msgid "Website communication history"
+#~ msgstr "網站社區日誌"
+
+#~ msgid "XLKIJP6887F"
+#~ msgstr "XLKIJP6887F"
+
+#~ msgid "YOUR ORDER HAS SHIPPED"
+#~ msgstr "你的訂單已經發貨！"
+
+#~ msgid "You get a 20% discount for signing up!"
+#~ msgstr "你註冊就可獲得20%的優惠!"
+
+#~ msgid ""
+#~ "You'll be the first to hear about new arrivals, exclusive promotionas, "
+#~ "cool collaborations, and the latest in everything."
+#~ msgstr "你將是第一個瞭解到的新貨上架，獨家廣告，互動合作及全新資訊。"
+
+#~ msgid "Your Company"
+#~ msgstr "你的公司"
+
+#~ msgid "Your Event Name"
+#~ msgstr "你的事件名稱"
+
+#~ msgid "Your Logo"
+#~ msgstr "你的標誌"
+
+#~ msgid "Your Order"
+#~ msgstr "你的訂單"
+
+#~ msgid "Your order has been shipped!"
+#~ msgstr "你的訂單已經被發貨！"
+
+#~ msgid "Your order has shipped!"
+#~ msgstr "你的訂單已經發貨！"
+
+# 專用名詞
+#~ msgid "Zen-Flat"
+#~ msgstr "Zen-Flat"
+
+#~ msgid "social icon"
+#~ msgstr "社交圖示"
+
+#~ msgid "template"
+#~ msgstr "範本"
+
+#~ msgid "unknown"
+#~ msgstr "未知的"
+
+#~ msgid "when you sign up!"
+#~ msgstr "當你註冊!"
+
+#~ msgid "{'editor_url': '/website_mail/field/email'}"
+#~ msgstr "{'editor_url': '/website_mail/field/email'}"
+
+#~ msgid "© 2014 All Rights Reserved"
+#~ msgstr "© 2014版權所有"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                  May - June 2014"
+#~ msgstr ""
+#~ "  \n"
+#~ "                                                    2014年5到6月"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                $39.99"
+#~ msgstr ""
+#~ "\n"
+#~ "                                                $39.99"
+
+#~ msgid "$39.99"
+#~ msgstr "$39.99"
+
+#~ msgid "Gold Status"
+#~ msgstr "最佳狀態"
+
+#~ msgid "May - June 2014"
+#~ msgstr "2014年5-6月"
+
+#~ msgid "Period"
+#~ msgstr "工作時間段"
+
+#~ msgid "A Great Headline"
+#~ msgstr "一個非常好的頭條"
+
+#~ msgid "A Punchy Headline"
+#~ msgstr "一個有力的標題"
+
+#~ msgid "A Section Subtitle"
+#~ msgstr "小節標題"
+
+#~ msgid "A Small Subtitle"
+#~ msgstr "小字幕"
+
+#~ msgid "A good subtitle"
+#~ msgstr "一個好字幕"
+
+#~ msgid ""
+#~ "A great way to catch your reader's attention is to tell a story.\n"
+#~ "                                    Everything you consider writing can "
+#~ "be told as a story."
+#~ msgstr ""
+#~ "一個吸引你的讀者注意力的方法是講述一個故事。\n"
+#~ "                                    你想的任何東西都可以一個故事的形式寫出"
+#~ "來。"
+
+#~ msgid "Access Denied"
+#~ msgstr "讀取被拒絕"
+
+#~ msgid "Advanced Email Features"
+#~ msgstr "高級電子郵件功能"
+
+#~ msgid "Allows website visitors to post comments on blogs, etc."
+#~ msgstr "允許網站的訪問者在博客上發表看法，等等。"
+
+#~ msgid "Back"
+#~ msgstr "返回"
+
+#~ msgid "Battery: 12 hours"
+#~ msgstr "電量：12小時"
+
+#~ msgid "Battery: 20 hours"
+#~ msgstr "電量：20小時"
+
+#~ msgid "Battery: 8 hours"
+#~ msgstr "電池：8小時"
+
+#~ msgid "Beginner"
+#~ msgstr "入門"
+
+#~ msgid "Big Message"
+#~ msgstr "大消息"
+
+#~ msgid "Big Picture"
+#~ msgstr "大圖片"
+
+#~ msgid "Button"
+#~ msgstr "按鈕"
+
+#~ msgid ""
+#~ "Choose a vibrant image and write an inspiring paragraph\n"
+#~ "                                about it. It does not have to be long, "
+#~ "but it should\n"
+#~ "                                reinforce your image."
+#~ msgstr ""
+#~ "選擇一個充滿生氣的圖片和寫一段充滿激情的文字。\n"
+#~ "                                文字不一定很長，但它應該\n"
+#~ "                                增強圖片的效果。"
+
+#~ msgid "Comparisons"
+#~ msgstr "對比"
+
+#~ msgid "Design Your Email"
+#~ msgstr "設計你的電子郵件格式"
+
+#~ msgid "Email Design"
+#~ msgstr "電子郵件的設計"
+
+#~ msgid "Email Templates"
+#~ msgstr "電子郵件範本"
+
+#~ msgid "Enterprise package"
+#~ msgstr "企業包"
+
+#~ msgid "Expert"
+#~ msgstr "專家"
+
+#~ msgid "Feature One"
+#~ msgstr "特性一"
+
+#~ msgid "Feature Three"
+#~ msgstr "特性樹"
+
+#~ msgid "Feature Two"
+#~ msgstr "特性二"
+
+#~ msgid "Free shipping, satisfied or reimbursed."
+#~ msgstr "免費送貨,滿足或補償"
+
+#~ msgid "From:"
+#~ msgstr "來自於："
+
+#~ msgid ""
+#~ "Great stories are for everyone even when only written for\n"
+#~ "                                    just one person."
+#~ msgstr "對每個人來說，即便是只為一個人寫的故事也是好故事."
+
+#~ msgid "Great stories have personality."
+#~ msgstr "好的故事通常都是有個性的."
+
+#~ msgid "Image-Text"
+#~ msgstr "圖片-文本"
+
+#~ msgid "Limited support"
+#~ msgstr "有限的幫助"
+
+#~ msgid "New Template"
+#~ msgstr "新的範本"
+
+#~ msgid "Order now"
+#~ msgstr "馬上訂購"
+
+#~ msgid "Professional"
+#~ msgstr "專業的"
+
+#~ msgid "Save and Continue"
+#~ msgstr "保存並繼續"
+
+#~ msgid "Screen: 2.5 inch"
+#~ msgstr "螢幕: 2.5英寸"
+
+#~ msgid "Screen: 2.8 inch"
+#~ msgstr "螢幕: 2.8英寸"
+
+#~ msgid "Sell Online. Easily."
+#~ msgstr "輕鬆的線上銷售"
+
+#~ msgid "Separator"
+#~ msgstr "分隔符號"
+
+#~ msgid "Starter Package"
+#~ msgstr "啟動包"
+
+#~ msgid "Subject:"
+#~ msgstr "主題:"
+
+#~ msgid "Text Block"
+#~ msgstr "文本塊"
+
+#~ msgid "Text-Image"
+#~ msgstr "文本-圖像"
+
+#~ msgid "Thanks for your subscription!"
+#~ msgstr "感謝你的提交！"
+
+#~ msgid "The top of the top"
+#~ msgstr "頂層的頂層"
+
+#~ msgid "Two Columns"
+#~ msgstr "二欄"
+
+#~ msgid "Unlimited support"
+#~ msgstr "無限制的支持"
+
+#~ msgid "View Product"
+#~ msgstr "查看產品"
+
+#~ msgid "Website Comments"
+#~ msgstr "網站聲明"
+
+#~ msgid "Weight: 1.1 ounces"
+#~ msgstr "重量：1.1盎司"
+
+#~ msgid "Weight: 1.2 ounces"
+#~ msgstr "重: 1.2 盎司"
+
+#~ msgid ""
+#~ "Write one or two paragraphs describing your product,\n"
+#~ "                                                    services or a "
+#~ "specific feature. To be successful\n"
+#~ "                                                    your content needs to "
+#~ "be useful to your readers."
+#~ msgstr ""
+#~ "寫一到兩端描述你的產品的文字，\n"
+#~ "                                                    服務或者一個特殊的特"
+#~ "性。 要想成功\n"
+#~ "                                                   你的內容需要對讀者有"
+#~ "用。"
+
+#~ msgid "Write one sentence to convince visitor about your message."
+#~ msgstr "寫一個消息來勸服你網站的訪問者"
+
+#~ msgid "per month"
+#~ msgstr "每月"
+
+#~ msgid "590"
+#~ msgstr "590"
+
+#~ msgid "450"
+#~ msgstr "450"
+
+#~ msgid "Content"
+#~ msgstr "內容"
+
+#~ msgid "To (Partners)"
+#~ msgstr "給 (業務夥伴)"
+
+#~ msgid "<a href=\"website_mail/email_designer/%s\">Edit in Website</a>"
+#~ msgstr "<a href=\"website_mail/email_designer/%s\">在網站中編輯</a>"
+
+#~ msgid ".00"
+#~ msgstr ".00"
+
+#~ msgid "Website Link"
+#~ msgstr "網站鏈結"
+
+#~ msgid "Effects"
+#~ msgstr "效果"
+
+#~ msgid "Structure"
+#~ msgstr "構造"
+
+#~ msgid "890"
+#~ msgstr "890"
+
+#~ msgid "Email From"
+#~ msgstr "電子郵件來自"
+
+#~ msgid "Features"
+#~ msgstr "產品特徵"
+
+#~ msgid "To (Email)"
+#~ msgstr "給 (電子郵件)"
+
+#~ msgid "Link to the website"
+#~ msgstr "鏈結到網站"
+
+#~ msgid "Reply To"
+#~ msgstr "回復給"

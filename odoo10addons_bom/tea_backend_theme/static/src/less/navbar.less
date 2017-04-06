@@ -1,0 +1,86 @@
+body
+{
+    height: 100%;
+	width: 100%;
+    @media (max-width: @screen-sm-max) {
+        overflow: inherit;
+        .o_main {
+            .oe-view-manager {
+                overflow: inherit;
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.app-name {
+	float: left;
+    font-size: 22px;
+    font-weight: 600;
+	color: white;
+    margin-right: 35px;
+	margin-top: 6px;
+}
+
+.main-nav {
+    margin-bottom: 0;
+    min-height: @app-drawer-navbar-height;
+	background: #747F8C; //747F8C
+    //background: -moz-linear-gradient(top,#747F8C 0%,#3D3D3D 100%);
+    //background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#747F8C),color-stop(100%,#2B3643));
+    //background: -webkit-linear-gradient(top,#747F8C 0%,#3D3D3D 100%);
+    //background: -o-linear-gradient(top,#747F8C 0%,#3D3D3D 100%);
+    //background: -ms-linear-gradient(top,#747F8C 0%,#3D3D3D 100%);
+    //background: linear-gradient(to bottom,#747F8C 0%,#3D3D3D 100%);
+	//border-bottom: 4px solid #E1E1E1;
+}
+
+.main-nav ul.nav > li > a {
+    padding: @app-drawer-navbar-padding-vertical @app-drawer-padding-horizontal;
+}
+
+.oe_topbar_avatar {
+    margin-top: -@app-drawer-padding-horizontal;
+    height: @app-drawer-navbar-height;
+    border-radius: 50%;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+a.navbar-collapse.collapse {
+    @media (min-width: @screen-sm) {
+        padding-bottom: @app-drawer-navbar-padding-vertical;
+        padding-top: @app-drawer-navbar-padding-vertical;
+    }
+}
+
+.dropdown-scrollable {
+    overflow-x: hidden;
+}
+
+@media (max-width: @screen-xs-max) {
+    #odooMenuBarNav[aria-expanded="false"] {
+        /* Hack to hide the visibly expanded mobile menu on load. */
+        //border: none!important;
+        position: absolute;
+        z-index: -9999;
+    }
+}
+
+.panel-heading {
+   border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-left: -15px;
+    margin-right: 0;
+}
+

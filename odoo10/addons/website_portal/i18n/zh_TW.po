@@ -1,27 +1,43 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * website_portal
+# 	* website_portal
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-02-10 09:49+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2016-12-23 11:17+0000\n"
+"PO-Revision-Date: 2016-12-29 18:57+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.portal_layout
+msgid ""
+"<span class=\"sr-only\">Toggle navigation</span>\n"
+"                            <span class=\"icon-bar\"/>\n"
+"                            <span class=\"icon-bar\"/>"
+msgstr ""
+"<span class=\"sr-only\">切換導航</span>\n"
+"                            <span class=\"icon-bar\"/>\n"
+"                            <span class=\"icon-bar\"/>"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.portal_archive_groups
+msgid "Archives"
+msgstr "檔案"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.portal_layout
 msgid "Change"
-msgstr "改變"
+msgstr "修改"
 
 #. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.details
@@ -34,19 +50,38 @@ msgid "Company Name"
 msgstr "公司名稱"
 
 #. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.details
+msgid ""
+"Confirm\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+"確認\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.contact
 msgid "Contact"
-msgstr "聯絡人"
+msgstr "聯繫人"
 
 #. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.details
 msgid "Contact Details"
-msgstr "連絡人詳細資料"
+msgstr "詳細聯繫方式"
 
 #. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.details
 msgid "Country"
-msgstr "國家/地區"
+msgstr "國家和地區"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.details
+msgid "Country..."
+msgstr "國家..."
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.custom_panel
+msgid "Custom Panel"
+msgstr "自定義面板"
 
 #. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.details
@@ -56,7 +91,13 @@ msgstr "詳情"
 #. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.details
 msgid "Email"
-msgstr "電郵"
+msgstr "郵件"
+
+#. module: website_portal
+#: code:addons/website_portal/controllers/main.py:104
+#, python-format
+msgid "Invalid Email! Please enter a valid email address."
+msgstr "無效的郵件地址！請輸入一個有效的郵件位址。"
 
 #. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.my_account_link
@@ -70,6 +111,47 @@ msgid "Phone"
 msgstr "電話"
 
 #. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.custom_panel
+msgid "Place your content here."
+msgstr "把你的內容放這裏。"
+
+#. module: website_portal
+#: code:addons/website_portal/controllers/main.py:120
+#, python-format
+msgid "Some required fields are empty."
+msgstr "一些必填欄位為空。"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.details
+msgid "State / Province"
+msgstr "州/省"
+
+#. module: website_portal
 #: model:ir.ui.view,arch_db:website_portal.details
 msgid "Street"
 msgstr "街道"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.details
+msgid "VAT Number"
+msgstr "增值稅號碼"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.portal_layout
+msgid "Your Details"
+msgstr "你的詳細資訊"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.details
+msgid "Your Name"
+msgstr "你的名稱"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.details
+msgid "Zip / Postal Code"
+msgstr "郵遞區號"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.details
+msgid "select..."
+msgstr "選擇..."

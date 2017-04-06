@@ -1,44 +1,398 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * website_sale_delivery
+# 	* website_sale_delivery
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-19 12:36+0000\n"
-"PO-Revision-Date: 2016-02-10 09:51+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-02-11 11:49+0800\n"
+"PO-Revision-Date: 2016-11-15 08:32+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rules_count
+msgid "# Analytic Rules"
+msgstr "# 分析規則"
+
+#. module: website_sale_delivery
+#: model:ir.ui.view,arch_db:website_sale_delivery.cart_delivery
+msgid ""
+"<span class=\"col-xs-6 text-right text-muted\" title=\"Delivery will be "
+"updated after choosing a new delivery method\"> Delivery:</span>"
+msgstr ""
+"<span class=\"col-xs-6 text-right text-muted\" title=\"在選擇了一個新的出貨方"
+"式後，出貨將被更新:</span>"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_accessory_product_ids
+msgid "Accessory Products"
+msgstr "配套產品"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_alternative_product_ids
+msgid "Appear on the product page"
+msgstr "顯示在產品頁面"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_accessory_product_ids
+msgid "Appear on the shopping cart"
+msgstr "顯示在購物車裏"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_asset_category_id
+msgid "Asset Type"
+msgstr "資產類型"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_available_in_pos
+msgid "Available in the Point of Sale"
+msgstr "在POS中有效"
 
 #. module: website_sale_delivery
 #: model:ir.model,name:website_sale_delivery.model_delivery_carrier
 msgid "Carrier"
-msgstr "運輸公司"
+msgstr "承運方"
 
 #. module: website_sale_delivery
-#: model:ir.ui.view,arch_db:website_sale_delivery.view_delivery_carrier_form_website_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_membership
+msgid "Check if the product is eligible for membership."
+msgstr "檢查產品是否適合會員。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_to_weight
+msgid ""
+"Check if the product should be weighted using the hardware scale integration"
+msgstr "如果產品需要使用電子秤進行稱重，需要勾選此核取方塊"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_available_in_pos
+msgid "Check if you want this product to appear in the Point of Sale"
+msgstr "如果希望產品可以在POS進行銷售，請勾選"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_purchase_requisition
+msgid ""
+"Check this box to generate Call for Tenders instead of generating requests "
+"for quotation from procurement."
+msgstr "勾選此項來生成招標單，而不是從補貨生成採購詢價單。"
+
+#. module: website_sale_delivery
+#: model:ir.ui.view,arch_db:website_sale_delivery.payment_delivery
+msgid "Choose your Delivery Method"
+msgstr "選擇你的送貨方式"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_uos_coeff
+msgid ""
+"Coefficient to convert default Unit of Measure to Unit of Sale uos = uom * "
+"coeff"
+msgstr "係數單位將從預設的計量單位轉換為銷售單位  uos=uom *係數"
+
+#. module: website_sale_delivery
+#: model:ir.ui.view,arch_db:website_sale_delivery.country_state_shipping
+msgid "Country..."
+msgstr "國家..."
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_membership_date_from
+msgid "Date from which membership becomes active."
+msgstr "會員資格開始生效的日期。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_membership_date_to
+msgid "Date until which membership remains active."
+msgstr "會員資格結束日期。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_deferred_revenue_category_id
+msgid "Deferred Revenue Type"
+msgstr "結轉收入類型"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_sale_order_amount_delivery
+msgid "Delivery Amount"
+msgstr "交貨數量"
+
+#. module: website_sale_delivery
+#: model:ir.ui.view,arch_db:website_sale_delivery.view_delivery_carrier_form
 msgid "Description"
 msgstr "說明"
 
 #. module: website_sale_delivery
+#: model:ir.ui.view,arch_db:website_sale_delivery.view_delivery_carrier_form
+msgid "Description displayed on the eCommerce and on the Online Quotations."
+msgstr "顯示在電子商務和在新報價單上的描述。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_description
+msgid "Description for Online Quotations"
+msgstr "線上報價描述"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_quote_description
+msgid "Description for the quote"
+msgstr "報價描述"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_website_sequence
+msgid "Determine the display order in the Website E-commerce"
+msgstr "確定在電子商務網站的顯示順序"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_sale_order_has_delivery
+msgid "Has an order line set for delivery"
+msgstr "對於出貨有一個訂單明細設置"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_sale_order_has_delivery
+msgid "Has delivery"
+msgstr "已出貨"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_intrastat_id
+msgid "Intrastat code"
+msgstr "內部統計代碼"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_landed_cost_ok
+msgid "Landed Costs"
+msgstr "到岸成本"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_membership
+msgid "Membership"
+msgstr "會籍"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_membership_date_to
+msgid "Membership End Date"
+msgstr "會籍結束日期"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_membership_date_from
+msgid "Membership Start Date"
+msgstr "會籍開始日期"
+
+#. module: website_sale_delivery
+#: code:addons/website_sale_delivery/models/sale_order.py:138
+#, python-format
+msgid ""
+"No shipping method is available for your current order and shipping address. "
+"Please contact us for more information."
+msgstr "在當前的訂單和出貨位址上沒有出貨方式。請聯繫我們獲得更多資訊。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_pos_categ_id
+msgid "Point of Sale Category"
+msgstr "POS分類"
+
+#. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_purchase_requisition
 msgid "Procurement"
-msgstr "採購"
+msgstr "補貨"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_alert_time
+msgid "Product Alert Time"
+msgstr "產品提醒時間"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_email_template_id
+msgid "Product Email Template"
+msgstr "產品的電子郵件範本"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_life_time
+msgid "Product Life Time"
+msgstr "產品生命週期"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_removal_time
+msgid "Product Removal Time"
+msgstr "產品移除週期"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_use_time
+msgid "Product Use Time"
+msgstr "產品使用時間"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_project_id
+msgid "Project"
+msgstr "項目"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rating_ids
+msgid "Rating"
+msgstr "評級"
 
 #. module: website_sale_delivery
 #: model:ir.model,name:website_sale_delivery.model_sale_order
 msgid "Sales Order"
-msgstr "銷貨單"
+msgstr "銷售訂單"
+
+#. module: website_sale_delivery
+#: model:ir.ui.view,arch_db:website_sale_delivery.country_state_shipping
+msgid "Select..."
+msgstr "選擇..."
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_sequence
+msgid "Sequence"
+msgstr "序列"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_size_x
+msgid "Size X"
+msgstr "X 尺寸"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_size_y
+msgid "Size Y"
+msgstr "Y 尺寸"
+
+#. module: website_sale_delivery
+#: code:addons/website_sale_delivery/models/sale_order.py:137
+#, python-format
+msgid "Sorry, we are unable to ship your order"
+msgstr "對不起，我們不能對你的訂單進行出貨"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_uos_id
+msgid ""
+"Specify a unit of measure here if invoicing is made in another unit of "
+"measure than inventory. Keep empty to use the default unit of measure."
+msgstr ""
+"如果發票中的單位和倉庫中的不同，你可以指定一個單位，也可以留空來使用預設單"
+"位。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_split_method
+msgid "Split Method"
+msgstr "分攤方法"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_style_ids
+msgid "Styles"
+msgstr "樣式"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_alternative_product_ids
+msgid "Suggested Products"
+msgstr "推薦的產品"
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_sale_order_amount_delivery
 msgid "The amount without tax."
-msgstr "未稅金額"
+msgstr "金額（不含稅）"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_website_url
+msgid "The full URL to access the document through the website."
+msgstr "從網站登入文件的完整URL位址。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_public_categ_ids
+msgid "Those categories are used to group similar products for e-commerce."
+msgstr "這些分類是了為電子商務而將類似的產品進行分組。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_pos_categ_id
+msgid "Those categories are used to group similar products for point of sale."
+msgstr "這些分類將POS中的類似產品分組。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_to_weight
+msgid "To Weigh With Scale"
+msgstr "使用計量秤來稱重"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_uos_coeff
+msgid "Unit of Measure -> UOS Coeff"
+msgstr "計量單位 -> 計量單位係數"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_uos_id
+msgid "Unit of Sale"
+msgstr "銷售單位"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_published
+msgid "Visible in Website"
+msgstr "在網站中可見"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_message_ids
+msgid "Website Comments"
+msgstr "網站評論"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_public_categ_ids
+msgid "Website Product Category"
+msgstr "網站產品分類"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_url
+msgid "Website URL"
+msgstr "網站URL"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_meta_description
+msgid "Website meta description"
+msgstr "網站元描述"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_meta_keywords
+msgid "Website meta keywords"
+msgstr "網站元關鍵字"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_meta_title
+msgid "Website meta title"
+msgstr "網站元標題"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_alert_time
+msgid ""
+"When a new a Serial Number is issued, this is the number of days before an "
+"alert should be notified."
+msgstr "當一個新的問題的序列號產生時，這是提前警告的天數。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_life_time
+msgid ""
+"When a new a Serial Number is issued, this is the number of days before the "
+"goods may become dangerous and must not be consumed."
+msgstr "當一個新的問題的序列號產生時，這是產品無法確認安全因而不能使用的天數。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_removal_time
+msgid ""
+"When a new a Serial Number is issued, this is the number of days before the "
+"goods should be removed from the stock."
+msgstr "當一個新的問題序列號產生時，這是產品應該從庫存中移除的天數。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_use_time
+msgid ""
+"When a new a Serial Number is issued, this is the number of days before the "
+"goods starts deteriorating, without being dangerous yet."
+msgstr "當一個新的問題序列號產生時，這是貨物沒有質變之前的天數。"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_email_template_id
+msgid ""
+"When validating an invoice, an email will be sent to the customer based on "
+"this template. The customer will receive an email for each product linked to "
+"an email template."
+msgstr ""
+"批准發票時，基於此範本的電子郵件將會被發送給客戶。客戶會收到一封關聯到一個郵"
+"件範本的關於每個產品的郵件。"

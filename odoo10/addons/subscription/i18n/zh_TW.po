@@ -1,28 +1,29 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * subscription
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-02-10 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2015-11-15 11:58+0800\n"
+"PO-Revision-Date: 2016-11-15 08:41+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 06:05+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_active
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_active
 msgid "Active"
-msgstr "活躍"
+msgstr "有效"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_create_uid
@@ -30,7 +31,7 @@ msgstr "活躍"
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_create_uid
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_history_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_create_date
@@ -38,12 +39,12 @@ msgstr "建立者"
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_create_date
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_history_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_cron_id
 msgid "Cron Job"
-msgstr "定時作業（Cron Job）"
+msgstr "定時作業"
 
 #. module: subscription
 #: selection:subscription.document.fields,value:0
@@ -64,6 +65,16 @@ msgstr "日"
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_fields_value
 msgid "Default Value"
 msgstr "預設值"
+
+#. module: subscription
+#: model:ir.model.fields,help:subscription.field_subscription_document_fields_value
+msgid "Default value is considered for field when new document is generated."
+msgstr "預設值是生成新文件時參考的欄位"
+
+#. module: subscription
+#: model:ir.model.fields,help:subscription.field_subscription_subscription_note
+msgid "Description or Summary of Subscription"
+msgstr "訂閱的說明或摘要"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_display_name
@@ -87,12 +98,12 @@ msgstr "完成"
 #. module: subscription
 #: selection:subscription.subscription,state:0
 msgid "Draft"
-msgstr "草案"
+msgstr "草稿"
 
 #. module: subscription
 #: selection:subscription.document.fields,value:0
 msgid "False"
-msgstr "否"
+msgstr "False"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_fields_field
@@ -107,12 +118,12 @@ msgstr "欄位"
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_date_init
 msgid "First Date"
-msgstr "首個日期"
+msgstr "首次日期"
 
 #. module: subscription
 #: model:ir.ui.view,arch_db:subscription.view_subscription_filter
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組被"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_fields_id
@@ -120,13 +131,32 @@ msgstr "分組方式"
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_history_id
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: subscription
+#: model:ir.model.fields,help:subscription.field_subscription_document_active
+msgid ""
+"If the active field is set to False, it will allow you to hide the "
+"subscription document without removing it."
+msgstr "如果有效欄位為false，它將允許你隱藏訂閱這文件，並隨後刪除它。"
+
+#. module: subscription
+#: model:ir.model.fields,help:subscription.field_subscription_subscription_active
+msgid ""
+"If the active field is set to False, it will allow you to hide the "
+"subscription without removing it."
+msgstr "如果有效欄位設為false，允許你隱藏這訂閱並隨後刪除它。"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_notes
 #: model:ir.ui.view,arch_db:subscription.view_subscription_form
 msgid "Internal Notes"
 msgstr "內部備註"
+
+#. module: subscription
+#: model:ir.model.fields,field_description:subscription.field_subscription_subscription_interval_number
+msgid "Interval Qty"
+msgstr "間隔數量"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_interval_type
@@ -139,7 +169,7 @@ msgstr "間隔單位"
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription___last_update
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_history___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_fields_write_uid
@@ -147,7 +177,7 @@ msgstr "最後修改:"
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_history_write_uid
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_fields_write_date
@@ -155,7 +185,7 @@ msgstr "最後更新："
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_history_write_date
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
 
 #. module: subscription
 #: selection:subscription.subscription,interval_type:0
@@ -175,31 +205,63 @@ msgid "Notes"
 msgstr "備註"
 
 #. module: subscription
+#: model:ir.model.fields,field_description:subscription.field_subscription_subscription_exec_init
+msgid "Number of documents"
+msgstr "文件號碼"
+
+#. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_document_model
 msgid "Object"
-msgstr "物件"
+msgstr "對象"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_partner_id
 #: model:ir.ui.view,arch_db:subscription.view_subscription_filter
 msgid "Partner"
-msgstr "伙伴"
+msgstr "業務夥伴"
+
+#. module: subscription
+#: code:addons/subscription/subscription.py:101
+#, python-format
+msgid ""
+"Please provide another source document.\n"
+"This one does not exist!"
+msgstr ""
+"該文件不存在，\n"
+"請提供另外的源文件！"
 
 #. module: subscription
 #: model:ir.ui.view,arch_db:subscription.view_subscription_form
 msgid "Process"
-msgstr "處理程序"
+msgstr "執行"
+
+#. module: subscription
+#: model:ir.actions.act_window,name:subscription.action_subscription_form
+#: model:ir.ui.menu,name:subscription.menu_action_subscription_form
+msgid "Recurring Documents"
+msgstr "週期性文件"
+
+#. module: subscription
+#: model:ir.actions.act_window,name:subscription.action_document_form
+#: model:ir.ui.menu,name:subscription.menu_action_document_form
+msgid "Recurring Types"
+msgstr "週期性類型"
 
 #. module: subscription
 #: model:ir.ui.view,arch_db:subscription.view_subscription_filter
 #: selection:subscription.subscription,state:0
 msgid "Running"
-msgstr "運行中"
+msgstr "執行"
+
+#. module: subscription
+#: model:ir.model.fields,help:subscription.field_subscription_subscription_cron_id
+msgid "Scheduler which runs on subscription"
+msgstr "調度執行訂閱"
 
 #. module: subscription
 #: model:ir.ui.view,arch_db:subscription.view_subscription_filter
 msgid "Search Subscription"
-msgstr "搜尋訂閱"
+msgstr "搜索預約"
 
 #. module: subscription
 #: model:ir.ui.view,arch_db:subscription.view_subscription_form
@@ -210,7 +272,7 @@ msgstr "設為草稿"
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_doc_source
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_history_document_id
 msgid "Source Document"
-msgstr "源單據"
+msgstr "源文件"
 
 #. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_state
@@ -250,12 +312,12 @@ msgstr "訂閱文件欄位"
 #: model:ir.ui.view,arch_db:subscription.subscription_subscription_history_form
 #: model:ir.ui.view,arch_db:subscription.subscription_subscription_history_tree
 msgid "Subscription History"
-msgstr "訂閱歷史"
+msgstr "訂閱日誌"
 
 #. module: subscription
 #: model:ir.model,name:subscription.model_subscription_subscription_history
 msgid "Subscription history"
-msgstr "訂閱歷史"
+msgstr "訂閱日誌"
 
 #. module: subscription
 #: model:ir.ui.view,arch_db:subscription.view_subscription_form
@@ -264,12 +326,38 @@ msgid "Subscriptions"
 msgstr "訂閱"
 
 #. module: subscription
+#: model:ir.ui.view,arch_db:subscription.view_subscription_form
+msgid "Subsription Data"
+msgstr "訂閱數量"
+
+#. module: subscription
 #: model:ir.model.fields,field_description:subscription.field_subscription_subscription_user_id
 #: model:ir.ui.view,arch_db:subscription.view_subscription_filter
 msgid "User"
 msgstr "用戶"
 
 #. module: subscription
+#: model:ir.model.fields,help:subscription.field_subscription_subscription_doc_source
+msgid ""
+"User can choose the source document on which he wants to create documents"
+msgstr "用戶可以選擇他希望創建文件的源文件"
+
+#. module: subscription
 #: selection:subscription.subscription,interval_type:0
 msgid "Weeks"
-msgstr "週"
+msgstr "周"
+
+#. module: subscription
+#: code:addons/subscription/subscription.py:128
+#, python-format
+msgid "You cannot delete an active subscription!"
+msgstr "你不能刪除一個活動的訂閱！"
+
+#~ msgid "Error!"
+#~ msgstr "錯誤!"
+
+#~ msgid "Wrong Source Document!"
+#~ msgstr "不正確的源文件！"
+
+#~ msgid "Document Types"
+#~ msgstr "文件類型"

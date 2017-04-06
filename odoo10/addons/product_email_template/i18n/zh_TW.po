@@ -1,27 +1,31 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * product_email_template
+# 	* product_email_template
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-01-13 08:54+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-02-19 21:55+0800\n"
+"PO-Revision-Date: 2016-11-15 08:48+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #. module: product_email_template
 #: model:ir.ui.view,arch_db:product_email_template.email_template_form_simplified
 msgid "Body"
-msgstr "內容"
+msgstr "正文"
+
+#. module: product_email_template
+#: model:ir.ui.view,arch_db:product_email_template.email_template_form_simplified
+msgid "Email Template"
+msgstr "電子郵件範本"
 
 #. module: product_email_template
 #: model:ir.model,name:product_email_template.model_account_invoice
@@ -30,10 +34,36 @@ msgstr "發票"
 
 #. module: product_email_template
 #: model:ir.ui.view,arch_db:product_email_template.product_template_form_view
+msgid "Invoice Confirmation Email"
+msgstr "發票確認郵件"
+
+#. module: product_email_template
+#: model:ir.ui.view,arch_db:product_email_template.product_template_form_view
 msgid "Miscellaneous"
-msgstr "雜項"
+msgstr "其他"
+
+#. module: product_email_template
+#: model:ir.model.fields,field_description:product_email_template.field_product_template_email_template_id
+msgid "Product Email Template"
+msgstr "產品的電子郵件範本"
 
 #. module: product_email_template
 #: model:ir.model,name:product_email_template.model_product_template
 msgid "Product Template"
 msgstr "產品範本"
+
+#. module: product_email_template
+#: model:ir.model.fields,help:product_email_template.field_product_template_email_template_id
+msgid ""
+"When validating an invoice, an email will be sent to the customer based on "
+"this template. The customer will receive an email for each product linked to "
+"an email template."
+msgstr ""
+"驗證發票時，基於此範本的電子郵件將會被發送給客戶。客戶會收到一封關聯到郵件模"
+"板的關於每個產品的郵件。"
+
+#~ msgid "Website Messages"
+#~ msgstr "網站消息"
+
+#~ msgid "Website communication history"
+#~ msgstr "網站溝通歷史"

@@ -1,32 +1,88 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * portal
+# 	* portal
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-02-10 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-07-29 22:17+0800\n"
+"PO-Revision-Date: 2016-11-15 08:50+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: portal
+#: model:mail.template,body_html:portal.mail_template_data_portal_welcome
+msgid ""
+"\n"
+"<p>\n"
+"    Dear ${object.user_id.name or ''},\n"
+"</p>\n"
+"<p>\n"
+"    You have been given access to ${user.company_id.name}'s ${object."
+"wizard_id.portal_id.name}.\n"
+"</p>\n"
+"<p>\n"
+"    Your login account data is:\n"
+"</p>\n"
+"<ul>\n"
+"    <li>Username: ${object.user_id.login or ''}</li>\n"
+"    <li>Portal: <a href=\"${'portal_url' in ctx and ctx['portal_url'] or "
+"''}\">${'portal_url' in ctx and ctx['portal_url'] or ''}</a></li>\n"
+"\t<li>Database: ${'dbname' in ctx and ctx['dbname'] or ''}</li>\n"
+"</ul>\n"
+"<p>\n"
+"\tYou can set or change your password via the following url:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${object.user_id.signup_url}\">${object.user_id.signup_url}"
+"</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"${object.wizard_id.welcome_message or ''}"
+msgstr ""
+"\n"
+"<p>\n"
+"    尊敬的 ${object.user_id.name or ''},\n"
+"</p>\n"
+"<p>\n"
+"    你被授权访问 ${user.company_id.name}的 ${object.wizard_id.portal_id."
+"name}.\n"
+"</p>\n"
+"<p>\n"
+"   你的登陆账号信息为:\n"
+"</p>\n"
+"<ul>\n"
+"    <li>用户名: ${object.user_id.login or ''}</li>\n"
+"    <li>门户: <a href=\"${'portal_url' in ctx and ctx['portal_url'] or ''}\">"
+"${'portal_url' in ctx and ctx['portal_url'] or ''}</a></li>\n"
+"\t<li>数据库: ${'dbname' in ctx and ctx['dbname'] or ''}</li>\n"
+"</ul>\n"
+"<p>\n"
+"\t你可以用下面的链接来设置或更改你的密码:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${object.user_id.signup_url}\">${object.user_id.signup_url}"
+"</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"${object.wizard_id.welcome_message or ''}"
 
 #. module: portal
 #: model:ir.model,name:portal.model_res_groups
 msgid "Access Groups"
-msgstr "存取群組"
+msgstr "访问用户组"
 
 #. module: portal
 #: model:ir.ui.view,arch_db:portal.wizard_view
 msgid "Apply"
-msgstr "套用"
+msgstr "应用"
 
 #. module: portal
 #: model:ir.ui.view,arch_db:portal.wizard_view
@@ -36,77 +92,550 @@ msgstr "取消"
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_partner_id
 msgid "Contact"
-msgstr "聯絡人"
+msgstr "联系人"
 
 #. module: portal
 #: model:ir.ui.view,arch_db:portal.wizard_view
 msgid "Contacts"
-msgstr "聯絡人"
+msgstr "联系我们"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_create_uid
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "创建者"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_create_date
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "创建在"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_display_name
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_display_name
 msgid "Display Name"
-msgstr "顯示名稱"
+msgstr "显示名称"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_email
 msgid "Email"
-msgstr "電郵"
+msgstr "Email"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_id
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: portal
+#: model:ir.model.fields,help:portal.field_res_groups_is_portal
+msgid "If checked, this group is usable as a portal."
+msgstr "如果勾选，这个组可以作为门户"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_in_portal
+msgid "In Portal"
+msgstr "在门户中"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_welcome_message
 msgid "Invitation Message"
-msgstr "邀請訊息"
+msgstr "邀请消息"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard___last_update
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最后修改日期"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_write_uid
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最后更新者"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_write_date
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最后更新时间"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_user_id
+msgid "Login User"
+msgstr "登陆用户"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.group_search_view
+msgid "Non-Portal Groups"
+msgstr "非门户组"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_portal_id
 #: model:ir.model.fields,field_description:portal.field_res_groups_is_portal
 msgid "Portal"
-msgstr "網站"
+msgstr "门户"
+
+#. module: portal
+#: model:ir.actions.act_window,name:portal.partner_wizard_action
+#: model:ir.model,name:portal.model_portal_wizard
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid "Portal Access Management"
+msgstr "门户访问管理"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.group_search_view
+msgid "Portal Groups"
+msgstr "门户组"
+
+#. module: portal
+#: model:ir.model,name:portal.model_portal_wizard_user
+msgid "Portal User Config"
+msgstr "门户用户设置"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid ""
+"Select which contacts should belong to the portal in the list below.\n"
+"                        The email address of each selected contact must be "
+"valid and unique.\n"
+"                        If necessary, you can fix any contact's email "
+"address directly in the list."
+msgstr ""
+"选择哪个联系人属于以下列表中的门户。\n"
+"                        每个选定的联系人的电子邮件地址必须有效和唯一。\n"
+"                        如果必要的话，可以直接在列表中修正电子邮件地址。"
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:106
+#, python-format
+msgid "Several contacts have the same email: "
+msgstr "多个联系人拥有同一个邮箱："
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:103
+#, python-format
+msgid "Some contacts don't have a valid email: "
+msgstr "一些联系人没有有效的邮箱："
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:109
+#, python-format
+msgid "Some contacts have the same email as an existing portal user:"
+msgstr "一个联系人的邮箱和已存在的门户用户的邮箱相同："
+
+#. module: portal
+#: model:ir.model.fields,help:portal.field_portal_wizard_portal_id
+msgid "The portal that users can be added in or removed from."
+msgstr "用户可以添加或删除该门户网站信息"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid "This text is included in the email sent to new portal users."
+msgstr "这段文字将包含在发送给新门户网站用户的电子邮件中。"
+
+#. module: portal
+#: model:ir.model.fields,help:portal.field_portal_wizard_welcome_message
+msgid "This text is included in the email sent to new users of the portal."
+msgstr "这段文字包含门户网站的新用户发送的电子邮件"
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:112
+#, python-format
+msgid ""
+"To resolve this error, you can: \n"
+"- Correct the emails of the relevant contacts\n"
+"- Grant access only to contacts with unique emails"
+msgstr ""
+"要解决这个错误，你可以： \n"
+"- 更正相关联系人的邮箱\n"
+"- 仅允许拥有唯一的邮箱地址的联系人访问。"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_ids
 msgid "Users"
-msgstr "用戶"
+msgstr "用户"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user_wizard_id
 msgid "Wizard"
-msgstr "精靈"
+msgstr "向导"
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:173
+#, python-format
+msgid "You must have an email address in your User Preferences to send emails."
+msgstr "你的个人设置里必须要输入电子邮件地址才能发送邮件"
+
+#. module: portal
+#: model:mail.template,subject:portal.mail_template_data_portal_welcome
+msgid "Your Odoo account at ${user.company_id.name}"
+msgstr "你的Odoo帐号在 ${user.company_id.name}"
+
+#~ msgid "After Sale Services"
+#~ msgstr "售后服务"
+
+#~ msgid "Billing"
+#~ msgstr "账单"
+
+#~ msgid "Projects"
+#~ msgstr "项目"
+
+#~ msgid ""
+#~ "Dear %(name)s,\n"
+#~ "\n"
+#~ "You have been given access to %(company)s's %(portal)s.\n"
+#~ "\n"
+#~ "Your login account data is:\n"
+#~ "  Username: %(login)s\n"
+#~ "  Portal: %(portal_url)s\n"
+#~ "  Database: %(db)s \n"
+#~ "\n"
+#~ "You can set or change your password via the following url:\n"
+#~ "   %(signup_url)s\n"
+#~ "\n"
+#~ "%(welcome_message)s\n"
+#~ "\n"
+#~ "--\n"
+#~ "Odoo - Open Source Business Applications\n"
+#~ "http://www.openerp.com\n"
+#~ msgstr ""
+#~ "尊敬的 %(name)s,\n"
+#~ "\n"
+#~ "你被允许访问 %(company)s 的 %(portal)s.\n"
+#~ "\n"
+#~ "你的登录信息为:\n"
+#~ "用户名: %(login)s\n"
+#~ "门户l: %(portal_url)s\n"
+#~ "数据库: %(db)s\n"
+#~ "\n"
+#~ "你可以设置或更改你的密码，通过下面网址:\n"
+#~ "   %(signup_url)s\n"
+#~ "\n"
+#~ "%(welcome_message)s\n"
+#~ "\n"
+#~ "--\n"
+#~ "Odoo - 开源商业应用解决方案\n"
+#~ "http://www.odoo.com\n"
+
+#~ msgid "Email Thread"
+#~ msgstr "邮件线程"
+
+#~ msgid "Inbox"
+#~ msgstr "收件箱"
+
+#~ msgid "Messaging"
+#~ msgstr "消息"
+
+#~ msgid "Outgoing Mails"
+#~ msgstr "外发邮件"
+
+#~ msgid "access directly to"
+#~ msgstr "直接访问"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid "your messages "
+#~ msgstr "你的消息"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                    <b>Good Job!</b> Your inbox is empty.\n"
+#~ "                </p><p>\n"
+#~ "                    Your inbox contains private messages or emails sent "
+#~ "to you\n"
+#~ "                    as well as information related to documents or people "
+#~ "you\n"
+#~ "                    follow.\n"
+#~ "                </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p>\n"
+#~ "                    <b>做的不错!</b> 你的收件箱是空的。\n"
+#~ "                </p><p>\n"
+#~ "                    除了你关注的文档和人的最新动态，\n"
+#~ "                    你的收件箱还包含了未处理的私人信息和邮件。\n"
+#~ "                </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                    <b>No todo.</b>\n"
+#~ "                </p><p>\n"
+#~ "                    When you process messages in your inbox, you can mark "
+#~ "some\n"
+#~ "                    as <i>todo</i>. From this menu, you can process all "
+#~ "your todo.\n"
+#~ "                </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "没有待办事项，当你处理收件箱中的邮件时，你可以标记一些作为待办事项。\n"
+#~ "从这个菜单中，你能处理所有的待办事项。"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                    No message found and no message sent yet.\n"
+#~ "                </p><p>\n"
+#~ "                    Click on the top-right icon to compose a message. "
+#~ "This\n"
+#~ "                    message will be sent by email if it's an internal "
+#~ "contact.\n"
+#~ "                </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "没有发现未发送的信息。\n"
+#~ "单击右上角的图标来撰写信息。如果接收人是内部联系人，信息将被通过电子邮件发"
+#~ "送。"
+
+#~ msgid "Access Denied"
+#~ msgstr "存取被拒绝"
+
+#~ msgid "Archives"
+#~ msgstr "无效"
+
+#~ msgid "Contacts Error"
+#~ msgstr "联系错误"
+
+#~ msgid "Details"
+#~ msgstr "详情"
+
+#~ msgid "Email Required"
+#~ msgstr "必须输入邮箱地址"
+
+#~ msgid "Existing Groups (e.g Portal Groups)"
+#~ msgstr "已经存在组（例如 门户组）"
+
+#~ msgid "Existing groups"
+#~ msgstr "现有的组"
+
+#~ msgid "Existing users"
+#~ msgstr "现有用户"
+
+#~ msgid "Message"
+#~ msgstr "消息"
+
+#~ msgid "Please select at least one group to share with"
+#~ msgstr "请选择要分享信息的至少一个用户组"
+
+#~ msgid "Please select at least one user to share with"
+#~ msgstr "请选择要分享信息的至少一个用户"
+
+#~ msgid "Share Wizard"
+#~ msgstr "共享向导"
+
+#~ msgid ""
+#~ "The requested operation cannot be completed due to security restrictions. "
+#~ "Please contact your system administrator.\n"
+#~ "\n"
+#~ "(Document type: %s, Operation: %s)"
+#~ msgstr ""
+#~ "因为安全限制，所要求的操作不能完成，请联系系统管理员。\n"
+#~ "\n"
+#~ "(文件类型: %s,操作： %s)"
+
+#~ msgid "To-do"
+#~ msgstr "待办事项"
+
+#~ msgid "Users you already shared with"
+#~ msgstr "你已经分享的用户"
+
+#~ msgid ""
+#~ ", <span class='oe_mail_footer_access'><small>access %s %s through <a "
+#~ "style='color:inherit' href=\"%s\">our Customer Portal</a></small></span>"
+#~ msgstr ""
+#~ ", <span class='oe_mail_footer_access'><small>读取 %s %s 通过 <a "
+#~ "style='color:inherit' href=\"%s\">我们公司的门户</a></small></span>"
+
+#~ msgid "Mako"
+#~ msgstr "Mako"
+
+#~ msgid "Company Jobs"
+#~ msgstr "公司招聘"
+
+#~ msgid "<p>Access this document <a href=\"%s\">directly in Odoo</a></p>"
+#~ msgstr "<p>在Odoo中，直接 <a href=\"%s\">访问此文件</a></p>"
+
+#~ msgid "reference: the reference number of the document to pay"
+#~ msgstr "参考：要支付的文件关联的参考号"
+
+#~ msgid ""
+#~ "Make this payment acquirer available in portal forms (Customer invoices, "
+#~ "etc.)"
+#~ msgstr "请支付收购方在门户网站的形式（客户发票等）"
+
+#~ msgid ""
+#~ ", so it may use Mako expressions.\n"
+#~ "                                The Mako evaluation context provides:"
+#~ msgstr "所以它可能会使用 Mako  表达式。Mako的评价内容为"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                    Youd don't have unread company's news.\n"
+#~ "                </p>\n"
+#~ "            "
+#~ msgstr "未读的公司信息"
+
+#~ msgid "Jobs"
+#~ msgstr "招聘"
+
+#~ msgid "Pay safely online"
+#~ msgstr "安全在线支付"
+
+#~ msgid "No online payment acquirers configured"
+#~ msgstr "没有设置在线支付受让人"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                    Youd don't have unread job offers.\n"
+#~ "                </p>\n"
+#~ "            "
+#~ msgstr "未读的招聘信息"
+
+#~ msgid "Anonymous"
+#~ msgstr "任何人"
+
+#~ msgid "News"
+#~ msgstr "新闻"
+
+#~ msgid ""
+#~ "Portal members have specific access rights (such as record rules and "
+#~ "restricted menus).\n"
+#~ "                They usually do not belong to the usual Odoo groups."
+#~ msgstr ""
+#~ "门户成员有特定的访问权限（如创纪录的规则和限制菜单）  他们通常不属于通常的"
+#~ "Odoo的组"
+
+#~ msgid "Payment Acquirers"
+#~ msgstr "支付受让人"
+
+#~ msgid "Name"
+#~ msgstr "名称"
+
+#~ msgid "uid: the current user id"
+#~ msgstr "uid: 当前用户 id"
+
+#~ msgid ""
+#~ "kind: the kind of document on which the payment form is rendered "
+#~ "(translated to user language, e.g. \"Invoice\")"
+#~ msgstr ""
+#~ "类型: 文档类型，在它里面其付款单格式被更新（例如：“Ivoice”被翻译为自己的语"
+#~ "言“发票”）。"
+
+#~ msgid ""
+#~ "quote(): a method to quote special string character to make them suitable "
+#~ "for inclusion in a URL"
+#~ msgstr "quote():使它们适合于包含在URL中引用特殊的字符串中的字符"
+
+#~ msgid "amount: the total amount to pay, as a float"
+#~ msgstr "合计：需要支付的总数，浮点数"
+
+#~ msgid ""
+#~ "<p>Access your messages and personal documents through <a href=\"%s\">our "
+#~ "Customer Portal</a></p>"
+#~ msgstr ""
+#~ "<p>要访问你的消息和私人文档可通过 <a href=\"%s\">our Customer Portal</a></"
+#~ "p>"
+
+#~ msgid "Payment form template (HTML)"
+#~ msgstr "支付表格模板（HTML）"
+
+#~ msgid ""
+#~ "Anonymous users have specific access rights (such as record rules and "
+#~ "restricted menus).\n"
+#~ "                They usually do not belong to the usual Odoo groups."
+#~ msgstr ""
+#~ "匿名用户有特定的访问权限（如创纪录的规则和限制菜单）他们通常不属于通常的"
+#~ "Odoo的组"
+
+#~ msgid "Online Payment Acquirer"
+#~ msgstr "在线支付受让人"
+
+#~ msgid "Company News"
+#~ msgstr "公司新闻"
+
+#~ msgid ""
+#~ "You can finish the configuration in the <a href=\"%s\">Bank&Cash "
+#~ "settings</a>"
+#~ msgstr "可以在 <a href=\"%s\">银行&现金设置</a> 中完成设置"
+
+#~ msgid "cr: the current database cursor"
+#~ msgstr "cr: 当前数据库游标"
+
+#~ msgid ""
+#~ "object: the document on which the payment form is rendered (usually an "
+#~ "invoice or sales order record)"
+#~ msgstr "“对象：支付明细（通常是发票或销售订单记录）”"
+
+#~ msgid "About Us"
+#~ msgstr "关于我们"
+
+#~ msgid "Payment Acquirer"
+#~ msgstr "支付受让人"
+
+#~ msgid ""
+#~ "currency: the currency record in which the document is issued (e.g. "
+#~ "currency.name could be EUR)"
+#~ msgstr ""
+#~ "currency: the currency record in which the document is issued (e.g. "
+#~ "currency.name could be EUR)"
+
+#~ msgid ""
+#~ "\n"
+#~ "% if object.company_id.paypal_account:\n"
+#~ "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" "
+#~ "target=\"_blank\">\n"
+#~ "  <input type=\"hidden\" name=\"cmd\" value=\"_xclick\"/>\n"
+#~ "  <input type=\"hidden\" name=\"business\" value=\"${object.company_id."
+#~ "paypal_account}\"/>\n"
+#~ "  <input type=\"hidden\" name=\"item_name\" value=\"${object.company_id."
+#~ "name} ${kind.title()} ${reference}\"/>\n"
+#~ "  <input type=\"hidden\" name=\"amount\" value=\"${amount}\"/>\n"
+#~ "  <input type=\"hidden\" name=\"currency_code\" value=\"${currency."
+#~ "name}\"/>\n"
+#~ "  <input type=\"image\" name=\"submit\" src=\"https://www.paypal.com/"
+#~ "en_US/i/btn/btn_paynowCC_LG.gif\"/>\n"
+#~ "</form>\n"
+#~ "% endif\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "% if object.company_id.paypal_account:\n"
+#~ "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" "
+#~ "target=\"_blank\">\n"
+#~ "  <input type=\"hidden\" name=\"cmd\" value=\"_xclick\"/>\n"
+#~ "  <input type=\"hidden\" name=\"business\" value=\"${object.company_id."
+#~ "paypal_account}\"/>\n"
+#~ "  <input type=\"hidden\" name=\"item_name\" value=\"${object.company_id."
+#~ "name} ${kind.title()} ${reference}\"/>\n"
+#~ "  <input type=\"hidden\" name=\"amount\" value=\"${amount}\"/>\n"
+#~ "  <input type=\"hidden\" name=\"currency_code\" value=\"${currency."
+#~ "name}\"/>\n"
+#~ "  <input type=\"image\" name=\"submit\" src=\"https://www.paypal.com/"
+#~ "en_US/i/btn/btn_paynowCC_LG.gif\"/>\n"
+#~ "</form>\n"
+#~ "% endif\n"
+#~ "            "
+
+#~ msgid ""
+#~ "If the template renders to an empty result in a certain context it will "
+#~ "be ignored, as if it was inactive."
+#~ msgstr "如果模板为空，它会被忽略。"
+
+#~ msgid "Visible"
+#~ msgstr "可见性"
+
+#~ msgid "ctx: the current context dictionary"
+#~ msgstr "当前上下文字典"
+
+#~ msgid ""
+#~ "This is an HTML form template to submit a payment through this acquirer.\n"
+#~ "                                The template will be rendered with"
+#~ msgstr "是一个HTML表单模板，通过渲染模板发送付款信息"
+
+#~ msgid "Form Template"
+#~ msgstr "表格模板"

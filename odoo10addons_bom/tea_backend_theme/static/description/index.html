@@ -1,0 +1,173 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Tea Backend Theme</h2>
+        <h3 class="oe_slogan"></h3>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="sidebar1.png"/>
+        </div>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="drawer1.png"/>
+        </div>
+        <div class="oe_span6">
+            The first Odoo 10.0 community back-end sidebar and application drawer theme
+            <ul class="oe_mt32 text-left">
+                <li>
+                    It's very efficient when it runs in different terminals
+                </li>
+                <li>
+                    Under the PC terminal, the sidebar is added to allow for quick work.
+                </li>
+                <li>
+                    Under the mobile terminal, use the application drawer.
+                </li>
+                <li>
+                    Beautiful login page.
+                </li>
+            </ul>
+        </div>
+        <div class="oe_span6">
+            <p class="oe_mt16"><b style="color: blue">Login:</b> demo  <b style="color: blue">Password:</b> demo</p>
+            <a class="btn btn-primary btn-lg" style="color: white" rel="nofollow" href="http://113.57.198.202:8069/web?db=tea" target="_blank">
+                <i class="fa fa-external-link"></i>Demo
+            </a>
+        </div>
+    </div>
+</section>
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Sidebar</h2>
+        <h3 class="oe_slogan"></h3>
+        <div class="oe_span12">
+            <img src="sidebar.png"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Application Drawer</h2>
+        <div class="oe_span6">
+            <p class="oe_mt32 text-justify">
+                Drawer as a convenient way to navigate, in the mobile terminal small size screen easy to operate.
+            </p>
+        </div>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="drawer.png"/>
+        </div>
+    </div>
+</section>
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Beautiful login page</h2>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="login.png"/>
+        </div>
+        <div class="oe_span6">
+            <ul class="oe_mt32 text-justify">
+                <li>Login form landscaping.</li>
+                <li>Background image switch.</li>
+                <li>Switch the database on a page.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<div style="
+    border: 0;
+    margin: 40px 0;
+    height: 4px;
+    border-top: #ddd 1px solid;
+    border-bottom: #ddd 1px solid;
+    text-align: center;
+    position: relative;
+    clear: both;"><i class="fa fa-star fa-2x" style="
+    color: #bbb;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin: 0 auto 0 -25px;"></i></div>
+
+
+<section class="oe_container" style="font-family: 'Lato', 'Open Sans', 'Helvetica', Sans;">
+    <div class="oe_row">
+        <h2 class="oe_slogan">How to Custom </h2>
+        <div class="separator" style="display: block;width: 60px;height: 5px;margin: 15px auto 15px;background-color: #d3b61c;position: relative; border: 1px solid #d3b61c;"></div>
+
+        <div class="row" style="color: #444;margin-top: 15px;">
+            <div class="col-md-12">
+                <ul style="line-height: 1.7;">
+                    <li>
+                        <h3>Custom Login Page Background Picture</h3>
+                        Found in the <b style="background:#000;color: #fff;border-bottom: #000 1px solid;">/static/src/js/login.js</b> file
+ <pre class="prettyprint linenums">
+$.backstretch([
+    "/tea_backend_theme/static/src/img/bg/1.jpg",
+    "/tea_backend_theme/static/src/img/bg/2.jpg",
+    "/tea_backend_theme/static/src/img/bg/3.jpg",
+    "/tea_backend_theme/static/src/img/bg/4.jpg"
+    ], {
+        fade: 1000,
+        duration: 8000
+        }
+    );
+</pre>
+                    </li>
+                    <li>
+                        <h3>Custom Application Drawer Background Picture</h3>
+                        Found in the <b style="background:#000;color: #fff;border-bottom: #000 1px solid;">/static/src/less/app_drawer.less</b> file
+ <pre class="prettyprint linenums">
+// -----------------------------------
+// App Drawer Panel Background Image
+// -----------------------------------
+.drawer-nav{
+	background: transparent url('/tea_backend_theme/static/src/img/drawer-background2.png') no-repeat scroll center center / cover;
+}
+</pre>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div style="
+    border: 0;
+    margin: 40px 0;
+    height: 4px;
+    border-top: #ddd 1px solid;
+    border-bottom: #ddd 1px solid;
+    text-align: center;
+    position: relative;
+    clear: both;"><i class="fa fa-star fa-2x" style="
+    color: #bbb;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin: 0 auto 0 -25px;"></i></div>
+
+<section class="oe_container oe_dark">
+    <div class="oe_mt16 oe_mb16">
+        <h2 class="oe_slogan">Need Any Help?</h2>
+    </div>
+    <div class="oe_slogan">
+        <a class="btn btn-primary btn-lg mt8" style="color: #FFFFFF !important;" href="mailto:rain.wen@outlook.com"><i class="fa fa-envelope"></i> Email </a>
+    </div>
+</section>

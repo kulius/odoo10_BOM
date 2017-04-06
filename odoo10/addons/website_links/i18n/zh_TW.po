@@ -1,0 +1,385 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_links
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-13 12:07+0800\n"
+"PO-Revision-Date: 2016-11-15 08:36+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.share_page_menu
+msgid "<span title=\"Track this page to count clicks\">Share this Page</span>"
+msgstr "<span title=\"跟蹤這個頁面來統計點擊量\">分享這個頁面</span>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "<strong>Campaign</strong>"
+msgstr "<strong>活動</strong>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "<strong>Medium</strong>"
+msgstr "<strong>媒體</strong>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "<strong>Original URL</strong>"
+msgstr "<strong>原始鏈結L</strong>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "<strong>Redirected URL</strong>"
+msgstr "<strong>重定向URL鏈結</strong>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "<strong>Source</strong>"
+msgstr "<strong>流量來源</strong>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "<strong>Tracked Link</strong>"
+msgstr "<strong>跟蹤鏈結</strong>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "All Time"
+msgstr "所有時間"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid ""
+"Campaign <i class=\"fa fa-info-circle\" data-toggle=\"tooltip\" data-"
+"placement=\"top\" title=\"Defines the context of your link. It might be an "
+"event you want to promote or a special promotion.\"/>"
+msgstr ""
+"活動 <i class=\"fa fa-info-circle\" data-toggle=\"tooltip\" data-placement="
+"\"top\" title=\"定義你的鏈結的描述，它可以是你想促進的活動或特殊的促銷。\"/>"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/xml/recent_link.xml:37
+#, python-format
+msgid "Copy"
+msgstr "複製"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/js/website_links.js:350
+#, python-format
+msgid "Generating link..."
+msgstr "生成鏈結..."
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid "Get tracked link"
+msgstr "跟蹤鏈結"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "Last Month"
+msgstr "上月"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "Last Week"
+msgstr "上周"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "Link Tracker"
+msgstr "鏈結追蹤"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid ""
+"Medium <i class=\"fa fa-info-circle\" data-toggle=\"tooltip\" data-placement="
+"\"top\" title=\"Defines the medium used to share your link. It might be an "
+"email, or a Facebook Ads for instance.\"/>"
+msgstr ""
+"媒體 <i class=\"fa fa-info-circle\" data-toggle=\"tooltip\" data-placement="
+"\"top\" title=\"定義用來做分享的鏈結。可以是一封電子郵件,或者一個百度的廣告"
+"條。\"/>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid "Most Clicked"
+msgstr "最高點擊量"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid "Newest"
+msgstr "最新的"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid "Recently Used"
+msgstr "最近使用"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid ""
+"Share this page with a <strong>short link</strong> that includes "
+"<strong>analytics trackers</strong>."
+msgstr "分享這個頁面，使用<strong>鏈結</strong>包含<strong>分析跟蹤</strong>。"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid ""
+"Source <i class=\"fa fa-info-circle\" data-toggle=\"tooltip\" data-placement="
+"\"top\" title=\"Defines the source from which your traffic will come from, "
+"Facebook or Twitter for instance.\"/>"
+msgstr ""
+"來源 <i class=\"fa fa-info-circle\" data-toggle=\"tooltip\" data-placement="
+"\"top\" title=\"定義你的流量的來源，例如：百度或微信等。\"/>"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "Statistics"
+msgstr "統計"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/xml/recent_link.xml:38
+#, python-format
+msgid "Stats"
+msgstr "統計值"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid ""
+"Thoses trackers can be used in Google Analytics to track clicks and "
+"visitors, or in Odoo reports to track opportunities and related revenues."
+msgstr ""
+"這些追蹤器可用于谷歌分析和跟蹤點擊量和遊客,或系統報表裏跟蹤商機和相關收益。"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid "URL"
+msgstr "URL鏈結"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/js/website_links.js:216
+#, python-format
+msgid "Unable to get recent links"
+msgstr "無法獲得最近的鏈結"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/js/website_links.js:239
+#, python-format
+msgid "You don't have any recent links."
+msgstr "你沒有任何最近的鏈結。"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid "Your tracked links"
+msgstr "你的跟蹤鏈結"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/xml/recent_link.xml:23
+#: model:ir.ui.view,arch_db:website_links.graphs
+#, python-format
+msgid "cancel"
+msgstr "取消"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/xml/recent_link.xml:8
+#, python-format
+msgid "clicks"
+msgstr "點擊"
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.graphs
+msgid "copy"
+msgstr "複製"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/js/website_links.js:259
+#, python-format
+msgid "e.g. Newsletter, Social Network, .."
+msgstr "例如：時事快訊，社交網路，.."
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/js/website_links.js:256
+#, python-format
+msgid "e.g. Promotion of June, Winter Newsletter, .."
+msgstr "例如：六月推廣，冬日暖陽，.."
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/js/website_links.js:262
+#, python-format
+msgid "e.g. Search Engine, Website page, .."
+msgstr "例如：搜索引擎，網站頁面，.."
+
+#. module: website_links
+#: model:ir.ui.view,arch_db:website_links.create_shorten_url
+msgid "e.g. https://www.odoo.com/page/contactus"
+msgstr "例如：http://www.xiaoke.info/page/contactus"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/xml/recent_link.xml:22
+#: model:ir.ui.view,arch_db:website_links.graphs
+#, python-format
+msgid "ok"
+msgstr "確定"
+
+#. module: website_links
+#. openerp-web
+#: code:addons/website_links/static/src/xml/recent_link.xml:22
+#: model:ir.ui.view,arch_db:website_links.graphs
+#, python-format
+msgid "or"
+msgstr "或"
+
+#~ msgid "Campaign"
+#~ msgstr "市場活動"
+
+#~ msgid "Clicks"
+#~ msgstr "點擊"
+
+#~ msgid "Code must be unique."
+#~ msgstr "代碼必須是唯一的。"
+
+#~ msgid "Codes"
+#~ msgstr "代碼"
+
+#~ msgid "Country"
+#~ msgstr "國家"
+
+#~ msgid "Create Date"
+#~ msgstr "創建日期"
+
+#~ msgid "Created by"
+#~ msgstr "創建者"
+
+#~ msgid "Created on"
+#~ msgstr "創建時間"
+
+#~ msgid "Favicon"
+#~ msgstr "網站圖示"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Internet Protocol"
+#~ msgstr "互聯網協定"
+
+#~ msgid "Last Updated by"
+#~ msgstr "修改人"
+
+#~ msgid "Last Updated on"
+#~ msgstr "修改時間"
+
+#~ msgid "Link"
+#~ msgstr "鏈結"
+
+#~ msgid "Medium"
+#~ msgstr "中號圖片"
+
+#~ msgid "Number of Clicks"
+#~ msgstr "點擊量"
+
+#~ msgid "Original URL"
+#~ msgstr "原始URL鏈結"
+
+#~ msgid "Page Title"
+#~ msgstr "頁標題"
+
+#~ msgid "Share this Page"
+#~ msgstr "分享這個頁面"
+
+#~ msgid "Share this page with a"
+#~ msgstr "分享這個頁面與一個"
+
+#~ msgid "Short URL Code"
+#~ msgstr "短URL鏈結碼"
+
+#~ msgid "Source"
+#~ msgstr "來源"
+
+#~ msgid "Statistics of Clicks"
+#~ msgstr "點擊量統計"
+
+#~ msgid "Target URL"
+#~ msgstr "目標URL鏈結"
+
+#~ msgid ""
+#~ "This is a name that helps you keep track of your different campaign "
+#~ "efforts Ex: Fall_Drive, Christmas_Special"
+#~ msgstr "這個名稱能幫助你跟蹤不同的促銷方式，例如：特別聖誕"
+
+#~ msgid "This is the method of delivery. Ex: Postcard, Email, or Banner Ad"
+#~ msgstr "送達方式，例如：明信片,電子郵件,或網站橫幅廣告"
+
+#~ msgid ""
+#~ "This is the source of the link Ex: Search Engine, another domain, or name "
+#~ "of email list"
+#~ msgstr "鏈結的來源，例如:搜索引擎，其他網站，或者郵件列表"
+
+#~ msgid "Title and URL"
+#~ msgstr "標題和URL鏈結"
+
+#~ msgid "Tracked Link"
+#~ msgstr "跟蹤鏈結"
+
+#~ msgid "Visit Page"
+#~ msgstr "進入頁"
+
+#~ msgid "Visit Webpage"
+#~ msgstr "進入頁面"
+
+#~ msgid "Website Link"
+#~ msgstr "網站鏈結"
+
+#~ msgid "Website Link Clicks"
+#~ msgstr "網站鏈結點擊"
+
+#~ msgid "Website Link Graph"
+#~ msgstr "網站鏈結圖片"
+
+#~ msgid "Website Links"
+#~ msgstr "網站鏈結"
+
+#~ msgid "Website Links Clicks"
+#~ msgstr "網站鏈結點擊"
+
+#~ msgid "analytics trackers"
+#~ msgstr "分析追蹤器"
+
+#~ msgid "short link"
+#~ msgstr "短鏈結"
+
+#~ msgid "that includes"
+#~ msgstr "這包括"
+
+#~ msgid "website.links.form.graph.action"
+#~ msgstr "website.links.form.graph.action"
+
+#~ msgid "Optimise SEO..."
+#~ msgstr "SEO優化..."
+
+#~ msgid "Promote"
+#~ msgstr "推廣"
+
+#~ msgid "Promote page on the web"
+#~ msgstr "網站推廣頁面"

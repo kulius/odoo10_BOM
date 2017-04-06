@@ -1,32 +1,60 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * procurement_jit
+# 	* mrp_jit
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-18 14:07+0000\n"
-"PO-Revision-Date: 2015-09-14 10:49+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2015-11-21 19:52+0800\n"
+"PO-Revision-Date: 2016-11-15 08:49+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-05-09 06:53+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: procurement_jit
 #: model:ir.model,name:procurement_jit.model_sale_order_line
 msgid "Sales Order Line"
-msgstr ""
-
-#. module: procurement_jit
-#: model:ir.model,name:procurement_jit.model_sale_order
-msgid "Sales Order"
-msgstr ""
+msgstr "銷售訂單明細"
 
 #~ msgid "Procurement"
-#~ msgstr "採購"
+#~ msgstr "補貨"
+
+#~ msgid "MRP JIT"
+#~ msgstr "MRP JIT"
+
+#~ msgid ""
+#~ "\n"
+#~ "    This module allows Just In Time computation of procurement orders.\n"
+#~ "\n"
+#~ "    If you install this module, you will not have to run the regular procurement \n"
+#~ "    scheduler anymore (but you still need to run the minimum order point rule \n"
+#~ "    scheduler, or for example let it run daily.)\n"
+#~ "    All procurement orders will be processed immediately, which could in some\n"
+#~ "    cases entail a small performance impact.\n"
+#~ "\n"
+#~ "    It may also increase your stock size because products are reserved as soon\n"
+#~ "    as possible and the scheduler time range is not taken into account anymore. \n"
+#~ "    In that case, you can not use priorities any more on the different picking.\n"
+#~ "    \n"
+#~ "    \n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "    這個模組允許補貨單的即時（JIT）計算。\n"
+#~ "    安裝了這個模組以後，就不需要定期執行按單生產的MRP了（但最小庫存規則\n"
+#~ "    的計算仍要定期執行，比如每天執行一次）。\n"
+#~ "    所有的計畫訂單會立即處理，可能會對系統性能有些影響。\n"
+#~ "    \n"
+#~ "    另一個負面影響是這可能造成你庫存佔用的增加。因為產品立即被預留了，不再\n"
+#~ "    等待每日計畫執行的時點，這樣就少了個緩衝期。所以，你也不能針對移庫單的\n"
+#~ "    優先順序按順序處理了。\n"
+#~ "    \n"
+#~ "    \n"
+#~ "    "

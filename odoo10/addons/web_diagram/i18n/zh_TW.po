@@ -1,21 +1,22 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * web_diagram
+# Chinese (Simplified) translation for openerp-web
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openerp-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2015-09-08 09:26+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-07-29 22:28+0800\n"
+"PO-Revision-Date: 2016-11-14 19:45+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-29 05:10+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: web_diagram
@@ -24,21 +25,64 @@ msgstr ""
 #: code:addons/web_diagram/static/src/js/diagram.js:265
 #, python-format
 msgid "Activity"
-msgstr "動態"
+msgstr "活動"
+
+#. module: web_diagram
+#. openerp-web
+#: code:addons/web_diagram/static/src/js/diagram.js:270
+#: code:addons/web_diagram/static/src/js/diagram.js:314
+#, python-format
+msgid "Create:"
+msgstr "新建："
+
+#. module: web_diagram
+#. openerp-web
+#: code:addons/web_diagram/static/src/js/diagram.js:208
+#, python-format
+msgid ""
+"Deleting this node cannot be undone.\n"
+"It will also delete all connected transitions.\n"
+"\n"
+"Are you sure ?"
+msgstr ""
+"刪除此節點的操作無法撤銷。\n"
+"該刪除操作將連帶刪除所有連接的狀態遷移。\n"
+"\n"
+"你確定嗎？"
+
+#. module: web_diagram
+#. openerp-web
+#: code:addons/web_diagram/static/src/js/diagram.js:226
+#, python-format
+msgid ""
+"Deleting this transition cannot be undone.\n"
+"\n"
+"Are you sure ?"
+msgstr ""
+"刪除此狀態遷移的操作無法撤銷。\n"
+"\n"
+"你確定嗎？"
 
 #. module: web_diagram
 #. openerp-web
 #: code:addons/web_diagram/static/src/js/diagram.js:19
 #, python-format
 msgid "Diagram"
-msgstr "圖表"
+msgstr "流程圖"
 
 #. module: web_diagram
 #. openerp-web
 #: code:addons/web_diagram/static/src/js/diagram.js:112
 #, python-format
 msgid "New"
-msgstr "新增"
+msgstr "新建"
+
+#. module: web_diagram
+#. openerp-web
+#: code:addons/web_diagram/static/src/xml/base_diagram.xml:5
+#, python-format
+msgid "New Node"
+msgstr "新建節點"
 
 #. module: web_diagram
 #. openerp-web
@@ -46,7 +90,7 @@ msgstr "新增"
 #: code:addons/web_diagram/static/src/js/diagram.js:298
 #, python-format
 msgid "Open: "
-msgstr "開啟: "
+msgstr "打開： "
 
 #. module: web_diagram
 #. openerp-web
@@ -54,4 +98,10 @@ msgstr "開啟: "
 #: code:addons/web_diagram/static/src/js/diagram.js:309
 #, python-format
 msgid "Transition"
-msgstr "轉換"
+msgstr "遷移"
+
+#~ msgid "%d / %d"
+#~ msgstr "%d / %d"
+
+#~ msgid "Are you sure?"
+#~ msgstr "你確定嗎？"

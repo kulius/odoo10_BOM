@@ -1,24 +1,53 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * website_hr
+# 	* website_hr
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-02-10 09:51+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2015-11-07 19:40+0800\n"
+"PO-Revision-Date: 2016-11-15 08:36+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #. module: website_hr
 #: model:ir.model,name:website_hr.model_hr_employee
 msgid "Employee"
 msgstr "員工"
+
+#. module: website_hr
+#: model:ir.ui.view,arch_db:website_hr.aboutus
+msgid "Our Team"
+msgstr "我們的團隊"
+
+#. module: website_hr
+#: model:ir.model.fields,field_description:website_hr.field_hr_employee_public_info
+msgid "Public Info"
+msgstr "公共資訊"
+
+#. module: website_hr
+#: model:ir.model.fields,help:website_hr.field_hr_employee_website_url
+msgid "The full URL to access the document through the website."
+msgstr "從網站登入文件的完整網址。"
+
+#. module: website_hr
+#: model:ir.model.fields,field_description:website_hr.field_hr_employee_website_published
+msgid "Visible in Website"
+msgstr "在網站可見"
+
+#. module: website_hr
+#: model:ir.actions.act_url,name:website_hr.action_open_website
+msgid "Website About"
+msgstr "關於網站"
+
+#. module: website_hr
+#: model:ir.model.fields,field_description:website_hr.field_hr_employee_website_url
+msgid "Website URL"
+msgstr "網站地址"

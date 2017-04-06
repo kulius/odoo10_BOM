@@ -1,35 +1,37 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * account_cancel
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2015-09-07 15:52+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2015-10-14 18:17+0800\n"
+"PO-Revision-Date: 2016-10-27 11:55+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:32+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: account_cancel
 #: model:ir.model,name:account_cancel.model_account_bank_statement
 msgid "Bank Statement"
-msgstr "銀行對賬單"
+msgstr "銀行對帳單"
 
 #. module: account_cancel
 #: model:ir.model,name:account_cancel.model_account_bank_statement_line
 msgid "Bank Statement Line"
-msgstr "銀行對賬單明細"
+msgstr "銀行對帳單明細"
 
 #. module: account_cancel
 #: model:ir.ui.view,arch_db:account_cancel.bank_statement_cancel_form_inherit
+#: model:ir.ui.view,arch_db:account_cancel.bank_statement_cancel_form_inherit2
 #: model:ir.ui.view,arch_db:account_cancel.payment_cancel_form_inherit
 msgid "Cancel"
 msgstr "取消"
@@ -39,3 +41,15 @@ msgstr "取消"
 #: model:ir.ui.view,arch_db:account_cancel.invoice_supplier_cancel_form_inherit
 msgid "Cancel Invoice"
 msgstr "取消發票"
+
+#. module: account_cancel
+#: code:addons/account_cancel/models/account_bank_statement.py:28
+#, python-format
+msgid "Please set the bank statement to New before canceling."
+msgstr "在取消之前請設置銀行對帳單為新建。"
+
+#. module: account_cancel
+#: model:ir.ui.view,arch_db:account_cancel.bank_statement_draft_form_inherit
+#: model:ir.ui.view,arch_db:account_cancel.bank_statement_draft_form_inherit2
+msgid "Reset to New"
+msgstr "重置為新建"

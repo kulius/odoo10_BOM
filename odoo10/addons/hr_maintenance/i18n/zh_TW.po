@@ -1,0 +1,740 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_equipment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-04 20:35+0800\n"
+"PO-Revision-Date: 2016-12-29 19:52+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: hr_maintenance
+#: model:ir.model.fields,field_description:hr_maintenance.field_maintenance_equipment_department_id
+msgid "Assigned to Department"
+msgstr "已分配給部門"
+
+#. module: hr_maintenance
+#: model:ir.model.fields,field_description:hr_maintenance.field_maintenance_equipment_employee_id
+msgid "Assigned to Employee"
+msgstr "已分配給員工"
+
+#. module: hr_maintenance
+#: model:ir.ui.view,arch_db:hr_maintenance.maintenance_request_view_form_inherit_hr
+#: model:ir.ui.view,arch_db:hr_maintenance.maintenance_request_view_search_inherit_hr
+msgid "Created By"
+msgstr "創建者"
+
+#. module: hr_maintenance
+#: model:ir.model.fields,field_description:hr_maintenance.field_maintenance_request_department_id
+#: model:ir.ui.view,arch_db:hr_maintenance.maintenance_equipment_view_form_inherit_hr
+#: model:ir.ui.view,arch_db:hr_maintenance.maintenance_equipment_view_tree_inherit_hr
+#: selection:maintenance.equipment,equipment_assign_to:0
+msgid "Department"
+msgstr "部門"
+
+#. module: hr_maintenance
+#: model:ir.model.fields,field_description:hr_maintenance.field_maintenance_request_employee_id
+#: model:ir.ui.view,arch_db:hr_maintenance.maintenance_equipment_view_form_inherit_hr
+#: model:ir.ui.view,arch_db:hr_maintenance.maintenance_equipment_view_tree_inherit_hr
+#: selection:maintenance.equipment,equipment_assign_to:0
+msgid "Employee"
+msgstr "員工"
+
+#. module: hr_maintenance
+#: model:ir.model,name:hr_maintenance.model_maintenance_equipment
+msgid "Equipment"
+msgstr "設備"
+
+#. module: hr_maintenance
+#: model:ir.model,name:hr_maintenance.model_maintenance_request
+msgid "Maintenance Requests"
+msgstr "維護請求"
+
+#. module: hr_maintenance
+#: model:ir.ui.view,arch_db:hr_maintenance.maintenance_request_view_search_inherit_hr
+msgid "My Requests"
+msgstr "我的請求"
+
+#. module: hr_maintenance
+#: selection:maintenance.equipment,equipment_assign_to:0
+msgid "Other"
+msgstr "其他"
+
+#. module: hr_maintenance
+#: model:ir.model.fields,field_description:hr_maintenance.field_maintenance_equipment_equipment_assign_to
+msgid "Used By"
+msgstr "使用人"
+
+#~ msgid "<b>Category:</b>"
+#~ msgstr "<b>分類:</b>"
+
+#~ msgid "<b>Model Number:</b>"
+#~ msgstr "<b>型號編號：</b>"
+
+#~ msgid "<b>Request to:</b>"
+#~ msgstr "<b>請求發至：</b>"
+
+#~ msgid "<b>Serial Number:</b>"
+#~ msgstr "<b>序列號：</b>"
+
+#~ msgid "A Python dictionary that will be evaluated to provide default values when creating new records for this alias."
+#~ msgstr "當創建別名的新記錄時，一個Python字典被計算作為預設值。"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid "Active"
+#~ msgstr "有效"
+
+#~ msgid "Alias"
+#~ msgstr "別名"
+
+#~ msgid "Alias Contact Security"
+#~ msgstr "保密聯繫人別名"
+
+#~ msgid "Alias Domain"
+#~ msgstr "別名域"
+
+#~ msgid "Alias Name"
+#~ msgstr "別名"
+
+#~ msgid "Alias domain"
+#~ msgstr "別名域"
+
+#~ msgid "Aliased Model"
+#~ msgstr "別名模型"
+
+#~ msgid "Another asset already exists with this serial number!"
+#~ msgstr "另外一個資產已經使用了這個序列號！"
+
+#~ msgid "Apply"
+#~ msgstr "應用"
+
+#~ msgid "Asset"
+#~ msgstr "資產"
+
+#~ msgid "Asset Category"
+#~ msgstr "資產分類"
+
+#~ msgid "Asset Name"
+#~ msgstr "資產名稱"
+
+#~ msgid "Assign To Employee"
+#~ msgstr "分配給員工"
+
+#~ msgid "Assigned"
+#~ msgstr "已分配"
+
+#~ msgid "Assigned Date"
+#~ msgstr "分配日期"
+
+#~ msgid "Assigned to"
+#~ msgstr "已分配給"
+
+#~ msgid "Assigned to Departments"
+#~ msgstr "已分配給各部門"
+
+#~ msgid "Assigned to Employees"
+#~ msgstr "已分配給各員工"
+
+#~ msgid "Assigned to Employees and Departments"
+#~ msgstr "已分配給各員工和各部門"
+
+#~ msgid "Available"
+#~ msgstr "可用"
+
+#~ msgid "Blocked"
+#~ msgstr "已鎖定"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Category"
+#~ msgstr "分類"
+
+#~ msgid "Category Name"
+#~ msgstr "分類名稱"
+
+#~ msgid "Click to add a new Engine."
+#~ msgstr "點擊來增加一個新設備。"
+
+#~ msgid "Click to add a new equipment category."
+#~ msgstr "點擊來新建一個新的設備分類。"
+
+#~ msgid "Click to add a new equipment."
+#~ msgstr "點擊來增加一個新設備。"
+
+#~ msgid "Click to add a new maintenance request."
+#~ msgstr "點擊來新建一個維護請求。"
+
+#~ msgid "Click to add a stage in the maintenance request."
+#~ msgstr "點擊來新建換一個維護請求的階段。"
+
+#~ msgid "Close Date"
+#~ msgstr "結束日期"
+
+#~ msgid "Color Index"
+#~ msgstr "顏色索引"
+
+#~ msgid "Comments"
+#~ msgstr "注釋"
+
+#~ msgid "Computers"
+#~ msgstr "電腦"
+
+#~ msgid "Configuration"
+#~ msgstr "配置"
+
+#~ msgid "Configure Equipments"
+#~ msgstr "設置設備"
+
+#~ msgid "Configure Equipments Settings"
+#~ msgstr "設置設備設置"
+
+#~ msgid "Cost"
+#~ msgstr "成本"
+
+#~ msgid "Created on"
+#~ msgstr "創建在"
+
+#~ msgid "Current Maintenance"
+#~ msgstr "當前維護"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "記錄中最後一條消息的發送日期"
+
+#~ msgid "Default Values"
+#~ msgstr "預設值"
+
+#~ msgid "Delete"
+#~ msgstr "刪除"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid "Display Name"
+#~ msgstr "顯示名稱"
+
+#~ msgid "Edit..."
+#~ msgstr "編輯..."
+
+#~ msgid "Email Alias"
+#~ msgstr "Email 別名"
+
+#~ msgid "Email alias for this equipment category. New emails will automatically create new maintenance request for this equipment category."
+#~ msgstr "此設備分類的email別名。 新email會自動創建此設備分類的維護請求。"
+
+#~ msgid "Equipment Assigned"
+#~ msgstr "已分配的設備"
+
+#~ msgid "Equipment Categories"
+#~ msgstr "設備分類"
+
+#~ msgid "Equipment Name"
+#~ msgstr "設備名稱"
+
+#~ msgid "Equipments"
+#~ msgstr "設備"
+
+#~ msgid "Folded in Maintenance Pipe"
+#~ msgstr "在維護管道中折疊"
+
+#~ msgid "Folded in Recruitment Pipe"
+#~ msgstr "在招聘管道中折疊"
+
+#~ msgid "Follow the process of the request and communicate with the collaborator."
+#~ msgstr "關注請求的處理並且和合作者溝通。"
+
+#~ msgid "Followers"
+#~ msgstr "關注者"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid "Group by..."
+#~ msgstr "分組..."
+
+#~ msgid "High"
+#~ msgstr "高"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "ID of the parent record holding the alias (example: project holding the task creation alias)"
+#~ msgstr "持有別名的父紀錄ID（例如：擁有任務的項目任務創建別名）"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果勾選，你就要關注新郵件"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選，你需要注意查看新消息"
+
+#~ msgid "Important Messages"
+#~ msgstr "重要消息"
+
+#~ msgid "In Progress"
+#~ msgstr "處理中"
+
+#~ msgid "Internal Note ......."
+#~ msgstr "內部注釋 ......."
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Kanban State"
+#~ msgstr "看板狀態"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最近的消息日期"
+
+#~ msgid "Last Modified on"
+#~ msgstr "最近修改日期"
+
+#~ msgid "Last Updated by"
+#~ msgstr "最近更新被"
+
+#~ msgid "Last Updated on"
+#~ msgstr "最近更新在"
+
+#~ msgid "Location"
+#~ msgstr "位置"
+
+#~ msgid "Low"
+#~ msgstr "低"
+
+#~ msgid "Maintenance"
+#~ msgstr "維護"
+
+#~ msgid "Maintenance Request"
+#~ msgstr "維護請求"
+
+#~ msgid "Maintenance Request Created"
+#~ msgstr "維護請求已創建"
+
+#~ msgid "Maintenance Request Stage"
+#~ msgstr "維護請求階段"
+
+#~ msgid "Maintenance Request Stages"
+#~ msgstr "維護請求各階段"
+
+#~ msgid "Maintenance Request created"
+#~ msgstr "維護請求已創建"
+
+#~ msgid "Maintenance Stage"
+#~ msgstr "維護階段"
+
+#~ msgid "Maintenance Subject"
+#~ msgstr "維護標題"
+
+#~ msgid "Maintenance ids"
+#~ msgstr "維護 ids"
+
+#~ msgid "Messages"
+#~ msgstr "消息"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和通信歷史記錄"
+
+#~ msgid "Model"
+#~ msgstr "型號"
+
+#~ msgid "My Equipments"
+#~ msgstr "我的設備"
+
+#~ msgid "Name"
+#~ msgstr "名稱"
+
+#~ msgid "New Request"
+#~ msgstr "新請求"
+
+#~ msgid "Normal"
+#~ msgstr "通常"
+
+#~ msgid "Note"
+#~ msgstr "提示"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動數量"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的消息數"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Open Equipments Menu"
+#~ msgstr "打開設備功能表"
+
+#~ msgid "Optional ID of a thread (record) to which all incoming messages will be attached, even if they did not reply to it. If set, this will disable the creation of new records completely."
+#~ msgstr "所有的來郵都將附上一條線索（記錄）選配的ID，即使他們不曾回復過它。如果設置了ID，這將完全阻止新記錄的創建。"
+
+#~ msgid "Owner"
+#~ msgstr "擁有者"
+
+#~ msgid "Parent Model"
+#~ msgstr "父模型"
+
+#~ msgid "Parent Record Thread ID"
+#~ msgstr "父級記錄線程ID"
+
+#~ msgid "Parent model holding the alias. The model holding the alias reference is not necessarily the model given by alias_model_id (example: project (parent_model) and task (model))"
+#~ msgstr "父模型擁有別名。擁有別名參考的模型不需要是alias_model_id指定的模型(例如: project (parent_model) and task (model))"
+
+#~ msgid ""
+#~ "Policy to post a message on the document using the mailgateway.\n"
+#~ "- everyone: everyone can post\n"
+#~ "- partners: only authenticated partners\n"
+#~ "- followers: only followers of the related document\n"
+#~ msgstr ""
+#~ "使用郵件伺服器發送文檔資訊的規則.\n"
+#~ "- 所有人: 所有人都允許\n"
+#~ "- 業務夥伴: 僅認證的業務夥伴\n"
+#~ "- 關注者: 僅關注相關文檔者\n"
+
+#~ msgid "Printers"
+#~ msgstr "印表機"
+
+#~ msgid "Priority"
+#~ msgstr "優先順序"
+
+#~ msgid "Product Information"
+#~ msgstr "產品資訊"
+
+#~ msgid "Ready for next stage"
+#~ msgstr "為下一階段準備"
+
+#~ msgid "Record Thread ID"
+#~ msgstr "記錄主題標識"
+
+#~ msgid "Repair Responsible"
+#~ msgstr "維修負責人"
+
+#~ msgid "Repaired"
+#~ msgstr "已維修"
+
+#~ msgid "Request"
+#~ msgstr "請求"
+
+#~ msgid "Request Created"
+#~ msgstr "請求已創建"
+
+#~ msgid "Request Date"
+#~ msgstr "請求日期"
+
+#~ msgid "Request Done"
+#~ msgstr "已完成的請求"
+
+#~ msgid "Requests Alias"
+#~ msgstr "請求別名"
+
+#~ msgid "Reset Request"
+#~ msgstr "重置請求"
+
+#~ msgid "Responsible"
+#~ msgstr "負責人"
+
+#~ msgid "Scrap"
+#~ msgstr "報廢"
+
+#~ msgid "Scrap Date"
+#~ msgstr "報廢日期"
+
+#~ msgid "Search"
+#~ msgstr "搜索"
+
+#~ msgid "Sender"
+#~ msgstr "發送人"
+
+#~ msgid "Sequence"
+#~ msgstr "順序"
+
+#~ msgid "Serial Number"
+#~ msgstr "序列號"
+
+#~ msgid "Set active to false to hide the maintenance request without deleting it."
+#~ msgstr "設置有效為假來隱藏這個維護請求，這樣就不用刪除它了。"
+
+#~ msgid "Settings"
+#~ msgstr "設置"
+
+#~ msgid "Software"
+#~ msgstr "軟體"
+
+#~ msgid "Stage"
+#~ msgstr "階段"
+
+#~ msgid "Stages"
+#~ msgstr "階段"
+
+#~ msgid "Status Changed"
+#~ msgstr "狀態已改變"
+
+#~ msgid "Status changed"
+#~ msgstr "狀態已改變"
+
+#~ msgid "Subject"
+#~ msgstr "主題"
+
+#~ msgid "Subjects"
+#~ msgstr "主題"
+
+#~ msgid "Technician"
+#~ msgstr "技術負責人"
+
+#~ msgid "The model (Odoo Document Kind) to which this alias corresponds. Any incoming email that does not reply to an existing record will cause the creation of a new record of this model (e.g. a Project Task)"
+#~ msgstr "此別名對應的模型（Odoo文檔類型）。任何收到的沒有回復給一個已存在記錄的郵件將創建一個此模型的新紀錄（例如一個項目任務）"
+
+#~ msgid "The name of the email alias, e.g. 'jobs' if you want to catch emails for <jobs@example.odoo.com>"
+#~ msgstr "Email別名的名稱，例如，如果你要收取 <jobs@exampleodoo.com> 的電子郵件,別名就要被設為：\"jobs\""
+
+#~ msgid "The owner of records created upon receiving emails on this alias. If this field is not set the system will attempt to find the right owner based on the sender (From) address, or will use the Administrator account if no system user is found for that address."
+#~ msgstr "記錄所有者是根據在此別名上接受郵件來創立的。若此欄位無設置，系統將依據發送位址來尋找正確的所有者，如果在那個位址上沒有系統用戶可以找到的話，將使用admin帳戶。"
+
+#~ msgid ""
+#~ "This application helps you to track equipments used by employees.\n"
+#~ "                Create some laptop, printer or phone and link each equipment to\n"
+#~ "                an employee or departement. You will manage allocations, issues\n"
+#~ "                and maintenance of equipment."
+#~ msgstr ""
+#~ "這個應用模組幫你跟蹤配給員工的所有設備。\n"
+#~ "                創建一些筆記本電腦、印表機或電話機，然後將每一設備與員工或部門建立關聯。\n"
+#~ "                你可以對設備的配給、問題和維護進行管理。"
+
+#~ msgid ""
+#~ "This application helps you to track equipments used by employees.\n"
+#~ "                Create some laptop, printer or phone and link each equipment to an employee or departement.\n"
+#~ "                You will manage allocations, issues and mainteannce of equipment."
+#~ msgstr ""
+#~ "這個應用模組幫你跟蹤配給員工的所有設備。\n"
+#~ "                創建一些筆記本電腦、印表機或電話機，然後將每一設備與員工或部門建立關聯。\n"
+#~ "                你可以對設備的配給、問題和維護進行管理。"
+
+#~ msgid "Track Equipments"
+#~ msgstr "跟蹤設備"
+
+#~ msgid "Unassigned"
+#~ msgstr "未分配"
+
+#~ msgid "Under Maintenance"
+#~ msgstr "維護中"
+
+#~ msgid "Unread Messages"
+#~ msgstr "未讀消息"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息計數"
+
+#~ msgid "Use the following alias to report internal equipment issue"
+#~ msgstr "使用下面的別名回饋內部設備問題"
+
+#~ msgid "Users"
+#~ msgstr "使用人"
+
+#~ msgid "Vendor"
+#~ msgstr "供應商"
+
+#~ msgid "Vendor Reference"
+#~ msgstr "供應商編號"
+
+#~ msgid "Very Low"
+#~ msgstr "非常低"
+
+#~ msgid "Warranty"
+#~ msgstr "質保期"
+
+#~ msgid "You cannot delete an equipment category containing equipments or maintenance requests."
+#~ msgstr "設備分類已含有設備或維護請求，不能刪除。"
+
+#~ msgid "hr.equipment.config.settings"
+#~ msgstr "hr.equipment.config.settings"
+
+#~ msgid "maintenance Request"
+#~ msgstr "維護請求"
+
+#~ msgid "maintenance Request Search"
+#~ msgstr "維護請求搜索"
+
+#~ msgid "Asset Categories"
+#~ msgstr "資產分類"
+
+#~ msgid "Assets"
+#~ msgstr "資產"
+
+#~ msgid "Equipment Category"
+#~ msgstr "設備分類"
+
+#~ msgid "Equipment Request"
+#~ msgstr "設備請求"
+
+#~ msgid "Equipment Stage"
+#~ msgstr "設備階段"
+
+#~ msgid "IT Assets"
+#~ msgstr "資產"
+
+#~ msgid "My Assets"
+#~ msgstr "我的資產"
+
+#~ msgid "Need Action"
+#~ msgstr "需要行動"
+
+#~ msgid "Need Action Counter"
+#~ msgstr "需要行動計數"
+
+#~ msgid "Open HR Menu"
+#~ msgstr "打開HR菜單"
+
+#~ msgid ""
+#~ "This application helps you to track equipments used by employees.\n"
+#~ "                Create some laptops, printers or phones and link each asset to an employee or departement.\n"
+#~ "                You will manage allocations, issues and maintenance of equipment."
+#~ msgstr ""
+#~ "這個應用模組幫你跟蹤配給員工的所有設備。\n"
+#~ "                創建一些筆記本電腦、印表機或電話機，然後將每一設備與員工或部門建立關聯。\n"
+#~ "                你可以對設備的配給、問題和維護進行管理。"
+
+#~ msgid "Website Messages"
+#~ msgstr "網站信息"
+
+#~ msgid "Website communication history"
+#~ msgstr "網站通信歷史"
+
+#~ msgid "Allocate To"
+#~ msgstr "分配給"
+
+#~ msgid "By Department"
+#~ msgstr "按部門"
+
+#~ msgid "By Employee"
+#~ msgstr "按員工"
+
+#~ msgid "By Employee: equipment assigned to individual Employee, By Department: equipment assigned to group of employees in department"
+#~ msgstr "按員工：設備分配給每一個員工，按部門：設備分配給部門中一批員工"
+
+#~ msgid "New"
+#~ msgstr "新的"
+
+#~ msgid "The serial number of this equipment must be unique !"
+#~ msgstr "設備的序列號不唯一！"
+
+#~ msgid "To Do"
+#~ msgstr "下一步"
+
+#~ msgid "Acer Laptop"
+#~ msgstr "宏碁筆記本電腦"
+
+#~ msgid "HP Inkjet printer"
+#~ msgstr "惠普噴墨印表機"
+
+#~ msgid "HP Laptop"
+#~ msgstr "惠普筆記本電腦"
+
+#~ msgid "Monitors"
+#~ msgstr "監控"
+
+#~ msgid "Phones"
+#~ msgstr "電話"
+
+#~ msgid "Samsung Monitor 15\""
+#~ msgstr "三星 15\"顯示器"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                            Click to add a new maintenance request or send an email to: <a>%(alias_name)s</a>\n"
+#~ "                        </p>\n"
+#~ "                        <p>\n"
+#~ "                            Follow the process of the request and communicate with the collaborator.\n"
+#~ "                        </p>"
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                            點擊以增加維護請求或發送email至：<a>%(alias_name)s</a>\n"
+#~ "                        </p>\n"
+#~ "                        <p>\n"
+#~ "                            按照請求程式聯繫業務夥伴。\n"
+#~ "                        </p>"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a new equipment category.\n"
+#~ "            </p>\n"
+#~ "        "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                點擊新增設備分類。\n"
+#~ "            </p>\n"
+#~ "        "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a new equipment.\n"
+#~ "            </p><p>\n"
+#~ "                This application helps you to track all equipment allocated to employees.\n"
+#~ "                Create some laptop, printer or phone and link each equipment to an employee or departement.\n"
+#~ "                You will manage allocations, issues and maintenance of equipment.\n"
+#~ "            </p>\n"
+#~ "        "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                點擊新增設備。\n"
+#~ "            </p><p>\n"
+#~ "                程式幫你跟蹤配給員工的所有設備。\n"
+#~ "                創建一些筆記本電腦、印表機或電話機，然後將每一設備與員工或部門建立關聯。\n"
+#~ "                你可以對設備的配給、問題和維護進行管理。\n"
+#~ "            </p>\n"
+#~ "        "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a new maintenance request.\n"
+#~ "            </p><p>\n"
+#~ "                Follow the process of the request and communicate with the collaborator.\n"
+#~ "            </p>\n"
+#~ "        "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                點擊新增維護請求。\n"
+#~ "            </p><p>\n"
+#~ "                按照請求程式聯繫協作者。\n"
+#~ "            </p>\n"
+#~ "        "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "            Click to add a stage in the maintenance request.\n"
+#~ "          </p>\n"
+#~ "        "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "            點擊新增維護請求的階段。\n"
+#~ "          </p>\n"
+#~ "        "
+
+#~ msgid "Alias Manage"
+#~ msgstr "別名管理"
+
+#~ msgid "Cancelled"
+#~ msgstr "已取消"
+
+#~ msgid "Unassigned<br/>"
+#~ msgstr "未分配<br/>"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "or"
+#~ msgstr "或者"
+
+#~ msgid "Supplier"
+#~ msgstr "供應商"

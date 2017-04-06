@@ -1,46 +1,66 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * link_tracker
+# 	* link_tracker
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-02-10 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2015-08-18 07:06+0800\n"
+"PO-Revision-Date: 2016-11-15 08:57+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_campaign_id
+msgid "Campaign"
+msgstr "活動"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_link_click_ids
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_form
+msgid "Clicks"
+msgstr "點擊"
+
+#. module: link_tracker
+#: sql_constraint:link.tracker.code:0
+msgid "Code must be unique."
+msgstr "代碼必須是唯一的。"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_link_code_ids
+msgid "Codes"
+msgstr "編碼"
 
 #. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_country_id
 msgid "Country"
-msgstr "國家/地區"
+msgstr "國家"
 
 #. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_click_date
 msgid "Create Date"
-msgstr "建立日期"
+msgstr "創建時間"
 
 #. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_create_uid
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code_create_uid
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_create_date
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code_create_date
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_display_name
@@ -50,29 +70,817 @@ msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_favicon
+msgid "Favicon"
+msgstr "網站圖示"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_icon_src
+msgid "Favicon Source"
+msgstr "網站圖示來源"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_short_url_host
+msgid "Host of the short URL"
+msgstr "短URL鏈結的主機"
+
+#. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_id
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code_id
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_ip
+msgid "Internet Protocol"
+msgstr "互聯網協定"
 
 #. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker___last_update
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click___last_update
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最後修改在"
 
 #. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_write_uid
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code_write_uid
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後跟新被"
 
 #. module: link_tracker
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_write_date
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code_write_date
 #: model:ir.model.fields,field_description:link_tracker.field_link_tracker_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_click_link_id
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code_link_id
+msgid "Link"
+msgstr "鏈結"
+
+#. module: link_tracker
+#: model:ir.actions.act_window,name:link_tracker.action_link_tracker
+#: model:ir.ui.menu,name:link_tracker.menu_url_shortener_main
+msgid "Link Tracker"
+msgstr "鏈結追蹤"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_medium_id
+msgid "Medium"
+msgstr "管道"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_count
+msgid "Number of Clicks"
+msgstr "點擊數"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_title
+msgid "Page Title"
+msgstr "頁面標題"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_redirected_url
+msgid "Redirected URL"
+msgstr "重定向URL鏈結"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code_code
+msgid "Short URL Code"
+msgstr "短URL鏈結碼"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_code
+msgid "Short URL code"
+msgstr "短URL鏈結碼"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_source_id
+msgid "Source"
+msgstr "來源"
+
+#. module: link_tracker
+#: model:ir.actions.act_window,name:link_tracker.action_view_click_statistics
+msgid "Statistics of Clicks"
+msgstr "點擊數的統計"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_url
+msgid "Target URL"
+msgstr "目標URL鏈結"
+
+#. module: link_tracker
+#: model:ir.model.fields,help:link_tracker.field_link_tracker_campaign_id
+msgid ""
+"This is a name that helps you keep track of your different campaign efforts "
+"Ex: Fall_Drive, Christmas_Special"
+msgstr "這是用以協助你隨時跟進各種促銷活動的名稱，如：秋季促銷，聖誕特賣"
+
+#. module: link_tracker
+#: model:ir.model.fields,help:link_tracker.field_link_tracker_medium_id
+msgid "This is the method of delivery. Ex: Postcard, Email, or Banner Ad"
+msgstr "這是交付方式。如：明信片、Email、橫幅廣告"
+
+#. module: link_tracker
+#: model:ir.model.fields,help:link_tracker.field_link_tracker_source_id
+msgid ""
+"This is the source of the link Ex: Search Engine, another domain, or name of "
+"email list"
+msgstr "這是鏈結資源，如：搜索引擎、功能變數名稱、郵件列表"
+
+#. module: link_tracker
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_filter
+msgid "Title and URL"
+msgstr "標題和URL鏈結"
+
+#. module: link_tracker
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_filter
+msgid "Tracked Link"
+msgstr "Tracked Link"
+
+#. module: link_tracker
+#: model:ir.actions.act_window,name:link_tracker.action_link_tracker_click
+#: model:ir.ui.menu,name:link_tracker.menu_url_shortener_links
+msgid "Tracked Links"
+msgstr "跟蹤鏈結"
+
+#. module: link_tracker
+#: model:ir.model.fields,field_description:link_tracker.field_link_tracker_short_url
+msgid "Tracked URL"
+msgstr "跟蹤鏈結"
+
+#. module: link_tracker
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_form
+msgid "Visit Page"
+msgstr "登入頁面"
+
+#. module: link_tracker
+#: code:addons/link_tracker/models/link_tracker.py:138
+#, python-format
+msgid "Visit Webpage"
+msgstr "登入頁面"
+
+#. module: link_tracker
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_form
+msgid "Website Link"
+msgstr "網站鏈結"
+
+#. module: link_tracker
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_click_form
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_click_graph
+msgid "Website Link Clicks"
+msgstr "網站鏈結點擊"
+
+#. module: link_tracker
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_form_stats
+msgid "Website Link Graph"
+msgstr "網站鏈結圖片"
+
+#. module: link_tracker
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_graph
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_tree
+msgid "Website Links"
+msgstr "網站鏈結"
+
+#. module: link_tracker
+#: model:ir.ui.view,arch_db:link_tracker.view_link_tracker_click_tree
+msgid "Website Links Clicks"
+msgstr "網站鏈結點擊"
+
+#. module: link_tracker
+#: model:ir.model,name:link_tracker.model_link_tracker
+msgid "link.tracker"
+msgstr "link.tracker"
+
+#. module: link_tracker
+#: model:ir.model,name:link_tracker.model_link_tracker_click
+msgid "link.tracker.click"
+msgstr "link.tracker.click"
+
+#. module: link_tracker
+#: model:ir.model,name:link_tracker.model_link_tracker_code
+msgid "link.tracker.code"
+msgstr "link.tracker.code"
+
+#. module: link_tracker
+#: model:ir.actions.act_window,name:link_tracker.action_link_tracker_stats
+msgid "link.tracker.form.graph.action"
+msgstr "link.tracker.form.graph.action"
+
+#~ msgid ""
+#~ "\" || '',\n"
+#~ "                        auto: window.oe_im_livechat_auto || false,\n"
+#~ "                        defaultUsername: \""
+#~ msgstr ""
+#~ "\" || '',\n"
+#~ "                        auto: window.oe_im_livechat_auto || false,\n"
+#~ "                        defaultUsername: \""
+
+#~ msgid ""
+#~ "\" || undefined,\n"
+#~ "                    },"
+#~ msgstr ""
+#~ "\" || undefined,\n"
+#~ "                    },"
+
+#~ msgid ""
+#~ "\",\n"
+#~ "                        defaultMessage: \""
+#~ msgstr ""
+#~ "\",\n"
+#~ "                        預設信息： \""
+
+#~ msgid ""
+#~ "\",\n"
+#~ "                        inputPlaceholder: \""
+#~ msgstr ""
+#~ "\",\n"
+#~ "                        輸入占位符： \""
+
+#~ msgid ""
+#~ "\",\n"
+#~ "                    \""
+#~ msgstr ""
+#~ "\",\n"
+#~ "                    \""
+
+#~ msgid "# of speakers"
+#~ msgstr "#  發言者人數"
+
+#~ msgid "% Happy"
+#~ msgstr "% Happy"
+
+#~ msgid ""
+#~ ");\n"
+#~ "            })();"
+#~ msgstr ""
+#~ ");\n"
+#~ "            })();"
+
+#~ msgid ""
+#~ ",\n"
+#~ "                    {\n"
+#~ "                        buttonText: \""
+#~ msgstr ""
+#~ ",\n"
+#~ "                    {\n"
+#~ "                        buttonText: \""
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new live chat channel.\n"
+#~ "              </p><p>\n"
+#~ "                You can create channels for each website on which you "
+#~ "want\n"
+#~ "                to integrate the live chat widget, allowing you website\n"
+#~ "                visitors to talk in real time with your operators.\n"
+#~ "              </p><p>\n"
+#~ "                Each channel has it's own URL that you can send by email "
+#~ "to\n"
+#~ "                your customers in order to start chatting with you.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "               點擊來創建一個新的即時聊天頻道。.\n"
+#~ "              </p><p>\n"
+#~ "                你可以在集成了即時聊天插件的每一個網站創建頻道。\n"
+#~ "               這將允許你的網站參觀者來和你的操作員進行即時談話。\n"
+#~ "              \n"
+#~ "              </p><p>\n"
+#~ "                每一個頻道都有自己的網址。\n"
+#~ "               你可以通過電子郵件將其發給要進行談話的客戶。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#, fuzzy
+#~ msgid "Action"
+#~ msgstr "動作"
+
+#, fuzzy
+#~ msgid "Anonymous Name"
+#~ msgstr "匿名用戶姓名"
+
+#, fuzzy
+#~ msgid "Are you inside the matrix?"
+#~ msgstr "你是否在矩陣？"
+
+#, fuzzy
+#~ msgid "Auto-popup"
+#~ msgstr "自動彈出"
+
+#, fuzzy
+#~ msgid "Auto-popup Timer"
+#~ msgstr "自動彈出計時器"
+
+#, fuzzy
+#~ msgid "Average duration"
+#~ msgstr "平均持續時間"
+
+#, fuzzy
+#~ msgid "Average message"
+#~ msgstr "平均消息"
+
+#, fuzzy
+#~ msgid "Average number of message per user"
+#~ msgstr "人均消息數量"
+
+#, fuzzy
+#~ msgid "Average of messages/user"
+#~ msgstr "平均消息數/人"
+
+#, fuzzy
+#~ msgid "Average time the user spend in the conversation"
+#~ msgstr "人均回話時長"
+
+#, fuzzy
+#~ msgid "Average time to give the first answer to the visitor"
+#~ msgstr "首次給訪客相應的平均時間"
+
+#, fuzzy
+#~ msgid "Bad"
+#~ msgstr "不好"
+
+#, fuzzy
+#~ msgid "Channel"
+#~ msgstr "管道"
+
+#, fuzzy
+#~ msgid "Channel Name"
+#~ msgstr "管道名稱"
+
+#, fuzzy
+#~ msgid "Channel Rule"
+#~ msgstr "通道規則"
+
+#, fuzzy
+#~ msgid "Channel Rules"
+#~ msgstr "通道規則"
+
+#, fuzzy
+#~ msgid "Channel on which the rules applies"
+#~ msgstr "規則適用的頻道"
+
+#, fuzzy
+#~ msgid "Channels"
+#~ msgstr "管道"
+
+#, fuzzy
+#~ msgid "Chat Input Placeholder"
+#~ msgstr "聊天輸入為空時顯示"
+
+#, fuzzy
+#~ msgid "Chat with one of our collaborators"
+#~ msgstr "和我們的合作者聊天"
+
+#, fuzzy
+#~ msgid "Complete name"
+#~ msgstr "完整姓名"
+
+#, fuzzy
+#~ msgid ""
+#~ "Copy and paste this code into your website, within the &lt;head&gt; tag:"
+#~ msgstr "將此代碼複製並粘貼到你的網站的&lt;head&gt;標籤內："
+
+#, fuzzy
+#~ msgid ""
+#~ "Countries where this rule apply. If you set select 'Belgium' and 'France' "
+#~ "and you set the action to 'Hide Button', people from these two countries "
+#~ "won't see the support button for the specified URL. (This feature "
+#~ "requires GeoIP installed on your server.)"
+#~ msgstr ""
+#~ "此規則適用的國家。如果你選擇'比利時'和'法國'，你將操作設置到'隱藏按鈕，來"
+#~ "自這兩個國家的用戶不會看到支援指定的URL的按鈕。(此功能需要根據地理位置安裝"
+#~ "在你的伺服器上）"
+
+#, fuzzy
+#~ msgid "Creation date (day)"
+#~ msgstr "創建日期（天）"
+
+#, fuzzy
+#~ msgid "Creation date (hour)"
+#~ msgstr "創建日期（小時）"
+
+#, fuzzy
+#~ msgid "Creation date (month)"
+#~ msgstr "創建日期（月）"
+
+#, fuzzy
+#~ msgid "Creation date (week)"
+#~ msgstr "創建日期（周）"
+
+#, fuzzy
+#~ msgid "Creation date (year)"
+#~ msgstr "創建日期（年）"
+
+#, fuzzy
+#~ msgid ""
+#~ "Define rules for your live support channel. You can apply an action "
+#~ "(disable the support, automatically open your support, or just make the "
+#~ "button available) for the given URL, and per country."
+#~ msgstr ""
+#~ "定義你的線上支援頻道規則。 你可以應用一個操作(禁用支援，自動打開你的支援，"
+#~ "或者僅是讓按鈕可用)為指定的URL和每個國家。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Delay (in seconds) to automatically open the conversation window. Note: "
+#~ "the selected action must be 'Auto-popup', otherwise this parameter will "
+#~ "not be taken into account."
+#~ msgstr ""
+#~ "延遲自動打開對話視窗(以秒為單位)。注意：選定的動作必須是自動彈出，否則此參"
+#~ "數將不被考慮。"
+
+#, fuzzy
+#~ msgid "Did we correctly answer your question ?"
+#~ msgstr "我們正確地回答了你的問題嗎？"
+
+#, fuzzy
+#~ msgid "Duration of the conversation (in seconds)"
+#~ msgstr "會話持續時間(以秒為單位)"
+
+#, fuzzy
+#~ msgid "Explain your note"
+#~ msgstr "備註"
+
+#, fuzzy
+#~ msgid "Feedback"
+#~ msgstr "回饋"
+
+#, fuzzy
+#~ msgid ""
+#~ "For website built with Odoo CMS, please install the website_livechat "
+#~ "module. Then go to Settings > Website Settings and select the Live Chat "
+#~ "Channel you want to add on your website."
+#~ msgstr ""
+#~ "對於帶有Odoo CMS 的網站，請安裝 website_livechat 模組。 然後到 設置 > 網站"
+#~ "設置，選擇要添加到你的站點的即時聊天頻道。"
+
+#, fuzzy
+#~ msgid "General"
+#~ msgstr "一般"
+
+#, fuzzy
+#~ msgid ""
+#~ "Given the order to find a matching rule. If 2 rules are matching for the "
+#~ "given url/country, the one with the lowest sequence will be chosen."
+#~ msgstr ""
+#~ "給定序列尋找一個匹配的規則。 如果2個規則匹配給定的URL/國家，選擇最低的一個"
+#~ "序列。"
+
+#, fuzzy
+#~ msgid "Good"
+#~ msgstr "好"
+
+#, fuzzy
+#~ msgid "Group By..."
+#~ msgstr "通過組"
+
+#, fuzzy
+#~ msgid "Hide button"
+#~ msgstr "隱藏按鈕"
+
+#, fuzzy
+#~ msgid "History"
+#~ msgstr "日誌"
+
+#, fuzzy
+#~ msgid "Hour of start Date of session"
+#~ msgstr "會話開始時間"
+
+#, fuzzy
+#~ msgid "How may I help you?"
+#~ msgstr "有什麼可以幫你的嗎？"
+
+#, fuzzy
+#~ msgid "How to use the Live Chat widget?"
+#~ msgstr "如何使用即時聊天工具？"
+
+#, fuzzy
+#~ msgid "Join"
+#~ msgstr "加入"
+
+#, fuzzy
+#~ msgid "Join Channel"
+#~ msgstr "加入頻道"
+
+#, fuzzy
+#~ msgid "Last 24h"
+#~ msgstr "最後24小時"
+
+#, fuzzy
+#~ msgid "Last 24h stats"
+#~ msgstr "最後24小時統計"
+
+#, fuzzy
+#~ msgid "Leave Channel"
+#~ msgstr "離開頻道"
+
+#, fuzzy
+#~ msgid "Live Chat"
+#~ msgstr "線上聊天"
+
+#, fuzzy
+#~ msgid "Live Chat Channels"
+#~ msgstr "即時聊天頻道"
+
+#, fuzzy
+#~ msgid "Live Chat Powered by"
+#~ msgstr "即時聊天的推進者為"
+
+#, fuzzy
+#~ msgid "Live Support"
+#~ msgstr "即時服務"
+
+#, fuzzy
+#~ msgid "Livechat"
+#~ msgstr "即時聊天"
+
+#, fuzzy
+#~ msgid ""
+#~ "Livechat Support Analysis allows you to easily check and analyse your "
+#~ "company livechat session performance. Extract informations about the "
+#~ "missed sessions, the audiance, the duration of a session, etc."
+#~ msgstr ""
+#~ "Livechat支持分析並且允許你便捷地檢查和分析你公司交流效率。提取錯過了的會"
+#~ "話、聽眾、會話持續時間等資訊。"
+
+#, fuzzy
+#~ msgid "Livechat Support Page"
+#~ msgstr "即時聊天支援頁面"
+
+#, fuzzy
+#~ msgid "Livechat Support Report"
+#~ msgstr "即時聊天支援報表"
+
+#, fuzzy
+#~ msgid "Livechat Support Statistics"
+#~ msgstr "即時聊天支持統計"
+
+#, fuzzy
+#~ msgid "Manager"
+#~ msgstr "主管"
+
+#, fuzzy
+#~ msgid "Matching Order"
+#~ msgstr "匹配順序"
+
+#, fuzzy
+#~ msgid "Medium-sized photo"
+#~ msgstr "中等尺寸圖片"
+
+#, fuzzy
+#~ msgid ""
+#~ "Medium-sized photo of the group. It is automatically resized as a "
+#~ "128x128px image, with aspect ratio preserved. Use this field in form "
+#~ "views or some kanban views."
+#~ msgstr ""
+#~ "群組的中等尺寸照片。它們被縮放為128x128px，縱橫比保留。表單視圖或者一些看"
+#~ "板視圖使用這個欄位。"
+
+#, fuzzy
+#~ msgid "Missed sessions"
+#~ msgstr "丟失的會話"
+
+#, fuzzy
+#~ msgid "My sessions"
+#~ msgstr "我的會話"
+
+#, fuzzy
+#~ msgid ""
+#~ "None of our collaborators seems to be available, please try again later."
+#~ msgstr "你的合作者似乎都不在先，請稍後再次嘗試。"
+
+#, fuzzy
+#~ msgid "Number of different speakers"
+#~ msgstr "會話人數"
+
+#, fuzzy
+#~ msgid "Number of message in the conversation"
+#~ msgstr "對話中的消息數"
+
+#, fuzzy
+#~ msgid "OK"
+#~ msgstr "好"
+
+#, fuzzy
+#~ msgid "Odoo"
+#~ msgstr "Odoo"
+
+#, fuzzy
+#~ msgid "Open Livechat Channel Menu"
+#~ msgstr "打開即時聊天頻道功能表"
+
+#, fuzzy
+#~ msgid "Operator"
+#~ msgstr "運算符"
+
+#, fuzzy
+#~ msgid "Operators"
+#~ msgstr "操作員"
+
+#, fuzzy
+#~ msgid "Operators stats"
+#~ msgstr "操作員統計"
+
+#, fuzzy
+#~ msgid "Options"
+#~ msgstr "選項"
+
+#, fuzzy
+#~ msgid "Photo"
+#~ msgstr "照片"
+
+#, fuzzy
+#~ msgid "Quit"
+#~ msgstr "退出"
+
+#, fuzzy
+#~ msgid "Rating"
+#~ msgstr "收聽率"
+
+#, fuzzy
+#~ msgid ""
+#~ "Regular expression identifying the web page on which the rules will be "
+#~ "applied."
+#~ msgstr "正則運算式識別網頁上的哪些規則將被應用。"
+
+#, fuzzy
+#~ msgid "Rules"
+#~ msgstr "規則"
+
+#, fuzzy
+#~ msgid "Script (external)"
+#~ msgstr "腳本（外部）"
+
+#, fuzzy
+#~ msgid "Script (internal)"
+#~ msgstr "腳本（內部）"
+
+#, fuzzy
+#~ msgid "Search history"
+#~ msgstr "搜索歷史"
+
+#, fuzzy
+#~ msgid "Search report"
+#~ msgstr "搜索報表"
+
+#, fuzzy
+#~ msgid ""
+#~ "Select 'Display button' to simply display the chat button on the pages. "
+#~ "Select 'Auto-popup' for to display the button, and automatically open the "
+#~ "conversation window. Select 'Hide button' to hide the chat button on the "
+#~ "pages."
+#~ msgstr ""
+#~ "選擇”顯示按鈕”在頁面上顯示聊天按鈕。選擇”自動彈出“來顯示按鈕，自動打開會話"
+#~ "窗口。選擇”隱藏按鈕“來隱藏頁面上的聊天按鈕。"
+
+#, fuzzy
+#~ msgid "Session"
+#~ msgstr "工作"
+
+#, fuzzy
+#~ msgid "Session Form"
+#~ msgstr "會話表單"
+
+#, fuzzy
+#~ msgid "Session Name"
+#~ msgstr "工作名稱"
+
+#, fuzzy
+#~ msgid "Sessions"
+#~ msgstr "工作記錄"
+
+#, fuzzy
+#~ msgid "Sessions by day"
+#~ msgstr "會話按天"
+
+#, fuzzy
+#~ msgid "Small-sized photo"
+#~ msgstr "小尺寸照片"
+
+#, fuzzy
+#~ msgid ""
+#~ "Small-sized photo of the group. It is automatically resized as a 64x64px "
+#~ "image, with aspect ratio preserved. Use this field anywhere a small image "
+#~ "is required."
+#~ msgstr ""
+#~ "群組的小尺寸照片. 被自動縮放到64x64px，保持縱橫比。這個欄位用於任何需要小"
+#~ "圖片的地方"
+
+#, fuzzy
+#~ msgid "Start Date of session"
+#~ msgstr "會話開始日期"
+
+#, fuzzy
+#~ msgid "Start date of the conversation"
+#~ msgstr "會話開始日期"
+
+#, fuzzy
+#~ msgid "Support Channels"
+#~ msgstr "Support Channels"
+
+#, fuzzy
+#~ msgid "Support Statistics"
+#~ msgstr "支持統計"
+
+#, fuzzy
+#~ msgid "Test"
+#~ msgstr "測試"
+
+#, fuzzy
+#~ msgid "Text of the Button"
+#~ msgstr "按鈕的文本"
+
+#, fuzzy
+#~ msgid "The user will be able to delete support channels."
+#~ msgstr "允許用戶刪除服務支援頻道。"
+
+#, fuzzy
+#~ msgid "The user will be able to join support channels."
+#~ msgstr "用戶能夠加入服務支援頻道。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This field holds the image used as photo for the group, limited to "
+#~ "1024x1024px."
+#~ msgstr "這個欄位保存的圖片作為群組的照片，限制為  1024x1024px."
+
+#, fuzzy
+#~ msgid ""
+#~ "This is an automated 'welcome' message that your visitor will see when "
+#~ "they initiate a new chat session."
+#~ msgstr "這是你的登入者開始他們新的聊天會話時將看到一個自動的‘歡迎’消息。"
+
+#, fuzzy
+#~ msgid "Time in session"
+#~ msgstr "加入會話時間"
+
+#, fuzzy
+#~ msgid "Time to answer"
+#~ msgstr "回應速度"
+
+#, fuzzy
+#~ msgid ""
+#~ "To identify the country, GeoIP must be install on your server, otherwise, "
+#~ "the countries of the rule will not be taken into account."
+#~ msgstr ""
+#~ "為了識別國家，地理位置匹配必須安裝在你的伺服器上，否則，該規則的國家將不被"
+#~ "考慮。"
+
+#, fuzzy
+#~ msgid "Treated sessions"
+#~ msgstr "被處理的會話"
+
+#, fuzzy
+#~ msgid "URL Regex"
+#~ msgstr "URL的正則運算式"
+
+#, fuzzy
+#~ msgid "UUID"
+#~ msgstr "UUID"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "用戶"
+
+#, fuzzy
+#~ msgid "Users"
+#~ msgstr "使用人"
+
+#, fuzzy
+#~ msgid "Visitor"
+#~ msgstr "參觀者"
+
+#, fuzzy
+#~ msgid "Web Page"
+#~ msgstr "Web頁"
+
+#, fuzzy
+#~ msgid "Welcome Message"
+#~ msgstr "歡迎資訊"
+
+#, fuzzy
+#~ msgid "e.g. Hello, how may I help you?"
+#~ msgstr "例如：嗨！有什麼可以幫你的嗎？"
+
+#, fuzzy
+#~ msgid "e.g. YourWebsite.com"
+#~ msgstr "例如：你的網站地址 "
+
+#, fuzzy
+#~ msgid ""
+#~ "or copy this url and send it by email to your customers or suppliers:"
+#~ msgstr "或者拷貝這個URL並且通過郵件發送給你的客戶、供應商："
+
+#, fuzzy
+#~ msgid "seconds"
+#~ msgstr "秒"
+
+#~ msgid "false"
+#~ msgstr "false"

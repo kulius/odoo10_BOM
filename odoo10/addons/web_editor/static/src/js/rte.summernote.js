@@ -869,104 +869,104 @@ eventHandler.detach = function (oLayoutInfo, options) {
 
 $.summernote.lang.odoo = {
     font: {
-      bold: _t('Bold'),
-      italic: _t('Italic'),
-      underline: _t('Underline'),
-      strikethrough: _t('Strikethrough'),
-      subscript: _t('Subscript'),
-      superscript: _t('Superscript'),
-      clear: _t('Remove Font Style'),
-      height: _t('Line Height'),
-      name: _t('Font Family'),
-      size: _t('Font Size')
+      bold: _t('加粗'),
+      italic: _t('傾斜'),
+      underline: _t('下劃線'),
+      strikethrough: _t('刪除線'),
+      subscript: _t('下標'),
+      superscript: _t('上標'),
+      clear: _t('移除字體樣式'),
+      height: _t('行高'),
+      name: _t('字體'),
+      size: _t('字高')
     },
     image: {
-      image: _t('File / Image'),
+      image: _t('圖片'),
       insert: _t('Insert Image'),
-      resizeFull: _t('Resize Full'),
-      resizeHalf: _t('Resize Half'),
-      resizeQuarter: _t('Resize Quarter'),
-      floatLeft: _t('Float Left'),
-      floatRight: _t('Float Right'),
-      floatNone: _t('Float None'),
-      dragImageHere: _t('Drag an image here'),
-      selectFromFiles: _t('Select from files'),
-      url: _t('Image URL'),
-      remove: _t('Remove Image')
+      resizeFull: _t('插入圖片'),
+      resizeHalf: _t('調整為一半'),
+      resizeQuarter: _t('調整為四分之一'),
+      floatLeft: _t('左側浮動'),
+      floatRight: _t('右側浮動'),
+      floatNone: _t('不浮動'),
+      dragImageHere: _t('拖動圖形到這裏'),
+      selectFromFiles: _t('選擇檔'),
+      url: _t('圖片URL'),
+      remove: _t('移除圖片')
     },
     link: {
-      link: _t('Link'),
-      insert: _t('Insert Link'),
-      unlink: _t('Unlink'),
-      edit: _t('Edit'),
-      textToDisplay: _t('Text to display'),
-      url: _t('To what URL should this link go?'),
-      openInNewWindow: _t('Open in new window')
+      link: _t('鏈結'),
+      insert: _t('插入鏈結'),
+      unlink: _t('取消鏈結'),
+      edit: _t('編輯'),
+      textToDisplay: _t('要顯示的文字'),
+      url: _t('這個鏈結要轉到到哪個URL??'),
+      openInNewWindow: _t('在新視窗中打開')
     },
     video: {
-      video: _t('Video'),
-      videoLink: _t('Video Link'),
-      insert: _t('Insert Video'),
-      url: _t('Video URL?'),
-      providers: _t('(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)')
+     video: _t('視頻'),
+      videoLink: _t('視頻連接'),
+      insert: _t('插入視頻'),
+      url: _t('視頻URL?'),
+      providers: _t('(YouTube, Vimeo, Vine, Instagram, DailyMotion 或 Youku)')
     },
     table: {
-      table: _t('Table')
+      table: _t('表格')
     },
     hr: {
-      insert: _t('Insert Horizontal Rule')
+      insert: _t('插入水平線')
     },
     style: {
-      style: _t('Style'),
-      normal: _t('Normal'),
-      blockquote: _t('Quote'),
-      pre: _t('Code'),
-      h1: _t('Header 1'),
-      h2: _t('Header 2'),
-      h3: _t('Header 3'),
-      h4: _t('Header 4'),
-      h5: _t('Header 5'),
-      h6: _t('Header 6')
+      style: _t('樣式'),
+      normal: _t('一般'),
+      blockquote: _t('引用'),
+      pre: _t('代碼'),
+      h1: _t('標題 1'),
+      h2: _t('標題 2'),
+      h3: _t('標題 3'),
+      h4: _t('標題 4'),
+      h5: _t('標題 5'),
+      h6: _t('標題 6')
     },
     lists: {
-      unordered: _t('Unordered list'),
-      ordered: _t('Ordered list')
+      unordered: _t('專案符號列表'),
+      ordered: _t('項目編號列表')
     },
     options: {
-      help: _t('Help'),
-      fullscreen: _t('Full Screen'),
-      codeview: _t('Code View')
+      help: _t('説明'),
+      fullscreen: _t('全屏'),
+      codeview: _t('代碼視圖')
     },
     paragraph: {
-      paragraph: _t('Paragraph'),
-      outdent: _t('Outdent'),
-      indent: _t('Indent'),
-      left: _t('Align left'),
-      center: _t('Align center'),
-      right: _t('Align right'),
-      justify: _t('Justify full')
+      paragraph: _t('段落'),
+      outdent: _t('突出'),
+      indent: _t('縮進'),
+      left: _t('左側對齊'),
+      center: _t('中間對齊'),
+      right: _t('右側對齊'),
+      justify: _t('兩端對齊')
     },
     color: {
-      recent: _t('Recent Color'),
-      more: _t('More Color'),
-      background: _t('Background Color'),
-      foreground: _t('Font Color'),
-      transparent: _t('Transparent'),
-      setTransparent: _t('Set transparent'),
-      reset: _t('Reset'),
-      resetToDefault: _t('Reset to default')
+       recent: _t('最近顏色'),
+      more: _t('更多顏色'),
+      background: _t('背景顏色'),
+      foreground: _t('前景顏色'),
+      transparent: _t('透明'),
+      setTransparent: _t('設置透明'),
+      reset: _t('重置'),
+      resetToDefault: _t('重置為默認')
     },
     shortcut: {
-      shortcuts: _t('Keyboard shortcuts'),
-      close: _t('Close'),
-      textFormatting: _t('Text formatting'),
-      action: _t('Action'),
-      paragraphFormatting: _t('Paragraph formatting'),
-      documentStyle: _t('Document Style')
+      shortcuts: _t('鍵盤快捷鍵'),
+      close: _t('關閉'),
+      textFormatting: _t('文本格式'),
+      action: _t('動作'),
+      paragraphFormatting: _t('段落格式'),
+      documentStyle: _t('文檔樣式')
     },
     history: {
-      undo: _t('Undo'),
-      redo: _t('Redo')
+     undo: _t('取消'),
+      redo: _t('恢復')
     }
 };
 });

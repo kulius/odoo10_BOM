@@ -1,0 +1,40 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* contacts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-16 16:52+0800\n"
+"PO-Revision-Date: 2016-11-15 09:06+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: contacts
+#: model:ir.actions.act_window,help:contacts.action_contacts
+msgid "Click to add a contact in your contacts directory."
+msgstr "單擊以增加聯繫人到你的聯繫人目錄。"
+
+#. module: contacts
+#: model:ir.actions.act_window,name:contacts.action_contacts
+#: model:ir.ui.menu,name:contacts.menu_contacts
+msgid "Contacts"
+msgstr "聯繫人"
+
+#. module: contacts
+#: model:ir.actions.act_window,help:contacts.action_contacts
+msgid ""
+"Odoo helps you easily track all activities related to\n"
+"            a customer: discussions, history of business opportunities,\n"
+"            documents, etc."
+msgstr ""
+"Odoo 幫助你方便的跟蹤相關客戶的所有活動；\n"
+"                討論、商機歷史、\n"
+"                文件等等。"

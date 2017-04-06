@@ -1,27 +1,113 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * hr_recruitment
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2017-03-26 23:32+0800\n"
+"PO-Revision-Date: 2017-03-26 23:37+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:46+0000\n"
+"X-Generator: Poedit 1.8.12\n"
+
+#. module: hr_recruitment
+#: model:mail.template,body_html:hr_recruitment.email_template_data_applicant_refuse
+msgid ""
+"\n"
+"<p>Dear ${object.partner_name or 'applicant'},</p>\n"
+"<p>Thank you for your enquiry.<br />\n"
+"Unfortunately, your profile does not match with our needs</p>\n"
+"<p>If you have any questions, please let us know.</p>\n"
+"<p>Best regards,</p>"
+msgstr ""
+"\n"
+"<p>尊敬的${object.partner_name or 'applicant'},你好：</p>\n"
+"<p>感謝你申請我們公司的職位。\n"
+"很抱歉，你的簡歷不符合我們公司的招聘要求，\n"
+"<p>如果你有任何疑問，請聯繫我們。</p>\n"
+"<p>此致敬意</p>"
+
+#. module: hr_recruitment
+#: model:mail.template,body_html:hr_recruitment.email_template_data_applicant_interest
+msgid ""
+"\n"
+"<p>Dear ${object.partner_name or 'applicant'},</p>\n"
+"<p>Thank you for your enquiry.<br />\n"
+"Your resume got our interest. I will contact you as soon as possible to "
+"plan\n"
+"next steps of the recruitment process.</p>\n"
+"<p>If you have any questions, please let us know.</p>\n"
+"<p>Best regards,</p>"
+msgstr ""
+"\n"
+"<p>尊敬的 ${object.partner_name or 'applicant'},</p>\n"
+"<p>感謝你應聘.<br />\n"
+"我們對你的申請很感興趣，我將儘快聯繫你\n"
+"來確認後續事宜，</p>\n"
+"<p>如果你有任何疑問，請立即聯繫我們。</p>\n"
+"<p>此致，敬禮</p>"
+
+#. module: hr_recruitment
+#: model:mail.template,body_html:hr_recruitment.email_template_data_applicant_employee
+msgid ""
+"\n"
+"<p>Dear all,</p>\n"
+"<p>I’m very pleased to announce that <strong> ${object.name} </strong> will "
+"be\n"
+"joining us as a ${object.job_id.name}\n"
+"%if object.department_id:\n"
+"    in ${object.department_id.name}.\n"
+"%endif\n"
+".</p>\n"
+"<p>Please welcome him/her and help him/her finding his/her marks.</p>"
+msgstr ""
+"\n"
+"<p>尊敬的全體,</p>\n"
+"<p>我很高興宣佈 <strong> ${object.name} </strong> 將加入\n"
+"我們作為一個 ${object.job_id.name}\n"
+"%if object.department_id:\n"
+"   在 ${object.department_id.name}.\n"
+"%endif\n"
+".</p>\n"
+"<p>請歡迎他/她並且幫助他/ta她做出成績。</p>"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
+msgid "<b>Contact:</b>"
+msgstr "<b>聯繫方式：</b>"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
+msgid "<b>Degree:</b>"
+msgstr "<b>學歷：</b>"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
+msgid "<b>Departement:</b>"
+msgstr "<b>部門:</b>"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "<span class=\"o_stat_text\">Meetings</span>"
+msgstr "<span class=\"o_stat_text\">會議</span>"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_survey
+msgid "<span class=\"o_stat_text\">Trackers</span>"
+msgstr "<span class=\"o_stat_text\">跟蹤者</span>"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
 msgid "<span>New</span>"
-msgstr "<span>新增</span>"
+msgstr "<span>新建</span>"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
@@ -31,13 +117,36 @@ msgstr "<span>報表</span>"
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
 msgid "<span>View</span>"
-msgstr "<span>檢視</span>"
+msgstr "<span>視圖</span>"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_defaults
+msgid ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
+msgstr "當創建別名的新記錄時，一個Python字典被提供作為預設值"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_active
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_active
 msgid "Active"
-msgstr "活躍"
+msgstr "生效"
+
+#. module: hr_recruitment
+#. openerp-web
+#: code:addons/hr_recruitment/static/src/js/tour.js:20
+#, python-format
+msgid ""
+"Add columns to define the <b>interview stages</b>.<br/><i>e.g. New &gt; "
+"Qualified &gt; First Interview &gt; Recruited</i>"
+msgstr ""
+"添加新列來定義<b>面試階段</b>.<br/><i>例如： 新建&gt; 合格&gt; 初次面試 &gt; "
+"招聘</i>"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_address_id
+msgid "Address where employees are working"
+msgstr "員工工作的地址"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_id
@@ -45,19 +154,158 @@ msgid "Alias"
 msgstr "別名"
 
 #. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_contact
+msgid "Alias Contact Security"
+msgstr "聯繫人別名許可權"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_alias_id
+msgid "Alias ID"
+msgstr "別名ID"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_name
+msgid "Alias Name"
+msgstr "別名"
+
+#. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_domain
 msgid "Alias domain"
-msgstr "領域別名"
+msgstr "域別名"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_model_id
+msgid "Aliased Model"
+msgstr "別名模型"
+
+#. module: hr_recruitment
+#: model:ir.model,name:hr_recruitment.model_hr_applicant
+msgid "Applicant"
+msgstr "申請人"
+
+#. module: hr_recruitment
+#: model:mail.message.subtype,name:hr_recruitment.mt_applicant_hired
+#: model:mail.message.subtype,name:hr_recruitment.mt_job_applicant_hired
+msgid "Applicant Hired"
+msgstr "應聘者被聘用"
+
+#. module: hr_recruitment
+#: model:mail.message.subtype,name:hr_recruitment.mt_job_applicant_stage_changed
+msgid "Applicant Stage Changed"
+msgstr "申請步驟變更"
+
+#. module: hr_recruitment
+#: model:mail.message.subtype,description:hr_recruitment.mt_applicant_new
+msgid "Applicant created"
+msgstr "已申請"
+
+#. module: hr_recruitment
+#: model:mail.message.subtype,description:hr_recruitment.mt_applicant_hired
+msgid "Applicant hired"
+msgstr "聘請申請人"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_partner_name
+msgid "Applicant's Name"
+msgstr "申請人姓名"
+
+#. module: hr_recruitment
+#: code:addons/hr_recruitment/models/hr_recruitment.py:92
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_tree_view_job
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_applicant_calendar_view
+#, python-format
+msgid "Applicants"
+msgstr "申請人"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_applications
+msgid ""
+"Applicants and their attached CV are created automatically when an email is "
+"sent.\n"
+"                If you install the document management modules, all resumes "
+"are indexed automatically,\n"
+"                so that you can easily search through their content."
+msgstr ""
+"應聘申請及簡歷附件將在郵件發送時自動創建。\n"
+"             如果你安裝了文檔管理模組，所有簡歷都會被自動索引，\n"
+"             這樣你就可以很容易地通過簡歷內容搜索。"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.crm_case_categ0_act_job
+msgid ""
+"Applicants and their attached CV are created automatically when an email is "
+"sent.\n"
+"            If you install the document management modules, all resumes are "
+"indexed automatically, \n"
+"            so that you can easily search through their content."
+msgstr ""
+"應聘申請及簡歷附件將在郵件發送時自動創建。\n"
+"       如果你安裝了文檔管理模組，所有簡歷都會被自動索引，\n"
+"       這樣你就可以很容易地通過簡歷內容搜索。"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
 msgid "Application"
-msgstr "應用程式"
+msgstr "申請"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "Application Summary"
+msgstr "應聘申請總結"
+
+#. module: hr_recruitment
+#: model:mail.template,subject:hr_recruitment.email_template_data_applicant_interest
+msgid "Application approved"
+msgstr "申請通過"
+
+#. module: hr_recruitment
+#: model:mail.template,subject:hr_recruitment.email_template_data_applicant_refuse
+msgid "Application refused"
+msgstr "申請被拒絕"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
+msgid "Application(s)"
+msgstr "應聘申請"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.action_hr_job_applications
+#: model:ir.actions.act_window,name:hr_recruitment.crm_case_categ0_act_job
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_application_count
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_application_ids
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_document_ids
+#: model:ir.ui.menu,name:hr_recruitment.menu_crm_case_categ0_act_job
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_survey
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
+msgid "Applications"
+msgstr "應聘申請"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_job_id
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_job_id
+msgid "Applied Job"
+msgstr "申請崗位"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_configuration
 msgid "Apply"
-msgstr "套用"
+msgstr "應用"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_priority
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_priority
+msgid "Appreciation"
+msgstr "評價"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+msgid "Archived"
+msgstr "無效"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_date_open
+msgid "Assigned"
+msgstr "分配"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_attachment_ids
@@ -68,7 +316,42 @@ msgstr "附件"
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_availability
 msgid "Availability"
-msgstr "有空"
+msgstr "有效期"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_delay_close
+msgid "Avg. Delay to Close"
+msgstr "平均耗用天數"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_salary_exp_avg
+msgid "Avg. Expected Salary"
+msgstr "平均.期望月薪"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_salary_prop_avg
+msgid "Avg. Proposed Salary"
+msgstr "平均.建議薪水"
+
+#. module: hr_recruitment
+#: model:hr.recruitment.degree,name:hr_recruitment.degree_bachelor
+msgid "Bachelor Degree"
+msgstr "本科"
+
+#. module: hr_recruitment
+#: model:ir.filters,name:hr_recruitment.filter_recruitment_report_departmnet
+msgid "By Department"
+msgstr "被部門"
+
+#. module: hr_recruitment
+#: model:ir.filters,name:hr_recruitment.filter_recruitment_report_job
+msgid "By Job"
+msgstr "被工作"
+
+#. module: hr_recruitment
+#: model:ir.filters,name:hr_recruitment.filter_recruitment_report_recruiter
+msgid "By Recruiter"
+msgstr "被招聘人"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_configuration
@@ -76,10 +359,43 @@ msgid "Cancel"
 msgstr "取消"
 
 #. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_graph_view_job
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_pivot_view_job
+msgid "Cases By Stage and Estimates"
+msgstr "按階段和評估的事務"
+
+#. module: hr_recruitment
+#: model:ir.model,name:hr_recruitment.model_hr_applicant_category
+msgid "Category of applicant"
+msgstr "申請人分類"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_config
+msgid "Click here to create a new job position."
+msgstr "點擊這裏創建一個新的工作崗位。"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_no_employee
+msgid "Click to add a new employee."
+msgstr "點擊添加新員工。"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.hr_job_stage_act
+#: model:ir.actions.act_window,help:hr_recruitment.hr_recruitment_stage_act
+msgid "Click to add a new stage in the recruitment process."
+msgstr "單擊為招聘過程中添加一個新階段。"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.hr_applicant_category_action
+msgid "Click to add a new tag."
+msgstr "點擊添加一個新標籤"
+
+#. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_date_closed
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_date_closed
 msgid "Closed"
-msgstr "關閉"
+msgstr "已結束"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_category_color
@@ -98,14 +414,35 @@ msgstr "公司"
 #. module: hr_recruitment
 #: model:ir.ui.menu,name:hr_recruitment.menu_hr_recruitment_configuration
 msgid "Configuration"
-msgstr "設定"
+msgstr "配置"
 
 #. module: hr_recruitment
-#: code:addons/hr_recruitment/models/hr_recruitment.py:366
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_configuration
+msgid "Configure HR Recruitment"
+msgstr "設置人力資源招聘"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.action_hr_recruitment_configuration
+msgid "Configure Recruitment"
+msgstr "設置招聘"
+
+#. module: hr_recruitment
+#: code:addons/hr_recruitment/models/hr_recruitment.py:352
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_partner_id
 #, python-format
 msgid "Contact"
-msgstr "聯絡人"
+msgstr "聯繫人"
+
+#. module: hr_recruitment
+#: code:addons/hr_recruitment/models/hr_recruitment.py:354
+#, python-format
+msgid "Contact Email"
+msgstr "聯繫電郵"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.ir_attachment_view_search_inherit_hr_recruitment
+msgid "Content"
+msgstr "內容"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
@@ -113,9 +450,36 @@ msgid "Contract"
 msgstr "合同"
 
 #. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+msgid "Create"
+msgstr "新建"
+
+#. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_date_create
 msgid "Create Date"
-msgstr "建立日期"
+msgstr "創建日期"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "Create Employee"
+msgstr "新建員工"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.create_job_simple
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+msgid "Create a Job Position"
+msgstr "創建一個工作崗位"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_recruitment_source_tree
+msgid "Create alias"
+msgstr "創建別名"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_sources
+msgid ""
+"Create some aliases that will allow you to track where applicants come from."
+msgstr "在這裏創建一些別名，它將允許你追蹤申請的來源..."
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_category_create_uid
@@ -125,7 +489,7 @@ msgstr "建立日期"
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_create_uid
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_category_create_date
@@ -134,18 +498,23 @@ msgstr "建立者"
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_create_date
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_create_date
 #: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
 msgid "Creation Date"
-msgstr "建立日期"
+msgstr "創建日期"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
+msgid "Creation Week"
+msgstr "創建周"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_day_close
 msgid "Days to Close"
-msgstr "結束日期"
+msgstr "剩餘天數"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_day_open
@@ -156,6 +525,49 @@ msgstr "開啟天數"
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_defaults
 msgid "Default Values"
 msgstr "預設值"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_survey
+msgid ""
+"Define a specific contact address for this job position. If you keep it "
+"empty, the default email address will be used which is in human resources "
+"settings"
+msgstr ""
+"為這個職位定義一個特定的聯繫位址。如果為空，將默認使用人事部門預設的電子郵件"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.hr_job_stage_act
+msgid ""
+"Define here your stages of the recruitment process, for example:\n"
+"            qualification call, first interview, second interview, refused,\n"
+"            hired."
+msgstr ""
+"在這裏定義你的招聘流程，例如：\n"
+"      面試資格，首次面試，二次面試，拒絕，\n"
+"      雇傭。"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.hr_recruitment_degree_action
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_type_id
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_degree_name
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_type_id
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_recruitment_degree_form
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_recruitment_degree_tree
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+msgid "Degree"
+msgstr "學歷"
+
+#. module: hr_recruitment
+#: model:ir.model,name:hr_recruitment.model_hr_recruitment_degree
+msgid "Degree of Recruitment"
+msgstr "招聘的學歷"
+
+#. module: hr_recruitment
+#: model:ir.ui.menu,name:hr_recruitment.menu_hr_recruitment_degree
+msgid "Degrees"
+msgstr "學歷"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
@@ -170,9 +582,25 @@ msgid "Department"
 msgstr "部門"
 
 #. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_manager_id
+msgid "Department Manager"
+msgstr "部門經理"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.action_hr_department
+#: model:ir.ui.menu,name:hr_recruitment.menu_hr_department
+msgid "Departments"
+msgstr "部門"
+
+#. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_description
 msgid "Description"
-msgstr "說明"
+msgstr "簡介"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+msgid "Discard"
+msgstr "取消"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_category_display_name
@@ -186,25 +614,56 @@ msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: hr_recruitment
+#: selection:hr.recruitment.config.settings,module_hr_recruitment_survey:0
+msgid "Do not use interview forms"
+msgstr "不使用面試問卷"
+
+#. module: hr_recruitment
+#: model:hr.recruitment.degree,name:hr_recruitment.degree_bac5
+msgid "Doctoral Degree"
+msgstr "博士學位"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
+msgid "Document(s)"
+msgstr "文檔"
+
+#. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_documents_count
 #: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_job_survey
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
 msgid "Documents"
-msgstr "文件"
+msgstr "文檔"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.hr_recruitment_stage_act
+msgid ""
+"Don't forget to specify the department if your recruitment process\n"
+"            is different according to the job position."
+msgstr ""
+"不要忘記在招聘過程中指定部門\n"
+"     根據工作崗位不同。"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_email_from
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_email
 msgid "Email"
-msgstr "電郵"
+msgstr "電子郵箱"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_job_survey
 msgid "Email Alias"
-msgstr "電郵別名"
+msgstr "郵箱別名"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_id
+msgid ""
+"Email alias for this job position. New emails will automatically create new "
+"applicants for this job position."
+msgstr "這個職位的電子郵件別名。新郵件會自動創建新的申請這個職位。"
 
 #. module: hr_recruitment
 #: model:ir.model,name:hr_recruitment.model_hr_employee
@@ -214,16 +673,101 @@ msgid "Employee"
 msgstr "員工"
 
 #. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_employee_name
+msgid "Employee Name"
+msgstr "員工姓名"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_emp_id
+msgid "Employee linked to the applicant."
+msgstr "員工內部申請"
+
+#. module: hr_recruitment
 #: model:ir.actions.act_window,name:hr_recruitment.action_hr_job_no_employee
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_job_survey
 msgid "Employees"
 msgstr "員工"
 
 #. module: hr_recruitment
+#: selection:hr.applicant,priority:0 selection:hr.recruitment.report,priority:0
+msgid "Excellent"
+msgstr "傑出"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_department_expected_employee
+msgid "Expected Employee"
+msgstr "期望的員工"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_salary_expected
+msgid "Expected Salary"
+msgstr "期望工資"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_salary_expected_extra
+msgid "Expected Salary Extra"
+msgstr "期望工資"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
+msgid "Extended Filters"
+msgstr "擴展篩檢程式"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "Extra advantages..."
+msgstr "額外獎金或補貼..."
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "Feedback of interviews..."
+msgstr "面談回饋..."
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+msgid "Filter and view on next actions and date"
+msgstr "篩選並查看下一步動作和日期"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_fold
+msgid "Folded in Recruitment Pipe"
+msgstr "招聘管道失敗"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_degree_sequence
+msgid "Gives the sequence order when displaying a list of degrees."
+msgstr "定義一個顯示學歷列表的序列"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_stage_sequence
+msgid "Gives the sequence order when displaying a list of stages."
+msgstr "定義一個序列按順序顯示列表中的各階段。"
+
+#. module: hr_recruitment
+#: selection:hr.applicant,priority:0 selection:hr.recruitment.report,priority:0
+msgid "Good"
+msgstr "好"
+
+#. module: hr_recruitment
+#: model:hr.recruitment.degree,name:hr_recruitment.degree_graduate
+msgid "Graduate"
+msgstr "畢業生"
+
+#. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
+msgid "Hired Employees"
+msgstr "員工"
+
+#. module: hr_recruitment
+#: model:ir.model,name:hr_recruitment.model_hr_department
+msgid "Hr Department"
+msgstr "人力資源部門"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_category_id
@@ -234,18 +778,74 @@ msgstr "分組方式"
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_id
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_parent_thread_id
+msgid ""
+"ID of the parent record holding the alias (example: project holding the task "
+"creation alias)"
+msgstr "父記錄ID支援別名(例如:project 支持 task創建別名)"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_stage_template_id
+msgid ""
+"If set, a message is posted on the applicant using the template when the "
+"applicant is set to the stage."
+msgstr "如果設置,當應聘者設置此場景時,將通過這個範本推送消息給相關應聘者"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_active
+msgid ""
+"If the active field is set to false, it will allow you to hide the case "
+"without removing it."
+msgstr "如果“有效”欄位被設為false，它對資訊進行隱藏但不刪除它。"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_config_settings_module_hr_recruitment_survey
+msgid "Interview Form"
+msgstr "面試問卷"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
 #: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
 msgid "Job"
-msgstr "工作"
+msgstr "職位"
+
+#. module: hr_recruitment
+#: model:utm.campaign,name:hr_recruitment.utm_campaign_job
+msgid "Job Campaign"
+msgstr "招聘活動"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+msgid "Job Email"
+msgstr "工作郵箱"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_job_id
+msgid "Job ID"
+msgstr "工作ID"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_address_id
+msgid "Job Location"
+msgstr "工作地點"
 
 #. module: hr_recruitment
 #: model:ir.model,name:hr_recruitment.model_hr_job
 msgid "Job Position"
-msgstr "職位"
+msgstr "工作崗位"
+
+#. module: hr_recruitment
+#: model:mail.message.subtype,name:hr_recruitment.mt_department_new
+msgid "Job Position Created"
+msgstr "已創建工作崗位"
+
+#. module: hr_recruitment
+#: model:mail.message.subtype,name:hr_recruitment.mt_job_new
+msgid "Job Position created"
+msgstr "已創建工作崗位"
 
 #. module: hr_recruitment
 #: model:ir.actions.act_window,name:hr_recruitment.action_hr_job
@@ -253,12 +853,27 @@ msgstr "職位"
 #: model:ir.ui.menu,name:hr_recruitment.menu_hr_job_position
 #: model:ir.ui.menu,name:hr_recruitment.menu_hr_job_position_config
 msgid "Job Positions"
-msgstr "職位"
+msgstr "工作崗位"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_job_id
+msgid "Job Specific"
+msgstr "工作崗位"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
 msgid "Jobs"
-msgstr "工作"
+msgstr "職務"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "Jobs - Recruitment Form"
+msgstr "職位 - 招聘表"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.action_hr_job_sources
+msgid "Jobs Sources"
+msgstr "招聘管道"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant___last_update
@@ -269,7 +884,20 @@ msgstr "工作"
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source___last_update
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最後修改日期"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_last_stage_id
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_last_stage_id
+msgid "Last Stage"
+msgstr "最終階段"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_date_last_stage_update
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_date_last_stage_update
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+msgid "Last Stage Update"
+msgstr "更新最終階段"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_category_write_uid
@@ -279,7 +907,7 @@ msgstr "最後修改:"
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_write_uid
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_category_write_date
@@ -288,17 +916,50 @@ msgstr "最後更新："
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_write_date
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: hr_recruitment
+#. openerp-web
+#: code:addons/hr_recruitment/static/src/js/tour.js:16
+#, python-format
+msgid ""
+"Let's have a look at the <b>applications pipeline</b> for this job position."
+msgstr "讓我們看一看這個工作崗位的<b>申請狀態</b>"
+
+#. module: hr_recruitment
+#: model:res.groups,name:hr_recruitment.group_hr_recruitment_manager
+msgid "Manager"
+msgstr "管理者"
+
+#. module: hr_recruitment
+#: model:hr.recruitment.degree,name:hr_recruitment.degree_licenced
+msgid "Master Degree"
+msgstr "碩士"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_medium_id
+msgid "Medium"
+msgstr "管道"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_partner_mobile
 msgid "Mobile"
-msgstr "手提電話"
+msgstr "手機"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
 msgid "Mobile:"
-msgstr "行動電話："
+msgstr "手機:"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
+msgid "More <i class=\"fa fa-caret-down\"/>"
+msgstr "更多 <i class=\"fa fa-caret-down\"/>"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+msgid "My"
+msgstr "我的"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_category_name
@@ -308,28 +969,149 @@ msgstr "名稱"
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
 msgid "New"
-msgstr "新增"
+msgstr "新建"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_department_new_applicant_count
+#: model:mail.message.subtype,name:hr_recruitment.mt_applicant_new
+msgid "New Applicant"
+msgstr "新申請"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_department_view_kanban
+msgid "New Applicants"
+msgstr "新申請人"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.action_hr_job_new_application
+msgid "New Application"
+msgstr "新申請"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.hr_applicant_action_from_department
+msgid "New Applications"
+msgstr "新應聘申請"
+
+#. module: hr_recruitment
+#: code:addons/hr_recruitment/models/hr_recruitment.py:402
+#, python-format
+msgid "New Employee %s Hired"
+msgstr "被雇傭的新員工%s"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_employee_view_search
+msgid "New Hired"
+msgstr "新錄用"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_department_new_hired_employee
+msgid "New Hired Employee"
+msgstr "新錄用的員工"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.hr_employee_action_from_department
+msgid "Newly Hired Employees"
+msgstr "新錄用的員工"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_employee_newly_hired_employee
+msgid "Newly hired employee"
+msgstr "新錄用的員工"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_title_action
 msgid "Next Action"
-msgstr "下個動作"
+msgstr "下一操作"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_date_action
 msgid "Next Action Date"
-msgstr "下個動作日期"
+msgstr "下一操作日期"
 
 #. module: hr_recruitment
-#: code:addons/hr_recruitment/models/hr_recruitment.py:384
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+msgid "Next Actions"
+msgstr "下一操作"
+
+#. module: hr_recruitment
+#: code:addons/hr_recruitment/models/hr_recruitment.py:370
 #, python-format
 msgid "No Subject"
 msgstr "無主題"
 
 #. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.hr_applicant_resumes
+msgid "No document yet."
+msgstr "暫無條目。"
+
+#. module: hr_recruitment
 #: selection:hr.applicant,priority:0 selection:hr.recruitment.report,priority:0
 msgid "Normal"
 msgstr "正常"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_attachment_number
+msgid "Number of Attachments"
+msgstr "附件數量"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_report_delay_close
+msgid "Number of Days to close the project issue"
+msgstr "剩餘天數"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_applications
+msgid ""
+"Odoo helps you track applicants in the recruitment\n"
+"                process and follow up all operations: meetings, interviews, "
+"etc."
+msgstr ""
+"Odoo幫助你追蹤招聘申請，\n"
+"        處理和跟蹤所有的操作：會議、訪談等。"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.crm_case_categ0_act_job
+msgid ""
+"Odoo helps you track applicants in the recruitment\n"
+"            process and follow up all operations: meetings, interviews, etc."
+msgstr ""
+"Odoo幫助你追蹤招聘申請\n"
+"        處理和跟蹤所有的操作：會議、訪談等。"
+
+#. module: hr_recruitment
+#: model:res.groups,name:hr_recruitment.group_hr_recruitment_user
+msgid "Officer"
+msgstr "主管"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job
+msgid ""
+"Once a job position is created, you can track related applications\n"
+"                  and manage the recruitment process."
+msgstr "創建工作職位後，你可以跟蹤相關的申請並管理招聘過程。"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_config
+msgid ""
+"Once a job position is created, you can track the applicants\n"
+"                  and manage the recruitment process related to the job\n"
+"                  position."
+msgstr "創建工作職位後，你可以跟蹤申請並管理與工作崗位相關的招聘過程。"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
+msgid "Ongoing"
+msgstr "正在進行的"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_force_thread_id
+msgid ""
+"Optional ID of a thread (record) to which all incoming messages will be "
+"attached, even if they did not reply to it. If set, this will disable the "
+"creation of new records completely."
+msgstr ""
+"所有的來郵都將附上一條線索（記錄）選配的ID，即使它們不曾回復過它。如果設置"
+"了，這個將完全阻止新記錄的創建。"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_user_id
@@ -339,12 +1121,27 @@ msgstr "所有者"
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_parent_model_id
 msgid "Parent Model"
-msgstr "母模型"
+msgstr "父模型"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_parent_thread_id
+msgid "Parent Record Thread ID"
+msgstr "上級記錄線程ID"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_parent_model_id
+msgid ""
+"Parent model holding the alias. The model holding the alias reference is not "
+"necessarily the model given by alias_model_id (example: project "
+"(parent_model) and task (model))"
+msgstr ""
+"父模型擁有別名。擁有別名參考的模型不需要是alias_model_id指定的模型(例如: "
+"project (parent_model) 和 task (model)］"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_partner_id
 msgid "Partner"
-msgstr "伙伴"
+msgstr "業務夥伴"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_partner_phone
@@ -352,9 +1149,38 @@ msgid "Phone"
 msgstr "電話"
 
 #. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_contact
+msgid ""
+"Policy to post a message on the document using the mailgateway.\n"
+"- everyone: everyone can post\n"
+"- partners: only authenticated partners\n"
+"- followers: only followers of the related document or members of following "
+"channels\n"
+msgstr ""
+"使用郵件閘道為此文檔發送一個資訊的策略。\n"
+"- 所有人：所有人能發送\n"
+"- 業務夥伴：僅授權的業務夥伴\n"
+"- 關注者：僅相關文檔的關注者或頻道的關注成員\n"
+
+#. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_probability
 msgid "Probability"
 msgstr "概率"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_salary_proposed
+msgid "Proposed Salary"
+msgstr "提議工資"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_salary_proposed_extra
+msgid "Proposed Salary Extra"
+msgstr "工資標準"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_alias_force_thread_id
+msgid "Record Thread ID"
+msgstr "記錄線索D"
 
 #. module: hr_recruitment
 #: model:ir.ui.menu,name:hr_recruitment.menu_hr_recruitment_root
@@ -364,14 +1190,59 @@ msgid "Recruitment"
 msgstr "招聘"
 
 #. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.hr_job_stage_act
+msgid "Recruitment / Applicants Stages"
+msgstr "招聘 / 申請流程"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.action_hr_recruitment_report_all
+#: model:ir.actions.act_window,name:hr_recruitment.action_hr_recruitment_report_filtered_department
+#: model:ir.actions.act_window,name:hr_recruitment.action_hr_recruitment_report_filtered_job
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_graph
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_pivot
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
+msgid "Recruitment Analysis"
+msgstr "招聘分析"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
+msgid "Recruitment Done"
+msgstr "招聘結束"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_job_user_id
+msgid "Recruitment Responsible"
+msgstr "招聘負責人"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_department_view_kanban
+msgid "Recruitments"
+msgstr "招聘"
+
+#. module: hr_recruitment
+#: model:ir.model,name:hr_recruitment.model_hr_recruitment_report
+msgid "Recruitments Statistics"
+msgstr "招聘統計"
+
+#. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_reference
 msgid "Referred By"
-msgstr "介紹人"
+msgstr "推薦人"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
 msgid "Refuse"
 msgstr "拒絕"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
+msgid "Refused"
+msgstr "已拒絕"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "Reopen Application"
+msgstr "重置申請"
 
 #. module: hr_recruitment
 #: model:ir.ui.menu,name:hr_recruitment.report_hr_recruitment
@@ -382,7 +1253,7 @@ msgstr "報表"
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_requirements
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_recruitment_stage_form
 msgid "Requirements"
-msgstr "必備條件"
+msgstr "任職條件"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_user_id
@@ -390,6 +1261,57 @@ msgstr "必備條件"
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
 msgid "Responsible"
 msgstr "負責人"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.hr_applicant_resumes
+#: model:ir.ui.menu,name:hr_recruitment.menu_crm_case_categ0_act_job02
+msgid "Resumes and Letters"
+msgstr "簡歷和求職信"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_salary_exp
+msgid "Salary Expected"
+msgstr "期望工資"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_salary_expected
+msgid "Salary Expected by Applicant"
+msgstr "申請人要求的工資"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_salary_expected_extra
+msgid "Salary Expected by Applicant, extra advantages"
+msgstr "應聘者的期望工資"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_salary_prop
+msgid "Salary Proposed"
+msgstr "期望工資"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_salary_proposed
+msgid "Salary Proposed by the Organisation"
+msgstr "該組織的提議工資"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_salary_proposed_extra
+msgid "Salary Proposed by the Organisation, extra advantages"
+msgstr "公司推薦的工資標準"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
+msgid "Schedule Interview"
+msgstr "預約採訪"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "Schedule interview with this applicant"
+msgstr "為這個申請人計畫面談"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+msgid "Search Applicants"
+msgstr "搜索申請人"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_degree_sequence
@@ -401,13 +1323,40 @@ msgstr "序列"
 #: model:ir.ui.menu,name:hr_recruitment.menu_hr_recruitment_global_settings
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
 msgid "Settings"
-msgstr "設定"
+msgstr "設置"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_source_id
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_source_id
 msgid "Source"
-msgstr "來源"
+msgstr "招聘管道"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_source_name
+msgid "Source Name"
+msgstr "來源名稱"
+
+#. module: hr_recruitment
+#: model:ir.model,name:hr_recruitment.model_hr_recruitment_source
+msgid "Source of Applicants"
+msgstr "應聘者來源"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,name:hr_recruitment.hr_recruitment_source_action
+#: model:ir.ui.menu,name:hr_recruitment.menu_hr_recruitment_source
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_recruitment_source_tree
+msgid "Sources of Applicants"
+msgstr "應聘者來源"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_survey
+msgid "Specific Email Address"
+msgstr "指定的電子郵件"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_stage_job_id
+msgid "Specific job that uses this stage. Other jobs will not use this stage."
+msgstr "指定使用該階段的工作崗位。其他工作崗位將不會使用這個階段。"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_stage_id
@@ -421,12 +1370,34 @@ msgstr "階段"
 #. module: hr_recruitment
 #: model:mail.message.subtype,name:hr_recruitment.mt_applicant_stage_changed
 msgid "Stage Changed"
-msgstr "階段已改變"
+msgstr "階段變更"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_recruitment_stage_form
+msgid "Stage Definition"
+msgstr "階段定義"
 
 #. module: hr_recruitment
 #: model:mail.message.subtype,description:hr_recruitment.mt_applicant_stage_changed
 msgid "Stage changed"
-msgstr "階段已改變"
+msgstr "階段變更"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_name
+msgid "Stage name"
+msgstr "列名稱"
+
+#. module: hr_recruitment
+#: model:ir.model,name:hr_recruitment.model_hr_recruitment_stage
+msgid "Stage of Recruitment"
+msgstr "招聘流程"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_last_stage_id
+msgid ""
+"Stage of the applicant before being in the current stage. Used for lost "
+"cases analysis."
+msgstr "當前階段前的申請人階段.用於招聘失敗分析."
 
 #. module: hr_recruitment
 #: model:ir.actions.act_window,name:hr_recruitment.hr_recruitment_stage_act
@@ -436,12 +1407,82 @@ msgid "Stages"
 msgstr "階段"
 
 #. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_job_kanban
+msgid "Start Recruitment"
+msgstr "開始招聘"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+msgid "Subject / Applicant"
+msgstr "專業"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_name
+msgid "Subject / Application Name"
+msgstr "主題/應用 名稱"
+
+#. module: hr_recruitment
+#: sql_constraint:hr.applicant.category:0
+msgid "Tag name already exists !"
+msgstr "標籤名稱已存在 !"
+
+#. module: hr_recruitment
 #: model:ir.actions.act_window,name:hr_recruitment.hr_applicant_category_action
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_categ_ids
 #: model:ir.ui.menu,name:hr_recruitment.hr_applicant_category_menu
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_applicant_category_view_form
 msgid "Tags"
-msgstr "標籤"
+msgstr "分類"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_availability
+msgid "The date at which the applicant will be available to start working"
+msgstr "申請人能夠開始工作的日期"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_model_id
+msgid ""
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming "
+"email that does not reply to an existing record will cause the creation of a "
+"new record of this model (e.g. a Project Task)"
+msgstr ""
+"相應於這個別名對應的模型（Odoo的單據種類）。任何一封不屬於對某個已存在的記錄"
+"的到來郵件，將導致此模組中新記錄的創建（例如，一個新的項目任務）。"
+
+#. module: hr_recruitment
+#: sql_constraint:hr.recruitment.degree:0
+msgid "The name of the Degree of Recruitment must be unique!"
+msgstr "應聘者學歷的名稱必須唯一"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_name
+msgid ""
+"The name of the email alias, e.g. 'jobs' if you want to catch emails for "
+"<jobs@example.odoo.com>"
+msgstr ""
+"Email別名的名稱，例如，如果你要收取 <jobs@exampleodoo.com> 的電子郵件,別名就"
+"要被設為：\"jobs\""
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_user_id
+msgid ""
+"The owner of records created upon receiving emails on this alias. If this "
+"field is not set the system will attempt to find the right owner based on "
+"the sender (From) address, or will use the Administrator account if no "
+"system user is found for that address."
+msgstr ""
+"記錄所有者是根據在此別名上接受郵件來創立的。若此欄位無設置，系統將依據收發地"
+"址來尋找正確的所有者，如果在那個位址上沒有系統使用者可以找到的話，將使用admin"
+"帳戶。"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_sources
+msgid ""
+"These aliases can be emails or urls for every source. When the applicant "
+"arrives here through one of these you'll know where he came from."
+msgstr ""
+"這些別名可以給分配給每個來源的郵件或網址。當申請人通過這些方式回應，你就會知"
+"道他們來自何方。"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_email_cc
@@ -450,8 +1491,7 @@ msgid ""
 "outbound emails for this record before being sent. Separate multiple email "
 "addresses with a comma"
 msgstr ""
-"這些郵件地址將添加到之前發送記錄的發送和接收郵件的副本欄位，以逗點分隔多個郵"
-"件地址。"
+"這些郵箱位址將添加到所有接收的發送郵件的抄送欄位，用逗號分隔多個郵件位址。"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_email_from
@@ -461,19 +1501,83 @@ msgstr "這些人將收到電子郵件。"
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
 msgid "This Year"
-msgstr "本年"
+msgstr "今年"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_report_medium_id
+msgid "This is the method of delivery. Ex: Postcard, Email, or Banner Ad"
+msgstr "這是交付方式。如：明信片、Email、橫幅廣告"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_report_source_id
+msgid ""
+"This is the source of the link Ex: Search Engine, another domain, or name of "
+"email list"
+msgstr "這是鏈結資源，如：搜索引擎、功能變數名稱、郵件列表"
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.hr_applicant_resumes
+msgid ""
+"This menu helps you search through resumes and motivation\n"
+"                letters. Odoo automatically indexes .PDF, .DOC, DOCX, .TXT\n"
+"                files so that you can search keywords from the content of "
+"these\n"
+"                files."
+msgstr ""
+"此功能表可幫助你通過簡歷和附件信搜索。\n"
+"                Odoo 自動索引PDF、DOC、DOCX和TXT 檔\n"
+"                以便你可以使用關鍵字搜索這些檔的內容。"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_stage_fold
+msgid ""
+"This stage is folded in the kanban view when there are no records in that "
+"stage to display."
+msgstr "當在該階段沒有可顯示的記錄時，此階段在看板視圖中被折疊。"
+
+#. module: hr_recruitment
+#. openerp-web
+#: code:addons/hr_recruitment/static/src/js/tour.js:30
+#, python-format
+msgid ""
+"Try to send an email to this address, it will create an application "
+"automatically."
+msgstr "嘗試向此位址發送一封電子郵件，它將自動創建應聘申請。"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
+msgid "Unassigned"
+msgstr "未分配"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
 #: model:ir.ui.view,arch_db:hr_recruitment.view_crm_case_jobs_filter
 #: model:ir.ui.view,arch_db:hr_recruitment.view_job_filter_recruitment
 msgid "Unread Messages"
-msgstr "未讀訊息"
+msgstr "未讀消息"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_write_date
 msgid "Update Date"
 msgstr "更新日期"
+
+#. module: hr_recruitment
+#: selection:hr.recruitment.config.settings,module_hr_recruitment_survey:0
+msgid "Use interview forms during the recruitment process"
+msgstr "在招聘流程中使用面試問卷"
+
+#. module: hr_recruitment
+#: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_template_id
+msgid "Use template"
+msgstr "使用範本"
+
+#. module: hr_recruitment
+#. openerp-web
+#: code:addons/hr_recruitment/static/src/js/tour.js:25
+#, python-format
+msgid "Use the breadcrumbs to <b>go back to the dashboard</b>."
+msgstr "使用導航欄<b>返回到儀錶盤</b>."
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_user_id
@@ -483,9 +1587,974 @@ msgstr "用戶"
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_user_email
 msgid "User Email"
-msgstr "使用者電子郵件"
+msgstr "用戶電子郵件"
+
+#. module: hr_recruitment
+#: selection:hr.applicant,priority:0 selection:hr.recruitment.report,priority:0
+msgid "Very Good"
+msgstr "非常好"
+
+#. module: hr_recruitment
+#. openerp-web
+#: code:addons/hr_recruitment/static/src/js/tour.js:11
+#, python-format
+msgid "Want to <b>start recruiting</b> like a pro? <i>Start here.</i>"
+msgstr "希望<b>開始招聘</b>? <i>從這裏開始.</i>"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_email_cc
 msgid "Watchers Emails"
-msgstr "視察者的電子郵件"
+msgstr "關注者的電子信箱"
+
+#. module: hr_recruitment
+#: model:mail.template,subject:hr_recruitment.email_template_data_applicant_employee
+msgid "Welcome ${object.name} "
+msgstr "歡迎 ${object.name} "
+
+#. module: hr_recruitment
+#: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_no_employee
+msgid ""
+"With just a quick glance on the Odoo employee screen, you\n"
+"                can easily find all the information you need for each "
+"person;\n"
+"                contact data, job position, availability, etc."
+msgstr ""
+"只需在Odoo人員招聘模組快速流覽下，你\n"
+"      可以很容易地找到每個人的所有資訊：\n"
+"      聯繫資訊、工作職位、可用性等。"
+
+#. module: hr_recruitment
+#: code:addons/hr_recruitment/models/hr_recruitment.py:406
+#, python-format
+msgid "You must define an Applied Job and a Contact Name for this applicant."
+msgstr "你必須指定應聘者應聘的崗位和姓名"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
+msgid "e.g. Call for interview"
+msgstr "例如：電話約見"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+msgid "e.g. Sales Manager"
+msgstr "例如 銷售經理"
+
+#. module: hr_recruitment
+#: model:ir.model,name:hr_recruitment.model_hr_recruitment_config_settings
+msgid "hr.recruitment.config.settings"
+msgstr "hr.recruitment.config.settings"
+
+#. module: hr_recruitment
+#: code:addons/hr_recruitment/models/hr_recruitment.py:282
+#, python-format
+msgid "job applicants"
+msgstr "申請人"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_kanban_view_applicant
+msgid "oe_kanban_text_red"
+msgstr "oe_kanban_text_red"
+
+#~ msgid "Best regards,"
+#~ msgstr " 此致 ，"
+
+#~ msgid "Dear ${object.partner_name or 'applicant'},"
+#~ msgstr "你好， ${object.partner_name or 'applicant'},"
+
+#~ msgid "Dear all,"
+#~ msgstr "大家好，"
+
+#~ msgid "If you have any questions, please let us know."
+#~ msgstr "如果你有任何疑問，請聯繫我們。"
+
+#~ msgid ""
+#~ "I’m very pleased to announce that <strong> ${object.name} </strong> will "
+#~ "be\n"
+#~ "joining us as a ${object.job_id.name}\n"
+#~ "%if object.department_id:\n"
+#~ "    in ${object.department_id.name}.\n"
+#~ "%endif\n"
+#~ "."
+#~ msgstr ""
+#~ "我很高興地宣佈<strong> ${object.name} </strong>將會作為一名${object."
+#~ "job_id.name}加入我們\n"
+#~ "%if object.department_id:\n"
+#~ "    in ${object.department_id.name}.\n"
+#~ "%endif"
+
+#~ msgid "Please welcome him/her and help him/her finding his/her marks."
+#~ msgstr "請歡迎並幫助他找到自己的工作崗位"
+
+#~ msgid ""
+#~ "Thank you for your enquiry.<br>\n"
+#~ "Unfortunately, your profile does not match with our needs"
+#~ msgstr ""
+#~ "感謝你的申請。<br>\n"
+#~ "很遺憾，你的簡歷不符合我們的期望"
+
+#~ msgid ""
+#~ "Thank you for your enquiry.<br>\n"
+#~ "Your resume got our interest. I will contact you as soon as possible to "
+#~ "plan\n"
+#~ "next steps of the recruitment process."
+#~ msgstr ""
+#~ "感謝你的關注。<br/>\n"
+#~ "我們對你的簡歷很有興趣。\n"
+#~ "我們將儘快你你聯繫,討論下一步的招聘過程。"
+
+#~ msgid "0-15"
+#~ msgstr "0-15"
+
+#~ msgid "16-20"
+#~ msgstr "16-20"
+
+#~ msgid "21-30"
+#~ msgstr "21-30"
+
+#~ msgid "31-40"
+#~ msgstr "31-40"
+
+#~ msgid "41-50"
+#~ msgstr "41-50"
+
+#~ msgid "51-60"
+#~ msgstr "51-60"
+
+#~ msgid "61-70"
+#~ msgstr "61-70"
+
+#~ msgid "71+"
+#~ msgstr "71+"
+
+#~ msgid ""
+#~ "<span class=\"o_stat_text\">Print</span>\n"
+#~ "                            <span class=\"o_stat_text\">Interview</span>"
+#~ msgstr ""
+#~ "<span class=\"o_stat_text\">列印</span>\n"
+#~ "                            <span class=\"o_stat_text\">Interview</span>"
+
+#~ msgid ""
+#~ "<span class=\"o_stat_text\">Start</span>\n"
+#~ "                            <span class=\"o_stat_text\">Interview</span>"
+#~ msgstr ""
+#~ "<span class=\"o_stat_text\">開始</span>\n"
+#~ "                            <span class=\"o_stat_text\">面試</span>"
+
+#~ msgid "Activities"
+#~ msgstr "活動"
+
+#~ msgid "Allow the automatic indexation of resumes"
+#~ msgstr "允許對簡歷進行索引"
+
+#~ msgid "Answer related job question"
+#~ msgstr "回答有關就業問題"
+
+#~ msgid "Basic information"
+#~ msgstr "基本資訊"
+
+#~ msgid ""
+#~ "Choose an interview form for this job position and you will be able to "
+#~ "print/answer this interview from all applicants who apply for this job"
+#~ msgstr ""
+#~ "選擇一個此崗位的面試表格，你可以把它列印出來讓所有此崗位的應聘者回答這個表"
+#~ "格的問題"
+
+#~ msgid "Desk space"
+#~ msgstr "桌面空間"
+
+#~ msgid "Display Interview Form"
+#~ msgstr "顯示面試問卷"
+
+#~ msgid "Do not manage CVs and motivation letter"
+#~ msgstr "不管理求職信"
+
+#~ msgid "Dress code"
+#~ msgstr "著裝要求"
+
+#~ msgid "Education"
+#~ msgstr "教育"
+
+#~ msgid "Education and Activities"
+#~ msgstr "教育活動"
+
+#~ msgid "Experience"
+#~ msgstr "經驗"
+
+#~ msgid "Female"
+#~ msgstr "女性"
+
+#~ msgid "Freebies such as tea, coffee and stationery"
+#~ msgstr "免費的東西，例如茶、咖啡和文具"
+
+#~ msgid "From which university will you graduate?"
+#~ msgstr "從該大學將畢業了嗎？"
+
+#~ msgid "Getting on with colleagues"
+#~ msgstr "與同事相處"
+
+#~ msgid "Good management"
+#~ msgstr "良好的管理"
+
+#~ msgid "Good pay"
+#~ msgstr "良好的工資"
+
+#~ msgid "Good social life"
+#~ msgstr "良好的社會生活"
+
+#~ msgid "If other, please specify:"
+#~ msgstr "如有特殊情況，請注明："
+
+#~ msgid "Importance"
+#~ msgstr "重要性"
+
+#~ msgid "Important"
+#~ msgstr "重要的"
+
+#~ msgid "Knowledge"
+#~ msgstr "知識"
+
+#~ msgid "Male"
+#~ msgstr "男性"
+
+#~ msgid "Most important"
+#~ msgstr "最重要的"
+
+#~ msgid "No out of hours working"
+#~ msgstr "沒有工作時間以外的工作"
+
+#~ msgid "Not important"
+#~ msgstr "不重要的"
+
+#~ msgid "Office environment"
+#~ msgstr "辦公環境"
+
+#~ msgid "Office location"
+#~ msgstr "辦公地點"
+
+#~ msgid "Perks such as free parking, gym passes"
+#~ msgstr "福利如：免費停車場、健身房"
+
+#~ msgid "Print interview report"
+#~ msgstr "列印採訪報導"
+
+#~ msgid "Rate the Importance"
+#~ msgstr "評價的重要性"
+
+#~ msgid "Recruitment Form"
+#~ msgstr "招聘表格"
+
+#~ msgid "Regular meetings"
+#~ msgstr "定期會議"
+
+#~ msgid "Response"
+#~ msgstr "回復"
+
+#~ msgid "Resumes"
+#~ msgstr "簡歷"
+
+#~ msgid "Somewhat important"
+#~ msgstr "有些重要的"
+
+#~ msgid "State of the art technology"
+#~ msgstr "最先進的技術狀態"
+
+#~ msgid "Survey"
+#~ msgstr "問卷"
+
+#~ msgid ""
+#~ "This form is intended to help the responsible of a recruitment interview."
+#~ msgstr "本表格旨在協助招聘面試。"
+
+#~ msgid "Very important"
+#~ msgstr "非常重要的"
+
+#~ msgid "What age group do you belong to?"
+#~ msgstr "你屬於哪個年齡段？"
+
+#~ msgid "What is your gender?"
+#~ msgstr "你的性別是？"
+
+#~ msgid ""
+#~ "<p>Dear ${object.partner_name or 'applicant'},</p>\n"
+#~ "        <p>Congrats! Your resume's got our interest!\n"
+#~ "        I will call you as soon as possible to make a 10 minutes phone "
+#~ "interview and  plan a first meeting.</p>\n"
+#~ "        <p>If we can’t reach you or if you miss our call, feel free to "
+#~ "reach me back on the number 001 312 349 3030\n"
+#~ "        If I do not answer, please let me a message with some schedules "
+#~ "to call you back.</p>\n"
+#~ "        <p>Kind regards,</p>\n"
+#~ "        <br/>\n"
+#~ "         ${object.user_id.signature | safe}"
+#~ msgstr ""
+#~ "<p>${object.partner_name or 'applicant'} 你好,</p>        <p> 非常高興收到"
+#~ "你的簡歷!        我們將儘快和你電話溝通並預約初試時間.</p>        <p>如果"
+#~ "我們無法聯繫到你或者你錯過接聽電話,請在方便的時間聯繫我 XXX-XXXX(公司電話"
+#~ "或者個人電話,譯者注)         如果我沒有接聽到你的電話,請短信或者郵件告訴我"
+#~ "一個合適的時間,我再與你聯繫</p>        <p>致敬,</p>        <br>         "
+#~ "${object.user_id.signature}"
+
+#~ msgid ""
+#~ "<p>Dear ${object.partner_name or 'applicant'},</p>\n"
+#~ "        <p>We thank you for your interest in our company and for your "
+#~ "application.\n"
+#~ "        Unfortunately, your profile does not match with our needs or our "
+#~ "recruitment\n"
+#~ "        campaign has reached its term.</p>\n"
+#~ "        <p>If you want more details, feel free to contact us by phone.</"
+#~ "p>\n"
+#~ "        <p>Kind regards,</p>\n"
+#~ "        <br/>\n"
+#~ "         ${object.user_id and object.user_id.signature | safe or ''}"
+#~ msgstr ""
+#~ "<p>${object.partner_name or 'applicant'} 你好,</p>\n"
+#~ "        <p>謝謝你申請我們公司的職位.\n"
+#~ "        很抱歉, 你的簡歷不符合我們的招聘要求\n"
+#~ "        此職位的招聘已結束.</p>\n"
+#~ "        <p>如果你有其他想法,請在方便的時間電話聯繫我們.</p>\n"
+#~ "        <p>此致,</p>\n"
+#~ "        <br>\n"
+#~ "         ${object.user_id and object.user_id.signature or ''}"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid "Campaign"
+#~ msgstr "活動"
+
+#~ msgid ""
+#~ "Click here to create a new job. You can remove the \"In Recruitment\" "
+#~ "filter to display all the job positions."
+#~ msgstr ""
+#~ "單擊此處創建一份新工作。你可以移除\"正在招聘\"篩選條件查看所有工作崗位。"
+
+#~ msgid ""
+#~ "Create email and url for each distinct source. <br>\n"
+#~ "                When the applicant will arrive, you will know from wich "
+#~ "source the Job position is coming."
+#~ msgstr ""
+#~ "為每個不同的來源創建郵件和url鏈結。<br/>\n"
+#~ "       有求職者信息時，你可以知道工作崗位的資訊來源。"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "最後一個消息的發佈日期的記錄。"
+
+#~ msgid ""
+#~ "Define job position profile and manage recruitment in a context of a "
+#~ "particular job: print interview survey, define number of expected new "
+#~ "employees, and manage its recruitment pipe"
+#~ msgstr ""
+#~ "為特定工作定義工作職位描述和管理招聘：列印面試調查，確定新員工人數，並管理"
+#~ "招聘管道"
+
+#~ msgid "Followers"
+#~ msgstr "關注著"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果勾選了新的消息需要你的注意。"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選，你需要注意查看新消息"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Job Stages"
+#~ msgstr "工作階段"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最新消息日期"
+
+#~ msgid ""
+#~ "Manage your CV's and motivation letter related to all applicants.\n"
+#~ "-This installs the module document_ftp. This will install the knowledge "
+#~ "management  module in order to allow you to search using specific "
+#~ "keywords through  the content of all documents (PDF, .DOCx...)"
+#~ msgstr ""
+#~ "管理你的簡歷和求職信與所有申請人。\n"
+#~ "                安裝模組document_ftp。為了讓你通過使用特定的關鍵字的所有文"
+#~ "件的內容進行搜索，這將安裝知識管理模組（PDF，DOCX...）"
+
+#~ msgid "Messages"
+#~ msgstr "消息"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動的數量"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的資訊數量"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Open HR Menu"
+#~ msgstr "打開人力資源菜單"
+
+#~ msgid "Search through resumes and motivation letters."
+#~ msgstr "在簡歷和求職信中搜索。"
+
+#~ msgid ""
+#~ "This is a name that helps you keep track of your different campaign "
+#~ "efforts Ex: Fall_Drive, Christmas_Special"
+#~ msgstr "這是用以協助你隨時跟進各種促銷活動的名稱，如：秋季促銷，聖誕特賣"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息數量"
+
+#~ msgid "Website Messages"
+#~ msgstr "網站信息"
+
+#~ msgid "Website communication history"
+#~ msgstr "網站通信歷史記錄"
+
+#~ msgid "Important Messages"
+#~ msgstr "重要消息"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和通信歷史"
+
+#~ msgid "The answer you entered has an invalid format."
+#~ msgstr "你輸入的答案的格式無效。"
+
+#~ msgid "This question requires an answer."
+#~ msgstr "這個問題需要回答。"
+
+#~ msgid "Contract Proposal"
+#~ msgstr "合同建議"
+
+#~ msgid "Contract Signed"
+#~ msgstr "簽訂合同"
+
+#~ msgid "First Interview"
+#~ msgstr "初次面試"
+
+#~ msgid "Initial Qualification"
+#~ msgstr "初步評價"
+
+#~ msgid "Need Action"
+#~ msgstr "需要行動"
+
+#~ msgid "Need Action Counter"
+#~ msgstr "需要行動計數"
+
+#~ msgid "Number of needaction messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Second Interview"
+#~ msgstr "第二次面談"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                 Click here to create a new job. You can remove the \"In "
+#~ "Recruitment\" filter to display all the job positions.\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                Define job position profile and manage recruitment in a "
+#~ "context of a particular job: print interview survey, define number of "
+#~ "expected new employees, and manage its recruitment pipe\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                 點此創建一個新的工作崗位，或移除篩檢程式中的\"正在招聘\"過"
+#~ "濾項，從而為之前招聘過的崗位補充新人。 \n"
+#~ "        </p>\n"
+#~ "        <p>\n"
+#~ "         定義職位簡介，管理特殊工作的招聘：列印訪談調查，確定預期的新員工"
+#~ "人數，並管理其招聘管道。\n"
+#~ "        </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "            Click to add a new stage in the recruitment process.\n"
+#~ "          </p><p>\n"
+#~ "            Don't forget to specify the department if your recruitment "
+#~ "process\n"
+#~ "            is different according to the job position.\n"
+#~ "          </p>\n"
+#~ "        "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "           在招聘過程中，添加了一個新的階段.\n"
+#~ "          </p><p>\n"
+#~ "            不要忘了指定的部門，如果你的招聘流程\n"
+#~ "           是根據不同的職位.\n"
+#~ "          </p>\n"
+#~ "        "
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                Create here some alias...\n"
+#~ "                That will allow you to track from where the applicant is "
+#~ "coming from...\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                Create email and url for each distinct source. <br/>\n"
+#~ "                When the applicant will arrive, you will know from wich "
+#~ "source the Job position is coming.\n"
+#~ "              </p>\n"
+#~ "         "
+#~ msgstr ""
+#~ "<p>\n"
+#~ "                在這裏創建一些別名...\n"
+#~ "                他們可以使你跟蹤應聘者的來自哪個管道...\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                為每個明確的管道創建一個電子郵件和網址。 <br/>\n"
+#~ "                當一個應聘申請到來時，你將知道這個應聘申請來自于哪個渠"
+#~ "道。\n"
+#~ "              </p>\n"
+#~ "         "
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                Odoo helps you track applicants in the recruitment\n"
+#~ "                process and follow up all operations: meetings, "
+#~ "interviews, etc.\n"
+#~ "              </p><p>\n"
+#~ "                Applicants and their attached CV are created "
+#~ "automatically when an email is sent.\n"
+#~ "                If you install the document management modules, all "
+#~ "resumes are indexed automatically,\n"
+#~ "                so that you can easily search through their content.\n"
+#~ "              </p>\n"
+#~ "         "
+#~ msgstr ""
+#~ "<p>\n"
+#~ "                Odoo 將幫助你跟蹤招聘流程中的應聘申請\n"
+#~ "                並跟蹤後續活動：會議、會面，等等\n"
+#~ "              </p><p>\n"
+#~ "                應聘申請和它們的附件CV將在郵件發送時被自動創建。\n"
+#~ "                如果你安裝了文檔管理模組，所有這些會被自動索引，\n"
+#~ "                所以你可以方便的檢索它們的內容。              </p>"
+
+#~ msgid "<p></p>"
+#~ msgstr "<p></p>"
+
+#~ msgid ""
+#~ "<span attrs=\"{'invisible':[('salary_expected_extra','=',False)]}\" class="
+#~ "\"oe_inline\"> + </span>"
+#~ msgstr ""
+#~ "<span attrs=\"{'invisible':[('salary_expected_extra','=',False)]}\" class="
+#~ "\"oe_inline\"> + </span>"
+
+#~ msgid ""
+#~ "<span attrs=\"{'invisible':[('salary_proposed_extra','=',False)]}\" class="
+#~ "\"oe_inline\"> + </span>"
+#~ msgstr ""
+#~ "<span attrs=\"{'invisible':[('salary_proposed_extra','=',False)]}\" class="
+#~ "\"oe_inline\"> + </span>"
+
+#~ msgid "Alias Domain"
+#~ msgstr "別名域"
+
+#~ msgid "Applicant Created"
+#~ msgstr "申請已創建"
+
+#~ msgid "Default Alias Name for Jobs"
+#~ msgstr "默認的工作別名"
+
+#~ msgid "Default job email address"
+#~ msgstr "默認招聘電子郵件位址"
+
+#~ msgid "Folded in Kanban View"
+#~ msgstr "在看板視圖中折疊"
+
+#~ msgid "New Mail"
+#~ msgstr "新郵件"
+
+#~ msgid "New application from %s"
+#~ msgstr "來自%s的新申請"
+
+#~ msgid "IT"
+#~ msgstr "IT"
+
+#~ msgid "Interview"
+#~ msgstr "面談"
+
+#~ msgid "Reserve"
+#~ msgstr "延期"
+
+#~ msgid "Sales"
+#~ msgstr "銷售"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid "A contact is already defined on this job request."
+#~ msgstr "A接點上已經定義這個工作要求。"
+
+#~ msgid "A contact is already existing with the same name."
+#~ msgstr "A接點已經存在具有相同的名稱。"
+
+#~ msgid ""
+#~ "Are you sure you want to create a contact based on this job request ?"
+#~ msgstr "你確定你想要這個工作要求的基礎上創建一個聯繫人嗎？"
+
+#~ msgid "Close job request"
+#~ msgstr "結束職位申請"
+
+#~ msgid "Convert To Partner"
+#~ msgstr "轉為業務夥伴"
+
+#~ msgid "Create Contact"
+#~ msgstr "建立聯繫"
+
+#~ msgid "Create Partner from job application"
+#~ msgstr "建立業務夥伴的職位申請"
+
+#~ msgid ""
+#~ "Enter here the internal requirements for this stage (ex: Offer sent to "
+#~ "applicant). It will appear as a tooltip over the stage's name."
+#~ msgstr ""
+#~ "在此輸入這個階段的內部要求（如：提供給應聘者）。它將作為一個在階段名稱上面"
+#~ "的提示。"
+
+#~ msgid "Review Recruitment Stages"
+#~ msgstr "查看招聘流程"
+
+#~ msgid ""
+#~ "The date in which the applicant will be available to start working. \n"
+#~ "\n"
+#~ "Additional information like 'Not before the first 15 days of March' or "
+#~ "'Depends on the notice negociation' can be written in the application "
+#~ "summary field."
+#~ msgstr ""
+#~ "這個申請可用並且開始運作的日期。 \n"
+#~ "\n"
+#~ "其他資訊比如 '不得早於3月15日' 或 '取決於溝通結果' 可以被寫入到申請的摘要"
+#~ "欄位。"
+
+#~ msgid "Url Parameters"
+#~ msgstr "網址參數"
+
+#~ msgid "Default for New Recruitment"
+#~ msgstr "新招聘的預設值"
+
+#~ msgid ""
+#~ "Explanation text to help users using the star and priority mechanism on "
+#~ "applicants that are in this stage."
+#~ msgstr "說明文本用來幫助用戶在這個招聘階段使用星和優先順序機制。"
+
+#~ msgid ""
+#~ "If you check this field, this stage will be proposed by default on each "
+#~ "new Recruitment. It will not assign this stage to existing Recruitments."
+#~ msgstr ""
+#~ "如果勾選此處，這個階段將作為每個新建招聘的默認階段。它對已有招聘無影響。"
+
+#~ msgid "Meetings"
+#~ msgstr "活動"
+
+#~ msgid "More"
+#~ msgstr "更多"
+
+#~ msgid "Print"
+#~ msgstr "列印"
+
+#~ msgid "Print Interview"
+#~ msgstr "列印面試結果"
+
+#~ msgid "Priority Management Explanation"
+#~ msgstr "優先管理機制說明"
+
+#~ msgid "Recruitment Stage"
+#~ msgstr "招聘階段"
+
+#~ msgid "Start"
+#~ msgstr "開始"
+
+#~ msgid "Trackers"
+#~ msgstr "跟蹤"
+
+#~ msgid "View"
+#~ msgstr "視圖"
+
+#~ msgid ", To start the recruitment"
+#~ msgstr "，開始招聘"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                Odoo helps you track applicants in the recruitment\n"
+#~ "                process and follow up all operations: meetings, "
+#~ "interviews, etc.\n"
+#~ "              </p><p>\n"
+#~ "                Applicants and their attached CV are created "
+#~ "automatically when an email is sent.\n"
+#~ "                If you install the document management modules, all "
+#~ "resumes are indexed automatically, \n"
+#~ "                so that you can easily search through their content.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p>\n"
+#~ "                Odoo 將幫助你跟蹤招聘流程中的應聘申請\n"
+#~ "                並跟蹤後續活動：會議、會面，等等\n"
+#~ "              </p><p>\n"
+#~ "                應聘申請和它們的附件CV將在郵件發送時被自動創建。\n"
+#~ "                如果你安裝了文檔管理模組，所有這些會被自動索引，\n"
+#~ "                所以你可以方便的檢索它們的內容。              </p>"
+
+#~ msgid "Day(s)"
+#~ msgstr "天"
+
+#~ msgid "Document"
+#~ msgstr "檔案"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "持有人在總結（消息數，...）。這個總結是直接以html格式，以插在看板意見。"
+
+#~ msgid "Launch Recruitment"
+#~ msgstr "啟動招聘"
+
+#~ msgid "Newly Hired Employee(s)"
+#~ msgstr "新錄用的員工"
+
+#~ msgid "Specific to a Department"
+#~ msgstr "僅用於此部門"
+
+#~ msgid ""
+#~ "Stages of the recruitment process may be different per department. If "
+#~ "this stage is common to all departments, keep this field empty."
+#~ msgstr ""
+#~ "每個部門的招聘階段可能會有不同。如果這個階段是各部門共有的，保持該欄位為"
+#~ "空。"
+
+#~ msgid "Summary"
+#~ msgstr "總結"
+
+#~ msgid "click here"
+#~ msgstr "點擊這裏"
+
+#~ msgid "col-md-6 col-xs-6"
+#~ msgstr "col-md-6 col-xs-6"
+
+#~ msgid "(empty = remote work)"
+#~ msgstr "(空 =  遠端工作)"
+
+#~ msgid "Average"
+#~ msgstr "平均"
+
+#~ msgid "Bad"
+#~ msgstr "壞"
+
+#~ msgid "Below Average"
+#~ msgstr "低於平均值"
+
+#~ msgid "Company Website"
+#~ msgstr "公司網站"
+
+#~ msgid "Edit..."
+#~ msgstr "編輯..."
+
+#~ msgid "Error!"
+#~ msgstr "出錯!"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Meeting"
+#~ msgstr "會議"
+
+#~ msgid "Monster"
+#~ msgstr "Monster招聘網"
+
+#~ msgid "Schedule"
+#~ msgstr "時間表"
+
+#~ msgid "Warning!"
+#~ msgstr "警告！"
+
+#~ msgid "Word of Mouth"
+#~ msgstr "別人介紹"
+
+#~ msgid ""
+#~ "Match this group by with a specific stage filter in order to analyse the "
+#~ "recruitment process"
+#~ msgstr "通過(一個特殊的場景篩檢程式)分組來分析招聘過程"
+
+#~ msgid "Creation Date (day)"
+#~ msgstr "創建日期(天)"
+
+#~ msgid "Creation Date (month)"
+#~ msgstr "創建日期(月)"
+
+#~ msgid "Creation Date (week)"
+#~ msgstr "創建日期(周)"
+
+#~ msgid "Creation Date (year)"
+#~ msgstr "創建日期(年)"
+
+#~ msgid "í"
+#~ msgstr "í"
+
+#~ msgid ""
+#~ "Allow applicants to send their job application to an email address "
+#~ "(jobs@mycompany.com), and create automatically application documents in "
+#~ "the system."
+#~ msgstr ""
+#~ "允許申請人發送自己的求職申請到電子郵件位址（jobs@mycompany.com）的，\n"
+#~ "               且系統自動創建應聘申請。"
+
+#~ msgid "Create applicants from an incoming email account"
+#~ msgstr "創建傳入電子郵件帳戶的申請人"
+
+#~ msgid "Creation Month"
+#~ msgstr "創建月"
+
+#~ msgid "Group By ..."
+#~ msgstr "分組..."
+
+#~ msgid "Not Good"
+#~ msgstr "不好"
+
+#~ msgid "Start Interview"
+#~ msgstr "開始面試"
+
+#~ msgid "Applicants Status"
+#~ msgstr "申請人狀態"
+
+#~ msgid "Job Description"
+#~ msgstr "職位描述"
+
+#~ msgid "Applications to be Processed"
+#~ msgstr "待處理應聘申請"
+
+#~ msgid "Applicant <b>created</b>"
+#~ msgstr "申請人 <b> 創建 <b>"
+
+#~ msgid "Accept Emails From"
+#~ msgstr "接收電子郵件位址"
+
+#~ msgid "Pending Jobs"
+#~ msgstr "暫停的職位"
+
+#~ msgid "Day"
+#~ msgstr "天數"
+
+#~ msgid "Avg Proposed Salary"
+#~ msgstr "平均提議的工資"
+
+#~ msgid "Available"
+#~ msgstr "有效的"
+
+#~ msgid "August"
+#~ msgstr "8月"
+
+#~ msgid "July"
+#~ msgstr "7月"
+
+#~ msgid ""
+#~ "The status is set to 'Draft', when a case is "
+#~ "created.                      If the case is in progress the status is "
+#~ "set to 'Open'.                      When the case is over, the status is "
+#~ "set to 'Done'.                      If the case needs to be reviewed then "
+#~ "the status is                       set to 'Pending'."
+#~ msgstr ""
+#~ "狀態設置為'草稿'，當案件。如果案件是在進步的狀態設置為“打開”。當的情況下結"
+#~ "束了，狀態設置為“完成”。如果需要進行審查的情況下，則設置為“掛起”狀態。"
+
+#~ msgid "March"
+#~ msgstr "3月"
+
+#~ msgid "In progress"
+#~ msgstr "進行中"
+
+#~ msgid "Hire & Create Employee"
+#~ msgstr "聘任並新建員工"
+
+#~ msgid "April"
+#~ msgstr "4月"
+
+#~ msgid "September"
+#~ msgstr "9月"
+
+#~ msgid "December"
+#~ msgstr "12月"
+
+#~ msgid "Month"
+#~ msgstr "月"
+
+#~ msgid "Yes"
+#~ msgstr "是的"
+
+#~ msgid "Subject"
+#~ msgstr "主題"
+
+#~ msgid "Applicant Refused"
+#~ msgstr "申請人被拒絕"
+
+#~ msgid "Opened"
+#~ msgstr "開始"
+
+#~ msgid "No"
+#~ msgstr "不"
+
+#~ msgid "All Initial Jobs"
+#~ msgstr "所有準備工作"
+
+#~ msgid "Pending"
+#~ msgstr "待處理"
+
+#~ msgid "Status"
+#~ msgstr "狀態"
+
+#~ msgid "June"
+#~ msgstr "6月"
+
+#~ msgid "# of Applications"
+#~ msgstr "＃應聘申請"
+
+#~ msgid "October"
+#~ msgstr "10月"
+
+#~ msgid "January"
+#~ msgstr "1月"
+
+#~ msgid "Search Jobs"
+#~ msgstr "查找職位"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "In Progress"
+#~ msgstr "進行中"
+
+#~ msgid "Hide in views if empty"
+#~ msgstr "此階段無記錄就在視圖中隱藏"
+
+#~ msgid "Open Jobs"
+#~ msgstr "開放的職位"
+
+#~ msgid "February"
+#~ msgstr "2月"
+
+#~ msgid "November"
+#~ msgstr "11月"
+
+#~ msgid "Avg Expected Salary"
+#~ msgstr "平均。期望月薪"
+
+#~ msgid ""
+#~ "The related status for the stage. The status of your document will "
+#~ "automatically change according to the selected stage. Example, a stage is "
+#~ "related to the status 'Close', when your document reach this stage, it "
+#~ "will be automatically closed."
+#~ msgstr ""
+#~ "階段的相關狀態。你的文檔的狀態會自動改變根據所選的舞臺。例如，一個階段是相"
+#~ "關的狀態'關閉'，當你的文檔達到這個階段，它會自動關閉。"
+
+#~ msgid "Open"
+#~ msgstr "開始"

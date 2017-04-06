@@ -1,38 +1,255 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * auth_signup
+# 	* auth_signup
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 08:43+0000\n"
-"PO-Revision-Date: 2016-01-06 08:54+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-07-29 21:27+0800\n"
+"PO-Revision-Date: 2016-12-29 19:50+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: auth_signup
+#: model:mail.template,body_html:auth_signup.reset_password_email
+msgid ""
+"\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat "
+"top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-"
+"collapse:collapse;background:inherit;color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:10px 10px "
+"10px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; "
+"height: auto; width: 80px;\" alt=\"${user.company_id.name}\">\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat "
+"top /100%;color:#777777\">\n"
+"    <p>Dear ${object.name},</p>\n"
+"    <p>A password reset was requested for the Odoo account linked to this "
+"email.</p>\n"
+"    <p>You may change your password by following this link which will remain "
+"valid during 24 hours:</p>\n"
+"    <div style=\"text-align: center; margin-top: 16px;\">\n"
+"        <a href=\"${object.signup_url}\" style=\"padding: 5px 10px; font-"
+"size: 12px; line-height: 18px; color: #FFFFFF; border-color:#a24689; text-"
+"decoration: none; display: inline-block; margin-bottom: 0px; font-weight: "
+"400; text-align: center; vertical-align: middle; cursor: pointer; white-"
+"space: nowrap; background-image: none; background-color: #a24689; border: "
+"1px solid #a24689; border-radius:3px\">Change password</a>\n"
+"    </div>\n"
+"    <p>If you do not expect this, you can safely ignore this email.</p>\n"
+"    <p>Best regards,</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; "
+"background: #fff repeat top /100%;color:#777777\">\n"
+"    ${user.signature | safe}\n"
+"    <p style=\"font-size: 11px; margin-top: 10px;\">\n"
+"        <strong>Sent by ${user.company_id.name} using <a href=\"www.odoo.com"
+"\" style=\"text-decoration:none; color: #a24689;\">Odoo</a></strong>\n"
+"    </p>\n"
+"</div>"
+msgstr ""
+"\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat "
+"top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-"
+"collapse:collapse;background:inherit;color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:10px 10px "
+"10px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; "
+"height: auto; width: 80px;\" alt=\"${user.company_id.name}\">\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat "
+"top /100%;color:#777777\">\n"
+"    <p>尊敬的 ${object.name},</p>\n"
+"    <p>和這個郵件相關的Odoo帳號被要求進行密碼重置。</p>\n"
+"    <p>你可以選擇點擊下面這個24小時內有效的鏈結來更改你的密碼：</p>\n"
+"    <div style=\"text-align: center; margin-top: 16px;\">\n"
+"        <a href=\"${object.signup_url}\" style=\"padding: 5px 10px; font-"
+"size: 12px; line-height: 18px; color: #FFFFFF; border-color:#a24689; text-"
+"decoration: none; display: inline-block; margin-bottom: 0px; font-weight: "
+"400; text-align: center; vertical-align: middle; cursor: pointer; white-"
+"space: nowrap; background-image: none; background-color: #a24689; border: "
+"1px solid #a24689; border-radius:3px\">更改密碼</a>\n"
+"    </div>\n"
+"    <p>如果你不希望這麼做，你可以忽略這個郵件。</p>\n"
+"    <p>致敬！</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; "
+"background: #fff repeat top /100%;color:#777777\">\n"
+"    ${user.signature | safe}\n"
+"    <p style=\"font-size: 11px; margin-top: 10px;\">\n"
+"        <strong>發送被 ${user.company_id.name}使用 <a href=\"www.odoo.com\" "
+"style=\"text-decoration:none; color: #a24689;\">Odoo</a></strong>\n"
+"    </p>\n"
+"</div>"
+
+#. module: auth_signup
+#: model:mail.template,body_html:auth_signup.set_password_email
+msgid ""
+"\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat "
+"top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-"
+"collapse:collapse;background:inherit;color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:10px 10px "
+"10px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; "
+"height: auto; width: 80px;\" alt=\"${user.company_id.name}\">\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat "
+"top /100%;color:#777777\">\n"
+"<p>Dear ${object.name},</p>\n"
+"    <p>\n"
+"        You have been invited to connect to \"${object.company_id.name}\" in "
+"order to get access to your documents in Odoo.\n"
+"    </p>\n"
+"    <p>\n"
+"        To accept the invitation, click on the following link:\n"
+"    </p>\n"
+"    <div style=\"text-align: center; margin-top: 16px;\">\n"
+"         <a href=\"${object.signup_url}\" style=\"padding: 5px 10px; font-"
+"size: 12px; line-height: 18px; color: #FFFFFF; border-color:#a24689; text-"
+"decoration: none; display: inline-block; margin-bottom: 0px; font-weight: "
+"400; text-align: center; vertical-align: middle; cursor: pointer; white-"
+"space: nowrap; background-image: none; background-color: #a24689; border: "
+"1px solid #a24689; border-radius:3px\">Accept invitation to \"${object."
+"company_id.name}\"</a>\n"
+"    </div>\n"
+"    <p>Best regards,</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; "
+"background: #fff repeat top /100%;color:#777777\">\n"
+"    ${user.signature | safe}\n"
+"    <p style=\"font-size: 11px; margin-top: 10px;\">\n"
+"        <strong>Sent by ${user.company_id.name} using <a href=\"www.odoo.com"
+"\" style=\"text-decoration:none; color: #a24689;\">Odoo</a></strong>\n"
+"    </p>\n"
+"</div>"
+msgstr ""
+"\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat "
+"top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-"
+"collapse:collapse;background:inherit;color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:10px 10px "
+"10px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; "
+"height: auto; width: 80px;\" alt=\"${user.company_id.name}\">\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat "
+"top /100%;color:#777777\">\n"
+"<p>尊敬的 ${object.name},</p>\n"
+"    <p>\n"
+"        你被邀請連接到 \"${object.company_id.name}\"來讀取你在Odoo中的文"
+"檔。\n"
+"    </p>\n"
+"    <p>\n"
+"        如果接受邀請，請點擊下面的鏈結：\n"
+"    </p>\n"
+"    <div style=\"text-align: center; margin-top: 16px;\">\n"
+"         <a href=\"${object.signup_url}\" style=\"padding: 5px 10px; font-"
+"size: 12px; line-height: 18px; color: #FFFFFF; border-color:#a24689; text-"
+"decoration: none; display: inline-block; margin-bottom: 0px; font-weight: "
+"400; text-align: center; vertical-align: middle; cursor: pointer; white-"
+"space: nowrap; background-image: none; background-color: #a24689; border: "
+"1px solid #a24689; border-radius:3px\">接受邀請到 \"${object.company_id."
+"name}\"</a>\n"
+"    </div>\n"
+"    <p>致敬！</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; "
+"background: #fff repeat top /100%;color:#777777\">\n"
+"    ${user.signature | safe}\n"
+"    <p style=\"font-size: 11px; margin-top: 10px;\">\n"
+"        <strong>發送被 ${user.company_id.name}使用<a href=\"www.odoo.com\" "
+"style=\"text-decoration:none; color: #a24689;\">Odoo</a></strong>\n"
+"    </p>\n"
+"</div>"
+
+#. module: auth_signup
+#: model:mail.template,subject:auth_signup.set_password_email
+msgid "${object.company_id.name} invitation to connect on Odoo"
+msgstr "${object.company_id.name} 被邀請連接到 Odoo"
+
+#. module: auth_signup
+#: model:ir.ui.view,arch_db:auth_signup.res_users_form_view
+msgid ""
+"<strong>A password reset has been requested for this user. An email "
+"containing the following link has been sent:</strong>"
+msgstr ""
+"<strong>對這個用戶要求重置密碼，一個包含下列連接的電子郵件已被發送:</strong>"
+
+#. module: auth_signup
+#: model:ir.ui.view,arch_db:auth_signup.res_users_form_view
+msgid ""
+"<strong>An invitation email containing the following subscription link has "
+"been sent:</strong>"
+msgstr "<strong>一個包含下列鏈結的邀請郵件已被發送:</strong>"
 
 #. module: auth_signup
 #: model:ir.model.fields,field_description:auth_signup.field_base_config_settings_auth_signup_uninvited
 msgid "Allow external users to sign up"
-msgstr "允許外部使用者註冊"
+msgstr "允許外部用戶註冊"
+
+#. module: auth_signup
+#: code:addons/auth_signup/controllers/main.py:61
+#, python-format
+msgid "An email has been sent with credentials to reset your password"
+msgstr "重置密碼的電子郵件已經發出"
+
+#. module: auth_signup
+#: code:addons/auth_signup/controllers/main.py:38
+#, python-format
+msgid "Another user is already registered using this email address."
+msgstr "另外一個用戶已經使用這個郵箱位址註冊了。"
+
+#. module: auth_signup
+#: code:addons/auth_signup/controllers/main.py:111
+#, python-format
+msgid "Authentication Failed."
+msgstr "認證失敗。"
 
 #. module: auth_signup
 #: model:ir.ui.view,arch_db:auth_signup.reset_password
 #: model:ir.ui.view,arch_db:auth_signup.signup
 msgid "Back to Login"
-msgstr "返回登入畫面"
+msgstr "返回登錄頁面"
+
+#. module: auth_signup
+#: code:addons/auth_signup/models/res_users.py:135
+#, python-format
+msgid "Cannot send email: user %s has no email address."
+msgstr "不能發送郵件：用戶 %s 沒有郵件地址。"
 
 #. module: auth_signup
 #: model:ir.ui.view,arch_db:auth_signup.reset_password
 msgid "Confirm"
-msgstr "確認"
+msgstr "確定"
 
 #. module: auth_signup
 #: model:ir.ui.view,arch_db:auth_signup.fields
@@ -40,24 +257,47 @@ msgid "Confirm Password"
 msgstr "確認密碼"
 
 #. module: auth_signup
+#: selection:res.users,state:0
+msgid "Confirmed"
+msgstr "已確認"
+
+#. module: auth_signup
+#: code:addons/auth_signup/controllers/main.py:41
+#, python-format
+msgid "Could not create a new account."
+msgstr "不能創建一個帳戶。"
+
+#. module: auth_signup
+#: code:addons/auth_signup/controllers/main.py:63
+#, python-format
+msgid "Could not reset your password"
+msgstr "不能重置你的密碼"
+
+#. module: auth_signup
 #: model:ir.model.fields,field_description:auth_signup.field_base_config_settings_auth_signup_reset_password
 msgid "Enable password reset from Login page"
-msgstr "於登入頁面啟用密碼重設"
+msgstr "允許在登錄頁重置密碼"
 
 #. module: auth_signup
 #: model:ir.model.fields,help:auth_signup.field_base_config_settings_auth_signup_uninvited
 msgid "If unchecked, only invited users may sign up."
-msgstr "如果未勾選，只有被邀請的使用者可以註冊"
+msgstr "如果取消勾選，只有受邀請的用戶可以登錄。"
+
+#. module: auth_signup
+#: code:addons/auth_signup/controllers/main.py:91
+#, python-format
+msgid "Invalid signup token"
+msgstr "無效的登錄權杖"
 
 #. module: auth_signup
 #: selection:res.users,state:0
 msgid "Never Connected"
-msgstr "從未連接"
+msgstr "從未登錄過"
 
 #. module: auth_signup
 #: model:ir.model,name:auth_signup.model_res_partner
 msgid "Partner"
-msgstr "伙伴"
+msgstr "業務夥伴"
 
 #. module: auth_signup
 #: model:ir.ui.view,arch_db:auth_signup.fields
@@ -67,12 +307,28 @@ msgstr "密碼"
 #. module: auth_signup
 #: model:mail.template,subject:auth_signup.reset_password_email
 msgid "Password reset"
-msgstr "密碼重設"
+msgstr "重置密碼"
 
 #. module: auth_signup
 #: model:ir.ui.view,arch_db:auth_signup.login
 msgid "Reset Password"
-msgstr "重設密碼"
+msgstr "重置密碼"
+
+#. module: auth_signup
+#: code:addons/auth_signup/models/res_users.py:108
+#, python-format
+msgid "Reset password: invalid username or email"
+msgstr "重設密碼：無效的用戶名或電子郵件位址"
+
+#. module: auth_signup
+#: model:ir.ui.view,arch_db:auth_signup.res_users_form_view
+msgid "Send Reset Password Instructions"
+msgstr "發送重置密碼的建議"
+
+#. module: auth_signup
+#: model:ir.ui.view,arch_db:auth_signup.res_users_form_view
+msgid "Send an Invitation Email"
+msgstr "發送一個邀請郵件"
 
 #. module: auth_signup
 #: model:ir.ui.view,arch_db:auth_signup.login
@@ -81,10 +337,34 @@ msgid "Sign up"
 msgstr "註冊"
 
 #. module: auth_signup
+#: model:ir.model.fields,field_description:auth_signup.field_res_partner_signup_type
+#: model:ir.model.fields,field_description:auth_signup.field_res_users_signup_type
+msgid "Signup Token Type"
+msgstr "登錄權杖類型"
+
+#. module: auth_signup
+#: model:ir.model.fields,field_description:auth_signup.field_res_partner_signup_valid
+#: model:ir.model.fields,field_description:auth_signup.field_res_users_signup_valid
+msgid "Signup Token is Valid"
+msgstr "登錄權杖（ Token  ）是有效的"
+
+#. module: auth_signup
 #: model:ir.model.fields,field_description:auth_signup.field_res_partner_signup_url
 #: model:ir.model.fields,field_description:auth_signup.field_res_users_signup_url
 msgid "Signup URL"
-msgstr "註冊網址"
+msgstr "登錄 URL"
+
+#. module: auth_signup
+#: model:ir.model.fields,field_description:auth_signup.field_res_partner_signup_expiration
+#: model:ir.model.fields,field_description:auth_signup.field_res_users_signup_expiration
+msgid "Signup expiration"
+msgstr "註冊過期"
+
+#. module: auth_signup
+#: model:ir.model.fields,field_description:auth_signup.field_res_partner_signup_token
+#: model:ir.model.fields,field_description:auth_signup.field_res_users_signup_token
+msgid "Signup token"
+msgstr "註冊權杖"
 
 #. module: auth_signup
 #: model:ir.model.fields,field_description:auth_signup.field_res_users_state
@@ -92,11 +372,190 @@ msgid "Status"
 msgstr "狀態"
 
 #. module: auth_signup
+#: model:ir.model.fields,field_description:auth_signup.field_base_config_settings_auth_signup_template_user_id
+msgid "Template user for new users created through signup"
+msgstr "通過註冊創建的新用戶的用戶範本"
+
+#. module: auth_signup
+#: model:ir.model.fields,help:auth_signup.field_base_config_settings_auth_signup_reset_password
+msgid "This allows users to trigger a password reset from the Login page."
+msgstr "允許用戶在登錄介面觸發密碼重置。"
+
+#. module: auth_signup
 #: model:ir.model,name:auth_signup.model_res_users
 msgid "Users"
 msgstr "用戶"
 
 #. module: auth_signup
+#: model:ir.ui.view,arch_db:auth_signup.fields
+#: model:ir.ui.view,arch_db:auth_signup.reset_password
+msgid "Your Email"
+msgstr "用戶名/電子郵件"
+
+#. module: auth_signup
+#: model:ir.ui.view,arch_db:auth_signup.fields
+msgid "Your Name"
+msgstr "你的姓名"
+
+#. module: auth_signup
 #: model:ir.model,name:auth_signup.model_base_config_settings
 msgid "base.config.settings"
 msgstr "base.config.settings"
+
+#. module: auth_signup
+#: model:ir.ui.view,arch_db:auth_signup.fields
+msgid "e.g. John Doe"
+msgstr "例如：張三"
+
+#~ msgid ""
+#~ "\n"
+#~ "                \n"
+#~ "                    <p>\n"
+#~ "                        ${object.name},\n"
+#~ "                    </p>\n"
+#~ "                    <p>\n"
+#~ "                        You have been invited to connect to \"${object."
+#~ "company_id.name}\" in order to get access to your documents in Odoo.\n"
+#~ "                    </p>\n"
+#~ "                    <p>\n"
+#~ "                        To accept the invitation, click on the following "
+#~ "link:\n"
+#~ "                    </p>\n"
+#~ "                    <ul>\n"
+#~ "                        <li><a href=\"${object.signup_url}\">Accept "
+#~ "invitation to \"${object.company_id.name}\"</a></li>\n"
+#~ "                    </ul>\n"
+#~ "                    <p>\n"
+#~ "                        Thanks,\n"
+#~ "                    </p>\n"
+#~ "                    <pre>\n"
+#~ "--\n"
+#~ "${object.company_id.name or ''}\n"
+#~ "${object.company_id.email or ''}\n"
+#~ "${object.company_id.phone or ''}\n"
+#~ "                    </pre>\n"
+#~ "                \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "                \n"
+#~ "                    <p>\n"
+#~ "                        ${object.name},\n"
+#~ "                    </p>\n"
+#~ "                    <p>\n"
+#~ "                        你被邀請鏈結到 \"${object.company_id.name}\" 去訪"
+#~ "問你在Odoo中的文檔.\n"
+#~ "                    </p>\n"
+#~ "                    <p>\n"
+#~ "                        如果你接受，單擊下面鏈結:\n"
+#~ "                    </p>\n"
+#~ "                    <ul>\n"
+#~ "                        <li><a href=\"${object.signup_url}\">接受邀請到 "
+#~ "\"${object.company_id.name}\"</a></li>\n"
+#~ "                    </ul>\n"
+#~ "                    <p>\n"
+#~ "                        謝謝,\n"
+#~ "                    </p>\n"
+#~ "                    <pre>\n"
+#~ "--\n"
+#~ "${object.company_id.name or ''}\n"
+#~ "${object.company_id.email or ''}\n"
+#~ "${object.company_id.phone or ''}\n"
+#~ "                    </pre>\n"
+#~ "                \n"
+#~ "            "
+
+#~ msgid ""
+#~ "\n"
+#~ "<p>A password reset was requested for the Odoo account linked to this "
+#~ "email.</p>\n"
+#~ "\n"
+#~ "<p>You may change your password by following <a href=\"${object."
+#~ "signup_url}\">this link</a>, which will remain valid during 24 hours.</"
+#~ "p>\n"
+#~ "\n"
+#~ "<p>Note: If you do not expect this, you can safely ignore this email.</p>"
+#~ msgstr ""
+#~ "\n"
+#~ "<p>這封郵件要求重置Odoo用戶的密碼。</p>\n"
+#~ "\n"
+#~ "<p>你可以用這個 <a href=\"${object.signup_url}\">鏈結</a>來更改密碼。</"
+#~ "p>\n"
+#~ "\n"
+#~ "<p>注意: 如果你不想這樣做, 請忽略這個郵件。</p>"
+
+#~ msgid "Connected"
+#~ msgstr "已登錄過"
+
+#~ msgid "Private Profile"
+#~ msgstr "私人檔案"
+
+#~ msgid "The full URL to access the document through the website."
+#~ msgstr "完整URL位址，用於訪問網上文檔。"
+
+#~ msgid "Visible in Website"
+#~ msgstr "在網站中可見"
+
+#~ msgid "Website Partner Full Description"
+#~ msgstr "網站業務夥伴的詳細描述"
+
+#~ msgid "Website Partner Short Description"
+#~ msgstr "網站業務夥伴簡介"
+
+#~ msgid "Website URL"
+#~ msgstr "網站網址"
+
+#~ msgid "Website meta description"
+#~ msgstr "網站元描述"
+
+#~ msgid "Website meta keywords"
+#~ msgstr "網站元關鍵字"
+
+#~ msgid "Website meta title"
+#~ msgstr "網站元標題"
+
+#~ msgid "unknown"
+#~ msgstr "未知的"
+
+#~ msgid "Activated"
+#~ msgstr "已啟動"
+
+#~ msgid "Reset password"
+#~ msgstr "重設密碼"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "Please enter a password and confirm it."
+#~ msgstr "請再次輸入密碼。"
+
+#~ msgid "Please enter a name."
+#~ msgstr "請輸入名稱"
+
+#~ msgid "Please enter a username."
+#~ msgstr "請輸入用戶名。"
+
+#~ msgid ""
+#~ "Cannot send email: no outgoing email server configured.\n"
+#~ "You can configure it under Settings/General Settings."
+#~ msgstr ""
+#~ "不能發送郵件: 沒有設置外發郵件伺服器。\n"
+#~ "在設置/常規設置中設置。"
+
+#~ msgid "Username"
+#~ msgstr "用戶名"
+
+#~ msgid "Username (Email)"
+#~ msgstr "用戶名(Email)"
+
+#~ msgid "Log in"
+#~ msgstr "登錄"
+
+#~ msgid "Login"
+#~ msgstr "登錄"
+
+#~ msgid "Passwords do not match; please retype them."
+#~ msgstr "密碼不匹配，請重新輸入。"
+
+#~ msgid "No database selected !"
+#~ msgstr "沒有選擇資料庫！"

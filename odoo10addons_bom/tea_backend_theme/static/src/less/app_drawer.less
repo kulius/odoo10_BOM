@@ -1,0 +1,176 @@
+
+// -----------------------------------
+// App Drawer Nav
+// -----------------------------------
+
+.app-drawer-nav {
+	border-color: @dropdown-border;
+    border: 0px solid @dropdown-fallback-border;
+    border: 0px solid @dropdown-border;
+    border-radius: @border-radius-base;
+    background-clip: padding-box;
+    background-color: @dropdown-bg;
+
+    .navbar-left {
+        width: 100%;
+
+        li {
+            padding: 0;
+        }
+    }
+
+    .app-drawer-title {
+        float: none;
+    }
+
+    .app-drawer-panel-title {
+        margin-top: 4px;
+    }
+
+    .app-drawer-icon-app {
+        height: 100%;
+        width: 80%;
+        max-width: @app-drawer-icon-size;
+        max-height: @app-drawer-icon-size;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .panel-body {
+        padding-top: @app-drawer-title-height;
+    }
+
+    #appDrawerAppPanelHead {
+		//border-bottom: 4px solid #e61718;
+        background: #747F8C;
+        position: absolute;
+        height: @app-drawer-title-height;
+        width: 100%;
+        z-index: 9999;
+    }
+
+}
+
+// -----------------------------------
+// Drawer Nav Open Left Right
+// -----------------------------------
+.drawer-nav {
+    width: @app-drawer-width;
+    z-index: 9999;
+}
+
+.drawer--left .drawer-nav {
+    left: -@app-drawer-width;
+}
+
+.drawer--left.drawer-open .drawer-hamburger {
+    left: @app-drawer-width;
+}
+
+.drawer--right .drawer-nav {
+    right: -@app-drawer-width;
+}
+
+.drawer-open .oe-right-toolbar {
+    display: none;
+}
+
+.drawer-closed .oe-right-toolbar {
+    display: block;
+}
+
+// -----------------------------------
+// App Drawer Toggle
+// -----------------------------------
+
+.app-drawer-toggle {
+	margin-top: 2px;
+    background-color: transparent;
+	border: none;
+	color: #ffffff;
+}
+
+.app-drawer-toggle.navbar-toggle {
+	background-color: #f55e25;
+    margin-left: 1em;
+}
+
+.navbar-nav .open .dropdown-menu > li {
+    position: relative;
+    height: 30px;
+    padding-left: 10px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: rgba(59, 59, 59, 0);
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: rgba(59, 59, 59, 0);
+}
+.navbar-toggle {
+
+    margin-right: 16px;
+    padding: 6px 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+.navbar-nav {
+    margin: 0px;
+    padding-top: 5px;
+}
+.app-drawer-toggle:hover {
+	background: @odoo-brand-secondary;
+	color: #ffffff;
+}
+
+.app-drawer-icon-close.drawer-toggle {
+	color: #ffffff;
+    font-weight: 600;
+}
+
+// -----------------------------------
+// App Drawer Panel Background Image
+// -----------------------------------
+.drawer-nav{
+	background: transparent url('/tea_backend_theme/static/src/img/drawer-background2.png') no-repeat scroll center center / cover;
+}
+
+.app-drawer-nav .app-drawer-title {
+    //color: white;
+    color: #2F353B;
+	font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.main-nav ul.nav > li > a {
+    padding: 6px 8px;
+}
+
+
+.app-name {
+    
+    @media (max-width: 768px) {
+        float: none;
+        margin: 0;
+        height: 0px;
+        color: transparent;
+    }
+
+    font-size: 18px;
+  
+}
+
+// -----------------------------------
+// App Icons Center
+// -----------------------------------
+.app-drawer-nav .panel-body {
+    width: 90%;
+	color: #ffffff;
+    margin: auto;
+    max-width: 768px;
+    padding-top: 78px;
+}

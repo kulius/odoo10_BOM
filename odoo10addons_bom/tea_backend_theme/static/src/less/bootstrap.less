@@ -1,0 +1,549 @@
+// Bootswatch and United 3
+
+// @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+//@font-face {
+//    font-family: Roboto;
+//    src: url(/tea_backend_theme/static/src/font/Roboto-Regular.ttf)
+//}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/tea_backend_theme/static/src/fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("/tea_backend_theme/static/src/fonts/OpenSans-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Navbar
+
+.navbar {
+    &-default {
+        .badge {
+            background-color: #fff;
+            color: @navbar-default-bg;
+        }
+    }
+
+    &-inverse {
+        .badge {
+            background-color: #fff;
+            color: @navbar-inverse-bg;
+        }
+    }
+}
+
+@media (max-width: @grid-float-breakpoint-max) {
+
+    .navbar {
+        .dropdown-menu {
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// Inputs and selects
+
+.o-input() {
+    border: 1px solid @odoo-form-lightsecondary;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+input[type="text"], input[type="password"], input[type="number"], textarea, select {
+    .o-input();
+    width: 100%;
+    outline: none;
+    display: block;
+    background: transparent;
+    color: @odoo-main-text-color;
+}
+select { // FIXME buggy 'padding-left'
+    cursor: pointer;
+    background-color: transparent;
+    min-width: 50px;
+    .o-appearance(none);
+    background-image: url("/tea_backend_theme/static/src/img/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    color: transparent; // This is a hack to remove the outline in FF
+    text-shadow: 0 0 0 @odoo-main-text-color;
+    > option {
+        color: @odoo-main-text-color;
+    }
+}
+
+.o-placeholder() {
+    color: @odoo-brand-secondary;
+    opacity: 0.5;
+}
+::-webkit-input-placeholder {
+    .o-placeholder();
+}
+::-moz-placeholder { // Mozilla Firefox 19+
+    .o-placeholder();
+}
+:-ms-input-placeholder { // Internet Explorer 10-11
+    .o-placeholder();
+}
+
+// ------------------------------------------------------------------
+// Loading Ekranın sağ altında Yükleniyor göstergesi
+// ------------------------------------------------------------------
+
+.o_loading {
+    background-color: @odoo-brand-primary;
+    color: white;
+    bottom: 0;
+    right: 0;
+    padding: 5px 50px;
+    border-radius: 0 !important;
+    top: inherit;
+    opacity: 0.9;
+}
+
+.oe_clear {
+    clear: both;
+}
+
+// Font
+
+.ui-autocomplete{
+    font-family: @font-family-sans-serif;
+}
+
+// Navbar
+#oe_main_menu_navbar {
+    .box-shadow(0px 0px 8px #666666);
+    border: none;
+    .navbar-collapse {
+        padding-right: 16px;
+    }
+}
+
+//顶部NAV
+#oe_main_menu_navbar,
+.navbar-nav {
+    li {
+        a, button {
+            font-size: 13px !important;
+            //   padding: 14px 10px !important;
+            margin-top: 0 !important;
+            line-height: 21px !important;
+            margin: 0px 2px !important;
+        }
+        a:hover{
+            //height: 30px!important;
+            margin: 0px 2px !important;
+            //padding: -5px 0px 0px 0px !important;
+            background: rgba(255,255,255,0.3)!important;
+            //border-radius: 5px; //边框圆角
+            //border: none !important;
+        }
+    }
+    li.active {
+        background: rgba(255,255,255,0.3)!important;
+        border: none !important;
+        //border-radius: 5px; //边框圆角
+    }
+    .dropdown-menu {
+        li {
+            a, button {
+                //padding: 4px 10px !important;
+                font-size: 13px !important;
+                //background: rgba(255,255,255,0.3)!important;
+            }
+        }
+    }
+}
+
+// Align green progress indicator
+#oe_main_menu_navbar .o_planner_systray > .progress {
+    margin-top: 22px !important;
+}
+
+
+// Make formwidth relative to screen
+
+.o_form_view .o_form_sheet_bg .o_form_sheet {
+    max-width: 90% !important;
+}
+
+// Control panel
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+// Make lookup button background transparent
+.o_form_view .o_form_field.o_form_field_many2one .o_external_button {
+    background-color: transparent;
+}
+
+
+// For use fullscreen
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    .oe-view-manager-view-kanban, .oe-view-manager-view-form, .oe-view-manager-view-list, .oe-view-manager-view-calendar, .oe-view-manager-view-pivot, .oe-view-manager-view-graph {
+        width: 100% !important;
+    }
+
+    // Fix user preference height
+    .modal .modal-content .modal-body .oe-view-manager-content {
+        position: static;
+        height: 400px;
+    }
+
+    // Fix salesboard width
+    .oe-view-manager-view-sales_team_dashboard {
+        width: 100%;
+    }
+
+}
+
+// Interface List View Kanban and Checkboxes.
+
+// Checkboxes
+// ------------------------------------------------------------------
+div.o_checkbox {
+    @odoo-checkbox-size: 15px;
+
+    display: inline-block;
+    position: relative;
+    vertical-align: sub;
+
+    > input {
+        width: @odoo-checkbox-size;
+        height: @odoo-checkbox-size;
+        margin: 0; // bootstrap override
+
+        opacity: 0;
+        .o-position-absolute();
+        cursor: pointer;
+
+        + span {
+            display: block;
+            width: @odoo-checkbox-size;
+            height: @odoo-checkbox-size;
+            border: 1px solid @odoo-brand-secondary;
+            background-color: white;
+        }
+
+        &:checked + span {
+            background-repeat: no-repeat;
+            background-image: url(../img/checked.svg);
+            background-position: center center;
+        }
+
+        &:disabled + span {
+            opacity: 0.7;
+            border: 1px solid @odoo-brand-lightsecondary;
+        }
+
+        &:focus + span {
+            outline: 1px solid @odoo-brand-optional;
+        }
+    }
+}
+
+// View
+// ------------------------------------------------------------------
+.o_view_manager_content {
+    .oe_view_nocontent {
+        margin: 16px @odoo-horizontal-padding;
+        padding: 15px 10px 10px 10px;
+        color: white;
+        background-color: darken(@odoo-brand-secondary, 25%);
+        max-width: 500px;
+
+        a {
+            color: lighten(@odoo-brand-optional, 15%)!important; // improve contrast
+        }
+        .oe_view_nocontent_create {
+            font-weight: bold;
+            color: white;
+            position: relative;
+            &:before {
+                content: " ";
+                display: block;
+                border-bottom: 25px solid darken(@odoo-brand-secondary, 25%);
+                border-top: none;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
+// List View
+// ------------------------------------------------------------------
+.o_list_view.table {
+    border: none;
+    thead, tfoot, td, th {
+        border: none;
+    }
+
+    thead {
+        background-color: @odoo-list-grey;
+        > tr > th.o_column_sortable:hover {
+            background-color: darken(@odoo-list-grey, 5%);
+        }
+    }
+
+    tbody tr.o_group_header {
+        background-color: @odoo-list-group-header-color;
+        background-image: none;
+        border-top: 1px solid @odoo-list-grey;
+    }
+    tfoot {
+        background-color: @odoo-brand-optional;
+        font-weight: bold;
+    }
+}
+
+
+// Kanban
+// ------------------------------------------------------------------
+.o_kanban_view .oe_kanban_color_0 {
+    background-color: #fcfcfc;
+    color: #666666; //  666666  F6F6F6
+}
+
+.o_kanban_view.o_kanban_grouped {
+    .o_kanban_group .o_kanban_header {
+        color: white;
+        .o_kanban_config i {
+            color: #ccc;
+            &:hover {
+                background-color: darken(@gray-light, 10%);
+            }
+        }
+        .o_kanban_quick_add > i {
+            color: white;
+            &:hover {
+                background-color: @odoo-brand-optional;
+            }
+        }
+    }
+
+    .o_kanban_group.o_column_folded {
+        background-color: @gray-light;
+        border-color: @odoo-main-text-color;
+        &:hover {
+            background-color: darken(@gray-light, 10%);
+        }
+    }
+
+    .o_column_quick_create {
+        background-color: @odoo-main-text-color;
+        &:hover {
+            background-color: darken(@gray-light, 10%);
+        }
+        .o_column_header {
+            .o_kanban_add_column > i {
+                color: white;
+            }
+            .o_kanban_title {
+                color: @gray-lighter;
+            }
+        }
+    }
+}
+
+.o_kanban_view{
+    .btn-default.disabled, .btn-default[disabled]{
+        color: white !important;
+        background-color: #32C5D2!important;
+    }
+    .btn-default.disabled:hover, .btn-default[disabled]:hover{
+        color: white!important;
+        background-color: #26a1ab!important;
+    }
+}
+
+// Searchview
+// ------------------------------------------------------------------
+.o_searchview {
+    border-bottom: 1px solid @odoo-brand-secondary;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    background-color: @odoo-control-panel-background-color;
+
+    .o_searchview_facet {
+        @media (max-width: @screen-xs-max) {
+            .o-flex-flow(row, wrap);
+        }
+
+        border: 1px solid @odoo-brand-secondary;
+        background: @odoo-brand-lightsecondary;
+        color: @odoo-brand-secondary;
+
+        .o_searchview_facet_label {
+            background-color: @odoo-brand-primary;
+        }
+
+        .o_facet_remove:hover {
+            color: darken(@odoo-brand-secondary, 20%);
+        }
+        .o_facet_remove {
+            color: @odoo-brand-optional;
+        }
+    }
+
+    .o_searchview_input {
+        border: none;
+        outline: none;
+        background-color: @odoo-control-panel-background-color;
+    }
+    .o_searchview_more {
+        .o-position-absolute(@top: 4px, @right: 0);
+    }
+
+}
+
+.o_search_options {
+    margin: auto 0;
+}
+
+// Control Panel
+// ------------------------------------------------------------------
+.o-when-not-full() {
+    width: 0;
+    max-height: @breadcrumb-height;
+    transition: width 400ms ease, max-height 0ms ease 0ms;
+}
+.o-when-full() {
+    width: 88%;
+    max-height: 1000px;
+    transition: width 400ms ease, max-height 0ms ease 400ms;
+}
+
+@media (max-width: @screen-xs-max) {
+    .o_control_panel {
+        background-color: #FCFCFC;
+        border-bottom: none;
+        box-shadow: inset 0 0px 5px 0 rgba(0, 0, 0, 0.10);
+        .breadcrumb {
+            background-color: inherit;
+            > li{
+                .o_back_button{
+                    >a{
+                        color: #7c7bad!important;
+                        cursor: pointer!important;
+                    }
+                }
+            }
+        }
+
+        .oe-view-title {
+            background-color: #FCFCFC;
+            li > a {
+                color: #707b88;
+            }
+        }
+
+        .oe-cp-pager {
+            button:disabled {
+                color: #777777;
+            }
+        }
+        .btn:focus, .btn:active {
+            color: #eeeeee;
+            background-color: #707b88;
+        }
+
+        .o_cp_searchview {
+            .o-when-full();
+
+            > div { // searchview or custom widget
+                width: 100%;
+                max-height: 1000px;
+                transition: max-height 0ms ease 400ms;
+
+                overflow: hidden;
+                &.active {
+                    overflow: visible;
+                }
+
+                padding-right: 0;
+                .o_searchview_more {
+                    display: none;
+                }
+            }
+        }
+
+        .o_cp_sidebar, .o_cp_switch_buttons {
+            display: none;
+        }
+
+        .o_search_options {
+            display: block;
+        }
+
+        &.o_breadcrumb_full {
+            .breadcrumb {
+                .o-when-full();
+            }
+
+            .o_cp_searchview {
+                .o-when-not-full();
+
+                > div { // searchview or custom widget
+                    max-height: @breadcrumb-height;
+                    transition: max-height 0ms ease 0ms;
+                }
+            }
+        }
+    }
+}
+
+// Dropdowns View
+// --------------------------------------------
+
+.oe_dropdown_toggle {
+    float: right;
+    position: relative;
+    box-shadow: none;
+
+    .oe_dropdown_menu {
+        display: none;
+        box-shadow: none;
+        position: absolute;
+        min-width: 160px;
+        background: white;
+        border: 1px solid gray;
+        z-index: 3;
+
+        &.oe_opened {
+            display: block;
+        }
+    }
+}
+
+// Buttons Dropdown Toggler
+.o_dropdown_toggler_btn:active, .o_dropdown_toggler_btn.active, .open > .dropdown-toggle.o_dropdown_toggler_btn {
+    background-color: none;
+}
+.o_dropdown_toggler_btn, .o_dropdown_toggler_btn:hover, .o_dropdown_toggler_btn:focus, .o_dropdown_toggler_btn:active {
+    border-color: transparent;
+}
+.o_dropdown_toggler_btn, .o_dropdown_toggler_btn:active, .o_dropdown_toggler_btn.active, .o_dropdown_toggler_btn[disabled], fieldset[disabled] .o_dropdown_toggler_btn {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+

@@ -1,22 +1,65 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * auth_ldap
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-02-10 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-09-11 18:26+0800\n"
+"PO-Revision-Date: 2016-11-15 09:10+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:35+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_task_count
+msgid "# Tasks"
+msgstr "# 任務"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "# 供應商帳單"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_purchase_order_count
+msgid "# of Purchase Order"
+msgstr "# 採購單"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_sale_order_count
+msgid "# of Sales Order"
+msgstr " # 銷售訂單"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_property_account_payable_id
+msgid "Account Payable"
+msgstr "應付科目"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_property_account_receivable_id
+msgid "Account Receivable"
+msgstr "應收科目"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_company_ldap_create_user
+msgid ""
+"Automatically create local user accounts for new users authenticating via "
+"LDAP"
+msgstr "通過LDAP，為新用戶自動創建本地用戶帳戶。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_bank_account_count
+msgid "Bank"
+msgstr "銀行"
 
 #. module: auth_ldap
 #: model:ir.model,name:auth_ldap.model_res_company
@@ -24,19 +67,60 @@ msgid "Companies"
 msgstr "公司"
 
 #. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "和業務夥伴相關的公司"
+
+#. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_company
 msgid "Company"
 msgstr "公司"
 
 #. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_contract_ids
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_contracts_count
+msgid "Contracts"
+msgstr "合同"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_payment_token_count
+msgid "Count Payment Token"
+msgstr "按次數付款方式"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_create_user
+msgid "Create user"
+msgstr "創建用戶"
+
+#. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_currency_id
+msgid "Currency"
+msgstr "貨幣"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_property_stock_customer
+msgid "Customer Location"
+msgstr "客戶庫位元"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_property_payment_term_id
+msgid "Customer Payment Terms"
+msgstr "客戶支付條款"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_trust
+msgid "Degree of trust you have in this debtor"
+msgstr "你對借方的信任程度"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_display_name
@@ -44,31 +128,364 @@ msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_property_account_position_id
+msgid "Fiscal Position"
+msgstr "替換規則"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_has_unreconciled_entries
+msgid "Has unreconciled entries"
+msgstr "包含未核銷的憑證"
+
+#. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_invoice_warn
+msgid "Invoice"
+msgstr "發票"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_invoice_ids
+msgid "Invoices"
+msgstr "發票"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_issued_total
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_journal_item_count
+msgid "Journal Items"
+msgstr "會計憑證明細"
+
+#. module: auth_ldap
+#: model:ir.ui.view,arch_db:auth_ldap.view_general_configuration_form_inherit_auth_ldap
+#: model:ir.ui.view,arch_db:auth_ldap.view_ldap_installer_form
+msgid "LDAP Configuration"
+msgstr "LDAP 設置"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldaps
+#: model:ir.ui.view,arch_db:auth_ldap.view_general_configuration_form_inherit_auth_ldap
+msgid "LDAP Parameters"
+msgstr "LDAP 參數"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_base_config_settings_ldaps
+msgid "LDAP Parameters *"
+msgstr "LDAP 參數 *"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_ldap_server
+msgid "LDAP Server address"
+msgstr "LDAP 伺服器地址"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_ldap_server_port
+msgid "LDAP Server port"
+msgstr "LDAP 伺服器埠"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_ldap_base
+msgid "LDAP base"
+msgstr "LDAP 基節點"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_ldap_binddn
+msgid "LDAP binddn"
+msgstr "LDAP binddn"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_ldap_filter
+msgid "LDAP filter"
+msgstr "LDAP 篩檢程式"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_ldap_password
+msgid "LDAP password"
+msgstr "LDAP 密碼"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最後修改日期"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_last_time_entries_checked
+msgid ""
+"Last time the invoices & payments matching was performed for this partner. "
+"It is set either if there's not at least an unreconciled debit and an "
+"unreconciled credit or if you click the \"Done\" button."
+msgstr ""
+"該業務夥伴的發票和付款匹配的最後時間。當不存在至少一個未對帳的借方記錄和一個"
+"未對帳的貸方記錄時，或者點擊了\"完成\"按鈕時設置該時間。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "發票和付款最後匹配日期"
+
+#. module: auth_ldap
+#: model:ir.ui.view,arch_db:auth_ldap.view_ldap_installer_form
+msgid "Login Information"
+msgstr "登錄信息"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_invoice_warn_msg
+msgid "Message for Invoice"
+msgstr "發票上的資訊"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_purchase_warn_msg
+msgid "Message for Purchase Order"
+msgstr "採購單消息"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_sale_warn_msg
+msgid "Message for Sales Order"
+msgstr "銷售訂單消息"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_picking_warn_msg
+msgid "Message for Stock Picking"
+msgstr "倉庫分揀資訊"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "應付帳款限額"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_payment_token_ids
+msgid "Payment Tokens"
+msgstr "付款方式"
+
+#. module: auth_ldap
+#: model:ir.ui.view,arch_db:auth_ldap.view_ldap_installer_form
+msgid "Process Parameter"
+msgstr "進程參數"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_purchase_warn
+msgid "Purchase Order"
+msgstr "採購單"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_company_ldap_ldap_tls
+msgid ""
+"Request secure TLS/SSL encryption when connecting to the LDAP server. This "
+"option requires a server with STARTTLS enabled, otherwise all authentication "
+"attempts will fail."
+msgstr ""
+"當連接 LDAP 伺服器時請求伺服器使用安全的 TLS/SSL 加密。該選項需要伺服器啟用 "
+"STARTTLS，否則所有用戶驗證都將失敗。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_sale_order_ids
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_sale_warn
+msgid "Sales Order"
+msgstr "銷售訂單"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_invoice_warn
+#: model:ir.model.fields,help:auth_ldap.field_res_users_picking_warn
+#: model:ir.model.fields,help:auth_ldap.field_res_users_purchase_warn
+#: model:ir.model.fields,help:auth_ldap.field_res_users_sale_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"選擇“警告”選項將會對用戶生成一條提示資訊，選擇“阻止性消息”將會中斷流程並產生"
+"異常資訊。資訊的內容將在下一個欄位中定義。"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_sequence
 msgid "Sequence"
-msgstr "序列"
+msgstr "序號"
+
+#. module: auth_ldap
+#: model:ir.ui.view,arch_db:auth_ldap.view_ldap_installer_form
+msgid "Server Information"
+msgstr "伺服器資訊"
+
+#. module: auth_ldap
+#: model:ir.actions.act_window,name:auth_ldap.action_ldap_installer
+msgid "Setup your LDAP Server"
+msgstr "設置你的 LDAP 伺服器"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_picking_warn
+msgid "Stock Picking"
+msgstr "庫存分揀"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_property_purchase_currency_id
+msgid "Supplier Currency"
+msgstr "供應商貨幣"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_task_ids
+msgid "Tasks"
+msgstr "任務"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_user
+msgid "Template User"
+msgstr "用戶範本"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_property_account_position_id
+msgid ""
+"The fiscal position will determine taxes and accounts used for the partner."
+msgstr "替換規則確定業務夥伴的稅替換和科目替換。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr "發票和付款後至少有一個借貸方不匹配．"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_company_ldap_ldap_password
+msgid ""
+"The password of the user account on the LDAP server that is used to query "
+"the directory."
+msgstr "LDAP 伺服器上的用戶帳號密碼，用於查詢該目錄服務。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_company_ldap_ldap_binddn
+msgid ""
+"The user account on the LDAP server that is used to query the directory. "
+"Leave empty to connect anonymously."
+msgstr "用於查詢 LDAP 伺服器目錄的用戶帳號。如果要匿名連接請保持為空。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr "這科目將替換當前業務夥伴的預設支付科目"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr "這科目將用於替換當前業務夥伴的預設應收帳款科目"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_property_purchase_currency_id
+msgid ""
+"This currency will be used, instead of the default one, for purchases from "
+"the current partner"
+msgstr "對於從這個業務夥伴的採購，這個貨幣將被使用，替代預設貨幣。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr "此條款將用以取代預設的採購單或供應商帳單。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sale orders "
+"and customer invoices"
+msgstr "在銷售訂單和客戶發票上，該付款方式將替換預設的付款方式。"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_property_stock_customer
+msgid ""
+"This stock location will be used, instead of the default one, as the "
+"destination location for goods you send to this partner"
+msgstr "這庫位替代預設值作為你出庫到業務夥伴的目的庫位元."
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_property_stock_supplier
+msgid ""
+"This stock location will be used, instead of the default one, as the source "
+"location for goods you receive from the current partner"
+msgstr "預設作為你接收當前業務夥伴產品的源庫位元"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "開票總額"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_debit
+msgid "Total Payable"
+msgstr "應付帳款合計"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_credit
+msgid "Total Receivable"
+msgstr "應收帳款合計"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr "客戶欠款金額合計"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "應付供應商總金額"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap_ldap_tls
+msgid "Use TLS"
+msgstr "使用安全傳輸協定"
+
+#. module: auth_ldap
+#: model:ir.ui.view,arch_db:auth_ldap.view_ldap_installer_form
+msgid "User Information"
+msgstr "用戶資訊"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_company_ldap_user
+msgid "User to copy when creating new users"
+msgstr "當創建新用戶時，複製用戶"
 
 #. module: auth_ldap
 #: model:ir.model,name:auth_ldap.model_res_users
 msgid "Users"
 msgstr "用戶"
+
+#. module: auth_ldap
+#: model:ir.model.fields,help:auth_ldap.field_res_users_currency_id
+msgid "Utility field to express amount currency"
+msgstr "用來記錄貨幣金額的欄位"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_property_stock_supplier
+msgid "Vendor Location"
+msgstr "供應商庫位"
+
+#. module: auth_ldap
+#: model:ir.model.fields,field_description:auth_ldap.field_res_users_property_supplier_payment_term_id
+msgid "Vendor Payment Terms"
+msgstr "供應商支付條款"
+
+#. module: auth_ldap
+#: model:ir.model,name:auth_ldap.model_base_config_settings
+msgid "base.config.settings"
+msgstr "base.config.settings"
+
+#. module: auth_ldap
+#: model:ir.model,name:auth_ldap.model_res_company_ldap
+msgid "res.company.ldap"
+msgstr "res.company.ldap"

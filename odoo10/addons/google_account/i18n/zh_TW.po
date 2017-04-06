@@ -1,32 +1,33 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * google_account
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-02-10 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2015-10-22 22:07+0800\n"
+"PO-Revision-Date: 2016-11-15 09:03+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-22 07:48+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: google_account
 #: model:ir.model.fields,field_description:google_account.field_google_service_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: google_account
 #: model:ir.model.fields,field_description:google_account.field_google_service_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: google_account
 #: model:ir.model.fields,field_description:google_account.field_google_service_display_name
@@ -36,19 +37,78 @@ msgstr "顯示名稱"
 #. module: google_account
 #: model:ir.model.fields,field_description:google_account.field_google_service_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
 
 #. module: google_account
 #: model:ir.model.fields,field_description:google_account.field_google_service___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最後修改日期"
 
 #. module: google_account
 #: model:ir.model.fields,field_description:google_account.field_google_service_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: google_account
 #: model:ir.model.fields,field_description:google_account.field_google_service_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: google_account
+#: code:addons/google_account/google_account.py:173
+#, python-format
+msgid "Something went wrong with your request to google"
+msgstr "你對谷歌的請求有一些錯誤"
+
+#. module: google_account
+#: model:ir.model,name:google_account.model_google_service
+msgid "google.service"
+msgstr "google.service"
+
+#~ msgid "Username"
+#~ msgstr "用戶名："
+
+#~ msgid "Google Login"
+#~ msgstr "Google 登錄"
+
+#~ msgid "Google Contacts Import Error!"
+#~ msgstr "導入Google聯繫人失敗！"
+
+#~ msgid "Users"
+#~ msgstr "用戶"
+
+#~ msgid "or"
+#~ msgstr "or"
+
+#~ msgid "Google login"
+#~ msgstr "Google用戶名"
+
+#~ msgid "Google Password"
+#~ msgstr "Google密碼"
+
+#~ msgid "Error!"
+#~ msgstr "錯誤!"
+
+#~ msgid "Google Account"
+#~ msgstr "Google 帳戶"
+
+#~ msgid "Synchronization"
+#~ msgstr "同步"
+
+#~ msgid "Authentication failed. Check the user and password."
+#~ msgstr "身份授權失敗。檢查用戶名和密碼。"
+
+#~ msgid "Please install gdata-python-client from http://code.google.com/p/gdata-python-client/downloads/list"
+#~ msgstr "請下載並安裝gdata-python-client，地址是 http://code.google.com/p/gdata-python-client/downloads/list"
+
+#~ msgid "Google Contact"
+#~ msgstr "Google聯繫人"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Password"
+#~ msgstr "密碼"
+
+#~ msgid "_Login"
+#~ msgstr "登錄(_L)"

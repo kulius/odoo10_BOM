@@ -1,0 +1,127 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* tea_backend_theme
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 05:19+0000\n"
+"PO-Revision-Date: 2017-04-01 05:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.tea_login_layout
+msgid "<code style=\"display:none\">\n"
+"                    \n"
+"                        &lt;!--[if lt IE 9]&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/respond.min.js\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/excanvas.min.js\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/ie8.fix.min.js\"&gt;&lt;/script&gt;\n"
+"                        &lt;![endif]--&gt;\n"
+"\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/bootstrap/js/bootstrap.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery-slimscroll/jquery.slimscroll.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery.blockui.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/bootstrap-switch/js/bootstrap-switch.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery-validation/js/jquery.validate.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery-validation/js/additional-methods.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/select2/js/select2.full.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/backstretch/jquery.backstretch.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/app/app.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/src/js/login.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                    \n"
+"                </code>"
+msgstr "<code style=\"display:none\">\n"
+"                    \n"
+"                        &lt;!--[if lt IE 9]&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/respond.min.js\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/excanvas.min.js\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/ie8.fix.min.js\"&gt;&lt;/script&gt;\n"
+"                        &lt;![endif]--&gt;\n"
+"\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/bootstrap/js/bootstrap.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery-slimscroll/jquery.slimscroll.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery.blockui.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/bootstrap-switch/js/bootstrap-switch.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery-validation/js/jquery.validate.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/jquery-validation/js/additional-methods.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/select2/js/select2.full.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/backstretch/jquery.backstretch.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/lib/app/app.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                        &lt;script src=\"/tea_backend_theme/static/src/js/login.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n"
+"                    \n"
+"                </code>"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.menu
+msgid "<i class=\"fa fa-lg fa-chevron-left\"/>\n"
+"                                Applications"
+msgstr "<i class=\"fa fa-lg fa-chevron-left\"/>\n"
+"                                应用"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.webclient_bootstrap
+msgid "<span class=\"sr-only\">Toggle App Drawer</span>"
+msgstr "<span class=\"sr-only\">切换应用程序抽屉</span>"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.webclient_bootstrap
+msgid "<span class=\"sr-only\">Toggle App Drawer</span>\n"
+"                                    <i class=\"fa fa-th fa-lg app-drawer-icon-open\"/>"
+msgstr "<span class=\"sr-only\">切换应用程序抽屉</span>\n"
+"                                    <i class=\"fa fa-th fa-lg app-drawer-icon-open\"/>"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.webclient_bootstrap
+msgid "<span class=\"sr-only\">Toggle Navigation</span>\n"
+"                                    <i class=\"fa fa-bars fa-lg\"/>"
+msgstr "<span class=\"sr-only\">切换导航</span>\n"
+"                                    <i class=\"fa fa-bars fa-lg\"/>"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.tea_login_layout
+msgid "Database"
+msgstr "数据库"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.tea_login_layout
+msgid "Email"
+msgstr "Email"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.tea_login_layout
+msgid "Log in"
+msgstr "登录"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.tea_login_layout
+msgid "Login to your account"
+msgstr "登录到您的帐户"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.menu
+msgid "More <b class=\"caret\"/>"
+msgstr "更多<b class=\"caret\"/>"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.tea_login_layout
+msgid "Password"
+msgstr "密码"
+
+#. module: tea_backend_theme
+#: model:ir.ui.view,arch_db:tea_backend_theme.tea_login_layout
+msgid "Powered by <span>Odoo</span>"
+msgstr "由<span>Odoo</span>提供技术支持"
+

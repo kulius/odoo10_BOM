@@ -1,38 +1,76 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * hr_timesheet_sheet
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2016-12-10 20:05+0800\n"
+"PO-Revision-Date: 2016-12-10 22:40+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:47+0000\n"
+"X-Generator: Poedit 1.8.10\n"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_state
+msgid ""
+" * The 'Open' status is used when a user is encoding a new and unconfirmed "
+"timesheet. \n"
+"* The 'Waiting Approval' status is used to confirm the timesheet by user. \n"
+"* The 'Approved' status is used when the users timesheet is accepted by his/"
+"her senior."
+msgstr ""
+" *  '打開' 狀態用於表明一個用戶填寫了一個新的沒有被批准的計工單。 \n"
+"*   '等待批准' 狀態用來表明需要被上級批准的計工單。 \n"
+"*  '已批准'狀態表明用戶的計工單已被上級批准。"
+
+#. module: hr_timesheet_sheet
+#. openerp-web
+#: code:addons/hr_timesheet_sheet/static/src/xml/timesheet.xml:33
+#, python-format
+msgid "Add a Line"
+msgstr "添加明細"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model,name:hr_timesheet_sheet.model_account_analytic_line
 msgid "Analytic Line"
-msgstr "輔助核算項目明細"
+msgstr "分析明細"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_account_ids
+msgid "Analytic accounts"
+msgstr "輔助核算項"
 
 #. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
 msgid "Approve"
-msgstr "核准"
+msgstr "批准"
 
 #. module: hr_timesheet_sheet
 #: selection:hr_timesheet_sheet.sheet,state:0
 #: model:mail.message.subtype,name:hr_timesheet_sheet.mt_timesheet_approved
 msgid "Approved"
-msgstr "已核可"
+msgstr "已審核通過"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:137
+#, python-format
+msgid "Cannot approve a non-submitted timesheet."
+msgstr "不能批准一個沒有提交的計工單。"
+
+#. module: hr_timesheet_sheet
+#. openerp-web
+#: code:addons/hr_timesheet_sheet/static/src/xml/timesheet.xml:51
+#, python-format
+msgid "Click to add projects, contracts or analytic accounts."
+msgstr "單擊添加項目、合同和輔助核算項。"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model,name:hr_timesheet_sheet.model_res_company
@@ -45,16 +83,31 @@ msgid "Company"
 msgstr "公司"
 
 #. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Confirmed Timesheets"
+msgstr "已確認的計工單"
+
+#. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_current_open_create_uid
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_current_open_create_date
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_date_from
+msgid "Date From"
+msgstr "日期從"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_date_to
+msgid "Date To"
+msgstr "日期到"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_department_id
@@ -81,45 +134,74 @@ msgid "Employee"
 msgstr "員工"
 
 #. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Employee's Name"
+msgstr "員工姓名"
+
+#. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
 msgid "Employees"
 msgstr "員工"
 
 #. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_config_settings_form_inherit_hr_timesheet_sheet
+msgid "Extra features"
+msgstr "其他特性"
+
+#. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組"
 
 #. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
 msgid "Hours"
-msgstr "小時"
+msgstr "小時數"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_department
+msgid "Hr Department"
+msgstr "人力資源部"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_current_open_id
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_account_id
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "In Draft"
+msgstr "在草稿"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:103
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:113
+#, python-format
+msgid ""
+"In order to create a timesheet for this employee, you must link him/her to a "
+"user."
+msgstr "為了給這個員工創建計工單，必須為他（或她）關聯一個用戶。"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_current_open___last_update
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet___last_update
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_account___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最後修改日期"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_current_open_write_uid
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_current_open_write_date
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
 
 #. module: hr_timesheet_sheet
 #: selection:res.company,timesheet_range:0
@@ -127,9 +209,35 @@ msgid "Month"
 msgstr "月"
 
 #. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_config_settings_form_inherit_hr_timesheet_sheet
+msgid "More Info"
+msgstr "更多資訊"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.menu,name:hr_timesheet_sheet.menu_act_hr_timesheet_sheet_form_my_current
+msgid "My Current Timesheet"
+msgstr "我當前的計工單"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.server,name:hr_timesheet_sheet.ir_actions_server_timesheet_sheet
+msgid "My Timesheet"
+msgstr "我的計工單"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,name:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
+#: model:ir.ui.menu,name:hr_timesheet_sheet.menu_act_hr_timesheet_sheet_my_timesheets
+msgid "My Timesheets"
+msgstr "我的計工單"
+
+#. module: hr_timesheet_sheet
 #: selection:hr_timesheet_sheet.sheet,state:0
 msgid "New"
-msgstr "新增"
+msgstr "新的"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_form
+msgid "New timesheet to approve."
+msgstr "待審批的計工單。"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_name
@@ -137,19 +245,71 @@ msgid "Note"
 msgstr "備註"
 
 #. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:135
+#, python-format
+msgid "Only an HR Officer or Manager can approve timesheets."
+msgstr "只用主管或經理才能批准計工單。"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:120
+#, python-format
+msgid ""
+"Only an HR Officer or Manager can refuse timesheets or reset them to draft."
+msgstr "只有主管或經理才能拒絕計工單或將它們重置為草稿。"
+
+#. module: hr_timesheet_sheet
 #: selection:hr_timesheet_sheet.sheet,state:0
 msgid "Open"
-msgstr "開啟"
+msgstr "打開"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/wizard/hr_timesheet_current.py:26
+#, python-format
+msgid "Open Timesheet"
+msgstr "打開計工單"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_project_config_settings_timesheet_range
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_res_company_timesheet_range
+msgid "Periodicity on which you validate your timesheets."
+msgstr "提交計工單的週期"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_account_name
+msgid "Project / Analytic Account"
+msgstr "項目 / 輔助核算項"
 
 #. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
 msgid "Refuse"
-msgstr "拒絕"
+msgstr "退回"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_user_id
+msgid "Related user name for the resource to manage its access."
+msgstr "管理資源許可權的相關用戶名稱"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_account_filter
+msgid "Search Account"
+msgstr "查找輔助核算項"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Search Timesheet"
+msgstr "查找計工單"
 
 #. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
 msgid "Set to Draft"
 msgstr "設為草稿"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_line_sheet_id
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_line_sheet_id_computed
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_account_sheet_id
+msgid "Sheet"
+msgstr "計工單"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_state
@@ -158,14 +318,109 @@ msgstr "狀態"
 
 #. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Submit to Manager"
+msgstr "提交給經理"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
 msgid "Summary"
 msgstr "摘要"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_timesheet_sheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Timesheet"
+msgstr "計工單"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Timesheet Activities"
+msgstr "計工單活動"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Timesheet Period"
+msgstr "計工單期間"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_project_config_settings_module_project_timesheet_synchro
+msgid "Timesheet app for Chrome/Android/iOS"
+msgstr "Chrome/Android/iOS的計工單應用"
+
+#. module: hr_timesheet_sheet
+#: model:mail.message.subtype,description:hr_timesheet_sheet.mt_timesheet_approved
+msgid "Timesheet approved"
+msgstr "已批准的計工單"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_account_form
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_account_tree
+msgid "Timesheet by Accounts"
+msgstr "輔助核算項計工單"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_timesheet_ids
+msgid "Timesheet lines"
+msgstr "計工單明細"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_company_timesheet_range
+msgid "Timesheet range"
+msgstr "計工單範圍"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_project_config_settings_timesheet_range
+msgid "Timesheet range *"
+msgstr "計工單範圍 *"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_department_timesheet_to_approve_count
+msgid "Timesheet to Approve"
+msgstr "待審批的計工單"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,name:hr_timesheet_sheet.act_hr_employee_2_hr_timesheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_employee_timesheet_count
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_department_view_kanban
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_employee_extd_form
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_tree_simplified
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_config_settings_form_inherit_hr_timesheet_sheet
+msgid "Timesheets"
+msgstr "計工單"
+
+#. module: hr_timesheet_sheet
+#: model:mail.message.subtype,name:hr_timesheet_sheet.mt_department_timesheet_approved
+msgid "Timesheets Approved"
+msgstr "已批准的計工單"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_timesheet_sheet_sheet_account
+msgid "Timesheets by Period"
+msgstr "計工單週期"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_form
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
+msgid ""
+"Timesheets can also be invoiced to customers, depending on the\n"
+"                configuration of each project's related contract."
+msgstr ""
+"可以在客戶的開票內容中反映出發生的計工單\n"
+"               按照每個專案內容設置的協定。"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,name:hr_timesheet_sheet.act_hr_timesheet_sheet_form
+#: model:ir.actions.act_window,name:hr_timesheet_sheet.hr_timesheet_action_from_department
+#: model:ir.ui.menu,name:hr_timesheet_sheet.menu_act_hr_timesheet_sheet_form
+#: model:mail.message.subtype,name:hr_timesheet_sheet.mt_department_timesheet_confirmed
+msgid "Timesheets to Approve"
+msgstr "待審批的計工單"
 
 #. module: hr_timesheet_sheet
 #: model:ir.ui.menu,name:hr_timesheet_sheet.menu_hr_to_approve
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
 msgid "To Approve"
-msgstr "批准"
+msgstr "待審批"
 
 #. module: hr_timesheet_sheet
 #. openerp-web
@@ -175,7 +430,7 @@ msgstr "批准"
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_account_tree
 #, python-format
 msgid "Total"
-msgstr "總計"
+msgstr "合計"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_account_total
@@ -185,7 +440,12 @@ msgstr "總時間"
 #. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
 msgid "Unread Messages"
-msgstr "未讀訊息"
+msgstr "未讀消息"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Unvalidated Timesheets"
+msgstr "未生效的計工單"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_user_id
@@ -196,20 +456,627 @@ msgstr "用戶"
 #: selection:hr_timesheet_sheet.sheet,state:0
 #: model:mail.message.subtype,name:hr_timesheet_sheet.mt_timesheet_confirmed
 msgid "Waiting Approval"
-msgstr "待審核"
+msgstr "待審批"
 
 #. module: hr_timesheet_sheet
 #: selection:res.company,timesheet_range:0
 msgid "Week"
-msgstr "週"
+msgstr "周"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:146
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:143
 #, python-format
 msgid "Week "
-msgstr "週"
+msgstr "周"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:151
+#, python-format
+msgid "You cannot delete a timesheet which is already confirmed."
+msgstr "不能夠刪除已經審核的計工單。"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:97
+#, python-format
+msgid "You cannot duplicate a timesheet."
+msgstr "不能夠複製計工單"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/account_analytic_line.py:60
+#, python-format
+msgid "You cannot modify an entry in a confirmed timesheet."
+msgstr "不能夠修改已審核的計工單條目。"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_form
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
+msgid ""
+"You must record timesheets every day and confirm at the end\n"
+"                of the week. Once the timesheet is confirmed, it should be\n"
+"                validated by a manager."
+msgstr ""
+"你必須每天記錄計工單，並在每週末確認\n"
+"                    此計工單被確認後，\n"
+"                    還需要經理審核。"
+
+#. module: hr_timesheet_sheet
+#. openerp-web
+#: code:addons/hr_timesheet_sheet/static/src/xml/timesheet.xml:52
+#, python-format
+msgid "You will be able to register your working hours and activities."
+msgstr "你可記錄你的工作時間和活動。"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_timesheet_current_open
+msgid "hr.timesheet.current.open"
+msgstr "hr.timesheet.current.open"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
+msgid "new timesheet."
+msgstr "新計工單。"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_project_config_settings
+msgid "project.config.settings"
+msgstr "project.config.settings"
 
 #. module: hr_timesheet_sheet
 #: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
 msgid "to"
-msgstr "到"
+msgstr "至"
+
+#. module: hr_timesheet_sheet
+#: model:mail.message.subtype,description:hr_timesheet_sheet.mt_timesheet_confirmed
+msgid "waiting approval"
+msgstr "待審批"
+
+#~ msgid ""
+#~ " * The 'Draft' status is used when a user is encoding a new and "
+#~ "unconfirmed timesheet.                 \n"
+#~ "* The 'Confirmed' status is used for to confirm the timesheet by "
+#~ "user.                 \n"
+#~ "* The 'Done' status is used when users timesheet is accepted by his/her "
+#~ "senior."
+#~ msgstr ""
+#~ " * “草稿”狀態用於一個新的和未確認的考勤表。.                 \n"
+#~ "* “已確認”狀態用於用戶確認一個考勤表。                 \n"
+#~ "* “完成”狀態用於用戶考勤表已被上級審核。"
+
+#~ msgid "# Nbr Timesheet"
+#~ msgstr "#計工單編號"
+
+#~ msgid "# Total Attendance"
+#~ msgstr "#總出勤"
+
+#~ msgid "# Total Diff"
+#~ msgstr "# 總差異"
+
+#~ msgid "# Total Timesheet"
+#~ msgstr "# 總計工單"
+
+#~ msgid "<span class=\"o_stat_text\">Timesheet</span>"
+#~ msgstr "<span class=\"o_stat_text\">計工單</span>"
+
+#~ msgid "Absent"
+#~ msgstr "缺勤"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid ""
+#~ "Allowed difference in hours between the sign in/out and the timesheet "
+#~ "computation for one sheet. Set this to 0 if you do not want any control."
+#~ msgstr "簽入/簽出和在一個計工單裏的容許的差異小時。如果你不想這樣控制設為0."
+
+#~ msgid "Attendance"
+#~ msgstr "考勤"
+
+#~ msgid "Attendances"
+#~ msgstr "考勤"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Confirmed"
+#~ msgstr "已確認"
+
+#~ msgid "Current Status"
+#~ msgstr "當前狀態"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "Date from"
+#~ msgstr "日期從"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "發佈在記錄上的最後資訊的日期。"
+
+#~ msgid "Date to"
+#~ msgstr "日期到"
+
+#~ msgid "Day"
+#~ msgstr "天"
+
+#~ msgid "Difference"
+#~ msgstr "差異"
+
+#~ msgid "Differences"
+#~ msgstr "差異"
+
+#~ msgid "Done"
+#~ msgstr "完成"
+
+#~ msgid "Draft"
+#~ msgstr "草稿"
+
+#~ msgid ""
+#~ "Error ! Sign in (resp. Sign out) must follow Sign out (resp. Sign in)"
+#~ msgstr "錯誤！簽入（或簽出）必須在簽出（或簽入）之後"
+
+#~ msgid "External Timesheet"
+#~ msgstr "外部計工單"
+
+#~ msgid "Followers"
+#~ msgstr "關注者"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid "HR Department"
+#~ msgstr "人力資源部"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果查收到新消息，需要你注意。"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選，需要注意查看新消息。"
+
+#~ msgid "Important Messages"
+#~ msgstr "重要消息"
+
+#~ msgid ""
+#~ "In order to create a timesheet for this employee, you must link the "
+#~ "employee to a product."
+#~ msgstr "要為員工創建考勤表，你要為員工指定一個產品。"
+
+#~ msgid "Internal Timesheet"
+#~ msgstr "內部計工單"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "It will open your current timesheet"
+#~ msgstr "它將開啟你當前計工單"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最後資訊日期"
+
+#~ msgid "Messages"
+#~ msgstr "消息"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和通信歷史"
+
+#~ msgid ""
+#~ "My Timesheet opens your timesheet so that you can book your activities "
+#~ "into the system. From the same form, you can register your attendances "
+#~ "(Sign In/Out) and describe the working hours made on the different "
+#~ "projects. At the end of the period defined in the company, the timesheet "
+#~ "is confirmed by the user and can be validated by his manager. If "
+#~ "required, as defined on the project, you can generate the invoices based "
+#~ "on the timesheet."
+#~ msgstr ""
+#~ "點擊\"我的計工單\"功能表打開計工單，進行系統中的相關操作。用相同方式，你能記"
+#~ "錄你的考勤（簽到/簽退），並能同時記錄在不同專案中的工作時間。在公司規定的"
+#~ "限定時間內，確認用戶的計工單，並由經理審核。如果需要，可以定義一個專案，並"
+#~ "按這種計工單開發票。"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動數量"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的消息數量"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Open HR Menu"
+#~ msgstr "打開人力資源菜單"
+
+#~ msgid "Period"
+#~ msgstr "考勤期間"
+
+#~ msgid ""
+#~ "Please verify that the total difference of the sheet is lower than %.2f."
+#~ msgstr "請核實這表的總差異少於 %.2f 。"
+
+#~ msgid "Present"
+#~ msgstr "在崗"
+
+#~ msgid "Sign In"
+#~ msgstr "簽入"
+
+#~ msgid "Sign Out"
+#~ msgstr "簽出"
+
+#~ msgid ""
+#~ "The timesheet cannot be validated as it does not contain an equal number "
+#~ "of sign ins and sign outs."
+#~ msgstr "考勤表無法提交，因為簽入和簽出的數量不匹配。"
+
+#~ msgid "Timesheet allowed difference(Hours)"
+#~ msgstr "計工單允許的差異（小時）"
+
+#~ msgid "Timesheet by Account"
+#~ msgstr "輔助核算項的計工單"
+
+#~ msgid "Timesheet by Day"
+#~ msgstr "計工單按天"
+
+#~ msgid "Total Attendance"
+#~ msgstr "考勤合計"
+
+#~ msgid "Total Attendances"
+#~ msgstr "總考勤"
+
+#~ msgid "Total Difference"
+#~ msgstr "差異合計"
+
+#~ msgid "Total Timesheet"
+#~ msgstr "計工單總工時"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息計數"
+
+#~ msgid "Website Messages"
+#~ msgstr "網站消息"
+
+#~ msgid "Website communication history"
+#~ msgstr "網站溝通歷史"
+
+#~ msgid "Weekly"
+#~ msgstr "每週"
+
+#~ msgid ""
+#~ "You can not enter an attendance date outside the current timesheet dates."
+#~ msgstr "你不能輸入一個超過當前考勤表日期的考勤日期。"
+
+#~ msgid ""
+#~ "You can not enter an attendance in a submitted timesheet. Ask your "
+#~ "manager to reset it before adding attendance."
+#~ msgstr ""
+#~ "你不能輸入一個已提交的計工單上的日期。在添加考勤前要求你的經理重置它。"
+
+#~ msgid "You cannot delete a timesheet which have attendance entries."
+#~ msgstr "不能刪除附有條目的計工單。"
+
+#~ msgid ""
+#~ "You cannot enter an attendance date outside the current timesheet dates."
+#~ msgstr "你不能輸入一個超過當前考勤表日期的考勤日期。"
+
+#~ msgid ""
+#~ "You cannot have 2 timesheets that overlap!\n"
+#~ "Please use the menu 'My Current Timesheet' to avoid this problem."
+#~ msgstr ""
+#~ "你不能創建日期有重疊的兩個計工單!\n"
+#~ "使用功能表 “我當前的計工單”來避免這個錯誤。"
+
+#~ msgid ""
+#~ "You cannot have 2 timesheets that overlap!\n"
+#~ "You should use the menu 'My Timesheet' to avoid this problem."
+#~ msgstr ""
+#~ "你不能創建重疊的考勤表!\n"
+#~ "進入菜單 “我的考勤表” 查看已有考勤表，避免出現類似問題。"
+
+#~ msgid "You cannot modify an entry in a confirmed timesheet"
+#~ msgstr "不能修改已審核計工單中的條目"
+
+#~ msgid "Need Action"
+#~ msgstr "需要行動"
+
+#~ msgid "Need Action Counter"
+#~ msgstr "需要行動計數"
+
+#~ msgid "Add"
+#~ msgstr "添加"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                New timesheet to approve.\n"
+#~ "              </p><p>\n"
+#~ "                You must record timesheets every day and confirm at the "
+#~ "end\n"
+#~ "                of the week. Once the timesheet is confirmed, it should "
+#~ "be\n"
+#~ "                validated by a manager.\n"
+#~ "              </p><p>\n"
+#~ "                Timesheets can also be invoiced to customers, depending "
+#~ "on the\n"
+#~ "                configuration of each project's related contract.\n"
+#~ "              </p>"
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                要批准的考勤表\n"
+#~ "              </p><p>\n"
+#~ "                你必須每天記錄考勤表，並在本周結束時確認。一旦確認考勤表，"
+#~ "應該由經理進行驗證。\n"
+#~ "              </p><p>\n"
+#~ "               考勤表也可以作為發票開給客戶，取決於相關專案合同中的設"
+#~ "置。。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "Allow a difference of time between timesheets and attendances of (in "
+#~ "hours)"
+#~ msgstr "允許工作時間和出勤的的時間差異（小時）"
+
+#~ msgid ""
+#~ "In order to create a timesheet for this employee, you must assign an "
+#~ "analytic journal to the employee, like 'Timesheet Journal'."
+#~ msgstr "要為員工創建考勤表，你要為員工制定一個成本憑證簿，如“考勤表分錄”。"
+
+#~ msgid "Invoice rate"
+#~ msgstr "發票稅率"
+
+#~ msgid "Type of Invoicing"
+#~ msgstr "開票類型"
+
+#~ msgid "Validate timesheets every"
+#~ msgstr "確認計工單，每"
+
+#~ msgid "hr.config.settings"
+#~ msgstr "人力資源設置設置"
+
+#~ msgid "New Mail"
+#~ msgstr "新電子郵件"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid ""
+#~ "In order to create a timesheet for this employee, you must link the "
+#~ "employee to a product, like 'Consultant'."
+#~ msgstr "要為員工創建考勤表，你要給該員工指定一個產品，例如“諮詢服務”。"
+
+#~ msgid "Please create an employee and associate it with this user."
+#~ msgstr "請創建員工並將他與這個用戶關聯起來。"
+
+#~ msgid "Analytic Account"
+#~ msgstr "輔助核算項"
+
+#~ msgid "Configuration Error!"
+#~ msgstr "設置錯誤！"
+
+#~ msgid "Error!"
+#~ msgstr "錯誤!"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保存複雜的摘要(消息數量,……等)。為了插入到看板視圖，這一摘要直接是是HTML格"
+#~ "式。"
+
+#~ msgid "Timesheet Line"
+#~ msgstr "計工單明細"
+
+#~ msgid "User Error!"
+#~ msgstr "用戶錯誤！"
+
+#~ msgid "Warning !"
+#~ msgstr "警告！"
+
+#~ msgid "Warning!"
+#~ msgstr "警告！"
+
+#~ msgid "You cannot modify an entry in a Confirmed/Done timesheet !"
+#~ msgstr "不能夠修改已審核/已完成的計工單中的條目！"
+
+#~ msgid "#Nbr"
+#~ msgstr "編號"
+
+#~ msgid "Current date"
+#~ msgstr "當前日期"
+
+#~ msgid "Service"
+#~ msgstr "服務"
+
+#~ msgid "Time"
+#~ msgstr "時間"
+
+#~ msgid ""
+#~ "Allowed difference in hours between the sign in/out and the timesheet\n"
+#~ "                computation for one sheet. Set this to 0 if you do not "
+#~ "want any control."
+#~ msgstr "簽入/簽出和在一個考勤表裏的容許的差異小時。如果你不想這樣控制設為0."
+
+#~ msgid "March"
+#~ msgstr "三月"
+
+#~ msgid "#Cost"
+#~ msgstr "#成本"
+
+#~ msgid "Based on the timesheet"
+#~ msgstr "根據計工單"
+
+#~ msgid "Group by day of date"
+#~ msgstr "按日期分組"
+
+#~ msgid "Validate"
+#~ msgstr "生效"
+
+#~ msgid "Total Cost"
+#~ msgstr "總成本"
+
+#~ msgid "Timesheet Sheet Analysis"
+#~ msgstr "計工表分析"
+
+#~ msgid "Validation"
+#~ msgstr "審核"
+
+#~ msgid "Employee's timesheet entry"
+#~ msgstr "員工計工單"
+
+#~ msgid "Confirm"
+#~ msgstr "確定"
+
+#~ msgid "State is 'confirmed'."
+#~ msgstr "狀態是“已確認”"
+
+#~ msgid "My Total Attendances By Week"
+#~ msgstr "周我的總考勤"
+
+#~ msgid "Group by month of date"
+#~ msgstr "按月分組"
+
+#~ msgid "The project manager validates the timesheets."
+#~ msgstr "專案經理審核計工單"
+
+#~ msgid "July"
+#~ msgstr "7月"
+
+#~ msgid "Work on Task"
+#~ msgstr "工作任務"
+
+#~ msgid "#Quantity"
+#~ msgstr "# 數量"
+
+#~ msgid "Available Attendance"
+#~ msgstr "可用的考勤"
+
+#~ msgid "September"
+#~ msgstr "9月"
+
+#~ msgid "December"
+#~ msgstr "12月"
+
+#~ msgid "Sign in/out"
+#~ msgstr "簽入/簽出"
+
+#~ msgid "Billing"
+#~ msgstr "開帳單"
+
+#~ msgid ""
+#~ "The timesheet line represents the time spent by the employee on a "
+#~ "specific service provided."
+#~ msgstr "計工單明細代表員工在特定服務所花費的時間。"
+
+#~ msgid "The invoice is created based on the timesheet."
+#~ msgstr "這發票創建基於這計工單"
+
+#~ msgid "Draft Timesheet"
+#~ msgstr "計工單草稿"
+
+#~ msgid "August"
+#~ msgstr "8月"
+
+#~ msgid "June"
+#~ msgstr "6月"
+
+#~ msgid "November"
+#~ msgstr "11月"
+
+#~ msgid "Extended Filters..."
+#~ msgstr "增加篩選條件"
+
+#~ msgid "My Total Attendance By Week"
+#~ msgstr "我的周考勤"
+
+#~ msgid "October"
+#~ msgstr "10月"
+
+#~ msgid "January"
+#~ msgstr "1月"
+
+#~ msgid "The employee signs in and signs out."
+#~ msgstr "員工簽入和簽出。"
+
+#~ msgid "General Account"
+#~ msgstr "輔助核算項"
+
+#~ msgid "State is 'draft'."
+#~ msgstr "狀態是“草稿”"
+
+#~ msgid "Validated"
+#~ msgstr "已生效"
+
+#~ msgid "Invoice on Work"
+#~ msgstr "基於工作的發票"
+
+#~ msgid "Group by year of date"
+#~ msgstr "按年分組"
+
+#~ msgid "State is 'validated'."
+#~ msgstr "狀態是“已生效”"
+
+#~ msgid "Timesheet Analysis"
+#~ msgstr "計工單分析"
+
+#~ msgid "Product"
+#~ msgstr "產品"
+
+#~ msgid "Description"
+#~ msgstr "說明"
+
+#~ msgid "The employee periodically confirms his own timesheets."
+#~ msgstr "員工定期確認自己的計工單"
+
+#~ msgid "May"
+#~ msgstr "5月"
+
+#~ msgid "Defines the work summary of task"
+#~ msgstr "定義任務的工作摘要"
+
+#~ msgid "Moves task entry into the timesheet line"
+#~ msgstr "把工作調入計工單明細中"
+
+#~ msgid "February"
+#~ msgstr "2月"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                This report performs analysis on timesheets created by "
+#~ "your\n"
+#~ "                human resources in the system. It allows you to have a "
+#~ "full\n"
+#~ "                overview of  entries done by your employees. You can "
+#~ "group them\n"
+#~ "                by specific selection criteria thanks to the search "
+#~ "tool.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p>\n"
+#~ "                 在系統裏這報表分析創建的考勤表，\n"
+#~ "                它可以使你一覽你的員工的工作。\n"
+#~ "                你可以在搜索工具選擇\n"
+#~ "                具體的標準來分組。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid "Information of time spent on a service"
+#~ msgstr "花費在服務上時間資訊"
+
+#~ msgid "April"
+#~ msgstr "4月"
+
+#~ msgid "Confirmation"
+#~ msgstr "確定"
+
+#~ msgid "Cost"
+#~ msgstr "成本"
+
+#~ msgid "Year"
+#~ msgstr "年"
+
+#~ msgid "Journal"
+#~ msgstr "分錄"

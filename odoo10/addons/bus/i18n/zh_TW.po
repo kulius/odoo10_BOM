@@ -1,73 +1,81 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * bus
+# 	* bus
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-02-10 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2015-07-28 19:45+0800\n"
+"PO-Revision-Date: 2016-11-15 09:06+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_channel
 msgid "Channel"
-msgstr "管道"
+msgstr "頻道"
+
+#. module: bus
+#: model:ir.model.fields,field_description:bus.field_bus_bus_create_date
+msgid "Create date"
+msgstr "創建日期"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_display_name
-#: model:ir.model.fields,field_description:bus.field_bus_presence_display_name
 msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_id
-#: model:ir.model.fields,field_description:bus.field_bus_presence_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus___last_update
-#: model:ir.model.fields,field_description:bus.field_bus_presence___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_message
 msgid "Message"
-msgstr "訊息"
+msgstr "信息"
 
 #. module: bus
-#: model:ir.model,name:bus.model_res_partner
-msgid "Partner"
-msgstr "伙伴"
+#: model:ir.model,name:bus.model_bus_bus
+msgid "bus.bus"
+msgstr "bus.bus"
 
 #. module: bus
-#: model:ir.model,name:bus.model_res_users
-#: model:ir.model.fields,field_description:bus.field_bus_presence_user_id
-msgid "Users"
-msgstr "用戶"
+#: model:ir.model.fields,help:bus.field_bus_bus___last_update
+#: model:ir.model.fields,help:bus.field_bus_bus_channel
+#: model:ir.model.fields,help:bus.field_bus_bus_create_date
+#: model:ir.model.fields,help:bus.field_bus_bus_create_uid
+#: model:ir.model.fields,help:bus.field_bus_bus_display_name
+#: model:ir.model.fields,help:bus.field_bus_bus_id
+#: model:ir.model.fields,help:bus.field_bus_bus_message
+#: model:ir.model.fields,help:bus.field_bus_bus_write_date
+#: model:ir.model.fields,help:bus.field_bus_bus_write_uid
+msgid "false"
+msgstr "false"

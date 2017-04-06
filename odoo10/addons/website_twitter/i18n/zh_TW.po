@@ -1,60 +1,271 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * website_twitter
+# 	* website_twitter
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:58+0000\n"
-"PO-Revision-Date: 2016-02-10 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2014-09-23 16:28+0000\n"
+"PO-Revision-Date: 2016-11-15 08:30+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #. module: website_twitter
-#: model:ir.model.fields,field_description:website_twitter.field_website_twitter_tweet_create_uid
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Accept terms of use and click on the Create button at the bottom"
+msgstr "接受使用條款並單擊在底部的創建按鈕"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Callback URL:"
+msgstr "回調 URL:"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Copy/Paste API Key and Secret below"
+msgstr "在下麵複製/粘貼 API 密鑰和匿名 "
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Create a new Twitter application on"
+msgstr "創建新的Twitter應用程式"
+
+#. module: website_twitter
+#: field:website.twitter.tweet,create_uid:0
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: website_twitter
-#: model:ir.model.fields,field_description:website_twitter.field_website_twitter_tweet_create_date
+#: field:website.twitter.tweet,create_date:0
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: website_twitter
-#: model:ir.model.fields,field_description:website_twitter.field_website_twitter_tweet_display_name
-msgid "Display Name"
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Description:"
+msgstr "描述："
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid ""
+"Enter the screen name from which you want to load favorite Tweets (does not "
+"need to be the same as the API keys)"
+msgstr "輸入你想裝入推特的螢幕名稱（不需要於API Key 相同）"
+
+#. module: website_twitter
+#: field:website,twitter_screen_name:0
+#: field:website.config.settings,twitter_screen_name:0
+msgid "Get favorites from this screen name"
+msgstr "收藏顯示名稱"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "How to configure the Twitter API access"
+msgstr "如何設置 Twitter API 許可權"
+
+#. module: website_twitter
+#: field:website.twitter.tweet,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: website_twitter
+#: field:website.twitter.tweet,write_uid:0
+msgid "Last Updated by"
+msgstr "最後更新者"
+
+#. module: website_twitter
+#: field:website.twitter.tweet,write_date:0
+msgid "Last Updated on"
+msgstr "最後更新時間"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Name:"
+msgstr "名字："
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Odoo Tweet Scroller"
+msgstr "Odoo Tweet 滾動插件"
+
+#. module: website_twitter
+#: code:addons/website_twitter/models/twitter_config.py:36
+#, python-format
+msgid "Please double-check your Twitter API Key and Secret"
+msgstr "請復核你的 Twitter API 密鑰和匿名"
+
+#. module: website_twitter
+#: code:addons/website_twitter/controllers/main.py:25
+#, python-format
+msgid ""
+"Please set a Twitter screen name to load favorites from, in the Website "
+"Settings (it does not have to be yours)"
+msgstr "請設置一個網站設置的推特螢幕名稱來裝入你的喜好（它不必是你自己的）"
+
+#. module: website_twitter
+#: code:addons/website_twitter/controllers/main.py:21
+#, python-format
+msgid "Please set the Twitter API Key and Secret in the Website Settings."
+msgstr "請網站設置Twitter API密鑰和匿名。"
+
+#. module: website_twitter
+#. openerp-web
+#: code:addons/website_twitter/static/src/xml/website.twitter.xml:35
+#, python-format
+msgid "Reload"
+msgstr "重新載入"
+
+#. module: website_twitter
+#: field:website.twitter.tweet,screen_name:0
+msgid "Screen Name"
 msgstr "顯示名稱"
 
 #. module: website_twitter
-#: model:ir.model.fields,field_description:website_twitter.field_website_twitter_tweet_id
-msgid "ID"
-msgstr "編號"
+#: help:website.config.settings,twitter_screen_name:0
+msgid ""
+"Screen Name of the Twitter Account from which you want to load favorites.It "
+"does not have to match the API Key/Secret."
+msgstr "你想從中裝入喜好的推特帳號的螢幕名稱。它不必與 API Key/私密 相匹配。"
 
 #. module: website_twitter
-#: model:ir.model.fields,field_description:website_twitter.field_website_twitter_tweet___last_update
-msgid "Last Modified on"
-msgstr "最後修改:"
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid ""
+"Set your Twitter API access below to be able to use the Twitter Scroller "
+"Website snippet."
+msgstr "設置下面你的推特API 許可權，以允許使用網站代碼的推特捲軸。"
 
 #. module: website_twitter
-#: model:ir.model.fields,field_description:website_twitter.field_website_twitter_tweet_write_uid
-msgid "Last Updated by"
-msgstr "最後更新："
+#: field:website.config.settings,twitter_tutorial:0
+msgid "Show me how to obtain the Twitter API Key and Secret"
+msgstr "告訴我如何獲得Twitter API密鑰和匿名"
 
 #. module: website_twitter
-#: model:ir.model.fields,field_description:website_twitter.field_website_twitter_tweet_write_date
-msgid "Last Updated on"
-msgstr "最後更新於"
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Switch to the API Keys tab:"
+msgstr "切換到 API Keys 選項:"
+
+#. module: website_twitter
+#: field:website.twitter.tweet,tweet_id:0
+msgid "Tweet ID"
+msgstr "Tweet ID"
+
+#. module: website_twitter
+#: field:website.twitter.tweet,tweet:0
+msgid "Tweets"
+msgstr "Tweets"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Twitter API"
+msgstr "Twitter API"
+
+#. module: website_twitter
+#: help:website,twitter_api_key:0
+#: field:website.config.settings,twitter_api_key:0
+msgid "Twitter API Key"
+msgstr "Twitter API Key"
+
+#. module: website_twitter
+#: help:website,twitter_api_secret:0
+msgid "Twitter API Secret"
+msgstr "Twitter API Secret"
+
+#. module: website_twitter
+#: field:website,twitter_api_key:0
+msgid "Twitter API key"
+msgstr "Twitter API 密鑰"
+
+#. module: website_twitter
+#: help:website.config.settings,twitter_api_key:0
+msgid "Twitter API key you can get it from https://apps.twitter.com/app/new"
+msgstr " 從https://apps.twitter.com/app/new獲得Twitter API 密鑰"
+
+#. module: website_twitter
+#: field:website,twitter_api_secret:0
+#: field:website.config.settings,twitter_api_secret:0
+msgid "Twitter API secret"
+msgstr "Twitter API 匿名"
+
+#. module: website_twitter
+#: help:website.config.settings,twitter_api_secret:0
+msgid "Twitter API secret you can get it from https://apps.twitter.com/app/new"
+msgstr "從https://apps.twitter.com/app/new獲得Twitter API匿名"
+
+#. module: website_twitter
+#. openerp-web
+#: code:addons/website_twitter/static/src/xml/website.twitter.xml:41
+#, python-format
+msgid "Twitter Configuration"
+msgstr "Twitter 設置"
+
+#. module: website_twitter
+#: view:website:website.snippets
+msgid "Twitter Scroller"
+msgstr "推特捲軸"
+
+#. module: website_twitter
+#: model:ir.model,name:website_twitter.model_website_twitter_tweet
+msgid "Twitter Tweets"
+msgstr "Twitter Tweets"
+
+#. module: website_twitter
+#: code:addons/website_twitter/models/twitter_config.py:36
+#, python-format
+msgid "Twitter authorization error!"
+msgstr "Twitter 授權錯誤!"
+
+#. module: website_twitter
+#: code:addons/website_twitter/controllers/main.py:36
+#, python-format
+msgid ""
+"Twitter user @%(username)s has less than 12 favorite tweets. Please add more "
+"or choose a different screen name."
+msgstr ""
+"推特用戶 @%(username)s少於12個的喜好推特。請加入更多或選擇一個不同的螢幕名"
+"稱。"
 
 #. module: website_twitter
 #: model:ir.model,name:website_twitter.model_website
-#: model:ir.model.fields,field_description:website_twitter.field_website_twitter_tweet_website_id
+#: field:website.twitter.tweet,website_id:0
 msgid "Website"
 msgstr "網站"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "Website:"
+msgstr "網站:"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "You can get your API credentials from"
+msgstr "獲得API證書"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "https://apps.twitter.com/app/new"
+msgstr "https://apps.twitter.com/app/new"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "https://www.odoo.com"
+msgstr "https://www.odoo.com"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "leave it blank"
+msgstr "留空"
+
+#. module: website_twitter
+#: view:website.config.settings:website_twitter.view_website_config_settings
+msgid "with the following values:"
+msgstr "用下列值:"
+
+#~ msgid "website.config.settings"
+#~ msgstr "website.config.settings"

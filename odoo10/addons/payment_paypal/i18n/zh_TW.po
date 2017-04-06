@@ -1,45 +1,105 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * payment_paypal
+# 	* payment_paypal
 #
-# Translators:
-# Carson Tsai <Ra661tCat@gmail.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-02-10 09:38+0000\n"
-"Last-Translator: Carson Tsai <Ra661tCat@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2014-08-14 13:09+0000\n"
+"PO-Revision-Date: 2016-11-15 08:51+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #. module: payment_paypal
-#: model:ir.ui.view,arch_db:payment_paypal.acquirer_form_paypal
-msgid "How to configure your paypal account?"
-msgstr "如何設定您的 Paypal 帳戶?"
+#: field:payment.acquirer,paypal_api_access_token:0
+msgid "Access Token"
+msgstr "存取權杖"
+
+#. module: payment_paypal
+#: field:payment.acquirer,paypal_api_access_token_validity:0
+msgid "Access Token Validity"
+msgstr "存取權杖有效性"
+
+#. module: payment_paypal
+#: model:ir.model,name:payment_paypal.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: payment_paypal
+#: view:account.config.settings:payment_paypal.payment_paypal_option_config
+msgid "Configure payment acquiring methods"
+msgstr "設置付款方式"
 
 #. module: payment_paypal
 #: model:ir.model,name:payment_paypal.model_payment_acquirer
 msgid "Payment Acquirer"
-msgstr "款項受讓方"
+msgstr "付款方式"
 
 #. module: payment_paypal
 #: model:ir.model,name:payment_paypal.model_payment_transaction
 msgid "Payment Transaction"
-msgstr "付款交易"
+msgstr "支付交易"
 
 #. module: payment_paypal
-#: model:ir.model.fields,help:payment_paypal.field_payment_acquirer_paypal_use_ipn
+#: field:payment.acquirer,paypal_email_account:0
+msgid "Paypal Email ID"
+msgstr "Paypal Email ID"
+
+#. module: payment_paypal
+#: help:payment.acquirer,paypal_use_ipn:0
 msgid "Paypal Instant Payment Notification"
-msgstr "Paypal 即時付款通知"
+msgstr "Paypal 即時支付提醒"
 
 #. module: payment_paypal
-#: model:ir.model.fields,field_description:payment_paypal.field_payment_transaction_paypal_txn_type
+#: field:payment.acquirer,paypal_seller_account:0
+msgid "Paypal Merchant ID"
+msgstr "Paypal 銷售商 ID"
+
+#. module: payment_paypal
+#: view:payment.transaction:payment_paypal.transaction_form_paypal
+msgid "Paypal TX Details"
+msgstr "Paypal TX 詳情"
+
+#. module: payment_paypal
+#: field:payment.acquirer,paypal_api_password:0
+msgid "Rest API Password"
+msgstr "Rest API 密碼"
+
+#. module: payment_paypal
+#: field:payment.acquirer,paypal_api_username:0
+msgid "Rest API Username"
+msgstr "Rest API 用戶名"
+
+#. module: payment_paypal
+#: help:payment.acquirer,paypal_seller_account:0
+msgid ""
+"The Merchant ID is used to ensure communications coming from Paypal are "
+"valid and secured."
+msgstr "銷售商 ID 被用於確認來自Paypal的資訊是有效的和安全的。 "
+
+#. module: payment_paypal
+#: field:payment.transaction,paypal_txn_id:0
+msgid "Transaction ID"
+msgstr "交易 ID"
+
+#. module: payment_paypal
+#: field:payment.transaction,paypal_txn_type:0
 msgid "Transaction type"
 msgstr "交易類型"
+
+#. module: payment_paypal
+#: field:payment.acquirer,paypal_use_ipn:0
+msgid "Use IPN"
+msgstr "使用 IPN"
+
+#. module: payment_paypal
+#: field:payment.acquirer,paypal_api_enabled:0
+msgid "Use Rest API"
+msgstr "使用 Rest API"

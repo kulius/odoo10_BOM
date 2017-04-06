@@ -1,24 +1,92 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * rating_project_issue
+# 	* rating_project_issue
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-14 15:54+0000\n"
-"PO-Revision-Date: 2015-09-08 07:43+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-12-11 20:38+0800\n"
+"PO-Revision-Date: 2016-12-29 20:04+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: rating_project_issue
+#: model:ir.ui.view,arch_db:rating_project_issue.project_issue_view_rating
+msgid "% On issues"
+msgstr "% 在議題"
+
+#. module: rating_project_issue
+#: model:ir.actions.act_window,name:rating_project_issue.rating_rating_action_issue
+msgid "Customer Ratings"
+msgstr "客戶評價"
+
+#. module: rating_project_issue
+#: model:ir.actions.act_window,help:rating_project_issue.rating_rating_action_issue
+msgid ""
+"Customer ratings on issues. If you have no rating, change your project "
+"Settings to activate it."
+msgstr "客戶對議題進行評價。如果你沒有此功能，更改你的項目設置來啟動它。"
+
+#. module: rating_project_issue
+#: model:ir.model.fields,field_description:rating_project_issue.field_project_project_percentage_satisfaction_issue
+msgid "Happy % on Issue"
+msgstr "滿意 % 在議題"
+
+#. module: rating_project_issue
+#: model:mail.message.subtype,name:rating_project_issue.mt_issue_rating
+#: model:mail.message.subtype,name:rating_project_issue.mt_project_issue_rating
+msgid "Issue Rating"
+msgstr "議題評價"
+
+#. module: rating_project_issue
+#: model:ir.ui.view,arch_db:rating_project_issue.project_issue_view_kanban_inherit_rating
+msgid "Latest Rating: Average"
+msgstr "最近評價：一般"
+
+#. module: rating_project_issue
+#: model:ir.ui.view,arch_db:rating_project_issue.project_issue_view_kanban_inherit_rating
+msgid "Latest Rating: Happy"
+msgstr "最近評價：滿意"
+
+#. module: rating_project_issue
+#: model:ir.ui.view,arch_db:rating_project_issue.project_issue_view_kanban_inherit_rating
+msgid "Latest Rating: Not Happy"
+msgstr "最近評價：不滿意"
 
 #. module: rating_project_issue
 #: model:ir.model,name:rating_project_issue.model_project_project
 msgid "Project"
-msgstr "專案"
+msgstr "項目"
+
+#. module: rating_project_issue
+#: model:ir.model,name:rating_project_issue.model_project_issue
+msgid "Project Issue"
+msgstr "專案問題"
+
+#. module: rating_project_issue
+#: model:ir.ui.view,arch_db:rating_project_issue.project_issue_view_form_inherit_rating
+msgid "Rating"
+msgstr "評估"
+
+#. module: rating_project_issue
+#: model:mail.message.subtype,description:rating_project_issue.mt_issue_rating
+msgid "Ratings"
+msgstr "評價"
+
+#. module: rating_project_issue
+#: model:ir.model,name:rating_project_issue.model_project_task_type
+msgid "Task Stage"
+msgstr "任務階段"
+
+#~ msgid "% Happy"
+#~ msgstr "% 滿意"
+
+#~ msgid "On issues"
+#~ msgstr "在問題"

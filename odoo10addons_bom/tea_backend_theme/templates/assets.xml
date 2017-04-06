@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+    <data>
+        <template id="assets_backend" name="Tea Backend Assets" inherit_id="web.assets_backend">
+            <xpath expr="//link[@href='/web/static/src/less/form_view_extra.less']" position="replace">
+                <link rel="stylesheet" type="text/less" href="/tea_backend_theme/static/src/less/form_view_extra.less"/>
+            </xpath>
+            <xpath expr="//link[@href='/web/static/src/less/form_view_layout_extra.less']" position="replace">
+                <link rel="stylesheet" type="text/less" href="/tea_backend_theme/static/src/less/form_view_layout_extra.less"/>
+            </xpath>
+            <xpath expr=".">
+                <link rel="stylesheet" type="text/less"  href="/tea_backend_theme/static/src/less/page_layout.less"/>
+                <link rel="stylesheet" type="text/less"  href="/tea_backend_theme/static/src/less/page_sidebar.less"/>
+                <link rel="stylesheet" type="text/less"  href="/tea_backend_theme/static/src/less/bootstrap.less"/>
+
+                <link rel="stylesheet" type="text/css" href="/tea_backend_theme/static/lib/drawer/drawer.css"/>
+                <link rel="stylesheet" type="text/less"  href="/tea_backend_theme/static/src/less/navbar.less"/>
+                <link rel="stylesheet" type="text/less"  href="/tea_backend_theme/static/src/less/variables.less"/>
+                <link rel="stylesheet" type="text/less"  href="/tea_backend_theme/static/src/less/app_drawer.less"/>
+
+                <script type="application/javascript" src="/tea_backend_theme/static/lib/drawer/drawer.js"/>
+                <script type="application/javascript" src="/tea_backend_theme/static/lib/scroll.js"/>
+                <script type="application/javascript" src="/tea_backend_theme/static/src/js/responsive.js"/>
+                <script type="text/javascript" src="/tea_backend_theme/static/src/js/view_manager.js"/>
+                <script type="application/javascript" src="/tea_backend_theme/static/src/js/sidebar.js"/>
+                <script type="application/javascript" src="/tea_backend_theme/static/lib/string-fn/webVersion.js"/>
+            </xpath>
+            <xpath expr="//script[last()]" position="after">
+
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

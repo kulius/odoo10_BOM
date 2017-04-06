@@ -1,0 +1,71 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_sale_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-01 20:23+0800\n"
+"PO-Revision-Date: 2016-11-15 08:31+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: website_sale_stock
+#: model:ir.ui.view,arch_db:website_sale_stock.orders_followup_shipping
+msgid ""
+"<span class=\"label label-danger label-text-align\"><i class=\"fa fa-fw fa-"
+"times\"/> Cancelled</span>"
+msgstr ""
+"<span class=\"label label-danger label-text-align\"><i class=\"fa fa-fw fa-"
+"times\"/> 取消</span>"
+
+#. module: website_sale_stock
+#: model:ir.ui.view,arch_db:website_sale_stock.orders_followup_shipping
+msgid ""
+"<span class=\"label label-info label-text-align\"><i class=\"fa fa-fw fa-"
+"clock-o\"/> Preparation</span>"
+msgstr ""
+"<span class=\"label label-info label-text-align\"><i class=\"fa fa-fw fa-"
+"clock-o\"/> 準備</span>"
+
+#. module: website_sale_stock
+#: model:ir.ui.view,arch_db:website_sale_stock.orders_followup_shipping
+msgid ""
+"<span class=\"label label-success label-text-align\"><i class=\"fa fa-fw fa-"
+"truck\"/> Shipped</span>"
+msgstr ""
+"<span class=\"label label-success label-text-align\"><i class=\"fa fa-fw fa-"
+"truck\"/> 出貨</span>"
+
+#. module: website_sale_stock
+#: model:ir.ui.view,arch_db:website_sale_stock.orders_followup_shipping
+msgid ""
+"<span class=\"label label-warning label-text-align\"><i class=\"fa fa-fw fa-"
+"clock-o\"/> Partially Available</span>"
+msgstr ""
+"<span class=\"label label-warning label-text-align\"><i class=\"fa fa-fw fa-"
+"clock-o\"/> 部分可用</span>"
+
+#. module: website_sale_stock
+#: model:ir.ui.view,arch_db:website_sale_stock.orders_followup_shipping
+msgid "<strong>Delivery Orders</strong>"
+msgstr "<strong>出貨單</strong>"
+
+#~ msgid "Cancelled"
+#~ msgstr "已取消"
+
+#~ msgid "Partially Available"
+#~ msgstr "部分可用"
+
+#~ msgid "Preparation"
+#~ msgstr "待出貨"
+
+#~ msgid "Shipped"
+#~ msgstr "已出貨"

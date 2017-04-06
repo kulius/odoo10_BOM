@@ -1,24 +1,460 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * document
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2015-09-07 18:13+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-07-31 16:40+0800\n"
+"PO-Revision-Date: 2016-11-15 09:05+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:41+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: document
+#. openerp-web
+#: code:addons/document/static/src/js/document.js:26
+#, python-format
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. module: document
+#. openerp-web
+#: code:addons/document/static/src/js/document.js:14
+#, python-format
+msgid "Attachment(s)"
+msgstr "附件"
 
 #. module: document
 #: model:ir.model,name:document.model_ir_attachment
 msgid "ir.attachment"
 msgstr "ir.attachment"
+
+#~ msgid "# of Files"
+#~ msgstr "# 文件"
+
+#~ msgid "%s (copy)"
+#~ msgstr "%s (副本)"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "            Click to create a new document.\n"
+#~ "          </p><p>\n"
+#~ "            The Documents repository gives you access to all attachments, such\n"
+#~ "            as mails, project documents, invoices etc.\n"
+#~ "          </p>\n"
+#~ "        "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "            單擊來創建新文件。 \n"
+#~ "          </p><p>\n"
+#~ "            文件庫提供所有附件的登入，如\n"
+#~ "            郵件、項目文件、發票等。\n"
+#~ "          </p>\n"
+#~ "        "
+
+#~ msgid ""
+#~ "A python expression used to evaluate the field.\n"
+#~ "You can use 'dir_id' for current dir, 'res_id', 'res_model' as a reference to the current record, in dynamic folders"
+#~ msgstr ""
+#~ "用於填充欄位內容的python運算式\n"
+#~ "在動態目錄中，可以用'dir_id'表示當前目錄，用'res_id', 'res_model' 來表示當前記錄。"
+
+#~ msgid "Active"
+#~ msgstr "生效"
+
+#~ msgid "All Users files"
+#~ msgstr "所有用戶的檔"
+
+#~ msgid "All users files"
+#~ msgstr "所有用戶檔"
+
+#~ msgid "Along with Parent Model, this ID attaches this folder to a specific record of Parent Model."
+#~ msgstr "跟隨上級物件，這個ID把這個目錄附加在上級物件的一個記錄上"
+
+#~ msgid "April"
+#~ msgstr "4月"
+
+#~ msgid "Attachments"
+#~ msgstr "附件"
+
+#~ msgid "August"
+#~ msgstr "8月"
+
+#~ msgid ""
+#~ "Check this field if you want that the name of the file to contain the record name.\n"
+#~ "If set, the directory will have to be a resource one."
+#~ msgstr ""
+#~ "如果需要檔案名包含記錄的名稱值，勾這個勾\n"
+#~ "要讓這個選項生效，你的目錄必須是對應的物件"
+
+#~ msgid "Check this if you want to use the same tree structure as the object selected in the system."
+#~ msgstr "如果你想在系統中對選擇的物件使用樹結構, 請選擇這"
+
+#~ msgid "Children"
+#~ msgstr "子目錄"
+
+#~ msgid "Company"
+#~ msgstr "公司"
+
+#~ msgid "Configure Directories"
+#~ msgstr "設置目錄"
+
+#~ msgid "Content Name"
+#~ msgstr "內容名稱"
+
+#~ msgid "Content Type"
+#~ msgstr "內容類型"
+
+#~ msgid "Contents"
+#~ msgstr "內容"
+
+#~ msgid "Context fields"
+#~ msgstr "上下文欄位"
+
+#~ msgid "Created by"
+#~ msgstr "創建者"
+
+#~ msgid "Created on"
+#~ msgstr "創建在"
+
+#~ msgid "Creator"
+#~ msgstr "創建者"
+
+#~ msgid "Date Created"
+#~ msgstr "創建日期"
+
+#~ msgid "Date Modified"
+#~ msgstr "修改日期"
+
+#~ msgid "December"
+#~ msgstr "12月"
+
+#~ msgid "Define words in the context, for all child directories and files"
+#~ msgstr "輸入上下文文本，會適用於所有子目錄和檔"
+
+#~ msgid "Definition"
+#~ msgstr "定義"
+
+#~ msgid "Directories"
+#~ msgstr "目錄"
+
+#~ msgid "Directories' Structure"
+#~ msgstr "目錄結構"
+
+#~ msgid "Directory"
+#~ msgstr "目錄"
+
+#~ msgid "Directory Configuration"
+#~ msgstr "目錄設置"
+
+#~ msgid "Directory Content"
+#~ msgstr "目錄內容"
+
+#~ msgid "Directory Content Type"
+#~ msgstr "目錄裏內容的類型"
+
+#~ msgid "Directory Dynamic Context"
+#~ msgstr "目錄動態上下文"
+
+#~ msgid "Directory Type"
+#~ msgstr "目錄類型"
+
+#~ msgid "Directory cannot be parent of itself!"
+#~ msgstr "目錄不能設為自己的父目錄。"
+
+#~ msgid "Directory name contains special characters!"
+#~ msgstr "目錄名中有特殊字元！"
+
+#~ msgid "Directory name must be unique!"
+#~ msgstr "目錄名必須唯一！"
+
+#~ msgid "Document Directory"
+#~ msgstr "文件目錄"
+
+#~ msgid "Document Management"
+#~ msgstr "文件管理"
+
+#~ msgid "Document Type"
+#~ msgstr "文件類型"
+
+#~ msgid "Documents"
+#~ msgstr "文件"
+
+#~ msgid "Domain"
+#~ msgstr "過濾條件"
+
+#~ msgid "Dynamic context"
+#~ msgstr "動態上下文"
+
+#~ msgid "Each directory can either have the type Static or be linked to another resource. A static directory, as with Operating Systems, is the classic directory that can contain a set of files. The directories linked to systems resources automatically possess sub-directories for each of resource types defined in the parent directory."
+#~ msgstr "每個目錄都可以是靜態的或者鏈結到其他資源。靜態的目錄就是作業系統上存儲檔的目錄。目錄鏈結系統資源會根據父級目錄的物件類型設置自動創建子目錄"
+
+#~ msgid "Error! You cannot create recursive directories."
+#~ msgstr "錯誤！你不能創建迴圈目錄。"
+
+#~ msgid "Expression"
+#~ msgstr "運算式"
+
+#~ msgid "Extension"
+#~ msgstr "擴展"
+
+#~ msgid "February"
+#~ msgstr "2月"
+
+#~ msgid "Field"
+#~ msgstr "欄位"
+
+#~ msgid "Field to be used as name on resource directories. If empty, the \"name\" will be used."
+#~ msgstr "在資原始目錄中這欄位用作名稱。若為空則使用“name”。"
+
+#~ msgid "Fields"
+#~ msgstr "欄位列表"
+
+#~ msgid "File Name"
+#~ msgstr "檔案名"
+
+#~ msgid "File Size"
+#~ msgstr "文件大小"
+
+#~ msgid "File Size by Month"
+#~ msgstr "月度文件大小"
+
+#~ msgid "Files"
+#~ msgstr "文件"
+
+#~ msgid "Files by Month"
+#~ msgstr "月度文件"
+
+#~ msgid "Files by User"
+#~ msgstr "用戶檔"
+
+#~ msgid "Files details by Directory"
+#~ msgstr "檔詳細目錄"
+
+#~ msgid "Files details by Users"
+#~ msgstr "用戶的檔詳情"
+
+#~ msgid "Filter on my documents"
+#~ msgstr "用於我的文件的篩檢程式"
+
+#~ msgid "Find all resources"
+#~ msgstr "搜索所有資源"
+
+#~ msgid "Folders per resource"
+#~ msgstr "每個資源一個目錄"
+
+#~ msgid "For each entry here, virtual files will appear in this folder."
+#~ msgstr "每個輸入在這裏的條目都會作為虛擬檔出現在目錄裏"
+
+#~ msgid "Generated Files"
+#~ msgstr "自動生成的檔列表"
+
+#~ msgid "Group By"
+#~ msgstr "分組"
+
+#~ msgid "Groups"
+#~ msgstr "組"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "If true, all attachments that match this resource will  be located. If false, only ones that have this as parent."
+#~ msgstr "如勾選，所有與該記錄匹配的附件都會被找到。如不選，只有把它作為父級的附件會被找到。"
+
+#~ msgid "If you put an object here, this directory template will appear bellow all of these objects. Such directories are \"attached\" to the specific model or record, just like attachments. Don't put a parent directory if you select a parent model."
+#~ msgstr "你在這裏輸入一個物件，這個目錄範本會在所有這個物件的記錄上出現。這些目錄附加在對應的物件或記錄上，就像附件一樣。如果選擇了上級模式就不要輸入上級目錄。"
+
+#~ msgid "Include Record Name"
+#~ msgstr "含記錄名稱"
+
+#~ msgid "January"
+#~ msgstr "1月"
+
+#~ msgid "July"
+#~ msgstr "7月"
+
+#~ msgid "June"
+#~ msgstr "6月"
+
+#~ msgid "Knowledge"
+#~ msgstr "知識管理"
+
+#~ msgid "Knowledge Application Configuration"
+#~ msgstr "知識管理應用設置"
+
+#~ msgid "Last Modification User"
+#~ msgstr "最近修改用戶"
+
+#~ msgid "Last Updated by"
+#~ msgstr "最後更新者"
+
+#~ msgid "Last Updated on"
+#~ msgstr "最後更新時間"
+
+#~ msgid "March"
+#~ msgstr "3月"
+
+#~ msgid "May"
+#~ msgstr "5月"
+
+#~ msgid "Mime Type"
+#~ msgstr "MIME 類型"
+
+#~ msgid "Model Id"
+#~ msgstr "模組ID"
+
+#~ msgid "Modification"
+#~ msgstr "修改"
+
+#~ msgid "Modified Date"
+#~ msgstr "修改日期"
+
+#~ msgid "Month"
+#~ msgstr "月"
+
+#~ msgid "My Document(s)"
+#~ msgstr "我的文件"
+
+#~ msgid "Name"
+#~ msgstr "名稱"
+
+#~ msgid "Name field"
+#~ msgstr "名稱欄位"
+
+#~ msgid "November"
+#~ msgstr "11月"
+
+#~ msgid "October"
+#~ msgstr "10月"
+
+#~ msgid "Odoo's Document Management System supports mapping virtual folders with documents. The virtual folder of a document can be used to manage the files attached to the document, or to print and download any report. This tool will create directories automatically according to modules installed."
+#~ msgstr "Odoo的文件管理系統支援為文件映射虛擬檔夾。文件的虛擬檔夾將用於管理該文件的附件檔，或者用於列印和下載任何報表。此工具將按照已安裝的模組自動創建目錄。"
+
+#~ msgid "Only members of these groups will have access to this directory and its files."
+#~ msgstr "只有這些用戶組的成員才有許可權登入該目錄和其中的檔。"
+
+#~ msgid "Owner"
+#~ msgstr "所有者"
+
+#~ msgid "PDF Report"
+#~ msgstr "PDF報表"
+
+#~ msgid "Parent Directory"
+#~ msgstr "父目錄"
+
+#~ msgid "Parent Model"
+#~ msgstr "上級模型"
+
+#~ msgid "Partner"
+#~ msgstr "業務夥伴"
+
+#~ msgid "Prefix"
+#~ msgstr "首碼"
+
+#~ msgid "Related Documents"
+#~ msgstr "關聯的文件"
+
+#~ msgid "Report"
+#~ msgstr "報表"
+
+#~ msgid "Resource ID"
+#~ msgstr "資源ID"
+
+#~ msgid "Resource model"
+#~ msgstr "資源模型"
+
+#~ msgid "Resources"
+#~ msgstr "資源"
+
+#~ msgid "Search Document Directory"
+#~ msgstr "搜索文件文件夾"
+
+#~ msgid "Security"
+#~ msgstr "安全設定"
+
+#~ msgid "Select an object here and there will be one folder per record of that resource."
+#~ msgstr "在這裏選擇一個物件並且這資源的每個記錄有一個目錄。"
+
+#~ msgid "September"
+#~ msgstr "9月"
+
+#~ msgid "Seq."
+#~ msgstr "序列"
+
+#~ msgid "Sequence"
+#~ msgstr "序列"
+
+#~ msgid "Static"
+#~ msgstr "靜態目錄"
+
+#~ msgid "Static Directory"
+#~ msgstr "靜態目錄"
+
+#~ msgid "Storage Media"
+#~ msgstr "存儲介質"
+
+#~ msgid "Suffix"
+#~ msgstr "尾碼"
+
+#~ msgid "The directory name must be unique !"
+#~ msgstr "目錄名必須唯一！"
+
+#~ msgid "The filename must be unique in a directory !"
+#~ msgstr "目錄中的檔案名必須是唯一的"
+
+#~ msgid "The name of the field."
+#~ msgstr "欄位名稱"
+
+#~ msgid "These groups, however, do NOT apply to children directories, which must define their own groups."
+#~ msgstr "這個組不會帶到下級目錄，你需要為它們單獨定義組。"
+
+#~ msgid "Tree Structure"
+#~ msgstr "樹結構"
+
+#~ msgid "Type"
+#~ msgstr "類型"
+
+#~ msgid "Use a domain if you want to apply an automatic filter on visible resources."
+#~ msgstr "如果要自動篩選可見的資源，請使用過濾條件"
+
+#~ msgid "Users File"
+#~ msgstr "用戶檔"
+
+#~ msgid "Virtual Files"
+#~ msgstr "虛擬文件"
+
+#~ msgid "When executing this wizard, it will configure your directories automatically according to modules installed."
+#~ msgstr "當執行此嚮導時將自動通過已安裝的模組進行目錄設置。"
+
+#~ msgid "Year"
+#~ msgstr "年"
+
+#~ msgid "on"
+#~ msgstr "在"
+
+#~ msgid "res_config_contents"
+#~ msgstr "res_config_contents"
+
+#~ msgid "unknown"
+#~ msgstr "未知"
+
+#~ msgid "Error at doc write!"
+#~ msgstr "寫入文件時發生錯誤！"
+
+#~ msgid "Indexed Content"
+#~ msgstr "內容索引"
+
+#~ msgid "ValidateError"
+#~ msgstr "驗證錯誤"
+
+#~ msgid "ir.actions.report.xml"
+#~ msgstr "ir.actions.report.xml"

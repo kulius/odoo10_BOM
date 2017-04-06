@@ -1,32 +1,31 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * stock_account
+# 	* stock_account
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-02-10 09:29+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-08-21 21:00+0800\n"
+"PO-Revision-Date: 2016-12-06 09:26+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_tree
 msgid "# of Products"
-msgstr "產品數"
+msgstr "# 產品 "
 
 #. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_category_property_form
 msgid "Account Stock Properties"
-msgstr "存貨科目設定"
+msgstr "庫存會計屬性"
 
 #. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_location_form_inherit
@@ -37,7 +36,7 @@ msgstr "會計資訊"
 #: model:ir.model.fields,help:stock_account.field_stock_config_settings_group_stock_inventory_valuation
 msgid ""
 "Allows to configure inventory valuations on products and product categories."
-msgstr "讓您可在產品或者產品分類設定存貨估價。"
+msgstr "允許在產品和產品分類設置庫存估值"
 
 #. module: stock_account
 #: selection:product.category,property_cost_method:0
@@ -52,16 +51,54 @@ msgid "Cancel"
 msgstr "取消"
 
 #. module: stock_account
+#: code:addons/stock_account/models/stock.py:243
+#, python-format
+msgid ""
+"Cannot find a stock input account for the product %s. You must define one on "
+"the product category, or on the location, before processing this operation."
+msgstr ""
+"找不到產品%s的入庫科目。在執行該操作前，你必須在產品類目或庫位元上定義一個入"
+"庫科目。"
+
+#. module: stock_account
+#: code:addons/stock_account/models/stock.py:245
+#, python-format
+msgid ""
+"Cannot find a stock output account for the product %s. You must define one "
+"on the product category, or on the location, before processing this "
+"operation."
+msgstr ""
+"找不到產品%s的出庫科目。在執行該操作前，你必須在產品類目或庫位元上定義一個出"
+"庫科目。"
+
+#. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_change_standard_price
 msgid "Change Price"
-msgstr "變更價目"
+msgstr "更改價格"
 
 #. module: stock_account
 #: model:ir.actions.act_window,name:stock_account.action_view_change_standard_price
 #: model:ir.model,name:stock_account.model_stock_change_standard_price
 #: model:ir.ui.view,arch_db:stock_account.view_change_standard_price
 msgid "Change Standard Price"
-msgstr "變更標準價格"
+msgstr "更改標準價"
+
+#. module: stock_account
+#: model:ir.ui.view,arch_db:stock_account.view_wizard_valuation_history
+msgid "Choose a date in the past to get the inventory at that date."
+msgstr "選擇一個日期來獲得那個日期的庫存。"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_stock_inventory_accounting_date
+msgid ""
+"Choose the accounting date at which you want to value the stock moves "
+"created by the inventory instead of the default one (the inventory end date)"
+msgstr "請選擇你要估值的倉庫移動的會計日期來代替默認的日期(庫存截止日期)。"
+
+#. module: stock_account
+#: model:ir.ui.view,arch_db:stock_account.view_wizard_valuation_history
+msgid "Choose your date"
+msgstr "選擇你的日期"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_history_company_id
@@ -70,9 +107,29 @@ msgid "Company"
 msgstr "公司"
 
 #. module: stock_account
+#: model:ir.ui.view,arch_db:stock_account.product_variant_easy_edit_view_inherit
+#: model:ir.ui.view,arch_db:stock_account.view_template_property_form
+msgid "Compute from average price"
+msgstr "從平均價格來計算"
+
+#. module: stock_account
+#: code:addons/stock_account/models/stock.py:316
+#, python-format
+msgid ""
+"Configuration error. Please configure the price difference account on the "
+"product or its category to process this operation."
+msgstr "配置錯誤。"
+
+#. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_change_standard_price
 msgid "Cost"
 msgstr "成本"
+
+#. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_product_product_cost_method
+#: model:ir.model.fields,field_description:stock_account.field_product_template_cost_method
+msgid "Cost method"
+msgstr "成本計算方法"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_product_category_property_cost_method
@@ -82,16 +139,26 @@ msgid "Costing Method"
 msgstr "成本計算方法"
 
 #. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price_counterpart_account_id
+msgid "Counter-Part Account"
+msgstr "價格調整賬"
+
+#. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price_create_uid
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price_create_date
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
+
+#. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_product_product_taxes_id
+msgid "Customer Taxes"
+msgstr "銷項稅"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_date
@@ -106,16 +173,26 @@ msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_product_product_property_account_expense_id
+msgid "Expense Account"
+msgstr "費用科目"
+
+#. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_stock_inventory_accounting_date
+msgid "Force Accounting Date"
+msgstr "強制記賬日期"
+
+#. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_search
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price_id
 #: model:ir.model.fields,field_description:stock_account.field_stock_history_id
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_stock_change_standard_price_new_price
@@ -126,9 +203,56 @@ msgid ""
 "If cost price is decreased, stock variation account will be creadited and "
 "stock input account will be debited."
 msgstr ""
-"如果成本價格增加，庫存變動科目為借方，出庫科目為貸方，其值等於 ( 差異金額 * "
-"存貨數量)。\n"
-"如果成本價格減少，庫存變動科目為貸方，入庫科目為借方。"
+"如果成本價增加，庫存估值科目為借方，出庫科目為貸方，其值=(相差的金額 * 數"
+"量)。\n"
+"如果成本價減少，庫存估值科目為貸方，入庫科目為借方。"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_product_category_property_valuation
+msgid ""
+"If perpetual valuation is enabled for a product, the system will "
+"automatically create journal entries corresponding to stock moves, with "
+"product price as specified by the 'Costing Method'. The inventory variation "
+"account set on the product category will represent the current inventory "
+"value, and the stock input and stock output account will hold the "
+"counterpart moves for incoming and outgoing products."
+msgstr ""
+"如果對一個產品啟用永續估值，系統將根據庫存調撥自動創建分錄憑證，產品價格由“成"
+"本方法”指定。產品分類上的庫存變動科目將表現當前庫存的價值，入庫科目和出庫科目"
+"將保存進出產品的對應移動。"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_product_product_property_valuation
+#: model:ir.model.fields,help:stock_account.field_product_template_property_valuation
+msgid ""
+"If perpetual valuation is enabled for a product, the system will "
+"automatically create journal entries corresponding to stock moves, with "
+"product price as specified by the 'Costing Method'The inventory variation "
+"account set on the product category will represent the current inventory "
+"value, and the stock input and stock output account will hold the "
+"counterpart moves for incoming and outgoing products."
+msgstr ""
+"如果對一個產品啟用永續估值，系統將根據庫存調撥自動創建分錄憑證，產品價格由“成"
+"本方法”指定。產品分類上的庫存變動科目將表現當前庫存的價值，入庫科目和出庫科目"
+"將保存進出產品的對應移動。"
+
+#. module: stock_account
+#: selection:stock.config.settings,module_stock_landed_costs:0
+msgid "Include landed costs in product costing computation"
+msgstr "在產品成本計算時包含到岸成本"
+
+#. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_product_product_property_account_income_id
+msgid "Income Account"
+msgstr "收入科目"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_stock_config_settings_module_stock_landed_costs
+msgid ""
+"Install the module that allows to affect landed costs on pickings, and split "
+"them onto the different products."
+msgstr ""
+"安裝這個模組後，將允許分配到岸成本到分揀上，並將它們拆分到不同的產品上。"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_inventory
@@ -138,7 +262,7 @@ msgstr "庫存"
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_location
 msgid "Inventory Locations"
-msgstr "存貨位置"
+msgstr "庫存庫位"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_product_category_property_valuation
@@ -147,12 +271,19 @@ msgstr "存貨位置"
 #: model:ir.model.fields,field_description:stock_account.field_stock_config_settings_group_stock_inventory_valuation
 #: model:ir.ui.view,arch_db:stock_account.view_category_property_form
 msgid "Inventory Valuation"
-msgstr "存貨估價"
+msgstr "庫存估值"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_history_inventory_value
 msgid "Inventory Value"
-msgstr "存貨價值"
+msgstr "庫存估值"
+
+#. module: stock_account
+#: model:ir.actions.act_window,name:stock_account.action_wizard_stock_valuation_history
+#: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_choose_date
+#: model:ir.ui.menu,name:stock_account.menu_action_wizard_valuation_history
+msgid "Inventory at Date"
+msgstr "歷史庫存"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_account_invoice
@@ -165,29 +296,83 @@ msgid "Invoice Line"
 msgstr "發票明細"
 
 #. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_stock_config_settings_module_stock_landed_costs
+msgid "Landed Costs"
+msgstr "到岸成本"
+
+#. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price___last_update
 #: model:ir.model.fields,field_description:stock_account.field_stock_history___last_update
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price_write_uid
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price_write_date
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_history_location_id
 #: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_search
 msgid "Location"
-msgstr "地點"
+msgstr "庫位"
+
+#. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_stock_history_serial_number
+#: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_search
+msgid "Lot/Serial Number"
+msgstr "批次/序列號"
+
+#. module: stock_account
+#: model:res.groups,name:stock_account.group_inventory_valuation
+msgid "Manage Inventory Valuation and Costing Methods"
+msgstr "管理庫存估值和成本核算方法"
+
+#. module: stock_account
+#: code:addons/stock_account/models/product.py:111
+#, python-format
+msgid "No difference between standard price and new price!"
+msgstr "標準價格和新價格沒有區別！"
+
+#. module: stock_account
+#: selection:stock.config.settings,module_stock_landed_costs:0
+msgid "No landed costs"
+msgstr "沒有到岸成本"
+
+#. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_stock_history_date
+msgid "Operation Date"
+msgstr "操作日期"
+
+#. module: stock_account
+#: selection:product.category,property_valuation:0
+#: selection:product.template,property_valuation:0
+msgid "Periodic (manual)"
+msgstr "定期（手動進行）"
+
+#. module: stock_account
+#: selection:stock.config.settings,group_stock_inventory_valuation:0
+msgid "Periodic inventory valuation (recommended)"
+msgstr "定期庫存估值（推薦）"
+
+#. module: stock_account
+#: selection:product.category,property_valuation:0
+#: selection:product.template,property_valuation:0
+msgid "Perpetual (automated)"
+msgstr "永續（自動進行）"
+
+#. module: stock_account
+#: selection:stock.config.settings,group_stock_inventory_valuation:0
+msgid "Perpetual inventory valuation (stock move generates accounting entries)"
+msgstr "永續庫存估值（庫存調撥生成會計憑證）"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price_new_price
@@ -223,7 +408,29 @@ msgstr "產品範本"
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_quant
 msgid "Quants"
-msgstr "份"
+msgstr "數量份"
+
+#. module: stock_account
+#: selection:product.category,property_cost_method:0
+#: selection:product.template,property_cost_method:0
+msgid "Real Price"
+msgstr "即時價格"
+
+#. module: stock_account
+#: model:ir.ui.view,arch_db:stock_account.view_wizard_valuation_history
+msgid "Retrieve the Inventory Value"
+msgstr "返回庫存估值"
+
+#. module: stock_account
+#: model:ir.ui.view,arch_db:stock_account.view_wizard_valuation_history
+msgid "Retrieve the curent stock valuation."
+msgstr "返回當前庫存估值"
+
+#. module: stock_account
+#: model:ir.ui.view,arch_db:stock_account.product_variant_easy_edit_view_inherit
+#: model:ir.ui.view,arch_db:stock_account.view_template_property_form
+msgid "Set standard price"
+msgstr "設置標準價格"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_history_source
@@ -237,6 +444,51 @@ msgid "Standard Price"
 msgstr "標準價格"
 
 #. module: stock_account
+#: code:addons/stock_account/models/product.py:126
+#: code:addons/stock_account/models/product.py:131
+#, python-format
+msgid "Standard Price changed"
+msgstr "標準價格已改變"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_product_product_property_cost_method
+#: model:ir.model.fields,help:stock_account.field_product_template_property_cost_method
+msgid ""
+"Standard Price: The cost price is manually updated at the end of a specific "
+"period (usually once a year).\n"
+"                Average Price: The cost price is recomputed at each incoming "
+"shipment and used for the product valuation.\n"
+"                Real Price: The cost price displayed is the price of the "
+"last outgoing product (will be use in case of inventory loss for example)."
+msgstr ""
+"標準價格： 成本價格一般在特定週期後人工更新（一般是每年）。\n"
+"                    平均價格：成本價格在每次入庫和使用產品估值後就會重新計"
+"算。 \n"
+"                    即時價格：顯示的成本價格是最後一次發貨的價格（例如：用於"
+"庫存丟失時）。"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_product_category_property_cost_method
+msgid ""
+"Standard Price: The cost price is manually updated at the end of a specific "
+"period (usually once a year).\n"
+"Average Price: The cost price is recomputed at each incoming shipment and "
+"used for the product valuation.\n"
+"Real Price: The cost price displayed is the price of the last outgoing "
+"product (will be used in case of inventory loss for example)."
+msgstr ""
+"標準價格： 成本價格一般在特定週期後人工更新（一般是每年）。\n"
+"                    平均價格：成本價格在每次入庫和使用產品估值後就會重新計"
+"算。 \n"
+"                    即時價格：顯示的成本價格是最後一次發貨的價格（例如：用於"
+"庫存丟失時）。"
+
+#. module: stock_account
+#: model:ir.ui.view,arch_db:stock_account.view_stock_config_settings_inherit
+msgid "Stock Accounting"
+msgstr "會計"
+
+#. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_product_category_property_stock_account_input_categ_id
 #: model:ir.model.fields,field_description:stock_account.field_product_product_property_stock_account_input
 #: model:ir.model.fields,field_description:stock_account.field_product_template_property_stock_account_input
@@ -248,46 +500,80 @@ msgstr "入庫科目"
 #: model:ir.model.fields,field_description:stock_account.field_product_category_property_stock_journal
 #, python-format
 msgid "Stock Journal"
-msgstr "庫存日記帳"
+msgstr "庫存分錄"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_move
 #: model:ir.model.fields,field_description:stock_account.field_stock_history_move_id
 #: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_search
 msgid "Stock Move"
-msgstr "庫存調動"
+msgstr "庫存調撥"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_product_category_property_stock_account_output_categ_id
 #: model:ir.model.fields,field_description:stock_account.field_product_product_property_stock_account_output
 #: model:ir.model.fields,field_description:stock_account.field_product_template_property_stock_account_output
 msgid "Stock Output Account"
-msgstr "庫存輸出帳戶"
+msgstr "出庫科目"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_product_category_property_stock_valuation_account_id
 msgid "Stock Valuation Account"
-msgstr "庫存估價科目"
+msgstr "庫存估值科目"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_location_valuation_in_account_id
 msgid "Stock Valuation Account (Incoming)"
-msgstr "庫存估價科目(入庫)"
+msgstr "庫存估值科目（入庫）"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_location_valuation_out_account_id
 msgid "Stock Valuation Account (Outgoing)"
-msgstr "庫存估價科目（出庫）"
+msgstr "庫存估值科目（出庫）"
+
+#. module: stock_account
+#: code:addons/stock_account/wizard/wizard_valuation_history.py:24
+#: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_graph
+#: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_pivot
+#: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_search
+#: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_tree
+#, python-format
+msgid "Stock Value At Date"
+msgstr "當天庫存金額"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_account_chart_template
 msgid "Templates for Account Chart"
-msgstr "科目一覽表模板"
+msgstr "會計科目表範本"
+
+#. module: stock_account
+#: code:addons/stock_account/models/stock.py:271
+#, python-format
+msgid ""
+"The found valuation amount for product %s is zero. Which means there is "
+"probably a configuration error. Check the costing method and the standard "
+"price"
+msgstr ""
+"產品 %s 的估值金額為零。可能存在一個配置錯誤，檢查成本計算方法和標準價格。"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_product_product_property_account_expense_id
+msgid ""
+"This account will be used for invoices instead of the default one to value "
+"expenses for the current product."
+msgstr "該科目將用於開票，替換當前產品默認的費用科目。"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_product_product_property_account_income_id
+msgid ""
+"This account will be used for invoices instead of the default one to value "
+"sales for the current product."
+msgstr "該科目將用於發票，替換當前產品默認的銷售科目。"
 
 #. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_tree
 msgid "Total Value"
-msgstr "總值"
+msgstr "總價值"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_stock_location_valuation_in_account_id
@@ -298,8 +584,8 @@ msgid ""
 "generic Stock Output Account set on the product. This has no effect for "
 "internal locations."
 msgstr ""
-"用於即時存貨估價。當設於虛擬倉位(非內部倉位)時，此科目記錄由內部倉位移入此倉"
-"位的存貨價值，優先於設定在產品上的存貨庫存科目。這對內部庫位沒有任何效果。"
+"用於即時庫存估值。當設定在一個虛擬庫位（而不是內部類型）時，這科目將用於記錄"
+"從內部庫位元調撥產品的估值。一般代替這產品的出庫科目。它不影響內部庫位。"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_stock_location_valuation_out_account_id
@@ -310,13 +596,25 @@ msgid ""
 "the generic Stock Output Account set on the product. This has no effect for "
 "internal locations."
 msgstr ""
-"用於即時存貨估價。當設於虛擬倉位(非內部倉位)時，此科目記錄由此倉位移入內部倉"
-"位的存貨價值，優先於設定在產品上的存貨庫存科目。這對內部庫位沒有任何效果。"
+"用於即時庫存估值。當設在虛擬庫位（不是內部類型）時，在產品被移出這庫位和移入"
+"內部庫位元時這科目將用於記錄產品的估值，一般代替產品的出庫科目。對內部庫位沒"
+"影響。"
+
+#. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_product_product_valuation
+#: model:ir.model.fields,field_description:stock_account.field_product_template_valuation
+msgid "Valuation"
+msgstr "庫存估值"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_history_price_unit_on_quant
 msgid "Value"
-msgstr "值"
+msgstr "價值"
+
+#. module: stock_account
+#: model:ir.model.fields,field_description:stock_account.field_product_product_supplier_taxes_id
+msgid "Vendor Taxes"
+msgstr "進項稅"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_product_category_property_stock_account_input_categ_id
@@ -327,8 +625,8 @@ msgid ""
 "value for all products in this category. It can also directly be set on each "
 "product"
 msgstr ""
-"除非來源倉位指定一個估價科目，否則進行即時庫存估價時，所有入庫調動對應的日記"
-"帳項目將記入這個科目。這是此產品類別的預設值，也可以直接設定在每個產品上。"
+"在進行即時庫存估值時，除非在源庫位指定一個核算科目，否則所有進倉調撥在對應的"
+"的賬簿將登入這科目。這是該產品分類的預設值。它也可以直接設定在每個產品上。"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_product_product_property_stock_account_input
@@ -339,8 +637,8 @@ msgid ""
 "specific valuation account set on the source location. When not set on the "
 "product, the one from the product category is used."
 msgstr ""
-"使用即時存貨估價時，除非來源倉位已設定庫存估價科目，否則所有入庫調動的相應分"
-"錄將自動記錄在此科目。若產品未設定此項設定，則使用產品分類的設定。"
+"在進行即時庫存盤點時，除非為源庫位指定一個庫存估值科目，否則所有的入庫調撥賬"
+"簿明細將登入這科目。當沒在產品設定時，使用產品分類的設定。"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_product_category_property_stock_account_output_categ_id
@@ -351,9 +649,8 @@ msgid ""
 "default value for all products in this category. It can also directly be set "
 "on each product"
 msgstr ""
-"使用即時存貨估價時，除非目標倉位已設定庫存估價科目，否則所有出庫調動的相應分"
-"錄將自動記錄在此科目。這是所有此目錄下產品的預設值，也可直接設定在每一產品"
-"上。"
+"在進行即時庫存估值時，除非目標庫位元指定一個核算科目否則所有出庫調撥賬簿明細"
+"將記錄到這科目。這是該產品分類的默認設置。它也可直接設定在每個產品上。"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_product_product_property_stock_account_output
@@ -364,24 +661,303 @@ msgid ""
 "specific valuation account set on the destination location. When not set on "
 "the product, the one from the product category is used."
 msgstr ""
-"在執行即時庫存估價時，除非目標倉位已設定估價科目，否則所有出庫調動的相對日記"
-"帳分錄將自動紀錄在此科目。當產品未設定估價科目時，使用產品分類的設定。"
+"在進行即時核算時，除非對目標庫位元指定一個核算科目否則出庫調撥賬簿分錄將登入"
+"這個科目。當產品沒設定時，它默認繼承產品的分類的設定。"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_product_category_property_stock_journal
 msgid ""
 "When doing real-time inventory valuation, this is the Accounting Journal in "
 "which entries will be automatically posted when stock moves are processed."
-msgstr "在執行即時庫存估價時，此會計日記帳簿將自動登記處理庫存調動的會計分錄。"
+msgstr "在進行即時庫存估值時，庫存調撥處理將自動登入這賬簿的明細裏."
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_product_category_property_stock_valuation_account_id
 msgid ""
 "When real-time inventory valuation is enabled on a product, this account "
 "will hold the current value of the products."
-msgstr "在對產品啟用即時庫存估價時，本科目記錄產品的當前價值。"
+msgstr "在進行產品即時庫存估值時，此科目記錄產品的當前估值。"
+
+#. module: stock_account
+#: model:ir.model,name:stock_account.model_wizard_valuation_history
+msgid "Wizard that opens the stock valuation history table"
+msgstr "打開庫存估值歷史表格的嚮導"
+
+#. module: stock_account
+#: code:addons/stock_account/models/stock.py:241
+#, python-format
+msgid ""
+"You don't have any stock journal defined on your product category, check if "
+"you have installed a chart of accounts"
+msgstr "在你的產品分類上沒有定義任何庫存分錄，請檢查是否安裝了會計科目表。"
+
+#. module: stock_account
+#: code:addons/stock_account/models/stock.py:247
+#, python-format
+msgid ""
+"You don't have any stock valuation account defined on your product category. "
+"You must define one before processing this operation."
+msgstr ""
+"在你的產品分類上沒有定義任何庫存估值科目，你必須在執行該操作前定義一個。"
 
 #. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_change_standard_price
 msgid "_Apply"
-msgstr "套用(_A)"
+msgstr "應用(_A)"
+
+#. module: stock_account
+#: model:ir.model,name:stock_account.model_stock_config_settings
+msgid "stock.config.settings"
+msgstr "stock.config.settings"
+
+#. module: stock_account
+#: model:ir.model,name:stock_account.model_stock_history
+msgid "stock.history"
+msgstr "stock.history"
+
+#~ msgid "Active ID is not set in Context."
+#~ msgstr "在上下文中沒設置活動的 ID。"
+
+#~ msgid "Can be expensed"
+#~ msgstr "可報銷"
+
+#~ msgid "Move"
+#~ msgstr "調撥"
+
+#~ msgid "Specify whether the product can be selected in an HR expense."
+#~ msgstr "指定產品是否在人力資源費用中可選。"
+
+#~ msgid "unknown"
+#~ msgstr "未知"
+
+#~ msgid ""
+#~ "If the invoice was generated from a stock transfer, specify the reference "
+#~ "to the related stock move."
+#~ msgstr "如果發票是由倉庫分揀產生的，請參考相關的調撥行。"
+
+#~ msgid "Move line"
+#~ msgstr "調撥行"
+
+#~ msgid "- update"
+#~ msgstr "- 更新"
+
+#~ msgid "Choose a Particular Date"
+#~ msgstr "選擇特定日期"
+
+#~ msgid ""
+#~ "Choose the date for which you want to get the stock valuation of your "
+#~ "products.\n"
+#~ "\n"
+#~ "                        This will filter the stock operation that weren't "
+#~ "done at the selected date, to retrieve the quantity\n"
+#~ "                        you had, and gives you the inventory value "
+#~ "according to the standard price used at that time."
+#~ msgstr ""
+#~ "選擇為你的產品進行庫存估值的日期。\n"
+#~ "\n"
+#~ "                        在選擇的日期內不會被完成的操作將被過濾掉，以返回你"
+#~ "有的數量，\n"
+#~ "                        提供的庫存估值基於當時的標準價格。"
+
+#~ msgid "Cost Price"
+#~ msgstr "成本價"
+
+#~ msgid "Create"
+#~ msgstr "新建"
+
+#~ msgid "Create Customer Invoice"
+#~ msgstr "創建客戶發票"
+
+#~ msgid "Create Customer Refund"
+#~ msgstr "創建客戶退款"
+
+#~ msgid "Create Draft Invoices"
+#~ msgstr "創建發票草稿"
+
+#~ msgid "Create Invoice"
+#~ msgstr "創建發票"
+
+#~ msgid "Create Vendor Bill"
+#~ msgstr "創建供應商帳單"
+
+#~ msgid "Create Vendor Refund"
+#~ msgstr "創建供應商退款"
+
+#~ msgid "Create and open the invoice when the user finishes a delivery order"
+#~ msgstr "當用戶完成一個發貨單時，創建並打開發票。"
+
+#~ msgid "Create invoice"
+#~ msgstr "創建發票"
+
+#~ msgid "Create invoices in batch"
+#~ msgstr "批量創建發票"
+
+#~ msgid "Destination Journal"
+#~ msgstr "目標賬簿"
+
+#~ msgid "Group by partner"
+#~ msgstr "按業務夥伴分組"
+
+#~ msgid "Invoice Control"
+#~ msgstr "發票管理"
+
+#~ msgid "Invoice Date"
+#~ msgstr "開票日期"
+
+#~ msgid "Invoice Status"
+#~ msgstr "發票狀態"
+
+#~ msgid "Invoice type"
+#~ msgstr "發票類型"
+
+#~ msgid "Invoiced"
+#~ msgstr "已開發票"
+
+#~ msgid "Invoicing"
+#~ msgstr "開發票"
+
+#~ msgid "No invoice created!"
+#~ msgstr "沒有發票被創建！"
+
+#~ msgid "No invoicing"
+#~ msgstr "不開票"
+
+#~ msgid "None of these picking lists require invoicing."
+#~ msgstr "這些分揀列表不需要開票。"
+
+#~ msgid "Not Applicable"
+#~ msgstr "無效"
+
+#~ msgid "Procurement"
+#~ msgstr "補貨單"
+
+#~ msgid "Procurement Rule"
+#~ msgstr "補貨規則"
+
+#~ msgid "Pushed Flows"
+#~ msgstr "推流"
+
+#~ msgid "Retrieve the stock valuation of your products at current day"
+#~ msgstr "返回當天你的產品的庫存估值"
+
+#~ msgid "Return Picking"
+#~ msgstr "返回分揀"
+
+#~ msgid "Stock Invoice Onshipping"
+#~ msgstr "發貨時進行庫存開票"
+
+#~ msgid "The picking type determines the picking view"
+#~ msgstr "分揀類型決定分揀視圖"
+
+#~ msgid ""
+#~ "This allows to automatically launch the invoicing wizard if the delivery "
+#~ "is to be invoiced when you send or deliver goods.\n"
+#~ "-This installs the module stock_invoice_directly."
+#~ msgstr ""
+#~ "當你發送或交付貨物要發票將允許自動啟動發貨的發票嚮導\n"
+#~ "- 這將安裝模組stock_invoice_directly。"
+
+#~ msgid "To Be Invoiced"
+#~ msgstr "待開票"
+
+#~ msgid "To Be Invoiced Moves"
+#~ msgstr "待開票的調撥"
+
+#~ msgid "To be refunded/invoiced"
+#~ msgstr "將退款/開票"
+
+#~ msgid "Transfer"
+#~ msgstr "調撥"
+
+#~ msgid "Generate accounting entries per stock movement"
+#~ msgstr "存貨變動自動生成會計分錄"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid "Create Supplier Invoice"
+#~ msgstr "創建供應商發票"
+
+#~ msgid "Current Inventory Valuation"
+#~ msgstr "當前庫存估值"
+
+#~ msgid "Error!"
+#~ msgstr "錯誤！"
+
+#~ msgid "Force Valuation Period"
+#~ msgstr "記賬會計期間"
+
+#~ msgid "Journal Type"
+#~ msgstr "分錄類型"
+
+#~ msgid ""
+#~ "One of the following information is missing on the product or product "
+#~ "category and prevents the accounting valuation entries to be created:\n"
+#~ "    Product: %s\n"
+#~ "    Stock Input Account: %s\n"
+#~ "    Stock Output Account: %s\n"
+#~ "    Stock Valuation Account: %s\n"
+#~ "    Stock Journal: %s\n"
+#~ "    "
+#~ msgstr ""
+#~ "產品或產品分類的一些資訊缺失，導致價值科目不能被創建：\n"
+#~ "    產品: %s\n"
+#~ "    入庫科目: %s\n"
+#~ "    出庫科目: %s\n"
+#~ "    庫存估值科目: %s\n"
+#~ "    庫存分類賬: %s\n"
+#~ "    "
+
+#~ msgid "Picking List"
+#~ msgstr "裝箱單"
+
+#~ msgid "Refund Purchase"
+#~ msgstr "採購退款"
+
+#~ msgid "Refund Sale"
+#~ msgstr "銷售退款"
+
+#~ msgid "Warning!"
+#~ msgstr "警告!"
+
+#~ msgid ""
+#~ "{'default_invoice_state': invoice_state, 'address_in_id': partner_id, "
+#~ "'form_view_ref':'stock.view_move_picking_form', 'tree_view_ref':'stock."
+#~ "view_move_picking_tree', 'default_picking_type_id': "
+#~ "picking_type_id,'default_picking_id': active_id}"
+#~ msgstr ""
+#~ "{'default_invoice_state': invoice_state, 'address_in_id': partner_id, "
+#~ "'form_view_ref':'stock.view_move_picking_form', 'tree_view_ref':'stock."
+#~ "view_move_picking_tree', 'default_picking_type_id': "
+#~ "picking_type_id,'default_picking_id': active_id}"
+
+#~ msgid "Accounting Entries"
+#~ msgstr "會計分錄"
+
+#~ msgid "Storage Location"
+#~ msgstr "存儲庫位元"
+
+#~ msgid "Enable Related Account"
+#~ msgstr "啟動相關科目"
+
+#~ msgid "Please define journal on the product category: \"%s\" (id: %d)."
+#~ msgstr "請為產品分類定義賬簿: \"%s\" (id: %d)."
+
+#~ msgid "Please define stock input account for this product: \"%s\" (id: %d)."
+#~ msgstr "請為此產品定義入庫科目： \"%s\" (id: %d)."
+
+#~ msgid ""
+#~ "Please define stock output account for this product: \"%s\" (id: %d)."
+#~ msgstr "請為此產品定義出庫科目: \"%s\" (id: %d)."
+
+#~ msgid "Please specify company in Location."
+#~ msgstr "請指定此位置的公司。"
+
+#~ msgid "Specify valuation Account for Product Category: %s."
+#~ msgstr "為此產品分類定義價值科目: %s."
+
+#~ msgid "Stock journal"
+#~ msgstr "庫存賬簿"

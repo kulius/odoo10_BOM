@@ -1,24 +1,95 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * website_partner
+# 	* website_partner
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-02-10 09:51+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-08-07 10:15+0800\n"
+"PO-Revision-Date: 2016-11-15 08:34+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. module: website_partner
 #: model:ir.model,name:website_partner.model_res_partner
 msgid "Partner"
-msgstr "伙伴"
+msgstr "業務夥伴"
+
+#. module: website_partner
+#: model:ir.model.fields,field_description:website_partner.field_res_partner_self
+msgid "Self"
+msgstr "自身"
+
+#. module: website_partner
+#: model:ir.ui.view,arch_db:website_partner.partner_detail
+msgid "Short Description for List View"
+msgstr "列表視圖裏的簡介"
+
+#. module: website_partner
+#: model:ir.model.fields,field_description:website_partner.field_res_partner_website_description
+msgid "Website Partner Full Description"
+msgstr "網站業務夥伴的詳細描述"
+
+#. module: website_partner
+#: model:ir.model.fields,field_description:website_partner.field_res_partner_website_short_description
+msgid "Website Partner Short Description"
+msgstr "網站業務夥伴描述"
+
+#~ msgid "Private Profile"
+#~ msgstr "個人檔案"
+
+#~ msgid "The full URL to access the document through the website."
+#~ msgstr "從網站登入此文件的完整URL位址。"
+
+#~ msgid "Visible in Website"
+#~ msgstr "在網站可見"
+
+#~ msgid "Website URL"
+#~ msgstr "網站 URL"
+
+#~ msgid "Website meta description"
+#~ msgstr "網站 meta 描述"
+
+#~ msgid "Website meta keywords"
+#~ msgstr "網站 meta 關鍵字"
+
+#~ msgid "Website meta title"
+#~ msgstr "網站 meta 標題"
+
+#~ msgid "unknown"
+#~ msgstr "未知"
+
+#~ msgid "Publish"
+#~ msgstr "發佈"
+
+#~ msgid "Publish on the website"
+#~ msgstr "在網站上發佈"
+
+#~ msgid "Fax"
+#~ msgstr "傳真"
+
+#~ msgid "Tel"
+#~ msgstr "電話"
+
+#~ msgid "Companies"
+#~ msgstr "公司"
+
+#~ msgid "Phone"
+#~ msgstr "電話"
+
+#~ msgid "Address"
+#~ msgstr "地址"
+
+#~ msgid "You cannot create recursive Partner hierarchies."
+#~ msgstr "不允許創建 迴圈引用業務夥伴分級 ."
+
+#~ msgid "Email"
+#~ msgstr "電子郵件"

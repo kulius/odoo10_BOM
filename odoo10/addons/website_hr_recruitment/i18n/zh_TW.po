@@ -1,36 +1,285 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * website_hr_recruitment
+# 	* website_hr_recruitment
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-02-10 09:51+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2015-11-22 10:41+0800\n"
+"PO-Revision-Date: 2016-11-15 08:36+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.job_countries
+msgid "All Countries"
+msgstr "所有國家"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.job_departments
+msgid "All Departments"
+msgstr "所有部門"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.job_offices
+msgid "All Offices"
+msgstr "所有辦公室"
+
+#. module: website_hr_recruitment
+#: model:ir.model,name:website_hr_recruitment.model_hr_applicant
+msgid "Applicant"
+msgstr "申請人"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.detail
+msgid "Apply"
+msgstr "申請"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.apply
+msgid "Apply Job"
+msgstr "申請招聘"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid ""
+"Click on \"Content\" to define a new job offer or \"Help\" for more "
+"informations."
+msgstr "點擊“修改”添加新的招聘崗位或者點擊“幫助”獲取更多的資訊。"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.thankyou
+msgid "Continue To Our Website"
+msgstr "繼續流覽網站"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.apply
+msgid "Job Application Form"
+msgstr "工作申請表"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.detail
+msgid "Job Detail"
+msgstr "招聘詳情"
 
 #. module: website_hr_recruitment
 #: model:ir.model,name:website_hr_recruitment.model_hr_job
 msgid "Job Position"
-msgstr "職位"
+msgstr "招聘職位"
 
 #. module: website_hr_recruitment
-#: model:ir.ui.view,arch_db:website_hr_recruitment.detail
 #: model:ir.ui.view,arch_db:website_hr_recruitment.job_footer_custom
 #: model:website.menu,name:website_hr_recruitment.menu_jobs
 msgid "Jobs"
-msgstr "工作"
+msgstr "招聘"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid "Join us and help disrupt the enterprise market!"
+msgstr "加入我們，幫助顛覆企業市場！"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid ""
+"Join us, we offer you an extraordinary chance to learn, to\n"
+"                                    develop and to be part of an exciting "
+"experience and\n"
+"                                    team."
+msgstr ""
+"加入我們，我們為你提供非凡的學習機會\n"
+"成為一個令人興奮、有豐富經驗的團隊一份子。"
+
+#. module: website_hr_recruitment
+#: code:addons/website_hr_recruitment/controllers/main.py:69
+#: model:ir.ui.view,arch_db:website_hr_recruitment.content_new_job_offer
+#, python-format
+msgid "New Job Offer"
+msgstr "新的工作機會"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid "No job offer found"
+msgstr "暫無招聘資訊"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid "Our Job Offers"
+msgstr "我們提供的工作崗位"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.detail
+msgid "Our Jobs"
+msgstr "我們的工作崗位"
 
 #. module: website_hr_recruitment
 #: model:ir.ui.view,arch_db:website_hr_recruitment.apply
 msgid "Resume"
-msgstr "繼續"
+msgstr "簡歷"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.apply
+msgid "Short Introduction"
+msgstr "簡介"
+
+#. module: website_hr_recruitment
+#: model:ir.model,name:website_hr_recruitment.model_hr_recruitment_source
+msgid "Source of Applicants"
+msgstr "應聘者來源"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.apply
+msgid "Submit"
+msgstr "提交"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.thankyou
+msgid "Thank you!"
+msgstr "謝謝！"
+
+#. module: website_hr_recruitment
+#: model:ir.model.fields,help:website_hr_recruitment.field_hr_job_website_url
+msgid "The full URL to access the document through the website."
+msgstr "完整URL位址，用於通過網站登入文件。"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid "There isn't job offer published now, click"
+msgstr "當前沒有招聘資訊，點擊"
+
+#. module: website_hr_recruitment
+#: model:ir.model.fields,field_description:website_hr_recruitment.field_hr_recruitment_source_url
+msgid "Url Parameters"
+msgstr "網址參數"
+
+#. module: website_hr_recruitment
+#: model:ir.model.fields,field_description:website_hr_recruitment.field_hr_job_website_published
+msgid "Visible in Website"
+msgstr "在網站中可見"
+
+#. module: website_hr_recruitment
+#: model:ir.actions.act_url,name:website_hr_recruitment.action_open_website
+msgid "Website Recruitment Form"
+msgstr "網站招聘表"
+
+#. module: website_hr_recruitment
+#: model:ir.model.fields,field_description:website_hr_recruitment.field_hr_job_website_url
+msgid "Website URL"
+msgstr "網址"
+
+#. module: website_hr_recruitment
+#: model:ir.model.fields,field_description:website_hr_recruitment.field_hr_job_website_description
+msgid "Website description"
+msgstr "網站描述"
+
+#. module: website_hr_recruitment
+#: model:ir.model.fields,field_description:website_hr_recruitment.field_hr_job_website_meta_description
+msgid "Website meta description"
+msgstr "網站描述（Description）"
+
+#. module: website_hr_recruitment
+#: model:ir.model.fields,field_description:website_hr_recruitment.field_hr_job_website_meta_keywords
+msgid "Website meta keywords"
+msgstr "網站關鍵字（KeyWords）"
+
+#. module: website_hr_recruitment
+#: model:ir.model.fields,field_description:website_hr_recruitment.field_hr_job_website_meta_title
+msgid "Website meta title"
+msgstr "網站標題（Title）"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid ""
+"With a small team of smart people, we released the most\n"
+"                                    disruptive enterprise management "
+"software in the world.\n"
+"                                    Odoo is fully open source, super easy, "
+"full featured\n"
+"                                    (3000+ apps) and its online offer is 3 "
+"times cheaper than\n"
+"                                    traditional competitors like SAP and Ms "
+"Dynamics."
+msgstr ""
+"我們，一支優秀的團隊，發佈了世界上最具顛覆意義的\n"
+"                                    企業資源規劃管理(ERP)軟體——Odoo（原"
+"OpenERP）。\n"
+"                                   Odoo，超級簡單易用，功能齊全，代碼完全開源"
+"(擁有超過3000個以上的模組元件)，而其價格\n"
+"                                   卻要比傳統的競爭對手如SAP或微軟等便宜3倍以"
+"上。\n"
+"                                   加入我們的團隊，你將得到一個非凡的學習機"
+"會，並成為我們優秀團隊的一員。"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.apply
+msgid "Your Email"
+msgstr "你的郵箱"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.apply
+msgid "Your Name"
+msgstr "你的姓名"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.apply
+msgid "Your Phone Number"
+msgstr "你的電話號碼"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.thankyou
+msgid ""
+"Your job application has been successfully registered,\n"
+"                        we will get back to you soon."
+msgstr ""
+"你的申請已經成功提交，\n"
+"                 我們會儘快回復你。"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid "here"
+msgstr "這裏"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid "not published"
+msgstr "未發佈"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid "open positions"
+msgstr "空缺職位"
+
+#. module: website_hr_recruitment
+#: model:ir.ui.view,arch_db:website_hr_recruitment.index
+msgid "to contact us"
+msgstr "聯繫我們"
+
+#~ msgid "Please send again your resume."
+#~ msgstr "請重新發送你的簡歷。"
+
+#~ msgid "Published"
+#~ msgstr "發佈時間"
+
+#~ msgid "col-md-3"
+#~ msgstr "col-md-3"
+
+#~ msgid "col-md-9"
+#~ msgstr "col-md-9"
+
+#~ msgid "/jobs"
+#~ msgstr "/jobs"
+
+#~ msgid ""
+#~ "Number of hired employee must be less than expected number of employee in "
+#~ "recruitment."
+#~ msgstr "雇傭員工數量必須小於預期招聘的員工數量。"
+
+#~ msgid ""
+#~ "The name of the job position must be unique per department in company!"
+#~ msgstr "公司每個部門的工作崗位的名稱必須是唯一的"

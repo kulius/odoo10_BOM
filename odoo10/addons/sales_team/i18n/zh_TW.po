@@ -1,27 +1,54 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * sales_team
+# 	* sales_team
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-09-03 10:06+0800\n"
+"PO-Revision-Date: 2016-12-12 14:17+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:91
+#, python-format
+msgid "3 exp. closing"
+msgstr "3 預計結束時間"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:137
+#, python-format
+msgid "35,029.39€"
+msgstr "35,029.39€"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:124
+#, python-format
+msgid "78,140.03€"
+msgstr "78,140.03€"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:169
+#, python-format
+msgid "80.000€"
+msgstr "80.000€"
 
 #. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_view_kanban
 msgid "<span>New</span>"
-msgstr "<span>新增</span>"
+msgstr "<span>新建</span>"
 
 #. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_view_kanban
@@ -31,17 +58,70 @@ msgstr "<span>報表</span>"
 #. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_view_kanban
 msgid "<span>View</span>"
-msgstr "<span>檢視</span>"
+msgstr "<span>視圖</span>"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_active
 msgid "Active"
-msgstr "活躍"
+msgstr "有效"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:114
+#, python-format
+msgid "Activities Done"
+msgstr "活動結束"
+
+#. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.view_sale_config_settings
+msgid "Apply"
+msgstr "應用"
+
+#. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_search
+msgid "Archived"
+msgstr "已存檔"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_action_res_partner_bank_form
+#: model:ir.ui.menu,name:sales_team.menu_config_bank_accounts
+msgid "Bank Accounts"
+msgstr "銀行帳戶"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_action_res_bank_form
+msgid "Banks"
+msgstr "銀行"
+
+#. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.view_sale_config_settings
+msgid "Cancel"
+msgstr "取消"
+
+#. module: sales_team
+#: model:ir.actions.act_window,help:sales_team.crm_team_act
+#: model:ir.actions.act_window,help:sales_team.crm_team_salesteams_act
+#: model:ir.actions.act_window,help:sales_team.sales_team_config_action
+msgid "Click here to define a new sales team."
+msgstr "點擊定義新的銷售團隊"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:148
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:152
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:161
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:165
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:174
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:178
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:182
+#, python-format
+msgid "Click to set"
+msgstr "點擊設置"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_color
 msgid "Color Index"
-msgstr "顏色索引"
+msgstr "顏色序號"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_company_id
@@ -50,16 +130,69 @@ msgid "Company"
 msgstr "公司"
 
 #. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_sale_config
+msgid "Configuration"
+msgstr "配置"
+
+#. module: sales_team
+#: model:ir.actions.act_window,name:sales_team.action_sale_config
+#: model:ir.ui.view,arch_db:sales_team.view_sale_config_settings
+msgid "Configure Sales"
+msgstr "銷售配置"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_partner_category_form
+msgid "Contact Tags"
+msgstr "聯繫人分類"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_partner_title_contact
+msgid "Contact Titles"
+msgstr "聯繫人稱謂"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_config_address_book
+msgid "Contacts"
+msgstr "聯繫人"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_country_partner
+msgid "Countries"
+msgstr "國家和地區"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_country_group
+msgid "Country Group"
+msgstr "國家組"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:215
+#, python-format
+msgid "Create a few opportunities in it."
+msgstr "在儀錶板中創建新的銷售機會"
+
+#. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_create_uid
 #: model:ir.model.fields,field_description:sales_team.field_sale_config_settings_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_create_date
 #: model:ir.model.fields,field_description:sales_team.field_sale_config_settings_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_action_currency_form
+msgid "Currencies"
+msgstr "貨幣"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_partner_form
+msgid "Customers"
+msgstr "客戶"
 
 #. module: sales_team
 #. openerp-web
@@ -71,46 +204,109 @@ msgid "Dashboard"
 msgstr "儀錶板"
 
 #. module: sales_team
+#: model:crm.team,name:sales_team.team_sales_department
+msgid "Direct Sales"
+msgstr "直銷"
+
+#. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_display_name
 #: model:ir.model.fields,field_description:sales_team.field_sale_config_settings_display_name
 msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_country_state_partner
+msgid "Fed. States"
+msgstr "省份"
+
+#. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.crm_team_view_form
+msgid ""
+"Follow this salesteam to automatically track the events associated to users "
+"of this team."
+msgstr "按照此銷售團隊自動跟蹤關聯到這個團隊的用戶的事件。"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:214
+#, python-format
+msgid "Great sales journeys start with a clean pipeline."
+msgstr "在新的銷售管道中開啟偉大的歷程"
+
+#. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_search
 msgid "Group By..."
-msgstr "群組依據..."
+msgstr "通過組"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:213
+#, python-format
+msgid "Hi there!"
+msgstr "你好"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_id
 #: model:ir.model.fields,field_description:sales_team.field_sale_config_settings_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: sales_team
+#: model:ir.model.fields,help:sales_team.field_res_partner_team_id
+#: model:ir.model.fields,help:sales_team.field_res_users_team_id
+msgid ""
+"If set, sale team used notably for sales and assignations related to this "
+"partner"
+msgstr "如果設置，銷售團隊用於關聯銷售和業務夥伴"
+
+#. module: sales_team
+#: model:ir.model.fields,help:sales_team.field_crm_team_active
+msgid ""
+"If the active field is set to false, it will allow you to hide the sales "
+"team without removing it."
+msgstr "如果“有效”欄位設置為false，則會允許你隱藏銷售團隊，而不會被刪除它。"
 
 #. module: sales_team
 #. openerp-web
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:140
 #, python-format
 msgid "Invoiced"
-msgstr "已開發票"
+msgstr "已開票"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team___last_update
 #: model:ir.model.fields,field_description:sales_team.field_sale_config_settings___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:188
+#, python-format
+msgid "Last Month"
+msgstr "上月"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_write_uid
 #: model:ir.model.fields,field_description:sales_team.field_sale_config_settings_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_write_date
 #: model:ir.model.fields,field_description:sales_team.field_sale_config_settings_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_localisation
+msgid "Localization"
+msgstr "本地化"
+
+#. module: sales_team
+#: model:res.groups,name:sales_team.group_sale_manager
+msgid "Manager"
+msgstr "經理"
 
 #. module: sales_team
 #. openerp-web
@@ -120,19 +316,82 @@ msgid "Meetings"
 msgstr "會議"
 
 #. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_view_kanban
+msgid "More <i class=\"fa fa-caret-down\"/>"
+msgstr "更多 <i class=\"fa fa-caret-down\"/>"
+
+#. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.crm_team_view_form
+msgid "More Info"
+msgstr "更多資訊"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:42
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:44
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:216
+#, python-format
+msgid "My Pipeline"
+msgstr "你的銷售管道"
+
+#. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_search
+msgid "My Salesteams"
+msgstr "我的銷售團隊"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:50
+#, python-format
+msgid "Next 7 days"
+msgstr "倒計時7天"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:38
+#, python-format
+msgid "Next Actions"
+msgstr "下一操作"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/js/sales_team_dashboard.js:83
+#, python-format
+msgid "Only Integer Value should be valid."
+msgstr "僅整數值才是有效的。"
+
+#. module: sales_team
 #: model:ir.model,name:sales_team.model_res_partner
 msgid "Partner"
-msgstr "伙伴"
+msgstr "夥伴"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:102
+#, python-format
+msgid "Performance"
+msgstr "績效"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_reply_to
 msgid "Reply-To"
-msgstr "回覆給"
+msgstr "回復"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_sale_report
+msgid "Reports"
+msgstr "報表"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_res_users_property_product_pricelist
 msgid "Sale Pricelist"
-msgstr "銷售價目表"
+msgstr "銷售價格表"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_base_partner
+#: model:ir.ui.menu,name:sales_team.menu_sales
+msgid "Sales"
+msgstr "銷售"
 
 #. module: sales_team
 #: model:ir.model,name:sales_team.model_crm_team
@@ -146,6 +405,13 @@ msgid "Sales Team"
 msgstr "銷售團隊"
 
 #. module: sales_team
+#: model:ir.model.fields,help:sales_team.field_res_users_sale_team_id
+msgid ""
+"Sales Team the user is member of. Used to compute the members of a sales "
+"team through the inverse one2many"
+msgstr "用戶所在銷售團隊。用於通過one2many欄位反向計算銷售團隊成員。"
+
+#. module: sales_team
 #: model:ir.actions.act_window,name:sales_team.crm_team_act
 #: model:ir.actions.act_window,name:sales_team.sales_team_config_action
 #: model:ir.ui.menu,name:sales_team.sales_team_config
@@ -153,16 +419,38 @@ msgid "Sales Teams"
 msgstr "銷售團隊"
 
 #. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.crm_team_view_form
+msgid "Sales team"
+msgstr "銷售團隊"
+
+#. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.crm_team_view_form
+msgid "Salesteam name..."
+msgstr "銷售團隊名稱..."
+
+#. module: sales_team
+#: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_search
+msgid "Salesteams Search"
+msgstr "銷售團隊查詢"
+
+#. module: sales_team
 #: model:ir.ui.menu,name:sales_team.menu_sale_general_settings
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_view_kanban
 msgid "Settings"
-msgstr "設定"
+msgstr "設置"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:146
+#, python-format
+msgid "Target"
+msgstr "目標"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_user_id
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_search
 msgid "Team Leader"
-msgstr "團隊主管"
+msgstr "團隊領導"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_member_ids
@@ -171,20 +459,481 @@ msgid "Team Members"
 msgstr "團隊成員"
 
 #. module: sales_team
+#: model:ir.model.fields,help:sales_team.field_crm_team_color
+msgid "The color of the team"
+msgstr "團隊顏色"
+
+#. module: sales_team
+#: model:ir.model.fields,help:sales_team.field_crm_team_reply_to
+msgid ""
+"The email address put in the 'Reply-To' of all emails sent by Odoo about "
+"cases in this sales team"
+msgstr "有關本銷售團隊的案例的郵件，其被Odoo放在“回復”一欄的電子郵件位址"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:102
+#, python-format
+msgid "This Month"
+msgstr "本月"
+
+#. module: sales_team
 #: model:ir.model.fields,help:sales_team.field_res_users_property_product_pricelist
 msgid ""
 "This pricelist will be used, instead of the default one, for sales to the "
 "current partner"
-msgstr "會用此價目表取代預設者，來銷售給目前伙伴。"
+msgstr "當前價格表將會被使用,取代預設值,用之出售給當前夥伴."
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:29
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:61
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:76
+#, python-format
+msgid "To Activities"
+msgstr "活動"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:105
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:189
+#, python-format
+msgid "To Activity Report"
+msgstr "活動報告"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:16
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:51
+#, python-format
+msgid "To Calendar"
+msgstr "日曆"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:131
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:199
+#, python-format
+msgid "To Invoice Report"
+msgstr "相關單據生成此發票報表"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:86
+#, python-format
+msgid "To Opportunities"
+msgstr "商機"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:118
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:194
+#, python-format
+msgid "To Opportunity Report"
+msgstr "機會報告"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:13
+#, python-format
+msgid "To do"
+msgstr "待辦"
 
 #. module: sales_team
 #. openerp-web
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:13
 #, python-format
 msgid "Today"
-msgstr "今日"
+msgstr "今天"
+
+#. module: sales_team
+#: model:ir.actions.act_window,help:sales_team.crm_team_act
+#: model:ir.actions.act_window,help:sales_team.crm_team_salesteams_act
+#: model:ir.actions.act_window,help:sales_team.sales_team_config_action
+msgid ""
+"Use sales team to organize your different salespersons or\n"
+"                    departments into separate teams. Each team will work in\n"
+"                    its own list of opportunities."
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                     點擊這裏定義一個新的銷售團隊。\n"
+"                 </p><p>\n"
+"                  使用銷售團隊來組織你不同的銷售人員或部門到獨立的團隊。\n"
+"\n"
+"                  每個團隊將它自己的機會列表。\n"
+"                 </p>"
+
+#. module: sales_team
+#: model:res.groups,name:sales_team.group_sale_salesman_all_leads
+msgid "User: All Documents"
+msgstr "用戶：所有文檔"
+
+#. module: sales_team
+#: model:res.groups,name:sales_team.group_sale_salesman
+msgid "User: Own Documents Only"
+msgstr "用戶：我的文檔"
 
 #. module: sales_team
 #: model:ir.model,name:sales_team.model_res_users
 msgid "Users"
 msgstr "用戶"
+
+#. module: sales_team
+#: model:crm.team,name:sales_team.salesteam_website_sales
+msgid "Website Sales"
+msgstr "網站銷售"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:127
+#, python-format
+msgid "Won in Opportunities"
+msgstr "商機贏得"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/js/sales_team_dashboard.js:83
+#, python-format
+msgid "Wrong value entered!"
+msgstr "輸入值錯誤！"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:89
+#, python-format
+msgid "exp. closing"
+msgstr "預計結束時間"
+
+#. module: sales_team
+#: model:ir.model,name:sales_team.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:79
+#, python-format
+msgid "overdue"
+msgstr "逾期付款資訊"
+
+#. module: sales_team
+#: model:ir.model,name:sales_team.model_sale_config_settings
+msgid "sale.config.settings"
+msgstr "銷售設置設置"
+
+#. module: sales_team
+#: model:res.groups,comment:sales_team.group_sale_salesman_all_leads
+msgid ""
+"the user will have access to all records of everyone in the sales "
+"application."
+msgstr "用戶可訪問銷售系統中每個人的所有記錄。"
+
+#. module: sales_team
+#: model:res.groups,comment:sales_team.group_sale_salesman
+msgid "the user will have access to his own data in the sales application."
+msgstr "在銷售應用，用戶只能訪問自己的資料"
+
+#. module: sales_team
+#: model:res.groups,comment:sales_team.group_sale_manager
+msgid ""
+"the user will have an access to the sales configuration as well as statistic "
+"reports."
+msgstr "用戶將有許可權訪問銷售設置及統計報表。"
+
+#~ msgid "# Vendor Bills"
+#~ msgstr "# 供應商發票"
+
+#~ msgid "# of Purchase Order"
+#~ msgstr "# 採購單"
+
+#~ msgid "Account Payable"
+#~ msgstr "應付科目"
+
+#~ msgid "Account Receivable"
+#~ msgstr "應收科目"
+
+#~ msgid "Companies that refers to partner"
+#~ msgstr "公司業務夥伴"
+
+#~ msgid "Contracts"
+#~ msgstr "合同"
+
+#~ msgid "Count Payment Token"
+#~ msgstr "支付權杖數量"
+
+#~ msgid "Customer Location"
+#~ msgstr "客戶庫位元"
+
+#~ msgid "Customer Payment Term"
+#~ msgstr "客戶支付條款"
+
+#~ msgid "Degree of trust you have in this debtor"
+#~ msgstr "你對借方的信任程度"
+
+#~ msgid "Fiscal Position"
+#~ msgstr "替換規則"
+
+#~ msgid "Has unreconciled entries"
+#~ msgstr "未核銷的憑證"
+
+#~ msgid "Invoice"
+#~ msgstr "發票"
+
+#~ msgid "Invoices"
+#~ msgstr "發票列表"
+
+#~ msgid "Journal Items"
+#~ msgstr "會計憑證明細"
+
+#~ msgid ""
+#~ "Last time the invoices & payments matching was performed for this "
+#~ "partner. It is set either if there's not at least an unreconciled debit "
+#~ "and an unreconciled credit or if you click the \"Done\" button."
+#~ msgstr ""
+#~ "該業務夥伴的發票和付款匹配的最後時間。當不存在至少一個未對帳的借方記錄和一"
+#~ "個未對賬的貸方記錄時，或者點擊了\"完成\"按鈕時設置該時間。"
+
+#~ msgid "Latest Invoices & Payments Matching Date"
+#~ msgstr "發票和付款最後匹配日期"
+
+#~ msgid "Message for Invoice"
+#~ msgstr "發票資訊"
+
+#~ msgid "Message for Purchase Order"
+#~ msgstr "採購單消息"
+
+#~ msgid "Message for Stock Picking"
+#~ msgstr "庫存分揀消息"
+
+#~ msgid "Payable Limit"
+#~ msgstr "應付賬款限額"
+
+#~ msgid "Payment Tokens"
+#~ msgstr "支付權杖"
+
+#~ msgid "Product Variants"
+#~ msgstr "使用產品多規格功能"
+
+#~ msgid "Products"
+#~ msgstr "產品"
+
+#~ msgid "Purchase Order"
+#~ msgstr "採購單"
+
+#~ msgid ""
+#~ "Selecting the \"Warning\" option will notify user with the message, "
+#~ "Selecting \"Blocking Message\" will throw an exception with the message "
+#~ "and block the flow. The Message has to be written in the next field."
+#~ msgstr ""
+#~ "選擇“警告”項會提示用戶消息，選擇“阻止消息”會拋出異常消息,並阻止流程。消息"
+#~ "在下一個欄位裏寫明。"
+
+#~ msgid "Stock Picking"
+#~ msgstr "庫存分揀"
+
+#~ msgid "Supplier Currency"
+#~ msgstr "供應商貨幣"
+
+#~ msgid ""
+#~ "The fiscal position will determine taxes and accounts used for the "
+#~ "partner."
+#~ msgstr "替換規則確定業務夥伴的稅替換和科目替換。"
+
+#~ msgid ""
+#~ "The partner has at least one unreconciled debit and credit since last "
+#~ "time the invoices & payments matching was performed."
+#~ msgstr "發票和付款後至少有一個借貸方不匹配．"
+
+#~ msgid ""
+#~ "This account will be used instead of the default one as the payable "
+#~ "account for the current partner"
+#~ msgstr "這科目將替換當前業務夥伴的默認支付科目"
+
+#~ msgid ""
+#~ "This account will be used instead of the default one as the receivable "
+#~ "account for the current partner"
+#~ msgstr "這科目將用於替換當前業務夥伴的默認應收賬款科目"
+
+#~ msgid ""
+#~ "This currency will be used, instead of the default one, for purchases "
+#~ "from the current partner"
+#~ msgstr "對於從這個業務夥伴的採購，這個貨幣將被使用，替代默認貨幣。"
+
+#~ msgid ""
+#~ "This payment term will be used instead of the default one for purchase "
+#~ "orders and vendor bills"
+#~ msgstr "此條款將用以取代默認的採購單或供應商帳單。"
+
+#~ msgid ""
+#~ "This payment term will be used instead of the default one for sale orders "
+#~ "and customer invoices"
+#~ msgstr "在銷售訂單和客戶發票上，該付款方式將替換默認的付款方式。"
+
+#~ msgid ""
+#~ "This stock location will be used, instead of the default one, as the "
+#~ "destination location for goods you send to this partner"
+#~ msgstr "這庫位替代預設值作為你出庫到這個業務夥伴的目的庫位元。"
+
+#~ msgid ""
+#~ "This stock location will be used, instead of the default one, as the "
+#~ "source location for goods you receive from the current partner"
+#~ msgstr "默認作為你接收當前業務夥伴產品的源庫位元，以替代默認的源庫位。"
+
+#~ msgid "Total Invoiced"
+#~ msgstr "已開票總額"
+
+#~ msgid "Total Payable"
+#~ msgstr "應付賬款合計"
+
+#~ msgid "Total Receivable"
+#~ msgstr "應收賬款合計"
+
+#~ msgid "Total amount this customer owes you."
+#~ msgstr "客戶欠款金額合計"
+
+#~ msgid "Total amount you have to pay to this vendor."
+#~ msgstr "應付供應商總金額"
+
+#~ msgid "Utility field to express amount currency"
+#~ msgstr "用來衡量貨幣面值的大小的欄位"
+
+#~ msgid "Vendor Location"
+#~ msgstr "供應商庫位"
+
+#~ msgid "Vendor Payment Term"
+#~ msgstr "供應商付款條款"
+
+#~ msgid "# Tasks"
+#~ msgstr "# 任務"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid "Code"
+#~ msgstr "編碼"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "最後一條日期貼在記錄資訊中。"
+
+#~ msgid "Followers"
+#~ msgstr "跟蹤"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果勾選新的消息需要你attention.ws。"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選，你需要注意查看新消息。"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最後資訊日期"
+
+#~ msgid "Messages"
+#~ msgstr "信息"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動數量"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的消息數"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Tasks"
+#~ msgstr "任務"
+
+#~ msgid "The code of the sales team must be unique !"
+#~ msgstr "銷售團隊的代碼必須是唯一的！"
+
+#~ msgid "Unread Messages"
+#~ msgstr "未讀信息"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息計數"
+
+#~ msgid "Working Hours"
+#~ msgstr "工作時間"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "資訊和通訊記錄"
+
+#~ msgid "Need Action Counter"
+#~ msgstr "需要行動計數"
+
+#~ msgid "Child Teams"
+#~ msgstr "初級隊"
+
+#~ msgid "Error ! You cannot create recursive Sales team."
+#~ msgstr "錯誤！你不能創建遞迴的銷售團隊。"
+
+#~ msgid "Full Name"
+#~ msgstr "全稱"
+
+#~ msgid "Parent Sales Teams"
+#~ msgstr "母公司銷售團隊"
+
+#~ msgid ""
+#~ "Allows you to use Sales Teams to manage your leads and opportunities."
+#~ msgstr "允許你使用銷售團隊來管理你的線索和機會。"
+
+#~ msgid "Manage Sales Teams"
+#~ msgstr "銷售團隊管理"
+
+#~ msgid "Organize Sales activities into multiple Sales Teams"
+#~ msgstr "為多個銷售團隊組織銷售活動"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "Delete"
+#~ msgstr "刪除"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid "Edit Sales Team"
+#~ msgstr "編輯銷售團隊"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保存聊天總結（消息數，...）。本摘要是直接使用HTML格式，以便在看板插入意"
+#~ "見。"
+
+#~ msgid "Notes"
+#~ msgstr "日記"
+
+#~ msgid "Reassign Escalated"
+#~ msgstr "團隊領導同上級團隊"
+
+#~ msgid "Summary"
+#~ msgstr "總結"
+
+#~ msgid ""
+#~ "When escalating to this team override the salesman with the team leader."
+#~ msgstr "當被分配到這個團隊時，將銷售員自動變成銷售團隊領導。"
+
+#~ msgid "Default Sales Team"
+#~ msgstr "默認銷售團隊"
+
+#~ msgid "Sales Teams Settings"
+#~ msgstr "銷售團隊設置"
+
+#~ msgid "unknown"
+#~ msgstr "不知道"
+
+#~ msgid "Marketing"
+#~ msgstr "市場"
+
+#~ msgid "í"
+#~ msgstr "í"

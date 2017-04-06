@@ -1,22 +1,50 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * product
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-29 14:00+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2017-02-08 19:27+0800\n"
+"PO-Revision-Date: 2017-02-08 19:31+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:55+0000\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#. module: product
+#: selection:product.pricelist.item,applied_on:0
+msgid " Product Category"
+msgstr "產品分類"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_product_variant_count
+#: model:ir.model.fields,field_description:product.field_product_template_product_variant_count
+msgid "# Product Variants"
+msgstr "# 產品屬性"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_category_product_count
+msgid "# Products"
+msgstr "# 產品"
+
+#. module: product
+#: code:addons/product/models/product_pricelist.py:440
+#, python-format
+msgid "%s %% discount"
+msgstr "%s %% 折扣"
+
+#. module: product
+#: code:addons/product/models/product_pricelist.py:442
+#, python-format
+msgid "%s %% discount and %s surcharge"
+msgstr "%s %% 折扣 %s 附加費"
 
 #. module: product
 #: code:addons/product/models/product_template.py:302
@@ -25,18 +53,135 @@ msgid "%s (copy)"
 msgstr "%s (副本)"
 
 #. module: product
-#: model:product.product,description:product.product_product_25
-#: model:product.template,description:product.product_product_25_product_template
+#: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 msgid ""
-"17\" Monitor\n"
-"4GB RAM\n"
-"Standard-1294P Processor\n"
-"QWERTY keyboard"
+"<span attrs=\"{'invisible':[('base', '!=', 'list_price')]}\">Public Price  "
+"-  </span>\n"
+"                            <span attrs=\"{'invisible':[('base', '!=', "
+"'standard_price')]}\">Cost  -  </span>\n"
+"                            <span attrs=\"{'invisible':[('base', '!=', "
+"'pricelist')]}\">Other Pricelist  -  </span>"
 msgstr ""
-"17\" Monitor\n"
-"4GB RAM\n"
-"Standard-1294P Processor\n"
-"QWERTY keyboard"
+"<span attrs=\"{'invisible':[('base', '!=', 'list_price')]}\">公共價格  -  </"
+"span>\n"
+"                            <span attrs=\"{'invisible':[('base', '!=', "
+"'standard_price')]}\">成本  -  </span>\n"
+"                            <span attrs=\"{'invisible':[('base', '!=', "
+"'pricelist')]}\">其他價格表  -  </span>"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_category_form_view
+msgid "<span class=\"o_stat_text\"> Products</span>"
+msgstr "<span class=\"o_stat_text\"> 產品</span>"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
+msgid "<span>kg</span>"
+msgstr "<span>公斤</span>"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.report_pricelist
+msgid "<strong>Currency</strong>:<br/>"
+msgstr "<strong>貨幣</strong>:<br/>"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.report_pricelist
+msgid "<strong>Description</strong>"
+msgstr "<strong>說明</strong>"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.report_pricelist
+msgid "<strong>Price List Name</strong>:<br/>"
+msgstr "<strong>價格表名稱</strong>:<br/>"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.report_pricelist
+msgid "<strong>Print date</strong>:<br/>"
+msgstr "<strong>列印時期</strong>:<br/>"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_template_only_form_view
+msgid ""
+"<strong>Warning</strong>: adding or deleting attributes\n"
+"                        will delete and recreate existing variants and lead\n"
+"                        to the loss of their possible customizations."
+msgstr ""
+"<strong>警告</strong>: 新建或刪除屬性\n"
+"                            將刪除和重建已存在的屬性並且可能導致\n"
+"                            它們的一些定制消失。"
+
+#. module: product
+#: code:addons/product/models/product.py:167 sql_constraint:product.product:0
+#, python-format
+msgid "A barcode can only be assigned to one product !"
+msgstr "條碼只能分配給一個產品!"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_category_type
+msgid ""
+"A category of the view type is a virtual category that can be used as the "
+"parent of another category to create a hierarchical structure."
+msgstr ""
+"檢視類型的分類是一個虛擬分類，用來做其它分類的上級，以此建立一個分層結構。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_description_sale
+#: model:ir.model.fields,help:product.field_product_template_description_sale
+msgid ""
+"A description of the Product that you want to communicate to your customers. "
+"This description will be copied to every Sale Order, Delivery Order and "
+"Customer Invoice/Refund"
+msgstr ""
+"一個傳達給客戶的、關於該產品的描述。這個描述將會拷貝到每一個銷售單，發貨單和"
+"客戶發票/退款單。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_description_purchase
+#: model:ir.model.fields,help:product.field_product_template_description_purchase
+msgid ""
+"A description of the Product that you want to communicate to your vendors. "
+"This description will be copied to every Purchase Order, Receipt and Vendor "
+"Bill/Refund."
+msgstr ""
+"一個傳達給供應商的、關於該產品的描述。這個描述將會拷貝到每一個採購單，收貨單"
+"和供應商發票/退款單。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_description
+#: model:ir.model.fields,help:product.field_product_template_description
+msgid ""
+"A precise description of the Product, used only for internal information "
+"purposes."
+msgstr "該產品的精確描述，僅用於內部參考。"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_pricelist_action2
+msgid ""
+"A price list contains rules to be evaluated in order to compute\n"
+"                the sales price of the products."
+msgstr ""
+"價格表包含的規則，以便計算產品\n"
+"中的銷售價格進行評估。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_type
+#: model:ir.model.fields,help:product.field_product_template_type
+msgid ""
+"A stockable product is a product for which you manage stock. The \"Inventory"
+"\" app has to be installed.\n"
+"A consumable product, on the other hand, is a product for which stock is not "
+"managed.\n"
+"A service is a non-material product you provide.\n"
+"A digital content is a non-material product you sell online. The files "
+"attached to the products are the one that are sold on the e-commerce such as "
+"e-books, music, pictures,... The \"Digital Product\" module has to be "
+"installed."
+msgstr ""
+"庫存商品是一種需要進行庫存管理的商品。“倉庫”應用必須被安裝。\n"
+"消耗品是一種不進行庫存管理的產品。\n"
+"服務是由公司或個人提供的不需要原料的產品。\n"
+"數位內容是在網上銷售不需要公司或個人提供原料的產品。 附屬於該產品的檔在電子"
+"商務領域銷售，類似產品有：電子書，音樂，圖片等。“數位產品”模組必須被安裝。"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_active
@@ -45,18 +190,84 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_uom_active
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_search_view
 msgid "Active"
-msgstr "活躍"
+msgstr "可用"
 
 #. module: product
 #: model:product.category,name:product.product_category_all
 msgid "All"
-msgstr "所有"
+msgstr "全部"
+
+#. module: product
+#: code:addons/product/models/product_pricelist.py:435
+#, python-format
+msgid "All Products"
+msgstr "所有商品"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
+msgid "All general settings about this product are managed on"
+msgstr "關於這個產品的通用設置用於管理"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_normal_form_view
 #: model:ir.ui.view,arch_db:product.product_pricelist_view
 msgid "Applicable On"
-msgstr "可應用於"
+msgstr "適用於"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_item_applied_on
+msgid "Apply On"
+msgstr "應用在"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_pricelist_view_search
+#: model:ir.ui.view,arch_db:product.product_supplierinfo_search_view
+#: model:ir.ui.view,arch_db:product.product_template_search_view
+msgid "Archived"
+msgstr "已存檔"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_sequence
+msgid "Assigns the priority to the list of product vendor."
+msgstr "賦予產品供應商在清單中的優先順序"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_attribute_line_attribute_id
+#: model:ir.model.fields,field_description:product.field_product_attribute_value_attribute_id
+msgid "Attribute"
+msgstr "屬性"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_attribute_line_form
+#: model:ir.ui.view,arch_db:product.product_attribute_view_form
+msgid "Attribute Name"
+msgstr "屬性名稱"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_attribute_value_price_extra
+msgid "Attribute Price Extra"
+msgstr "附加屬性價格"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_attribute_value_price_ids
+msgid "Attribute Prices"
+msgstr "價格屬性"
+
+#. module: product
+#: model:ir.actions.act_window,name:product.variants_action
+#: model:ir.model.fields,field_description:product.field_product_attribute_line_value_ids
+#: model:ir.ui.view,arch_db:product.product_attribute_view_form
+msgid "Attribute Values"
+msgstr "屬性值"
+
+#. module: product
+#: model:ir.actions.act_window,name:product.attribute_action
+#: model:ir.model.fields,field_description:product.field_product_product_attribute_value_ids
+#: model:ir.ui.view,arch_db:product.product_attribute_value_view_tree
+#: model:ir.ui.view,arch_db:product.product_template_search_view
+#: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
+msgid "Attributes"
+msgstr "所有屬性"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_barcode
@@ -65,12 +276,26 @@ msgid "Barcode"
 msgstr "條碼"
 
 #. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_base
+msgid ""
+"Base price for computation.\n"
+"Public Price: The base price will be the Sale/public Price.\n"
+"Cost Price : The base price will be the cost price.\n"
+"Other Pricelist : Computation of the base price based on another Pricelist."
+msgstr ""
+" 用於計算價格的基準價格。 \n"
+" Public Price公共價格：基準價格是銷售/公開價格。 \n"
+" Cost Price產品或成本價的供應商部分：如果設置了基準價格，將它是供應商價格，否"
+"則，這將是成本價。 \n"
+" Other Pricelist其它價格表：基於另一個價格表的基準價的計算。"
+
+#. module: product
 #: model:ir.model.fields,help:product.field_product_product_list_price
 #: model:ir.model.fields,help:product.field_product_template_list_price
 #: model:ir.model.fields,help:product.field_product_template_lst_price
 msgid ""
 "Base price to compute the customer price. Sometimes called the catalog price."
-msgstr "計算客戶價格的基礎價格。有時叫做目錄價格。"
+msgstr "用於計算客戶報價的基礎價格，有時也稱為公開價格。"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_base
@@ -78,20 +303,37 @@ msgid "Based on"
 msgstr "基於"
 
 #. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_image
+msgid "Big-sized image"
+msgstr "大尺寸圖片"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_uom_factor_inv
+msgid "Bigger Ratio"
+msgstr "更大比率"
+
+#. module: product
 #: selection:product.uom,uom_type:0
 msgid "Bigger than the reference Unit of Measure"
-msgstr "大於所參照的量度單位"
+msgstr "大於參考單位"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.view_product_price_list
 msgid "Calculate Product Price per Unit Based on Pricelist Version."
-msgstr "根據價目表版本計算每單位產品價錢"
+msgstr "基於價格表版本計算產品單位價格"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_purchase_ok
+#: model:ir.model.fields,field_description:product.field_product_template_purchase_ok
+#: model:ir.ui.view,arch_db:product.product_template_search_view
+msgid "Can be Purchased"
+msgstr "可採購"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_rental
 #: model:ir.model.fields,field_description:product.field_product_template_rental
 msgid "Can be Rent"
-msgstr "可租"
+msgstr "可出租"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_sale_ok
@@ -106,26 +348,76 @@ msgid "Cancel"
 msgstr "取消"
 
 #. module: product
+#: model:ir.model.fields,field_description:product.field_product_uom_category_id
+msgid "Category"
+msgstr "分類"
+
+#. module: product
 #: model:ir.model.fields,field_description:product.field_product_category_type
 #: model:ir.ui.view,arch_db:product.product_category_form_view
 msgid "Category Type"
-msgstr "分類類型"
+msgstr "類屬"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_category_form_view
+msgid "Category name"
+msgstr "分類名稱"
+
+#. module: product
+#: code:addons/product/models/product_pricelist.py:429
+#, python-format
+msgid "Category: %s"
+msgstr "分類: %s"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_attribute_create_variant
+msgid "Check this if you want to create multiple variants for this attribute."
+msgstr "如果你要為這個屬性創建多個值，請勾選。"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category_child_id
 msgid "Child Categories"
-msgstr "下級分類"
+msgstr "子分類"
 
 #. module: product
-#: model:product.attribute,name:product.product_attribute_2
-msgid "Color"
-msgstr "顏色"
+#: model:ir.actions.act_window,help:product.product_uom_categ_form_action
+msgid "Click to add a new unit of measure category."
+msgstr "按一下以添加一個新的計量單位。"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_uom_form_action
+msgid "Click to add a new unit of measure."
+msgstr "按一下以添加一個新的計量單位。"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_pricelist_action2
+msgid "Click to create a pricelist."
+msgstr "點擊創建一個價格表。"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_normal_action
+#: model:ir.actions.act_window,help:product.product_normal_action_sell
+#: model:ir.actions.act_window,help:product.product_template_action
+#: model:ir.actions.act_window,help:product.product_template_action_all
+#: model:ir.actions.act_window,help:product.product_variant_action
+msgid "Click to define a new product."
+msgstr "按此定義一個新的產品。"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
+msgid "Codes"
+msgstr "編碼"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_color
 #: model:ir.model.fields,field_description:product.field_product_template_color
 msgid "Color Index"
-msgstr "顏色索引"
+msgstr "色彩索引"
+
+#. module: product
+#: model:ir.model,name:product.model_res_company
+msgid "Companies"
+msgstr "公司"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_company_id
@@ -137,20 +429,41 @@ msgid "Company"
 msgstr "公司"
 
 #. module: product
-#: model:product.product,name:product.product_product_16
-#: model:product.template,name:product.product_product_16_product_template
-msgid "Computer Case"
-msgstr "機箱"
+#: model:ir.model.fields,field_description:product.field_product_price_history_company_id
+msgid "Company id"
+msgstr "公司 id"
 
 #. module: product
-#: code:addons/product/models/product_uom.py:89
+#: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
+msgid "Compute Price"
+msgstr "計算價格"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_item_compute_price
+msgid "Compute price"
+msgstr "計算價格"
+
+#. module: product
+#: code:addons/product/models/product_template.py:42
+#: selection:product.template,type:0
+#, python-format
+msgid "Consumable"
+msgstr "消耗品"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_uom_category_id
+msgid ""
+"Conversion between Units of Measure can only occur if they belong to the "
+"same category. The conversion will be made based on the ratios."
+msgstr "計量單位轉換只能在同一個類型之間進行。轉換基於比例"
+
+#. module: product
+#: code:addons/product/models/product_uom.py:96
 #, python-format
 msgid ""
 "Conversion from Product UoM %s to Default UoM %s is not possible as they "
 "both belong to different Category!."
-msgstr ""
-"從產品的量度單位 %s 轉換至預設的量度單位 %s 是不可能的，因為它們分屬於不同類"
-"別！"
+msgstr "產品單位 %s 與預設單位 %s 無法轉換，二者屬於不同的分類！"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_price_history_cost
@@ -158,7 +471,37 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_template_standard_price
 #: selection:product.pricelist.item,base:0
 msgid "Cost"
-msgstr "成本"
+msgstr "成本價格"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_standard_price
+msgid ""
+"Cost of the product template used for standard stock valuation in accounting "
+"and used as a base price on purchase orders. Expressed in the default unit "
+"of measure of the product."
+msgstr ""
+"用於會計庫存評估的產品範本的成本價格，並作為採購訂單的基準價格。用產品的預設"
+"計量單位表示。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_template_standard_price
+msgid "Cost of the product, in the default unit of measure of the product."
+msgstr "產品的成本價，使用產品的預設計量單位。"
+
+#. module: product
+#: model:ir.model,name:product.model_res_country_group
+msgid "Country Group"
+msgstr "國別"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_country_group_ids
+msgid "Country Groups"
+msgstr "國別"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_attribute_create_variant
+msgid "Create variant"
+msgstr "創建屬性值"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_create_uid
@@ -177,7 +520,7 @@ msgstr "成本"
 #: model:ir.model.fields,field_description:product.field_product_uom_categ_create_uid
 #: model:ir.model.fields,field_description:product.field_product_uom_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_create_date
@@ -196,7 +539,7 @@ msgstr "建立者"
 #: model:ir.model.fields,field_description:product.field_product_uom_categ_create_date
 #: model:ir.model.fields,field_description:product.field_product_uom_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: product
 #: model:ir.model,name:product.model_res_currency
@@ -209,16 +552,9 @@ msgid "Currency"
 msgstr "貨幣"
 
 #. module: product
-#: model:product.product,description:product.product_product_27
-#: model:product.template,description:product.product_product_27_product_template
-msgid "Custom Laptop based on customer's requirement."
-msgstr "根據客戶需求的客製化攜帶型電腦。"
-
-#. module: product
-#: model:product.product,name:product.product_delivery_02
-#: model:product.template,name:product.product_delivery_02_product_template
-msgid "Datacard"
-msgstr "資料卡"
+#: model:ir.model.fields,field_description:product.field_product_product_partner_ref
+msgid "Customer Ref"
+msgstr "客戶參考"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_price_history_datetime
@@ -228,13 +564,13 @@ msgstr "日期"
 #. module: product
 #: model:product.uom,name:product.product_uom_day
 msgid "Day(s)"
-msgstr "日"
+msgstr "天"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_uom_id
 #: model:ir.model.fields,help:product.field_product_template_uom_id
 msgid "Default Unit of Measure used for all stock operation."
-msgstr "所有庫存操作之預設量度單位"
+msgstr "所有庫存操作的預設計量單位"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_uom_po_id
@@ -242,12 +578,12 @@ msgstr "所有庫存操作之預設量度單位"
 msgid ""
 "Default Unit of Measure used for purchase orders. It must be in the same "
 "category than the default unit of measure."
-msgstr "採購單預設量度單位。須與預設單位相同分類。"
+msgstr "採購單預設使用的計量單位。必須與預設計量單位位於同一分類。"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_delay
 msgid "Delivery Lead Time"
-msgstr "出貨準備時間"
+msgstr "收貨提前期"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_description
@@ -258,7 +594,13 @@ msgstr "說明"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 msgid "Description for Quotations"
-msgstr "報價說明"
+msgstr "報價單說明"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_attribute_sequence
+#: model:ir.model.fields,help:product.field_product_attribute_value_sequence
+msgid "Determine the display order"
+msgstr "確認當前訂單"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_display_name
@@ -286,36 +628,99 @@ msgid "Dozen(s)"
 msgstr "打"
 
 #. module: product
+#: model:ir.actions.act_window,help:product.product_pricelist_action2
+msgid ""
+"Each rule include a set of applicability criteria (date range,\n"
+"                product category...) and a computation that easily helps to "
+"achieve\n"
+"                any kind of pricing."
+msgstr ""
+"每個規則包括一套適用性標準(日期範圍。\n"
+"產品分類…)和計算,有助於實現\n"
+"任何類型的定價。"
+
+#. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_date_end
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_date_end
 msgid "End Date"
 msgstr "結束日期"
 
 #. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_date_end
+msgid "End date for this vendor price"
+msgstr "結束日期為這個供應商的價格"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_date_end
+msgid "Ending valid for the pricelist item validation"
+msgstr "沒有找到有效的價格表！"
+
+#. module: product
 #: code:addons/product/models/product.py:43
 #, python-format
 msgid "Error ! You cannot create recursive categories."
-msgstr "錯誤！無法建立遞迴性分類。"
+msgstr "錯誤！你不能創建迴圈的分類。"
 
 #. module: product
-#: code:addons/product/models/product_pricelist.py:419
+#: code:addons/product/models/product_attribute.py:101
+#, python-format
+msgid "Error ! You cannot use this attribute with the following value."
+msgstr "錯誤!你不能使用賦予此屬性下面的值。"
+
+#. module: product
+#: code:addons/product/models/product.py:302
+#, python-format
+msgid ""
+"Error! It is not allowed to choose more than one value for a given attribute."
+msgstr "錯誤!對於給定的屬性，不允許選擇多個值。"
+
+#. module: product
+#: code:addons/product/models/product_pricelist.py:421
 #, python-format
 msgid "Error! The minimum margin should be lower than the maximum margin."
-msgstr "錯誤！最少差額應少於對大差額。"
+msgstr "錯誤！最小利潤要小於最大利潤"
 
 #. module: product
-#: code:addons/product/models/product_pricelist.py:413
+#: code:addons/product/models/product_pricelist.py:415
 #, python-format
 msgid ""
 "Error! You cannot assign the Main Pricelist as Other Pricelist in PriceList "
 "Item!"
-msgstr "錯誤！在價目表的項目中，不能指定主要價目表為其他價目表！"
+msgstr "錯誤！你不能在價格表項目裡指派這個主價格表作為其它價格表"
+
+#. module: product
+#: code:addons/product/models/product_template.py:252
+#, python-format
+msgid ""
+"Error: The default Unit of Measure and the purchase Unit of Measure must be "
+"in the same category."
+msgstr "錯誤：預設的計量單位和採購計量單位必須是相同的分類"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item_name
 #: model:ir.model.fields,help:product.field_product_pricelist_item_price
 msgid "Explicit rule name for this pricelist line."
-msgstr "此價目表明細的明確規則名稱"
+msgstr "價格表明細的詳細規則名稱"
+
+#. module: product
+#: selection:product.pricelist.item,compute_price:0
+msgid "Fix Price"
+msgstr "固定價格"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_item_fixed_price
+msgid "Fixed Price"
+msgstr "固定價格"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_min_quantity
+msgid ""
+"For the rule to apply, bought/sold quantity must be greater than or equal to "
+"the minimum quantity specified in this field.\n"
+"Expressed in the default unit of measure of the product."
+msgstr ""
+"為了應用這個規則，購買/銷售數量必須大於或等於這個欄位內指定的最小數量。\n"
+"用產品的預設計量單位表示。"
 
 #. module: product
 #: selection:product.pricelist.item,compute_price:0
@@ -328,26 +733,56 @@ msgid "General Information"
 msgstr "一般資訊"
 
 #. module: product
+#: model:ir.model.fields,help:product.field_product_product_packaging_ids
+#: model:ir.model.fields,help:product.field_product_template_packaging_ids
+msgid ""
+"Gives the different ways to package the same product. This has no impact on "
+"the picking order and is mainly used if you use the EDI module."
+msgstr "指定同一產品的多種包裝方式。此處與分揀單並不衝突且主要用於 EDI 模組。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_sequence
+msgid ""
+"Gives the order in which the pricelist items will be checked. The evaluation "
+"gives highest priority to lowest sequence and stops as soon as a matching "
+"item is found."
+msgstr "價格表檢測的順序。越小的序號將有越高的優先順序進行條件匹配。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_sequence
+#: model:ir.model.fields,help:product.field_product_template_sequence
+msgid "Gives the sequence order when displaying a product list"
+msgstr "顯示產品清單時提供順序號"
+
+#. module: product
 #: selection:product.pricelist.item,applied_on:0
 msgid "Global"
 msgstr "全域"
 
 #. module: product
-#: model:product.product,name:product.product_product_24
-#: model:product.template,name:product.product_product_24_product_template
-msgid "Graphics Card"
-msgstr "顯示卡"
-
-#. module: product
-#: model:product.product,name:product.product_product_17
-#: model:product.template,name:product.product_product_17_product_template
-msgid "HDD SH-1"
-msgstr "HDD SH-1"
+#: model:ir.ui.view,arch_db:product.product_supplierinfo_search_view
+msgid "Group By"
+msgstr "分組"
 
 #. module: product
 #: model:product.uom,name:product.product_uom_hour
 msgid "Hour(s)"
 msgstr "小時"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_uom_factor_inv
+msgid ""
+"How many times this Unit of Measure is bigger than the reference Unit of "
+"Measure in this category: 1 * (this unit) = ratio * (reference unit)"
+msgstr "本計量單位大於參考計量單位 的倍數：1*（本單位）=比率*（參考單位）"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_uom_factor
+msgid ""
+"How much bigger or smaller this unit is compared to the reference Unit of "
+"Measure for this category: 1 * (reference unit) = ratio * (this unit)"
+msgstr ""
+"本計量單位和參考計量單位相比，大或者小的倍數：1*（參考單位=比率*（本單位）"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_id
@@ -367,20 +802,20 @@ msgstr "小時"
 #: model:ir.model.fields,field_description:product.field_product_uom_id
 #: model:ir.model.fields,field_description:product.field_report_product_report_pricelist_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_active
 msgid ""
 "If unchecked, it will allow you to hide the pricelist without removing it."
-msgstr "如未勾選，將允許隱藏價目表而非移除之。"
+msgstr "如果不選中，允許你隱藏價格表而無需刪除"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_active
 #: model:ir.model.fields,help:product.field_product_template_active
 msgid ""
 "If unchecked, it will allow you to hide the product without removing it."
-msgstr "如未勾選，將允許將產品隱藏而不須移除。"
+msgstr "如果不選中，允許你隱藏這個產品而無需刪除。"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_template_image
@@ -388,34 +823,53 @@ msgid "Image"
 msgstr "圖片"
 
 #. module: product
-#: model:product.category,name:product.product_category_2
-msgid "Internal"
-msgstr "內部"
+#: model:ir.model.fields,help:product.field_product_product_image
+msgid ""
+"Image of the product variant (Big-sized image of product template if false). "
+"It is automatically resized as a 1024x1024px image, with aspect ratio "
+"preserved."
+msgstr ""
+"產品圖片規格(如果為False,採用大尺寸圖片範本）. 它保持圖片的寬高比,並自動調整"
+"圖片大小為1024 x 1024px."
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_image_medium
+msgid ""
+"Image of the product variant (Medium-sized image of product template if "
+"false)."
+msgstr "產品圖片規格(如果為Flase,採用普通尺寸圖片範本)"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_image_small
+msgid ""
+"Image of the product variant (Small-sized image of product template if "
+"false)."
+msgstr "產品圖片規格(如果為Flase,採用小尺寸圖片範本)"
+
+#. module: product
+#: model:ir.model,name:product.model_product_supplierinfo
+msgid "Information about a product vendor"
+msgstr "產品供應商資訊"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_categ_id
+#: model:ir.model.fields,field_description:product.field_product_template_categ_id
+#: model:ir.ui.view,arch_db:product.product_template_form_view
+msgid "Internal Category"
+msgstr "內部分類"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_code
 #: model:ir.model.fields,field_description:product.field_product_product_default_code
 #: model:ir.model.fields,field_description:product.field_product_template_default_code
 msgid "Internal Reference"
-msgstr "內部參照"
+msgstr "內部編號"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_barcode
 #: model:ir.model.fields,help:product.field_product_template_barcode
 msgid "International Article Number used for product identification."
-msgstr "用於產品識別的國際商品號碼(International Article Number)"
-
-#. module: product
-#: model:product.product,name:product.product_product_27
-#: model:product.template,name:product.product_product_27_product_template
-msgid "Laptop Customized"
-msgstr "客製化的攜帶型電腦"
-
-#. module: product
-#: model:product.product,name:product.product_product_25
-#: model:product.template,name:product.product_product_25_product_template
-msgid "Laptop E5023"
-msgstr "攜帶型電腦 ES023"
+msgstr "國際物品編碼用於產品標識"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute___last_update
@@ -435,7 +889,7 @@ msgstr "攜帶型電腦 ES023"
 #: model:ir.model.fields,field_description:product.field_product_uom_categ___last_update
 #: model:ir.model.fields,field_description:product.field_report_product_report_pricelist___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_line_write_uid
@@ -454,7 +908,7 @@ msgstr "最後修改:"
 #: model:ir.model.fields,field_description:product.field_product_uom_categ_write_uid
 #: model:ir.model.fields,field_description:product.field_product_uom_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_line_write_date
@@ -473,7 +927,15 @@ msgstr "最後更新："
 #: model:ir.model.fields,field_description:product.field_product_uom_categ_write_date
 #: model:ir.model.fields,field_description:product.field_product_uom_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_delay
+msgid ""
+"Lead time in days between the confirmation of the purchase order and the "
+"receipt of the products in your warehouse. Used by the scheduler for "
+"automatic computation of the purchase order planning."
+msgstr "提前期是訂單確認到倉庫收到貨物天數,使用於採購單自動計算規劃調度"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category_parent_left
@@ -483,7 +945,7 @@ msgstr "左父項"
 #. module: product
 #: model:product.uom.categ,name:product.uom_categ_length
 msgid "Length / Distance"
-msgstr "長度／距離"
+msgstr "長度或距離"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_attribute_line_ids
@@ -493,7 +955,7 @@ msgstr "明細"
 #. module: product
 #: model:product.uom,name:product.product_uom_litre
 msgid "Liter(s)"
-msgstr "公升"
+msgstr "升"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_packaging_ids
@@ -504,61 +966,73 @@ msgstr "物流單位"
 #. module: product
 #: model:res.groups,name:product.group_uom
 msgid "Manage Multiple Units of Measure"
-msgstr "管理多種量度單位"
+msgstr "管理多個計量單位"
+
+#. module: product
+#: model:res.groups,name:product.group_pricelist_item
+msgid "Manage Pricelist Items"
+msgstr "管理價格表條目"
 
 #. module: product
 #: model:res.groups,name:product.group_stock_packaging
 msgid "Manage Product Packaging"
-msgstr "管理產品包裝"
+msgstr "管理產品打包"
+
+#. module: product
+#: model:res.groups,name:product.group_product_variant
+msgid "Manage Product Variants"
+msgstr "管理產品屬性"
 
 #. module: product
 #: model:res.groups,name:product.group_mrp_properties
 msgid "Manage Properties of Product"
-msgstr "管理產品屬性"
+msgstr "產品屬性管理"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 msgid "Max. Margin"
-msgstr "最大邊際利潤"
+msgstr "最大利潤"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_item_price_max_margin
+msgid "Max. Price Margin"
+msgstr "最大的價格上浮金額"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_image_medium
 #: model:ir.model.fields,field_description:product.field_product_template_image_medium
 msgid "Medium-sized image"
-msgstr "中尺寸影像"
+msgstr "中等尺寸圖片"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_template_image_medium
+msgid ""
+"Medium-sized image of the product. It is automatically resized as a "
+"128x128px image, with aspect ratio preserved, only when the image exceeds "
+"one of those sizes. Use this field in form views or some kanban views."
+msgstr ""
+"產品的中等尺寸的圖片。保持縱橫比例，圖像超出尺寸後，自動縮放為128x128px ，這"
+"欄位通常用於看板視圖。"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 msgid "Min. Margin"
-msgstr "最小邊際利潤"
+msgstr "最小上浮金額"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_item_price_min_margin
+msgid "Min. Price Margin"
+msgstr "最小上浮金額"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_min_quantity
 msgid "Min. Quantity"
-msgstr "最小量"
+msgstr "最小數量"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_min_qty
 msgid "Minimal Quantity"
-msgstr "最小量"
-
-#. module: product
-#: model:product.product,name:product.product_product_20
-#: model:product.template,name:product.product_product_20_product_template
-msgid "Motherboard I9P57"
-msgstr "主機板 I9P57"
-
-#. module: product
-#: model:product.product,name:product.product_product_10
-#: model:product.template,name:product.product_product_10_product_template
-msgid "Mouse, Optical"
-msgstr "光學滑鼠"
-
-#. module: product
-#: model:product.product,name:product.product_product_12
-#: model:product.template,name:product.product_product_12_product_template
-msgid "Mouse, Wireless"
-msgstr "無線滑鼠"
+msgstr "最少訂貨量"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_name
@@ -573,12 +1047,17 @@ msgstr "名稱"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 msgid "New Price ="
-msgstr "新價目 ="
+msgstr "新價格 ="
+
+#. module: product
+#: selection:base.config.settings,group_product_variant:0
+msgid "No variants on products"
+msgstr "該產品沒有屬性"
 
 #. module: product
 #: selection:product.category,type:0
 msgid "Normal"
-msgstr "正常"
+msgstr "常規"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_form_view
@@ -588,19 +1067,29 @@ msgstr "備註"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 msgid "Other Information"
-msgstr "其他資訊"
+msgstr "其它資訊"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_base_pricelist_id
 #: selection:product.pricelist.item,base:0
 msgid "Other Pricelist"
-msgstr "其他價目表"
+msgstr "其它價格表"
 
 #. module: product
 #: model:ir.model,name:product.model_product_packaging
 #: model:ir.ui.view,arch_db:product.product_packaging_form_view
 #: model:ir.ui.view,arch_db:product.product_packaging_tree_view
 msgid "Packaging"
+msgstr "包裝"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_packaging_name
+msgid "Packaging Type"
+msgstr "包裝類型"
+
+#. module: product
+#: model:ir.actions.act_window,name:product.action_packaging_view
+msgid "Packagings"
 msgstr "包裝"
 
 #. module: product
@@ -611,7 +1100,17 @@ msgstr "上級分類"
 #. module: product
 #: model:ir.model,name:product.model_res_partner
 msgid "Partner"
-msgstr "伙伴"
+msgstr "業務夥伴"
+
+#. module: product
+#: selection:product.pricelist.item,compute_price:0
+msgid "Percentage (discount)"
+msgstr "百分比（折扣）"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_item_percent_price
+msgid "Percentage Price"
+msgstr "價格折扣"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_price
@@ -628,12 +1127,26 @@ msgstr "價格"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 msgid "Price Computation"
-msgstr "價目運算"
+msgstr "價格計算"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_price_discount
 msgid "Price Discount"
 msgstr "價格折扣"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_attribute_price_price_extra
+msgid "Price Extra"
+msgstr " 附加價格"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_attribute_value_price_extra
+msgid ""
+"Price Extra: Extra price for the variant with this attribute value on sale "
+"price. eg. 200 price extra, 1000 + 200 = 1200."
+msgstr ""
+"價格附加:銷售價格隨著附加價格進行變化,如:原銷售價格是1000,額外收費是200,當前"
+"售價是1200 = 1000 + 200."
 
 #. module: product
 #: model:ir.actions.act_window,name:product.action_product_price_list
@@ -642,28 +1155,28 @@ msgstr "價格折扣"
 #: model:ir.ui.view,arch_db:product.report_pricelist
 #: model:ir.ui.view,arch_db:product.view_product_price_list
 msgid "Price List"
-msgstr "價目表"
+msgstr "價格表"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_price_round
 msgid "Price Rounding"
-msgstr "價格四捨五入"
+msgstr "價格舍入"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_price_surcharge
 msgid "Price Surcharge"
-msgstr "附加價格"
+msgstr "價格額外費用"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_kanban_view
 #: model:ir.ui.view,arch_db:product.product_template_kanban_view
 msgid "Price:"
-msgstr "價格："
+msgstr "價格:"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_price_list_price_list
 msgid "PriceList"
-msgstr "價目表"
+msgstr "價格表"
 
 #. module: product
 #: model:ir.actions.report.xml,name:product.action_report_pricelist
@@ -673,34 +1186,66 @@ msgstr "價目表"
 #: model:ir.model.fields,field_description:product.field_product_template_pricelist_id
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 msgid "Pricelist"
-msgstr "價目表"
+msgstr "價格表"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_applied_on
+msgid "Pricelist Item applicable on selected option"
+msgstr "價格表項應用於選定的選項"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_item_ids
+#: model:ir.model.fields,field_description:product.field_product_product_item_ids
+#: model:ir.model.fields,field_description:product.field_product_template_item_ids
+#: model:ir.ui.view,arch_db:product.product_normal_form_view
+#: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
+#: model:ir.ui.view,arch_db:product.product_pricelist_item_tree_view
+#: model:ir.ui.view,arch_db:product.product_pricelist_view
+#: model:ir.ui.view,arch_db:product.product_template_form_view
+msgid "Pricelist Items"
+msgstr "價格表項目"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_name
 msgid "Pricelist Name"
-msgstr "價目表名稱"
+msgstr "價格表名稱"
 
 #. module: product
 #: model:ir.model,name:product.model_product_pricelist_item
 msgid "Pricelist item"
-msgstr "價目表項"
+msgstr "價格表明細"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_pricelist_item_ids
+msgid "Pricelist item ids"
+msgstr "價格表明細"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_pricelist_action2
 #: model:ir.model.fields,field_description:product.field_res_country_group_pricelist_ids
 msgid "Pricelists"
-msgstr "價目表"
+msgstr "價格表"
+
+#. module: product
+#: model:res.groups,name:product.group_product_pricelist
+msgid "Pricelists On Product"
+msgstr "產品的價格表"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.view_partner_property_form
+msgid "Pricelists are managed on"
+msgstr "價格表被管理在"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_template_form_view
+#: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
+msgid "Pricing"
+msgstr "價格"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.view_product_price_list
 msgid "Print"
 msgstr "列印"
-
-#. module: product
-#: model:product.product,name:product.product_product_22
-#: model:product.template,name:product.product_product_22_product_template
-msgid "Processor Core i5 2.70 Ghz"
-msgstr "處理器 Core i5 2.70 Ghz"
 
 #. module: product
 #: model:ir.model,name:product.model_product_product
@@ -720,6 +1265,28 @@ msgstr "處理器 Core i5 2.70 Ghz"
 #: model:res.request.link,name:product.req_link_product
 msgid "Product"
 msgstr "產品"
+
+#. module: product
+#: model:ir.model,name:product.model_product_attribute
+#: model:ir.ui.view,arch_db:product.product_attribute_view_form
+msgid "Product Attribute"
+msgstr "產品屬性"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_attribute_price_value_id
+msgid "Product Attribute Value"
+msgstr "產品屬性值"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_attribute_line_form
+msgid "Product Attribute and Values"
+msgstr "產品屬性和值"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_attribute_line_ids
+#: model:ir.model.fields,field_description:product.field_product_template_attribute_line_ids
+msgid "Product Attributes"
+msgstr "產品屬性"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_category_action_form
@@ -760,7 +1327,12 @@ msgstr "產品類型"
 #. module: product
 #: model:ir.model,name:product.model_product_uom
 msgid "Product Unit of Measure"
-msgstr "產品量度單位"
+msgstr "產品計量單位"
+
+#. module: product
+#: model:ir.model,name:product.model_product_uom_categ
+msgid "Product UoM Categories"
+msgstr "產品計量單位分類"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_product_id
@@ -768,7 +1340,7 @@ msgstr "產品量度單位"
 #: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 #: selection:product.pricelist.item,applied_on:0
 msgid "Product Variant"
-msgstr "產品系列"
+msgstr "產品屬性"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_normal_action
@@ -777,7 +1349,7 @@ msgstr "產品系列"
 #: model:ir.model.fields,field_description:product.field_base_config_settings_group_product_variant
 #: model:ir.ui.view,arch_db:product.product_product_tree_view
 msgid "Product Variants"
-msgstr "系列產品"
+msgstr "產品屬性"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_template_action
@@ -808,10 +1380,22 @@ msgstr "產品價格表"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_pricelist_view_search
 msgid "Products Price Search"
-msgstr "產品價格搜尋"
+msgstr "產品價格搜索"
 
 #. module: product
-#: code:addons/product/models/product.py:466
+#: selection:base.config.settings,group_product_variant:0
+msgid ""
+"Products can have several attributes, defining variants (Example: size, "
+"color,...)"
+msgstr "每個產品可以有多個屬性，定義屬性（例如：尺寸，顏色，.......）"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_template_search_view
+msgid "Products your store in the inventory"
+msgstr "你的商店庫存的產品"
+
+#. module: product
+#: code:addons/product/models/product.py:465
 #, python-format
 msgid "Products: "
 msgstr "產品： "
@@ -823,6 +1407,11 @@ msgid "Public Price"
 msgstr "公開價格"
 
 #. module: product
+#: model:product.pricelist,name:product.list0
+msgid "Public Pricelist"
+msgstr "公共價格表"
+
+#. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_description_purchase
 #: model:ir.model.fields,field_description:product.field_product_template_description_purchase
 msgid "Purchase Description"
@@ -832,7 +1421,12 @@ msgstr "採購說明"
 #: model:ir.model.fields,field_description:product.field_product_product_uom_po_id
 #: model:ir.model.fields,field_description:product.field_product_template_uom_po_id
 msgid "Purchase Unit of Measure"
-msgstr "採購量度單位"
+msgstr "採購計量單位"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_packaging_qty
+msgid "Quantity per Package"
+msgstr "每個包裝包含的數量"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_price_list_qty1
@@ -857,13 +1451,7 @@ msgstr "數量-4"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_price_list_qty5
 msgid "Quantity-5"
-msgstr "數目-5"
-
-#. module: product
-#: model:product.product,name:product.product_product_13
-#: model:product.template,name:product.product_product_13_product_template
-msgid "RAM SR5"
-msgstr "記憶體 SR5"
+msgstr "數量-5"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_uom_factor
@@ -873,7 +1461,7 @@ msgstr "比率"
 #. module: product
 #: selection:product.uom,uom_type:0
 msgid "Reference Unit of Measure for this category"
-msgstr "此類別之參照用量度單位"
+msgstr "此分類的參考計量單位"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category_parent_right
@@ -883,12 +1471,12 @@ msgstr "右父項"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 msgid "Rounding Method"
-msgstr "捨入方法"
+msgstr "舍入方法"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_uom_rounding
 msgid "Rounding Precision"
-msgstr "捨入精度"
+msgstr "舍入精度"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_description_sale
@@ -901,17 +1489,17 @@ msgstr "銷售說明"
 #: model:ir.model.fields,field_description:product.field_product_product_lst_price
 #: model:ir.model.fields,field_description:product.field_product_template_list_price
 msgid "Sale Price"
-msgstr "售價"
+msgstr "銷售價格"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_res_partner_property_product_pricelist
 msgid "Sale Pricelist"
-msgstr "銷售價目表"
+msgstr "銷售價格表"
 
 #. module: product
 #: model:product.category,name:product.product_category_1
 msgid "Saleable"
-msgstr "可銷售的"
+msgstr "可銷售"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_form_view
@@ -921,13 +1509,13 @@ msgstr "銷售"
 #. module: product
 #: model:res.groups,name:product.group_sale_pricelist
 msgid "Sales Pricelists"
-msgstr "銷售價目表"
+msgstr "銷售價格表"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_categ_id
 #: model:ir.model.fields,help:product.field_product_template_categ_id
 msgid "Select category for the current product"
-msgstr "為當前商品選取分類"
+msgstr "為當前產品選擇一個分類"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_sequence
@@ -942,37 +1530,111 @@ msgid "Sequence"
 msgstr "序列"
 
 #. module: product
+#: code:addons/product/models/product_template.py:43
+#: selection:product.template,type:0
+#, python-format
+msgid "Service"
+msgstr "服務"
+
+#. module: product
 #: model:ir.ui.view,arch_db:product.product_template_search_view
-#: model:product.category,name:product.product_category_3
 msgid "Services"
 msgstr "服務"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_price_round
+msgid ""
+"Sets the price so that it is a multiple of this value.\n"
+"Rounding is applied after the discount and before the surcharge.\n"
+"To have prices that end in 9.99, set rounding 10, surcharge -0.01"
+msgstr ""
+"設定價格,因為它是一個多元價格, 四捨五入後打折或加入附加費. \n"
+"以價格9.99為例四捨五入為10附加費為-0.001."
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_base_config_settings_company_share_product
+msgid "Share product to all companies"
+msgstr "產品分享給所有公司"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_base_config_settings_company_share_product
+msgid ""
+"Share your product to all companies defined in your instance.\n"
+" * Checked : Product are visible for every company, even if a company is "
+"defined on the partner.\n"
+" * Unchecked : Each company can see only its product (product where company "
+"is defined). Product not related to a company are visible for all companies."
+msgstr ""
+"在你的實例中定義的產品分享給所有公司。\n"
+" * 勾選：產品對所有公司可見，即使是業務夥伴定義的公司。\n"
+" * 未勾選：每個公司只能看到它自己的產品（公司定義的產品）。沒有與公司關聯的產"
+"品對所有公司可見。"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_image_small
 #: model:ir.model.fields,field_description:product.field_product_template_image_small
 msgid "Small-sized image"
-msgstr "小尺寸影像"
+msgstr "小尺寸圖片"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_template_image_small
+msgid ""
+"Small-sized image of the product. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is "
+"required."
+msgstr ""
+"產品的小尺寸圖片。保持縱橫比，自動縮放為64x64px。用於任何需要小圖片的場合"
 
 #. module: product
 #: selection:product.uom,uom_type:0
 msgid "Smaller than the reference Unit of Measure"
-msgstr "小於參照用之量度單位"
+msgstr "小於參考計量單位"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_categ_id
+msgid ""
+"Specify a product category if this rule only applies to products belonging "
+"to this category or its children categories. Keep empty otherwise."
+msgstr ""
+"指定一個產品分類 ，規則只被應用在與這個分類以及它的子類一致的產品上。其它情況"
+"留空"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_product_id
+msgid ""
+"Specify a product if this rule only applies to one product. Keep empty "
+"otherwise."
+msgstr "如果規則只適用一個產品，就指定一個產品，否則留空。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_product_tmpl_id
+msgid ""
+"Specify a template if this rule only applies to one product template. Keep "
+"empty otherwise."
+msgstr "如果這條規則只能用於一個產品範本，則指定一個範本。否則留空。"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_sale_ok
 #: model:ir.model.fields,help:product.field_product_template_sale_ok
 msgid "Specify if the product can be selected in a sales order line."
-msgstr "若該產品可以在銷售訂單明細中被選擇者，請指明。"
+msgstr "如果產品為可銷售的產品，則勾選此選項"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_price_surcharge
+msgid ""
+"Specify the fixed amount to add or substract(if negative) to the amount "
+"calculated with the discount."
+msgstr "指定固定金額來添加或減去(如果負)，用作折扣來計算金額。"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item_price_max_margin
 msgid "Specify the maximum amount of margin over the base price."
-msgstr "請指定在基礎價格之上的最大差額。"
+msgstr "指定基於基準價格的最大利潤"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item_price_min_margin
 msgid "Specify the minimum amount of margin over the base price."
-msgstr "請指定在基本價格之上的最少差額。"
+msgstr "指定基於基準價格的最大利潤"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_date_start
@@ -981,41 +1643,190 @@ msgid "Start Date"
 msgstr "開始日期"
 
 #. module: product
-#: model:product.product,name:product.product_delivery_01
-#: model:product.template,name:product.product_delivery_01_product_template
-msgid "Switch, 24 ports"
-msgstr "Switch, 24 ports"
+#: model:ir.model.fields,help:product.field_product_supplierinfo_date_start
+msgid "Start date for this vendor price"
+msgstr "這個供應商價格的開始日期"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_pricelist_item_date_start
+msgid "Starting date for the pricelist item validation"
+msgstr "起始日期價格表項驗證"
+
+#. module: product
+#: selection:product.template,type:0
+msgid "Stockable Product"
+msgstr "庫存商品"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_pricelist_id
+#: model:ir.model.fields,help:product.field_product_template_pricelist_id
+msgid ""
+"Technical field. Used for searching on pricelists, not stored in database."
+msgstr "技術欄位，未存儲在資料庫中，用來查找價格表。"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
+msgid ""
+"The computed price is expressed in the default Unit of Measure of the "
+"product."
+msgstr "計算的價格基於產品預設的計量單位。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_uom_rounding
+msgid ""
+"The computed quantity will be a multiple of this value. Use 1.0 for a Unit "
+"of Measure that cannot be further split, such as a piece."
+msgstr ""
+"計算的數量將是這個值的倍數。  不能進一步分割的單位，比如 1 片，使用1.0 。"
 
 #. module: product
 #: code:addons/product/models/product_uom.py:43 sql_constraint:product.uom:0
 #, python-format
 msgid "The conversion ratio for a unit of measure cannot be 0!"
-msgstr "量度單位轉換比例不能為0！"
+msgstr "計量單位的轉換比率不能為 0！"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_packaging_sequence
+msgid "The first in the sequence is the default one."
+msgstr "序列中的第一個是默認的。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_min_qty
+msgid ""
+"The minimal quantity to purchase from this vendor, expressed in the vendor "
+"Product Unit of Measure if not any, in the default unit of measure of the "
+"product otherwise."
+msgstr ""
+"供應商的最小採購數量，如果非空，就以供應商產品計量單位表示，否則按預設的計量"
+"單位。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_category_product_count
+msgid ""
+"The number of products under this category (Does not consider the children "
+"categories)"
+msgstr "在這個分類下的產品數目（不要考慮子分類）"
+
+#. module: product
+#: code:addons/product/models/product_attribute.py:74
+#, python-format
+msgid ""
+"The operation cannot be completed:\n"
+"You are trying to delete an attribute value with a reference on a product "
+"variant."
+msgstr ""
+"這個操作不能被完成：\n"
+"你不能刪除在一個產品屬性上已有參考的屬性值。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_price
+msgid "The price to purchase a product"
+msgstr "購買一個產品的價格"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_normal_action
+#: model:ir.actions.act_window,help:product.product_normal_action_sell
+#: model:ir.actions.act_window,help:product.product_variant_action
+msgid ""
+"The product form contains information to simplify the sale\n"
+"                process: price, notes in the quotation, accounting data,\n"
+"                procurement methods, etc."
+msgstr ""
+"產品表單包含資訊簡化銷售\n"
+"在報價過程:價格,報價單備註,會計資料,\n"
+"需求方式,等等。"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_template_action
+msgid ""
+"The product form contains information to simplify the sale process: price, "
+"notes in the quotation, accounting data, procurement methods, etc."
+msgstr "產品表單包含資訊簡化銷售過程:價格,報價指出,會計資料、採購方法,等等。"
+
+#. module: product
+#: code:addons/product/models/product_uom.py:44 sql_constraint:product.uom:0
+#, python-format
+msgid "The rounding precision must be greater than 0!"
+msgstr "圓整精度必須大於0！"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_lst_price
+msgid ""
+"The sale price is managed from the product template. Click on the 'Variant "
+"Prices' button to set the extra attribute prices."
+msgstr "銷售價格從產品範本來管理。點擊“屬性價格”來設置額外的屬性價格。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_packaging_qty
+msgid "The total number of products you can have per pallet or box."
+msgstr "每個託盤或箱子可以放置的產品總數量"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_volume
 #: model:ir.model.fields,help:product.field_product_template_volume
 msgid "The volume in m3."
-msgstr "體積（立方公尺）"
+msgstr "體積單位m³"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_weight
+#: model:ir.model.fields,help:product.field_product_template_weight
+msgid "The weight of the contents in Kg, not including any packaging, etc."
+msgstr "內容在重量,的公斤，不包括任何包裝,等等。"
+
+#. module: product
+#: sql_constraint:product.attribute.value:0
+msgid "This attribute value already exists !"
+msgstr "這個屬性值已經存在！"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo_product_uom
 msgid "This comes from the product form."
-msgstr "來自產品表單。"
+msgstr "此處來自該產品表單。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_image_variant
+msgid ""
+"This field holds the image used as image for the product variant, limited to "
+"1024x1024px."
+msgstr "該欄位保存產品的圖片，限制圖片大小須小於 1024x1024px."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_template_image
 msgid ""
 "This field holds the image used as image for the product, limited to "
 "1024x1024px."
-msgstr "此欄位保存產品的影像，限制在 1024x1024px。"
+msgstr "該欄位保存產品的圖片，限制到  1024x1024px."
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_product_price_extra
+msgid "This is the sum of the extra price of all attributes"
+msgstr "這是所有屬性額外價格的總和"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_template_form_view
+msgid "This note will be displayed on the quotations."
+msgstr "此備註將顯示在報價單上。"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_res_partner_property_product_pricelist
 msgid ""
 "This pricelist will be used, instead of the default one, for sales to the "
 "current partner"
-msgstr "會用此價目表取代預設者，來銷售給目前伙伴。"
+msgstr "當前價格表將會被使用,取代預設值,用之出售給當前夥伴."
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_product_code
+msgid ""
+"This vendor's product code will be used when printing a request for "
+"quotation. Keep empty to use the internal one."
+msgstr "這是供應商的產品代碼，將用於列印詢價單。如果使用內部的代碼請保持為空。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_product_name
+msgid ""
+"This vendor's product name will be used when printing a request for "
+"quotation. Keep empty to use the internal one."
+msgstr "此供應商產品名稱用於列印詢價單。為空則使用內部名稱。"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_uom_uom_type
@@ -1023,38 +1834,62 @@ msgid "Type"
 msgstr "類型"
 
 #. module: product
+#: model:ir.model.fields,help:product.field_product_uom_active
+msgid ""
+"Uncheck the active field to disable a unit of measure without deleting it."
+msgstr "對於啟動的欄位可以通過取消選擇來使該計算單位不可用，沒有必要刪除它。"
+
+#. module: product
 #: model:product.uom.categ,name:product.product_uom_categ_unit
 msgid "Unit"
-msgstr "單位"
+msgstr "件"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_uom_id
 #: model:ir.model.fields,field_description:product.field_product_template_uom_id
 #: model:ir.model.fields,field_description:product.field_product_uom_name
 msgid "Unit of Measure"
-msgstr "量度單位"
+msgstr "計量單位"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_uom_categ_form_action
 msgid "Unit of Measure Categories"
-msgstr "度量單位類別"
+msgstr "計量單位分類"
 
 #. module: product
 #: model:product.uom,name:product.product_uom_unit
 msgid "Unit(s)"
-msgstr "單位"
+msgstr "件"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_uom_form_action
 #: model:ir.ui.view,arch_db:product.product_uom_form_view
 #: model:ir.ui.view,arch_db:product.product_uom_tree_view
 msgid "Units of Measure"
-msgstr "量度單位"
+msgstr "計量單位"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_uom_categ_form_view
 msgid "Units of Measure categories"
-msgstr "量度單位分類"
+msgstr "計量單位分類"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_uom_categ_form_action
+msgid ""
+"Units of measure belonging to the same category can be\n"
+"            converted between each others. For example, in the category\n"
+"            <i>'Time'</i>, you will have the following units of measure:\n"
+"            Hours, Days."
+msgstr ""
+"屬於相同類別的計量單位能互相轉換。\n"
+"                例如，在<i>'時間'</i>類別中，\n"
+"                你有下列單位: \n"
+"                小時、天。"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
+msgid "Validity"
+msgstr "有效期"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_value_name
@@ -1066,19 +1901,90 @@ msgstr "值"
 #: model:ir.ui.view,arch_db:product.product_attribute_line_form
 #: model:ir.ui.view,arch_db:product.product_attribute_view_form
 msgid "Values"
-msgstr "值"
+msgstr "屬性值"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_image_variant
+msgid "Variant Image"
+msgstr "屬性圖片"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
+msgid "Variant Information"
+msgstr "屬性資訊"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_price_extra
+msgid "Variant Price Extra"
+msgstr "額外屬性價格"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_template_form_view
+msgid "Variant Prices"
+msgstr "屬性價格"
+
+#. module: product
+#: model:ir.actions.act_window,name:product.product_attribute_value_action
+#: model:ir.ui.view,arch_db:product.attribute_tree_view
+#: model:ir.ui.view,arch_db:product.variants_tree_view
+msgid "Variant Values"
+msgstr "屬性值"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_value_product_ids
 #: model:ir.ui.view,arch_db:product.product_template_kanban_view
 #: model:ir.ui.view,arch_db:product.product_template_only_form_view
 msgid "Variants"
-msgstr "變動"
+msgstr "屬性"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_supplierinfo_name
+#: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
+#: model:ir.ui.view,arch_db:product.product_supplierinfo_search_view
+msgid "Vendor"
+msgstr "供應商"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
+#: model:ir.ui.view,arch_db:product.product_supplierinfo_tree_view
+msgid "Vendor Information"
+msgstr "供應商資訊"
+
+#. module: product
+#: model:ir.actions.act_window,name:product.product_supplierinfo_type_action
+msgid "Vendor Pricelists"
+msgstr "供應商價格表"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_supplierinfo_product_code
+msgid "Vendor Product Code"
+msgstr "供應商產品編碼"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_supplierinfo_product_name
+msgid "Vendor Product Name"
+msgstr "供應商產品名稱"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_supplierinfo_product_uom
+msgid "Vendor Unit of Measure"
+msgstr "供應商計量單位"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_name
+msgid "Vendor of this product"
+msgstr "該產品的供應商"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_product_seller_ids
+#: model:ir.model.fields,field_description:product.field_product_template_seller_ids
+msgid "Vendors"
+msgstr "供應商"
 
 #. module: product
 #: selection:product.category,type:0
 msgid "View"
-msgstr "檢視"
+msgstr "視圖"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_volume
@@ -1091,7 +1997,7 @@ msgstr "體積"
 #: model:ir.model.fields,field_description:product.field_product_product_warranty
 #: model:ir.model.fields,field_description:product.field_product_template_warranty
 msgid "Warranty"
-msgstr "保證"
+msgstr "質保期"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_weight
@@ -1106,15 +2012,59 @@ msgid "Weights"
 msgstr "重量"
 
 #. module: product
+#: model:ir.model.fields,help:product.field_product_supplierinfo_product_id
+msgid ""
+"When this field is filled in, the vendor data will only apply to the variant."
+msgstr "這個欄位被填寫後，供應商數據將僅被應用到屬性上。"
+
+#. module: product
+#: model:ir.model.fields,help:product.field_base_config_settings_group_product_variant
+msgid ""
+"Work with product variant allows you to define some variant of the same "
+"products, an ease the product management in the ecommerce for example"
+msgstr "使用產品屬性可以為同類產品定義的一些屬性，在產品管理時可以簡化工作"
+
+#. module: product
 #: model:product.uom.categ,name:product.uom_categ_wtime
 msgid "Working Time"
 msgstr "工作時間"
 
 #. module: product
-#: model:product.product,name:product.product_order_01
-#: model:product.template,name:product.product_order_01_product_template
-msgid "Zed+ Antivirus"
-msgstr "Zed+ 防毒軟體"
+#: code:addons/product/models/decimal_precision.py:16
+#, python-format
+msgid ""
+"You cannot define the decimal precision of 'Account' as greater than the "
+"rounding factor of the company's main currency"
+msgstr "錯誤，你不能定義“會計”的小數位數大於 公司本位幣的舍入係數。"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_uom_form_action
+msgid ""
+"You must define a conversion rate between several Units of\n"
+"            Measure within the same category."
+msgstr "你必須定義一個同類型之間的計量單位的轉換係數。"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_normal_action
+#: model:ir.actions.act_window,help:product.product_normal_action_sell
+#: model:ir.actions.act_window,help:product.product_variant_action
+msgid ""
+"You must define a product for everything you sell, whether it's\n"
+"                a physical product, a consumable or a service you offer to\n"
+"                customers."
+msgstr ""
+"你必須為你銷售的所有東西都定義一個產品，\n"
+"無論它是一個實體產品、\n"
+"一個消耗品或者是你提供給客戶的服務。"
+
+#. module: product
+#: model:ir.actions.act_window,help:product.product_template_action
+msgid ""
+"You must define a product for everything you sell, whether it's a physical "
+"product, a consumable or a service you offer to customers."
+msgstr ""
+"你必須為你銷售的每個物品定義一個產品，不論它是物理的產品，消耗性產品或是一種"
+"提供給消費者的服務。"
 
 #. module: product
 #: model:ir.model,name:product.model_base_config_settings
@@ -1124,7 +2074,7 @@ msgstr "base.config.settings"
 #. module: product
 #: model:product.uom,name:product.product_uom_cm
 msgid "cm"
-msgstr "公分"
+msgstr "cm"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
@@ -1134,22 +2084,107 @@ msgstr "天"
 #. module: product
 #: model:ir.model,name:product.model_decimal_precision
 msgid "decimal.precision"
-msgstr "decimal.precision"
+msgstr "小數精度"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_category_form_view
+msgid "e.g. Lamps"
+msgstr "例如電燈"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
+msgid "e.g. Odoo Enterprise Susbcription"
+msgstr "例如 Odoo企業分支"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_pricelist_view
+msgid "e.g. USD Retailers"
+msgstr "例如:美元零售商"
+
+#. module: product
+#: model:ir.ui.view,arch_db:product.product_uom_form_view
+msgid "e.g: 1 * (reference unit) = ratio * (this unit)"
+msgstr "例如: 1*(參考單位) = 比例 * （本單位）"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_uom_form_view
 msgid "e.g: 1 * (this unit) = ratio * (reference unit)"
-msgstr "如: 1 * (this unit) = ratio * (reference unit)"
+msgstr "例如: 1 * (本單位) = 比例 * (參考單位)"
+
+#. module: product
+#: model:product.uom,name:product.product_uom_floz
+msgid "fl oz"
+msgstr "液體盎司"
+
+#. module: product
+#: model:product.uom,name:product.product_uom_foot
+msgid "foot(ft)"
+msgstr "英尺"
+
+#. module: product
+#: model:product.uom,name:product.product_uom_gal
+msgid "gal(s)"
+msgstr "加侖"
+
+#. module: product
+#: model:product.uom,name:product.product_uom_inch
+msgid "inch(es)"
+msgstr "英寸"
 
 #. module: product
 #: model:product.uom,name:product.product_uom_kgm
 msgid "kg"
-msgstr "公斤"
+msgstr "千克"
 
 #. module: product
 #: model:product.uom,name:product.product_uom_km
 msgid "km"
-msgstr "公里"
+msgstr "千米"
+
+#. module: product
+#: model:product.uom,name:product.product_uom_lb
+msgid "lb(s)"
+msgstr "磅"
+
+#. module: product
+#: model:product.uom,name:product.product_uom_mile
+msgid "mile(s)"
+msgstr "英里"
+
+#. module: product
+#: model:product.uom,name:product.product_uom_oz
+msgid "oz(s)"
+msgstr "盎司"
+
+#. module: product
+#: model:ir.model,name:product.model_product_attribute_line
+msgid "product.attribute.line"
+msgstr "product.attribute.line"
+
+#. module: product
+#: model:ir.model,name:product.model_product_attribute_price
+msgid "product.attribute.price"
+msgstr "product.attribute.price"
+
+#. module: product
+#: model:ir.model,name:product.model_product_attribute_value
+msgid "product.attribute.value"
+msgstr "product.attribute.value"
+
+#. module: product
+#: model:ir.model,name:product.model_product_price_history
+msgid "product.price.history"
+msgstr "product.price.history"
+
+#. module: product
+#: model:product.uom,name:product.product_uom_qt
+msgid "qt"
+msgstr "誇脫"
+
+#. module: product
+#: model:ir.model,name:product.model_report_product_report_pricelist
+msgid "report.product.report_pricelist"
+msgstr "報告。產品。報告_價目表"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.view_partner_property_form
@@ -1157,6 +2192,2937 @@ msgid "the parent company"
 msgstr "母公司"
 
 #. module: product
+#: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
+msgid "the product template"
+msgstr "產品範本"
+
+#. module: product
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 msgid "to"
 msgstr "到"
+
+#~ msgid ""
+#~ "You cannot define a rounding factor for the company's main currency that "
+#~ "is smaller than the decimal precision of 'Account'."
+#~ msgstr "公司本位幣的舍入係數不能定義得小於”會計“的小數位數"
+
+#~ msgid "# of Product Variants"
+#~ msgstr "# 產品多規格"
+
+#~ msgid "Description for Vendors"
+#~ msgstr "供應商描述"
+
+#~ msgid "Inventory"
+#~ msgstr "庫存"
+
+#~ msgid "Is a product variant"
+#~ msgstr "是多規格產品"
+
+#~ msgid "Product Manager"
+#~ msgstr "產品經理"
+
+#~ msgid "Product uom categ"
+#~ msgstr "產品計量單位分類"
+
+#~ msgid "Quantity"
+#~ msgstr "數量"
+
+#~ msgid "Sale Conditions"
+#~ msgstr "銷售條款"
+
+#~ msgid "This is a quantity which is converted into Default Unit of Measure."
+#~ msgstr "這是轉換為預設計量單位的值"
+
+#~ msgid "This note will be displayed on requests for quotation."
+#~ msgstr "此備註將顯示在詢價單上。"
+
+#~ msgid "Unit of Measure Category"
+#~ msgstr "計量單位分類"
+
+#~ msgid "Variant Extra Price"
+#~ msgstr "規格附加價格"
+
+#~ msgid "months"
+#~ msgstr "月"
+
+#~ msgid "unknown"
+#~ msgstr "未知"
+
+#~ msgid ""
+#~ "<span attrs=\"{'invisible':[('base', 'not in', "
+#~ "('list_price','standard_price'))]}\">Public Price  -  </span>\n"
+#~ "                            <span attrs=\"{'invisible':[('base', '!=', "
+#~ "'pricelist')]}\">Other Pricelist  -  </span>"
+#~ msgstr ""
+#~ "<span attrs=\"{'invisible':[('base', 'not in', "
+#~ "('list_price','standard_price'))]}\">公共價格表  -  </span>\n"
+#~ "                            <span attrs=\"{'invisible':[('base', '!=', "
+#~ "'pricelist')]}\">其它價格表  -  </span>"
+
+#~ msgid ""
+#~ "A consumable is a product for which you don't manage stock, a service is "
+#~ "a non-material product provided by a company or an individual."
+#~ msgstr ""
+#~ "消耗品是一種不進行庫存管理的產品，服務是由公司或個人提供的不需要原料的產"
+#~ "品。"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid ""
+#~ "By unchecking the active field you can disable a unit of measure without "
+#~ "deleting it."
+#~ msgstr "如果你取消選定“可用”欄位的話可以隱藏此計量單位而不刪除它。"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "記錄中最後發佈資訊的日期"
+
+#~ msgid "End of Lifecycle"
+#~ msgstr "生命週期結束"
+
+#~ msgid "Followers"
+#~ msgstr "關注者"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid ""
+#~ "Gives the sequence order when displaying a list of product categories."
+#~ msgstr "顯示產品清單的順序號"
+
+#~ msgid "Gross Weight"
+#~ msgstr "毛重"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果要求你關注新消息，勾選此項"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選了，需要你注意查看新消息"
+
+#~ msgid "In Development"
+#~ msgstr "開發中"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最近資訊日期"
+
+#~ msgid "Manage Secondary Unit of Measure"
+#~ msgstr "管理第二個計量單位"
+
+#~ msgid "Messages"
+#~ msgstr "消息"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動的數量："
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的資訊數量"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Obsolete"
+#~ msgstr "作廢"
+
+#~ msgid "Quantity by Package"
+#~ msgstr "包裝數量"
+
+#~ msgid "Status"
+#~ msgstr "狀態"
+
+#~ msgid "Supplier Pricelist"
+#~ msgstr "供應商價格表"
+
+#~ msgid "Template Name"
+#~ msgstr "範本名稱"
+
+#~ msgid "The total number of products you can put by pallet or box."
+#~ msgstr "你可以放入貨板或箱子的產品數量。"
+
+#~ msgid "Unread Messages"
+#~ msgstr "未讀信息"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息計數"
+
+#~ msgid ""
+#~ "You must define a product for everything you sell, whether it's a "
+#~ "physical product, a consumable or a service you offer to  customers."
+#~ msgstr ""
+#~ "你必須為你銷售的所有東西都定義一個產品，無論它是一個實體產品、一個消耗品或"
+#~ "者是你提供給客戶的服務。"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和通信歷史"
+
+#~ msgid "Main Vendor"
+#~ msgstr "主要供應商"
+
+#~ msgid "Main vendor who has highest priority in vendor list."
+#~ msgstr "在供應商列表中具有最高優先順序的主要供應商。"
+
+#~ msgid "Other Pricelist  -"
+#~ msgstr "其他價格表 -"
+
+#~ msgid "Public Price  -"
+#~ msgstr "公開價格  -"
+
+#~ msgid "Purchase price from main vendor."
+#~ msgstr "主要供應商那裡的採購價格。"
+
+#~ msgid "Selected Seller"
+#~ msgstr "已選擇賣家"
+
+#~ msgid ""
+#~ "Technical field that selects a seller based on priority (sequence) and an "
+#~ "optional partner and/or a minimal quantity in the context"
+#~ msgstr ""
+#~ "技術領域，其選擇基於優先順序（序列）一個賣方和可選的業務夥伴和/或最小量的上"
+#~ "下文"
+
+#~ msgid "This is minimum quantity to purchase from Main Vendor."
+#~ msgstr "這是主要供應商的采最低訂購量。"
+
+#~ msgid ""
+#~ "This is the average delay in days between the purchase order confirmation "
+#~ "and the receipts for this product and for the default vendor. It is used "
+#~ "by the scheduler to order requests based on reordering delays."
+#~ msgstr ""
+#~ "產品供應在確認採購單到接收產品之間的預設平均延遲,用於在調度訂單需求時要考"
+#~ "慮的重訂貨延遲."
+
+#~ msgid "Vendor Lead Time"
+#~ msgstr "供應商提前期"
+
+#~ msgid "Vendor Price"
+#~ msgstr "供應商價格"
+
+#~ msgid "Vendor Quantity"
+#~ msgstr "供應商數量"
+
+#~ msgid "Need Action"
+#~ msgstr "需要行動"
+
+#~ msgid "Need Action Counter"
+#~ msgstr "我們需要貴在行動。"
+
+#~ msgid "This note will be displayed on requests for quotation..."
+#~ msgstr "這個描述將顯示在報價單上 ..."
+
+#~ msgid ") +"
+#~ msgstr ") +"
+
+#~ msgid "* ( 1 +"
+#~ msgstr "* ( 1 +"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                    Click to define a new product.\n"
+#~ "                </p><p>\n"
+#~ "                    You must define a product for everything you sell, "
+#~ "whether it's a physical product, a consumable or a service you offer to  "
+#~ "customers.               \n"
+#~ "                </p><p>\n"
+#~ "                    The product form contains information to simplify the "
+#~ "sale process: price, notes in the quotation, accounting data, procurement "
+#~ "methods, etc.\n"
+#~ "                </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下定義一個新產品\n"
+#~ "              </p><p>\n"
+#~ "                你必須為銷售的每一樣都定義一個產品。可以是物理產品、消耗"
+#~ "品、或者你提供給客戶的服務。\n"
+#~ "              </p><p>\n"
+#~ "                產品表單包括下面的資訊以簡化銷售處理：價格、報價事項，會計"
+#~ "資料，補貨方式等等。\n"
+#~ "               </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a new unit of measure.\n"
+#~ "              </p><p>\n"
+#~ "                You must define a conversion rate between several Units "
+#~ "of\n"
+#~ "                Measure within the same category.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下新增計量單位.\n"
+#~ "              </p><p>\n"
+#~ "                在同一分類中，你必須一個多個單位之間的轉換率.\n"
+#~ "                </p>"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a pricelist version.\n"
+#~ "              </p><p>\n"
+#~ "                There can be more than one version of a pricelist, each "
+#~ "of\n"
+#~ "                these must be valid during a certain period of time. "
+#~ "Some\n"
+#~ "                examples of versions: Main Prices, 2010, 2011, Summer "
+#~ "Sales,\n"
+#~ "                etc.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下 增加一個價格表版本.\n"
+#~ "              </p><p>\n"
+#~ "                這裡能有多於一個價格表版本，每個必須在指定的區間裡生效。\n"
+#~ "                一些版本的示例： 主價格，2010，2011，夏季銷售 等等.\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to create a pricelist.\n"
+#~ "              </p><p>\n"
+#~ "                A price list contains rules to be evaluated in order to "
+#~ "compute\n"
+#~ "                the purchase price. The default price list has only one "
+#~ "rule; use\n"
+#~ "                the cost price defined on the product form, so that you "
+#~ "do not have to\n"
+#~ "                worry about supplier pricelists if you have very simple "
+#~ "needs.\n"
+#~ "              </p><p>\n"
+#~ "                But you can also import complex price lists form your "
+#~ "supplier\n"
+#~ "                that may depends on the quantities ordered or the "
+#~ "current\n"
+#~ "                promotions.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下創建價格表.\n"
+#~ "              </p><p>\n"
+#~ "                價格表包含評估規則，以估算採購價格\n"
+#~ "                預設價目表只包含一條規則; 產品的成本價依賴於產品的形式，\n"
+#~ "                這樣如果你只有簡單的產品需求，就不用擔心供應商的價格表是否"
+#~ "夠全面 \n"
+#~ "                   </p><p>\n"
+#~ "                當然你也可以導入複雜價格表，並依據進貨量、當前推廣策略來選"
+#~ "擇你的\n"
+#~ "                供應商\n"
+#~ "                     </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to create a pricelist.\n"
+#~ "              </p><p>\n"
+#~ "                A price list contains rules to be evaluated in order to "
+#~ "compute\n"
+#~ "                the sales price of the products.\n"
+#~ "              </p><p>\n"
+#~ "                Price lists may have several versions (2010, 2011, "
+#~ "Promotion of\n"
+#~ "                February 2010, etc.) and each version may have several "
+#~ "rules.\n"
+#~ "                (e.g. the customer price of a product category will be "
+#~ "based on\n"
+#~ "                the supplier price multiplied by 1.80).\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下來創建價格表              </p><p>\n"
+#~ "                價格表包含多條評估規則，以計算產品的銷售價"
+#~ "格                  </p><p>\n"
+#~ "                價格表也許會有多個版本（如2010年度、2011年度、2010年2月份"
+#~ "促銷計畫）                ，每個版本也會有多條評估規"
+#~ "則。                             </p>"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new product.\n"
+#~ "              </p><p>\n"
+#~ "                You must define a product for everything you sell, "
+#~ "whether it's\n"
+#~ "                a physical product, a consumable or a service you offer "
+#~ "to\n"
+#~ "                customers.\n"
+#~ "              </p><p>\n"
+#~ "                The product form contains information to simplify the "
+#~ "sale\n"
+#~ "                process: price, notes in the quotation, accounting data,\n"
+#~ "                procurement methods, etc.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下定義一個新產品\n"
+#~ "              </p><p>\n"
+#~ "                你必須為銷售的每一樣都定義一個產品。可以是物理產品、消耗"
+#~ "品、或者你提供給客戶的服務。\n"
+#~ "              </p><p>\n"
+#~ "                產品表單包括下面的資訊以簡化銷售處理：價格、報價事項，會計"
+#~ "資料，補貨方式等等。\n"
+#~ "               </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                Here is a list of all your products classified by "
+#~ "category. You\n"
+#~ "                can click a category to get the list of all products "
+#~ "linked to\n"
+#~ "                this category or to a child of this category.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p>\n"
+#~ "                這是你所有產品根據分類進行的分類清單。你能按一下分類 獲得關"
+#~ "聯到這個分類極其子類的所有產品清單。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid "Associated field in the product form."
+#~ msgstr "產品的相關欄位"
+
+#~ msgid ""
+#~ "At least one pricelist has no active version !\n"
+#~ "Please create or activate one."
+#~ msgstr ""
+#~ "至少有一個價格表沒有活動的版本！\n"
+#~ "請創建或啟動一個。"
+
+#~ msgid ""
+#~ "Coefficient to convert default Unit of Measure to Unit of Sale\n"
+#~ " uos = uom * coeff"
+#~ msgstr ""
+#~ "從預設計量單位轉換（UoM）到銷售單位（UoS）的係數。\n"
+#~ "UoS = UoM * 係數"
+
+#~ msgid "Consumable products"
+#~ msgstr "消耗性產品"
+
+#~ msgid ""
+#~ "Consumable: Will not imply stock management for this product. \n"
+#~ "Stockable product: Will imply stock management for this product."
+#~ msgstr ""
+#~ "消耗品：不會為該產品進行庫存管理\n"
+#~ "可庫存產品：將為該產品進行庫存管理"
+
+#~ msgid ""
+#~ "Cost price of the product template used for standard stock valuation in "
+#~ "accounting and used as a base price on purchase orders. Expressed in the "
+#~ "default unit of measure of the product.."
+#~ msgstr ""
+#~ "產品範本的成本價格用來給財務進行庫存估值，並用做採購單的基準價格。此價格采"
+#~ "用產品的預設計量單位.."
+
+#~ msgid "Default Public Pricelist Version"
+#~ msgstr "默認的公共價格表版本"
+
+#~ msgid "Default Unit of Measure"
+#~ msgstr "預設計量單位"
+
+#~ msgid "Default UoM"
+#~ msgstr "預設計量單位"
+
+#~ msgid "First valid date for the version."
+#~ msgstr "這個版本的第一個有效期"
+
+#~ msgid "Fixed"
+#~ msgstr "固定的"
+
+#~ msgid "Group by..."
+#~ msgstr "分組..."
+
+#~ msgid "Historization Time"
+#~ msgstr "歷史時間"
+
+#~ msgid "Historized Cost"
+#~ msgstr "歷史成本"
+
+#~ msgid "Information"
+#~ msgstr "信息"
+
+#~ msgid "Item List"
+#~ msgstr "項目列表"
+
+#~ msgid "Key"
+#~ msgstr "關鍵字"
+
+#~ msgid "Last valid date for the version."
+#~ msgstr "版本的最後有效日期"
+
+#~ msgid "List of Variants"
+#~ msgstr "規格清單"
+
+#~ msgid "Measure Type"
+#~ msgstr "計量類型"
+
+#~ msgid "Net Weight"
+#~ msgstr "淨重"
+
+#~ msgid "Price List Version"
+#~ msgstr "價格表版本"
+
+#~ msgid "Price Name"
+#~ msgstr "價格名稱"
+
+#~ msgid "Price Type"
+#~ msgstr "價格類型"
+
+#~ msgid "Price Types"
+#~ msgstr "計價類型"
+
+#~ msgid "Pricelist Type"
+#~ msgstr "價格表類型"
+
+#~ msgid "Pricelist Version"
+#~ msgstr "價格表版本"
+
+#~ msgid "Pricelist Versions"
+#~ msgstr "價格表版本"
+
+#~ msgid "Procurements"
+#~ msgstr "補貨"
+
+#~ msgid "Product Attribute Value(s)"
+#~ msgstr "產品屬性值"
+
+#~ msgid "Product Field"
+#~ msgstr "欄位值"
+
+#~ msgid "Products Listprices Items"
+#~ msgstr "產品標價明細"
+
+#~ msgid "Products Price Type"
+#~ msgstr "產品價格類型"
+
+#~ msgid "Products by Category"
+#~ msgstr "產品分類"
+
+#~ msgid "Purchase Pricelists"
+#~ msgstr "採購價格表"
+
+#~ msgid "Rule Name"
+#~ msgstr "規則名稱"
+
+#~ msgid ""
+#~ "Specify a unit of measure here if invoicing is made in another unit of "
+#~ "measure than inventory. Keep empty to use the default unit of measure."
+#~ msgstr ""
+#~ "如果製作發票的單位跟庫存不一致，指定一個計量單位，留空使用預設單位。"
+
+#~ msgid "The currency the field is expressed in."
+#~ msgstr "貨幣欄位的運算式"
+
+#~ msgid "The gross weight in Kg."
+#~ msgstr "毛重單位Kg"
+
+#~ msgid ""
+#~ "The minimal quantity to trigger this rule, expressed in the vendor Unit "
+#~ "of Measure if any or in the default Unit of Measure of the product "
+#~ "otherrwise."
+#~ msgstr ""
+#~ "最小數量觸發這個規則，如果指明了就是供應商單位，否則就是產品的預設計量單位"
+
+#~ msgid "The net weight in Kg."
+#~ msgstr "淨重單位Kg"
+
+#~ msgid ""
+#~ "The prices below will only be taken into account when your pricelist is "
+#~ "set as based on vendor prices."
+#~ msgstr "僅當你的價格表被設置為基於供應商價格時，下麵的價格才被考慮。"
+
+#~ msgid ""
+#~ "This price will be considered as a price for the vendor Unit of Measure "
+#~ "if any or the default Unit of Measure of the product otherwise"
+#~ msgstr "這個價格是按照供應商的產品單位考慮的，其它情況是預設的產品單位"
+
+#~ msgid "Unit of Measure -> UOS Coeff"
+#~ msgstr "計量單位 -> 銷售單位的係數"
+
+#~ msgid "Unit of Sale"
+#~ msgstr "銷售單位"
+
+#~ msgid ""
+#~ "Used in the code to select specific prices based on the context. Keep "
+#~ "unchanged."
+#~ msgstr "基於上下文用代碼來確定具體的價格. (保持不變)"
+
+#~ msgid "Variable"
+#~ msgstr "可變的"
+
+#~ msgid "Variant(s)"
+#~ msgstr "屬性"
+
+#~ msgid "Vendor Section on Product or Cost Price"
+#~ msgstr "在產品或成本價格上的供應商部分"
+
+#~ msgid ""
+#~ "When a version is duplicated it is set to non active, so that the dates "
+#~ "do not overlaps with original version. You should change the dates and "
+#~ "reactivate the pricelist"
+#~ msgstr ""
+#~ "在複製一個版本時它設為不生效. 這樣舊版本日期是不重複的. 你應該修改日期並激"
+#~ "活這價格表"
+
+#~ msgid "You cannot have 2 pricelist versions that overlap!"
+#~ msgstr "你不能擁有兩個重複的價格表版本."
+
+#~ msgid "describe the product characteristics..."
+#~ msgstr "描述產品特性"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "note to be displayed on quotations..."
+#~ msgstr "報價時將顯示相關注釋。"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid "pricelist.partnerinfo"
+#~ msgstr "業務夥伴資訊"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a new Logistic Unit\n"
+#~ "              </p><p>\n"
+#~ "                The logistic unit defines the container used for the "
+#~ "package.  \n"
+#~ "                It has a type (e.g. pallet, box, ...) and you can specify "
+#~ "its \n"
+#~ "                size. \n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下新增一個物流單元.\n"
+#~ "              </p><p>\n"
+#~ "                物流單元定義了包裝使用的容器。 \n"
+#~ "                它有一個類型（例如：託盤、箱...）\n"
+#~ "               你可以指定它的尺寸。\n"
+#~ "             </p>"
+
+#~ msgid "Box"
+#~ msgstr "箱子"
+
+#~ msgid "Cannot change the category of existing Unit of Measure '%s'."
+#~ msgstr "不能改變已有的計量單位'%s'的分類"
+
+#~ msgid "Configurations"
+#~ msgstr "設置"
+
+#~ msgid "Empty Package Weight"
+#~ msgstr "空包裝重量"
+
+#~ msgid "Gives the sequence order when displaying a list of packaging."
+#~ msgstr "顯示包裝資訊的順序號"
+
+#~ msgid "Height"
+#~ msgstr "高度"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保留複雜的摘要(消息數量,……等)。為了插入到看板視圖，這一摘要直接是是HTML格"
+#~ "式。"
+
+#~ msgid "Length"
+#~ msgstr "長度"
+
+#~ msgid "Logistic Unit"
+#~ msgstr "物流單元"
+
+#~ msgid "Logistic Units"
+#~ msgstr "物流單元"
+
+#~ msgid "Main Supplier"
+#~ msgstr "主要供應商"
+
+#~ msgid "Number of Layers"
+#~ msgstr "層數"
+
+#~ msgid "Other Info"
+#~ msgstr "其它資訊"
+
+#~ msgid "Pack"
+#~ msgstr "包裝"
+
+#~ msgid "Package Logistic Unit"
+#~ msgstr "物流單元包裝"
+
+#~ msgid "Package by layer"
+#~ msgstr "每層包裝數量"
+
+#~ msgid "Pallet"
+#~ msgstr "託盤"
+
+#~ msgid "Pallet Logistic Unit"
+#~ msgstr "物流單元託盤"
+
+#~ msgid "Palletization"
+#~ msgstr "使用託盤"
+
+#~ msgid "Price List Name"
+#~ msgstr "價格表名稱"
+
+#~ msgid "Print date"
+#~ msgstr "列印日期"
+
+#~ msgid "Summary"
+#~ msgstr "摘要"
+
+#~ msgid "Supplier"
+#~ msgstr "供應商"
+
+#~ msgid "Supplier Information"
+#~ msgstr "供應商資訊"
+
+#~ msgid "Supplier Product Name"
+#~ msgstr "供應商產品名稱"
+
+#~ msgid "Supplier Quantity"
+#~ msgstr "供應商數量"
+
+#~ msgid "Supplier Unit of Measure"
+#~ msgstr "供應商單位"
+
+#~ msgid "Suppliers"
+#~ msgstr "供應商"
+
+#~ msgid "The Barcode of the package unit."
+#~ msgstr "包裝單元的條碼。"
+
+#~ msgid "The code of the transport unit."
+#~ msgstr "運輸單位代碼"
+
+#~ msgid "The height of the package"
+#~ msgstr "包裝的高度"
+
+#~ msgid "The length of the package"
+#~ msgstr "包裝的長度"
+
+#~ msgid "The number of layers on a pallet or box"
+#~ msgstr "層板或箱子的層數"
+
+#~ msgid "The number of packages by layer"
+#~ msgstr "每層包裝件數"
+
+#~ msgid "The weight of a full package, pallet or box."
+#~ msgstr "完整包裝的重量，指貨板或者包裝箱"
+
+#~ msgid "The width of the package"
+#~ msgstr "包裝寬度"
+
+#~ msgid "Total Package Weight"
+#~ msgstr "包裝總重量"
+
+#~ msgid "Warning"
+#~ msgstr "警告"
+
+#~ msgid "Width"
+#~ msgstr "寬度"
+
+#~ msgid "lst_price"
+#~ msgstr "lst_price"
+
+#~ msgid "Base price for computation."
+#~ msgstr "基準計算價格"
+
+#~ msgid "Supplier Prices on the product form"
+#~ msgstr "產品表單中的供應商價格"
+
+#~ msgid "16 GB"
+#~ msgstr "16 GB"
+
+#~ msgid ""
+#~ "17\" LCD Monitor\n"
+#~ "Processor AMD 8-Core\n"
+#~ "512MB RAM\n"
+#~ "HDD SH-1"
+#~ msgstr ""
+#~ "17”LCD 顯示器\n"
+#~ "AMD8核處理器\n"
+#~ "512m 記憶體\n"
+#~ "硬碟 SH-1"
+
+#~ msgid ""
+#~ "17\" Monitor\n"
+#~ "4GB RAM\n"
+#~ "Standard-1294P Processor\n"
+#~ "QWERTY keyboard"
+#~ msgstr ""
+#~ "17“顯示器\n"
+#~ "4GB記憶體\n"
+#~ "標準1294P處理器\n"
+#~ "QWERTY鍵盤"
+
+#~ msgid ""
+#~ "17\" Monitor\n"
+#~ "6GB RAM\n"
+#~ "Hi-Speed 234Q Processor\n"
+#~ "QWERTY keyboard"
+#~ msgstr ""
+#~ "17寸顯示器\n"
+#~ "6GB 記憶體\n"
+#~ "高速處理器 234Q \n"
+#~ "\n"
+#~ "QWERTY 鍵盤"
+
+#~ msgid "2.4 GHz"
+#~ msgstr "2.4 GHz"
+
+#~ msgid ""
+#~ "2.7GHz quad-core Intel Core i5\n"
+#~ "                Turbo Boost up to 3.2GHz\n"
+#~ "                8GB (two 4GB) memory\n"
+#~ "                1TB hard drive1\n"
+#~ "                Intel Iris Pro graphics\n"
+#~ "            "
+#~ msgstr ""
+#~ "2.7GHz 四核英特爾酷睿 i5\n"
+#~ "                動態超頻到 3.2GHz\n"
+#~ "                8GB (two 4GB) 記憶體\n"
+#~ "                1TB 硬碟1\n"
+#~ "                Intel Iris Pro 顯卡\n"
+#~ "            "
+
+#~ msgid "32 GB"
+#~ msgstr "32 GB"
+
+#~ msgid ""
+#~ "7.9‑inch (diagonal) LED-backlit, 128Gb\n"
+#~ "Dual-core A5 with quad-core graphics\n"
+#~ "FaceTime HD Camera, 1.2 MP Photos"
+#~ msgstr ""
+#~ "7.9‑inch (diagonal) LED背光, 128Gb\n"
+#~ "雙核 A5 with quad-core graphics\n"
+#~ "FaceTime HD鏡頭, 120 萬象素照相"
+
+#~ msgid ""
+#~ "<hr>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-10 col-md-offset-1 mt32 "
+#~ "mb32\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/keyboard.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-8 col-md-offset-2 mb32 "
+#~ "text-center\">\n"
+#~ "                                <h3>A great Keyboard. Cordless.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    The incredibly thin Apple Wireless "
+#~ "Keyboard uses Bluetooth technology,\n"
+#~ "                                    which makes it compatible with iPad. "
+#~ "And you’re free to type wherever\n"
+#~ "                                    you like — with the keyboard in front "
+#~ "of your iPad or on your lap.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<hr>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-10 col-md-offset-1 mt32 "
+#~ "mb32\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/keyboard.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-8 col-md-offset-2 mb32 "
+#~ "text-center\">\n"
+#~ "                                <h3>A great Keyboard. Cordless.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    The incredibly thin Apple Wireless "
+#~ "Keyboard uses Bluetooth technology,\n"
+#~ "                                    which makes it compatible with iPad. "
+#~ "And you’re free to type wherever\n"
+#~ "                                    you like — with the keyboard in front "
+#~ "of your iPad or on your lap.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new product.\n"
+#~ "              </p><p>\n"
+#~ "                You must define a product for everything you buy or "
+#~ "sell,\n"
+#~ "                whether it's a physical product, a consumable or "
+#~ "service.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\"> \n"
+#~ "               按一下定義一個新產品\n"
+#~ "              </p><p>\n"
+#~ "                你必須為買賣的的每一樣都定義一個產品。可以是物理產品、消耗"
+#~ "品、或者服務。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<section class=\"jumbotron mt16 mb16\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<h1>Sell Onlinedddd. Easily.</h1>\n"
+#~ "\n"
+#~ "<p>Write one sentence to convince visitor about your message.</p>\n"
+#~ "\n"
+#~ "<p><a class=\"btn btn-primary btn-lg\" href=\"/page/website.contactus"
+#~ "\">Contact us </a></p>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mb16 oe_dark\" data-snippet-id=\"text-image\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1 mt64\">\n"
+#~ "<h2>The full iPad experience.</h2>\n"
+#~ "\n"
+#~ "<h3 class=\"text-muted\">There's less of it, but no less to it.</h3>\n"
+#~ "\n"
+#~ "<p>Everything you love about iPad — the beautiful screen, fast and fluid "
+#~ "performance, FaceTime and iSight cameras, thousands of amazing apps, 10-"
+#~ "hour battery life* — is everything you’ll love about iPad mini, too. And "
+#~ "you can hold it in one hand.</p>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-5 mt16 mb16\"><img class=\"img img-responsive\" src="
+#~ "\"/website_sale/static/src/img/design.png\"></div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section>\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-6 mt16\">\n"
+#~ "<h3>A Section Subtitle</h3>\n"
+#~ "\n"
+#~ "<p>Write one or two paragraphs describing your product or services. To be "
+#~ "successful your content needs to be useful to your readers.</p>\n"
+#~ "\n"
+#~ "<p>Start with the customer – find out what they want and give it to them."
+#~ "</p>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-6 mt16\"><img alt=\"Odoo text and image block\" class="
+#~ "\"img img-responsive shadow mb16\" src=\"/website/static/src/img/library/"
+#~ "school_kids.jpg\" style=\"-webkit-animation-play-state: paused; -webkit-"
+#~ "transition: none; transition: none\"></div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mt16\" data-snippet-id=\"image-text\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1\"><img class=\"img img-responsive\" "
+#~ "src=\"/website_sale/static/src/img/mighty.png\"></div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-6 mt32\">\n"
+#~ "<h3>Beautiful 7.9‑inch display.</h3>\n"
+#~ "\n"
+#~ "<h4 class=\"small text-muted\">A screen worthy of iPad.</h4>\n"
+#~ "\n"
+#~ "<p>Everything you love about iPad — the beautiful screen, fast Colors are "
+#~ "vivid and text is sharp on the iPad mini display. But what really makes "
+#~ "it stand out is its size. At 7.9 inches, it’s perfectly sized to deliver "
+#~ "an experience every bit as big as iPad.</p>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mb16 oe_dark\" data-snippet-id=\"text-image\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1 mt32\">\n"
+#~ "<h2>Over 375,000 apps.</h2>\n"
+#~ "\n"
+#~ "<h3 class=\"text-muted\">If it's made for iPad, it's made for iPad mini.</"
+#~ "h3>\n"
+#~ "\n"
+#~ "<p>Right from the start, apps made for iPad also work with iPad mini. "
+#~ "They’re immersive, full-screen apps that let you do almost anything you "
+#~ "can imagine. And with automatic updates, you're always getting the best "
+#~ "experience possible.</p>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-5 mt16\"><img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/apps.png\"></div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mt16 mb16\" data-snippet-id=\"image-text\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1\"><img class=\"img img-responsive\" "
+#~ "src=\"/website_sale/static/src/img/ipad_why.png\"></div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-6 mt64\">\n"
+#~ "<h3>Why you'll love an iPad.</h3>\n"
+#~ "\n"
+#~ "<p>Right from the start, there’s a lot to love about iPad. It’s simple "
+#~ "yet powerful. Thin and light yet full- featured. It can do just about "
+#~ "everything and be just about anything.And because it’s so easy to use, "
+#~ "it’s easy to love.</p>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mt16 mb16 oe_dark\" data-snippet-id=\"text-image\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1 mt64\">\n"
+#~ "<h2>Ultrafast wireless.</h2>\n"
+#~ "\n"
+#~ "<h3 class=\"text-muted\">Fast connections.The world over.</h3>\n"
+#~ "\n"
+#~ "<p>With advanced Wi‑Fi that’s up to twice as fast as any previous-"
+#~ "generation iPad and access to fast cellular data networks around the "
+#~ "world, iPad mini lets you download content, stream video, and browse the "
+#~ "web at amazing speeds.</p>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-5 mt16 mb16\"><img class=\"img img-responsive\" src="
+#~ "\"/website_sale/static/src/img/wireless.png\"></div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ msgstr ""
+#~ "<section class=\"jumbotron mt16 mb16\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<h1>Sell Onlinedddd. Easily.</h1>\n"
+#~ "\n"
+#~ "<p>Write one sentence to convince visitor about your message.</p>\n"
+#~ "\n"
+#~ "<p><a class=\"btn btn-primary btn-lg\" href=\"/page/website.contactus"
+#~ "\">Contact us </a></p>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mb16 oe_dark\" data-snippet-id=\"text-image\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1 mt64\">\n"
+#~ "<h2>The full iPad experience.</h2>\n"
+#~ "\n"
+#~ "<h3 class=\"text-muted\">There's less of it, but no less to it.</h3>\n"
+#~ "\n"
+#~ "<p>Everything you love about iPad — the beautiful screen, fast and fluid "
+#~ "performance, FaceTime and iSight cameras, thousands of amazing apps, 10-"
+#~ "hour battery life* — is everything you’ll love about iPad mini, too. And "
+#~ "you can hold it in one hand.</p>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-5 mt16 mb16\"><img class=\"img img-responsive\" src="
+#~ "\"/website_sale/static/src/img/design.png\"></div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section>\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-6 mt16\">\n"
+#~ "<h3>A Section Subtitle</h3>\n"
+#~ "\n"
+#~ "<p>Write one or two paragraphs describing your product or services. To be "
+#~ "successful your content needs to be useful to your readers.</p>\n"
+#~ "\n"
+#~ "<p>Start with the customer – find out what they want and give it to them."
+#~ "</p>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-6 mt16\"><img alt=\"Odoo text and image block\" class="
+#~ "\"img img-responsive shadow mb16\" src=\"/website/static/src/img/library/"
+#~ "school_kids.jpg\" style=\"-webkit-animation-play-state: paused; -webkit-"
+#~ "transition: none; transition: none\"></div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mt16\" data-snippet-id=\"image-text\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1\"><img class=\"img img-responsive\" "
+#~ "src=\"/website_sale/static/src/img/mighty.png\"></div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-6 mt32\">\n"
+#~ "<h3>Beautiful 7.9‑inch display.</h3>\n"
+#~ "\n"
+#~ "<h4 class=\"small text-muted\">A screen worthy of iPad.</h4>\n"
+#~ "\n"
+#~ "<p>Everything you love about iPad — the beautiful screen, fast Colors are "
+#~ "vivid and text is sharp on the iPad mini display. But what really makes "
+#~ "it stand out is its size. At 7.9 inches, it’s perfectly sized to deliver "
+#~ "an experience every bit as big as iPad.</p>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mb16 oe_dark\" data-snippet-id=\"text-image\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1 mt32\">\n"
+#~ "<h2>Over 375,000 apps.</h2>\n"
+#~ "\n"
+#~ "<h3 class=\"text-muted\">If it's made for iPad, it's made for iPad mini.</"
+#~ "h3>\n"
+#~ "\n"
+#~ "<p>Right from the start, apps made for iPad also work with iPad mini. "
+#~ "They’re immersive, full-screen apps that let you do almost anything you "
+#~ "can imagine. And with automatic updates, you're always getting the best "
+#~ "experience possible.</p>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-5 mt16\"><img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/apps.png\"></div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mt16 mb16\" data-snippet-id=\"image-text\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1\"><img class=\"img img-responsive\" "
+#~ "src=\"/website_sale/static/src/img/ipad_why.png\"></div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-6 mt64\">\n"
+#~ "<h3>Why you'll love an iPad.</h3>\n"
+#~ "\n"
+#~ "<p>Right from the start, there’s a lot to love about iPad. It’s simple "
+#~ "yet powerful. Thin and light yet full- featured. It can do just about "
+#~ "everything and be just about anything.And because it’s so easy to use, "
+#~ "it’s easy to love.</p>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+#~ "\n"
+#~ "\n"
+#~ "<section class=\"mt16 mb16 oe_dark\" data-snippet-id=\"text-image\">\n"
+#~ "<div class=\"container\">\n"
+#~ "<div class=\"row\">\n"
+#~ "<div class=\"col-md-5 col-md-offset-1 mt64\">\n"
+#~ "<h2>Ultrafast wireless.</h2>\n"
+#~ "\n"
+#~ "<h3 class=\"text-muted\">Fast connections.The world over.</h3>\n"
+#~ "\n"
+#~ "<p>With advanced Wi‑Fi that’s up to twice as fast as any previous-"
+#~ "generation iPad and access to fast cellular data networks around the "
+#~ "world, iPad mini lets you download content, stream video, and browse the "
+#~ "web at amazing speeds.</p>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div class=\"col-md-5 mt16 mb16\"><img class=\"img img-responsive\" src="
+#~ "\"/website_sale/static/src/img/wireless.png\"></div>\n"
+#~ "</div>\n"
+#~ "</div>\n"
+#~ "</section>\n"
+
+#~ msgid ""
+#~ "<section data-snippet-id=\"image-text\" class=\"mt16 mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-9 col-md-offset-1 "
+#~ "mb16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/overview_hero.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"text-image\" class=\"mt16 mb16 "
+#~ "oe_dark\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt64\">\n"
+#~ "                                <h3>Design. The thinnest iPod ever.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    About the size of a credit card — and "
+#~ "just 5.4 mm thin — iPod nano is the thinnest iPod ever made.\n"
+#~ "                                    The 2.5-inch Multi-Touch display is "
+#~ "nearly twice as big as the display on the previous iPod nano,\n"
+#~ "                                    so you can see more of the music, "
+#~ "photos, and videos you love.\n"
+#~ "                                </p><p>\n"
+#~ "                                    Buttons let you quickly play, pause, "
+#~ "change songs, or adjust the volume.\n"
+#~ "                                    The smooth anodized aluminum design "
+#~ "makes iPod nano feel as good as it sounds.\n"
+#~ "                                    And iPod nano wouldn’t be iPod nano "
+#~ "without gorgeous, hard-to-choose-from color.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/overview_design_silver.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-10 col-md-offset-1\">\n"
+#~ "                                <h2 class=\"text-center\">Music. It's "
+#~ "what beats inside.</h2>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-4 mt32 col-md-"
+#~ "offset-1\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/purple.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-6 mt32\">\n"
+#~ "                                <h3>How to get your groove on.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Tap to play your favorite songs. Or "
+#~ "entire albums.\n"
+#~ "                                    Or everything by one artist. You can "
+#~ "even browse by genres or composers.\n"
+#~ "                                    Flip through your music: Album art "
+#~ "looks great on the bigger screen.\n"
+#~ "                                    Or to keep things fresh, give iPod "
+#~ "nano a shake and it shuffles to a different song in your music library.\n"
+#~ "                                </p>\n"
+#~ "                                <h3>Genius. Your own personal DJ.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        Say you’re listening to a song "
+#~ "you love and you want to stay in the mood.\n"
+#~ "                                        Just tap Genius. It finds other "
+#~ "songs on iPod nano that go great together\n"
+#~ "                                        and makes a Genius playlist for "
+#~ "you. For more song combinations\n"
+#~ "                                        you wouldn’t have thought of "
+#~ "yourself, create Genius Mixes in iTunes\n"
+#~ "                                        and sync the ones you like to "
+#~ "iPod nano. Then tap Genius Mixes and\n"
+#~ "                                        rediscover songs you haven’t "
+#~ "heard in a while — or find music you forgot you even had.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-12 text-center mb16\">\n"
+#~ "                                <h2>Playlists. The perfect mix for every "
+#~ "mood.</h2>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-4\">\n"
+#~ "                                <h3>Sync to your heart’s content.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        iTunes on your Mac or PC makes it "
+#~ "easy to load up\n"
+#~ "                                        your iPod. Just choose the "
+#~ "playlists, audiobooks,\n"
+#~ "                                        podcasts, and other audio files "
+#~ "you want, then sync.\n"
+#~ "                                </p>\n"
+#~ "                            </div><div class=\"col-md-4\">\n"
+#~ "                                <h3>When one playlist isn’t enough.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        You probably have multiple "
+#~ "playlists in iTunes on your computer.\n"
+#~ "                                        One for your commute. One for the "
+#~ "gym. Sync those playlists\n"
+#~ "                                        to iPod, and you can play the "
+#~ "perfect mix for whatever\n"
+#~ "                                        mood strikes you. VoiceOver tells "
+#~ "you the name of each playlist,\n"
+#~ "                                        so it’s easy to switch between "
+#~ "them and find the one you want without looking.\n"
+#~ "                                </p>\n"
+#~ "                            </div><div class=\"col-md-4\">\n"
+#~ "                                <h3>Have Genius call the tunes.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        There’s another way to get a good "
+#~ "mix of music on iPod: Let Genius do the work.\n"
+#~ "                                        Activate Genius in iTunes on your "
+#~ "computer, and it automatically finds songs that sound\n"
+#~ "                                        great together. Then it creates "
+#~ "Genius Mixes, which you can easily sync to your iPod.\n"
+#~ "                                        It’s the perfect way to "
+#~ "rediscover songs you haven’t listened to in forever.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<section data-snippet-id=\"image-text\" class=\"mt16 mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-9 col-md-offset-1 "
+#~ "mb16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/overview_hero.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"text-image\" class=\"mt16 mb16 "
+#~ "oe_dark\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt64\">\n"
+#~ "                                <h3>Design. The thinnest iPod ever.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    About the size of a credit card — and "
+#~ "just 5.4 mm thin — iPod nano is the thinnest iPod ever made.\n"
+#~ "                                    The 2.5-inch Multi-Touch display is "
+#~ "nearly twice as big as the display on the previous iPod nano,\n"
+#~ "                                    so you can see more of the music, "
+#~ "photos, and videos you love.\n"
+#~ "                                </p><p>\n"
+#~ "                                    Buttons let you quickly play, pause, "
+#~ "change songs, or adjust the volume.\n"
+#~ "                                    The smooth anodized aluminum design "
+#~ "makes iPod nano feel as good as it sounds.\n"
+#~ "                                    And iPod nano wouldn’t be iPod nano "
+#~ "without gorgeous, hard-to-choose-from color.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/overview_design_silver.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-10 col-md-offset-1\">\n"
+#~ "                                <h2 class=\"text-center\">Music. It's "
+#~ "what beats inside.</h2>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-4 mt32 col-md-"
+#~ "offset-1\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/purple.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-6 mt32\">\n"
+#~ "                                <h3>How to get your groove on.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Tap to play your favorite songs. Or "
+#~ "entire albums.\n"
+#~ "                                    Or everything by one artist. You can "
+#~ "even browse by genres or composers.\n"
+#~ "                                    Flip through your music: Album art "
+#~ "looks great on the bigger screen.\n"
+#~ "                                    Or to keep things fresh, give iPod "
+#~ "nano a shake and it shuffles to a different song in your music library.\n"
+#~ "                                </p>\n"
+#~ "                                <h3>Genius. Your own personal DJ.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        Say you’re listening to a song "
+#~ "you love and you want to stay in the mood.\n"
+#~ "                                        Just tap Genius. It finds other "
+#~ "songs on iPod nano that go great together\n"
+#~ "                                        and makes a Genius playlist for "
+#~ "you. For more song combinations\n"
+#~ "                                        you wouldn’t have thought of "
+#~ "yourself, create Genius Mixes in iTunes\n"
+#~ "                                        and sync the ones you like to "
+#~ "iPod nano. Then tap Genius Mixes and\n"
+#~ "                                        rediscover songs you haven’t "
+#~ "heard in a while — or find music you forgot you even had.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-12 text-center mb16\">\n"
+#~ "                                <h2>Playlists. The perfect mix for every "
+#~ "mood.</h2>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-4\">\n"
+#~ "                                <h3>Sync to your heart’s content.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        iTunes on your Mac or PC makes it "
+#~ "easy to load up\n"
+#~ "                                        your iPod. Just choose the "
+#~ "playlists, audiobooks,\n"
+#~ "                                        podcasts, and other audio files "
+#~ "you want, then sync.\n"
+#~ "                                </p>\n"
+#~ "                            </div><div class=\"col-md-4\">\n"
+#~ "                                <h3>When one playlist isn’t enough.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        You probably have multiple "
+#~ "playlists in iTunes on your computer.\n"
+#~ "                                        One for your commute. One for the "
+#~ "gym. Sync those playlists\n"
+#~ "                                        to iPod, and you can play the "
+#~ "perfect mix for whatever\n"
+#~ "                                        mood strikes you. VoiceOver tells "
+#~ "you the name of each playlist,\n"
+#~ "                                        so it’s easy to switch between "
+#~ "them and find the one you want without looking.\n"
+#~ "                                </p>\n"
+#~ "                            </div><div class=\"col-md-4\">\n"
+#~ "                                <h3>Have Genius call the tunes.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        There’s another way to get a good "
+#~ "mix of music on iPod: Let Genius do the work.\n"
+#~ "                                        Activate Genius in iTunes on your "
+#~ "computer, and it automatically finds songs that sound\n"
+#~ "                                        great together. Then it creates "
+#~ "Genius Mixes, which you can easily sync to your iPod.\n"
+#~ "                                        It’s the perfect way to "
+#~ "rediscover songs you haven’t listened to in forever.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<section data-snippet-id=\"image-text\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 mt32 col-md-"
+#~ "offset-1\">\n"
+#~ "                                <h3>Ultrathin design</h3>\n"
+#~ "                                <h3 class=\"text-muted\">The desktop. In "
+#~ "its most advanced form ever</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Creating such a stunningly thin "
+#~ "design took some equally stunning feats of technological innovation. We "
+#~ "refined,re-imagined,or re-engineered everything about iMac from the "
+#~ "inside out. The result is an advanced, elegant all-in-one computer that’s "
+#~ "as much a work of art as it is state of the art.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 mt32\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/imac1.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"text-image\" class=\"mb16 "
+#~ "oe_dark\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"text-center col-md-8 col-md-"
+#~ "offset-2 mt16\">\n"
+#~ "                                <h2>Beautiful widescreen display.</h2>\n"
+#~ "                                <h3 class=\"text-muted\">Brilliance "
+#~ "onscreen. And behind it.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    How did we make an already gorgeous "
+#~ "widescreen display even better? By making it 75 percent less reflective. "
+#~ "And by re-architecting the LCD and moving it right up against the cover "
+#~ "glass. So you see your photos, games, movies, and everything else in "
+#~ "vivid, lifelike detail. \n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-10 col-md-offset-1\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/imac2.png\" width=\"100%\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt64\">\n"
+#~ "                                <p class=\"text-muted\">\n"
+#~ "                                    Powered by fourth-generation Intel "
+#~ "Core processors, this iMac is the fastest yet. Every model in the lineup "
+#~ "comes standard with a quad-core Intel Core i5 processor, starting at "
+#~ "2.7GHz and topping out at 3.4GHz.\n"
+#~ "                                </p><p class=\"text-muted\">\n"
+#~ "                                    And at the Apple Online Store, you "
+#~ "can configure your iMac with an even more powerful Intel Core i7 "
+#~ "processor, up to 3.5GHz.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mb32\">\n"
+#~ "                                <h3>Key Features</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        75 percent less reflection.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                        Individually calibrated for true-"
+#~ "to-life color.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                        More energy efficient.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                        Friendly to the environment.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                        Highly rated designs.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<section data-snippet-id=\"image-text\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 mt32 col-md-"
+#~ "offset-1\">\n"
+#~ "                                <h3>Ultrathin design</h3>\n"
+#~ "                                <h3 class=\"text-muted\">The desktop. In "
+#~ "its most advanced form ever</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Creating such a stunningly thin "
+#~ "design took some equally stunning feats of technological innovation. We "
+#~ "refined,re-imagined,or re-engineered everything about iMac from the "
+#~ "inside out. The result is an advanced, elegant all-in-one computer that’s "
+#~ "as much a work of art as it is state of the art.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 mt32\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/imac1.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"text-image\" class=\"mb16 "
+#~ "oe_dark\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"text-center col-md-8 col-md-"
+#~ "offset-2 mt16\">\n"
+#~ "                                <h2>Beautiful widescreen display.</h2>\n"
+#~ "                                <h3 class=\"text-muted\">Brilliance "
+#~ "onscreen. And behind it.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    How did we make an already gorgeous "
+#~ "widescreen display even better? By making it 75 percent less reflective. "
+#~ "And by re-architecting the LCD and moving it right up against the cover "
+#~ "glass. So you see your photos, games, movies, and everything else in "
+#~ "vivid, lifelike detail. \n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-10 col-md-offset-1\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/imac2.png\" width=\"100%\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt64\">\n"
+#~ "                                <p class=\"text-muted\">\n"
+#~ "                                    Powered by fourth-generation Intel "
+#~ "Core processors, this iMac is the fastest yet. Every model in the lineup "
+#~ "comes standard with a quad-core Intel Core i5 processor, starting at "
+#~ "2.7GHz and topping out at 3.4GHz.\n"
+#~ "                                </p><p class=\"text-muted\">\n"
+#~ "                                    And at the Apple Online Store, you "
+#~ "can configure your iMac with an even more powerful Intel Core i7 "
+#~ "processor, up to 3.5GHz.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mb32\">\n"
+#~ "                                <h3>Key Features</h3>\n"
+#~ "                                <p>\n"
+#~ "                                        75 percent less reflection.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                        Individually calibrated for true-"
+#~ "to-life color.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                        More energy efficient.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                        Friendly to the environment.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                        Highly rated designs.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<section data-snippet-id=\"text-image\" class=\"mt16 mb16 oe_dark\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt64\">\n"
+#~ "                                <h3>Why you'll love an iPad.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Right from the start, there’s a lot "
+#~ "to love about\n"
+#~ "                                    iPad. It’s simple yet powerful. Thin "
+#~ "and light yet\n"
+#~ "                                    full-featured. It can do just about "
+#~ "everything and\n"
+#~ "                                    be just about anything.\n"
+#~ "                                </p><p>\n"
+#~ "                                    And because it’s so easy to use, it’s "
+#~ "easy to love.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 mt16 mb16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/ipad_why.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/ipad_experience.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-6 mt64\">\n"
+#~ "                                <h3>The full iPad experience.</h3>\n"
+#~ "                                <h4 class=\"small\">There is less of it, "
+#~ "but no less to it.</h4>\n"
+#~ "                                <p>\n"
+#~ "                                    Everything you love about iPad — the "
+#~ "beautiful\n"
+#~ "                                    screen, fast and fluid performance, "
+#~ "FaceTime and\n"
+#~ "                                    iSight cameras, thousands of amazing "
+#~ "apps, 10-hour\n"
+#~ "                                    battery life* — is everything you’ll "
+#~ "love about\n"
+#~ "                                    iPad mini, too. And you can hold it "
+#~ "in one hand.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<section data-snippet-id=\"text-image\" class=\"mt16 mb16 oe_dark\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt64\">\n"
+#~ "                                <h3>Why you'll love an iPad.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Right from the start, there’s a lot "
+#~ "to love about\n"
+#~ "                                    iPad. It’s simple yet powerful. Thin "
+#~ "and light yet\n"
+#~ "                                    full-featured. It can do just about "
+#~ "everything and\n"
+#~ "                                    be just about anything.\n"
+#~ "                                </p><p>\n"
+#~ "                                    And because it’s so easy to use, it’s "
+#~ "easy to love.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 mt16 mb16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/ipad_why.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"image-text\" class=\"mt16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/ipad_experience.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-6 mt64\">\n"
+#~ "                                <h3>The full iPad experience.</h3>\n"
+#~ "                                <h4 class=\"small\">There is less of it, "
+#~ "but no less to it.</h4>\n"
+#~ "                                <p>\n"
+#~ "                                    Everything you love about iPad — the "
+#~ "beautiful\n"
+#~ "                                    screen, fast and fluid performance, "
+#~ "FaceTime and\n"
+#~ "                                    iSight cameras, thousands of amazing "
+#~ "apps, 10-hour\n"
+#~ "                                    battery life* — is everything you’ll "
+#~ "love about\n"
+#~ "                                    iPad mini, too. And you can hold it "
+#~ "in one hand.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<section data-snippet-id=\"text-image\" class=\"mt16 mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt32\">\n"
+#~ "                                <h3>Bose Mini Bluetooth Speaker.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    The Bose® SoundLink® mini is Bose's "
+#~ "smallest portable Bluetooth speaker. Its ultra-compact size fits in the \n"
+#~ "                                    palm of your hand, yet gives you "
+#~ "full, natural sound wirelessly from your iPhone, iPad, or iPod. Grab it "
+#~ "and go \n"
+#~ "                                    full-featured. It can do just about "
+#~ "everything and\n"
+#~ "                                    experience music just about "
+#~ "anywhere.\n"
+#~ "                                </p>\n"
+#~ "\n"
+#~ "                                <div class=\"panel panel-default mt48\" "
+#~ "data-snippet-id=\"panel\">\n"
+#~ "                                    <div class=\"panel-heading\">\n"
+#~ "                                        <h3 class=\"panel-title"
+#~ "\">Characteristics</h3>\n"
+#~ "                                    </div>\n"
+#~ "                                    <div class=\"panel-body\">\n"
+#~ "                                        <ul>\n"
+#~ "                                            <li>Sleek, compact design</"
+#~ "li>\n"
+#~ "                                            <li>Efficient, high-quality "
+#~ "audio</li>\n"
+#~ "                                            <li>Remote control for power, "
+#~ "volume, track seek</li>\n"
+#~ "                                            <li>Auxiliary input for "
+#~ "portable devices</li>\n"
+#~ "                                            <li>Universal iPod docking "
+#~ "station fits most iPod/iPhone models</li>\n"
+#~ "                                            <li>Charges iPod/iPhone</li>\n"
+#~ "                                            <li>Volume control on main "
+#~ "system</li>\n"
+#~ "                                        </ul>\n"
+#~ "                                    </div>\n"
+#~ "                                </div>\n"
+#~ "\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-4 mt16 mb16 col-md-"
+#~ "offset1\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/play_where_you_play.jpg\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"text-image\" class=\"mt16 mb16 "
+#~ "oe_dark\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt16\">\n"
+#~ "                                <h2>Plays where you play</h2>\n"
+#~ "                                <p>\n"
+#~ "                                        The SoundLink® Mini speaker is "
+#~ "small and light enough\n"
+#~ "                                        to tuck into your bag. It weighs "
+#~ "in at just 1.5 pounds.\n"
+#~ "                                        Its low profile lets you place it "
+#~ "almost anywhere and\n"
+#~ "                                        provides a low center of gravity "
+#~ "that makes it nearly\n"
+#~ "                                        impossible to tip over.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    The rechargeable lithium-ion battery "
+#~ "delivers up to seven hours of playtime.\n"
+#~ "                                    And at home, you can listen even "
+#~ "longer—the charging cradle lets\n"
+#~ "                                    you listen while it charges.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt32\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/more_features.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-4 text-"
+#~ "center mb16 mt16\">\n"
+#~ "                                <h3>Bluetooth connectivity</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    The speaker has a range of about 30 "
+#~ "feet, so you can enjoy\n"
+#~ "                                    the sound you want without wires. It "
+#~ "pairs easily with your\n"
+#~ "                                    smartphone, iPad® or other Bluetooth "
+#~ "device.\n"
+#~ "                                    And it remembers the most recent six "
+#~ "devices you've used,\n"
+#~ "                                    so reconnecting is even simpler.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"text-image\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 mt32 "
+#~ "mb16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/bluetooth.jpg\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 mt16\">\n"
+#~ "                                <h2>More features.</h2>\n"
+#~ "                                <p>\n"
+#~ "                                    Charging cradle recharges the battery "
+#~ "and serves as a convenient\n"
+#~ "                                    home base for your speaker, and it "
+#~ "lets you play while it charges.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    Wall charger can be plugged into the "
+#~ "cradle or directly into the speaker\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    Auxiliary port lets you connect other "
+#~ "audio sources, like an MP3 player\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    USB port allows for software update "
+#~ "to ensure ongoing Bluetooth device compatibility\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    Soft covers are available separately "
+#~ "in blue, green or orange. Pick a color to match your style.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<section data-snippet-id=\"text-image\" class=\"mt16 mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt32\">\n"
+#~ "                                <h3>Bose Mini Bluetooth Speaker.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    The Bose® SoundLink® mini is Bose's "
+#~ "smallest portable Bluetooth speaker. Its ultra-compact size fits in the \n"
+#~ "                                    palm of your hand, yet gives you "
+#~ "full, natural sound wirelessly from your iPhone, iPad, or iPod. Grab it "
+#~ "and go \n"
+#~ "                                    full-featured. It can do just about "
+#~ "everything and\n"
+#~ "                                    experience music just about "
+#~ "anywhere.\n"
+#~ "                                </p>\n"
+#~ "\n"
+#~ "                                <div class=\"panel panel-default mt48\" "
+#~ "data-snippet-id=\"panel\">\n"
+#~ "                                    <div class=\"panel-heading\">\n"
+#~ "                                        <h3 class=\"panel-title"
+#~ "\">Characteristics</h3>\n"
+#~ "                                    </div>\n"
+#~ "                                    <div class=\"panel-body\">\n"
+#~ "                                        <ul>\n"
+#~ "                                            <li>Sleek, compact design</"
+#~ "li>\n"
+#~ "                                            <li>Efficient, high-quality "
+#~ "audio</li>\n"
+#~ "                                            <li>Remote control for power, "
+#~ "volume, track seek</li>\n"
+#~ "                                            <li>Auxiliary input for "
+#~ "portable devices</li>\n"
+#~ "                                            <li>Universal iPod docking "
+#~ "station fits most iPod/iPhone models</li>\n"
+#~ "                                            <li>Charges iPod/iPhone</li>\n"
+#~ "                                            <li>Volume control on main "
+#~ "system</li>\n"
+#~ "                                        </ul>\n"
+#~ "                                    </div>\n"
+#~ "                                </div>\n"
+#~ "\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-4 mt16 mb16 col-md-"
+#~ "offset1\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/play_where_you_play.jpg\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"text-image\" class=\"mt16 mb16 "
+#~ "oe_dark\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt16\">\n"
+#~ "                                <h2>Plays where you play</h2>\n"
+#~ "                                <p>\n"
+#~ "                                        The SoundLink® Mini speaker is "
+#~ "small and light enough\n"
+#~ "                                        to tuck into your bag. It weighs "
+#~ "in at just 1.5 pounds.\n"
+#~ "                                        Its low profile lets you place it "
+#~ "almost anywhere and\n"
+#~ "                                        provides a low center of gravity "
+#~ "that makes it nearly\n"
+#~ "                                        impossible to tip over.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    The rechargeable lithium-ion battery "
+#~ "delivers up to seven hours of playtime.\n"
+#~ "                                    And at home, you can listen even "
+#~ "longer—the charging cradle lets\n"
+#~ "                                    you listen while it charges.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 "
+#~ "mt32\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/more_features.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-4 text-"
+#~ "center mb16 mt16\">\n"
+#~ "                                <h3>Bluetooth connectivity</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    The speaker has a range of about 30 "
+#~ "feet, so you can enjoy\n"
+#~ "                                    the sound you want without wires. It "
+#~ "pairs easily with your\n"
+#~ "                                    smartphone, iPad® or other Bluetooth "
+#~ "device.\n"
+#~ "                                    And it remembers the most recent six "
+#~ "devices you've used,\n"
+#~ "                                    so reconnecting is even simpler.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "                <section data-snippet-id=\"text-image\" class=\"mt16 "
+#~ "mb16\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-5 col-md-offset-1 mt32 "
+#~ "mb16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/bluetooth.jpg\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-5 mt16\">\n"
+#~ "                                <h2>More features.</h2>\n"
+#~ "                                <p>\n"
+#~ "                                    Charging cradle recharges the battery "
+#~ "and serves as a convenient\n"
+#~ "                                    home base for your speaker, and it "
+#~ "lets you play while it charges.\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    Wall charger can be plugged into the "
+#~ "cradle or directly into the speaker\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    Auxiliary port lets you connect other "
+#~ "audio sources, like an MP3 player\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    USB port allows for software update "
+#~ "to ensure ongoing Bluetooth device compatibility\n"
+#~ "                                </p>\n"
+#~ "                                <p>\n"
+#~ "                                    Soft covers are available separately "
+#~ "in blue, green or orange. Pick a color to match your style.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<section data-snippet-id=\"text-image\" class=\"mt32\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-8 col-md-offset-2 text-"
+#~ "center\">\n"
+#~ "                                <h3>Two is better than one.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Unlike many small headphones, each "
+#~ "earpiece of the Apple In-Ear Headphones\n"
+#~ "                                    contains two separate high-"
+#~ "performance drivers — a woofer to handle bass and\n"
+#~ "                                    mid-range sounds and a tweeter for "
+#~ "high-frequency audio. These dedicated\n"
+#~ "                                    drivers help ensure accurate, "
+#~ "detailed sound across the entire sonic spectrum.\n"
+#~ "                                    The result: you’re immersed in the "
+#~ "music and hear details you never knew existed.\n"
+#~ "                                    Even when listening to an old "
+#~ "favorite, you may feel like you’re hearing it for the first time.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div><div class=\"row mt16\">\n"
+#~ "                            <div class=\"col-md-2 mt16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/promo_headphones.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-6\">\n"
+#~ "                                <h3 class=\"mt16\">Hear, hear.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    The Apple In-Ear Headphones deliver a "
+#~ "truly immersive sound experience by drastically\n"
+#~ "                                    reducing unwanted outside noises. The "
+#~ "soft, silicone ear tips fit snugly and comfortably\n"
+#~ "                                    in your ear, creating a seal that "
+#~ "isolates your music from your surroundings.\n"
+#~ "                                    Three different sizes of ear tips are "
+#~ "included so you can find a perfect fit for each ear.\n"
+#~ "                                    Also included are a convenient "
+#~ "carrying case for the ear tips and a cable-control case\n"
+#~ "                                    for the headphones themselves.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-4\">\n"
+#~ "                                <h3 class=\"mt16\">Keep it clean.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Inside each earpiece is a stainless "
+#~ "steel mesh cap that protects the precision acoustic\n"
+#~ "                                    components from dust and debris. You "
+#~ "can remove the caps for cleaning or replace\n"
+#~ "                                    them with an extra set that’s "
+#~ "included in the box.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div><div class=\"row\">\n"
+#~ "                            <div class=\"col-md-2 col-md-offset-5 "
+#~ "mt16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/buds_closeup.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<section data-snippet-id=\"text-image\" class=\"mt32\">\n"
+#~ "                    <div class=\"container\">\n"
+#~ "                        <div class=\"row\">\n"
+#~ "                            <div class=\"col-md-8 col-md-offset-2 text-"
+#~ "center\">\n"
+#~ "                                <h3>Two is better than one.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Unlike many small headphones, each "
+#~ "earpiece of the Apple In-Ear Headphones\n"
+#~ "                                    contains two separate high-"
+#~ "performance drivers — a woofer to handle bass and\n"
+#~ "                                    mid-range sounds and a tweeter for "
+#~ "high-frequency audio. These dedicated\n"
+#~ "                                    drivers help ensure accurate, "
+#~ "detailed sound across the entire sonic spectrum.\n"
+#~ "                                    The result: you’re immersed in the "
+#~ "music and hear details you never knew existed.\n"
+#~ "                                    Even when listening to an old "
+#~ "favorite, you may feel like you’re hearing it for the first time.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div><div class=\"row mt16\">\n"
+#~ "                            <div class=\"col-md-2 mt16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/promo_headphones.png\">\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-6\">\n"
+#~ "                                <h3 class=\"mt16\">Hear, hear.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    The Apple In-Ear Headphones deliver a "
+#~ "truly immersive sound experience by drastically\n"
+#~ "                                    reducing unwanted outside noises. The "
+#~ "soft, silicone ear tips fit snugly and comfortably\n"
+#~ "                                    in your ear, creating a seal that "
+#~ "isolates your music from your surroundings.\n"
+#~ "                                    Three different sizes of ear tips are "
+#~ "included so you can find a perfect fit for each ear.\n"
+#~ "                                    Also included are a convenient "
+#~ "carrying case for the ear tips and a cable-control case\n"
+#~ "                                    for the headphones themselves.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                            <div class=\"col-md-4\">\n"
+#~ "                                <h3 class=\"mt16\">Keep it clean.</h3>\n"
+#~ "                                <p>\n"
+#~ "                                    Inside each earpiece is a stainless "
+#~ "steel mesh cap that protects the precision acoustic\n"
+#~ "                                    components from dust and debris. You "
+#~ "can remove the caps for cleaning or replace\n"
+#~ "                                    them with an extra set that’s "
+#~ "included in the box.\n"
+#~ "                                </p>\n"
+#~ "                            </div>\n"
+#~ "                        </div><div class=\"row\">\n"
+#~ "                            <div class=\"col-md-2 col-md-offset-5 "
+#~ "mt16\">\n"
+#~ "                                <img class=\"img img-responsive\" src=\"/"
+#~ "website_sale/static/src/img/buds_closeup.png\">\n"
+#~ "                            </div>\n"
+#~ "                        </div>\n"
+#~ "                    </div>\n"
+#~ "                </section>\n"
+#~ "            "
+
+#~ msgid "Accessories"
+#~ msgstr "配件"
+
+#~ msgid "All in one hi-speed printer with fax and scanner."
+#~ msgstr "高速列印、傳真、掃描一體機"
+
+#~ msgid "Apple Accessories"
+#~ msgstr "蘋果配件"
+
+#~ msgid "Apple In-Ear Headphones"
+#~ msgstr "蘋果入耳式耳機"
+
+#~ msgid "Apple Wireless Keyboard"
+#~ msgstr "蘋果無線鍵盤"
+
+#~ msgid "Assembly Service Cost"
+#~ msgstr "組裝服務成本"
+
+#~ msgid "Black"
+#~ msgstr "黑色"
+
+#~ msgid "Blank CD"
+#~ msgstr "空白CD"
+
+#~ msgid "Blank DVD-RW"
+#~ msgstr "空白 DVD-RW"
+
+#~ msgid "Bose Mini Bluetooth Speaker"
+#~ msgstr "百色迷你藍牙音箱"
+
+#~ msgid "Bose's smallest portable Bluetooth speaker"
+#~ msgstr "Bose的最小的可擕式藍牙音箱"
+
+#~ msgid "Box 20x20x40"
+#~ msgstr "箱子 20x20x40"
+
+#~ msgid "Box 30x40x60"
+#~ msgstr "箱子 30x40x60"
+
+#~ msgid "Case"
+#~ msgstr "案例"
+
+#~ msgid "Color"
+#~ msgstr "顏色"
+
+#~ msgid ""
+#~ "Color: White\n"
+#~ "Capacity: 16GB\n"
+#~ "Connectivity: Wifi\n"
+#~ "Beautiful 7.9-inch display\n"
+#~ "Over 375,000 apps3\n"
+#~ "Ultrafast wireless\n"
+#~ "iOS7\n"
+#~ "            "
+#~ msgstr ""
+#~ "顏色: 白色\n"
+#~ "容量: 16GB\n"
+#~ "連接方式: Wifi\n"
+#~ "Beautiful 7.9-inch display\n"
+#~ "Over 375,000 apps3\n"
+#~ "超高速無線\n"
+#~ "iOS7\n"
+#~ "            "
+
+#~ msgid "Components"
+#~ msgstr "部件"
+
+#~ msgid "Computer Case"
+#~ msgstr "主機殼"
+
+#~ msgid "Computer all-in-one"
+#~ msgstr "多功能電腦"
+
+#~ msgid "Computers"
+#~ msgstr "電腦"
+
+#~ msgid "Custom Laptop based on customer's requirement."
+#~ msgstr "基於客戶要求定制可擕式電腦。"
+
+#~ msgid "Custom computer assembled on order based on customer's requirement."
+#~ msgstr "根據客戶要求定制組裝電腦"
+
+#~ msgid "Datacard"
+#~ msgstr "數據卡"
+
+#~ msgid "Devices"
+#~ msgstr "設備"
+
+#~ msgid "EAN"
+#~ msgstr "條碼"
+
+#~ msgid "Error!"
+#~ msgstr "錯誤!"
+
+#~ msgid "Error: Invalid ean code"
+#~ msgstr "錯誤：無效的(EAN)條碼"
+
+#~ msgid "External Devices"
+#~ msgstr "外置設備"
+
+#~ msgid "External Hard Drive"
+#~ msgstr "外部硬碟驅動器"
+
+#~ msgid "External Hard disk"
+#~ msgstr "外置硬碟"
+
+#~ msgid ""
+#~ "Frequency: 5Hz to 21kHz\n"
+#~ "Impedance: 23 ohms\n"
+#~ "Sensitivity: 109 dB SPL/mW\n"
+#~ "Drivers: two-way balanced armature\n"
+#~ "Cable length: 1065 mm\n"
+#~ "Weight: 0.4 ounce\n"
+#~ "            "
+#~ msgstr ""
+#~ "頻率: 5Hz to 21kHz\n"
+#~ "阻抗: 23 ohms\n"
+#~ "靈敏度: 109 dB SPL/mW\n"
+#~ "驅動:雙向平衡電樞\n"
+#~ "電纜長度: 1065 mm\n"
+#~ "重量: 0.4 ounce\n"
+#~ "            "
+
+#~ msgid "Full featured image editing software."
+#~ msgstr "全功能圖像編輯軟體"
+
+#~ msgid "GrapWorks Software"
+#~ msgstr "GrapWorks 軟體"
+
+#~ msgid "Graphics Card"
+#~ msgstr "顯卡"
+
+#~ msgid "HDD SH-1"
+#~ msgstr "硬碟 SH-1"
+
+#~ msgid "HDD SH-2"
+#~ msgstr "硬碟 SH-2"
+
+#~ msgid "HDD on Demand"
+#~ msgstr "HDD on Demand"
+
+#~ msgid ""
+#~ "Hands free headset for laptop PC with in-line microphone and headphone "
+#~ "plug."
+#~ msgstr "用於帶有內置麥克風和耳機插孔的可攜式電腦的免提耳機。"
+
+#~ msgid "Hard Drive"
+#~ msgstr "硬碟"
+
+#~ msgid "Headset"
+#~ msgstr "耳機"
+
+#~ msgid "Headset USB"
+#~ msgstr "USB 耳機"
+
+#~ msgid "Headset for laptop PC with USB connector."
+#~ msgstr "用戶筆記型電腦的USB 連接的耳機"
+
+#~ msgid "Headset standard"
+#~ msgstr "標準耳機"
+
+#~ msgid ""
+#~ "Height: 3.01 inches\n"
+#~ "Width:  1.56 inches\n"
+#~ "Depth:  0.21 inch\n"
+#~ "Weight: 1.1 ounces"
+#~ msgstr ""
+#~ "高度: 3.01 英寸\n"
+#~ "寬度: 1.56 英寸\n"
+#~ "深度:  0.21 英寸\n"
+#~ "重量: 1.1 盎司"
+
+#~ msgid "Imac"
+#~ msgstr "iMac電腦"
+
+#~ msgid "Ink Cartridge"
+#~ msgstr "墨水匣"
+
+#~ msgid "Integrity Error!"
+#~ msgstr "集成錯誤！"
+
+#~ msgid "Internal"
+#~ msgstr "內部"
+
+#~ msgid "Ipad"
+#~ msgstr "Ipad平板"
+
+#~ msgid "Ipod"
+#~ msgstr "iPod"
+
+#~ msgid "Keyboard / Mouse"
+#~ msgstr "鍵盤/滑鼠"
+
+#~ msgid "Laptop Customized"
+#~ msgstr "定制可攜式電腦"
+
+#~ msgid "Laptop E5023"
+#~ msgstr "可擕式電腦 E5023"
+
+#~ msgid "Laptop S3450"
+#~ msgstr "可攜式電腦 S3450"
+
+#~ msgid "Laptops"
+#~ msgstr "筆記型電腦"
+
+#~ msgid "Memory"
+#~ msgstr "記憶體"
+
+#~ msgid "Modem & Router"
+#~ msgstr "貓 和 路由器"
+
+#~ msgid "Motherboard"
+#~ msgstr "主機板"
+
+#~ msgid "Motherboard A20Z7"
+#~ msgstr "主機板 A20Z7"
+
+#~ msgid "Motherboard I9P57"
+#~ msgstr "主機板 I9P57"
+
+#~ msgid "Mouse"
+#~ msgstr "滑鼠"
+
+#~ msgid "Multimedia Speakers"
+#~ msgstr "多媒體喇叭"
+
+#~ msgid "Network"
+#~ msgstr "網路"
+
+#~ msgid ""
+#~ "New Unit of Measure '%s' must belong to same Unit of Measure category "
+#~ "'%s' as of old Unit of Measure '%s'. If you need to change the unit of "
+#~ "measure, you may deactivate this product from the 'Procurements' tab and "
+#~ "create a new one."
+#~ msgstr ""
+#~ "新的計量單位'%s'的分類 '%s'必須跟老單位 '%s' 相同。如果你要改變計量單位，"
+#~ "你要'補貨'標籤停用這個產品 ，並且創建一個新的。"
+
+#~ msgid ""
+#~ "Office Editing Software with word processing, spreadsheets, "
+#~ "presentations, graphics, and databases..."
+#~ msgstr "辦公室編輯軟體，文書處理、試算表、演示文稿、圖片處理和資料庫"
+
+#~ msgid "Office Suite"
+#~ msgstr "辦公套件"
+
+#~ msgid "On Site Assistance"
+#~ msgstr "現場協助"
+
+#~ msgid "On Site Monitoring"
+#~ msgstr "現成監測"
+
+#~ msgid "On demand hard-disk having capacity based on requirement."
+#~ msgstr "基於需求的硬碟容量要求"
+
+#~ msgid "Other Products"
+#~ msgstr "其它商品"
+
+#~ msgid "PC Assemble + Custom (PC on Demand) "
+#~ msgstr "PC 組裝 + 定制（按需）"
+
+#~ msgid "PC Assemble SC234"
+#~ msgstr "PC 組裝 SC234"
+
+#~ msgid "Pen Drive"
+#~ msgstr "隨身碟"
+
+#~ msgid "Pen drive, SP-2"
+#~ msgstr "隨身記憶體, SP-2"
+
+#~ msgid "Pen drive, SP-4"
+#~ msgstr "隨身記憶體, SP-4"
+
+#~ msgid "Printer"
+#~ msgstr "印表機"
+
+#~ msgid "Printer, All-in-one"
+#~ msgstr "印表機一體機"
+
+#~ msgid "Processor"
+#~ msgstr "處理器"
+
+#~ msgid "Processor AMD 8-Core"
+#~ msgstr "AMD 8核處理器"
+
+#~ msgid "Processor Core i5 2.70 Ghz"
+#~ msgstr "酷睿i5 處理器 2.70 Ghz"
+
+#~ msgid "Product Categories & Attributes"
+#~ msgstr "產品分類和屬性"
+
+#~ msgid "Purchase"
+#~ msgstr "採購"
+
+#~ msgid "RAM SR2"
+#~ msgstr "記憶體SR2"
+
+#~ msgid "RAM SR3"
+#~ msgstr "記憶體Sr3"
+
+#~ msgid "RAM SR5"
+#~ msgstr "記憶體SR5"
+
+#~ msgid "Raw Materials"
+#~ msgstr "原材料"
+
+#~ msgid "Router R430"
+#~ msgstr "路由器R430"
+
+#~ msgid "Screen"
+#~ msgstr "螢幕"
+
+#~ msgid "Server"
+#~ msgstr "伺服器"
+
+#~ msgid "Software"
+#~ msgstr "軟 件"
+
+#~ msgid "Speakers"
+#~ msgstr "喇叭"
+
+#~ msgid "Switch"
+#~ msgstr "交換機"
+
+#~ msgid "Switch, 24 ports"
+#~ msgstr "24 口交換機"
+
+#~ msgid ""
+#~ "The sleek aluminium Apple Wireless Keyboard.\n"
+#~ "            "
+#~ msgstr ""
+#~ "鋁制蘋果無線鍵盤\n"
+#~ "            "
+
+#~ msgid "This product is configured with example of push/pull flows"
+#~ msgstr "此產品已經設置為推/拉流程的例子。"
+
+#~ msgid ""
+#~ "This type of service include assistance for security questions, system "
+#~ "configuration requirements, implementation or special needs."
+#~ msgstr "服務類型包括安全問題的輔助，系統設置需求，實施或者特別的需求。"
+
+#~ msgid "This type of service include basic monitoring of products."
+#~ msgstr "這種服務類型包括基本的產品監測"
+
+#~ msgid "Toner Cartridge"
+#~ msgstr "碳粉匣"
+
+#~ msgid "USB Adapter"
+#~ msgstr "USB 適配器"
+
+#~ msgid "Unit of Measure categories Mismatch!"
+#~ msgstr "計量單位分類不一致"
+
+#~ msgid "Video Acquisition"
+#~ msgstr "視頻採集"
+
+#~ msgid "Warning!"
+#~ msgstr "警告！"
+
+#~ msgid "Webcam"
+#~ msgstr "網路攝像頭"
+
+#~ msgid "White"
+#~ msgstr "白色"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Windows 7 Professional"
+#~ msgstr "Windows 7 專業版"
+
+#~ msgid "Windows Home Server 2011"
+#~ msgstr "Windows Home Server 2011"
+
+#~ msgid ""
+#~ "You provided an invalid \"EAN13 Barcode\" reference. You may use the "
+#~ "\"Internal Reference\" field instead."
+#~ msgstr ""
+#~ "你提供了一個錯誤的  \"EAN13 條碼\" 編號。你可能要用 “編號”欄位替代。"
+
+#~ msgid "Zed+ Antivirus"
+#~ msgstr "Zed+反病毒"
+
+#~ msgid "iMac"
+#~ msgstr "蘋果電腦"
+
+#~ msgid "iPad Mini"
+#~ msgstr "迷你平板"
+
+#~ msgid "iPad Retina Display yyyy"
+#~ msgstr "iPad Retina 顯示幕"
+
+#~ msgid "iPod"
+#~ msgstr "IPOD"
+
+#, fuzzy
+#~ msgid "Bose Mini test"
+#~ msgstr "小型和極簡主義"
+
+#~ msgid "Mouse, Optical"
+#~ msgstr "光學滑鼠"
+
+#~ msgid "Mouse, Wireless"
+#~ msgstr "無線滑鼠"
+
+#~ msgid "Only one product variant"
+#~ msgstr "產品規格唯一"
+
+#~ msgid ""
+#~ "Specify the minimum quantity that needs to be bought/sold for the rule to "
+#~ "apply."
+#~ msgstr "指定 使用這條規則的需要的買賣的最小數量"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new category.\n"
+#~ "              </p><p>\n"
+#~ "                Categories are used to browse your products through the\n"
+#~ "                touchscreen interface.\n"
+#~ "              </p><p>\n"
+#~ "                If you put a photo on the category, the layout of the\n"
+#~ "                touchscreen interface will automatically. We suggest not "
+#~ "to put\n"
+#~ "                a photo on categories for small (1024x768) screens.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下定義一個新分類\n"
+#~ "              </p><p>\n"
+#~ "                分類被用來通過觸控式螢幕介面來\n"
+#~ "                流覽產品。\n"
+#~ "              </p><p>\n"
+#~ "                如果你在分類裡設置一個圖片，\n"
+#~ "                觸控式螢幕介面將自動變化，我們建議\n"
+#~ "                在小的螢幕(1024x768)上 不要為分類設置圖片\n"
+#~ "               </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new product.\n"
+#~ "              </p><p>\n"
+#~ "                You must define a product for everything you purchase, "
+#~ "whether\n"
+#~ "                it's a physical product, a consumable or services you buy "
+#~ "to\n"
+#~ "                subcontractants.\n"
+#~ "              </p><p>\n"
+#~ "                The product form contains detailed information to improve "
+#~ "the\n"
+#~ "                purchase process: prices, procurement logistics, "
+#~ "accounting data,\n"
+#~ "                available suppliers, etc.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\"> \n"
+#~ "               按一下定義一個新產品\n"
+#~ "              </p><p>\n"
+#~ "                你必須為採購的每一樣都定義一個產品。可以是物理產品、消耗"
+#~ "品、或者你從分包商購買的服務。\n"
+#~ "              </p><p>\n"
+#~ "                產品表單包括下面的資訊以簡化採購處理：價格、採購物流，會計"
+#~ "資料，可用的供應商等等。\n"
+#~ "               </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new variant of product.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "               點擊新增產品規格。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid "Children Categories"
+#~ msgstr "子分類"
+
+#~ msgid "Context..."
+#~ msgstr "上下文..."
+
+#~ msgid ""
+#~ "Medium-sized image of the category. It is automatically resized as a "
+#~ "128x128px image, with aspect ratio preserved. Use this field in form "
+#~ "views or some kanban views."
+#~ msgstr ""
+#~ "分類的中等尺寸圖片。保持縱橫比例，圖像超出尺寸後，自動縮放為128x128px ，這"
+#~ "欄位通常用於看板視圖。"
+
+#~ msgid "Others"
+#~ msgstr "其它"
+
+#~ msgid "Packages"
+#~ msgstr "包裝"
+
+#~ msgid "Pos/Public Categories"
+#~ msgstr "外部產品分類"
+
+#~ msgid "Pos/Public Product Categories"
+#~ msgstr "外部產品分類"
+
+#~ msgid ""
+#~ "Price Margin: Margin in percentage amount on sale price for the variant. "
+#~ "eg. 10 price margin, 1000 * 1.1 = 1100."
+#~ msgstr ""
+#~ "百分比加價因數.產品銷售加價百分比.如 加價因數=10,售價 1000*1.1=1100."
+
+#~ msgid "Product Product Categories"
+#~ msgstr "產品分類"
+
+#~ msgid "Public Category"
+#~ msgstr "外部分類"
+
+#~ msgid "Public Sale Price"
+#~ msgstr "公開銷售價格"
+
+#~ msgid "Smal-sized image"
+#~ msgstr "小尺寸圖片"
+
+#~ msgid ""
+#~ "Small-sized image of the category. It is automatically resized as a "
+#~ "64x64px image, with aspect ratio preserved. Use this field anywhere a "
+#~ "small image is required."
+#~ msgstr ""
+#~ "分類的小尺寸圖片。保持縱橫比，自動縮放為64x64px。用於任何需要小圖片的場合"
+
+#~ msgid "Sole child of the parent template"
+#~ msgstr "唯一的母版繼承者"
+
+#~ msgid "Supplier Info"
+#~ msgstr "供應商資訊"
+
+#~ msgid "Template"
+#~ msgstr "範本"
+
+#~ msgid "Templates"
+#~ msgstr "範本"
+
+#~ msgid ""
+#~ "This field holds the image used as image for the cateogry, limited to "
+#~ "1024x1024px."
+#~ msgstr "該欄位保存分類的圖片，大小不超過  1024x1024px."
+
+#~ msgid ""
+#~ "Those categories are used to group similar products for public sales "
+#~ "(eg.: point of sale, e-commerce)."
+#~ msgstr "產品分組(如：銷售，電子商務)"
+
+#~ msgid "Variant Price Margin"
+#~ msgstr "價格折扣"
+
+#~ msgid "e.g. 5901234123457"
+#~ msgstr "例如： 5901234123457"
+
+#~ msgid "the template"
+#~ msgstr "產品範本"
+
+#~ msgid "No standard price associated for product %s for the given date"
+#~ msgstr "對於產品  %s ，在給定的日期內沒有標準價格。"
+
+#~ msgid "Product attribute (not supported)"
+#~ msgstr "產品屬性（不支援）"
+
+#~ msgid "Product template created and standard price set"
+#~ msgstr "產品範本被建立並且設置了標準價格"
+
+#~ msgid "Reason"
+#~ msgstr "原因"
+
+#~ msgid "standard price is changed."
+#~ msgstr "標準價格被改變"
+
+#~ msgid "Supplier name, price, product code, ..."
+#~ msgstr "供應商名稱,價格,產品編碼,..."
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a new packaging type.\n"
+#~ "              </p><p>\n"
+#~ "                The packaging type define the dimensions as well as the "
+#~ "number\n"
+#~ "                of products per package. This will ensure salesperson "
+#~ "sell the\n"
+#~ "                right number of products according to the package "
+#~ "selected.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                按一下來新建一個包裝類型.\n"
+#~ "              </p><p>\n"
+#~ "                包裝類型除了定義每包的數量外，還定義了包裝的外形尺寸。這將"
+#~ "確保銷售\n"
+#~ "                人員根據選定的包裝來出售正確數量的產品。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "1 or several supplier(s) can be linked to a product. All information "
+#~ "stands in the product form."
+#~ msgstr "1個或多個供應商能關聯到一個產品,所有資訊委員產品的表單內."
+
+#~ msgid "Supplier of the product"
+#~ msgstr "產品的供應商"
+
+#~ msgid "Shipping Unit"
+#~ msgstr "運輸單位"
+
+#~ msgid "Pallet Dimension"
+#~ msgstr "託盤尺寸"
+
+#~ msgid "Type of Package"
+#~ msgstr "包裝類型"
+
+#~ msgid "Creation of the product"
+#~ msgstr "產品創建"
+
+#~ msgid "Costing Method"
+#~ msgstr "成本計算方法"
+
+#~ msgid "Incoming"
+#~ msgstr "入庫"
+
+#~ msgid ""
+#~ "Quantity of products that are planned to leave.\n"
+#~ "In a context with a single Stock Location, this includes goods leaving "
+#~ "this Location, or any of its children.\n"
+#~ "In a context with a single Warehouse, this includes goods leaving the "
+#~ "Stock Location of this Warehouse, or any of its children.\n"
+#~ "In a context with a single Shop, this includes goods leaving the Stock "
+#~ "Location of the Warehouse of this Shop, or any of its children.\n"
+#~ "Otherwise, this includes goods leaving any Stock Location with 'internal' "
+#~ "type."
+#~ msgstr ""
+#~ "計畫發出的產品數量。\n"
+#~ "當與單個庫位相關時，包括了在這個庫位裡的貨物數量，以及任意的子庫位。\n"
+#~ "當與單個倉庫相關時，包括存儲在這個倉庫的庫位裡的貨物數量，以及任意的子庫"
+#~ "位。\n"
+#~ "當與單個門店相關時，包括存儲在這個門店所屬倉庫的庫位裡的貨物數量，以及任意"
+#~ "的子庫位。\n"
+#~ "否則，這是存儲在任何“內部”型別程式庫位的貨物。"
+
+#~ msgid "Outgoing"
+#~ msgstr "出庫"
+
+#~ msgid ""
+#~ "Quantity of products that are planned to arrive.\n"
+#~ "In a context with a single Stock Location, this includes goods arriving "
+#~ "to this Location, or any of its children.\n"
+#~ "In a context with a single Warehouse, this includes goods arriving to the "
+#~ "Stock Location of this Warehouse, or any of its children.\n"
+#~ "In a context with a single Shop, this includes goods arriving to the "
+#~ "Stock Location of the Warehouse of this Shop, or any of its children.\n"
+#~ "Otherwise, this includes goods arriving to any Stock Location with "
+#~ "'internal' type."
+#~ msgstr ""
+#~ "計畫到達的產品數量\n"
+#~ "\n"
+#~ "當與單個庫位相關時，包括了在這個庫位裡的貨物數量，以及任意的子庫位。\n"
+#~ "當與單個倉庫相關時，包括存儲在這個倉庫的庫位裡的貨物數量，以及任意的子庫"
+#~ "位。\n"
+#~ "當與單個門店相關時，包括存儲在這個門店所屬倉庫的庫位裡的貨物數量，以及任意"
+#~ "的子庫位。\n"
+#~ "否則，這是存儲在任何“內部”型別程式庫位的貨物。"
+
+#~ msgid ""
+#~ "Standard Price: The cost price is manually updated at the end of a "
+#~ "specific period (usually every year). \n"
+#~ "Average Price: The cost price is recomputed at each incoming shipment."
+#~ msgstr ""
+#~ "標準價格：這個成本價格是在會計區間結束時手動更新的 （通常是每年）\n"
+#~ "平均價格：這個成本價是每一次入庫時重新計算的"
+
+#~ msgid "Quantity On Hand"
+#~ msgstr "在手數量"
+
+#~ msgid "Forecasted Quantity"
+#~ msgstr "預測數量"
+
+#~ msgid ""
+#~ "Current quantity of products.\n"
+#~ "In a context with a single Stock Location, this includes goods stored at "
+#~ "this Location, or any of its children.\n"
+#~ "In a context with a single Warehouse, this includes goods stored in the "
+#~ "Stock Location of this Warehouse, or any of its children.\n"
+#~ "stored in the Stock Location of the Warehouse of this Shop, or any of its "
+#~ "children.\n"
+#~ "Otherwise, this includes goods stored in any Stock Location with "
+#~ "'internal' type."
+#~ msgstr ""
+#~ "產品的當前數量。\n"
+#~ "當與單個庫位相關時，包括了在這個庫位裡的貨物數量，以及任意的子庫位。\n"
+#~ "當與單個倉庫相關時，包括存儲在這個倉庫的庫位裡的貨物數量，以及任意的子庫"
+#~ "位。\n"
+#~ "當與單個門店相關時，包括存儲在這個門店所屬倉庫的庫位裡的貨物數量，以及任意"
+#~ "的子庫位。\n"
+#~ "否則，這是存儲在任何“內部”型別程式庫位的貨物。"
+
+#~ msgid ""
+#~ "Forecast quantity (computed as Quantity On Hand - Outgoing + Incoming)\n"
+#~ "In a context with a single Stock Location, this includes goods stored in "
+#~ "this location, or any of its children.\n"
+#~ "In a context with a single Warehouse, this includes goods stored in the "
+#~ "Stock Location of this Warehouse, or any of its children.\n"
+#~ "stored in the Stock Location of the Warehouse of this Shop, or any of its "
+#~ "children.\n"
+#~ "Otherwise, this includes goods stored in any Stock Location with "
+#~ "'internal' type."
+#~ msgstr ""
+#~ "預測數量（計算公式是 在手數量-發貨數量+收貨數量）\n"
+#~ "當與單個庫位相關時，包括了在這個庫位裡的貨物數量，以及任意的子庫位。\n"
+#~ "當與單個倉庫相關時，包括存儲在這個倉庫的庫位裡的貨物數量，以及任意的子庫"
+#~ "位。\n"
+#~ "當與單個門店相關時，包括存儲在這個門店所屬倉庫的庫位裡的貨物數量，以及任意"
+#~ "的子庫位。\n"
+#~ "否則，這是存儲在任何“內部”型別程式庫位的貨物。"
+
+#~ msgid "Manufacturing Lead Time"
+#~ msgstr "生產提前期(日)"
+
+#~ msgid ""
+#~ "Average delay in days to produce this product. In the case of multi-level "
+#~ "BOM, the manufacturing lead times of the components will be added."
+#~ msgstr ""
+#~ "生產該產品的平均週期。在多級BOM的情況下，元件的生產週期也會被加進來。"
+
+#~ msgid "Delays"
+#~ msgstr "延遲"
+
+#~ msgid "Internal Description"
+#~ msgstr "內部說明"
+
+#~ msgid "Base Prices"
+#~ msgstr "基礎價格"
+
+#~ msgid "Quantity Available"
+#~ msgstr "可供數量"
+
+#~ msgid "Procurement"
+#~ msgstr "補貨"
+
+#~ msgid "Procurement & Locations"
+#~ msgstr "補貨與貨位"
+
+#~ msgid "Product Templates"
+#~ msgstr "產品範本"
+
+#~ msgid "PC Assemble SC349"
+#~ msgstr "PC組裝 SC349"
+
+#~ msgid "17” LCD Monitor"
+#~ msgstr "17“LCD 顯示器"
+
+#~ msgid "USB Keyboard, QWERTY"
+#~ msgstr "USB 鍵盤， QWERTY"
+
+#~ msgid "g"
+#~ msgstr "克"
+
+#~ msgid "m"
+#~ msgstr "米"
+
+#~ msgid "USB Keyboard, AZERTY"
+#~ msgstr "USB鍵盤， AZERTY"
+
+#~ msgid "Partner section of the product form"
+#~ msgstr "供應產品的業務夥伴"
+
+#~ msgid "PCS"
+#~ msgstr "個"
+
+#~ msgid "botton"
+#~ msgstr "支"
+
+#~ msgid "suite"
+#~ msgstr "套"
+
+#~ msgid ""
+#~ "19\" LCD Monitor\n"
+#~ "Processor Core i5 2.70 Ghz\n"
+#~ "2GB RAM\n"
+#~ "HDD SH-1"
+#~ msgstr ""
+#~ "19“顯示器\n"
+#~ "2GB記憶體\n"
+#~ "酷睿i5 2.7Ghz  處理器\n"
+#~ "硬碟 SH-1"
+
+#~ msgid "Mouse, Laser"
+#~ msgstr "鐳射滑鼠"
+
+#~ msgid "15” LCD Monitor"
+#~ msgstr "15” LCD 顯示器"

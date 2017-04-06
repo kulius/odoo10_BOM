@@ -1,39 +1,286 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * mass_mailing
+# 	* mass_mailing
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 8.0dev-20131117-000101\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 08:44+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2016-08-08 20:25+0800\n"
+"PO-Revision-Date: 2017-02-13 21:40+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.8.11\n"
 
 #. module: mass_mailing
-#: code:addons/mass_mailing/models/mass_mailing.py:431
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_kanban
+msgid ""
+"% <br/>\n"
+"                                            <strong>Clicks</strong>"
+msgstr ""
+"% <br/>\n"
+"                                            <strong>點擊</strong>"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_kanban
+msgid ""
+"%<br/>\n"
+"                                            <strong>Replied</strong>"
+msgstr ""
+"%<br/>\n"
+"                                            <strong>回答</strong>"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mass_mailing.py:451
 #, python-format
 msgid "%s (copy)"
-msgstr "%s (副本)"
+msgstr "%s (複製)"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"&amp;nbsp;\n"
+"                                                            <span class=\"fa "
+"fa-10x fa-music\"/>\n"
+"                                                            &amp;nbsp;"
+msgstr ""
+"&amp;nbsp;\n"
+"                                                <span class=\"fa fa-10x fa-"
+"music\"/>\n"
+"                                                &amp;nbsp;"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"&amp;nbsp;\n"
+"                                            <span class=\"fa fa-10x fa-music"
+"\"/>\n"
+"                                            &amp;nbsp;"
+msgstr ""
+"&amp;nbsp;\n"
+"                                                <span class=\"fa fa-10x fa-"
+"music\"/>\n"
+"                                                &amp;nbsp;"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"&amp;nbsp;\n"
+"                                            <span class=\"fa fa-check fa-3x"
+"\"/>\n"
+"                                            &amp;nbsp;"
+msgstr ""
+"&amp;nbsp;\n"
+"                                        <span class=\"fa fa-check fa-3x\"/>\n"
+"                                        &amp;nbsp;"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"&amp;nbsp;\n"
+"                                            <span class=\"fa fa-truck fa-3x"
+"\"/>\n"
+"                                            &amp;nbsp;"
+msgstr ""
+"&amp;nbsp;\n"
+"                                        <span class=\"fa fa-truck fa-3x\"/>\n"
+"                                        &amp;nbsp;"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"&amp;nbsp;\n"
+"                                            <span class=\"fa fa-usd fa-3x\"/"
+">\n"
+"                                            &amp;nbsp;"
+msgstr ""
+"&amp;nbsp;\n"
+"                                        <span class=\"fa fa-usd fa-3x\"/>\n"
+"                                        &amp;nbsp;"
+
+#. module: mass_mailing
+#: model:mail.mass_mailing.list,popup_content:mass_mailing.mass_mail_list_1
+msgid ""
+"<div class=\"modal-header text-center\">\n"
+"    <h3 class=\"modal-title mt8\">Odoo Presents</h3>\n"
+"</div>\n"
+"<div class=\"o_popup_message\">\n"
+"    <font>7</font>\n"
+"    <strong>Business Hacks</strong>\n"
+"    <span> to<br/>boost your marketing</span>\n"
+"</div>\n"
+"<p class=\"o_message_paragraph\">Join our Marketing newsletter and get "
+"<strong>this white paper instantly</strong></p>"
+msgstr ""
+"<div class=\"modal-header text-center\">\n"
+"    <h3 class=\"o_popup_modal_title mt8\">Odoo 提供</h3>\n"
+"</div>\n"
+"<div class=\"o_popup_message\">\n"
+"    <font>7</font>\n"
+"    <strong>商業技巧</strong>\n"
+"    <span> to<br/>促進市場行銷</span>\n"
+"</div>\n"
+"<p class=\"o_message_paragraph\">加入我們的行銷通訊並馬上獲得 <strong>白皮書"
+"</strong></p>"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"<span class=\"fa-stack\">\n"
+"                        <i class=\"fa fa-align-justify fa-stack-1x\" style="
+"\" margin-top: 0.7em; height: 0.9em; display: inline-block; overflow: hidden;"
+"\"/>\n"
+"                        <i class=\"fa fa-arrow-down fa-stack-1x\" style="
+"\"display: inline-block; font-size: 0.6em; margin-top: -0.15em;\"/>\n"
+"                    </span> Footers"
+msgstr ""
+"<span class=\"fa-stack\">\n"
+"            <i class=\"fa fa-align-justify fa-stack-1x\" style=\" margin-"
+"top: 0.7em; height: 0.9em; display: inline-block; overflow: hidden;\"/>\n"
+"            <i class=\"fa fa-arrow-down fa-stack-1x\" style=\"display: "
+"inline-block; font-size: 0.6em; margin-top: -0.15em;\"/>\n"
+"        </span> 頁腳"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"<span class=\"fa-stack\">\n"
+"                        <i class=\"fa fa-align-justify fa-stack-1x\" style="
+"\"margin-top: -0.15em; height: 0.9em; display: inline-block; overflow: "
+"hidden;\"/>\n"
+"                        <i class=\"fa fa-arrow-up fa-stack-1x\" style="
+"\"margin-top: 0.25em; display: inline-block; font-size: 0.6em;\"/>\n"
+"                    </span> Headers"
+msgstr ""
+"<span class=\"fa-stack\">\n"
+"            <i class=\"fa fa-align-justify fa-stack-1x\" style=\"margin-top: "
+"-0.15em; height: 0.9em; display: inline-block; overflow: hidden;\"/>\n"
+"            <i class=\"fa fa-arrow-up fa-stack-1x\" style=\"margin-top: "
+"0.25em; display: inline-block; font-size: 0.6em;\"/>\n"
+"        </span>頁眉"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"<span class=\"fa-stack\">\n"
+"                        <i class=\"fa fa-align-left fa-stack-1x\" style="
+"\"display: inline-block; height: 0.93em; margin-top: 0.3em; overflow: hidden;"
+"\"/>\n"
+"                    </span> Extra"
+msgstr ""
+"<span class=\"fa-stack\">\n"
+"            <i class=\"fa fa-align-left fa-stack-1x\" style=\"display: "
+"inline-block; height: 0.93em; margin-top: 0.3em; overflow: hidden;\"/>\n"
+"        </span>附加"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"<span class=\"fa-stack\">\n"
+"                        <i class=\"fa fa-align-left fa-stack-1x\"/>\n"
+"                    </span> Body"
+msgstr ""
+"<span class=\"fa-stack\">\n"
+"            <i class=\"fa fa-align-left fa-stack-1x\"/>\n"
+"        </span> 內容主體"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.FieldTextHtmlInline
+msgid ""
+"<span id=\"choose_template\" class=\"o_not_editable o_css_editor\">\n"
+"                <span class=\"btn btn-primary\">Theme</span>\n"
+"                <span class=\"btn btn-primary hidden\">Cancel selection</"
+"span>\n"
+"            </span>"
+msgstr ""
+"<span id=\"choose_template\" class=\"o_not_editable o_css_editor\">\n"
+"                <span class=\"btn btn-primary\">主題</span>\n"
+"                <span class=\"btn btn-primary hidden\">取消選擇</span>\n"
+"            </span>"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "<strong>My Company</strong>"
+msgstr "<strong>我的公司</strong>"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_kanban
+msgid "<strong>Opened</strong>"
+msgstr "<strong>打開</strong>"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact_ab_pc
+msgid "A/B Testing percentage"
+msgstr "A/B測試百分比率"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_unique_ab_testing
+msgid "AB Testing"
+msgstr "AB測試"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_active
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_list_active
 msgid "Active"
-msgstr "活躍"
+msgstr "進行中"
+
+#. module: mass_mailing
+#: selection:mass.mailing.config.settings,group_website_popup_on_exit:0
+msgid ""
+"Allow the use of a pop-up snippet on website to encourage visitors to sign "
+"up on a mass mailing list"
+msgstr "在網站上允許使用一個彈出外掛程式來鼓勵訪問者註冊到一個群發郵寄清單中"
+
+#. module: mass_mailing
+#: selection:mass.mailing.config.settings,group_mass_mailing_campaign:0
+msgid "Allow using marketing campaigns (advanced)"
+msgstr "允許使用行銷活動（高級）"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "管理會計／成本會計"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_hr_applicant
+msgid "Applicant"
+msgstr "申請人"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mass_mailing_configuration
 msgid "Apply"
-msgstr "套用"
+msgstr "應用"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Apps That Help You Grow Your Business"
+msgstr "幫助你提升業務量的應用"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_search
+msgid "Archived"
+msgstr "已存檔"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_maintenance_equipment_category
+msgid "Asset Category"
+msgstr "資產分類"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Attach a file"
+msgstr "添加附件"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_attachment_ids
@@ -41,29 +288,97 @@ msgid "Attachments"
 msgstr "附件"
 
 #. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_event_registration
+msgid "Attendee"
+msgstr "參加者"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "銀行對帳單"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.mass_mail_theme_list
+msgid "Basic Theme"
+msgstr "基本主題"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mrp_bom
+msgid "Bill of Material"
+msgstr "物料清單"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_blog_post
+msgid "Blog Post"
+msgstr "博客文章"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_blog_blog
+msgid "Blogs"
+msgstr "博客"
+
+#. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_body_html
 #: model:ir.ui.view,arch_db:mass_mailing.email_template_form_minimal
 msgid "Body"
-msgstr "內容"
+msgstr "郵件內容"
 
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_id_3681
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact_message_bounce
+msgid "Bounce"
+msgstr "回復"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_bounced
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_bounced
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_bounced
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_bounced
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+#: selection:mail.mail.statistics,state:0
+msgid "Bounced"
+msgstr "被退回"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_bounced_ratio
+msgid "Bounced Ratio"
+msgstr "彈出比例"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_bounced_ratio
+msgid "Bounced ratio"
+msgstr "彈出比例"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_id_8937
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
 msgid "Campaign"
-msgstr "行銷活動"
+msgstr "活動"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_name
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
 msgid "Campaign Name"
-msgstr "行銷活動名稱"
+msgstr "活動名稱"
+
+#. module: mass_mailing
+#: model:ir.ui.menu,name:mass_mailing.menu_view_mass_mailing_stages
+msgid "Campaign Stages"
+msgstr "活動階段"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.mass_mailing_tag_action
+#: model:ir.ui.menu,name:mass_mailing.mass_mailing_tag_menu
+#: model:ir.ui.view,arch_db:mass_mailing.mail_mass_mailing_tag_view_form
+msgid "Campaign Tags"
+msgstr "活動標籤"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings_group_mass_mailing_campaign
 #: model:ir.ui.menu,name:mass_mailing.menu_email_campaigns
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_search
 msgid "Campaigns"
-msgstr "行銷活動"
+msgstr "活動"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
@@ -73,32 +388,135 @@ msgid "Cancel"
 msgstr "取消"
 
 #. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_slide_channel
+msgid "Channel for Slides"
+msgstr "幻燈片頻道"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Check this out!"
+msgstr "檢出!"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.FieldTextHtmlInline
+msgid "Choose a Template"
+msgstr "選擇一個範本"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.snippet_options
+msgid "Choose a background image"
+msgstr "選擇背景圖片"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailing_lists
+msgid "Click here to create a new mailing list."
+msgstr "點擊來創建一個新的郵寄清單。"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_create_ab_mass_mailings_from_campaign
+#: model:ir.actions.act_window,help:mass_mailing.action_create_mass_mailings_from_campaign
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailings
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailings_from_campaign
+msgid "Click here to create a new mailing."
+msgstr "點擊來創建一個新郵件。"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_email_template_marketing
+msgid "Click here to create a new template."
+msgstr "點擊此處創建一個新郵件模版。"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.mass_mailing_tag_action
+msgid "Click to add a new tag."
+msgstr "點擊添加一個新標籤"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailing_contacts_from_list
+msgid "Click to create a recipient."
+msgstr "點擊來創建一個收件人。"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailing_campaigns
+msgid "Click to define a new mass mailing campaign."
+msgstr "點擊來創建一個新的群發郵件活動。"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
+msgid "Clicks"
+msgstr "點擊"
+
+#. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_color
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_color
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_tag_color
 msgid "Color Index"
-msgstr "顏色索引"
+msgstr "色彩索引"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Come check out my stuff!"
+msgstr "查看我的工作!"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_test_email_to
+msgid "Comma-separated list of email addresses."
+msgstr "郵寄地址列表，以逗號分割。"
 
 #. module: mass_mailing
 #: model:ir.ui.menu,name:mass_mailing.mass_mailing_configuration
 #: model:ir.ui.menu,name:mass_mailing.menu_mass_mailing_configuration
 msgid "Configuration"
-msgstr "設定"
+msgstr "配置"
 
 #. module: mass_mailing
-#: model:mail.mass_mailing,body_html:mass_mailing.mass_mail_1
+#: model:ir.actions.act_window,name:mass_mailing.action_mass_mailing_configuration
+#: model:ir.ui.view,arch_db:mass_mailing.view_mass_mailing_configuration
+msgid "Configure Mass Mailing"
+msgstr "設置郵件群發"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Contact"
-msgstr "聯絡人"
+msgstr "聯繫"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_form
+msgid "Contact List"
+msgstr "連絡人列表"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Contact Us"
+msgstr "聯繫我們"
 
 #. module: mass_mailing
 #: model:ir.ui.menu,name:mass_mailing.menu_email_mass_mailing_contacts
 msgid "Contacts"
-msgstr "聯絡人"
+msgstr "連絡人"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_hr_contract
+msgid "Contract"
+msgstr "合同"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_contact_message_bounce
+msgid "Counter of the number of bounced emails for this contact."
+msgstr "此連絡人退回郵件數量統計。"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact_create_date
 msgid "Create Date"
-msgstr "建立日期"
+msgstr "創建日期"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailing_campaigns
+msgid ""
+"Create a campaign to structure mass mailing and get analysis from email "
+"status."
+msgstr "創建一個活動來組織群發郵件並且分析郵件狀態。"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_create_uid
@@ -111,7 +529,7 @@ msgstr "建立日期"
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_test_create_uid
 #: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_create_date
@@ -121,19 +539,71 @@ msgstr "建立者"
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_test_create_date
 #: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_create_date
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_list_create_date
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_contact_search
 msgid "Creation Date"
-msgstr "建立日期"
+msgstr "創建日期"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_search
 msgid "Creation Month"
-msgstr "建立月份"
+msgstr "創建月份"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_statistics_exception
+msgid "Date of technical error leading to the email not being sent"
+msgstr "導致郵件發送失敗的技術錯誤日期"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_statistics_scheduled
+msgid "Date when the email has been created"
+msgstr "郵件創建日期"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_statistics_opened
+msgid "Date when the email has been opened the first time"
+msgstr "郵件的首次打開日期"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_statistics_sent
+msgid "Date when the email has been sent"
+msgstr "郵件發送日期"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_statistics_replied
+msgid "Date when this email has been replied for the first time."
+msgstr "此郵件首次回復日期"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_statistics_bounced
+msgid "Date when this email has bounced."
+msgstr "此電子郵件反彈日期"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Dear ${object.name}"
+msgstr "尊敬的 ${object.name}"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Dear Bob,"
+msgstr "尊敬的Bob"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"Dear Bob,<br/>\n"
+"                                                We would like you to know "
+"that your order has shipped! To track your order or make any changes please "
+"click the \"my order\" button below."
+msgstr ""
+"尊敬的 Bob,<br/>\n"
+"                                    我們很高興得知你的訂單已經被發送！如需跟"
+"蹤訂單或修改資訊，請點擊下面的“我的訂單” 按鈕。"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_email_template_kanban
@@ -148,7 +618,22 @@ msgstr "刪除"
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_delivered
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
 msgid "Delivered"
-msgstr "已出貨"
+msgstr "已發送"
+
+#. module: mass_mailing
+#: model:mail.mass_mailing.stage,name:mass_mailing.campaign_stage_2
+msgid "Design"
+msgstr "設計"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_path
+msgid "Discussion Path"
+msgstr "討論路徑"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_channel
+msgid "Discussion channel"
+msgstr "討論頻道"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_display_name
@@ -165,26 +650,42 @@ msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: mass_mailing
+#: selection:mass.mailing.config.settings,group_website_popup_on_exit:0
+msgid ""
+"Do not add extra content on website pages to encourage visitors to sign up"
+msgstr "在網站頁面上不增加額外內容來鼓勵訪問者註冊"
+
+#. module: mass_mailing
+#: selection:mass.mailing.config.settings,group_mass_mailing_campaign:0
+msgid "Do not organize and schedule mail campaigns (easy)"
+msgstr "不組織和計畫郵件活動（簡單）"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_res_id
+msgid "Document ID"
+msgstr "文檔ID"
+
+#. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_model
 msgid "Document model"
-msgstr "文件模型"
+msgstr "文檔範本"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_mailing_domain
 msgid "Domain"
-msgstr "領域"
+msgstr "功能變數名稱"
 
 #. module: mass_mailing
-#: code:addons/mass_mailing/models/mass_mailing.py:439
+#: code:addons/mass_mailing/models/mass_mailing.py:460
 #: selection:mail.mass_mailing,state:0 selection:mail.statistics.report,state:0
 #, python-format
 msgid "Draft"
-msgstr "草案"
+msgstr "草稿"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
 msgid "Duplicate"
-msgstr "製作複本"
+msgstr "複製"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_email_template_kanban
@@ -194,40 +695,157 @@ msgstr "編輯"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact_email
 msgid "Email"
-msgstr "電郵"
+msgstr "郵件"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_mail_statistics
+msgid "Email Statistics"
+msgstr "郵件統計"
 
 #. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_mail_thread
 msgid "Email Thread"
-msgstr "電子郵件討論串"
+msgstr "郵件執行緒"
 
 #. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_mail_compose_message
 msgid "Email composition wizard"
-msgstr "電子郵件撰寫精靈"
+msgstr "郵件編寫嚮導"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_survey_mail_compose_message
+msgid "Email composition wizard for Survey"
+msgstr "調查電子郵件編寫嚮導"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Emails Sent"
+msgstr "發送郵件"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_statistics_ids
+msgid "Emails Statistics"
+msgstr "郵件統計"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_hr_employee
+msgid "Employee"
+msgstr "員工"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_maintenance_equipment
+msgid "Equipment"
+msgstr "設備"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_calendar_event
+#: model:ir.model,name:mass_mailing.model_event_event
+msgid "Event"
+msgstr "活動"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_exception
 #: selection:mail.mail.statistics,state:0
 msgid "Exception"
-msgstr "異常情況"
+msgstr "異常"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_contact_search
+msgid "Exclude Dead"
+msgstr "不包括廢棄的"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_contact_search
+msgid "Exclude Opt Out"
+msgstr "排除退訂"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_hr_expense
+msgid "Expense"
+msgstr "費用"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_hr_expense_sheet
+msgid "Expense Report"
+msgstr "報銷單"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_search
 msgid "Extended Filters..."
-msgstr "增加篩選條件..."
+msgstr "擴展篩檢程式..."
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Facebook"
+msgstr "Facebook"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_failed
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_failed
 msgid "Failed"
-msgstr "已失敗"
+msgstr "失敗"
+
+#. module: mass_mailing
+#: selection:mail.mass_mailing,reply_to_mode:0
+msgid "Followers of leads/applicants"
+msgstr "主角／申請人 的跟進人員"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_forum_forum
+msgid "Forum"
+msgstr "論壇"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_forum_post
+msgid "Forum Post"
+msgstr "論壇文章"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_forum_tag
+msgid "Forum Tag"
+msgstr "論壇標籤"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_email_from
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_email_from
 msgid "From"
-msgstr "自"
+msgstr "寄件者"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_gamification_badge
+msgid "Gamification badge"
+msgstr "遊戲化勳章"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_gamification_challenge
+msgid "Gamification challenge"
+msgstr "遊戲化的挑戰"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"Great stories are for everyone even when only written for just one person. "
+"If you try to write with a wide general audience in mind, your story will "
+"ring false and be bland. No one will be interested. Write for one person. If "
+"it’s genuine for the one, it’s genuine for the rest."
+msgstr ""
+"好的故事是為有同樣感觸的人所寫的。如果你試圖寫一個針對廣泛聽眾的通用故事，那"
+"將聽起來很不可靠，而且還會很平淡，沒有人會感興趣。只為一個人寫，如果對一個人"
+"來說很棒，那麼其他人也會覺得很棒。"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"Great stories have personality. Consider telling a great story that provides "
+"personality. Writing a story with personality for potential clients will "
+"assists with making a relationship connection. This shows up in small quirks "
+"like word choices or phrases. Write from your point of view, not from "
+"someone else's experience.<br/>"
+msgstr ""
+"偉大的故事都有獨特的魅力。請認真構思一個富有個性的精彩故事。為潛在客戶寫的獨"
+"特故事，將有意與于客戶建立良好的關係。這體現在一些細微的寫作技巧，比如字或者"
+"詞語的選擇。從你的角度出發，而不是照抄別人的經驗。<br/>"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
@@ -236,12 +854,24 @@ msgstr "自"
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_search
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_search
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_search
 msgid "Group By..."
-msgstr "群組依據..."
+msgstr "按...分組"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.FieldTextHtmlInline
+msgid ""
+"Here you can design your own template from scratch by selecting your "
+"favorite theme."
+msgstr "在這裡，你可以通過選擇你喜歡的主題來設計自己的範本。"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_hr_department
+msgid "Hr Department"
+msgstr "人力資源部"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_id
@@ -255,7 +885,58 @@ msgstr "群組依據..."
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_id
 #: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_statistics_mail_mail_id_int
+msgid ""
+"ID of the related mail_mail. This field is an integer field because the "
+"related mail_mail can be deleted separately from its statistics. However the "
+"ID is needed for several action and controllers."
+msgstr ""
+"相關mail_mail的ID，這個欄位是一個整數欄位，因為相關的mail_mail可以從它的統計"
+"中被單獨刪除。在多個動作和控制器中需要此ID。"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_campaign_unique_ab_testing
+msgid ""
+"If checked, recipients will be mailed only once, allowing to send various "
+"mailings in a single campaign to test the effectiveness of the mailings."
+msgstr ""
+"如果勾選此處，收件人將只收到一次郵件， 這就能在一次促銷活動中發送各種不同的郵"
+"件， 以測試發送郵件的效果。"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mass_mailing.py:460
+#: selection:mail.mass_mailing,state:0
+#, python-format
+msgid "In Queue"
+msgstr "在佇列中"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_fleet_vehicle
+msgid "Information on a vehicle"
+msgstr "車輛上的資訊"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_account_invoice
+msgid "Invoice"
+msgstr "發票"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_hr_job
+msgid "Job Position"
+msgstr "職位"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_keep_archives
+msgid "Keep Archives"
+msgstr "繼續歸檔"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Kind Regards,"
+msgstr "致敬,"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics___last_update
@@ -269,7 +950,12 @@ msgstr "編號"
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report___last_update
 #: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期在"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
+msgid "Last State Update"
+msgstr "最近更新狀態"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_write_uid
@@ -282,7 +968,7 @@ msgstr "最後修改:"
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_write_uid
 #: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新的"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_write_date
@@ -295,7 +981,144 @@ msgstr "最後更新："
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_write_date
 #: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_statistics_state_update
+msgid "Last state update of the mail"
+msgstr "郵件的最近更新狀態！"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "線索/商機"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_hr_holidays
+msgid "Leave"
+msgstr "假期"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_links_click_ids
+msgid "Links click"
+msgstr "點選連結"
+
+#. module: mass_mailing
+#: model:ir.filters,name:mass_mailing.filter_contact_subscription
+msgid "List Subscription"
+msgstr "郵寄清單訂閱"
+
+#. module: mass_mailing
+#: model:ir.filters,name:mass_mailing.filter_contact_unsubscription
+msgid "List Unsubscription"
+msgstr "郵件退訂列表"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_stock_production_lot
+msgid "Lot/Serial"
+msgstr "批次/序列"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_mail_mail_id
+msgid "Mail"
+msgstr "郵件"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Mail Body"
+msgstr "郵件內容"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_mail_mail_id_int
+msgid "Mail ID (tech)"
+msgstr "郵件ID（技術）"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mail_mail_statistics
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mail_mail_statistics_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_link_tracker_click_mail_stat_id
+#: model:ir.ui.menu,name:mass_mailing.menu_email_statistics
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_form
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_graph
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_tree
+msgid "Mail Statistics"
+msgstr "郵件統計"
+
+#. module: mass_mailing
+#: model:ir.ui.menu,name:mass_mailing.menu_email_template
+msgid "Mail Templates"
+msgstr "郵件範本"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_email_template_marketing
+msgid ""
+"Mail templates are meant to design e-mails that can be used for several mass "
+"mailing campaigns."
+msgstr "郵件模版指的是能用於大規模活動郵件的郵件樣式設計"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_test_mass_mailing_id
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Mailing"
+msgstr "郵件"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mass_mailing.py:303
+#: model:ir.model,name:mass_mailing.model_mail_mass_mailing_list
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_compose_message_mailing_list_ids
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact_list_id
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_list_name
+#: model:ir.model.fields,field_description:mass_mailing.field_survey_mail_compose_message_mailing_list_ids
+#, python-format
+msgid "Mailing List"
+msgstr "郵寄清單"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mass_mailing_contacts
+msgid "Mailing List Subscribers"
+msgstr "郵寄清單訂閱者"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mass_mailing_lists
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact_list_ids
+#: model:ir.ui.menu,name:mass_mailing.menu_email_mass_mailing_lists
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_contact_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_tree
+msgid "Mailing Lists"
+msgstr "郵寄清單"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_contact_graph
+msgid "Mailing Lists Subscriber"
+msgstr "郵寄清單訂閱"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_contact_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_contact_tree
+msgid "Mailing Lists Subscribers"
+msgstr "郵寄清單訂閱者"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_links_tree
+msgid "Mailing Statistics of Clicks"
+msgstr "點擊郵件的統計"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.action_mail_mass_mailing_test
+msgid "Mailing Test"
+msgstr "郵件測試"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailing_lists
+msgid ""
+"Mailing lists allows you to to manage customers and\n"
+"                    contacts easily and to send to mailings in a single "
+"click."
+msgstr ""
+"郵件列使你輕而易舉地管理客戶和連絡人，\n"
+"                    只需輕鬆一擊， 便能向他們發送郵件。"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_total_mailings
@@ -305,6 +1128,36 @@ msgstr "最後更新於"
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_search
 msgid "Mailings"
 msgstr "郵件"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_maintenance_request
+msgid "Maintenance Requests"
+msgstr "維護請求"
+
+#. module: mass_mailing
+#: model:res.groups,name:mass_mailing.group_mass_mailing_campaign
+msgid "Manage Mass Mailing Campaigns"
+msgstr "管理群發郵件活動"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mass_mailing_config_settings_group_mass_mailing_campaign
+msgid "Manage mass mailign using Campaigns"
+msgstr "管理群發郵件活動"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "生產計畫"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_name
+msgid "Mass Mail"
+msgstr "線索/商機 大量 郵件"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_campaign
+msgid "Mass Mail Campaign"
+msgstr "群發郵件活動"
 
 #. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_mail_mass_mailing
@@ -322,10 +1175,125 @@ msgstr "郵件"
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_graph
 #: model:ir.ui.view,arch_db:mass_mailing.view_mass_mailing_configuration
 msgid "Mass Mailing"
-msgstr "海量發信"
+msgstr "群發郵件"
 
 #. module: mass_mailing
-#: model:ir.ui.view,arch_db:mass_mailing.s_mail_block_footer_tag_line
+#: model:ir.actions.act_window,name:mass_mailing.action_mail_statistics_report
+msgid "Mass Mailing Analysis"
+msgstr "郵件群發"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_mass_mailing_campaign
+#: model:ir.model.fields,field_description:mass_mailing.field_link_tracker_click_mass_mailing_campaign_id
+#: model:ir.model.fields,field_description:mass_mailing.field_link_tracker_mass_mailing_campaign_id
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_compose_message_mass_mailing_campaign_id
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_mass_mailing_campaign_id
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_mass_mailing_campaign_id
+#: model:ir.model.fields,field_description:mass_mailing.field_survey_mail_compose_message_mass_mailing_campaign_id
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_search
+msgid "Mass Mailing Campaign"
+msgstr "群發郵件活動"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_mass_mailing_stage
+msgid "Mass Mailing Campaign Stage"
+msgstr "群發郵件活動階段"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mass_mailing_campaigns
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_tree
+msgid "Mass Mailing Campaigns"
+msgstr "群發郵件活動"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_mass_mailing_contact
+msgid "Mass Mailing Contact"
+msgstr "群發郵件連絡人"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mass_mailing_stages
+msgid "Mass Mailing Stages"
+msgstr "群發郵件階段"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_statistics_report
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_graph
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_pivot
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_search
+msgid "Mass Mailing Statistics"
+msgstr "群發郵件階段"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_mail_statistics_report
+msgid ""
+"Mass Mailing Statistics allows you to check different mailing related "
+"information like number of bounced mails, opened mails, replied mails. You "
+"can sort out your analysis by different groups to get accurate grained "
+"analysis."
+msgstr ""
+"你可將郵件按已讀未讀已回等分組分類來進行郵件發送統計。統計分析的結果可以由你"
+"設定的精確度來哦。"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_mass_mailing_tag
+msgid "Mass Mailing Tag"
+msgstr "群發郵件標記"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.action_create_ab_mass_mailings_from_campaign
+#: model:ir.actions.act_window,name:mass_mailing.action_create_mass_mailings_from_campaign
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mass_mailings
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mass_mailings_from_campaign
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_mass_mailing_ids
+#: model:ir.ui.menu,name:mass_mailing.menu_email_mass_mailings
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_stage_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_stage_tree
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_tree
+msgid "Mass Mailings"
+msgstr "群發郵件"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,help:mass_mailing.action_create_ab_mass_mailings_from_campaign
+#: model:ir.actions.act_window,help:mass_mailing.action_create_mass_mailings_from_campaign
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailings
+#: model:ir.actions.act_window,help:mass_mailing.action_view_mass_mailings_from_campaign
+msgid ""
+"Mass mailing allows you to to easily design and send mass mailings to your "
+"contacts, customers or leads using mailing lists."
+msgstr "郵件群發使你可以方便地設計和群發郵件給連絡人、客戶或線索。"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings_module_mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing.view_mass_mailing_configuration
+msgid "Mass mailing themes"
+msgstr "群發郵件風格"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_medium_id
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_medium_id
+msgid "Medium"
+msgstr "管道"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_message_id
+msgid "Message-ID"
+msgstr "消息ID"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Michael Fletcher"
+msgstr "Michael Fletcher"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mass_mailing_configuration
+msgid "More Info"
+msgstr "更多資訊"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "My Account"
 msgstr "我的帳戶"
 
@@ -337,11 +1305,39 @@ msgid "Name"
 msgstr "名稱"
 
 #. module: mass_mailing
-#: model:mail.mass_mailing.campaign,name:mass_mailing.mass_mail_campaign_1
-#: model:mail.template,subject:mass_mailing.newsletter_template
-#: model:utm.campaign,name:mass_mailing.mass_mail_campaign_1_utm_campaign
-msgid "Newsletter"
-msgstr "電子報"
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_next_departure
+msgid "Next Departure"
+msgstr "下一個發送"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.snippet_options
+msgid "No background image"
+msgstr "沒有背景圖片"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_note_note
+msgid "Note"
+msgstr "便簽"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_clicks_ratio
+msgid "Number of Clicks"
+msgstr "點擊數"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_list_contact_nbr
+msgid "Number of Contacts"
+msgstr "連絡人數目"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_clicks_ratio
+msgid "Number of clicks"
+msgstr "點擊數"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
+msgid "Open Date"
+msgstr "打開日期"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_opened
@@ -354,7 +1350,18 @@ msgstr "電子報"
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
 #: selection:mail.mail.statistics,state:0
 msgid "Opened"
-msgstr "已開啟"
+msgstr "開啟的"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_opened_ratio
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_opened_ratio
+msgid "Opened Ratio"
+msgstr "打開比例"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact_opt_out
+msgid "Opt Out"
+msgstr "退訂"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
@@ -364,30 +1371,93 @@ msgstr "選項"
 #. module: mass_mailing
 #: selection:mail.mail.statistics,state:0
 msgid "Outgoing"
-msgstr "外送"
+msgstr "已發郵件"
 
 #. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_mail_mail
 msgid "Outgoing Mails"
-msgstr "送出信件"
+msgstr "已發郵件"
 
 #. module: mass_mailing
-#: model:mail.mass_mailing,body_html:mass_mailing.mass_mail_1
-msgid "Payment"
-msgstr "付款"
+#: model:ir.model,name:mass_mailing.model_res_partner
+msgid "Partner"
+msgstr "業務夥伴"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_contact_ab_pc
+msgid ""
+"Percentage of the contacts that will be mailed. Recipients will be taken "
+"randomly."
+msgstr "連絡人被發送郵件的百分比。隨機選擇連絡人。"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mass_mailing.py:578
+#, python-format
+msgid "Please select recipients."
+msgstr "請選擇收件人"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_form
+msgid "Popup Content"
+msgstr "彈出內容"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_reply_to
+msgid "Preferred Reply-To Address"
+msgstr "希望得到回信的地址"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_template_form_minimal
+msgid "Preview"
+msgstr "預覽"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_procurement_order
+msgid "Procurement"
+msgstr "採購"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_product_product
+msgid "Product"
+msgstr "產品"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_product_template
+msgid "Product Template"
+msgstr "產品範本"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_project_project
+msgid "Project"
+msgstr "項目"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_project_issue
+msgid "Project Issue"
+msgstr "專案問題"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_purchase_order
+msgid "Purchase Order"
+msgstr "採購單"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
 msgid "Received"
-msgstr "已接收"
+msgstr "已收到"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_received_ratio
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_received_ratio
 msgid "Received Ratio"
-msgstr "到貨比率"
+msgstr "接收成功比例"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_recipient
+msgid "Recipient"
+msgstr "收件人"
 
 #. module: mass_mailing
 #: model:ir.actions.act_window,name:mass_mailing.action_view_mass_mailing_contacts_from_list
@@ -395,7 +1465,61 @@ msgstr "到貨比率"
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_form
 msgid "Recipients"
-msgstr "收件者"
+msgstr "郵件人"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_mailing_model
+msgid "Recipients Model"
+msgstr "收件人模型"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
+msgid "Related Mailing(s)"
+msgstr "相關郵件"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
+msgid "Related Mailings"
+msgstr "相關的郵件"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mrp_repair
+msgid "Repair Order"
+msgstr "維修單"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_replied
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_replied
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_replied
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_replied
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
+#: selection:mail.mail.statistics,state:0
+msgid "Replied"
+msgstr "已回復"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_replied_ratio
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_replied_ratio
+msgid "Replied Ratio"
+msgstr "回復比例"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
+msgid "Reply Date"
+msgstr "回復日期"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_reply_to
+msgid "Reply To"
+msgstr "回復"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_reply_to_mode
+msgid "Reply-To Mode"
+msgstr "回復模式"
 
 #. module: mass_mailing
 #: model:ir.ui.menu,name:mass_mailing.menu_mass_mailing_report
@@ -406,7 +1530,7 @@ msgstr "報表"
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_user_id
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_search
 msgid "Responsible"
-msgstr "負責人"
+msgstr "責任人"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
@@ -414,14 +1538,114 @@ msgid "Retry"
 msgstr "重試"
 
 #. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_sale_order
+msgid "Sales Order"
+msgstr "銷售訂單"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_crm_team
+msgid "Sales Team"
+msgstr "銷售團隊"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_mass_mailing_test
+msgid "Sample Mail Wizard"
+msgstr "簡單的郵件嚮導"
+
+#. module: mass_mailing
+#: model:mail.mass_mailing.stage,name:mass_mailing.campaign_stage_1
+msgid "Schedule"
+msgstr "安排"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_schedule_date
+msgid "Schedule in the Future"
+msgstr "預定計劃"
+
+#. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_scheduled
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_scheduled
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_scheduled
 msgid "Scheduled"
-msgstr "已排程"
+msgstr "已安排"
 
 #. module: mass_mailing
-#: code:addons/mass_mailing/models/mass_mailing.py:439
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_search
+msgid "Scheduled Month"
+msgstr "預定月份"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_scheduled_date
+msgid "Scheduled date"
+msgstr "計畫日期"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.FieldTextHtmlInline
+#: model:ir.ui.view,arch_db:mass_mailing.mass_mail_theme_list
+msgid "Select"
+msgstr "選擇"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.FieldTextHtmlInline
+msgid "Select a theme"
+msgstr "選擇一個主題"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Select mailing lists..."
+msgstr "選擇郵寄清單..."
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Select mailing lists:"
+msgstr "選擇郵寄清單:"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Select recipients"
+msgstr "選擇收件人"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_test_form
+msgid "Send Sample Mail"
+msgstr "發送示例郵件"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_test_form
+msgid "Send a Sample Mail"
+msgstr "發送示例郵件"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_test_form
+msgid ""
+"Send a sample of this mailing to the above of email addresses for test "
+"purpose."
+msgstr "向上列郵寄地址發送本郵寄清單的示例郵件，以便進行測試"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
+msgid "Send new A/B Testing Mass Mailing"
+msgstr "發送新的A/B測試批量郵件"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
+msgid "Send new Mass Mailing"
+msgstr "發送群發郵件"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Send to All"
+msgstr "向所有地址發送"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mass_mailing.py:460
+#: selection:mail.mass_mailing,state:0
+#, python-format
+msgid "Sending"
+msgstr "正在發送"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mass_mailing.py:460
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_sent
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_sent
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_statistics_report_sent
@@ -430,34 +1654,59 @@ msgstr "已排程"
 #: selection:mail.statistics.report,state:0
 #, python-format
 msgid "Sent"
-msgstr "已傳送"
+msgstr "發送"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_search
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_search
 msgid "Sent By"
-msgstr "寄件人"
+msgstr "發送者"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_sent_date
+msgid "Sent Date"
+msgstr "發送日期"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_sent
+msgid "Sent Emails"
+msgstr "發送郵件"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_search
+msgid "Sent Month"
+msgstr "這個徽章可以給每人每月最大時間數"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_stage_sequence
 msgid "Sequence"
-msgstr "序列"
+msgstr "序號"
 
 #. module: mass_mailing
 #: model:ir.ui.menu,name:mass_mailing.menu_mass_mailing_global_settings
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_kanban
 msgid "Settings"
-msgstr "設定"
+msgstr "設置"
 
 #. module: mass_mailing
-#: model:mail.mass_mailing,body_html:mass_mailing.mass_mail_1
-msgid "Shipping"
-msgstr "船運"
+#: model:ir.model,name:mass_mailing.model_slide_slide
+msgid "Slides"
+msgstr "幻燈片"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_source_id
 msgid "Source"
 msgstr "來源"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_name
+msgid "Source Name"
+msgstr "來源名稱"
+
+#. module: mass_mailing
+#: selection:mail.mass_mailing,reply_to_mode:0
+msgid "Specified Email Address"
+msgstr "指定的郵寄地址"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_stage_id
@@ -470,12 +1719,23 @@ msgstr "階段"
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mail_statistics_search
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_statistics_report_search
 msgid "State"
-msgstr "省/州"
+msgstr "狀態"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_state_update
+msgid "State Update"
+msgstr "狀態更新"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics_ids
 msgid "Statistics"
 msgstr "統計"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.action_view_mass_mailing_links_statistics
+#: model:ir.actions.act_window,name:mass_mailing.dropdb snipp
+msgid "Statistics of Clicks"
+msgstr "點擊數的統計"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_state
@@ -485,15 +1745,50 @@ msgid "Status"
 msgstr "狀態"
 
 #. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Step 1"
+msgstr "第1步"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Step 2"
+msgstr "第2步"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Step 3"
+msgstr "第3步"
+
+#. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_source_id
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
 msgid "Subject"
-msgstr "主旨"
+msgstr "主題"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Support"
+msgstr "支持"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_survey_survey
+msgid "Survey"
+msgstr "調查問卷"
+
+#. module: mass_mailing
+#: sql_constraint:mail.mass_mailing.tag:0
+msgid "Tag name already exists !"
+msgstr "標籤名稱已經存在了 !"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_tag_ids
 msgid "Tags"
 msgstr "標籤"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_project_task
+msgid "Task"
+msgstr "任務"
 
 #. module: mass_mailing
 #: model:ir.actions.act_window,name:mass_mailing.action_email_template_marketing
@@ -502,17 +1797,1687 @@ msgid "Templates"
 msgstr "範本"
 
 #. module: mass_mailing
+#: code:addons/mass_mailing/models/mass_mailing.py:515
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+#, python-format
+msgid "Test Mailing"
+msgstr "測試郵件"
+
+#. module: mass_mailing
+#: selection:mail.statistics.report,state:0
+msgid "Tested"
+msgstr "已測試"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_contact_opt_out
+msgid "The contact has chosen not to receive mails anymore from this list"
+msgstr "該連絡人選擇不再接受本郵寄清單的郵件"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_campaign_medium_id
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_medium_id
+msgid "This is the delivery method, e.g. Postcard, Email, or Banner Ad"
+msgstr "這是發送的方法。例如：明信片、電子郵件或廣告條。"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_source_id
+msgid ""
+"This is the link source, e.g. Search Engine, another domain, or name of "
+"email list"
+msgstr "這是連結的目標，如：搜尋引擎，其它領域，或電子郵寄清單的名稱"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_campaign_source_id
+msgid ""
+"This is the link source, e.g. Search Engine, another domain,or name of email "
+"list"
+msgstr "這是連結的目標，如：搜尋引擎，其它領域，或電子郵寄清單的名稱"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "This mass mailing is scheduled to"
+msgstr "管理群發郵件活動"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_campaign_campaign_id
+#: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_campaign_id_8937
+msgid ""
+"This name helps you tracking your different campaign efforts, e.g. "
+"Fall_Drive, Christmas_Special"
+msgstr ""
+"這個名稱是用於幫助你跟蹤不同的活動主題，如：Fall_Drive，Christmas_Special"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid ""
+"This will send the email to all recipients. Do you still want to proceed ?"
+msgstr "這將發送電子郵件給所有收件人，是否要繼續？"
+
+#. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_total
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_total
 msgid "Total"
-msgstr "總計"
+msgstr "合計"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_links_search
+msgid "Tracked Link"
+msgstr "Tracked Link"
 
 #. module: mass_mailing
 #: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_campaign_form
 msgid "Tracking"
-msgstr "追蹤"
+msgstr "跟蹤"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_stock_picking
+msgid "Transfer"
+msgstr "調撥"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Twitter"
+msgstr "推特（Twitter）"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mrp_unbuild
+msgid "Unbuild Order"
+msgstr "拆裝單"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Unsubscribe"
+msgstr "退訂"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact_unsubscription_date
+msgid "Unsubscription Date"
+msgstr "未訂閱日期"
+
+#. module: mass_mailing
+#: model:res.groups,name:mass_mailing.group_website_popup_on_exit
+msgid "Use subscription pop up on the website"
+msgstr "在網站上使用訂閱彈出"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mail_mail_path
+msgid ""
+"Used to display messages in a paragraph-based chatter using a unique path;"
+msgstr "用於顯示基於段落的討論消息，使用統一路徑；"
 
 #. module: mass_mailing
 #: model:res.groups,name:mass_mailing.group_mass_mailing_user
 msgid "User"
 msgstr "用戶"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"We need you to update your account information. If there is ever a problem "
+"with your account, this information will make it easier for you to log back "
+"in."
+msgstr ""
+"我們需要你更新你的帳戶資訊。如果你的帳戶出現異常，這些資訊將更容易使你重新登"
+"錄。"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid ""
+"We would like you to know that your order has shipped! To track your order "
+"or make any changes please click the \"my order\" button below."
+msgstr ""
+"我們很高興地通知你，你的訂單已經發出! 請你點擊“我的訂單”按鈕，即可跟蹤或修改"
+"訂單。"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mass_mailing_config_settings_group_website_popup_on_exit
+msgid "Website Pop-up"
+msgstr "網站彈出"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_list_popup_content
+msgid "Website Popup Content"
+msgstr "網站彈出內容"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_list_popup_redirect_url
+msgid "Website Popup Redirect URL"
+msgstr "網站彈出重定向連結"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mrp_workorder
+msgid "Work Order"
+msgstr "工單"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:26
+#, python-format
+msgid "You have been unsubscribed successfully"
+msgstr "你已經成功取消了登記"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Your Logo"
+msgstr "你的標誌"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Your Order"
+msgstr "你的訂單"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Your order has shipped!"
+msgstr "你的訂單已經發貨！"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_campaign_campaign_id
+msgid "campaign_id"
+msgstr "活動ID"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_list_form
+msgid "e.g. Consumer Newsletter"
+msgstr "例如：時事快訊"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "emails are in queue and will be sent soon."
+msgstr "郵件已經進入發送佇列，即將發送"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "emails could not be sent."
+msgstr "電子郵件無法發送。"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_link_tracker
+msgid "link.tracker"
+msgstr "link.tracker"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_link_tracker_click
+msgid "link.tracker.click"
+msgstr "link.tracker.click"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mass_mailing_config_settings
+msgid "mass.mailing.config.settings"
+msgstr "mass.mailing.config.settings"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "social icon"
+msgstr "社交圖示"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.FieldTextHtmlInline
+msgid "template"
+msgstr "範本"
+
+#. module: mass_mailing
+#: model:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "© 2014 All Rights Reserved"
+msgstr "© 2014版權所有"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-10x fa-music\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-10x fa-music\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-check fa-3x\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-check fa-3x\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-truck fa-3x\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-truck fa-3x\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-usd fa-3x\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-usd fa-3x\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "<div class=\"snippet_row bg-color\" style=\"padding:0px;width:600px;"
+#~ "margin:auto;background: #ffffff repeat top /100%\">\n"
+#~ "                <table cellpadding=\"0\" cellspacing=\"0\" style=\"border-"
+#~ "collapse:collapse\" width=\"100%\"><tbody><tr><td style=\"padding:10px "
+#~ "10px 10px 5px\" valign=\"center\" width=\"270\"> <a style=\"text-"
+#~ "decoration:none\" href=\"http://www.example.com\"><strong>My Company</"
+#~ "strong></a> </td><td style=\"padding:10px 15px 10px 10px;vertical-align:"
+#~ "middle\" valign=\"center\" width=\"270\"><table align=\"right\" border="
+#~ "\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:collapse"
+#~ "\"><tbody><tr><td align=\"right\"><a href=\"https://www.facebook.com/Odoo"
+#~ "\"><span class=\"fa fa-facebook-square fa-2x\" style=\"color:#44B7B7;\"></"
+#~ "span></a></td><td align=\"right\" style=\"padding-left:5px\"><a href="
+#~ "\"https://www.facebook.com/Odoo\"><span class=\"fa fa-google-plus-square "
+#~ "fa-2x\" style=\"color:#44B7B7;\"></span></a></td><td align=\"right\" "
+#~ "style=\"padding-left:5px\"><a href=\"https://www.facebook.com/Odoo"
+#~ "\"><span class=\"fa fa-linkedin-square fa-2x\" style=\"color:#44B7B7;\"></"
+#~ "span></a></td><td align=\"right\" style=\"padding-left:5px\"><a href="
+#~ "\"https://www.facebook.com/Odoo\"><span class=\"fa fa-twitter-square fa-2x"
+#~ "\" style=\"color:#44B7B7;\"></span></a></td></tr></tbody></table></td></"
+#~ "tr></tbody></table></div><div style=\"padding:0px;width:600px;margin:auto;"
+#~ "background-color:#44B7B7;color:#168484\"><table cellpadding=\"0\" "
+#~ "cellspacing=\"0\" style=\"width:100%;background-color:inherit;border-"
+#~ "collapse:collapse;color:inherit\"><tbody><tr><td class=\"col_mv bg-color"
+#~ "\" style=\"text-align:left; padding-left:20px;vertical-align:middle;font-"
+#~ "size:14px\"><p style=\"margin:0;font-size:20px;color:#fff\">You get a 20% "
+#~ "discount for signing up!</p><p style=\"margin:0\">Discount Code: "
+#~ "<strong>45A9E77DGW8455</strong></p></td><td class=\"col_mv bg-color\" "
+#~ "style=\"padding:20px;text-align:center;vertical-align:middle\">  <span "
+#~ "class=\"fa fa-6x fa-ticket\"></span>  </td></tr></tbody></table></"
+#~ "div><div class=\"snippet_row bg-color\" style=\"padding:0;width:600px;max-"
+#~ "width:600px;margin:0 auto;background: #fff repeat top /100%;color:"
+#~ "#168484\"><table style=\"width:100%;text-align:justify;margin:0 auto;"
+#~ "inherit;border-collapse:collapse;color:inherit\"><tbody><tr><td style="
+#~ "\"padding:10px 30px;font-size:14px;line-height:20px\"><p style="
+#~ "\"margin:0\">Dear ${object.name}</p><p style=\"margin:0\">Great stories "
+#~ "have personality. Consider telling a great story that provides "
+#~ "personality. Writing a story with personality for potential clients will "
+#~ "assist with making a relationship connection. This shows up in small "
+#~ "quirks like word choices or phrases. Write from your point of view, not "
+#~ "from someone else's experience.<br></p><p style=\"margin:0\">Great "
+#~ "stories are for everyone even when only written for just one person. If "
+#~ "you try to write with a wide general audience in mind, your story will "
+#~ "ring false and be bland. No one will be interested. Write for one person. "
+#~ "If it’s genuine for the one, it’s genuine for the rest.</p><p style="
+#~ "\"margin:0\">Kind Regards,</p><p style=\"margin:0\">Michael Fletcher</p></"
+#~ "td></tr></tbody></table></div><div style=\"padding:0;width:600px;max-"
+#~ "width:600px;margin:0 auto\"><table style=\"width:100%;text-align:justify;"
+#~ "margin:0 auto;background-color:inherit;border-collapse:collapse"
+#~ "\"><tbody><tr><td class=\"col_mv bg-color\" style=\"padding:10px 0;"
+#~ "background-color:#168484;color:#fff\"><table style=\"border-collapse:"
+#~ "collapse;background-color:inherit\"><tbody><tr><td rowspan=\"2\" style="
+#~ "\"padding-left:10px\">  <span class=\"fa fa-check fa-3x\"></span>  </"
+#~ "td><td style=\"padding-left:10px;color:#fff;font-size:14px\"><p style="
+#~ "\"font-weight:bold;font-size:18px;margin:0 0 3px 0\">Step 1:</p><p style="
+#~ "\"margin:0\">Place Order</p></td></tr></tbody></table></td><td class="
+#~ "\"col_mv bg-color\" style=\"padding:10px 0;background-color:#FFFFFF;color:"
+#~ "#808080\"><table style=\"border-collapse:collapse;background-color:inherit"
+#~ "\"><tbody><tr><td rowspan=\"2\" style=\"padding-left:10px\">  <span class="
+#~ "\"fa fa-truck fa-3x\"></span>  </td><td style=\"padding-left:10px;color:"
+#~ "#808080;font-size:14px\"><p style=\"font-weight:bold;font-size:18px;"
+#~ "margin:0 0 3px 0\">Step 2:</p><p style=\"margin:0\">Shipping</p></td></"
+#~ "tr></tbody></table></td><td class=\"col_mv bg-color\" style="
+#~ "\"padding:10px 0;background-color:#FFFFFF;color:#808080\"><table style="
+#~ "\"border-collapse:collapse;background-color:inherit\"><tbody><tr><td "
+#~ "rowspan=\"2\" style=\"padding-left:10px\">  <span class=\"fa fa-dollar "
+#~ "fa-3x\"></span>  </td><td style=\"padding-left:10px;color:#808080;font-"
+#~ "size:14px\"><p style=\"font-weight:bold;font-size:18px;margin:0 0 3px "
+#~ "0\">Step 3:</p><p style=\"margin:0\">Payment</p></td></tr></tbody></"
+#~ "table></td></tr></tbody></table></div><div class=\"snippet_row bg-color\" "
+#~ "style=\"padding:0px;width:600px;margin:auto;background: #414141 repeat "
+#~ "top /100%;color:#44B7B7\"><div style=\"padding:10px\"><table cellpadding="
+#~ "\"0\" cellspacing=\"0\" style=\"margin: 0 auto;width:100%;border-collapse:"
+#~ "collapse;color:inherit;color:inherit\"><tbody><tr><td style=\"text-align:"
+#~ "center\"> <a style=\"text-decoration: none;\" href=\"https://www.facebook."
+#~ "com/Odoo\"><span class=\"fa fa-facebook-square fa-2x\"></span></a><a "
+#~ "style=\"text-decoration: none;\" href=\"https://plus.google.com/+Odooapps"
+#~ "\"><span class=\"fa fa-google-plus-square fa-2x\"></span></a><a style="
+#~ "\"text-decoration: none;\" href=\"https://www.linkedin.com/company/odoo"
+#~ "\"><span class=\"fa fa-linkedin-square fa-2x\"></span></a><a style=\"text-"
+#~ "decoration: none;\" href=\"https://twitter.com/Odoo\"><span class=\"fa fa-"
+#~ "twitter-square fa-2x\"></span></a> </td></tr><tr><td style=\"font-"
+#~ "size:12px;text-align:center;padding-top:10px;padding-bottom:5px\"> <a "
+#~ "href=\"/unsubscribe_from_list\" style=\"color:#44B7B7\">Unsubscribe</a>|"
+#~ "<a href=\"/page/contactus\" style=\"color:#44B7B7\">Contact</a> </td></"
+#~ "tr></tbody></table></div>\n"
+#~ "            </div>"
+#~ msgstr ""
+#~ "<div class=\"snippet_row bg-color\" style=\"padding:0px;width:600px;"
+#~ "margin:auto;background: #ffffff repeat top /100%\">\n"
+#~ "                <table cellpadding=\"0\" cellspacing=\"0\" style=\"border-"
+#~ "collapse:collapse\" width=\"100%\"><tbody><tr><td style=\"padding:10px "
+#~ "10px 10px 5px\" valign=\"center\" width=\"270\"> <a style=\"text-"
+#~ "decoration:none\" href=\"http://www.example.com\"><strong>My Company</"
+#~ "strong></a> </td><td style=\"padding:10px 15px 10px 10px;vertical-align:"
+#~ "middle\" valign=\"center\" width=\"270\"><table align=\"right\" border="
+#~ "\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:collapse"
+#~ "\"><tbody><tr><td align=\"right\"><a href=\"https://www.facebook.com/Odoo"
+#~ "\"><span class=\"fa fa-facebook-square fa-2x\" style=\"color:#44B7B7;\"></"
+#~ "span></a></td><td align=\"right\" style=\"padding-left:5px\"><a href="
+#~ "\"https://www.facebook.com/Odoo\"><span class=\"fa fa-google-plus-square "
+#~ "fa-2x\" style=\"color:#44B7B7;\"></span></a></td><td align=\"right\" "
+#~ "style=\"padding-left:5px\"><a href=\"https://www.facebook.com/Odoo"
+#~ "\"><span class=\"fa fa-linkedin-square fa-2x\" style=\"color:#44B7B7;\"></"
+#~ "span></a></td><td align=\"right\" style=\"padding-left:5px\"><a href="
+#~ "\"https://www.facebook.com/Odoo\"><span class=\"fa fa-twitter-square fa-2x"
+#~ "\" style=\"color:#44B7B7;\"></span></a></td></tr></tbody></table></td></"
+#~ "tr></tbody></table></div><div style=\"padding:0px;width:600px;margin:auto;"
+#~ "background-color:#44B7B7;color:#168484\"><table cellpadding=\"0\" "
+#~ "cellspacing=\"0\" style=\"width:100%;background-color:inherit;border-"
+#~ "collapse:collapse;color:inherit\"><tbody><tr><td class=\"col_mv bg-color"
+#~ "\" style=\"text-align:left; padding-left:20px;vertical-align:middle;font-"
+#~ "size:14px\"><p style=\"margin:0;font-size:20px;color:#fff\">You get a 20% "
+#~ "discount for signing up!</p><p style=\"margin:0\">Discount Code: "
+#~ "<strong>45A9E77DGW8455</strong></p></td><td class=\"col_mv bg-color\" "
+#~ "style=\"padding:20px;text-align:center;vertical-align:middle\">  <span "
+#~ "class=\"fa fa-6x fa-ticket\"></span>  </td></tr></tbody></table></"
+#~ "div><div class=\"snippet_row bg-color\" style=\"padding:0;width:600px;max-"
+#~ "width:600px;margin:0 auto;background: #fff repeat top /100%;color:"
+#~ "#168484\"><table style=\"width:100%;text-align:justify;margin:0 auto;"
+#~ "inherit;border-collapse:collapse;color:inherit\"><tbody><tr><td style="
+#~ "\"padding:10px 30px;font-size:14px;line-height:20px\"><p style="
+#~ "\"margin:0\">Dear ${object.name}</p><p style=\"margin:0\">Great stories "
+#~ "have personality. Consider telling a great story that provides "
+#~ "personality. Writing a story with personality for potential clients will "
+#~ "assist with making a relationship connection. This shows up in small "
+#~ "quirks like word choices or phrases. Write from your point of view, not "
+#~ "from someone else's experience.<br></p><p style=\"margin:0\">Great "
+#~ "stories are for everyone even when only written for just one person. If "
+#~ "you try to write with a wide general audience in mind, your story will "
+#~ "ring false and be bland. No one will be interested. Write for one person. "
+#~ "If it’s genuine for the one, it’s genuine for the rest.</p><p style="
+#~ "\"margin:0\">Kind Regards,</p><p style=\"margin:0\">Michael Fletcher</p></"
+#~ "td></tr></tbody></table></div><div style=\"padding:0;width:600px;max-"
+#~ "width:600px;margin:0 auto\"><table style=\"width:100%;text-align:justify;"
+#~ "margin:0 auto;background-color:inherit;border-collapse:collapse"
+#~ "\"><tbody><tr><td class=\"col_mv bg-color\" style=\"padding:10px 0;"
+#~ "background-color:#168484;color:#fff\"><table style=\"border-collapse:"
+#~ "collapse;background-color:inherit\"><tbody><tr><td rowspan=\"2\" style="
+#~ "\"padding-left:10px\">  <span class=\"fa fa-check fa-3x\"></span>  </"
+#~ "td><td style=\"padding-left:10px;color:#fff;font-size:14px\"><p style="
+#~ "\"font-weight:bold;font-size:18px;margin:0 0 3px 0\">Step 1:</p><p style="
+#~ "\"margin:0\">Place Order</p></td></tr></tbody></table></td><td class="
+#~ "\"col_mv bg-color\" style=\"padding:10px 0;background-color:#FFFFFF;color:"
+#~ "#808080\"><table style=\"border-collapse:collapse;background-color:inherit"
+#~ "\"><tbody><tr><td rowspan=\"2\" style=\"padding-left:10px\">  <span class="
+#~ "\"fa fa-truck fa-3x\"></span>  </td><td style=\"padding-left:10px;color:"
+#~ "#808080;font-size:14px\"><p style=\"font-weight:bold;font-size:18px;"
+#~ "margin:0 0 3px 0\">Step 2:</p><p style=\"margin:0\">Shipping</p></td></"
+#~ "tr></tbody></table></td><td class=\"col_mv bg-color\" style="
+#~ "\"padding:10px 0;background-color:#FFFFFF;color:#808080\"><table style="
+#~ "\"border-collapse:collapse;background-color:inherit\"><tbody><tr><td "
+#~ "rowspan=\"2\" style=\"padding-left:10px\">  <span class=\"fa fa-dollar "
+#~ "fa-3x\"></span>  </td><td style=\"padding-left:10px;color:#808080;font-"
+#~ "size:14px\"><p style=\"font-weight:bold;font-size:18px;margin:0 0 3px "
+#~ "0\">Step 3:</p><p style=\"margin:0\">Payment</p></td></tr></tbody></"
+#~ "table></td></tr></tbody></table></div><div class=\"snippet_row bg-color\" "
+#~ "style=\"padding:0px;width:600px;margin:auto;background: #414141 repeat "
+#~ "top /100%;color:#44B7B7\"><div style=\"padding:10px\"><table cellpadding="
+#~ "\"0\" cellspacing=\"0\" style=\"margin: 0 auto;width:100%;border-collapse:"
+#~ "collapse;color:inherit;color:inherit\"><tbody><tr><td style=\"text-align:"
+#~ "center\"> <a style=\"text-decoration: none;\" href=\"https://www.facebook."
+#~ "com/Odoo\"><span class=\"fa fa-facebook-square fa-2x\"></span></a><a "
+#~ "style=\"text-decoration: none;\" href=\"https://plus.google.com/+Odooapps"
+#~ "\"><span class=\"fa fa-google-plus-square fa-2x\"></span></a><a style="
+#~ "\"text-decoration: none;\" href=\"https://www.linkedin.com/company/odoo"
+#~ "\"><span class=\"fa fa-linkedin-square fa-2x\"></span></a><a style=\"text-"
+#~ "decoration: none;\" href=\"https://twitter.com/Odoo\"><span class=\"fa fa-"
+#~ "twitter-square fa-2x\"></span></a> </td></tr><tr><td style=\"font-"
+#~ "size:12px;text-align:center;padding-top:10px;padding-bottom:5px\"> <a "
+#~ "href=\"/unsubscribe_from_list\" style=\"color:#44B7B7\">Unsubscribe</a>|"
+#~ "<a href=\"/page/contactus\" style=\"color:#44B7B7\">Contact</a> </td></"
+#~ "tr></tbody></table></div>\n"
+#~ "            </div>"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "發表在本記錄上最新消息的日期。"
+
+#~ msgid "Discount Code: <strong>45A9E77DGW8455</strong>"
+#~ msgstr "折扣編碼: <strong>45A9E77DGW8455</strong>"
+
+#~ msgid "Email Campaign - Products"
+#~ msgstr "群發郵件-產品"
+
+#~ msgid "Followers"
+#~ msgstr "關注人"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid ""
+#~ "Great stories have personality. Consider telling a great story that "
+#~ "provides personality. Writing a story with personality for potential "
+#~ "clients will assist with making a relationship connection. This shows up "
+#~ "in small quirks like word choices or phrases. Write from your point of "
+#~ "view, not from someone else's experience.<br>"
+#~ msgstr ""
+#~ "偉大的故事都有有個性。考慮講述一個有個性的偉大故事。為潛在客戶寫故事將協助"
+#~ "建立與客戶的關係，這將體現在在小習慣如如詞句選擇選項或成語。從你的觀點寫，"
+#~ "而不是從別人的經驗。 <br>"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "請選擇你關注的消息"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選，你需要關注新資訊。"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最後消息的日期"
+
+#~ msgid "Messages"
+#~ msgstr "信息"
+
+#~ msgid "Newsletter"
+#~ msgstr "通訊"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動的數量："
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的資訊數量"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Open Mass Mailing Menu"
+#~ msgstr "打開“郵件群發”菜單"
+
+#~ msgid "Payment"
+#~ msgstr "支付"
+
+#~ msgid "Shipping"
+#~ msgstr "發貨"
+
+#~ msgid "Step 1:"
+#~ msgstr "第1步:"
+
+#~ msgid "Step 2:"
+#~ msgstr "第2步:"
+
+#~ msgid "Step 3:"
+#~ msgstr "第3步:"
+
+#~ msgid "Unread Messages"
+#~ msgstr "未讀郵件"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息計數"
+
+#~ msgid "Website Messages"
+#~ msgstr "網站消息"
+
+#~ msgid "Website communication history"
+#~ msgstr "網站流量歷史"
+
+#~ msgid "You get a 20% discount for signing up!"
+#~ msgstr "你註冊就可獲得20%的優惠!"
+
+#~ msgid "unknown"
+#~ msgstr "未知的"
+
+#~ msgid "Help"
+#~ msgstr "幫助"
+
+#~ msgid ""
+#~ "Message description: either the subject, or the beginning of the body"
+#~ msgstr "消息描述：可以選擇主題或正文的開始部分作為消息的描述"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和通信歷史記錄"
+
+#~ msgid "Published"
+#~ msgstr "已發佈"
+
+#~ msgid "Visible on the website as a comment"
+#~ msgstr "網站評論可見"
+
+#~ msgid "$50.00"
+#~ msgstr "$50.00"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                    <span class=\"fa fa-10x fa-gift\"/>\n"
+#~ "                                    &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                    <span class=\"fa fa-10x fa-gift\"/>\n"
+#~ "                                    &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-10x fa-gift\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-10x fa-gift\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-10x fa-github-alt\"/"
+#~ ">\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-10x fa-github-alt\"/"
+#~ ">\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-bookmark\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-bookmark\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-bookmark\"/"
+#~ ">&amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-bookmark\"/"
+#~ ">&amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-map-marker\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-map-marker\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-map-marker\"/>\n"
+#~ "                                &amp;nbsp;\n"
+#~ "                                <br/>"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-map-marker\"/>\n"
+#~ "                                &amp;nbsp;\n"
+#~ "                                <br/>"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-map-marker\"/"
+#~ ">&amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-5x fa-map-marker\"/"
+#~ ">&amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-6x fa-ticket\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-6x fa-ticket\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-bullhorn fa-6x\"/"
+#~ ">&amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-bullhorn fa-6x\"/"
+#~ ">&amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-calendar fa-5x\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-calendar fa-5x\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-camera fa-10x\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-camera fa-10x\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-lock fa-10x\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-lock fa-10x\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-picture-o fa-10x\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-picture-o fa-10x\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-tag fa-10x\"/>\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-tag fa-10x\"/>\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-user fa-5x\"/>&amp;"
+#~ "nbsp;<br/>\n"
+#~ "                                User : <strong>John Doe</strong>"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"fa fa-user fa-5x\"/>&amp;"
+#~ "nbsp;<br/>\n"
+#~ "                                User : <strong>John Doe</strong>"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"ffa fa-5x fa-map-marker\"/"
+#~ ">\n"
+#~ "                                &amp;nbsp;"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                                <span class=\"ffa fa-5x fa-map-marker\"/"
+#~ ">\n"
+#~ "                                &amp;nbsp;"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                            <span class=\"fa fa-user fa-5x\" style="
+#~ "\"margin: 5px 20px;\"/>\n"
+#~ "                            &amp;nbsp;\n"
+#~ "                            <br/>\n"
+#~ "                            User: John Doe"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                            <span class=\"fa fa-user fa-5x\" style="
+#~ "\"margin: 5px 20px;\"/>\n"
+#~ "                            &amp;nbsp;\n"
+#~ "                            <br/>\n"
+#~ "                            User: John Doe"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                            <span class=\"fa fa-user fa-5x\" style="
+#~ "\"margin: 5px 20px;\"/>\n"
+#~ "                            <br/>\n"
+#~ "                            User: John Doe"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                            <span class=\"fa fa-user fa-5x\" style="
+#~ "\"margin: 5px 20px;\"/>\n"
+#~ "                            <br/>\n"
+#~ "                            用戶: John Doe"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                            <span class=\"fa fa-user fa-5x\"/>\n"
+#~ "                            <br/>\n"
+#~ "                            <span style=\"color:#282D29;font-size:12px"
+#~ "\">User: John Doe</span>"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                            <span class=\"fa fa-user fa-5x\"/>\n"
+#~ "                            <br/>\n"
+#~ "                            <span style=\"color:#282D29;font-size:12px\">"
+#~ "用戶: John Doe</span>"
+
+#~ msgid ""
+#~ "&amp;nbsp;\n"
+#~ "                    <br/><br/>"
+#~ msgstr ""
+#~ "&amp;nbsp;\n"
+#~ "                    <br/><br/>"
+
+#~ msgid ""
+#~ "123 Flower Drive <br/>\n"
+#~ "                                                        Victoria, BC <br/"
+#~ ">\n"
+#~ "                                                        V9P 2E8 <br/>\n"
+#~ "                                                        1(250)222-2232"
+#~ msgstr ""
+#~ "123 Flower Drive <br/>\n"
+#~ "                                                        Victoria, BC <br/"
+#~ ">\n"
+#~ "                                                        V9P 2E8 <br/>\n"
+#~ "                                                        1(250)222-2232"
+
+#~ msgid ""
+#~ "123 Flower Drive <br/>\n"
+#~ "                                                    Victoria, BC <br/>\n"
+#~ "                                                    V9P 2E8 <br/>\n"
+#~ "                                                    1(250)222-2232"
+#~ msgstr ""
+#~ "123 Flower Drive <br/>\n"
+#~ "                                                    Victoria, BC <br/>\n"
+#~ "                                                    V9P 2E8 <br/>\n"
+#~ "                                                    1(250)222-2232"
+
+#~ msgid ""
+#~ "123 Flower Drive<br/>\n"
+#~ "                                                        Victoria, BC<br/"
+#~ ">\n"
+#~ "                                                        V9P 2E8<br/>\n"
+#~ "                                                        1(250)222-2232"
+#~ msgstr ""
+#~ "123 Flower Drive<br/>\n"
+#~ "                                                        Victoria, BC<br/"
+#~ ">\n"
+#~ "                                                        V9P 2E8<br/>\n"
+#~ "                                                        1(250)222-2232"
+
+#~ msgid ""
+#~ "123 Flower Drive<br/>\n"
+#~ "                                    Victoria, BC<br/>\n"
+#~ "                                    V9P 2E8<br/>\n"
+#~ "                                    1(250)222-2232"
+#~ msgstr ""
+#~ "123 Flower Drive<br/>\n"
+#~ "                                    Victoria, BC<br/>\n"
+#~ "                                    V9P 2E8<br/>\n"
+#~ "                                    1(250)222-2232"
+
+#~ msgid "20% off!"
+#~ msgstr "20%折扣！"
+
+#~ msgid "30% discount when you sign up now!"
+#~ msgstr "現在註冊，享受30%的折扣！"
+
+#~ msgid ""
+#~ "<font>7</font>\n"
+#~ "                                    <strong>Business Hacks</strong>\n"
+#~ "                                    <span> to<br/>boost your marketing</"
+#~ "span>"
+#~ msgstr ""
+#~ "<font>7</font>\n"
+#~ "                                    <strong>Business Hacks</strong>\n"
+#~ "                                    <span> to<br/>boost your marketing</"
+#~ "span>"
+
+#~ msgid ""
+#~ "<span>Discount Code : </span> <strong style=\"border:1px solid #d1d1d1;"
+#~ "padding:10px\"> 45A9E77DGW8455</strong>"
+#~ msgstr ""
+#~ "<span>折扣編號 : </span> <strong style=\"border:1px solid #d1d1d1;"
+#~ "padding:10px\"> 45A9E77DGW8455</strong>"
+
+#~ msgid ""
+#~ "<strong style=\"font-size:18px\"> Save 20% when you upgrade now!</strong>"
+#~ msgstr "<strong style=\"font-size:18px\"> 如果現在升級節省 20%!</strong>"
+
+#~ msgid "<strong>Bob Erlicious</strong>"
+#~ msgstr "<strong>Bob Erlicious</strong>"
+
+#~ msgid "<strong>Invoice: 00234</strong>"
+#~ msgstr "<strong>發票: 00234</strong>"
+
+#~ msgid ""
+#~ "<strong>We need you to update your account information. If there is ever "
+#~ "a problem with your account, this information will make it easier for you "
+#~ "to log back in.</strong>"
+#~ msgstr ""
+#~ "<strong>我們需要你更新你的帳戶資訊。如果在你的帳戶裡有問題，這個資訊將使你"
+#~ "登更容易。</strong>"
+
+#~ msgid "<strong>Period</strong>"
+#~ msgstr "<strong>期間</strong>"
+
+#~ msgid ""
+#~ "<time datetime=\"2014-07-20\"> <span style=\"display: block;font-size: "
+#~ "50px;line-height: 1;padding-top: 10px\">21</span> <span style=\"display: "
+#~ "block;font-size: 30px;line-height: 1\">Jul</span> <span style=\"display: "
+#~ "block;font-size: 16px;line-height: 1;color: #FFFFFF;font-weight: "
+#~ "600\">ALL DAY</span> </time>"
+#~ msgstr ""
+#~ "<time datetime=\"2014-07-20\"> <span style=\"display: block;font-size: "
+#~ "50px;line-height: 1;padding-top: 10px\">21</span> <span style=\"display: "
+#~ "block;font-size: 30px;line-height: 1\">Jul</span> <span style=\"display: "
+#~ "block;font-size: 16px;line-height: 1;color: #FFFFFF;font-weight: 600\">全"
+#~ "天</span> </time>"
+
+#~ msgid ""
+#~ "<time datetime=\"2014-07-20\"> <span style=\"display: block;font-size: "
+#~ "50px;line-height: 1;padding-top: 10px\">21</span> <span style=\"display: "
+#~ "block;font-size: 30px;line-height: 1\">Jul</span> <span style=\"display: "
+#~ "block;font-size: 16px;line-height: 1;color: #fff;font-weight: 600\">ALL "
+#~ "DAY</span> </time>"
+#~ msgstr ""
+#~ "<time datetime=\"2014-07-20\"> <span style=\"display: block;font-size: "
+#~ "50px;line-height: 1;padding-top: 10px\">21</span> <span style=\"display: "
+#~ "block;font-size: 30px;line-height: 1\">Jul</span> <span style=\"display: "
+#~ "block;font-size: 16px;line-height: 1;color: #fff;font-weight: 600\">全天</"
+#~ "span> </time>"
+
+#~ msgid ""
+#~ "<time datetime=\"2014-07-20\"> <span style=\"display: block;font-size: "
+#~ "50px;line-height: 1;padding-top: 10px;color:#fff\">21</span> <span style="
+#~ "\"display: block;font-size: 30px;line-height: 1;color:#fff\">Jul</span> "
+#~ "<span style=\"display: block;font-size: 16px;line-height: 1;color: #fff;"
+#~ "font-weight: 600\">ALL DAY</span> </time>"
+#~ msgstr ""
+#~ "<time datetime=\"2014-07-20\"> <span style=\"display: block;font-size: "
+#~ "50px;line-height: 1;padding-top: 10px;color:#fff\">21</span> <span style="
+#~ "\"display: block;font-size: 30px;line-height: 1;color:#fff\">Jul</span> "
+#~ "<span style=\"display: block;font-size: 16px;line-height: 1;color: #fff;"
+#~ "font-weight: 600\">全天</span> </time>"
+
+#~ msgid "Airmail"
+#~ msgstr "航空件"
+
+#~ msgid "Amount"
+#~ msgstr "金額"
+
+#~ msgid "Apps That Help You Grow Your Business!"
+#~ msgstr "幫助你提升業務量的應用！"
+
+#~ msgid "April 3, 2014"
+#~ msgstr "2014年4月3日"
+
+#~ msgid "August"
+#~ msgstr "8"
+
+#~ msgid ""
+#~ "Because I've invited you, you can also use the below coupon code to "
+#~ "receive a 30% discount on you first months subscription!"
+#~ msgstr ""
+#~ "你是我們的會員，你可以在第一個月訂購時，使用以下優惠碼，換取30%的折扣。"
+
+#~ msgid ""
+#~ "Because I've invited you, you can also use the below coupon code to "
+#~ "receive a 50% discount on you first months subscription!"
+#~ msgstr ""
+#~ "因為我們邀請了你，你可以在第一個月訂購時，使用以下優惠碼，換取50%的折扣。"
+
+#~ msgid "Bob Erlicious"
+#~ msgstr "Bob Erlicious"
+
+#~ msgid "Code: <strong>45A9E77DGW8455</strong>"
+#~ msgstr "編碼: <strong>45A9E77DGW8455</strong>"
+
+#~ msgid "Come check out new Stuff!"
+#~ msgstr "查看新工作!"
+
+#~ msgid "Come check out new stuff!"
+#~ msgstr "查看新工作!"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid "Discount Code: <strong> 45A9E77DGW8455</strong>"
+#~ msgstr "折扣編碼: <strong> 45A9E77DGW8455</strong>"
+
+#~ msgid "Enjoy 50% of your next purchase!"
+#~ msgstr "下次購買時享受50%的優惠!"
+
+#~ msgid "Go"
+#~ msgstr "到"
+
+#~ msgid "Good News!"
+#~ msgstr "好消息!"
+
+#~ msgid "Good news!"
+#~ msgstr "好消息!"
+
+#~ msgid "Hello Bob,"
+#~ msgstr "Bob你好,"
+
+#~ msgid "Hey Bob,"
+#~ msgstr "你好Bob,"
+
+#~ msgid "Hurry Up"
+#~ msgstr "快些"
+
+#~ msgid "Hurry Up!"
+#~ msgstr "快些！"
+
+#~ msgid ""
+#~ "I set up a profile where I can do tons of really awesome stuff! So I want "
+#~ "you to follow me and see it all. Once you join us, you'll be able to do "
+#~ "all sorts of new stuff too."
+#~ msgstr ""
+#~ "我設置了一個規則使我可以做大量的非常好的資料! 所以我想讓你和我一起看一下這"
+#~ "個規則。一旦你加入我們，你也可以做很多新的資料。"
+
+#~ msgid ""
+#~ "I set up a profile where I can do tons of really awesome stuff. I want "
+#~ "you to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我設置了一個規則使我可以做大量的非常好的資料! 我想讓你跟隨我，以便我們可以"
+#~ "保持聯繫!"
+
+#~ msgid ""
+#~ "I set up an Odoo profile where I can do tons of really awesome stuff. I "
+#~ "want you to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我設置了一個Odoo的規則使我可以做大量的非常好的資料! 所以我想讓你跟隨我，以"
+#~ "便我們保持聯繫!"
+
+#~ msgid ""
+#~ "I set up profile where I can do tons of really awesome stuff. I want you "
+#~ "to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我設置了一個規則使我可以做大量的非常好的資料! 所以我想讓你跟隨我，以便我們"
+#~ "保持聯繫!"
+
+#~ msgid ""
+#~ "Join our Marketing newsletter and get <strong>this white paper instantly</"
+#~ "strong>"
+#~ msgstr "加入市場行銷通訊並且得到<strong>最新白皮書</strong>"
+
+#~ msgid "Link"
+#~ msgstr "連結"
+
+#~ msgid "Mail Theme Colors"
+#~ msgstr "郵件主題的顏色"
+
+#~ msgid "My Order"
+#~ msgstr "我的訂單"
+
+#~ msgid "Narrative"
+#~ msgstr "記錄"
+
+#~ msgid "Need Action"
+#~ msgstr "需要行動"
+
+#~ msgid "Need Action Counter"
+#~ msgstr "需要行動計數"
+
+#~ msgid "Neopolitan"
+#~ msgstr "Neopolitan"
+
+#~ msgid "Number of needaction messages"
+#~ msgstr "需要行動的資訊數量"
+
+#~ msgid "Odoo Presents"
+#~ msgstr "Odoo 禮品"
+
+#~ msgid ""
+#~ "Odoo is continuing to grow and we miss seeing you be a part of it! We've "
+#~ "increased store hours and have lot's of new brands available. To welcome "
+#~ "you back please accept this 20% discount on you next purchase by clicking "
+#~ "the button below."
+#~ msgstr ""
+#~ "Odoo不斷發展，我們希望你能加入我們! 我們的營業時間已經增加，也有很多新的品"
+#~ "牌加入。歡迎你的到來，請點擊下面連結可以在下次購買時優惠20%。"
+
+#~ msgid "Period"
+#~ msgstr "期間"
+
+#~ msgid "Plan"
+#~ msgstr "計畫"
+
+#~ msgid "Redeem Discount!"
+#~ msgstr "較大折扣!"
+
+#~ msgid "See you soon!"
+#~ msgstr "再見!"
+
+#~ msgid "Sign up now and receive a 20% discount!"
+#~ msgstr "立即註冊，優惠20%！"
+
+#~ msgid "Silver Plan"
+#~ msgstr "銀色計畫"
+
+#~ msgid "Skyline"
+#~ msgstr "上限"
+
+#~ msgid "Sunday"
+#~ msgstr "星期日"
+
+#~ msgid ""
+#~ "The amount of $50.00 CAD has been charged on the credit card ending with "
+#~ "0123."
+#~ msgstr "你的尾號0123的信息卡已被扣款50加幣。"
+
+#~ msgid "Title"
+#~ msgstr "稱謂"
+
+#~ msgid ""
+#~ "To track your order or make any changes please click the button below."
+#~ msgstr "請點擊以下按鈕，可跟蹤你的訂單或修改訂單。"
+
+#~ msgid "Track shipping"
+#~ msgstr "跟蹤物流"
+
+#~ msgid "Upgrade"
+#~ msgstr "升級"
+
+#~ msgid "Upgrade to Premium Account!"
+#~ msgstr "升級到預覽帳戶!"
+
+#~ msgid "Visit Now"
+#~ msgstr "現在訪問"
+
+#~ msgid ""
+#~ "We are continuing to grow and we miss seeing you be a part of it! We've "
+#~ "increased store hours and have lot's of new brands available. To welcome "
+#~ "you back please accept this 20% discount on you next purchase by clicking "
+#~ "the button below."
+#~ msgstr ""
+#~ "我們不斷發展，我們希望你能加入我們! 我們的營業時間已經增加，也有很多新的品"
+#~ "牌加入。歡迎你的到來，請點擊下面連結可以在下次購買時優惠20%。"
+
+#~ msgid ""
+#~ "We would like to inform you that your order has shipped! More details "
+#~ "below."
+#~ msgstr "我們很高興地通知你，你的訂單已經發出! 更多資訊如下。"
+
+#~ msgid ""
+#~ "We would like you to know that you have successfully subscribed the news "
+#~ "letter. Following are the details about your plan."
+#~ msgstr "我們很高興通知你，新信件已經成功發送給你。下面是詳細計畫。"
+
+#~ msgid ""
+#~ "We would like you to know that your order has shipped! To view your order "
+#~ "or make any changes please click the \"my order\" button below."
+#~ msgstr ""
+#~ "我們很高興地通知你，你的訂單已經發出! 請你點擊“我的訂單”按鈕，可跟蹤或修改"
+#~ "訂單。"
+
+#~ msgid "YOUR ORDER HAS SHIPPED"
+#~ msgstr "你的訂單已經發貨"
+
+#~ msgid ""
+#~ "You'll be the first to hear about new arrivals, exclusive promotionas, "
+#~ "cool collaborations, and the latest in everything.\n"
+#~ "                                    <br/>\n"
+#~ "                                    Enter <strong>XLKIJP6887F</strong> "
+#~ "when you sign up!<br/>\n"
+#~ "                                    <br/>"
+#~ msgstr ""
+#~ "You'll be the first to hear about new arrivals, exclusive promotionas, "
+#~ "cool collaborations, and the latest in everything.\n"
+#~ "                                    <br/>\n"
+#~ "                                    Enter <strong>XLKIJP6887F</strong> "
+#~ "when you sign up!<br/>\n"
+#~ "                                    <br/>"
+
+#~ msgid "Your Event Name"
+#~ msgstr "你的事件名稱"
+
+#~ msgid "Your order has been shipped!"
+#~ msgstr "你的訂單已經被發貨！"
+
+#~ msgid "Zen-Flat"
+#~ msgstr "Zen-Flat"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                  May - June 2014"
+#~ msgstr ""
+#~ "  \n"
+#~ "                                                    2014年5到6月"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                $39.99"
+#~ msgstr ""
+#~ "\n"
+#~ "                                                $39.99"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                <strong>Amount</strong>"
+#~ msgstr ""
+#~ "\n"
+#~ "                                                <strong>金額</strong>"
+
+#~ msgid "    <strong>Plan</strong>"
+#~ msgstr "    <strong>計畫</strong>"
+
+#~ msgid "$39.99"
+#~ msgstr "$39.99"
+
+#~ msgid "<strong>Amount</strong>"
+#~ msgstr "<strong>金額</strong>"
+
+#~ msgid "<strong>Plan</strong>"
+#~ msgstr "<strong>計畫</strong>"
+
+#~ msgid "Gold Status"
+#~ msgstr "最佳狀態"
+
+#~ msgid "May - June 2014"
+#~ msgstr "2014年5-6月"
+
+#~ msgid "% <br/>"
+#~ msgstr "% <br/>"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to create a recipient.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "               按一下來創建一個收件人。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "    Click to define a new mass mailing campaign.\n"
+#~ "  </p><p>\n"
+#~ "    Create a campaign to structure mass mailing and get analysis from "
+#~ "email status.\n"
+#~ "  </p>\n"
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "   按一下來創建一個新的群發郵件活動.\n"
+#~ "  </p><p>\n"
+#~ "    新建活動用來構建群發郵件並用來分析郵件狀態。\n"
+#~ "  </p>\n"
+
+#~ msgid "or"
+#~ msgstr "或者"
+
+#~ msgid "Manage Mass Mailing using Campaign"
+#~ msgstr "管理群發郵件活動"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "&times;"
+#~ msgstr "&次數;"
+
+#~ msgid "Add a Newsletter Subscribe Button"
+#~ msgstr "添加一個郵寄清單訂閱按鈕"
+
+#~ msgid "Add a Newsletter Subscribe Popup"
+#~ msgstr "添加一個通訊訂閱彈出"
+
+#~ msgid "Business Hacks"
+#~ msgstr "商業技巧"
+
+#~ msgid "Choose your mailing subscriptions."
+#~ msgstr "選擇你的訂閱郵件!"
+
+#~ msgid "Here To Edit Dialog Content"
+#~ msgstr "編輯會話內容"
+
+#~ msgid "Mailing Subscriptions"
+#~ msgstr "郵件訂閱"
+
+#~ msgid "Newsletter Popup"
+#~ msgstr "通訊彈出"
+
+#~ msgid "Newsletter Popup!"
+#~ msgstr "通訊彈出！"
+
+#~ msgid "Thanks"
+#~ msgstr "謝謝"
+
+#~ msgid "Thanks for your subscription!"
+#~ msgstr "感謝你的訂閱!"
+
+#~ msgid "The newsletter popup snippet effect is active on this page. Click"
+#~ msgstr "點擊，會在頁面產生新聞通訊的片段彈出效果。"
+
+#~ msgid "boost your marketing"
+#~ msgstr "促進市場行銷"
+
+#~ msgid "this white paper instantly"
+#~ msgstr "這是白皮書"
+
+#~ msgid "to"
+#~ msgstr "致"
+
+#~ msgid "your email..."
+#~ msgstr "你的郵件..."
+
+#~ msgid ""
+#~ "<div>\n"
+#~ "<div class=\"snippet_row\" style=\"padding: 0px; width: 600px; margin: "
+#~ "auto; color: rgb(119, 119, 119); height: 80px; overflow: hidden; "
+#~ "background-color: rgb(255, 255, 255);\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:"
+#~ "collapse;background:inherit;color:inherit\" width=\"100%\"><tbody><tr><td "
+#~ "style=\"text-align:center;padding-bottom:10px\"><span style=\"color:"
+#~ "#000000;\"><span style=\"font-size:36px\"></span></span>\n"
+#~ "\n"
+#~ "            <h2 style=\"font-family: arial; color: rgb(51, 51, 51); text-"
+#~ "align: center; padding: 0px 5px;\">A Punchy Headline</h2>\n"
+#~ "            <span style=\"color:#000000;\"><span style=\"font-size:36px"
+#~ "\"></span></span></td>\n"
+#~ "        </tr><tr><td style=\"font-size:20px; text-align:center; padding: "
+#~ "0 5px\"><span style=\"color:#000000;\"></span></td>\n"
+#~ "        </tr></tbody></table></div>\n"
+#~ "\n"
+#~ "<div style=\"padding:0px; margin:auto;width:600px;background-color:#fff;"
+#~ "color:#777777\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"margin:auto;border-"
+#~ "collapse:collapse;background:inherit;color:inherit\" width="
+#~ "\"600\"><tbody><tr><td align=\"left\" class=\"col_mv color_picker\" style="
+#~ "\"text-align:center\"><img alt=\"image\" src=\"/website/static/src/img/"
+#~ "big_picture.png\" style=\"height: auto; max-width: 600px; width: 535px;"
+#~ "\"></td>\n"
+#~ "        </tr></tbody></table></div>\n"
+#~ "\n"
+#~ "<div class=\"snippet_row\" style=\"padding:0px;width:600px;margin:auto;"
+#~ "background-color:#fff;color:#777777\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:"
+#~ "collapse;background:inherit;color:inherit\" width=\"100%\"><tbody><tr><td "
+#~ "style=\"text-align:center;padding-bottom:10px\"><span style=\"font-"
+#~ "size:36px\"></span>\n"
+#~ "\n"
+#~ "            <h3 style=\"font-family: arial; color: rgb(51, 51, 51); text-"
+#~ "align: center; padding: 0px 5px; margin-top:20px;\">A Small Subtitle for "
+#~ "${object.name}</h3>\n"
+#~ "            <span style=\"font-size:36px\"></span></td>\n"
+#~ "        </tr><tr><td style=\"font-size:20px; text-align:center; padding: "
+#~ "0 5px\"><span style=\"color: rgb(51, 51, 51); font-family: arial; font-"
+#~ "size: 12px; line-height: 17.142858505249px; text-align: center;\"><span "
+#~ "style=\"color: rgb(51, 51, 51); font-family: arial; font-size: 12px; line-"
+#~ "height: 17.142858505249px; text-align: center;\">Choose a vibrant image "
+#~ "and write an inspiring paragraph about it. It does not have to be long, "
+#~ "but it should reinforce your image.</span></span></td>\n"
+#~ "        </tr></tbody></table></div>\n"
+#~ "\n"
+#~ "<div style=\"padding:0px;width:600px;margin:auto;background-color:#fff;"
+#~ "color:#000;color:#777777\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;border-"
+#~ "collapse:collapse;background:inherit;color:inherit\">\n"
+#~ "    <tbody>\n"
+#~ "        <tr>\n"
+#~ "            <td class=\"col_mv color_picker\" style=\"padding:30px 15px;"
+#~ "width:33%;text-align:center;background-color:#fff;color:#777777\"><img "
+#~ "alt=\"column2 image\" src=\"/website/static/src/img/desert_thumb.jpg\" "
+#~ "style=\"height: auto; max-width: 600px; padding: 20px 0px 30px; width: "
+#~ "270px;\"><span style=\"color: rgb(51, 51, 51); font-family: arial; font-"
+#~ "size: 24px; line-height: 1.1;\">Feature One</span>\n"
+#~ "\n"
+#~ "            <p style=\"text-align: left;\"><span style=\"font-size:24px;"
+#~ "font-weight:bold\"></span><span style=\"color: rgb(51, 51, 51); font-"
+#~ "family: arial; font-size: 12px; line-height: 17.142858505249px;\">Choose "
+#~ "a vibrant image and write an inspiring paragraph about it. It does not "
+#~ "have to be long, but it should reinforce your image.</span></p>\n"
+#~ "            </td>\n"
+#~ "            <td class=\"col_mv color_picker\" style=\"vertical-align:top; "
+#~ "padding: 30px 15px; width:33%;text-align:center;background-color:#fff;"
+#~ "color:#777777\"><img alt=\"column3 image\" src=\"/website/static/src/img/"
+#~ "deers_thumb.jpg\" style=\"height: auto; max-width: 600px; padding: 20px "
+#~ "0px 30px; width: 270px;\"><span style=\"color: rgb(51, 51, 51); font-"
+#~ "family: arial; font-size: 24px; line-height: 1.1;\">Feature Two</span>\n"
+#~ "            <p style=\"text-align: left;\"><span style=\"font-size:24px;"
+#~ "font-weight:bold\"></span><span style=\"color: rgb(51, 51, 51); font-"
+#~ "family: arial; font-size: 12px; line-height: 17.142858505249px;\">Choose "
+#~ "a vibrant image and write an inspiring paragraph about it. It does not "
+#~ "have to be long, but it should reinforce your image.</span></p>\n"
+#~ "            </td>\n"
+#~ "        </tr></tbody></table></div>\n"
+#~ "</div>"
+#~ msgstr ""
+#~ "<div>\n"
+#~ "<div class=\"snippet_row\" style=\"padding: 0px; width: 600px; margin: "
+#~ "auto; color: rgb(119, 119, 119); height: 80px; overflow: hidden; "
+#~ "background-color: rgb(255, 255, 255);\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:"
+#~ "collapse;background:inherit;color:inherit\" width=\"100%\"><tbody><tr><td "
+#~ "style=\"text-align:center;padding-bottom:10px\"><span style=\"color:"
+#~ "#000000;\"><span style=\"font-size:36px\"></span></span>\n"
+#~ "\n"
+#~ "            <h2 style=\"font-family: arial; color: rgb(51, 51, 51); text-"
+#~ "align: center; padding: 0px 5px;\">A Punchy Headline</h2>\n"
+#~ "            <span style=\"color:#000000;\"><span style=\"font-size:36px"
+#~ "\"></span></span></td>\n"
+#~ "        </tr><tr><td style=\"font-size:20px; text-align:center; padding: "
+#~ "0 5px\"><span style=\"color:#000000;\"></span></td>\n"
+#~ "        </tr></tbody></table></div>\n"
+#~ "\n"
+#~ "<div style=\"padding:0px; margin:auto;width:600px;background-color:#fff;"
+#~ "color:#777777\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"margin:auto;border-"
+#~ "collapse:collapse;background:inherit;color:inherit\" width="
+#~ "\"600\"><tbody><tr><td align=\"left\" class=\"col_mv color_picker\" style="
+#~ "\"text-align:center\"><img alt=\"image\" src=\"/website/static/src/img/"
+#~ "big_picture.png\" style=\"height: auto; max-width: 600px; width: 535px;"
+#~ "\"></td>\n"
+#~ "        </tr></tbody></table></div>\n"
+#~ "\n"
+#~ "<div class=\"snippet_row\" style=\"padding:0px;width:600px;margin:auto;"
+#~ "background-color:#fff;color:#777777\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:"
+#~ "collapse;background:inherit;color:inherit\" width=\"100%\"><tbody><tr><td "
+#~ "style=\"text-align:center;padding-bottom:10px\"><span style=\"font-"
+#~ "size:36px\"></span>\n"
+#~ "\n"
+#~ "            <h3 style=\"font-family: arial; color: rgb(51, 51, 51); text-"
+#~ "align: center; padding: 0px 5px; margin-top:20px;\">A Small Subtitle for "
+#~ "${object.name}</h3>\n"
+#~ "            <span style=\"font-size:36px\"></span></td>\n"
+#~ "        </tr><tr><td style=\"font-size:20px; text-align:center; padding: "
+#~ "0 5px\"><span style=\"color: rgb(51, 51, 51); font-family: arial; font-"
+#~ "size: 12px; line-height: 17.142858505249px; text-align: center;\"><span "
+#~ "style=\"color: rgb(51, 51, 51); font-family: arial; font-size: 12px; line-"
+#~ "height: 17.142858505249px; text-align: center;\">Choose a vibrant image "
+#~ "and write an inspiring paragraph about it. It does not have to be long, "
+#~ "but it should reinforce your image.</span></span></td>\n"
+#~ "        </tr></tbody></table></div>\n"
+#~ "\n"
+#~ "<div style=\"padding:0px;width:600px;margin:auto;background-color:#fff;"
+#~ "color:#000;color:#777777\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;border-"
+#~ "collapse:collapse;background:inherit;color:inherit\">\n"
+#~ "    <tbody>\n"
+#~ "        <tr>\n"
+#~ "            <td class=\"col_mv color_picker\" style=\"padding:30px 15px;"
+#~ "width:33%;text-align:center;background-color:#fff;color:#777777\"><img "
+#~ "alt=\"column2 image\" src=\"/website/static/src/img/desert_thumb.jpg\" "
+#~ "style=\"height: auto; max-width: 600px; padding: 20px 0px 30px; width: "
+#~ "270px;\"><span style=\"color: rgb(51, 51, 51); font-family: arial; font-"
+#~ "size: 24px; line-height: 1.1;\">Feature One</span>\n"
+#~ "\n"
+#~ "            <p style=\"text-align: left;\"><span style=\"font-size:24px;"
+#~ "font-weight:bold\"></span><span style=\"color: rgb(51, 51, 51); font-"
+#~ "family: arial; font-size: 12px; line-height: 17.142858505249px;\">Choose "
+#~ "a vibrant image and write an inspiring paragraph about it. It does not "
+#~ "have to be long, but it should reinforce your image.</span></p>\n"
+#~ "            </td>\n"
+#~ "            <td class=\"col_mv color_picker\" style=\"vertical-align:top; "
+#~ "padding: 30px 15px; width:33%;text-align:center;background-color:#fff;"
+#~ "color:#777777\"><img alt=\"column3 image\" src=\"/website/static/src/img/"
+#~ "deers_thumb.jpg\" style=\"height: auto; max-width: 600px; padding: 20px "
+#~ "0px 30px; width: 270px;\"><span style=\"color: rgb(51, 51, 51); font-"
+#~ "family: arial; font-size: 24px; line-height: 1.1;\">Feature Two</span>\n"
+#~ "            <p style=\"text-align: left;\"><span style=\"font-size:24px;"
+#~ "font-weight:bold\"></span><span style=\"color: rgb(51, 51, 51); font-"
+#~ "family: arial; font-size: 12px; line-height: 17.142858505249px;\">Choose "
+#~ "a vibrant image and write an inspiring paragraph about it. It does not "
+#~ "have to be long, but it should reinforce your image.</span></p>\n"
+#~ "            </td>\n"
+#~ "        </tr></tbody></table></div>\n"
+#~ "</div>"
+
+#~ msgid "Contact Lists"
+#~ msgstr "連絡人列表"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保存聊天小結（消息數量，......）。此小結直接使用HTML格式以便於插入看板視"
+#~ "圖。"
+
+#~ msgid "Summary"
+#~ msgstr "合計"
+
+#~ msgid ""
+#~ "<div data-snippet-id=\"big-picture\" style=\"padding:0px; margin:0px\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"margin:10px 0px 0px;"
+#~ "vertical-align:top;padding:0px;font-family:arial;font-size:12px;color:"
+#~ "rgb(51,51,51)\">\n"
+#~ "    <tbody>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:600px\" valign=\"top\">\n"
+#~ "            <h2 style=\"text-align: center; padding:0px 5px\">A Punchy "
+#~ "Headline</h2>\n"
+#~ "            </td>\n"
+#~ "        </tr>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:600px\" valign=\"top\"><img src=\"/website/"
+#~ "static/src/img/big_picture.png\" style=\"display:block;border:none;min-"
+#~ "height:250px;margin:0 auto;\" width=\"500\"></td>\n"
+#~ "        </tr>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:600px\" valign=\"top\">\n"
+#~ "            <p style=\"text-align: center; overflow:hidden\"></p>\n"
+#~ "\n"
+#~ "            <h3 style=\"text-align: center; padding:0px 5px\">A Small "
+#~ "Subtitle for ${object.name}</h3>\n"
+#~ "\n"
+#~ "            <p></p>\n"
+#~ "\n"
+#~ "            <p style=\"text-align: center; overflow:hidden\">Choose a "
+#~ "vibrant image and write an inspiring paragraph about it. It does not have "
+#~ "to be long, but it should reinforce your image.</p>\n"
+#~ "            </td>\n"
+#~ "        </tr>\n"
+#~ "    </tbody>\n"
+#~ "</table>\n"
+#~ "</div>\n"
+#~ "<div data-snippet-id=\"three-columns\" style=\"padding:0px; margin:0px"
+#~ "\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"margin:10px 0px 0px;"
+#~ "vertical-align:top;padding:0px;font-family:arial;font-size:12px;color:"
+#~ "rgb(51,51,51)\">\n"
+#~ "    <tbody>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:300px\" valign=\"top\"><img src=\"/website/"
+#~ "static/src/img/desert_thumb.jpg\" style=\"display:block;border:none;min-"
+#~ "height:50px\" width=\"275\"></td>\n"
+#~ "            <td style=\"width:300px\" valign=\"top\"><img src=\"/website/"
+#~ "static/src/img/deers_thumb.jpg\" style=\"display:block;border:none;min-"
+#~ "height:50px\" width=\"275\"></td>\n"
+#~ "        </tr>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:300px\" valign=\"top\">\n"
+#~ "            <h3 style=\"text-align: center; padding:0px 5px\">Feature "
+#~ "One</h3>\n"
+#~ "\n"
+#~ "            <p style=\"overflow:hidden\">Choose a vibrant image and write "
+#~ "an inspiring paragraph about it. It does not have to be long, but it "
+#~ "should reinforce your image.</p>\n"
+#~ "            </td>\n"
+#~ "            <td style=\"width:300px\" valign=\"top\">\n"
+#~ "            <h3 style=\"text-align: center; padding:0px 5px\">Feature "
+#~ "Two</h3>\n"
+#~ "\n"
+#~ "            <p style=\"overflow:hidden\">Choose a vibrant image and write "
+#~ "an inspiring paragraph about it. It does not have to be long, but it "
+#~ "should reinforce your image.</p>\n"
+#~ "            </td>\n"
+#~ "        </tr>\n"
+#~ "    </tbody>\n"
+#~ "</table>\n"
+#~ "</div>"
+#~ msgstr ""
+#~ "<div data-snippet-id=\"big-picture\" style=\"padding:0px; margin:0px\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"margin:10px 0px 0px;"
+#~ "vertical-align:top;padding:0px;font-family:arial;font-size:12px;color:"
+#~ "rgb(51,51,51)\">\n"
+#~ "    <tbody>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:600px\" valign=\"top\">\n"
+#~ "            <h2 style=\"text-align: center; padding:0px 5px\">一個有力的標"
+#~ "題</h2>\n"
+#~ "            </td>\n"
+#~ "        </tr>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:600px\" valign=\"top\"><img src=\"/website/"
+#~ "static/src/img/big_picture.png\" style=\"display:block;border:none;min-"
+#~ "height:250px;margin:0 auto;\" width=\"500\"></td>\n"
+#~ "        </tr>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:600px\" valign=\"top\">\n"
+#~ "            <p style=\"text-align: center; overflow:hidden\"></p>\n"
+#~ "\n"
+#~ "            <h3 style=\"text-align: center; padding:0px 5px\">一個小的副標"
+#~ "題為 ${object.name}</h3>\n"
+#~ "\n"
+#~ "            <p></p>\n"
+#~ "\n"
+#~ "            <p style=\"text-align: center; overflow:hidden\">選擇一個充滿"
+#~ "活力的圖片，並且寫一段有激情的文字。它不需要有多長，但是它應該增強你圖片的"
+#~ "效果。</p>\n"
+#~ "            </td>\n"
+#~ "        </tr>\n"
+#~ "    </tbody>\n"
+#~ "</table>\n"
+#~ "</div>\n"
+#~ "<div data-snippet-id=\"three-columns\" style=\"padding:0px; margin:0px"
+#~ "\">\n"
+#~ "<table cellpadding=\"0\" cellspacing=\"0\" style=\"margin:10px 0px 0px;"
+#~ "vertical-align:top;padding:0px;font-family:arial;font-size:12px;color:"
+#~ "rgb(51,51,51)\">\n"
+#~ "    <tbody>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:300px\" valign=\"top\"><img src=\"/website/"
+#~ "static/src/img/desert_thumb.jpg\" style=\"display:block;border:none;min-"
+#~ "height:50px\" width=\"275\"></td>\n"
+#~ "            <td style=\"width:300px\" valign=\"top\"><img src=\"/website/"
+#~ "static/src/img/deers_thumb.jpg\" style=\"display:block;border:none;min-"
+#~ "height:50px\" width=\"275\"></td>\n"
+#~ "        </tr>\n"
+#~ "        <tr>\n"
+#~ "            <td style=\"width:300px\" valign=\"top\">\n"
+#~ "            <h3 style=\"text-align: center; padding:0px 5px\">Feature "
+#~ "One</h3>\n"
+#~ "\n"
+#~ "            <p style=\"overflow:hidden\">選擇一個充滿活力的圖片，並且寫一"
+#~ "段有激情的文字。它不需要有多長，但是它應該增強你圖片的效果。</p>\n"
+#~ "            </td>\n"
+#~ "            <td style=\"width:300px\" valign=\"top\">\n"
+#~ "            <h3 style=\"text-align: center; padding:0px 5px\">Feature "
+#~ "Two</h3>\n"
+#~ "\n"
+#~ "            <p style=\"overflow:hidden\">選擇一個充滿活力的圖片，並且寫一"
+#~ "段有激情的文字。它不需要有多長，但是它應該增強你圖片的效果。</p>\n"
+#~ "            </td>\n"
+#~ "        </tr>\n"
+#~ "    </tbody>\n"
+#~ "</table>\n"
+#~ "</div>"
+
+#~ msgid "Categories"
+#~ msgstr "分類"
+
+#~ msgid "Change Email Design"
+#~ msgstr "修改郵件設計"
+
+#~ msgid "Click to design your email."
+#~ msgstr "按一下來設計你的郵件"
+
+#~ msgid "Design Email"
+#~ msgstr "設計郵件"
+
+#~ msgid "In Document"
+#~ msgstr "在文檔中"
+
+#~ msgid "Open with Visual Editor"
+#~ msgstr "使用視覺化編輯器打開"
+
+#~ msgid "Opened Daily"
+#~ msgstr "打開日期"
+
+#~ msgid "Replied Daily"
+#~ msgstr "回復日期"
+
+#~ msgid ""
+#~ "This option is not available for the recipients you selected.\n"
+#~ "                                                Please use a specific "
+#~ "reply-to email address."
+#~ msgstr ""
+#~ "本選項對與你選擇的收件人不可用.\n"
+#~ "請使用特定的郵件回復位址."
+
+#~ msgid "%s (duplicate)"
+#~ msgstr "%s (複製)"
+
+#~ msgid "Send Test Sample"
+#~ msgstr "發送測試郵件"
+
+#~ msgid "Compose Email for Mass Mailing"
+#~ msgstr "寫群發郵件"
+
+#~ msgid "Create a Mass Mailing for the Campaign"
+#~ msgstr "為活動寫群發郵件"
+
+#~ msgid "Please choose a model on which you will run the mass mailing."
+#~ msgstr "請為新的群發郵件選擇範本"
+
+#~ msgid ""
+#~ "Please choose the template to use to render the emails\n"
+#~ "                                to send."
+#~ msgstr "請選擇範本來顯示郵件"
+
+#~ msgid "Mailing Name"
+#~ msgstr "郵件名"
+
+#~ msgid "Mass mailing"
+#~ msgstr "群發郵件"
+
+#~ msgid ""
+#~ "Filter to be applied on the document to find the records to be mailed."
+#~ msgstr "在文檔上應用篩檢程式來查找要在郵件中發送的內容"
+
+#~ msgid "Wave of sending emails"
+#~ msgstr "郵件發送曲線"
+
+#~ msgid "Model Name"
+#~ msgstr "模型名稱"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid ""
+#~ "Please choose a mass mailing campaign that will hold the new mailing."
+#~ msgstr "請選擇一個收集新郵件的群發郵件活動"
+
+#~ msgid "Create mailing and launch email composer"
+#~ msgstr "新建郵件並運行郵件設計器"
+
+#~ msgid "Filter"
+#~ msgstr "篩檢程式"
+
+#~ msgid ""
+#~ "Document on which the mass mailing will run. This must be a valid Odoo "
+#~ "model."
+#~ msgstr "群發郵件運行要使用的文檔，它必須是有效的Odoo模型。"
+
+#~ msgid "Mass Mailings (kanban data)"
+#~ msgstr "群發郵件（看板資料）"
+
+#~ msgid "Sent:"
+#~ msgstr "發送："
+
+#~ msgid "Mass mailing creation"
+#~ msgstr "創建群發郵件"
+
+#~ msgid ""
+#~ "Please choose a filter that will be applied on the model\n"
+#~ "                                to find the records on which you will run "
+#~ "the mass mailing."
+#~ msgstr ""
+#~ "請選擇用來應用到模型上的篩檢程式\n"
+#~ "                        這個篩檢程式用來查找運行群發郵件的記錄。"
+
+#~ msgid ""
+#~ "This field has for purpose to gather data about mass mailings to display "
+#~ "them in kanban view as nested kanban views is not possible currently"
+#~ msgstr ""
+#~ "當nest看板視圖無效的時候，這個欄位的目的是收集關於群發郵件的資料並顯示在看"
+#~ "板視圖中"
+
+#~ msgid "Campaign:"
+#~ msgstr "活動："
+
+#~ msgid "Name of the mass mailing."
+#~ msgstr "群郵件名"
+
+#~ msgid "Responsibles"
+#~ msgstr "責任"

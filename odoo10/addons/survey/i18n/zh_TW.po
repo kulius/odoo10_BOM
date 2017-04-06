@@ -1,28 +1,292 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * survey
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 08:44+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2017-03-26 23:39+0800\n"
+"PO-Revision-Date: 2017-03-26 23:45+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-28 06:04+0000\n"
+"X-Generator: Poedit 1.8.12\n"
+
+#. module: survey
+#: model:mail.template,body_html:survey.email_template_survey
+msgid ""
+"\n"
+"                \n"
+"<p>Hello,</p>\n"
+"<p>We are conducting a survey, and your response would be appreciated.</p>\n"
+"<p><a style=\"margin-left: 85px; padding:5px 10px; border-radius: 3px; "
+"background-color:#875A7B; text-align:center; text-decoration:none; color:"
+"#F7FBFD;\" href=\"__URL__\">Please, click here to start survey</a></p>\n"
+"<p>Thanks for your participation!</p>\n"
+"                \n"
+"            "
+msgstr ""
+"\n"
+"                \n"
+"<p>你好,</p>\n"
+"<p>我們正在進行一項調查，非常希望得到你的回饋。</p>\n"
+"<p><a style=\"margin-left: 85px; padding:5px 10px; border-radius: 3px; "
+"background-color:#875A7B; text-align:center; text-decoration:none; color:"
+"#F7FBFD;\" href=\"__URL__\">請點擊這裏來開始調查。</a></p>\n"
+"<p>感謝你的參與！</p>\n"
+"                \n"
+"            "
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_page_tree
+msgid "#Questions"
+msgstr "問題#"
 
 #. module: survey
 #: code:addons/survey/models/survey.py:124
 #, python-format
 msgid "%s (copy)"
 msgstr "%s (副本)"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.page
+msgid "&amp;times;"
+msgstr "&amp;times;"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result
+msgid "<b>Question </b>"
+msgstr "<b>問題</b>"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "<i class=\"fa fa-2x\">123..</i>"
+msgstr "<i class=\"fa fa-2x\">123..</i>"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_matrix
+msgid ""
+"<i class=\"fa fa-bar-chart\"/>\n"
+"                    Graph"
+msgstr ""
+"<i class=\"fa fa-bar-chart\"/>\n"
+"                    圖表"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_choice
+msgid "<i class=\"fa fa-bar-chart-o\"/> Graph"
+msgstr "<i class=\"fa fa-bar-chart-o\"/> 圖表"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_choice
+msgid "<i class=\"fa fa-bar-chart-o\"/> Pie Chart"
+msgstr "<i class=\"fa fa-bar-chart-o\"/> 圓形圖"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "<i class=\"fa fa-check-square-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-check-square-o fa-lg\"/> 答案"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "<i class=\"fa fa-circle-o  fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-circle-o  fa-lg\"/> 答案"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "<i class=\"fa fa-dot-circle-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-dot-circle-o fa-lg\"/> 答案"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_number
+msgid ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    All Data"
+msgstr ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    所有資料"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_matrix
+msgid ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    Data"
+msgstr ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    數據"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_choice
+msgid "<i class=\"fa fa-list-alt\"/> Data"
+msgstr "<i class=\"fa fa-list-alt\"/> 數據"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_number
+msgid ""
+"<i class=\"fa fa-list-ol\"/>\n"
+"                    Most Common"
+msgstr ""
+"<i class=\"fa fa-list-ol\"/>\n"
+"                    大多數一般"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "<i class=\"fa fa-square-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-square-o fa-lg\"/> 答案"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result
+msgid "<i class=\"fa fa-times\"/> Clear All Filters"
+msgstr "<i class=\"fa fa-times\"/> 清除所有篩檢程式"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result
+msgid "<span class=\"fa fa-filter\"/>  Filters"
+msgstr "<span class=\"fa fa-filter\"/>  篩檢程式"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result
+msgid ""
+"<span class=\"label label-default only_left_radius filter-all\">All surveys</"
+"span><span class=\"label label-primary only_right_radius filter-finished"
+"\">Finished surveys</span>"
+msgstr ""
+"<span class=\"label label-default only_left_radius filter-all\">All surveys</"
+"span><span class=\"label label-primary only_right_radius filter-finished\">結"
+"束的調查</span>"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_number
+msgid "<span class=\"label label-default only_left_radius\">Average </span>"
+msgstr "<span class=\"label label-default only_left_radius\">平均 </span>"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_number
+msgid "<span class=\"label label-default only_left_radius\">Maximum </span>"
+msgstr "<span class=\"label label-default only_left_radius\">最多 </span>"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_number
+msgid "<span class=\"label label-default only_left_radius\">Minimum </span>"
+msgstr "<span class=\"label label-default only_left_radius\">最少 </span>"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_number
+msgid "<span class=\"label label-default only_left_radius\">Sum </span>"
+msgstr "<span class=\"label label-default only_left_radius\">合計 </span>"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result
+msgid ""
+"<span class=\"label label-primary only_left_radius filter-all\">All surveys</"
+"span><span class=\"label label-default only_right_radius filter-finished"
+"\">Finished surveys</span>"
+msgstr ""
+"<span class=\"label label-primary only_left_radius filter-all\">All surveys</"
+"span><span class=\"label label-default only_right_radius filter-finished\">結"
+"束的調查</span>"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.no_result
+msgid ""
+"<span>\n"
+"                            <i style=\"font-size:1.8em\" class=\"fa fa-users "
+"pull-right\"/>\n"
+"                        </span>\n"
+"                        Sorry, No one answered this survey yet"
+msgstr ""
+"<span>\n"
+"                            <i style=\"font-size:1.8em\" class=\"fa fa-users "
+"pull-right\"/>\n"
+"                        </span>\n"
+"                        對不起, 還沒有人回復這個調查"
+
+#. module: survey
+#: sql_constraint:survey.question:0
+msgid "A length must be positive!"
+msgstr "長度必須是正數。"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_survey_description
+msgid "A long description of the purpose of the survey"
+msgstr "此次調查目的的詳細描述"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_label_quizz_mark
+msgid ""
+"A positive score indicates a correct choice; a negative or null score "
+"indicates a wrong answer"
+msgstr "正的分數表面回答正確，負的、或者沒分表示回答錯誤"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.page
+msgid "A problem has occured"
+msgstr "已發生的問題"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:808
+#, python-format
+msgid "A question cannot be unanswered and skipped"
+msgstr "不能夠被取消答案和跳過的問題"
+
+#. module: survey
+#: sql_constraint:survey.user_input:0
+msgid "A token must be unique!"
+msgstr "標記必須唯一！"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_active
+msgid "Active"
+msgstr "生效"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_email_compose_message
+msgid ""
+"Add list of email of recipients (will not converted in partner), separated "
+"by commas, semicolons or newline..."
+msgstr "增加收件人列表（不會轉化為業務夥伴），由逗號、封號，或新行分隔 ..."
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_email_compose_message
+msgid "Add list of existing contacts..."
+msgstr "新增現有聯繫人 ..."
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Allow Comments"
+msgstr "允許評論"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_page_description
+msgid "An introductory text to your page"
+msgstr "調查頁面的介紹文本"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_kanban
+msgid "Analyze Answers"
+msgstr "答案分析"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_choice
+msgid "Answer Choices"
+msgstr "答案選項"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_answer_type
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_type
+msgid "Answer Type"
+msgstr "答案類型"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result
+msgid "Answered"
+msgstr "已答復"
 
 #. module: survey
 #: model:ir.actions.act_window,name:survey.action_survey_user_input
@@ -35,14 +299,26 @@ msgid "Answers"
 msgstr "答案"
 
 #. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_survey_view_search
+msgid "Archived"
+msgstr "已存檔"
+
+#. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message_attachment_ids
 msgid "Attachments"
 msgstr "附件"
 
 #. module: survey
-#: model:survey.label,value:survey.choice_1_2_4
-msgid "CRM"
-msgstr "客戶關係管理"
+#: model:ir.model.fields,help:survey.field_survey_mail_compose_message_attachment_ids
+msgid ""
+"Attachments are linked to a document through model / res_id and to the "
+"message through this field."
+msgstr "附件通過 model / res_id 這個欄位與文檔和消息產生關聯。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.back
+msgid "Back to Survey"
+msgstr "返回調查"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_email_compose_message
@@ -50,16 +326,42 @@ msgid "Cancel"
 msgstr "取消"
 
 #. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Choices"
+msgstr "選項"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.simple_choice
+msgid "Choose..."
+msgstr "選擇..."
+
+#. module: survey
+#: model:ir.actions.server,name:survey.survey_action_server_clean_test_answers
+msgid "Clean test answers"
+msgstr "清除測試答案"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:112
+#, python-format
+msgid "Click here to start survey"
+msgstr "點擊此處開始調查"
+
+#. module: survey
+#: model:ir.actions.act_window,help:survey.action_survey_form
+msgid "Click to add a survey."
+msgstr "點擊此處增加一項調查"
+
+#. module: survey
 #: model:ir.ui.view,arch_db:survey.page
 #: model:ir.ui.view,arch_db:survey.survey_email_compose_message
 msgid "Close"
-msgstr "關閉"
+msgstr "結束"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_stage_closed
 #: model:survey.stage,name:survey.stage_closed
 msgid "Closed"
-msgstr "關閉"
+msgstr "已結束"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey_color
@@ -69,22 +371,54 @@ msgstr "顏色索引"
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.result_comments
 msgid "Comment"
-msgstr "評語"
+msgstr "評論"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_comment_count_as_answer
+msgid "Comment Field is an Answer Choice"
+msgstr "評論欄位是答案選項"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_comments_message
+msgid "Comment Message"
+msgstr "評論消息"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_tree
+#: model:ir.ui.view,arch_db:survey.survey_user_input_search
+#: selection:survey.user_input,state:0
+msgid "Completed"
+msgstr "已完成"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_email_compose_message
 msgid "Compose Email"
-msgstr "撰寫郵件"
+msgstr "合成郵件"
 
 #. module: survey
 #: model:ir.ui.menu,name:survey.menu_surveys_configuration
 msgid "Configuration"
-msgstr "設定"
+msgstr "配置"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Constraints"
+msgstr "約束"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_email_compose_message
+msgid "Copy and paste the HTML code below to add this web link to any webpage."
+msgstr "複製粘貼下方的HTML代碼，把該鏈結增加到任意網頁。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_email_compose_message
+msgid "Copy, paste and share the web link below to your audience."
+msgstr "複製、粘貼並分享下麵的鏈結給你的粉絲。"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_line_date_create
 msgid "Create Date"
-msgstr "建立日期"
+msgstr "創建日期"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_label_create_uid
@@ -96,7 +430,7 @@ msgstr "建立日期"
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_create_uid
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_line_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_label_create_date
@@ -108,12 +442,12 @@ msgstr "建立者"
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_create_date
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_line_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建時間"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_date_create
 msgid "Creation Date"
-msgstr "建立日期"
+msgstr "創建日期"
 
 #. module: survey
 #: selection:survey.user_input_line,answer_type:0
@@ -121,9 +455,36 @@ msgid "Date"
 msgstr "日期"
 
 #. module: survey
+#: selection:survey.question,type:0
+msgid "Date and Time"
+msgstr "日期和時間"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_value_date
+msgid "Date answer"
+msgstr "回答日期"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_user_input_deadline
+msgid "Date by which the person can open the survey and submit answers"
+msgstr "受訪者可以打開並提交答案的最後日期"
+
+#. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_deadline
 msgid "Deadline"
-msgstr "截止日期"
+msgstr "截至日期"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_mail_compose_message_date_deadline
+msgid ""
+"Deadline to which the invitation to respond for this survey is valid. If the "
+"field is empty,        the invitation is still valid."
+msgstr "截止日期內回饋該調查是有效的。如果不設置，將持續有效。"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message_date_deadline
+msgid "Deadline to which the invitation to respond is valid"
+msgstr "邀請回饋的截止日期有效"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_kanban
@@ -135,7 +496,24 @@ msgstr "刪除"
 #: model:ir.model.fields,field_description:survey.field_survey_question_description
 #: model:ir.model.fields,field_description:survey.field_survey_survey_description
 msgid "Description"
-msgstr "說明"
+msgstr "描述"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_kanban
+msgid "Design"
+msgstr "設計"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_form
+msgid "Design Survey"
+msgstr "設計調查"
+
+#. module: survey
+#: model:ir.actions.act_window,help:survey.action_survey_form
+msgid ""
+"Design easily your survey, send invitations to answer by email and analyse "
+"answers."
+msgstr "非常容易地設計調查，通過電子郵件發送邀請，並分析調查結果"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_label_display_name
@@ -150,14 +528,75 @@ msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_display_mode
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Display mode"
+msgstr "顯示模式"
+
+#. module: survey
 #: model:survey.stage,name:survey.stage_draft
 msgid "Draft"
-msgstr "草案"
+msgstr "草稿"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_email
+msgid "E-mail"
+msgstr "電子郵件"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_form
+msgid "Edit Pages and Questions"
+msgstr "編輯頁面和問題"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_kanban
+msgid "Edit Survey"
+msgstr "編輯調查"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_user_input_search
 msgid "Email"
-msgstr "電郵"
+msgstr "電子郵箱"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_email_template_id
+msgid "Email Template"
+msgstr "郵件範本"
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_mail_compose_message
+msgid "Email composition wizard for Survey"
+msgstr "調查郵件合成嚮導"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_constr_error_msg
+msgid "Error message"
+msgstr "錯誤消息"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message_partner_ids
+msgid "Existing contacts"
+msgstr "現有聯繫人"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_stage_fold
+msgid "Folded in kanban view"
+msgstr "在看板視圖中折疊"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Format"
+msgstr "格式"
+
+#. module: survey
+#: selection:survey.user_input_line,answer_type:0
+msgid "Free Text"
+msgstr "自由文本"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_value_free_text
+msgid "Free Text answer"
+msgstr "自由文本答案"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_page_search
@@ -165,7 +604,7 @@ msgstr "電郵"
 #: model:ir.ui.view,arch_db:survey.survey_response_line_search
 #: model:ir.ui.view,arch_db:survey.survey_user_input_search
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_label_id
@@ -178,6 +617,69 @@ msgstr "分組方式"
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_line_id
 msgid "ID"
 msgstr "編號"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_token
+msgid "Identification token"
+msgstr "識別標記"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_survey_users_can_go_back
+msgid "If checked, users can go back to previous pages."
+msgstr "如果勾選，用戶能夠返回上頁。"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_stage_closed
+#: model:ir.model.fields,help:survey.field_survey_survey_is_closed
+msgid "If closed, people won't be able to answer to surveys in this column."
+msgstr "如果關閉，參與者將不能回答這一欄調查中的問題。"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:473
+#, python-format
+msgid "If other, please specify:"
+msgstr "其他請注明："
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.sfinished
+msgid "If you wish, you can"
+msgstr "如果你願意，你能"
+
+#. module: survey
+#: model:survey.stage,name:survey.stage_in_progress
+msgid "In progress"
+msgstr "進行中"
+
+#. module: survey
+#: code:addons/survey/wizard/survey_email_compose_message.py:66
+#, python-format
+msgid "Incorrect Email Address: %s"
+msgstr "郵箱位址輸入錯誤: %s"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_email
+msgid "Input must be an email"
+msgstr "必須通過電子郵件來回答"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_tree
+msgid "Invitations sent"
+msgstr "已發送邀請"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_is_closed
+msgid "Is closed"
+msgstr "已結束"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_designed
+msgid "Is designed?"
+msgstr "是故意的？"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_label_sequence
+msgid "Label Sequence order"
+msgstr "標籤序列順序"
 
 #. module: survey
 #: model:ir.actions.act_window,name:survey.action_survey_label_form
@@ -195,7 +697,7 @@ msgstr "標籤"
 #: model:ir.model.fields,field_description:survey.field_survey_user_input___last_update
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_line___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最後修改日期"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_label_write_uid
@@ -207,7 +709,7 @@ msgstr "最後修改:"
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_line_write_uid
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "被...最後更新"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_label_write_date
@@ -222,9 +724,121 @@ msgid "Last Updated on"
 msgstr "最後更新於"
 
 #. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_last_displayed_page_id
+msgid "Last displayed page"
+msgstr "最後顯示頁面"
+
+#. module: survey
+#: selection:survey.user_input,type:0
+msgid "Link"
+msgstr "鏈結"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message_multi_email
+msgid "List of emails"
+msgstr "郵件列表"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_auth_required
+#: model:ir.ui.view,arch_db:survey.auth_required
+msgid "Login required"
+msgstr "需要登錄"
+
+#. module: survey
+#: model:res.groups,name:survey.group_survey_manager
+msgid "Manager"
+msgstr "經理"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_constr_mandatory
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Mandatory Answer"
+msgstr "必答問題"
+
+#. module: survey
 #: selection:survey.user_input,type:0
 msgid "Manually"
-msgstr "手動"
+msgstr "手工"
+
+#. module: survey
+#: selection:survey.question,type:0
+msgid "Matrix"
+msgstr "矩陣"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_matrix_subtype
+msgid "Matrix Type"
+msgstr "矩陣類型"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result
+msgid "Matrix:"
+msgstr "矩陣："
+
+#. module: survey
+#: sql_constraint:survey.question:0
+msgid "Max date cannot be smaller than min date!"
+msgstr "最大日期不能小於最小日期！"
+
+#. module: survey
+#: sql_constraint:survey.question:0
+msgid "Max length cannot be smaller than min length!"
+msgstr "最大長度不能小於最小長度！"
+
+#. module: survey
+#: sql_constraint:survey.question:0
+msgid "Max value cannot be smaller than min value!"
+msgstr "最大值不能小於最小值！"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_max_date
+msgid "Maximum Date"
+msgstr "最大日期"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_length_max
+msgid "Maximum Text Length"
+msgstr "最大文本長度"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_max_float_value
+msgid "Maximum value"
+msgstr "最大值"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_min_date
+msgid "Minimum Date"
+msgstr "最小日期"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_length_min
+msgid "Minimum Text Length"
+msgstr "最小文本長度"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_min_float_value
+msgid "Minimum value"
+msgstr "最小值"
+
+#. module: survey
+#: selection:survey.question,type:0
+msgid "Multiple Lines Text Box"
+msgstr "多行文本框"
+
+#. module: survey
+#: selection:survey.question,type:0
+msgid "Multiple choice: multiple answers allowed"
+msgstr "多選：允許多個答案"
+
+#. module: survey
+#: selection:survey.question,type:0
+msgid "Multiple choice: only one answer"
+msgstr "多選：只允許一個答案"
+
+#. module: survey
+#: selection:survey.question,matrix_subtype:0
+msgid "Multiple choices per row"
+msgstr "每行有多個選項"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_stage_name
@@ -234,18 +848,108 @@ msgstr "名稱"
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_user_input_search
 msgid "New"
-msgstr "新增"
+msgstr "新建"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.page
+msgid "Next page"
+msgstr "下一頁"
+
+#. module: survey
+#: model:ir.actions.act_window,help:survey.action_selected_survey_user_input
+msgid "Nobody has replied to your survey yet."
+msgstr "尚無何人對你的調查做出回饋。"
+
+#. module: survey
+#: model:ir.actions.act_window,help:survey.action_survey_user_input
+msgid "Nobody has replied to your surveys yet."
+msgstr "尚無何人對你的調查做出回饋。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.notopen
+msgid "Not open"
+msgstr "未打開"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.nopages
+msgid "Not ready"
+msgstr "未就緒"
+
+#. module: survey
+#: selection:survey.user_input,state:0
+msgid "Not started yet"
+msgstr "尚未開始"
 
 #. module: survey
 #: selection:survey.user_input_line,answer_type:0
 msgid "Number"
-msgstr "編號"
+msgstr "數字"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_column_nb
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Number of columns"
+msgstr "欄位數"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_tot_comp_survey
+msgid "Number of completed surveys"
+msgstr "已完成的調查數量"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_tot_sent_survey
+msgid "Number of sent surveys"
+msgstr "已發送調查者數量"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_tot_start_survey
+msgid "Number of started surveys"
+msgstr "已開始的調查數量"
+
+#. module: survey
+#: selection:survey.question,type:0
+msgid "Numerical Value"
+msgstr "數值"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_value_number
+msgid "Numerical answer"
+msgstr "數字答案"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_number
+msgid "Occurence"
+msgstr "發生頻次"
+
+#. module: survey
+#: selection:survey.question,matrix_subtype:0
+msgid "One choice per row"
+msgstr "每行一個選項"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_form
 #: model:ir.ui.view,arch_db:survey.survey_question_form
 msgid "Options"
 msgstr "選項"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_page_id
+#: model:ir.ui.view,arch_db:survey.page
+#: model:ir.ui.view,arch_db:survey.survey_page_search
+#: model:ir.ui.view,arch_db:survey.survey_question_search
+msgid "Page"
+msgstr "頁面"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_page_title
+#: model:ir.ui.view,arch_db:survey.survey_page_form
+msgid "Page Title"
+msgstr "頁面標題"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_page_sequence
+msgid "Page number"
+msgstr "頁碼"
 
 #. module: survey
 #: model:ir.actions.act_window,name:survey.act_survey_pages
@@ -256,15 +960,82 @@ msgid "Pages"
 msgstr "頁面"
 
 #. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_user_input_search
+#: selection:survey.user_input,state:0
+msgid "Partially completed"
+msgstr "部分完成"
+
+#. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_partner_id
 #: model:ir.ui.view,arch_db:survey.survey_user_input_search
 msgid "Partner"
-msgstr "伙伴"
+msgstr "業務夥伴"
 
 #. module: survey
-#: model:survey.label,value:survey.choice_1_2_5
-msgid "Project Management"
-msgstr "專案管理"
+#: model:ir.actions.act_window,name:survey.action_partner_survey_mail
+msgid "Partner Survey Mailing"
+msgstr "業務夥伴調查電子郵件"
+
+#. module: survey
+#: model:survey.stage,name:survey.stage_permanent
+msgid "Permanent"
+msgstr "永久"
+
+#. module: survey
+#: code:addons/survey/wizard/survey_email_compose_message.py:164
+#, python-format
+msgid "Please enter at least one valid recipient."
+msgstr "請至少輸入一個可用的收件人。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.page
+msgid "Previous page"
+msgstr "上一頁"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_form
+msgid "Print Survey"
+msgstr "列印調查"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_user_input_form
+msgid "Print These Answers"
+msgstr "列印答案"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_print_url
+msgid "Print link"
+msgstr "列印鏈結"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message_public_url_html
+msgid "Public HTML web link"
+msgstr "公共HTML web鏈結"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_public_url
+msgid "Public link"
+msgstr "公共鏈結"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_public_url_html
+msgid "Public link (html version)"
+msgstr "公共鏈結（HTML版）"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_print_url
+msgid "Public link to the empty survey"
+msgstr "空調查的公共鏈結"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_result_url
+msgid "Public link to the survey results"
+msgstr "調查結果的公共鏈結"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message_public_url
+msgid "Public url"
+msgstr "公共URL"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_label_question_id
@@ -272,7 +1043,23 @@ msgstr "專案管理"
 #: model:ir.ui.view,arch_db:survey.survey_label_search
 #: model:ir.ui.view,arch_db:survey.survey_question_search
 msgid "Question"
-msgstr "問題"
+msgstr "議題"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_label_question_id_2
+msgid "Question 2"
+msgstr "問題 2"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_question
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Question Name"
+msgstr "問題名稱"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Question name"
+msgstr "問題名稱"
 
 #. module: survey
 #: model:ir.actions.act_window,name:survey.act_survey_page_question
@@ -281,34 +1068,202 @@ msgstr "問題"
 #: model:ir.model.fields,field_description:survey.field_survey_page_question_ids
 #: model:ir.ui.menu,name:survey.menu_survey_question_form1
 msgid "Questions"
-msgstr "問題"
+msgstr "議題"
 
 #. module: survey
-#: model:survey.label,value:survey.choice_1_2_1
-msgid "Sales Management"
-msgstr "銷售管理"
+#: model:ir.model.fields,field_description:survey.field_survey_survey_quizz_mode
+msgid "Quizz Mode"
+msgstr "測驗模式"
+
+#. module: survey
+#: selection:survey.question,display_mode:0
+msgid "Radio Buttons"
+msgstr "單選按鈕"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_result_url
+msgid "Results link"
+msgstr "結果鏈結："
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_value_suggested_row
+msgid "Row answer"
+msgstr "沒有答案"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Row1"
+msgstr "第一行"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Row2"
+msgstr "第2行"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Row3"
+msgstr "第3行"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Rows"
+msgstr "行"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_labels_ids_2
+msgid "Rows of the Matrix"
+msgstr "矩陣行數"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_email_compose_message
 msgid "Save as a new template"
-msgstr "另存新的範本"
+msgstr "保存為新範本"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_email_compose_message
+msgid "Save as new template"
+msgstr "保存為新範本"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_quizz_score
+msgid "Score for the quiz"
+msgstr "測試成績"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_label_quizz_mark
+msgid "Score for this choice"
+msgstr "此選項的分數"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_quizz_mark
+msgid "Score given for this choice"
+msgstr "此選項得分"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_label_search
+msgid "Search Label"
+msgstr "搜索標籤"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_page_search
+msgid "Search Page"
+msgstr "搜索頁面"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_search
+msgid "Search Question"
+msgstr "查詢問題"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_user_input_search
+msgid "Search Survey"
+msgstr "查詢調查"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_response_line_search
+msgid "Search User input lines"
+msgstr "搜索用戶輸入行"
+
+#. module: survey
+#: selection:survey.question,display_mode:0
+msgid "Selection Box"
+msgstr "選擇框"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_email_compose_message
 msgid "Send"
-msgstr "傳送"
+msgstr "發送"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_user_input_form
+msgid "Send Invitation Again"
+msgstr "再次發送邀請"
+
+#. module: survey
+#: selection:survey.mail.compose.message,public:0
+msgid "Send by email the public web link to your audience."
+msgstr "通過郵件發送公共鏈結給你的粉絲。"
+
+#. module: survey
+#: selection:survey.mail.compose.message,public:0
+msgid ""
+"Send private invitation to your audience (only one response per recipient "
+"and per invitation)."
+msgstr "發送私人要求給你的粉絲（每個收件人和邀請只有一個反應）。"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question_sequence
 #: model:ir.model.fields,field_description:survey.field_survey_stage_sequence
 msgid "Sequence"
-msgstr "序列"
+msgstr "序號"
+
+#. module: survey
+#: sql_constraint:survey.stage:0
+msgid "Sequence number MUST be a natural"
+msgstr "序列數必須是自然數。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_kanban
+msgid "Share &amp;amp; Invite"
+msgstr "分享 &amp;amp; 邀請"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_form
+msgid "Share and invite by email"
+msgstr "通過郵件分享和邀請"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message_public
+msgid "Share options"
+msgstr "分享選項"
+
+#. module: survey
+#: selection:survey.mail.compose.message,public:0
+msgid "Share the public web link to your audience."
+msgstr "分享公共鏈結給你的粉絲"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_comments_allowed
+msgid "Show Comments Field"
+msgstr "顯示評論欄位"
+
+#. module: survey
+#: selection:survey.question,type:0
+msgid "Single Line Text Box"
+msgstr "單行文本框"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_skipped
+#: model:ir.ui.view,arch_db:survey.result
+msgid "Skipped"
+msgstr "忽略"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.page
+msgid ""
+"Something went wrong while contacting survey server. <strong class=\"text-"
+"danger\">Your answers have probably not been recorded.</strong> Try "
+"refreshing."
+msgstr ""
+"鏈結調查伺服器錯誤。 <strong class=\"text-danger\">你的答案可能沒有被記錄。</"
+"strong> 嘗試刷新。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result
+msgid "Sorry, No one answered this question."
+msgstr "抱歉，沒有人回答此問題。"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey_stage_id
 #: model:ir.ui.view,arch_db:survey.survey_stage_form
 msgid "Stage"
 msgstr "階段"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_init
+msgid "Start Survey"
+msgstr "開始調查"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_tree
@@ -319,6 +1274,31 @@ msgstr "已開始"
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_state
 msgid "Status"
 msgstr "狀態"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_email_compose_message
+msgid "Subject..."
+msgstr "主題..."
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.page
+msgid "Submit survey"
+msgstr "提交調查"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_value_suggested
+msgid "Suggested answer"
+msgstr "建議答案"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_label_value
+msgid "Suggested value"
+msgstr "建議值"
+
+#. module: survey
+#: selection:survey.user_input_line,answer_type:0
+msgid "Suggestion"
+msgstr "建議"
 
 #. module: survey
 #: model:ir.model,name:survey.model_survey_survey
@@ -335,7 +1315,80 @@ msgstr "狀態"
 #: model:ir.ui.view,arch_db:survey.survey_tree
 #: model:ir.ui.view,arch_db:survey.survey_user_input_search
 msgid "Survey"
-msgstr "問卷"
+msgstr "調查"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_response_line_tree
+msgid "Survey Answer Line"
+msgstr "調查答案明細"
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_label
+#: model:ir.ui.view,arch_db:survey.survey_label_tree
+msgid "Survey Label"
+msgstr "調查標籤"
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_page
+#: model:ir.ui.view,arch_db:survey.survey_page_form
+#: model:ir.ui.view,arch_db:survey.survey_page_tree
+msgid "Survey Page"
+msgstr "調查設置"
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_question
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+#: model:ir.ui.view,arch_db:survey.survey_question_tree
+msgid "Survey Question"
+msgstr "調查問題"
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_stage
+msgid "Survey Stage"
+msgstr "調查階段"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_form
+msgid "Survey Title"
+msgstr "問標籤題"
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_user_input
+msgid "Survey User Input"
+msgstr "調查用戶輸入"
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_user_input_line
+msgid "Survey User Input Line"
+msgstr "調查用戶輸入明細"
+
+#. module: survey
+#: model:ir.actions.act_window,name:survey.action_survey_user_input_line
+msgid "Survey User Input lines"
+msgstr "調查用戶輸入明細"
+
+#. module: survey
+#: model:ir.actions.act_window,name:survey.action_selected_survey_user_input
+msgid "Survey User input"
+msgstr "調查用戶輸入"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_user_input_form
+#: model:ir.ui.view,arch_db:survey.survey_user_input_tree
+msgid "Survey User inputs"
+msgstr "調查用戶輸入"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_page_id
+msgid "Survey page"
+msgstr "調查頁面"
+
+#. module: survey
+#: model:ir.actions.act_window,name:survey.action_survey_form
+#: model:ir.ui.menu,name:survey.menu_survey_form
+#: model:ir.ui.menu,name:survey.menu_surveys
+msgid "Surveys"
+msgstr "調查"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_kanban
@@ -344,17 +1397,1575 @@ msgid "Test"
 msgstr "測試"
 
 #. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_form
+msgid "Test Survey"
+msgstr "測試調查"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_test_entry
+msgid "Test entry"
+msgstr "測試調查"
+
+#. module: survey
 #: selection:survey.user_input_line,answer_type:0
 msgid "Text"
-msgstr "文字"
+msgstr "文本"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_value_text
+msgid "Text answer"
+msgstr "文本答案"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.sfinished
+msgid "Thank you!"
+msgstr "非常感謝！"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_thank_you_message
+msgid "Thanks Message"
+msgstr "感謝留言"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:821
+#, python-format
+msgid "The answer must be in the right type"
+msgstr "答案必須是正確的分類"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:487
+#, python-format
+msgid "The answer you entered has an invalid format."
+msgstr "你輸入的答案格式不正確。"
+
+#. module: survey
+#: code:addons/survey/wizard/survey_email_compose_message.py:138
+#, python-format
+msgid ""
+"The content of the text don't contain '__URL__'.                     __URL__ "
+"is automaticaly converted into the special url of the survey."
+msgstr ""
+"文本內容中不包含 '__URL__'.                     __URL__ 會被自動轉換成特殊的"
+"調查URL。"
+
+#. module: survey
+#: sql_constraint:survey.user_input:0
+msgid "The deadline cannot be in the past"
+msgstr "截止日期不能是過去的時間。"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:546
+#: code:addons/survey/tests/test_survey.py:86
+#, python-format
+msgid "This answer must be an email address"
+msgstr "答案必須為郵件地址"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:590
+#: code:addons/survey/tests/test_survey.py:107
+#, python-format
+msgid "This is not a date/time"
+msgstr "這不是日期/時間"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:567
+#: code:addons/survey/tests/test_survey.py:97
+#, python-format
+msgid "This is not a number"
+msgstr "這不是一個數字"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_mail_compose_message_multi_email
+msgid ""
+"This list of emails of recipients will not be converted in contacts.        "
+"Emails must be separated by commas, semicolons or newline."
+msgstr ""
+"此收件人的電子郵件列表將不會在聯繫人中轉換。多個郵箱位址必須用逗號，分號或換"
+"行符隔開。"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_survey_thank_you_message
+msgid "This message will be displayed when survey is completed"
+msgstr "此郵件將會在調查結束後顯示。"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:491
+#, python-format
+msgid "This question requires an answer."
+msgstr "此問題需要答案。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.nopages
+msgid "This survey has no pages by now!"
+msgstr "此調查目前還沒有頁面！"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.notopen
+msgid "This survey is not open. Thank you for your interest!"
+msgstr "此調查尚未開始，感謝你的關注！"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.auth_required
+msgid "This survey is open only to registered people. Please"
+msgstr "此調查只針對已註冊用戶，請"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey_title
 #: model:ir.ui.view,arch_db:survey.survey_survey_view_search
 msgid "Title"
-msgstr "稱謂"
+msgstr "標題"
 
 #. module: survey
 #: model:ir.ui.view,arch_db:survey.survey_question_search
 msgid "Type"
 msgstr "類型"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_type
+msgid "Type of Question"
+msgstr "問題類型"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "Type of answers"
+msgstr "答案類型"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_labels_ids
+msgid "Types of answers"
+msgstr "答案類型"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_email_compose_message
+msgid "Use template"
+msgstr "使用範本"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_question_description
+msgid ""
+"Use this field to add         additional explanations about your question"
+msgstr "在此對你問題的進行詳細的說明"
+
+#. module: survey
+#: model:res.groups,name:survey.group_survey_user
+msgid "User"
+msgstr "用戶"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_user_input_line_user_input_id
+#: model:ir.ui.view,arch_db:survey.survey_response_line_search
+msgid "User Input"
+msgstr "用戶輸入"
+
+#. module: survey
+#: model:ir.ui.menu,name:survey.menu_survey_response_line_form
+msgid "User Input Lines"
+msgstr "用戶輸入明細"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_choice
+#: model:ir.ui.view,arch_db:survey.result_number
+#: model:ir.ui.view,arch_db:survey.result_text
+msgid "User Responses"
+msgstr "用戶回饋"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_form
+msgid "User can come back in the previous page"
+msgstr "用戶能夠返回上一頁"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_user_input_line_form
+msgid "User input line details"
+msgstr "用戶輸入明細詳情"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_user_input_ids
+msgid "User responses"
+msgstr "用戶回饋"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_survey_users_can_go_back
+msgid "Users can go back"
+msgstr "用戶可返回"
+
+#. module: survey
+#: model:ir.model.fields,help:survey.field_survey_survey_auth_required
+msgid ""
+"Users with a public link will be requested to login before taking part to "
+"the survey"
+msgstr "使用公共鏈結的用戶需要在參加調查前登錄"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_required
+msgid "Validate entry"
+msgstr "確認憑證"
+
+#. module: survey
+#: model:ir.model.fields,field_description:survey.field_survey_question_validation_error_msg
+msgid "Validation Error message"
+msgstr "確認錯誤消息"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_user_input_form
+msgid "View Results"
+msgstr "查看結果"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_form
+msgid "View results"
+msgstr "查看結果"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.result_choice
+msgid "Vote"
+msgstr "投票"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.datetime
+msgid "YYYY-MM-DD hh:mm:ss"
+msgstr "YYYY-MM-DD hh:mm:ss"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid ""
+"YYYY-MM-DD hh:mm:ss\n"
+"                                            <i class=\"fa fa-calendar fa-2x"
+"\"/>"
+msgstr ""
+"YYYY-MM-DD hh:mm:ss\n"
+"                                            <i class=\"fa fa-calendar fa-2x"
+"\"/>"
+
+#. module: survey
+#: model:ir.actions.act_window,help:survey.action_survey_form
+msgid ""
+"You can create surveys for different purposes: customer opinion, services "
+"feedback, recruitment interviews, employee's periodical evaluations, "
+"marketing campaigns, etc."
+msgstr ""
+"你可以創建不同用途的調查：客戶意見，回饋服務，招聘面試，員工定期進行評估，營"
+"銷活動等。。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_email_compose_message
+msgid ""
+"You can share your survey web public link and/or send private invitations to "
+"your audience. People can answer once per invitation, and whenever they want "
+"with the public web link (in this case, the \"Login Required\" setting must "
+"be disabled)."
+msgstr ""
+"你可以分享你的調查公共網頁和個人邀請給你的粉絲，無論何時訪問每個邀請只能回答"
+"一次（在這種情況下，“需要登錄”設置必須被關閉）。"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:318
+#, python-format
+msgid "You cannot send an invitation for a survey that has no questions."
+msgstr "你不能為沒有問題的調查發送邀請。"
+
+#. module: survey
+#: code:addons/survey/models/survey.py:321
+#, python-format
+msgid "You cannot send invitations for closed surveys."
+msgstr "不能為已關閉的調查發送邀請。"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.sfinished
+msgid "You scored"
+msgstr "你的得分"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.survey_question_form
+msgid "ans"
+msgstr "答案"
+
+#. module: survey
+#: model:ir.model,name:survey.model_ir_autovacuum
+msgid "ir.autovacuum"
+msgstr "ir.autovacuum"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.auth_required
+msgid "log in"
+msgstr "登錄"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.page
+msgid "of"
+msgstr "的"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.sfinished
+msgid "points."
+msgstr "點"
+
+#. module: survey
+#: model:ir.ui.view,arch_db:survey.sfinished
+msgid "review your answers"
+msgstr "查看你的回答"
+
+#~ msgid ""
+#~ "\n"
+#~ "                \n"
+#~ "<p>Hello,</p>\n"
+#~ "<p>We are conducting a survey, and your response would be appreciated.</"
+#~ "p>\n"
+#~ "<p><a style=\"margin-left: 85px; padding:5px 10px; border-radius: 3px; "
+#~ "background-color:#a24689; text-align:center; text-decoration:none; color:"
+#~ "#F7FBFD;\" href=\"__URL__\">Please, click here to start survey</a></p>\n"
+#~ "<p>Thanks for your participation!</p>\n"
+#~ "                \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "                \n"
+#~ "<p>你好,</p>\n"
+#~ "<p>我們正展開一項調查，非常期望得到你的意見回饋，將不勝感激。</p>\n"
+#~ "<p><a style=\"margin-left: 85px; padding:5px 10px; border-radius: 3px; "
+#~ "background-color:#a24689; text-align:center; text-decoration:none; color:"
+#~ "#F7FBFD;\" href=\"__URL__\">請點擊此處展開調查</a></p>\n"
+#~ "<p>感謝你的熱情參與!</p>\n"
+#~ "                \n"
+#~ "            "
+
+#~ msgid ""
+#~ "You can share your survey web public link and/or send private invitations "
+#~ "to your audience. People can answer once per invitation, and whenever "
+#~ "they want with the public web link (in this case, the \"Public in website"
+#~ "\" setting must be enabled)."
+#~ msgstr ""
+#~ "你能夠分享調查的網路鏈結和/或私下邀請你的粉絲。 無論什麼時候，受到邀請者都"
+#~ "可使用公共網路鏈結參與回答（這種情況下，必須設定 \"在網站公開\" 選項）。"
+
+#~ msgid "try to create and fill survey"
+#~ msgstr "嘗試創建並且填寫調查"
+
+#~ msgid ""
+#~ "\n"
+#~ "                \n"
+#~ "                <div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, "
+#~ "Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
+#~ "                    <p>Hello,</p>\n"
+#~ "                    <p>We are conducting a survey, and your response "
+#~ "would be appreciated.</p>\n"
+#~ "                    <p><a href=\"__URL__\">Please, click here to start "
+#~ "survey</a></p>\n"
+#~ "                    <p>Thanks for your participation!</p>\n"
+#~ "                </div>\n"
+#~ "                \n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "                \n"
+#~ "                <div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, "
+#~ "Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
+#~ "                    <p>Hello,</p>\n"
+#~ "                    <p>我們正在開展一項調查，非常期望得到你的意見回饋。</"
+#~ "p>\n"
+#~ "                    <p><a href=\"__URL__\">請點擊此處開始調查</a></p>\n"
+#~ "                    <p>謝謝你的熱情參與!</p>\n"
+#~ "                </div>\n"
+#~ "                \n"
+#~ "            "
+
+#~ msgid "A label must be attached to one and only one question"
+#~ msgstr "一個標籤必須而且只能附加到一個問題"
+
+#~ msgid ""
+#~ "Answers do not go in the original document discussion thread. This has an "
+#~ "impact on the generated message-id."
+#~ msgstr ""
+#~ "答案將不包括在原始文檔的討論線程中。這個將對已產生的message-id發生影響。"
+
+#~ msgid "Author"
+#~ msgstr "作者"
+
+#~ msgid ""
+#~ "Author of the message. If not set, email_from may hold an email address "
+#~ "that did not match any partner."
+#~ msgstr ""
+#~ "消息作者。如果未設定，發件人將會保留未與任何業務夥伴匹配的郵件位址。"
+
+#~ msgid "Author's avatar"
+#~ msgstr "作者化名"
+
+#~ msgid "Automatically sanitized HTML contents"
+#~ msgstr "自動清理HTML內容"
+
+#~ msgid "Child Messages"
+#~ msgstr "子消息"
+
+#~ msgid "Composition mode"
+#~ msgstr "合成方式"
+
+#~ msgid "Contents"
+#~ msgstr "內容"
+
+#~ msgid "Current user has a starred notification linked to this message"
+#~ msgstr "當前用戶已經開啟了此消息鏈結的通知"
+
+#~ msgid "Current user has an unread notification linked to this message"
+#~ msgstr "當前用戶有鏈結到此消息的未讀通知"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "該記錄中最新消息的發佈日期。"
+
+#~ msgid ""
+#~ "Email address of the sender. This field is set when no matching partner "
+#~ "is found and replaces the author_id field in the chatter."
+#~ msgstr ""
+#~ "發送者的Email地址。當沒有對應的業務夥伴時，將替換聊天人的author_id欄位。"
+
+#~ msgid "Followers"
+#~ msgstr "追隨者"
+
+#~ msgid "From"
+#~ msgstr "發件人"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果勾選，新消息需要你的關注。"
+
+#~ msgid "Initial thread message."
+#~ msgstr "初始的線索消息。"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最新消息日期"
+
+#~ msgid "Log an Internal Note"
+#~ msgstr "記錄內部日誌"
+
+#~ msgid "Message Record Name"
+#~ msgstr "消息的記錄名稱"
+
+#~ msgid ""
+#~ "Message type: email for email message, notification for system message, "
+#~ "comment for other messages such as user replies"
+#~ msgstr ""
+#~ "消息類型：郵件對應郵件消息，通知對應系統消息，評論對應其他消息如用戶回答"
+
+#~ msgid "Message unique identifier"
+#~ msgstr "消息唯一識別碼"
+
+#~ msgid "Message-Id"
+#~ msgstr "消息ID"
+
+#~ msgid "Messages"
+#~ msgstr "消息"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和交流歷史記錄"
+
+#~ msgid "Name get of the related document."
+#~ msgstr "獲取相關文檔名稱"
+
+#~ msgid "No threading for answers"
+#~ msgstr "沒有交叉的答案"
+
+#~ msgid "Notifications"
+#~ msgstr "通知"
+
+#~ msgid "Notified partners"
+#~ msgstr "已通知的業務夥伴"
+
+#~ msgid "Notify followers"
+#~ msgstr "通知追隨者"
+
+#~ msgid "Notify followers of the document (mass post only)"
+#~ msgstr "通知此文檔的追隨者（只用於批量發送）"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "One email at least is incorrect: %s"
+#~ msgstr "最少有一個郵件是正確的： %s"
+
+#~ msgid "Open Survey Menu"
+#~ msgstr "打開調查菜單"
+
+#~ msgid "Outgoing mail server"
+#~ msgstr "發送郵件伺服器"
+
+#~ msgid "Parent Message"
+#~ msgstr "父消息"
+
+#~ msgid ""
+#~ "Partners that have a notification pushing this message in their mailboxes"
+#~ msgstr "有通知的業務夥伴推送此消息到他們的郵箱。"
+
+#~ msgid "Please select a survey"
+#~ msgstr "請選擇一個調查"
+
+#~ msgid "Related Document ID"
+#~ msgstr "相關文檔ID"
+
+#~ msgid "Related Document Model"
+#~ msgstr "相關文檔模型"
+
+#~ msgid ""
+#~ "Reply email address. Setting the reply_to bypasses the automatic thread "
+#~ "creation."
+#~ msgstr "回復郵件地址。設定“回復到”避免自動創建線索。"
+
+#~ msgid "Reply-To"
+#~ msgstr "回復到"
+
+#~ msgid ""
+#~ "Small-sized image of this contact. It is automatically resized as a "
+#~ "64x64px image, with aspect ratio preserved. Use this field anywhere a "
+#~ "small image is required."
+#~ msgstr ""
+#~ "聯繫人小尺寸圖片。自動縮放為64x64px ，保留縱橫比。此欄位用於任何需要小圖片"
+#~ "的場合"
+
+#~ msgid "Starred"
+#~ msgstr "已開始"
+
+#~ msgid "Subject"
+#~ msgstr "主題"
+
+#~ msgid "Subtype"
+#~ msgstr "子類型"
+
+#~ msgid "System notification"
+#~ msgstr "系統通知"
+
+#~ msgid ""
+#~ "Technical field holding the message notifications. Use "
+#~ "notified_partner_ids to access notified partners."
+#~ msgstr ""
+#~ "技術欄位保存消息通知。使用通知業務夥伴ID欄位（notified_partner_ids）獲取已"
+#~ "通知的業務夥伴。"
+
+#~ msgid "To read"
+#~ msgstr "閱讀"
+
+#~ msgid ""
+#~ "Tracked values are stored in a separate model. This field allow to "
+#~ "reconstructthe tracking and to generate statistics on the model."
+#~ msgstr ""
+#~ "跟蹤的值將保存在一個獨立的模型中。這個欄位允許重新構建跟蹤並在模型上生成統"
+#~ "計。"
+
+#~ msgid "Tracking values"
+#~ msgstr "跟蹤值"
+
+#~ msgid "Unread Messages"
+#~ msgstr "未讀消息"
+
+#~ msgid "Use active domain"
+#~ msgstr "使用活動域"
+
+#~ msgid "Users that voted for this message"
+#~ msgstr "為此消息投票的用戶"
+
+#~ msgid "Votes"
+#~ msgstr "投票"
+
+#~ msgid "Whether the message is an internal note (comment mode only)"
+#~ msgstr "無論消息是內部記錄（只適用評論模式）"
+
+#~ msgid "You cannot duplicate this element!"
+#~ msgstr "你不能複製此元素！"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "on"
+#~ msgstr "在"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid "All Data"
+#~ msgstr "所有資料"
+
+#~ msgid "All surveys"
+#~ msgstr "所有調查"
+
+#~ msgid "Average"
+#~ msgstr "平均"
+
+#~ msgid "Clear All Filters"
+#~ msgstr "清除所有過濾"
+
+#~ msgid "Data"
+#~ msgstr "數據"
+
+#~ msgid "Filters"
+#~ msgstr "篩檢程式"
+
+#~ msgid "Finished surveys"
+#~ msgstr "已結束的調查"
+
+#~ msgid "Graph"
+#~ msgstr "圖表"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保存聊天小結（消息數量，......）。此小結直接使用HTML格式以便於插入看板視"
+#~ "圖。"
+
+#~ msgid "Maximum"
+#~ msgstr "最大"
+
+#~ msgid "Minimum"
+#~ msgstr "最小"
+
+#~ msgid "Most Common"
+#~ msgstr "最普遍"
+
+#~ msgid "Pie Chart"
+#~ msgstr "圓形圖"
+
+#~ msgid "Something went wrong while contacting survey server."
+#~ msgstr "與調查伺服器的連接出錯。"
+
+#~ msgid "Sorry, No one answered this survey yet"
+#~ msgstr "抱歉，仍然沒有人回答此問題"
+
+#~ msgid "Sum"
+#~ msgstr "合計"
+
+#~ msgid "Summary"
+#~ msgstr "小結"
+
+#~ msgid "Try refreshing."
+#~ msgstr "嘗試刷新。"
+
+#~ msgid "Your answers have probably not been recorded."
+#~ msgstr "你的答案可能沒有被記錄。"
+
+#~ msgid "answer"
+#~ msgstr "答案"
+
+#~ msgid "<p></p>"
+#~ msgstr "<p> </p>"
+
+#~ msgid "<p>If you do not contribute or develop in Odoo, skip this page.</p>"
+#~ msgstr "<p>如果你不是貢獻者或者開發者,請跳過這頁.</p>"
+
+#~ msgid ""
+#~ "<p>These questions relate to the ergonomy and ease of use of Odoo. Try to "
+#~ "remind your firsts days on Odoo and\n"
+#~ "what have been your difficulties.</p>"
+#~ msgstr ""
+#~ "<p>這些問題涉及到Odoo的模組化和易用性。在Odoo上試著提醒你的第一天,什麼正成"
+#~ "為你的困難.</p>"
+
+#~ msgid "<p>This survey should take less than five minutes.</p>"
+#~ msgstr "<p>這個調查不到5分鐘.</p>"
+
+#~ msgid "A process is defined for all enterprise flows"
+#~ msgstr "一種作業被定義為所有企業流程"
+
+#~ msgid "About your Odoo usage"
+#~ msgstr "關於你使用Odoo的一些情況"
+
+#~ msgid "Agree"
+#~ msgstr "同意"
+
+#~ msgid "Are you using Odoo on a daily basis?"
+#~ msgstr "你現在每天使用Odoo嗎?"
+
+#~ msgid "CRM"
+#~ msgstr "CRM"
+
+#~ msgid "Category"
+#~ msgstr "分類"
+
+#~ msgid "Community and contributors"
+#~ msgstr "貢獻者"
+
+#~ msgid "Configuration wizard exists for each important setting"
+#~ msgstr "為每個重要的設置設置嚮導"
+
+#~ msgid "Descriptions and help tooltips are clear enough"
+#~ msgstr "描述和幫助工具提示是否足夠明顯"
+
+#~ msgid "Disagree"
+#~ msgstr "不同意"
+
+#~ msgid "Do you have a proposition to attract new contributors?"
+#~ msgstr "你有一個方案來吸引新的參與者?"
+
+#~ msgid "Do you have a proposition to help people to contribute?"
+#~ msgstr "你是否有一個構想來吸引新的貢獻者?"
+
+#~ msgid "Do you have suggestions on how to improve the process view ?"
+#~ msgstr "你是否有新的建議來如何改善流程視圖?"
+
+#~ msgid "Ergonomy and ease of use"
+#~ msgstr "模組化和易用性"
+
+#~ msgid "Error!"
+#~ msgstr "錯誤！"
+
+#~ msgid "Extra modules proposed are relevant"
+#~ msgstr "提出額外的模組是相關"
+
+#~ msgid "Financial Management"
+#~ msgstr "財務管理"
+
+#~ msgid "How do you contribute or plan to contribute to Odoo?"
+#~ msgstr "你如何為Odoo貢獻或計畫貢獻?"
+
+#~ msgid "Human Ressources"
+#~ msgstr "人力資源"
+
+#~ msgid "I develop new features"
+#~ msgstr "我開發新功能"
+
+#~ msgid "I do not publish my developments"
+#~ msgstr "我不開放我的開發"
+
+#~ msgid "I help to translate"
+#~ msgstr "我幫忙翻譯"
+
+#~ msgid "I host them on my own website"
+#~ msgstr "我在自己的網站上推廣Odoo"
+
+#~ msgid "I participate to discussion and forums"
+#~ msgstr "我參與論壇討論"
+
+#~ msgid "I use Launchpad, like all official Odoo projects"
+#~ msgstr "我使用啟動面板,像所有官方Odoo專案"
+
+#~ msgid "I use another repository system (SourceForge...)"
+#~ msgstr "我使用另外一個託管系統(開源軟體倉庫...)"
+
+#~ msgid "I use the contextual help in Odoo"
+#~ msgstr "我在Odoo使用上下文相關的幫助"
+
+#~ msgid "I write documentations"
+#~ msgstr "我寫文檔"
+
+#~ msgid "I'd like to contribute but I don't know how?"
+#~ msgstr "我想貢獻但我不知道該如何做?"
+
+#~ msgid "It can be improved"
+#~ msgstr "它可以用來改善"
+
+#~ msgid "It helps in the beginning"
+#~ msgstr "它有助於在開始時"
+
+#~ msgid "It is clear"
+#~ msgstr "無隱藏"
+
+#~ msgid "It is complete"
+#~ msgstr "它是完整的"
+
+#~ msgid "It is up-to-date"
+#~ msgstr "這是最新的"
+
+#~ msgid "It's easy to find the process you need"
+#~ msgstr "很容易找到你所需要的流程"
+
+#~ msgid "Long Text Zone"
+#~ msgstr "長文本區域"
+
+#~ msgid "No, I just tested it"
+#~ msgstr "不,我只是測試它"
+
+#~ msgid "Project Management"
+#~ msgstr "專案管理"
+
+#~ msgid "Purchases Management"
+#~ msgstr "採購管理"
+
+#~ msgid "Questions for developers"
+#~ msgstr "開發人員的問題"
+
+#~ msgid "Running the configuration wizards is a good way to spare time"
+#~ msgstr "運行設置嚮導是一個消遣時間的好方法"
+
+#~ msgid "Sales Management"
+#~ msgstr "銷售管理"
+
+#~ msgid "Select Options"
+#~ msgstr "選擇選項"
+
+#~ msgid "Survey Options"
+#~ msgstr "調查選項"
+
+#~ msgid "Text Input"
+#~ msgstr "文本輸入"
+
+#~ msgid "The 'Usability/Extended View' group helps in daily work"
+#~ msgstr "\"可用性/擴展視圖\"的構架在日常工作中很有説明"
+
+#~ msgid "The 'Usability/Extended View' group hides only optional fields"
+#~ msgstr "“可用性/擴展視圖'架構隱藏可選欄位"
+
+#~ msgid "The current menu structure is good"
+#~ msgstr "當前的功能表結構很好"
+
+#~ msgid "The groups set on menu items are relevant"
+#~ msgstr "在菜單上設置分組是相關的"
+
+#~ msgid "The number of groups is good"
+#~ msgstr "組的數量是恰當的"
+
+#~ msgid "The security rules defined on groups are useful"
+#~ msgstr "定義的安全規則組是有用的"
+
+#~ msgid "There are too few groups defined, security isn't accurate enough"
+#~ msgstr "組定義太少了,安全性不夠全面"
+
+#~ msgid "There are too many groups defined, security is too complex to set"
+#~ msgstr "有太多的組定義、安全設置,設置起來太複雜"
+
+#~ msgid "There are too much menus, it's complex to understand"
+#~ msgstr "有太多的功能表,理解起來比較複雜"
+
+#~ msgid "They are clean and correct"
+#~ msgstr "他們是簡潔的和正確的"
+
+#~ msgid "They are useful on a daily usage"
+#~ msgstr "他們是在日常中使用"
+
+#~ msgid "They help new users to understand Odoo"
+#~ msgstr "他們幫助新用戶瞭解Odoo"
+
+#~ msgid ""
+#~ "Those security rules are standard and can be used out-of-the-box in most "
+#~ "cases"
+#~ msgstr "這些安全規則是標準化的,在大多數情況下是能夠開箱即用的"
+
+#~ msgid "Totally agree"
+#~ msgstr "完全同意"
+
+#~ msgid "Totally disagree"
+#~ msgstr "完全不同意"
+
+#~ msgid "User Feedback Form"
+#~ msgstr "用戶回饋"
+
+#~ msgid "Warning!"
+#~ msgstr "警告！"
+
+#~ msgid "What do you think about configuration wizards?"
+#~ msgstr "你怎麼看設置嚮導?"
+
+#~ msgid ""
+#~ "What do you think about the documentation available on doc.openerp.com?"
+#~ msgstr "你怎麼看待在doc.openerp.com上的可用文檔?"
+
+#~ msgid "What do you think about the groups of users?"
+#~ msgstr "你怎麼看待用戶組?"
+
+#~ msgid ""
+#~ "What do you think about the process views of Odoo, available in the web "
+#~ "client ?"
+#~ msgstr "你怎麼看待Odoo的流程視圖,在web用戶端是否匹配?"
+
+#~ msgid "What do you think about the structure of the menus?"
+#~ msgstr "你怎麼看功能表的結構?"
+
+#~ msgid "Where do you develop your new features?"
+#~ msgstr "你開發新功能在哪里?"
+
+#~ msgid "Which modules are you using/testing?"
+#~ msgstr "哪個模組你現在在使用或測試?"
+
+#~ msgid "Yes, I use a version < 7.0"
+#~ msgstr "是的,我使用低於7.0的版本"
+
+#~ msgid "Yes, I use the 7.0 version, installed locally"
+#~ msgstr "是的,我使用7.0版本,在本地安裝"
+
+#~ msgid "Yes, I use the online version of Odoo"
+#~ msgstr "是的,我使用Odoo的線上版本"
+
+#~ msgid "yyyy-mm-dd hh:mm:ss"
+#~ msgstr "yyyy-mm-dd hh:mm:ss"
+
+#~ msgid "Replies in the document"
+#~ msgstr "文檔中的答復"
+
+#~ msgid ""
+#~ "Replies to the messages will go into the selected document (mass mail "
+#~ "only)"
+#~ msgstr "消息答復將進入選中的文檔（僅批量郵件）"
+
+#~ msgid "í"
+#~ msgstr "í"
+
+#~ msgid ""
+#~ "\n"
+#~ "Hello %%(name)s, \n"
+#~ "\n"
+#~ "\n"
+#~ "Would you please spent some of your time to fill-in our survey: \n"
+#~ "%s\n"
+#~ "\n"
+#~ "You can access this survey with the following parameters:\n"
+#~ " URL: %s\n"
+#~ " Your login ID: %%(login)s\n"
+#~ "\n"
+#~ " Your password: %%(passwd)s\n"
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "Thanks,"
+#~ msgstr ""
+#~ "\n"
+#~ " %%(name)s， 你好！\n"
+#~ "\n"
+#~ "\n"
+#~ "請花點時間來填寫以下調查表： \n"
+#~ "%s\n"
+#~ "\n"
+#~ "可以使用下面的參數來訪問調查表：\n"
+#~ " URL: %s\n"
+#~ " 登錄ID： %%(login)s\n"
+#~ "\n"
+#~ " 登錄密碼： %%(passwd)s\n"
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "謝謝，"
+
+#~ msgid " Answer :- "
+#~ msgstr "回答："
+
+#~ msgid ",  Date :- "
+#~ msgstr ",  日期 :- "
+
+#~ msgid "Answer Date : "
+#~ msgstr "回答日期："
+
+#~ msgid "Answer Of :- "
+#~ msgstr "回復者："
+
+#~ msgid "Answered by : "
+#~ msgstr "回復人："
+
+#~ msgid "Complete Survey Answer"
+#~ msgstr "完成問卷答案"
+
+#~ msgid "Done"
+#~ msgstr "已完成"
+
+#~ msgid "Exit"
+#~ msgstr "離開"
+
+#~ msgid "Finished"
+#~ msgstr "已結束"
+
+#~ msgid "Invitation for %s"
+#~ msgstr "邀請 %s"
+
+#~ msgid "Next"
+#~ msgstr "下一個"
+
+#~ msgid "No Answer"
+#~ msgstr "沒有答案"
+
+#~ msgid "Not Finished"
+#~ msgstr "未完成"
+
+#~ msgid "Page : "
+#~ msgstr "頁數："
+
+#~ msgid "Page :- "
+#~ msgstr "頁碼:- "
+
+#~ msgid "Please enter an integer value."
+#~ msgstr "請輸入一個整型值"
+
+#~ msgid "Previous"
+#~ msgstr "前一個"
+
+#~ msgid "Print Date : "
+#~ msgstr "列印日期："
+
+#~ msgid "Status :- "
+#~ msgstr "狀態 :- "
+
+#~ msgid "The following surveys are not in open state: %s"
+#~ msgstr "下列調查不在開放狀態：%s"
+
+#~ msgid "Unknown"
+#~ msgstr "未知"
+
+#~ msgid "You cannot answer because the survey is not open."
+#~ msgstr "你不能回答，因為調查還沒開放。"
+
+#~ msgid "You cannot answer this survey more than %s times."
+#~ msgstr "你不能回答這個調查超過 %s 次。"
+
+#~ msgid ""
+#~ "You cannot give more responses. Please contact the author of this survey "
+#~ "for further assistance."
+#~ msgstr "無法提供更多的回答。請聯繫調查的發佈人獲取更多的幫助。"
+
+#~ msgid "You cannot give response for this survey more than %s times."
+#~ msgstr "你不能為回答這個調查多於 %s次。"
+
+#~ msgid "You cannot select same answer more than one time.'"
+#~ msgstr "你不能選擇相同的答案多餘1次"
+
+#~ msgid "You cannot select the same answer more than one time."
+#~ msgstr "同一個答案只能選擇一次。"
+
+#~ msgid ""
+#~ "Minimum Required Answer you                                     entered "
+#~ "is greater than the number of "
+#~ "answer.                                      Please use a number that is "
+#~ "smaller than %d."
+#~ msgstr "你輸入最小需要的答案數大於答案的總數。請用小於%d的數量。"
+
+#~ msgid "Text Validation"
+#~ msgstr "文本驗證"
+
+#~ msgid "Answers:"
+#~ msgstr "回答："
+
+#~ msgid "Invited User"
+#~ msgstr "受邀用戶"
+
+#~ msgid "Character"
+#~ msgstr "屬性"
+
+#~ msgid "Cancel Request"
+#~ msgstr "取消請求"
+
+#~ msgid "Survey Request"
+#~ msgstr "調查請求"
+
+#~ msgid "A Range"
+#~ msgstr "範圍"
+
+#~ msgid "Value Choice"
+#~ msgstr "選項值"
+
+#~ msgid "History Lines"
+#~ msgstr "日誌明細"
+
+#~ msgid "Descriptive Text"
+#~ msgstr "描述性文字"
+
+#~ msgid "Body"
+#~ msgstr "內容"
+
+#~ msgid "A4 (210mm x 297mm)"
+#~ msgstr "A4 (210mm x 297mm)"
+
+#~ msgid "Is Menu Choice Invisible?"
+#~ msgstr "功能表選項是隱藏的嗎？"
+
+#~ msgid "Exactly"
+#~ msgstr "固定值"
+
+#~ msgid "Open Date"
+#~ msgstr "啟用日期"
+
+#~ msgid "Set to Draft"
+#~ msgstr "設為草稿"
+
+#~ msgid "Add Comment Field"
+#~ msgstr "增加注釋欄位"
+
+#~ msgid ""
+#~ "#Required Answer you entered                                     is "
+#~ "greater than the number of answer.                                     "
+#~ "Please use a number that is smaller than %d."
+#~ msgstr "你輸入的需要的答案數大於答案的總數。請用小於%d的數量。"
+
+#~ msgid "Total Answer"
+#~ msgstr "總答案數"
+
+#~ msgid "Row Number"
+#~ msgstr "行號"
+
+#~ msgid "survey.name.wiz"
+#~ msgstr "survey.name.wiz"
+
+#~ msgid ""
+#~ "Maximum Required Answer you                                     entered "
+#~ "for your maximum is greater than the number of "
+#~ "answer.                                      Please use a number that is "
+#~ "smaller than %d."
+#~ msgstr ""
+#~ "你輸入用於最多答案數的最多需要的答案數大於答案的總數。請用小於%d的數量。"
+
+#~ msgid "Matrix of Choices (Only One Answers Per Row)"
+#~ msgstr "選項矩陣（每行只有一個答案）"
+
+#~ msgid "Send Reminder for Existing User"
+#~ msgstr "為現有用戶發送提醒"
+
+#~ msgid ""
+#~ "Maximum Required Answer you entered for your maximum is greater than the "
+#~ "number of answer. Please use a number that is smaller than %d."
+#~ msgstr ""
+#~ "你輸入用於最多答案數的最多需要的答案數大於答案的總數。請用小於%d的數量。"
+
+#~ msgid "Use if question type is rating_scale"
+#~ msgstr "用於問題類型rating_scale"
+
+#~ msgid "Include Page Number"
+#~ msgstr "列印頁碼"
+
+#~ msgid "Ok"
+#~ msgstr "確定"
+
+#~ msgid "Survey History"
+#~ msgstr "調查歷史"
+
+#~ msgid "Value"
+#~ msgstr "值"
+
+#~ msgid " Column heading"
+#~ msgstr " 列頭"
+
+#~ msgid "(Use Only Question Type is matrix_of_drop_down_menus)"
+#~ msgstr "（僅用於問題類型matrix_of_drop_down_menus）"
+
+#~ msgid "Survey Statistics"
+#~ msgstr "調查統計"
+
+#~ msgid "Cancelled"
+#~ msgstr "已取消"
+
+#~ msgid "Rating Scale"
+#~ msgstr "評級範圍"
+
+#~ msgid ""
+#~ "This survey has no question defined. Please define the questions and "
+#~ "answers first."
+#~ msgstr "這些調查沒有定義提問。請首先定義提問和答案。"
+
+#~ msgid "Comment Field Type"
+#~ msgstr "備註自動類型"
+
+#~ msgid "Survey Open Date"
+#~ msgstr "調查開展日期"
+
+#~ msgid "Menu Choice"
+#~ msgstr "功能表選項"
+
+#~ msgid ""
+#~ "You must enter one or more menu choices                                 "
+#~ "in column heading."
+#~ msgstr "你必須在列首輸入一個或多個功能表選項"
+
+#~ msgid "At Most"
+#~ msgstr "最多"
+
+#~ msgid "My Survey(s)"
+#~ msgstr "我的調查"
+
+#~ msgid "Letter (8.5\" x 11\")"
+#~ msgstr "信紙(8.5\" x 11\")"
+
+#~ msgid "Responsible"
+#~ msgstr "負責人"
+
+#~ msgid "survey.request"
+#~ msgstr "survey.request"
+
+#~ msgid "Maximum decimal number"
+#~ msgstr "最大十進位數字"
+
+#~ msgid "survey.tbl.column.heading"
+#~ msgstr "survey.tbl.column.heading"
+
+#~ msgid "Send Mail for New User"
+#~ msgstr "發送郵件給新用戶"
+
+#~ msgid "Cancel Survey"
+#~ msgstr "取消調查"
+
+#~ msgid "Don't Validate Comment Text."
+#~ msgstr "未驗證注釋內容"
+
+#~ msgid "You must enter one or more menu choices in column heading."
+#~ msgstr "你必須在列首輸入一個或者多個功能表選擇"
+
+#~ msgid "Must Be A Whole Number"
+#~ msgstr "必須是一個整數"
+
+#~ msgid "Evaluation Plan Phase"
+#~ msgstr "評估計畫階段"
+
+#~ msgid "Between"
+#~ msgstr "介於"
+
+#~ msgid "Print"
+#~ msgstr "列印"
+
+#~ msgid "Required Answer"
+#~ msgstr "需要的答復"
+
+#~ msgid "Maximum Required Answer is greater than Minimum Required Answer."
+#~ msgstr "答案越詳盡越好。"
+
+#~ msgid "Reporting"
+#~ msgstr "報告"
+
+#~ msgid ""
+#~ "You must enter one or more column headings for question \"%s\" of page %s."
+#~ msgstr "你必須為提問 \"%s\" 輸入一個或者多個列首（ %s頁）。"
+
+#~ msgid "Survey Type"
+#~ msgstr "問卷類型"
+
+#~ msgid "Page Nr"
+#~ msgstr "頁碼"
+
+#~ msgid "Print Surveys"
+#~ msgstr "列印問卷"
+
+#~ msgid "Is Menu Choice Invisible??"
+#~ msgstr "功能表選項是隱藏的嗎？"
+
+#~ msgid "Minimum Required Answer"
+#~ msgstr "最小需要的答案數"
+
+#~ msgid "Error Message"
+#~ msgstr "錯誤消息"
+
+#~ msgid "Must Be A Date"
+#~ msgstr "必須為日期類型"
+
+#~ msgid "survey.print"
+#~ msgstr "survey.print"
+
+#~ msgid "Column Heading"
+#~ msgstr "列頭"
+
+#~ msgid "Require Answer to Question"
+#~ msgstr "需要回答的問題"
+
+#~ msgid "Survey Requests"
+#~ msgstr "問捲髮放"
+
+#~ msgid "Edit..."
+#~ msgstr "編輯..."
+
+#~ msgid ""
+#~ "Maximum Required Answer you                                     entered "
+#~ "for your maximum is greater than the number of "
+#~ "answer.                                     Please use a number that is "
+#~ "smaller than %d."
+#~ msgstr "你輸入的最多需要的答案數大於答案數。請用小於%d的數字。"
+
+#~ msgid "Survey description..."
+#~ msgstr "調查描述……"
+
+#~ msgid "When the question is not answered, display this error message:"
+#~ msgstr "當問題沒有回答的時候，顯示此錯誤消息："
+
+#~ msgid "You must enter one or more Answers for question \"%s\" of page %s."
+#~ msgstr "你必須為提問 \"%s\" 輸入一個或者多個答案（ %s頁）。"
+
+#~ msgid "Survey Answer"
+#~ msgstr "問卷答案"
+
+#~ msgid "Answer Survey"
+#~ msgstr "填寫答案"
+
+#~ msgid "Comment Field"
+#~ msgstr "備註欄位"
+
+#~ msgid "User responsible for survey"
+#~ msgstr "問卷的用戶職責"
+
+#~ msgid "Add comment column in matrix"
+#~ msgstr "在矩陣列表中添加備註欄位"
+
+#~ msgid "#Answer"
+#~ msgstr "答案#"
+
+#~ msgid "Print Without Page Breaks"
+#~ msgstr "忽略分頁符"
+
+#~ msgid "When the comment is an invalid format, display this error message"
+#~ msgstr "當備註的格式無效的時候，顯示此錯誤消息"
+
+#~ msgid "Set to one if  you require only one Answer per user"
+#~ msgstr "如果你需要每個用戶只提供一份答案，把它設為1"
+
+#~ msgid "Users"
+#~ msgstr "用戶"
+
+#~ msgid ""
+#~ "You must enter one or more menu                                 choices "
+#~ "in column heading (white spaces not allowed)."
+#~ msgstr "你必須在列首 輸入一個或者多個功能表選擇（不允許空白）。"
+
+#~ msgid "Maximum Required Answer"
+#~ msgstr "需要的最大答案數"
+
+#~ msgid "Survey Print Statistics"
+#~ msgstr "列印問卷統計"
+
+#~ msgid "Log"
+#~ msgstr "日誌"
+
+#~ msgid "When the choices do not add up correctly, display this error message"
+#~ msgstr "當選項合計不正確時，顯示此錯誤消息"
+
+#~ msgid "Survey Close Date"
+#~ msgstr "問卷截止日期"
+
+#~ msgid "Paragraph of Text"
+#~ msgstr "文本段落"
+
+#~ msgid "Is Rating Scale Invisible ??"
+#~ msgstr "評定量表是否隱藏？"
+
+#~ msgid "Start"
+#~ msgstr "開始"
+
+#~ msgid "Maximum number"
+#~ msgstr "最大數"
+
+#~ msgid "survey.print.statistics"
+#~ msgstr "survey.print.statistics"
+
+#~ msgid "Matrix of Drop-down Menus"
+#~ msgstr "下拉菜單矩陣"
+
+#~ msgid "Maximum Answer Limit"
+#~ msgstr "最大答案限制"
+
+#~ msgid "Send Invitations"
+#~ msgstr "發送邀請"
+
+#~ msgid "Landscape(Horizontal)"
+#~ msgstr "橫向"
+
+#~ msgid "No of Rows"
+#~ msgstr "行號"
+
+#~ msgid "Survey Details"
+#~ msgstr "問卷詳情"
+
+#~ msgid "Multiple Textboxes With Different Type"
+#~ msgstr "不同類型的多個文本框"
+
+#~ msgid "Add Description"
+#~ msgstr "添加描述"
+
+#~ msgid "Validation"
+#~ msgstr "驗證"
+
+#~ msgid "Waiting Answer"
+#~ msgstr "等待答案"
+
+#~ msgid "Must Be A Decimal Number"
+#~ msgstr "必須為十進位小數"
+
+#~ msgid "Groups"
+#~ msgstr "組"
+
+#~ msgid "Description on the survey page..."
+#~ msgstr "調查頁面的描述……"
+
+#~ msgid "survey.send.invitation"
+#~ msgstr "survey.send.invitation"
+
+#~ msgid "Page Transfer"
+#~ msgstr "轉頁"
+
+#~ msgid "Paper Size"
+#~ msgstr "紙張尺寸"
+
+#~ msgid "Column"
+#~ msgstr "欄位"
+
+#~ msgid "Browse Answers"
+#~ msgstr "流覽答案"
+
+#~ msgid "survey.browse.answer"
+#~ msgstr "survey.browse.answer"
+
+#~ msgid "Survey Response Line"
+#~ msgstr "問卷答案明細"
+
+#~ msgid "This survey has no pages defined. Please define pages first."
+#~ msgstr "調查未定義頁面。請先定義頁面。"
+
+#~ msgid "Is Rating Scale Invisible?"
+#~ msgstr "評定量表是否隱藏？"
+
+#~ msgid "Integer"
+#~ msgstr "整數"
+
+#~ msgid "survey.question.wiz"
+#~ msgstr "survey.question.wiz"
+
+#~ msgid "History"
+#~ msgstr "歷史記錄"
+
+#~ msgid "Late"
+#~ msgstr "最近"
+
+#~ msgid "Code"
+#~ msgstr "代碼"
+
+#~ msgid "Surveys Statistics"
+#~ msgstr "問卷統計"
+
+#~ msgid "Seq"
+#~ msgstr "序號"
+
+#~ msgid "Menu Choices (each choice on separate lines)"
+#~ msgstr "功能表選項（每個選項用單獨的一行）"
+
+#~ msgid "Minimum number"
+#~ msgstr "最小數"
+
+#~ msgid "#Required Answer"
+#~ msgstr "#需要回答"
+
+#~ msgid "Field Label"
+#~ msgstr "欄位標籤"
+
+#~ msgid "Allow Only One Answer per Column (Forced Ranking)"
+#~ msgstr "每個欄位只允許一個答復（強制性排名）"
+
+#~ msgid "Minimum decimal number"
+#~ msgstr "最小的十進位數字"
+
+#~ msgid "Open"
+#~ msgstr "開始"
+
+#~ msgid "You must enter one or more answers for question \"%s\" of page %s ."
+#~ msgstr "你必須為第%s頁的問題 \"%s\"輸入一個或多個答案。"
+
+#~ msgid ""
+#~ "#Required Answer you entered is greater than the number of answer. Please "
+#~ "use a number that is smaller than %d."
+#~ msgstr "你輸入的答案#大於答案的總數。請使用小於%d的數。"
+
+#~ msgid "Set to one if survey is answerable only once"
+#~ msgstr "設為1，如果問卷只可以回復一次"
+
+#~ msgid "Survey Question Column Heading"
+#~ msgstr "問卷問題標題欄"
+
+#~ msgid "#Avg"
+#~ msgstr "平均#"
+
+#~ msgid "Matrix of Choices (Multiple Answers Per Row)"
+#~ msgstr "選項矩陣（每行含有多個答案）"
+
+#~ msgid "Give Survey Answer"
+#~ msgstr "回復問卷"
+
+#~ msgid ""
+#~ "If this field is empty, all answers of the selected survey will be print."
+#~ msgstr "如果此欄位為空，將列印選中問卷的所有答復。"
+
+#~ msgid "Comment/Essay Box"
+#~ msgstr "備註/隨筆框"
+
+#~ msgid "Respondent must answer"
+#~ msgstr "調查人必須答復"
+
+#~ msgid ""
+#~ "You must enter one or more menu choices in column heading (white spaces "
+#~ "not allowed)."
+#~ msgstr "你必須在列首 輸入一個或者多個功能表選擇（不允許空白）。"
+
+#~ msgid "Single Textbox"
+#~ msgstr "單行文本框"
+
+#~ msgid "At Least"
+#~ msgstr "至少"
+
+#~ msgid "survey.send.invitation.log"
+#~ msgstr "survey.send.invitation.log"
+
+#~ msgid "Portrait(Vertical)"
+#~ msgstr "縱向"
+
+#~ msgid "Must Be Specific Length"
+#~ msgstr "必須為指定的長度"
+
+#~ msgid "Supplier Selection"
+#~ msgstr "選擇供應商"
+
+#~ msgid ""
+#~ "Minimum Required Answer you entered is greater than the number of answer. "
+#~ "Please use a number that is smaller than %d."
+#~ msgstr "你輸入的最少需要的答復大於答復總數。請用小於%d的數。"
+
+#~ msgid ""
+#~ "#Required Answer you entered is                                     "
+#~ "greater than the number of answer.                                    "
+#~ "Please use a number that is smaller than %d."
+#~ msgstr "你輸入的需要的答復#大於答復數量。請用小於%d的數。"
+
+#~ msgid "Legal (8.5\" x 14\")"
+#~ msgstr "Legal (8.5\" x 14\")"
+
+#~ msgid "Sum of all choices"
+#~ msgstr "所有選擇總數"
+
+#~ msgid "Request"
+#~ msgstr "請求"
+
+#~ msgid ""
+#~ "Minimum Required Answer                                     you entered "
+#~ "is greater than the number of answer.                                    "
+#~ "Please use a number that is smaller than %d."
+#~ msgstr "你輸入的最少需要的答復數大於答復總數。請用小於%d的數。"
+
+#~ msgid ""
+#~ "Maximum Required Answer is greater                                     "
+#~ "than Minimum Required Answer"
+#~ msgstr "最多需要的答復數大於最少需要的答復數"
+
+#~ msgid "User creation"
+#~ msgstr "創建用戶"
+
+#~ msgid "All"
+#~ msgstr "全選"
+
+#~ msgid "Is Answer Type Invisible??"
+#~ msgstr "是否隱藏答復類型？"
+
+#~ msgid "survey.print.answer"
+#~ msgstr "survey.print.answer"
+
+#~ msgid "Menu Choices (each choice on separate by lines)"
+#~ msgstr "功能表選項（每個選項放在單行）"
+
+#~ msgid "Float"
+#~ msgstr "浮點數"
+
+#~ msgid "Weight"
+#~ msgstr "權重"
+
+#~ msgid "Date & Time"
+#~ msgstr "日期和時間"
+
+#~ msgid "Column Name"
+#~ msgstr "列名"
+
+#~ msgid "Survey Pages"
+#~ msgstr "問卷設置"
+
+#~ msgid "Is Answer Type Invisible?"
+#~ msgstr "答案類型是隱藏的嗎？"
+
+#~ msgid "Table"
+#~ msgstr "表格(Table)"
+
+#~ msgid "Maximum Answer per User"
+#~ msgstr "沒用戶最多答復數"
+
+#~ msgid "Page Position"
+#~ msgstr "頁面位置"

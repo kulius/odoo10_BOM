@@ -1,28 +1,59 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * hr
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 08:43+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-11-20 21:31+0800\n"
+"PO-Revision-Date: 2016-12-06 08:52+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:43+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_task_count
+msgid "# Tasks"
+msgstr "# 任務"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "# 供應商發票"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_purchase_order_count
+msgid "# of Purchase Order"
+msgstr "# 採購單"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_sale_order_count
+msgid "# of Sales Order"
+msgstr " # 銷售訂單"
 
 #. module: hr
 #: code:addons/hr/models/hr.py:76
 #, python-format
 msgid "%s (copy)"
-msgstr "%s (副本)"
+msgstr "%s (複製)"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.hr_kanban_view_employees
+msgid ""
+"<span class=\"o_unfollow\">Unfollow</span>\n"
+"                                    <span class=\"o_following\">Following</"
+"span>"
+msgstr ""
+"<span class=\"o_unfollow\">取消關注</span>\n"
+"                                    <span class=\"o_following\">已關注</span>"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
@@ -30,15 +61,46 @@ msgid "<span>Reports</span>"
 msgstr "<span>報表</span>"
 
 #. module: hr
+#: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
+msgid "<span>To Approve</span>"
+msgstr "<span>批准</span>"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
+msgid "<span>To Do</span>"
+msgstr "<span>待辦</span>"
+
+#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_active
 #: model:ir.model.fields,field_description:hr.field_hr_employee_active
 msgid "Active"
-msgstr "活躍"
+msgstr "生效"
+
+#. module: hr
+#: model:ir.model,name:hr.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "輔助核算項"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.view_department_filter
+#: model:ir.ui.view,arch_db:hr.view_employee_filter
+msgid "Archived"
+msgstr "無效"
+
+#. module: hr
+#: model:res.groups,name:hr.group_hr_attendance
+msgid "Attendances"
+msgstr "出勤"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_bank_account_id
 msgid "Bank Account Number"
-msgstr "銀行帳號"
+msgstr "銀行帳戶"
+
+#. module: hr
+#: model:ir.model,name:hr.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "銀行對帳單"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
@@ -48,7 +110,12 @@ msgstr "生日"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_child_ids
 msgid "Child Departments"
-msgstr "下級部門"
+msgstr "子部門"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.view_employee_form
+msgid "Citizenship & Other Information"
+msgstr "國籍和其他資訊"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_city
@@ -56,15 +123,31 @@ msgid "City"
 msgstr "城市"
 
 #. module: hr
+#: model:ir.actions.act_window,help:hr.act_employee_from_department
+#: model:ir.actions.act_window,help:hr.open_view_employee_list_my
+msgid "Click to add a new employee."
+msgstr "點擊添加一個新員工。"
+
+#. module: hr
+#: model:ir.actions.act_window,help:hr.open_module_tree_department
+msgid "Click to create a department."
+msgstr "點擊來創建一個部門。"
+
+#. module: hr
+#: model:ir.actions.act_window,help:hr.action_hr_job
+msgid "Click to define a new job position."
+msgstr "點擊來定義一個新的工作崗位。"
+
+#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_coach_id
 #: model:ir.ui.view,arch_db:hr.view_employee_filter
 msgid "Coach"
-msgstr "指導者"
+msgstr "培訓導師"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_code
 msgid "Code"
-msgstr "代碼"
+msgstr "編碼"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_color
@@ -90,12 +173,12 @@ msgstr "公司"
 #. module: hr
 #: model:ir.ui.menu,name:hr.menu_human_resources_configuration
 msgid "Configuration"
-msgstr "設定"
+msgstr "配置"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Contact Information"
-msgstr "聯絡資料"
+msgstr "聯繫資訊"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_create_uid
@@ -103,7 +186,7 @@ msgstr "聯絡資料"
 #: model:ir.model.fields,field_description:hr.field_hr_employee_create_uid
 #: model:ir.model.fields,field_description:hr.field_hr_job_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_create_date
@@ -111,17 +194,32 @@ msgstr "建立者"
 #: model:ir.model.fields,field_description:hr.field_hr_employee_create_date
 #: model:ir.model.fields,field_description:hr.field_hr_job_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job_no_of_employee
 msgid "Current Number of Employees"
-msgstr "現有員工數目"
+msgstr "當前員工數量"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_property_stock_customer
+msgid "Customer Location"
+msgstr "客戶庫位元"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_birthday
 msgid "Date of Birth"
 msgstr "出生日期"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_hr_employee_calendar_id
+msgid "Define the schedule of resource"
+msgstr "定義資源調度"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_property_delivery_carrier_id
+msgid "Delivery Method"
+msgstr "運輸方式"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_department_id
@@ -145,6 +243,11 @@ msgid "Departments"
 msgstr "部門"
 
 #. module: hr
+#: model:ir.model,name:hr.model_mail_channel
+msgid "Discussion channel"
+msgstr "頻道討論"
+
+#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_display_name
 #: model:ir.model.fields,field_description:hr.field_hr_employee_category_display_name
 #: model:ir.model.fields,field_description:hr.field_hr_employee_display_name
@@ -155,7 +258,22 @@ msgstr "顯示名稱"
 #. module: hr
 #: selection:hr.employee,marital:0
 msgid "Divorced"
-msgstr "離婚"
+msgstr "離異"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_employee_time_efficiency
+msgid "Efficiency Factor"
+msgstr "效率係數"
+
+#. module: hr
+#: model:ir.model,name:hr.model_mail_alias
+msgid "Email Aliases"
+msgstr "Email 別名"
+
+#. module: hr
+#: model:ir.model,name:hr.model_mail_thread
+msgid "Email Thread"
+msgstr "郵件線程"
 
 #. module: hr
 #: model:ir.model,name:hr.model_hr_employee
@@ -171,19 +289,24 @@ msgstr "員工分類"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_category_name
 msgid "Employee Tag"
-msgstr "員工標籤"
+msgstr "員工分類"
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.open_view_categ_form
 #: model:ir.ui.menu,name:hr.menu_view_employee_category_form
 #: model:ir.ui.view,arch_db:hr.view_employee_category_form
 msgid "Employee Tags"
-msgstr "員工標籤"
+msgstr "員工分類"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee_bank_account_id
 msgid "Employee bank salary account"
-msgstr "員工銀行支薪帳戶"
+msgstr "銀行支付員工工資的科目"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.view_employee_form
+msgid "Employee's Name"
+msgstr "員工姓名"
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.act_employee_from_department
@@ -206,20 +329,37 @@ msgid "Employees Structure"
 msgstr "員工架構"
 
 #. module: hr
+#: model:ir.ui.view,arch_db:hr.view_employee_category_list
+msgid "Employees Tags"
+msgstr "員工分類"
+
+#. module: hr
+#: code:addons/hr/models/hr.py:254
+#, python-format
+msgid "Error! You cannot create recursive departments."
+msgstr "錯誤！你不能創建迴圈的部門"
+
+#. module: hr
+#: code:addons/hr/models/hr.py:167
+#, python-format
+msgid "Error! You cannot create recursive hierarchy of Employee(s)."
+msgstr "錯誤！，你不能創建遞迴的員工層次"
+
+#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job_no_of_recruitment
 msgid "Expected New Employees"
-msgstr "即將報到的新員工"
+msgstr "計畫招聘人數"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_job_expected_employees
 msgid ""
 "Expected number of employees for this job position after new recruitment."
-msgstr "此職缺預備招募的人數"
+msgstr "新的招聘後這個工作崗位上期望的員工人數"
 
 #. module: hr
 #: selection:hr.employee,gender:0
 msgid "Female"
-msgstr "女"
+msgstr "女性"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_kanban_view_employees
@@ -240,22 +380,32 @@ msgstr "性別"
 #: model:ir.ui.view,arch_db:hr.view_employee_filter
 #: model:ir.ui.view,arch_db:hr.view_job_filter
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "HR Settings"
-msgstr "人資設定"
+msgstr "人力資源設置"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_product_product_hs_code
+msgid "HS Code"
+msgstr "HS編碼"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job_no_of_hired_employee
 msgid "Hired Employees"
-msgstr "已錄取的員工"
+msgstr "已錄用的員工"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_address_home_id
 msgid "Home Address"
-msgstr "住家地址"
+msgstr "個人收款帳戶"
+
+#. module: hr
+#: model:ir.model,name:hr.model_hr_department
+msgid "Hr Department"
+msgstr "人力資源部門 "
 
 #. module: hr
 #: model:ir.ui.menu,name:hr.menu_hr_main
@@ -268,17 +418,34 @@ msgstr "人力資源"
 #: model:ir.model.fields,field_description:hr.field_hr_employee_id
 #: model:ir.model.fields,field_description:hr.field_hr_job_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_identification_id
 msgid "Identification No"
-msgstr "身份證號碼"
+msgstr "身份證號"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_hr_employee_active
+msgid ""
+"If the active field is set to False, it will allow you to hide the resource "
+"record without removing it."
+msgstr "如果這有效欄位設為否，那麼可以隱藏此記錄且並不刪除它。"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.view_job_filter
+msgid "In Position"
+msgstr "在職"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_job_filter
 msgid "In Recruitment"
-msgstr "正招聘"
+msgstr "正在招聘"
+
+#. module: hr
+#: model:ir.model,name:hr.model_account_invoice
+msgid "Invoice"
+msgstr "發票"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_filter
@@ -286,34 +453,48 @@ msgstr "正招聘"
 #: model:ir.ui.view,arch_db:hr.view_hr_job_tree
 #: model:ir.ui.view,arch_db:hr.view_job_filter
 msgid "Job"
-msgstr "工作"
+msgstr "職務"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job_description
 msgid "Job Description"
-msgstr "工作說明"
+msgstr "崗位描述"
 
 #. module: hr
 #: model:ir.model,name:hr.model_hr_job
 msgid "Job Position"
-msgstr "職位"
+msgstr "工作崗位"
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.action_hr_job
 msgid "Job Positions"
-msgstr "職位"
+msgstr "工作崗位"
+
+#. module: hr
+#: model:ir.actions.act_window,help:hr.action_hr_job
+msgid ""
+"Job Positions are used to define jobs and their requirements.\n"
+"                You can keep track of the number of employees you have per "
+"job\n"
+"                position and follow the evolution according to what you "
+"planned\n"
+"                for the future."
+msgstr ""
+"工作崗位用來定義工作內容和它們的要求。\n"
+"                你可以跟蹤每個工作崗位的員工數量，\n"
+"                並且根據將來的計畫跟蹤進展。"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_job_id
 #: model:ir.model.fields,field_description:hr.field_hr_job_name
 msgid "Job Title"
-msgstr "職稱"
+msgstr "職位"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_jobs_ids
 #: model:ir.ui.view,arch_db:hr.view_job_filter
 msgid "Jobs"
-msgstr "工作"
+msgstr "職務"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department___last_update
@@ -321,7 +502,7 @@ msgstr "工作"
 #: model:ir.model.fields,field_description:hr.field_hr_employee_category___last_update
 #: model:ir.model.fields,field_description:hr.field_hr_job___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_write_uid
@@ -329,7 +510,7 @@ msgstr "最後修改:"
 #: model:ir.model.fields,field_description:hr.field_hr_employee_write_uid
 #: model:ir.model.fields,field_description:hr.field_hr_job_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_write_date
@@ -337,17 +518,32 @@ msgstr "最後更新："
 #: model:ir.model.fields,field_description:hr.field_hr_employee_write_date
 #: model:ir.model.fields,field_description:hr.field_hr_job_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_employee_last_login
+msgid "Latest Connection"
+msgstr "最近連接時間"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.view_hr_job_form
+msgid "Launch Recruitment"
+msgstr "開始招聘"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_login
 msgid "Login"
-msgstr "登入"
+msgstr "登錄名"
+
+#. module: hr
+#: model:ir.model,name:hr.model_stock_production_lot
+msgid "Lot/Serial"
+msgstr "批次/序列號"
 
 #. module: hr
 #: selection:hr.employee,gender:0
 msgid "Male"
-msgstr "男"
+msgstr "男性"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_manager_id
@@ -355,7 +551,7 @@ msgstr "男"
 #: model:ir.ui.view,arch_db:hr.view_employee_filter
 #: model:res.groups,name:hr.group_hr_manager
 msgid "Manager"
-msgstr "經理"
+msgstr "部門經理"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_marital
@@ -370,22 +566,62 @@ msgstr "已婚"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_image_medium
 msgid "Medium-sized photo"
-msgstr "中型尺寸的照片"
+msgstr "中等尺寸圖片"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_hr_employee_image_medium
+msgid ""
+"Medium-sized photo of the employee. It is automatically resized as a "
+"128x128px image, with aspect ratio preserved. Use this field in form views "
+"or some kanban views."
+msgstr ""
+"員工的中等尺寸照片。保留縱橫比例，自動縮放為128x128px的圖片。這個欄位用在表單"
+"視圖和某些看板視圖。"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_member_ids
 msgid "Members"
-msgstr "成員"
+msgstr "所有成員"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_purchase_warn_msg
+msgid "Message for Purchase Order"
+msgstr "採購單消息"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_sale_warn_msg
+msgid "Message for Sales Order"
+msgstr "銷售訂單消息"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_picking_warn_msg
+msgid "Message for Stock Picking"
+msgstr "庫存移動資訊"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_kanban_view_employees
 msgid "Messages"
-msgstr "訊息"
+msgstr "消息"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
+msgid "More <i class=\"fa fa-caret-down\"/>"
+msgstr "更多 <i class=\"fa fa-caret-down\"/>"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_name
 msgid "Name"
 msgstr "名稱"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_employee_country_id
+msgid "Nationality (Country)"
+msgstr "國籍（國家）"
+
+#. module: hr
+#: selection:hr.job,state:0
+msgid "Not Recruiting"
+msgstr "尚未開始招聘"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_note
@@ -400,12 +636,34 @@ msgstr "備註"
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_job_no_of_employee
 msgid "Number of employees currently occupying this job position."
-msgstr "從事此職位的現有員工數量。"
+msgstr "這個工作崗位上現有的員工人數"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_hr_job_no_of_hired_employee
+msgid ""
+"Number of hired employees for this job position during recruitment phase."
+msgstr "招聘階段這個工作崗位已招聘的人數。"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_job_no_of_recruitment
 msgid "Number of new employees you expect to recruit."
-msgstr "您期望聘雇的新員工數量。"
+msgstr "你計畫招聘的新員工數。"
+
+#. module: hr
+#: model:ir.actions.act_window,help:hr.open_module_tree_department
+msgid ""
+"Odoo's department structure is used to manage all documents\n"
+"                related to employees by departments: expenses, timesheets,\n"
+"                leaves and holidays, recruitments, etc."
+msgstr ""
+"Odoo中的部門結構被用來管理所有跟部門員工相關\n"
+"                的文檔：費用、計工單、請假單、假期和招聘等等。\n"
+" "
+
+#. module: hr
+#: model:res.groups,name:hr.group_hr_user
+msgid "Officer"
+msgstr "主管"
 
 #. module: hr
 #: selection:hr.employee,gender:0
@@ -423,19 +681,24 @@ msgid "Parent Department"
 msgstr "上級部門"
 
 #. module: hr
+#: model:ir.model,name:hr.model_res_partner
+msgid "Partner"
+msgstr "業務夥伴"
+
+#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_passport_id
 msgid "Passport No"
-msgstr "護照號碼"
+msgstr "護照號"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Personal Information"
-msgstr "個人資料"
+msgstr "個人資訊"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_image
 msgid "Photo"
-msgstr "照片"
+msgstr "相片"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
@@ -443,19 +706,55 @@ msgid "Position"
 msgstr "職位"
 
 #. module: hr
+#: model:ir.model,name:hr.model_procurement_order
+msgid "Procurement"
+msgstr "補貨"
+
+#. module: hr
+#: model:ir.model,name:hr.model_product_product
+msgid "Product"
+msgstr "產品"
+
+#. module: hr
+#: model:ir.model,name:hr.model_product_template
+msgid "Product Template"
+msgstr "產品範本"
+
+#. module: hr
+#: model:ir.model,name:hr.model_project_project
+msgid "Project"
+msgstr "項目"
+
+#. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Public Information"
-msgstr "公開資訊"
+msgstr "公開信息"
+
+#. module: hr
+#: model:ir.model,name:hr.model_purchase_order
+#: model:ir.model.fields,field_description:hr.field_res_users_purchase_warn
+msgid "Purchase Order"
+msgstr "採購單"
+
+#. module: hr
+#: selection:hr.job,state:0
+msgid "Recruitment in Progress"
+msgstr "招聘進行中"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Related User"
-msgstr "相關使用者"
+msgstr "關聯用戶"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_users_employee_ids
 msgid "Related employees"
-msgstr "相關員工"
+msgstr "相關的員工"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_hr_employee_user_id
+msgid "Related user name for the resource to manage its access."
+msgstr "用於管理資源訪問許可權的用戶名"
 
 #. module: hr
 #: model:ir.ui.menu,name:hr.menu_hr_reporting_timesheet
@@ -465,38 +764,67 @@ msgstr "報表"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job_requirements
 msgid "Requirements"
-msgstr "必備條件"
+msgstr "任職條件"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_resource_id
 msgid "Resource"
-msgstr "資源"
+msgstr "員工"
 
 #. module: hr
-#: model:hr.job,website_description:hr.job_ceo
-#: model:hr.job,website_description:hr.job_consultant
-#: model:hr.job,website_description:hr.job_cto
-#: model:hr.job,website_description:hr.job_developer
-#: model:hr.job,website_description:hr.job_hrm
-#: model:hr.job,website_description:hr.job_marketing
-#: model:hr.job,website_description:hr.job_trainee
-msgid "Responsibilities"
-msgstr "責任人"
+#: model:ir.model.fields,field_description:hr.field_hr_employee_name_related
+msgid "Resource Name"
+msgstr "資源名稱"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_employee_resource_type
+msgid "Resource Type"
+msgstr "資源類型"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_sinid
 msgid "SIN No"
-msgstr "社會保險號碼（加拿大）"
+msgstr "社會保險號SIN"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_ssnid
 msgid "SSN No"
-msgstr "社會保障號碼（美國）"
+msgstr "社會保險號SSN"
+
+#. module: hr
+#: model:ir.model,name:hr.model_sale_order
+#: model:ir.model.fields,field_description:hr.field_res_users_sale_order_ids
+#: model:ir.model.fields,field_description:hr.field_res_users_sale_warn
+msgid "Sales Order"
+msgstr "銷售訂單"
+
+#. module: hr
+#: model:ir.model,name:hr.model_crm_team
+msgid "Sales Team"
+msgstr "銷售團隊"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_res_users_picking_warn
+#: model:ir.model.fields,help:hr.field_res_users_purchase_warn
+#: model:ir.model.fields,help:hr.field_res_users_sale_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"選擇“警告”選項將通知用戶此消息，選擇“阻止消息”選項將拋出一個關於此消息的異常"
+"並阻止流程。此消息須寫入下一個欄位。"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_hr_job_state
+msgid ""
+"Set whether the recruitment process is open or closed for this job position."
+msgstr "設置該職位的招聘進行中或者已結束。"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
 msgid "Settings"
-msgstr "設定"
+msgstr "設置"
 
 #. module: hr
 #: selection:hr.employee,marital:0
@@ -509,14 +837,28 @@ msgid "Small-sized photo"
 msgstr "小尺寸照片"
 
 #. module: hr
+#: model:ir.model.fields,help:hr.field_hr_employee_image_small
+msgid ""
+"Small-sized photo of the employee. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is "
+"required."
+msgstr ""
+"小尺寸的員工照片。保留縱橫比，自動縮放為64x64px。用在任何需要小圖片的場合"
+
+#. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee_sinid
 msgid "Social Insurance Number"
-msgstr "社會保險號碼（加拿大）"
+msgstr "社會保險號"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee_ssnid
 msgid "Social Security Number"
-msgstr "社會保障號碼（美國）"
+msgstr "社會保險號"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_product_product_hs_code
+msgid "Standardized code for international shipping and goods declaration"
+msgstr "國際貨運和商品聲明的標準編碼"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job_state
@@ -526,9 +868,19 @@ msgid "Status"
 msgstr "狀態"
 
 #. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_picking_warn
+msgid "Stock Picking"
+msgstr "庫存分揀"
+
+#. module: hr
 #: model:ir.ui.view,arch_db:hr.view_hr_job_form
 msgid "Stop Recruitment"
-msgstr "停止招募"
+msgstr "停止招聘"
+
+#. module: hr
+#: model:ir.actions.act_window,name:hr.hr_employee_action_subordinate_hierachy
+msgid "Subordinate Hierarchy"
+msgstr "級別層次"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_child_ids
@@ -536,16 +888,94 @@ msgid "Subordinates"
 msgstr "下屬"
 
 #. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_property_purchase_currency_id
+msgid "Supplier Currency"
+msgstr "供應商貨幣"
+
+#. module: hr
+#: sql_constraint:hr.employee.category:0
+msgid "Tag name already exists !"
+msgstr "分類名稱已經存在了 !"
+
+#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_category_ids
 msgid "Tags"
-msgstr "標籤"
+msgstr "分類"
+
+#. module: hr
+#: model:ir.model,name:hr.model_project_task
+msgid "Task"
+msgstr "任務"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_task_ids
+msgid "Tasks"
+msgstr "任務"
+
+#. module: hr
+#: model:ir.model,name:hr.model_mail_test
+msgid "Test Mail Model"
+msgstr "檢查Mail模組"
+
+#. module: hr
+#: sql_constraint:hr.job:0
+msgid "The name of the job position must be unique per department in company!"
+msgstr "公司裏每個部門的任一職位名稱都必須唯一！"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_res_users_property_purchase_currency_id
+msgid ""
+"This currency will be used, instead of the default one, for purchases from "
+"the current partner"
+msgstr "代替預設值，這個貨幣將被用於當前業務夥伴的採購"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_res_users_property_delivery_carrier_id
+msgid "This delivery method will be used when invoicing from picking."
+msgstr "這個運輸方式會在基於分揀開發票的時候使用。"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_hr_employee_time_efficiency
+msgid ""
+"This field depict the efficiency of the resource to complete tasks. e.g  "
+"resource put alone on a phase of 5 days with 5 tasks assigned to him, will "
+"show a load of 100% for this phase by default, but if we put a efficiency of "
+"200%, then his load will only be 50%."
+msgstr ""
+"這個欄位描述完成任務的資源的效率。比如：例如： 資源單獨投入一個階段， 5 天 5 "
+"個任務指派給他，這一階段默認情況將顯示 100%的負荷，下，但如果我們把效率設置"
+"為 200%，他的負荷將只是 50%。"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee_image
 msgid ""
 "This field holds the image used as photo for the employee, limited to "
 "1024x1024px."
-msgstr "此欄位存放圖片作為員工照片，限制大小為 1024*1024 像素。"
+msgstr "這個欄位保存員工的照片，限制為 1024x1024px"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_res_users_property_stock_customer
+msgid ""
+"This stock location will be used, instead of the default one, as the "
+"destination location for goods you send to this partner"
+msgstr "代替預設值，這個庫位作為你出庫到業務夥伴的目的庫位元."
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_res_users_property_stock_supplier
+msgid ""
+"This stock location will be used, instead of the default one, as the source "
+"location for goods you receive from the current partner"
+msgstr "代替預設值，這個庫位將被作為你接收當前業務夥伴產品的源庫位元"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_job_expected_employees
+msgid "Total Forecasted Employees"
+msgstr "預計總的員工數"
+
+#. module: hr
+#: model:ir.model,name:hr.model_stock_picking
+msgid "Transfer"
+msgstr "調撥"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_kanban_view_employees
@@ -553,7 +983,12 @@ msgstr "此欄位存放圖片作為員工照片，限制大小為 1024*1024 像�
 #: model:ir.ui.view,arch_db:hr.view_employee_filter
 #: model:ir.ui.view,arch_db:hr.view_job_filter
 msgid "Unread Messages"
-msgstr "未讀訊息"
+msgstr "未讀信息"
+
+#. module: hr
+#: model:ir.model.fields,help:hr.field_hr_employee_login
+msgid "Used to log into the system"
+msgstr "用於登錄系統"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_user_id
@@ -566,19 +1001,42 @@ msgid "Users"
 msgstr "用戶"
 
 #. module: hr
+#: model:ir.model.fields,field_description:hr.field_res_users_property_stock_supplier
+msgid "Vendor Location"
+msgstr "供應商庫位"
+
+#. module: hr
 #: selection:hr.employee,marital:0
 msgid "Widower"
-msgstr "鰥寡"
+msgstr "喪偶"
+
+#. module: hr
+#: model:ir.actions.act_window,help:hr.act_employee_from_department
+#: model:ir.actions.act_window,help:hr.open_view_employee_list_my
+msgid ""
+"With just a quick glance on the Odoo employee screen, you\n"
+"                can easily find all the information you need for each "
+"person;\n"
+"                contact data, job position, availability, etc."
+msgstr ""
+"只需在Odoo人員招聘模組快速流覽下，你\n"
+"      可以很容易地找到每個人的所有資訊：\n"
+"      聯繫資訊、工作職位、可用性等。"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_work_email
 msgid "Work Email"
-msgstr "工作電子郵件"
+msgstr "辦公郵箱"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_employee_work_location
+msgid "Work Location"
+msgstr "辦公地點"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_mobile_phone
 msgid "Work Mobile"
-msgstr "工作手機"
+msgstr "辦公手機"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_work_phone
@@ -588,12 +1046,45 @@ msgstr "辦公電話"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_address_id
 msgid "Working Address"
-msgstr "辦公地址"
+msgstr "工作地址"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_calendar_id
 msgid "Working Time"
 msgstr "工作時間"
+
+#. module: hr
+#: model:ir.actions.act_window,help:hr.action_hr_job
+msgid ""
+"You can attach a survey to a job position. It will be used in\n"
+"                the recruitment process to evaluate the applicants for this "
+"job\n"
+"                position."
+msgstr ""
+"你可以綁定一個調查表到一個工作崗位。它將使用\n"
+"                招聘流程來評估應聘者對這個\n"
+"                崗位的應聘。"
+
+#. module: hr
+#: model:mail.template,subject:hr.mail_template_data_unknown_employee_email_address
+msgid "Your document has not been created"
+msgstr "你的文檔還沒有被創建"
+
+#. module: hr
+#: model:mail.template,body_html:hr.mail_template_data_unknown_employee_email_address
+msgid ""
+"Your document has not been created because your email address is not "
+"recognized. Please send emails with the email address recorded on your "
+"employee information, or contact your HR manager."
+msgstr ""
+"因為你的郵件位址不能被識別，你的文檔還沒有被創建。請使用你員工資訊上記錄的電"
+"子郵件地址發送郵件或聯繫你的人力資源經理。"
+
+#. module: hr
+#: code:addons/hr/models/mail_thread.py:41
+#, python-format
+msgid "alias %s does not accept unknown employees"
+msgstr "別名 %s 不能接收未知的員工"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_department_form
@@ -603,4 +1094,579 @@ msgstr "部門"
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "e.g. Part Time"
-msgstr "例如：兼差"
+msgstr "例：兼職"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.view_hr_job_form
+msgid "e.g. Sales Manager"
+msgstr "例如：銷售經理"
+
+#. module: hr
+#: code:addons/hr/models/mail_thread.py:41
+#, python-format
+msgid "skipping"
+msgstr "跳過"
+
+#. module: hr
+#: model:res.groups,comment:hr.group_hr_user
+msgid "the user will be able to approve document created by employees."
+msgstr "這個用戶能審批員工創建的文檔"
+
+#. module: hr
+#: model:res.groups,comment:hr.group_hr_manager
+msgid ""
+"the user will have an access to the human resources configuration as well as "
+"statistic reports."
+msgstr "用戶將有許可權訪問人力資源設置以及統計報表。"
+
+#~ msgid "Account Payable"
+#~ msgstr "應付賬款"
+
+#~ msgid "Account Receivable"
+#~ msgstr "應收賬款"
+
+#~ msgid "Bank"
+#~ msgstr "銀行"
+
+#~ msgid "Bill of Material"
+#~ msgstr "物料清單BOM"
+
+#~ msgid "Companies that refers to partner"
+#~ msgstr "業務夥伴相關的公司"
+
+#~ msgid "Contracts"
+#~ msgstr "合同列表"
+
+#~ msgid "Count Payment Token"
+#~ msgstr "按次數付款方式"
+
+#~ msgid "Currency"
+#~ msgstr "貨幣"
+
+#~ msgid "Customer Payment Terms"
+#~ msgstr "客戶支付條款"
+
+#~ msgid "Degree of trust you have in this debtor"
+#~ msgstr "你對借方的信任程度"
+
+#~ msgid "Fiscal Position"
+#~ msgstr "替換規則"
+
+#~ msgid "Has unreconciled entries"
+#~ msgstr "有未核銷的憑證"
+
+#~ msgid "Invoices"
+#~ msgstr "發票"
+
+#~ msgid "Journal Items"
+#~ msgstr "會計憑證"
+
+#~ msgid "Last Online Sale Order"
+#~ msgstr "最近線上訂單"
+
+#~ msgid ""
+#~ "Last time the invoices & payments matching was performed for this "
+#~ "partner. It is set either if there's not at least an unreconciled debit "
+#~ "and an unreconciled credit or if you click the \"Done\" button."
+#~ msgstr ""
+#~ "該業務夥伴的發票和付款匹配的最後時間。當不存在至少一個未對帳的借方記錄和一"
+#~ "個未對賬的貸方記錄時，或者點擊了\"完成\"按鈕時設置該時間。"
+
+#~ msgid "Latest Invoices & Payments Matching Date"
+#~ msgstr "發票和付款最近匹配日期"
+
+#~ msgid "Manufacturing Order"
+#~ msgstr "生產單"
+
+#~ msgid "Message for Invoice"
+#~ msgstr "發票相關資訊"
+
+#~ msgid "Payable Limit"
+#~ msgstr "應付賬款限額"
+
+#~ msgid "Payment Tokens"
+#~ msgstr "付款方式"
+
+#~ msgid "Repair Order"
+#~ msgstr "維修單"
+
+#~ msgid ""
+#~ "The fiscal position will determine taxes and accounts used for the "
+#~ "partner."
+#~ msgstr "替換規則將確定業務夥伴的稅替換和科目替換。"
+
+#~ msgid ""
+#~ "The partner has at least one unreconciled debit and credit since last "
+#~ "time the invoices & payments matching was performed."
+#~ msgstr ""
+#~ "從上次發票和付款被執行匹配以來，這個業務夥伴至少有一個未被核銷的借方和貸方"
+
+#~ msgid ""
+#~ "The user will gain access to the human resources attendance menu, "
+#~ "enabling him to manage his own attendance."
+#~ msgstr "用戶將有許可權訪問人力資源考勤功能表，允許他來管理自己的考勤。"
+
+#~ msgid ""
+#~ "This account will be used instead of the default one as the payable "
+#~ "account for the current partner"
+#~ msgstr "代替預設值，，這科目將用於當前業務夥伴的默認應付賬款科目"
+
+#~ msgid ""
+#~ "This account will be used instead of the default one as the receivable "
+#~ "account for the current partner"
+#~ msgstr "代替預設值，，這科目將用於當前業務夥伴的默認應收賬款科目"
+
+#~ msgid ""
+#~ "This payment term will be used instead of the default one for purchase "
+#~ "orders and vendor bills"
+#~ msgstr "代替預設值，此支付條款將用於採購單或供應商發票"
+
+#~ msgid ""
+#~ "This payment term will be used instead of the default one for sale orders "
+#~ "and customer invoices"
+#~ msgstr "代替預設值，該付款方式將被使用在銷售訂單和客戶發票上"
+
+#~ msgid "Total Invoiced"
+#~ msgstr "已開票總額"
+
+#~ msgid "Total Payable"
+#~ msgstr "應付賬款合計"
+
+#~ msgid "Total Receivable"
+#~ msgstr "應收賬款合計"
+
+#~ msgid "Total amount this customer owes you."
+#~ msgstr "這個客戶欠款總額。"
+
+#~ msgid "Total amount you have to pay to this vendor."
+#~ msgstr "你必須支付給這個供應商的總額。"
+
+#~ msgid "Unbuild Order"
+#~ msgstr "拆裝單"
+
+#~ msgid "Utility field to express amount currency"
+#~ msgstr "顯示貨幣數額的功能欄位"
+
+#~ msgid "Vendor Payment Terms"
+#~ msgstr "供應商支付條款"
+
+#~ msgid "Work Order"
+#~ msgstr "工單"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid "Click to define a new department."
+#~ msgstr "點擊來定義一個新的部門。"
+
+#~ msgid "Create Your Departments"
+#~ msgstr "創建你的部門"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "記錄上最後發表的資訊日期"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果要求你關注新消息，勾選此項"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選，你需要注意查看新消息"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Job Name"
+#~ msgstr "崗位名稱"
+
+#~ msgid "Job Position Name"
+#~ msgstr "工作崗位名稱"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最後資訊日期"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動數量"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的消息數"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid "Open HR Menu"
+#~ msgstr "打開“人力資源”菜單"
+
+#~ msgid "Recruitment Closed"
+#~ msgstr "招聘結束"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息計數"
+
+#~ msgid "Update Date"
+#~ msgstr "更新日期"
+
+#~ msgid ""
+#~ "Your departments structure is used to manage all documents\n"
+#~ "                related to employees by departments: expenses and "
+#~ "timesheets,\n"
+#~ "                leaves and holidays, recruitments, etc."
+#~ msgstr ""
+#~ "你的的部門結構 用來管理所有跟部門員工相關\n"
+#~ "                的單據：費用、計工單、請假、\n"
+#~ "                假期和招聘等等。"
+
+#~ msgid "Important Messages"
+#~ msgstr "重要消息"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和通信歷史"
+
+#, fuzzy
+#~ msgid "Define a clear communication strategy"
+#~ msgstr "消息和通信歷史"
+
+#, fuzzy
+#~ msgid "Hire a team of great Human Resources people"
+#~ msgstr "設置人力資源"
+
+#, fuzzy
+#~ msgid "Human Resources Manager"
+#~ msgstr "人力資源管理"
+
+#, fuzzy
+#~ msgid "Must have ..."
+#~ msgstr "規則必須至少有一個檢查訪問許可權"
+
+#, fuzzy
+#~ msgid "Responsibilities"
+#~ msgstr "負責人"
+
+#, fuzzy
+#~ msgid "Team spirit and good communication"
+#~ msgstr "消息和通信歷史"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new job position.\n"
+#~ "              </p><p>\n"
+#~ "                Job Positions are used to define jobs and their "
+#~ "requirements.\n"
+#~ "                You can keep track of the number of employees you have "
+#~ "per job\n"
+#~ "                position and follow the evolution according to what you "
+#~ "planned\n"
+#~ "                for the future.\n"
+#~ "              </p><p>\n"
+#~ "                You can attach a survey to a job position. It will be "
+#~ "used in\n"
+#~ "                the recruitment process to evaluate the applicants for "
+#~ "this job\n"
+#~ "                position.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                單擊來定義一個新的工作崗位。\n"
+#~ "              </p><p>\n"
+#~ "               工作崗位用來定義工作和他們的要求。\n"
+#~ "                你能跟蹤跟蹤每個工作崗位的員工數，並且根據你未來的計畫跟進"
+#~ "變化。\n"
+#~ "              </p><p>\n"
+#~ "                你能為工作崗位附加一個調查表. 用於在招聘過程中評估這個崗位"
+#~ "的申請人。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid "Allocates attendance group to all users."
+#~ msgstr "分配考勤組給全體用戶"
+
+#~ msgid ""
+#~ "Allow invoicing based on timesheets (the sale application will be "
+#~ "installed)"
+#~ msgstr "允許基於計工單開票（銷售應用模組將被安裝）"
+
+#~ msgid "Allow timesheets validation by managers"
+#~ msgstr "允許管理人員核准計工單"
+
+#~ msgid "Child Categories"
+#~ msgstr "子分類"
+
+#~ msgid "Drive engagement with challenges and badges"
+#~ msgstr "使用挑戰和勳章進行激勵管理"
+
+#~ msgid "Employees Categories"
+#~ msgstr "員工分類"
+
+#~ msgid "Error! You cannot create recursive category."
+#~ msgstr "錯誤！你不能創建迴圈的分類。"
+
+#~ msgid "Install attendances feature"
+#~ msgstr "安裝出勤管理功能"
+
+#~ msgid "Manage employees expenses"
+#~ msgstr "管理員工的費用"
+
+#~ msgid "Manage holidays, leaves and allocation requests"
+#~ msgstr "管理假期、請假和分配請求"
+
+#~ msgid "Manage payroll"
+#~ msgstr "管理工資條"
+
+#~ msgid "Manage the recruitment process"
+#~ msgstr "管理招聘流程"
+
+#~ msgid "Manage timesheets"
+#~ msgstr "管理計工單"
+
+#~ msgid "New Mail"
+#~ msgstr "新郵件"
+
+#~ msgid "Organize employees periodic evaluation"
+#~ msgstr "組織員工定期評估"
+
+#~ msgid "Parent Employee Tag"
+#~ msgstr "上級員工分類"
+
+#~ msgid "Publish jobs on your website"
+#~ msgstr "發佈職位"
+
+#~ msgid "Record contracts per employee"
+#~ msgstr "記錄每個員工的聯繫人"
+
+#~ msgid "Recruitment"
+#~ msgstr "招聘"
+
+#~ msgid ""
+#~ "This installs the module account_analytic_analysis, which will install "
+#~ "sales management too."
+#~ msgstr "為此要安裝模組 account_analytic_analysis, 也將安裝銷售管理"
+
+#~ msgid "This installs the module hr_attendance."
+#~ msgstr "為此要安裝模組 hr_attendance."
+
+#~ msgid "This installs the module hr_contract."
+#~ msgstr "為此要安裝模組hr_contract."
+
+#~ msgid "This installs the module hr_evaluation."
+#~ msgstr "為此要安裝模組 hr_evaluation."
+
+#~ msgid "This installs the module hr_expense."
+#~ msgstr "為此要安裝模組hr_expense."
+
+#~ msgid "This installs the module hr_gamification."
+#~ msgstr "這需要安裝模組 hr_gamification."
+
+#~ msgid "This installs the module hr_holidays."
+#~ msgstr "為此要安裝模組 hr_holidays."
+
+#~ msgid "This installs the module hr_payroll."
+#~ msgstr "為此要安裝模組 hr_payroll."
+
+#~ msgid "This installs the module hr_recruitment."
+#~ msgstr "為此要安裝模組hr_recruitment."
+
+#~ msgid "This installs the module hr_timesheet."
+#~ msgstr "為此要安裝模組hr_timesheet."
+
+#~ msgid "This installs the module hr_timesheet_sheet."
+#~ msgstr "為此要安裝模組hr_timesheet_sheet."
+
+#~ msgid "This installs the module website_hr_recruitment"
+#~ msgstr "為此要安裝模組website_hr_recruitment."
+
+#~ msgid "Track attendances for all employees"
+#~ msgstr "跟蹤員工出勤率"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "hr.config.settings"
+#~ msgstr "hr.config.settings"
+
+#~ msgid "Additional Features"
+#~ msgstr "附加特性"
+
+#~ msgid "Allows you to manage employees by department."
+#~ msgstr "允許你根據部門來管理員工。"
+
+#~ msgid "Apply"
+#~ msgstr "應用"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Delete"
+#~ msgstr "刪除"
+
+#~ msgid "Department Settings"
+#~ msgstr "部門設置"
+
+#~ msgid "Display Employees Suggestions"
+#~ msgstr "顯示員工建議"
+
+#~ msgid "Expenses"
+#~ msgstr "費用"
+
+#~ msgid "Following"
+#~ msgstr "正在關注"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保留複雜的摘要(消息數量,……等)。為了插入到看板視圖，這一摘要直接是是HTML格"
+#~ "式。"
+
+#~ msgid "Install your country's payroll"
+#~ msgstr "安裝你所在國家的工資表"
+
+#~ msgid "Leaves"
+#~ msgstr "請假"
+
+#~ msgid "Manage employees by department"
+#~ msgstr "根據部門管理人員"
+
+#~ msgid "Other Id"
+#~ msgstr "其他證件號"
+
+#~ msgid "Payroll"
+#~ msgstr "工資"
+
+#~ msgid "Suggested Employees"
+#~ msgstr "推薦的員工"
+
+#~ msgid "Summary"
+#~ msgstr "摘要"
+
+#~ msgid "Talent Management"
+#~ msgstr "人才管理"
+
+#~ msgid "Time Tracking"
+#~ msgstr "考勤跟蹤"
+
+#~ msgid "Timesheets & Attendances"
+#~ msgstr "計工單和參加者"
+
+#~ msgid "To Do"
+#~ msgstr "待辦"
+
+#~ msgid "Unfollow"
+#~ msgstr "取消關注"
+
+#~ msgid "Website"
+#~ msgstr "網站"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid ""
+#~ "Number of hired employee must be less than expected number of employee in "
+#~ "recruitment."
+#~ msgstr "已招聘的員工數必須小於在招聘中期望的員工數。"
+
+#~ msgid "Welcome to %s! Please help him/her take the first steps with Odoo!"
+#~ msgstr "歡迎 %s！請幫助他/她度過使用Odoo的初始階段！"
+
+#~ msgid "new employee(s) expected"
+#~ msgstr "期望新員工"
+
+#~ msgid "no_of_recruitment"
+#~ msgstr "不屬於招聘"
+
+#~ msgid ""
+#~ "$('.oe_employee_picture').load(function() { if($(this).width() > $(this)."
+#~ "height()) { $(this).addClass('oe_employee_picture_wide') } });"
+#~ msgstr ""
+#~ "$('.oe_employee_picture').load(function() { if($(this).width() > $(this)."
+#~ "height()) { $(this).addClass('oe_employee_picture_wide') } });"
+
+#~ msgid "hr.department"
+#~ msgstr "人力資源部"
+
+#~ msgid "Openerp user"
+#~ msgstr "Odoo用戶"
+
+#~ msgid "Link the employee to information"
+#~ msgstr "員工資訊鏈結"
+
+#~ msgid ""
+#~ "The Related user field on the Employee form allows to link the Odoo user "
+#~ "(and her rights) to the employee."
+#~ msgstr "系統用戶的員工欄位（包括他的許可權）。"
+
+#~ msgid "Other information"
+#~ msgstr "其他資訊"
+
+#~ msgid "Human Resources Dashboard"
+#~ msgstr "人力資源儀錶板"
+
+#~ msgid "Employee form and structure"
+#~ msgstr "員工組成與結構"
+
+#~ msgid "Employee Contact"
+#~ msgstr "員工聯繫方式"
+
+#~ msgid "Employee Contract"
+#~ msgstr "員工合約"
+
+#~ msgid ""
+#~ "In the Employee form, there are different kind of information like "
+#~ "Contact information."
+#~ msgstr "員工資訊表單裏有多種不同的資訊如聯繫資訊。"
+
+#~ msgid "Creation of a Odoo user"
+#~ msgstr "創建系統用戶"
+
+#~ msgid ""
+#~ "<div class=\"oe_empty_custom_dashboard\">\n"
+#~ "                  <p>\n"
+#~ "                    <b>Human Resources dashboard is empty.</b>\n"
+#~ "                  </p><p>\n"
+#~ "                    To add your first report into this dashboard, go to "
+#~ "any\n"
+#~ "                    menu, switch to list or graph view, and click <i>'Add "
+#~ "to\n"
+#~ "                    Dashboard'</i> in the extended search options.\n"
+#~ "                  </p><p>\n"
+#~ "                    You can filter and group data before inserting into "
+#~ "the\n"
+#~ "                    dashboard using the search options.\n"
+#~ "                  </p>\n"
+#~ "              </div>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<div class=\"oe_empty_custom_dashboard\">\n"
+#~ "                  <p>\n"
+#~ "                    <b>人力資源的儀錶板是空的.</b>\n"
+#~ "                  </p><p>\n"
+#~ "                    要增加第一個報表到儀錶板。\n"
+#~ "                    進入任意菜單，切換為列表視圖或者圖形視圖，\n"
+#~ "                   然後在擴展搜索選項裏單擊“添加到儀錶板”\n"
+#~ "                           </p><p>\n"
+#~ "                   在插入到儀錶板之前，你能過濾和分組這些資料.\n"
+#~ "                  </p>\n"
+#~ "              </div>\n"
+#~ "            "
+
+#~ msgid "Expected in Recruitment"
+#~ msgstr "招聘人數"
+
+#~ msgid "Mobile:"
+#~ msgstr "手機："
+
+#~ msgid "Tel:"
+#~ msgstr "電話:"
+
+#~ msgid "Parent Category"
+#~ msgstr "上級分類"
+
+#~ msgid "Category"
+#~ msgstr "分類"
+
+#~ msgid "ir.actions.act_window"
+#~ msgstr "ir.actions.act_window"

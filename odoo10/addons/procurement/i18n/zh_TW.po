@@ -1,22 +1,51 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * procurement
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-06-13 10:08+0000\n"
-"Last-Translator: Martin Trigaux\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
-"language/zh_TW/)\n"
+"POT-Creation-Date: 2016-09-04 19:14+0800\n"
+"PO-Revision-Date: 2016-12-12 14:05+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:54+0000\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: procurement
+#: model:ir.actions.act_window,help:procurement.procurement_order_action_exceptions
+msgid ""
+"A <b>Procurement Exception</b> occurs when the system cannot find a way to "
+"fulfill a procurement. Some exceptions will resolve themselves "
+"automatically, but others require manual intervention (those are identified "
+"by a specific error message in the chatter)."
+msgstr ""
+"一個<b>補貨異常</b> 發生在系統找不到一個滿足補貨的途徑時。有些異常會被自動處"
+"理，其他的需要人工介入（這種異常會在收件箱中用特定錯誤消息進行識別）"
+
+#. module: procurement
+#: model:ir.actions.act_window,help:procurement.procurement_action
+#: model:ir.actions.act_window,help:procurement.procurement_order_action_product_product_stat
+#: model:ir.actions.act_window,help:procurement.procurement_order_action_product_template_stat
+msgid ""
+"A <b>procurement order</b> is used to record a need for a specific\n"
+"                product at a specific location. Procurement orders are "
+"usually\n"
+"                created automatically from <i>sales orders, pull logistic "
+"rules or\n"
+"                minimum stock rules.</i>"
+msgstr ""
+"一個 <b>補貨單</b> 用來記錄一個特定庫位元\n"
+"                的特定產品product。 補貨單經常從\n"
+"               <i>銷售訂單、拉式流或\n"
+"                最小庫存規則</i>自動生成。"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_action
@@ -26,12 +55,17 @@ msgstr "動作"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_active
 msgid "Active"
-msgstr "活躍"
+msgstr "生效"
 
 #. module: procurement
 #: selection:procurement.group,move_type:0
 msgid "All at once"
-msgstr "一次過"
+msgstr "任何一次"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_procurement_rule_filter
+msgid "Archived"
+msgstr "已存檔"
 
 #. module: procurement
 #: model:ir.ui.view,arch_db:procurement.view_compute_schedulers_wizard
@@ -39,9 +73,35 @@ msgid "Cancel"
 msgstr "取消"
 
 #. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "Cancel Procurement"
+msgstr "取消補貨單"
+
+#. module: procurement
 #: selection:procurement.order,state:0
 msgid "Cancelled"
-msgstr "取消"
+msgstr "已取消"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "Check Procurement"
+msgstr "檢查補貨單"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_order_rule_id
+msgid ""
+"Chosen rule for the procurement resolution. Usually chosen by the system but "
+"can be manually set by the procurement manager to force an unusual behavior."
+msgstr ""
+"為正式的需求選擇規則，通常是由系統選擇的，但可以通過採購經理進行手動設置，進"
+"行一個特殊的操作。"
+
+#. module: procurement
+#: model:ir.actions.act_window,help:procurement.procurement_action
+#: model:ir.actions.act_window,help:procurement.procurement_order_action_product_product_stat
+#: model:ir.actions.act_window,help:procurement.procurement_order_action_product_template_stat
+msgid "Click to create a procurement order."
+msgstr "點擊來創建一個新補貨單。"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_company_id
@@ -50,9 +110,19 @@ msgid "Company"
 msgstr "公司"
 
 #. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_compute_schedulers_wizard
+msgid "Compute all procurements in the background."
+msgstr "計算後臺的所有產品需求"
+
+#. module: procurement
+#: model:ir.model,name:procurement.model_procurement_order_compute_all
+msgid "Compute all schedulers"
+msgstr "計算所有排程"
+
+#. module: procurement
 #: selection:procurement.order,state:0
 msgid "Confirmed"
-msgstr "確認"
+msgstr "已確認"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group_create_uid
@@ -60,7 +130,7 @@ msgstr "確認"
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_create_uid
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建者"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group_create_date
@@ -68,12 +138,17 @@ msgstr "建立者"
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_create_date
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建在"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_group_move_type
+msgid "Delivery Type"
+msgstr "配送種類"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_name
 msgid "Description"
-msgstr "說明"
+msgstr "描述"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group_display_name
@@ -86,27 +161,53 @@ msgstr "顯示名稱"
 #. module: procurement
 #: selection:procurement.order,state:0
 msgid "Done"
-msgstr "完成"
+msgstr "已完成"
 
 #. module: procurement
 #: selection:procurement.order,state:0
 msgid "Exception"
-msgstr "異常情況"
+msgstr "異常"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_procurement_filter
+msgid "Exceptions"
+msgstr "異常"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "External note..."
+msgstr "外部備註 ..."
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "Extra Information"
+msgstr "其他資訊"
 
 #. module: procurement
 #: selection:procurement.rule,group_propagation_option:0
 msgid "Fixed"
-msgstr "固定"
+msgstr "固定的"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_rule_group_id
+msgid "Fixed Procurement Group"
+msgstr "相關補貨單"
 
 #. module: procurement
 #: model:ir.ui.view,arch_db:procurement.view_procurement_rule_filter
 msgid "Global"
-msgstr "全域"
+msgstr "全局"
 
 #. module: procurement
 #: model:ir.ui.view,arch_db:procurement.view_procurement_filter
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組"
+
+#. module: procurement
+#: model:ir.actions.act_window,name:procurement.do_view_procurements
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "Group's Procurements"
+msgstr "同組補貨"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group_id
@@ -114,12 +215,17 @@ msgstr "分組方式"
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_id
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_procurement_rule_filter
+msgid "If the route is global"
+msgstr "如果路線是全局規則"
 
 #. module: procurement
 #: model:ir.model.fields,help:procurement.field_procurement_rule_active
 msgid "If unchecked, it will allow you to hide the rule without removing it."
-msgstr "如果不選中，允許您隱藏規則而無需刪除"
+msgstr "如果沒有選中，那麼將隱藏這個規則而不會刪除它。"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group___last_update
@@ -127,7 +233,7 @@ msgstr "如果不選中，允許您隱藏規則而無需刪除"
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_compute_all___last_update
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最近修改日期"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group_write_uid
@@ -135,7 +241,7 @@ msgstr "最後修改:"
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_write_uid
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新者"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group_write_date
@@ -143,7 +249,7 @@ msgstr "最後更新："
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_write_date
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
 
 #. module: procurement
 #: model:ir.ui.view,arch_db:procurement.view_procurement_filter
@@ -151,19 +257,40 @@ msgid "Late"
 msgstr "延遲"
 
 #. module: procurement
+#: selection:procurement.rule,group_propagation_option:0
+msgid "Leave Empty"
+msgstr "留空"
+
+#. module: procurement
+#: model:ir.actions.act_window,help:procurement.procurement_order_action_exceptions
+msgid ""
+"Most common exceptions are products to purchase without\n"
+"                having a vendor defined on the product, and products to\n"
+"                manufacture without having a bill of materials."
+msgstr ""
+"大部分異常都是計畫採購的產品沒有在新建產品時添加相應的供應商，或者是計畫生產"
+"的產品沒有物料清單。"
+
+#. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_name
 msgid "Name"
 msgstr "名稱"
 
 #. module: procurement
+#: code:addons/procurement/models/procurement.py:189
+#, python-format
+msgid "No rule matching this procurement"
+msgstr "沒有匹配的採購規則"
+
+#. module: procurement
 #: selection:procurement.order,priority:0
 msgid "Normal"
-msgstr "正常"
+msgstr "一般"
 
 #. module: procurement
 #: selection:procurement.order,priority:0
 msgid "Not urgent"
-msgstr "不緊急"
+msgstr "非緊急"
 
 #. module: procurement
 #: model:ir.ui.view,arch_db:procurement.procurement_form_view
@@ -173,24 +300,43 @@ msgstr "備註"
 #. module: procurement
 #: selection:procurement.group,move_type:0
 msgid "Partial"
-msgstr "部份"
+msgstr "部分"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_priority
 msgid "Priority"
-msgstr "優先次序"
+msgstr "優先順序"
 
 #. module: procurement
 #: model:ir.model,name:procurement.model_procurement_order
 #: model:ir.ui.view,arch_db:procurement.procurement_form_view
 #: model:ir.ui.view,arch_db:procurement.view_procurement_filter
 msgid "Procurement"
-msgstr "採購"
+msgstr "補貨單"
+
+#. module: procurement
+#: model:ir.actions.act_window,name:procurement.procurement_action5
+#: model:ir.actions.act_window,name:procurement.procurement_order_action_exceptions
+#: model:ir.ui.view,arch_db:procurement.view_procurement_filter
+msgid "Procurement Exceptions"
+msgstr "補貨異常"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_group_id
 msgid "Procurement Group"
-msgstr "補貨組"
+msgstr "拉動規則"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_tree_view
+msgid "Procurement Lines"
+msgstr "補貨單明細"
+
+#. module: procurement
+#: model:ir.actions.act_window,name:procurement.procurement_action
+#: model:ir.actions.act_window,name:procurement.procurement_order_action_product_product_stat
+#: model:ir.actions.act_window,name:procurement.procurement_order_action_product_template_stat
+msgid "Procurement Orders"
+msgstr "補貨單"
 
 #. module: procurement
 #: model:ir.model,name:procurement.model_procurement_group
@@ -201,7 +347,7 @@ msgstr "補貨申請"
 #: model:ir.model,name:procurement.model_procurement_rule
 #: model:ir.ui.view,arch_db:procurement.view_procurement_rule_form
 msgid "Procurement Rule"
-msgstr "補貨規則"
+msgstr "拉動規則"
 
 #. module: procurement
 #: model:ir.ui.view,arch_db:procurement.view_procurement_rule_tree
@@ -209,12 +355,22 @@ msgid "Procurement Rules"
 msgstr "補貨規則"
 
 #. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_group_form_view
+msgid "Procurement group"
+msgstr "需求組"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_procurement_filter
+msgid "Procurement started late"
+msgstr "沒有按期開始的補貨單"
+
+#. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group_procurement_ids
 #: model:ir.ui.view,arch_db:procurement.procurement_group_form_view
 #: model:ir.ui.view,arch_db:procurement.product_product_view_form_procurement_button
 #: model:ir.ui.view,arch_db:procurement.product_template_view_form_procurement_button
 msgid "Procurements"
-msgstr "採購計劃"
+msgstr "補貨單"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_product_id
@@ -225,7 +381,22 @@ msgstr "產品"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_product_uom
 msgid "Product Unit of Measure"
-msgstr "產品量度單位"
+msgstr "產品計量單位"
+
+#. module: procurement
+#: selection:procurement.rule,group_propagation_option:0
+msgid "Propagate"
+msgstr "調撥"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_procurement_rule_form
+msgid "Propagation Options"
+msgstr "移動選項"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_rule_group_propagation_option
+msgid "Propagation of Procurement Group"
+msgstr "補貨組移動"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_product_qty
@@ -233,35 +404,83 @@ msgid "Quantity"
 msgstr "數量"
 
 #. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "Reconfirm Procurement"
+msgstr "計算需求"
+
+#. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_group_name
 msgid "Reference"
-msgstr "參考"
+msgstr "參數"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_order_origin
+msgid ""
+"Reference of the document that created this Procurement. This is "
+"automatically completed by Odoo."
+msgstr "參考創建補貨單相關文檔。這裏由Odoo系統自動完成。"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_order_rule_id
+msgid "Rule"
+msgstr "規則"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "Run Procurement"
+msgstr "計算需求"
+
+#. module: procurement
+#: model:ir.actions.server,name:procurement.procurement_order_server_action
+msgid "Run Procurements"
+msgstr "運行補貨"
 
 #. module: procurement
 #: model:ir.actions.act_window,name:procurement.action_compute_schedulers
 #: model:ir.ui.view,arch_db:procurement.view_compute_schedulers_wizard
 msgid "Run Schedulers"
-msgstr "執行排程器"
+msgstr "進行MRP運算"
 
 #. module: procurement
 #: selection:procurement.order,state:0
 msgid "Running"
-msgstr "運行中"
+msgstr "正在處理"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_date_planned
 msgid "Scheduled Date"
-msgstr "預定日期"
+msgstr "計畫日期"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_procurement_filter
+msgid "Scheduled Month"
+msgstr "計畫月份"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_compute_schedulers_wizard
+msgid "Scheduler Parameters"
+msgstr "排程參數"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "Scheduling"
+msgstr "排程"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_procurement_filter
+#: model:ir.ui.view,arch_db:procurement.view_procurement_rule_filter
+msgid "Search Procurement"
+msgstr "搜索補貨單"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_rule_sequence
 msgid "Sequence"
-msgstr "序列"
+msgstr " 序列"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_origin
 msgid "Source Document"
-msgstr "源單據"
+msgstr "關聯單據"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_order_state
@@ -270,16 +489,684 @@ msgid "Status"
 msgstr "狀態"
 
 #. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_rule_name
+msgid "This field will fill the packing origin and the name of its moves"
+msgstr "這個區域將填入分揀源和庫存移動的名稱"
+
+#. module: procurement
 #: model:ir.ui.view,arch_db:procurement.procurement_tree_view
 msgid "Unit of Measure"
-msgstr "量度單位"
+msgstr "計量單位"
 
 #. module: procurement
 #: selection:procurement.order,priority:0
 msgid "Urgent"
-msgstr "緊急"
+msgstr "緊急的"
 
 #. module: procurement
 #: selection:procurement.order,priority:0
 msgid "Very Urgent"
 msgstr "非常緊急"
+
+#. module: procurement
+#: model:ir.actions.act_window,help:procurement.procurement_action
+#: model:ir.actions.act_window,help:procurement.procurement_order_action_product_product_stat
+#: model:ir.actions.act_window,help:procurement.procurement_order_action_product_template_stat
+msgid ""
+"When the procurement order is confirmed, it automatically\n"
+"                creates the necessary operations to fulfill the need: "
+"purchase\n"
+"                order proposition, manufacturing order, etc."
+msgstr ""
+"當補貨單確認後，系統將會自動創建後續需要執行的操作：生成採購訂單，生產工單。"
+
+#. module: procurement
+#: code:addons/procurement/models/procurement.py:144
+#, python-format
+msgid "You cannot delete procurements that are in cancel state."
+msgstr "你不能刪除處於取消狀態的補貨。"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.view_procurement_rule_form
+msgid "e.g. Buy"
+msgstr "例如:採購"
+
+#. module: procurement
+#: model:ir.ui.view,arch_db:procurement.procurement_form_view
+msgid "e.g. SO005"
+msgstr "例：SO005"
+
+#~ msgid "Logistics"
+#~ msgstr "物流"
+
+#~ msgid ""
+#~ "<b>Procurement Orders</b> represent the need for a certain quantity of "
+#~ "products, at a given time, in a given location."
+#~ msgstr "<b>補貨單</b> 表示在特定時間，特定庫位元需要特定數量的產品。"
+
+#~ msgid ""
+#~ "<b>Sales Orders</b> are one typical source of Procurement Orders (but "
+#~ "these are distinct documents). \n"
+#~ "                <br>Depending on the procurement parameters and the "
+#~ "product configuration, the procurement engine will attempt to satisfy the "
+#~ "need by reserving products from stock, ordering products from a supplier, "
+#~ "or passing a manufacturing order, etc..."
+#~ msgstr ""
+#~ "<b>銷售訂單</b> 是補貨單一個典型的源(但兩者是不同的文檔)。 \n"
+#~ "                <br/>補貨引擎將根據補貨參數和產品設置，嘗試在庫存預留產"
+#~ "品、向供應商訂購產品或者批准生產單等方式來滿足補貨需求。"
+
+#~ msgid "Action Needed"
+#~ msgstr "需要行動"
+
+#~ msgid "Cannot delete Procurement Order(s) which are in %s state."
+#~ msgstr "不能刪除%s 狀態的需求訂單"
+
+#~ msgid ""
+#~ "Click to create a Procurement order in exception state, or remove the "
+#~ "filter on the search bar to display all the procurements."
+#~ msgstr ""
+#~ "點擊來創建一個在異常狀態的補貨單，或移去搜索欄中的搜索條件來顯示所有的補"
+#~ "貨。"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "發佈在記錄上最後資訊的日期"
+
+#~ msgid "Delivery Method"
+#~ msgstr "供貨方式"
+
+#~ msgid "Followers"
+#~ msgstr "關注者"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "關注者（頻道）"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "關注者（業務夥伴）"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "如果要求你關注新消息，勾選此項"
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "如果勾選了，需要你注意查看新消息"
+
+#~ msgid "Is Follower"
+#~ msgstr "是關注者"
+
+#~ msgid "Last Message Date"
+#~ msgstr "最後消息的日期"
+
+#~ msgid "Messages"
+#~ msgstr "消息"
+
+#~ msgid "Number of Actions"
+#~ msgstr "行動數量"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要行動的資訊數量"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "未讀資訊數量"
+
+#~ msgid ""
+#~ "Reference of the document that created this Procurement.\n"
+#~ "This is automatically completed by Odoo."
+#~ msgstr ""
+#~ "創建此補貨單的原始單據號。\n"
+#~ "此項由Odoo自動填寫。"
+
+#~ msgid "Unread Messages"
+#~ msgstr "未讀信息"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "未讀消息計數"
+
+#~ msgid ""
+#~ "When the procurement order is confirmed, it automatically\n"
+#~ "                creates the necessary operations to fullfil the need: "
+#~ "purchase\n"
+#~ "                order proposition, manufacturing order, etc."
+#~ msgstr ""
+#~ "當補貨單被確認後,它自動創建\n"
+#~ "                必須的操作來滿足這個需求：採購\n"
+#~ "                單建議、生產單等等。"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "消息和通信歷史"
+
+#~ msgid "Website Messages"
+#~ msgstr "網站消息"
+
+#~ msgid "Website communication history"
+#~ msgstr "網站溝通記錄"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                 Click to create a Procurement order in exception state, "
+#~ "or remove the filter on the search bar to display all the procurements.\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                <b>Procurement Orders</b> represent the need for a "
+#~ "certain quantity of products, at a given time, in a given location.\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                <b>Sales Orders</b> are one typical source of Procurement "
+#~ "Orders (but these are distinct documents). \n"
+#~ "                <br>Depending on the procurement parameters and the "
+#~ "product configuration, the procurement engine will attempt to satisfy the "
+#~ "need by reserving products from stock, ordering products from a supplier, "
+#~ "or passing a manufacturing order, etc...\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                A <b>Procurement Exception</b> occurs when the system "
+#~ "cannot find a way to fulfill a procurement. Some exceptions will resolve "
+#~ "themselves automatically, but others require manual intervention (those "
+#~ "are identified by a specific error message in the chatter).\n"
+#~ "              </p>"
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                 在顯示異常視圖，點擊來創建一個的補貨單，或在搜索欄移去過"
+#~ "濾器來顯示所有補貨單。\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                <b>補貨單</b> 代表了在特定庫位、特定時間對特定數量的產品的"
+#~ "需求。\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                <b>銷售訂單</b> 是典型的補貨單（它們屬於明確的文檔）。 \n"
+#~ "                <br/>取決於補貨參數和產品設置，補貨引擎將嘗試通過從庫存保"
+#~ "留產品、從供應商採購或生成生產單等來滿足需求。\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                A <b>補貨異常</b> 發生在當系統不能找到滿足需求的方法的時"
+#~ "候。一些異常能自己自動解決，但是有一些需要人工介入（它們可以通過在聊天視窗"
+#~ "會產生錯誤資訊來識別）。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                 Click to create a procurement order.  \n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                A <b>procurement order</b> is used to record a need for a "
+#~ "specific\n"
+#~ "                product at a specific location. Procurement orders are "
+#~ "usually\n"
+#~ "                created automatically from <i>sales orders, pull logistic "
+#~ "rules or\n"
+#~ "                minimum stock rules.</i>\n"
+#~ "              </p>\n"
+#~ "              <p>\n"
+#~ "                When the procurement order is confirmed, it "
+#~ "automatically\n"
+#~ "                creates the necessary operations to fullfil the need: "
+#~ "purchase\n"
+#~ "                order proposition, manufacturing order, etc.\n"
+#~ "              </p>"
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "             單擊創建需求訂單 . \n"
+#~ "              </p><p>\n"
+#~ "                需求訂單用來記錄指定庫位元的指定產品的需要。需求訂單通常"
+#~ "是\n"
+#~ "                從 根據銷售訂單、拉式物流規則或者最小庫存規則自動生成"
+#~ "的。\n"
+#~ "              </p><p>\n"
+#~ "                當需求訂單被確認時，他自動建立必須的業務操作來滿足需要：\n"
+#~ "                採購單  ，生產單等等。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid "General Information"
+#~ msgstr "基本資訊"
+
+#~ msgid "Need Action"
+#~ msgstr "需要行動"
+
+#~ msgid "Need Action Counter"
+#~ msgstr "需要行動計數"
+
+#~ msgid "Product UoS"
+#~ msgstr "產品銷售單位"
+
+#~ msgid "UoS Quantity"
+#~ msgstr "銷售單位數量"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保留複雜的摘要(消息數量,……等)。為了插入到看板視圖，這一摘要直接是是HTML格"
+#~ "式。"
+
+#~ msgid "Invalid Action!"
+#~ msgstr "非法的動作"
+
+#~ msgid "Pull Rule"
+#~ msgstr "拉式規則"
+
+#~ msgid "Pull Rules"
+#~ msgstr "拉式規則"
+
+#~ msgid "Summary"
+#~ msgstr "摘要"
+
+#~ msgid "Companies"
+#~ msgstr "公司"
+
+#~ msgid "Partner"
+#~ msgstr "業務夥伴"
+
+#~ msgid "Scheduler Range Days"
+#~ msgstr "排程期間"
+
+#~ msgid ""
+#~ "This is the time frame analysed by the scheduler when computing "
+#~ "procurements. All procurements that are not between today and today+range "
+#~ "are skipped for future computation."
+#~ msgstr ""
+#~ "這是計畫運行的日期範圍。不在今天到今天加指定日數的日期範圍內的補貨單會留到"
+#~ "下次計算。"
+
+#~ msgid "Make Procurements"
+#~ msgstr "進行補貨"
+
+#~ msgid ""
+#~ "Triggers an automatic procurement for all products that have a virtual "
+#~ "stock under 0. You should probably not use this option, we suggest using "
+#~ "a MTO configuration on products."
+#~ msgstr ""
+#~ "觸發所有虛擬庫存為小於0的自動補貨。建議你不要使用這個選項，而使用產品按單"
+#~ "生產(MTO)的設置。"
+
+#~ msgid "Group By..."
+#~ msgstr "分組..."
+
+#~ msgid "Draft procurement of the product and location of that orderpoint"
+#~ msgstr "產品的補貨單草稿和訂貨點的位置"
+
+#~ msgid ""
+#~ "Use this assistant to generate a procurement request for this\n"
+#~ "                        product. According to the product configuration, "
+#~ "this may\n"
+#~ "                        trigger a draft purchase order, a manufacturing "
+#~ "order or\n"
+#~ "                        a new task."
+#~ msgstr ""
+#~ "使用這個工具來為此產品生成一個補貨申請。根據產品的設置，它會觸發一個採購單"
+#~ "草稿、生產單或者新的任務。"
+
+#~ msgid ""
+#~ "If there are not enough quantities available, the delivery order\n"
+#~ "                           will wait for new products. To fulfill the "
+#~ "inventory, you should\n"
+#~ "                           create others rules like orderpoints."
+#~ msgstr ""
+#~ "如果沒有足夠的可用數量，發貨單將等待新的產品。\n"
+#~ "要保證庫存數量，\n"
+#~ "你需要建立類似於訂貨點的規則，"
+
+#~ msgid "Procurement Method"
+#~ msgstr "補貨方式"
+
+#~ msgid "Manufacture"
+#~ msgstr "生產"
+
+#~ msgid "Service"
+#~ msgstr "服務"
+
+#~ msgid "Compute Stock Minimum Rules Only"
+#~ msgstr "僅計算最少庫存規則"
+
+#~ msgid "Reason"
+#~ msgstr "理由"
+
+#~ msgid "Latest error"
+#~ msgstr "最近的錯誤"
+
+#~ msgid "Minimum Quantity"
+#~ msgstr "最小數量"
+
+#~ msgid "Not used in computations, for information purpose only."
+#~ msgstr "沒有在計算中使用，只為了提供資訊。"
+
+#~ msgid "Latest procurement"
+#~ msgstr "最近需求"
+
+#~ msgid "Products"
+#~ msgstr "產品"
+
+#~ msgid "Permanent Procurement Exceptions"
+#~ msgstr "永久性補貨異常"
+
+#~ msgid "Stock Move"
+#~ msgstr "庫存調撥"
+
+#~ msgid "Stockable products"
+#~ msgstr "可庫存的產品"
+
+#~ msgid "Ready"
+#~ msgstr "準備就緒"
+
+#~ msgid "Automatic orderpoint"
+#~ msgstr "自動計算訂貨點"
+
+#~ msgid "Retry"
+#~ msgstr "重試"
+
+#~ msgid "Parameters"
+#~ msgstr "參數"
+
+#~ msgid "Confirm"
+#~ msgstr "確定"
+
+#~ msgid "Quantity Multiple"
+#~ msgstr "最少採購數量或基數"
+
+#~ msgid "Procurement Orders to Process"
+#~ msgstr "待處理補貨單"
+
+#~ msgid "Minimum Inventory Rule"
+#~ msgstr "最小庫存規則"
+
+#~ msgid "Reordering Rules Search"
+#~ msgstr "補貨規則搜索"
+
+#~ msgid "Waiting"
+#~ msgstr "等待中"
+
+#~ msgid "Picking List"
+#~ msgstr "移庫單"
+
+#~ msgid "Warehouse"
+#~ msgstr "倉庫"
+
+#~ msgid "Best price (not yet active!)"
+#~ msgstr "最優價(尚未啟動!)"
+
+#~ msgid "Compute Procurement"
+#~ msgstr "計算產品需求"
+
+#~ msgid "Ask New Products"
+#~ msgstr "確認補貨申請"
+
+#~ msgid "Planned Date"
+#~ msgstr "計畫日期"
+
+#~ msgid "Make to Stock"
+#~ msgstr "按庫存"
+
+#~ msgid ""
+#~ "If you encode manually a Procurement, you probably want to use a make to "
+#~ "order method."
+#~ msgstr "如果你要手工輸入補貨單，需要使用按單生產的方式"
+
+#~ msgid "Automatic Procurements"
+#~ msgstr "自動生成補貨單"
+
+#~ msgid ""
+#~ "use the available\n"
+#~ "                           inventory"
+#~ msgstr "使用可用庫存"
+
+#~ msgid "To Fix"
+#~ msgstr "待解決"
+
+#~ msgid "Assignment from Production or Purchase Order."
+#~ msgstr "生成生產單或採購單"
+
+#~ msgid "Property"
+#~ msgstr "屬性"
+
+#~ msgid "Compute Stock"
+#~ msgstr "計算庫存"
+
+#~ msgid "⇒ Request Procurement"
+#~ msgstr "⇒需要補貨"
+
+#~ msgid "plus"
+#~ msgstr "加"
+
+#~ msgid ""
+#~ "When a procurement is created the status is set to 'Draft'.\n"
+#~ " If the procurement is confirmed, the status is set to "
+#~ "'Confirmed'.            \n"
+#~ "After confirming the status is set to 'Running'.\n"
+#~ " If any exception arises in the order then the status is set to "
+#~ "'Exception'.\n"
+#~ " Once the exception is removed the status becomes 'Ready'.\n"
+#~ " It is in 'Waiting'. status when the procurement is waiting for another "
+#~ "one to finish."
+#~ msgstr ""
+#~ "當補貨單被創建時，狀態是 “草稿”.\n"
+#~ "如果需求被確認，狀態設置為 '已確認'.            \n"
+#~ "確認之後的狀態是'運行中'.\n"
+#~ "發生任何意外，狀態被設置為 '意外'.\n"
+#~ "一旦意外情況被排除，狀態變成 '已準備'.\n"
+#~ "當補貨單在等待另外一個完成時，它是 '等待中'."
+
+#~ msgid "Internal note..."
+#~ msgstr "內部備註 ..."
+
+#~ msgid "If the stock of a product is under 0, it will act like an orderpoint"
+#~ msgstr "如果產品的庫存量小於0，將會像一個訂貨點規則一樣執行動作。"
+
+#~ msgid ""
+#~ "You have to select a product unit of measure in the same category than "
+#~ "the default unit of measure of the product"
+#~ msgstr "你必須選擇產品默認計量單位的類型一樣的計量單位。"
+
+#~ msgid ""
+#~ "as it's a consumable (as a result of this, the quantity\n"
+#~ "                           on hand may become negative)."
+#~ msgstr ""
+#~ "(因為它是一個消耗品，作為這樣做的結果，\n"
+#~ "庫存量可能成為負數)。"
+
+#~ msgid ""
+#~ "When the virtual stock goes below the Min Quantity specified for this "
+#~ "field, Odoo generates a procurement to bring the forecasted quantity to "
+#~ "the Max Quantity."
+#~ msgstr ""
+#~ "當虛擬庫存變得小於這個欄位指定的最小數量，Odoo生成一個補貨單，使得預測數量"
+#~ "達到最大數量。"
+
+#~ msgid "Draft"
+#~ msgstr "草稿"
+
+#~ msgid "This wizard will schedule procurements."
+#~ msgstr "這個嚮導將安排產品補貨"
+
+#~ msgid "Buy"
+#~ msgstr "採購"
+
+#~ msgid "for the delivery order."
+#~ msgstr "為發貨單"
+
+#~ msgid ""
+#~ "Manufacture: When procuring the product, a manufacturing order or a task "
+#~ "will be generated, depending on the product type. \n"
+#~ "Buy: When procuring the product, a purchase order will be generated."
+#~ msgstr ""
+#~ "生產：為取得產品，根據產品類型，將生成一個生產單或者任務。\n"
+#~ "採購：為取得產品，將生成一個採購單。"
+
+#~ msgid "Maximum Quantity"
+#~ msgstr "最大數量"
+
+#~ msgid "Procure Products"
+#~ msgstr "生產產品"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a reordering rule.\n"
+#~ "              </p><p>You can define your minimum stock rules, so that "
+#~ "Odoo will automatically create draft manufacturing orders or request for "
+#~ "quotations according to the stock level. Once the virtual stock of a "
+#~ "product (= stock on hand minus all confirmed orders and reservations) is "
+#~ "below the minimum quantity, Odoo will generate a procurement request to "
+#~ "increase the stock up to the maximum quantity.</p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "可以定義最小庫存規則,以便Odoo根據現有庫存數量自動創建生產單或採購單。一旦"
+#~ "產品的虛擬庫存（等於當前庫存減去已確認的訂單或預留的出庫單）低於最小數量，"
+#~ "Odoo會生成一張補貨單使庫存數量增加到最大庫存數量。\n"
+#~ "              </p>"
+
+#~ msgid "Scheduled date"
+#~ msgstr "計畫日期"
+
+#~ msgid ""
+#~ "When you sell this product, a delivery order will be created.\n"
+#~ "                           Odoo will consider that the"
+#~ msgstr ""
+#~ "當產品被賣出時，發貨單自動創建。\n"
+#~ "Odoo對於消耗品數量視為總是可用（即使數量為負）。"
+
+#~ msgid "Automatic Order Point"
+#~ msgstr "補足負庫存"
+
+#~ msgid "Qty Multiple"
+#~ msgstr "數量倍數"
+
+#~ msgid ""
+#~ "When you sell this service, nothing special will be triggered\n"
+#~ "                           to deliver the customer, as you set the "
+#~ "procurement method as\n"
+#~ "                           'Make to Stock'."
+#~ msgstr ""
+#~ "如果你設定的補貨方法是“由庫存產生”，在出售服務時，不會觸發給客戶的發貨單。"
+
+#~ msgid "The procurement quantity will be rounded up to this multiple."
+#~ msgstr "補貨數量會取整到這個倍數"
+
+#~ msgid "Qty Multiple must be greater than zero."
+#~ msgstr "批量數量必須大於0"
+
+#~ msgid "Order to Max"
+#~ msgstr "補貨到最大值"
+
+#~ msgid "Date Closed"
+#~ msgstr "結束日期"
+
+#~ msgid ""
+#~ "Make to Stock: When needed, the product is taken from the stock or we "
+#~ "wait for replenishment. \n"
+#~ "Make to Order: When needed, the product is purchased or produced."
+#~ msgstr ""
+#~ "按庫存(MTS): 當需要時，產品來自庫存或者等待補貨。\n"
+#~ "按訂單(MTO)：當需要時，產品來自採購或者生產。"
+
+#~ msgid "Properties composition"
+#~ msgstr "屬性組成"
+
+#~ msgid "Property Group"
+#~ msgstr "屬性組"
+
+#~ msgid "Misc"
+#~ msgstr "雜項"
+
+#~ msgid "Reordering Mode"
+#~ msgstr "再訂貨模式"
+
+#~ msgid "Orderpoints"
+#~ msgstr "訂購點"
+
+#~ msgid ""
+#~ "When the virtual stock goes below the Min Quantity, Odoo generates a "
+#~ "procurement to bring the forecasted quantity to the Quantity specified as "
+#~ "Max Quantity."
+#~ msgstr ""
+#~ "當虛擬庫存變得小於最小數量，Odoo生成一個補貨單，使得預測數量達到這個欄位指"
+#~ "定的最大數量。"
+
+#~ msgid "Procurements in Exception"
+#~ msgstr "出錯的補貨單"
+
+#~ msgid "Minimum Stock Rules"
+#~ msgstr "最小庫存規則"
+
+#~ msgid "Close Move at end"
+#~ msgstr "最後關閉調撥"
+
+#~ msgid "Temporary"
+#~ msgstr "臨時"
+
+#~ msgid "Make to Order"
+#~ msgstr "按訂單"
+
+#~ msgid "Reservation"
+#~ msgstr "預留"
+
+#~ msgid "The way to procurement depends on the product type."
+#~ msgstr "根據產品類型確定需求的方式"
+
+#~ msgid "When you sell this product, Odoo will"
+#~ msgstr "當你賣出合格產品，Openerp 將"
+
+#~ msgid ""
+#~ "required quantities are always\n"
+#~ "                           available"
+#~ msgstr "所需的數量總是可用的"
+
+#~ msgid "Temporary Procurement Exceptions"
+#~ msgstr "臨時產品補貨異常"
+
+#~ msgid "max"
+#~ msgstr "最大數量"
+
+#~ msgid "Reordering Rules"
+#~ msgstr "補貨規則"
+
+#~ msgid "Product Template"
+#~ msgstr "產品範本"
+
+#~ msgid ""
+#~ "Wizard checks all the stock minimum rules and generate procurement order."
+#~ msgstr "嚮導檢查所有最小庫存規則並生成補貨單"
+
+#~ msgid "Automatic Orderpoint"
+#~ msgstr "自動計算訂貨點"
+
+#~ msgid "min"
+#~ msgstr "最小值"
+
+#~ msgid "Procurement '%s' is in exception: "
+#~ msgstr "補貨單 '%s' 出錯： "
+
+#~ msgid "PROC %d: from stock - %3.2f %-5s - %s"
+#~ msgstr "補貨單 %d：庫存 - %3.2f%-5s- %s"
+
+#~ msgid "Not enough stock and no minimum orderpoint rule defined."
+#~ msgstr "沒有足夠庫存且沒有定義最小訂貨點規則。"
+
+#~ msgid "Not enough stock."
+#~ msgstr "庫存不足"
+
+#~ msgid ""
+#~ "Please check the quantity in procurement order(s) for the product \"%s\", "
+#~ "it should not be 0 or less!"
+#~ msgstr "請檢查需求訂單中產品\"%s\" 的數量,不能小於等於0."
+
+#~ msgid "Automatic OP: %s"
+#~ msgstr "補足負庫存：%s"
+
+#~ msgid "Data Insufficient !"
+#~ msgstr "數據不足!"
+
+#~ msgid "SCHEDULER"
+#~ msgstr "時間表"
+
+#~ msgid "PROC %d: on order - %3.2f %-5s - %s"
+#~ msgstr "補貨單 %d：訂單- %3.2f %-5s - %s"
+
+#~ msgid "Products reserved from stock."
+#~ msgstr "產品從倉庫保留"

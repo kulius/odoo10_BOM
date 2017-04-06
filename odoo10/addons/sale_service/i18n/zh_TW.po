@@ -1,0 +1,280 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_mrp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-11 17:13+0800\n"
+"PO-Revision-Date: 2016-10-27 12:23+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-04-22 07:02+0000\n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: sale_service
+#: model:ir.model,name:sale_service.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "輔助核算明細"
+
+#. module: sale_service
+#: model:ir.model.fields,field_description:sale_service.field_project_task_type_closed
+msgid "Is a close stage"
+msgstr "是一個關閉階段"
+
+#. module: sale_service
+#: model:ir.ui.view,arch_db:sale_service.view_sale_service_inherit_form2
+msgid "Order Line"
+msgstr "訂單明細"
+
+#. module: sale_service
+#: model:ir.model,name:sale_service.model_procurement_order
+#: model:ir.model.fields,field_description:sale_service.field_project_task_procurement_id
+msgid "Procurement"
+msgstr "需求"
+
+#. module: sale_service
+#: model:ir.model,name:sale_service.model_product_product
+msgid "Product"
+msgstr "產品"
+
+#. module: sale_service
+#: model:ir.model,name:sale_service.model_product_template
+msgid "Product Template"
+msgstr "產品範本"
+
+#. module: sale_service
+#: model:ir.model.fields,field_description:sale_service.field_product_product_project_id
+#: model:ir.model.fields,field_description:sale_service.field_product_template_project_id
+msgid "Project"
+msgstr "項目"
+
+#. module: sale_service
+#: model:ir.model,name:sale_service.model_sale_order
+msgid "Sales Order"
+msgstr "銷售訂單"
+
+#. module: sale_service
+#: model:ir.model,name:sale_service.model_sale_order_line
+#: model:ir.model.fields,field_description:sale_service.field_project_task_sale_line_id
+msgid "Sales Order Line"
+msgstr "銷售訂單明細"
+
+#. module: sale_service
+#: model:ir.model,name:sale_service.model_project_task
+#: model:ir.model.fields,field_description:sale_service.field_procurement_order_task_id
+msgid "Task"
+msgstr "任務"
+
+#. module: sale_service
+#: model:ir.model,name:sale_service.model_project_task_type
+msgid "Task Stage"
+msgstr "任務階段"
+
+#. module: sale_service
+#: code:addons/sale_service/models/sale_service.py:94
+#, python-format
+msgid "Task created"
+msgstr "任務已創建"
+
+#. module: sale_service
+#: model:ir.model.fields,field_description:sale_service.field_sale_order_tasks_count
+#: model:ir.ui.view,arch_db:sale_service.view_order_form_inherit_sale_service
+msgid "Tasks"
+msgstr "任務"
+
+#. module: sale_service
+#: model:ir.model.fields,field_description:sale_service.field_sale_order_tasks_ids
+msgid "Tasks associated to this sale"
+msgstr "與這次銷售相關的任務"
+
+#. module: sale_service
+#: model:ir.model.fields,help:sale_service.field_project_task_type_closed
+msgid "Tasks in this stage are considered as closed."
+msgstr "在這個階段的任務被認為已關閉。"
+
+#. module: sale_service
+#: code:addons/sale_service/models/sale_service.py:144
+#, python-format
+msgid ""
+"You cannot delete a task related to a Sale Order. You can only archive this "
+"task."
+msgstr "你無法刪除銷售訂單相關的任務，你只能將此任務存檔。"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new service.\n"
+#~ "              </p><p>\n"
+#~ "                Services can be sold on quotations or sales order.\n"
+#~ "                All services defined from this menu will create tasks "
+#~ "when the\n"
+#~ "                quotation is confirmed.\n"
+#~ "              </p><p>\n"
+#~ "                Another way to create tasks from sales is to use template "
+#~ "of contracts\n"
+#~ "                linked to a project having pre-defined tasks that will be "
+#~ "duplicated \n"
+#~ "                per contract reusing this project.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                點擊來創建一個新的服務。\n"
+#~ "              </p><p>\n"
+#~ "                服務可以通過報價單或銷售訂單類出售。\n"
+#~ "                在這個功能表裏定義的所有服務將在報價單被確認時\n"
+#~ "                創建任務。\n"
+#~ "              </p><p>\n"
+#~ "                從銷售創建任務的另一個方法時使用合同範本，合同範本鏈結到一"
+#~ "個有預定義任務的項目。\n"
+#~ "                當合同鏈結到此專案時，\n"
+#~ "                對每個合同都複製這些預定義的任務。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid "Create Task Automatically"
+#~ msgstr "自動創建任務"
+
+#~ msgid "Products"
+#~ msgstr "產品"
+
+#~ msgid "Project Management Information"
+#~ msgstr "專案管理資訊"
+
+#~ msgid "Services"
+#~ msgstr "服務"
+
+#~ msgid ""
+#~ "Tick this option if you want to create a task automatically each time "
+#~ "this product is sold"
+#~ msgstr "如果你想每次這個產品售出時自動創建一個任務就勾選此項"
+
+#~ msgid "Close"
+#~ msgstr "關閉"
+
+#~ msgid "For each product, on type service and on order"
+#~ msgstr "訂單的每個產品和服務"
+
+#~ msgid "Product type is service, then its creates the task."
+#~ msgstr "產品類型是服務創建這任務"
+
+#~ msgid "In case you sell services on sales order"
+#~ msgstr "假如你在銷售訂單中出售服務"
+
+#~ msgid "A task is created to provide the service."
+#~ msgstr "創建一提供服務的任務"
+
+#~ msgid "Sales Order Task"
+#~ msgstr "銷售單任務"
+
+#~ msgid "if product type is 'service' then it creates the task."
+#~ msgstr "如果採購類型是服務創建這任務"
+
+#~ msgid "Order Task"
+#~ msgstr "訂單任務"
+
+#~ msgid "Procurement Task"
+#~ msgstr "補貨任務"
+
+#~ msgid "Sales order line"
+#~ msgstr "銷售訂單明細"
+
+#~ msgid ""
+#~ "will be \n"
+#~ "                        created to follow up the job to do. This task "
+#~ "will appear\n"
+#~ "                        in the project related to the contract of the "
+#~ "sales order."
+#~ msgstr "創建要做的下一步工作，此任務將出現在與銷售訂單合同相關的專案裏。"
+
+#~ msgid "When you sell this service to a customer,"
+#~ msgstr "當你賣 服務給客戶時"
+
+#~ msgid "False"
+#~ msgstr "False"
+
+#~ msgid "Task created."
+#~ msgstr "任務已創建"
+
+#~ msgid "If procurement method is Make to order and supply method is produce"
+#~ msgstr "如果補貨方式為按訂單而且供應方式為自製"
+
+#~ msgid "a task"
+#~ msgstr "一個任務"
+
+#~ msgid "Sale Order Task"
+#~ msgstr "銷售訂單任務"
+
+#~ msgid "If procure method is Make to order and supply method is produce"
+#~ msgstr "如果採購方式是按單和供應方式是生產"
+
+#~ msgid "Procure Task"
+#~ msgstr "獲得任務"
+
+#~ msgid "In case you sell services on sale order"
+#~ msgstr "在銷售訂單這事務是銷售服務"
+
+#~ msgid "Error ! Task end-date must be greater then task start-date"
+#~ msgstr "錯誤！任務結束日期必須大於任務開始日期"
+
+#~ msgid "Error: Invalid ean code"
+#~ msgstr "錯誤：無效的(EAN)條碼"
+
+#~ msgid "Procurement and Project Management integration"
+#~ msgstr "補貨流程和專案管理的集成"
+
+#~ msgid "Error ! You cannot create recursive tasks."
+#~ msgstr "錯誤！不能創建迴圈引用的任務"
+
+#~ msgid ""
+#~ "\n"
+#~ "This module creates a link between procurement orders\n"
+#~ "containing \"service\" lines and project management tasks.\n"
+#~ "\n"
+#~ "When installed, this module will automatically create a new task\n"
+#~ "for each procurement order line, when the corresponding product\n"
+#~ "meets the following characteristics:\n"
+#~ "  * Type = Service\n"
+#~ "  * Procurement method (Order fulfillment) = MTO (make to order)\n"
+#~ "  * Supply/Procurement method = Produce\n"
+#~ "\n"
+#~ "The new task is created outside of any existing project, but\n"
+#~ "can be added to a project manually.\n"
+#~ "\n"
+#~ "When the project task is completed or cancelled, the workflow of the "
+#~ "corresponding\n"
+#~ "procurement line is updated accordingly.\n"
+#~ "\n"
+#~ "This module is useful to be able to invoice services based on tasks\n"
+#~ "automatically created via sale orders.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "這個模組在包含服務類產品的補貨單和專案管理的任務之間建立了聯繫\n"
+#~ "\n"
+#~ "安裝了這個模組以後，只要滿足下列條件，就會為補貨單的每個行創建一個任務：\n"
+#~ "  產品類型為服務型\n"
+#~ "  補貨方式為按訂單\n"
+#~ "  供應方式為自製\n"
+#~ "\n"
+#~ "新任務不屬於任何項目，但可以手工指定給項目。\n"
+#~ "\n"
+#~ "當任務完成或取消後，補貨單的對應行狀態也會更新。\n"
+#~ "\n"
+#~ "這個模組適用於針對任務開發票的公司按訂單創建任務。\n"
+#~ "\n"
+
+#~ msgid "Sale order line"
+#~ msgstr "銷售訂單明細"
+
+#~ msgid "Sale Order Line"
+#~ msgstr "銷售訂單明細"
+
+#~ msgid "Order Reference must be unique per Company!"
+#~ msgstr "採購訂單號必須在一個公司範圍內唯一"
