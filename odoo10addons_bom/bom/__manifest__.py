@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "",
+    'name': "BOM alltop",
     'version': '1.0',
     'depends': [
     ],
