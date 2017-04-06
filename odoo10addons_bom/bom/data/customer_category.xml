@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="0">
+        <record model="res.partner.category" id="school">
+            <field name="name">學校</field>
+            <field name="active" eval="True"/>
+        </record>
+        <record model="res.partner.category" id="market">
+            <field name="name">批發市場</field>
+            <field name="active" eval="True"/>
+        </record>
+    </data>
+</odoo>
